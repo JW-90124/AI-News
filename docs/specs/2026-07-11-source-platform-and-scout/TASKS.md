@@ -20,7 +20,7 @@
 - [x] 建立 Capability Map、版本化 Changelog 与公开 Evolution Spine
 - [x] 建立多维 Evaluation Scorecard、evaluation_runs 与后台评测中心
 - [x] 删除本地空目录并将来源/产品目录收敛到 `src/catalog/`
-- [ ] 推送并验证 CI / Pages
+- [x] 推送并验证 CI / Pages，发布 v0.1.0 与 v0.2.0 GitHub Releases
 
 ## Stage 2 后续运营验证
 
