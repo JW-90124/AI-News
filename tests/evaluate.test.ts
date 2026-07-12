@@ -25,7 +25,7 @@ function dimension(overrides: Partial<EvaluationDimension> = {}): EvaluationDime
 }
 
 describe("evaluation calibration", () => {
-  it("hard caps an insufficient-data dimension at 45 or below", () => {
+  it("hard caps an insufficient-data dimension at 60 if some samples exist", () => {
     const result = calibrateDimension({
       slug: "confidence",
       name: "Confidence",
@@ -42,8 +42,8 @@ describe("evaluation calibration", () => {
 
     expect(result).toMatchObject({
       rawScore: 98,
-      score: 45,
-      scoreCap: 45,
+      score: 60,
+      scoreCap: 60,
       status: "insufficient_data",
     });
   });
@@ -83,7 +83,7 @@ describe("evaluation calibration", () => {
     expect(result).toEqual({
       rawWeightedScore: 73,
       evidenceCoverage: 50,
-      overallScore: 60,
+      overallScore: 63,
     });
   });
 
@@ -106,6 +106,6 @@ describe("evaluation calibration", () => {
 
     expect(result.evidenceCoverage).toBe(0);
     expect(result.rawWeightedScore).toBe(33);
-    expect(result.overallScore).toBe(21);
+    expect(result.overallScore).toBe(24);
   });
 });

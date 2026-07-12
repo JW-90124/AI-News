@@ -3,17 +3,29 @@ import { fileURLToPath } from "node:url";
 import { loadConfig } from "../config/env.js";
 import { createDatabase } from "../db/database.js";
 import { migrateToLatest } from "../db/migrate.js";
-import { observationEligibility, setObservationMode } from "../pipeline/observation.js";
+import {
+  autoEnableObservation,
+  observationEligibility,
+  setObservationMode,
+} from "../pipeline/observation.js";
 
 export async function runObserveSources(args = process.argv.slice(2)): Promise<void> {
   const confirm = args.includes("--confirm");
-  const unknown = args.filter((argument) => argument !== "--confirm");
+  const auto = args.includes("--auto");
+  const unknown = args.filter((argument) => argument !== "--confirm" && argument !== "--auto");
   if (unknown.length) throw new Error(`Unknown option: ${unknown[0]}`);
 
   const config = loadConfig();
   const db = createDatabase(config);
   try {
     await migrateToLatest(db, config);
+
+    if (auto) {
+      const result = await autoEnableObservation(db);
+      console.log(JSON.stringify(result, null, 2));
+      return;
+    }
+
     const eligibility = await observationEligibility(db);
     const toEnable = eligibility.filter((item) => item.eligible && !item.observationEnabled);
     const toDisable = eligibility.filter((item) => !item.eligible && item.observationEnabled);

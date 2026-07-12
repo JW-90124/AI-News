@@ -25,16 +25,16 @@
       <div class="sidebar-foot"><span class="status-dot"></span><span>LOCAL ADMIN</span></div>
     </aside>
     <main class="admin-main">
-      <header class="admin-header"><div><p>AGENT PULSE / ADMIN</p><h1 id="pageTitle">指挥中心</h1></div><div class="token-box"><input id="tokenInput" type="password" placeholder="ADMIN_TOKEN（开发环境可留空）" /><button type="button" class="token-submit" id="saveToken">连接</button></div></header>
+      <header class="admin-header"><div><p>AGENT PULSE / ADMIN</p><h1 id="pageTitle">指挥中心</h1></div><div class="auto-controls"><label class="auto-toggle"><input type="checkbox" id="autoModeToggle" checked /><span class="toggle-track"><span class="toggle-thumb"></span></span><span class="toggle-label">自动模式</span></label><span id="autoIndicator" class="auto-status running">自动运行中</span></div><div class="token-box"><input id="tokenInput" type="password" placeholder="ADMIN_TOKEN（开发环境可留空）" /><button type="button" class="token-submit" id="saveToken">连接</button></div></header>
       <section class="tab-page active" data-page="dashboard">
         <div class="metric-grid" id="metricGrid"></div>
         <article class="panel funnel-panel">
-          <div class="panel-head"><div><span>DATA FUNNEL</span><h2>从信号到可发布认知</h2><p>所有数字来自同一数据库快照；就绪不等于自动发布。</p></div><span id="funnelFreshness" class="pill">LOADING</span></div>
+          <div class="panel-head"><div><span>DATA FUNNEL</span><h2>从信号到可发布认知</h2><p>自动流水线处理事件发布、星探晋级、合并和生命周期管理。</p></div><span id="funnelFreshness" class="pill">LOADING</span></div>
           <div class="funnel-flow" id="funnelFlow"></div>
           <div class="funnel-blockers" id="funnelBlockers"></div>
         </article>
         <div class="panel-grid">
-          <article class="panel"><div class="panel-head"><div><span>PIPELINE</span><h2>数据流水线</h2></div><span id="pipelineStatus" class="pill">READY</span></div><div class="pipeline-actions"><button type="button" class="pipeline-button" data-action="collect">01<br /><strong>采集</strong><small>Collect sources</small></button><button type="button" class="pipeline-button" data-action="cluster">02<br /><strong>聚类</strong><small>Cluster & score</small></button><button type="button" class="pipeline-button" data-action="scout">03<br /><strong>星探</strong><small>Find opportunities</small></button><button type="button" class="pipeline-button" data-action="evaluate">04<br /><strong>评测</strong><small>Evaluate system</small></button><button type="button" class="pipeline-button" data-action="export">05<br /><strong>静态化</strong><small>Export site</small></button></div><pre id="pipelineOutput">等待指令…</pre></article>
+          <article class="panel"><div class="panel-head"><div><span>PIPELINE</span><h2>数据流水线</h2></div><div><span id="pipelineStatus" class="pill">READY</span><span id="autoPipelineIndicator" class="auto-indicator" hidden>已自动运行</span></div></div><div class="pipeline-actions"><button type="button" class="pipeline-button" data-action="collect">01<br /><strong>采集</strong><small>Collect sources</small></button><button type="button" class="pipeline-button" data-action="cluster">02<br /><strong>聚类</strong><small>Cluster & score</small></button><button type="button" class="pipeline-button" data-action="scout">03<br /><strong>星探</strong><small>Find opportunities</small></button><button type="button" class="pipeline-button" data-action="evaluate">04<br /><strong>评测</strong><small>Evaluate system</small></button><button type="button" class="pipeline-button" data-action="export">05<br /><strong>静态化</strong><small>Export site</small></button></div><div id="autoPipelineActions" class="auto-pipeline-actions"><button type="button" class="pipeline-button auto-pub" data-auto="auto-publish"><strong>整理发布候选</strong><small>Prepare review queue</small></button><button type="button" class="pipeline-button auto-pub" data-auto="auto-advance-scout"><strong>整理星探候选</strong><small>Rank inbox insights</small></button><button type="button" class="pipeline-button auto-pub" data-auto="auto-merge"><strong>识别合并候选</strong><small>Prepare merge review</small></button><button type="button" class="pipeline-button auto-pub" data-auto="auto-lifecycle"><strong>自动生命周期</strong><small>Degrade / quarantine</small></button></div><pre id="pipelineOutput">等待指令…</pre><div id="lastAutoActions" class="last-auto-actions" hidden></div></article>
           <article class="panel"><div class="panel-head"><div><span>RECENT JOBS</span><h2>任务记录</h2></div></div><div id="jobList" class="job-list"></div></article>
         </div>
       </section>
@@ -53,6 +53,7 @@
             <button type="button" class="status-filter-button" data-status="candidate">候选待复核</button>
             <button type="button" class="status-filter-button" data-status="matched_source">已匹配一手源</button>
             <button type="button" class="status-filter-button" data-status="merged_signal">已并入信号</button>
+            <button type="button" class="status-filter-button" data-status="insufficient_identity">身份信息不足</button>
           </fieldset>
         </div>
         <div class="discovery-table-head"><span>发现器</span><span>原始域名 / HANDLE</span><span>匹配的一手源</span><span>状态</span><span>最近发现</span></div>

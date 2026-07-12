@@ -18,19 +18,21 @@ import type {
   PublicTrack,
   StaticSiteModel,
 } from "./static-site/dto.js";
-import { githubDataFromEnvironment } from "./static-site/github.js";
+import { githubDataAtBuildTime } from "./static-site/github.js";
+import type { StaticPage } from "./static-site/pages.js";
 import { renderStaticPages } from "./static-site/pages.js";
 
 export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppConfig) {
   const repository = new Repository(db);
   const evaluation = await evaluateSystem(db);
-  const [events, tracks, actors, resources, view, scout] = await Promise.all([
+  const [events, tracks, actors, resources, view, scout, latestSourceChecks] = await Promise.all([
     repository.publicEvents(),
     repository.listTracks(),
     repository.listActors(),
     repository.listResources(),
     repository.getDefaultView(),
     repository.publicScoutInsights(),
+    repository.latestSourceChecks(),
   ]);
   const sources = (await repository.listSources()).filter(
     (source) => source.lifecycle_status !== "retired",
@@ -53,6 +55,7 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     color: track.color,
     icon: track.icon,
   }));
+  const checksBySourceId = new Map(latestSourceChecks.map((check) => [check.source_id, check]));
   const publicSources: PublicSource[] = sources.map((source) => ({
     slug: source.slug,
     name: source.name,
@@ -68,6 +71,10 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     observationEnabled: source.observation_enabled === 1,
     qualityScore: source.quality_score,
     cadence: source.cadence,
+    healthStatus: normalizePublicHealth(checksBySourceId.get(source.id)?.status),
+    lastCheckedAt: checksBySourceId.get(source.id)?.finished_at ?? null,
+    latestItemAt: checksBySourceId.get(source.id)?.latest_item_at ?? null,
+    healthErrorCode: checksBySourceId.get(source.id)?.error_code ?? null,
   }));
   const publicActors: PublicActor[] = actors.map((actor) => ({
     slug: actor.slug,
@@ -97,7 +104,9 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     riskLevel: resource.risk_level,
     verifiedAt: resource.verified_at,
   }));
-  const github = githubDataFromEnvironment(productVersion);
+  const github = await githubDataAtBuildTime(productVersion, {
+    allowNetwork: config.NODE_ENV !== "test" && process.env.VITEST !== "true",
+  });
   const productData: ProductData = {
     version: productVersion,
     generatedAt,
@@ -156,7 +165,6 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     }),
     writeJson(join(config.distDir, "data/sources.json"), publicSources),
     writeJson(join(config.distDir, "data/actors.json"), publicActors),
-    writeJson(join(config.distDir, "data/resources.json"), publicResources),
     writeJson(
       join(config.distDir, "data/view.json"),
       view
@@ -193,13 +201,14 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     product: productData,
     github,
   };
-  await Promise.all(
-    renderStaticPages(model).map(async (page) => {
-      const path = join(config.distDir, page.path);
-      await mkdir(dirname(path), { recursive: true });
-      await writeFile(path, page.content, "utf8");
-    }),
-  );
+
+  const allPages = renderStaticPages(model);
+  await writeAllPages(allPages, config.distDir);
+
+  await Promise.all([
+    writeSitemap(allPages, config.PUBLIC_SITE_URL, config.distDir),
+    writeRobotsTxt(config.PUBLIC_SITE_URL, config.distDir),
+  ]);
 
   return {
     events: enrichedEvents.length,
@@ -211,6 +220,105 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     version: productVersion,
     generatedAt,
   };
+}
+
+async function writeAllPages(pages: StaticPage[], distDir: string): Promise<void> {
+  await Promise.all(
+    pages.map(async (page) => {
+      const path = join(distDir, page.path);
+      await mkdir(dirname(path), { recursive: true });
+      await writeFile(path, page.content, "utf8");
+    }),
+  );
+}
+
+async function writeSitemap(pages: StaticPage[], siteUrl: string, distDir: string): Promise<void> {
+  const baseUrl = siteUrl.endsWith("/") ? siteUrl : `${siteUrl}/`;
+
+  // Collect unique routes from all pages
+  const routes = new Map<string, { zhPath: string; enPath: string | null }>();
+
+  for (const page of pages) {
+    const path = page.path === "404.html" ? null : page.path;
+    if (!path) continue;
+
+    if (path.startsWith("en/")) {
+      // en version
+      const zhPath = path.slice(3); // remove "en/" prefix
+      const existing = routes.get(zhPath);
+      if (existing) {
+        existing.enPath = path;
+      } else {
+        routes.set(zhPath, { zhPath, enPath: path });
+      }
+    } else {
+      // zh-CN version (could also have en version in a separate page)
+      const enPath = `en/${path}`;
+      const existing = routes.get(path);
+      if (existing) {
+        existing.enPath = enPath;
+      } else {
+        routes.set(path, { zhPath: path, enPath: enPath });
+      }
+    }
+  }
+
+  const entries: string[] = [];
+  for (const [, { zhPath, enPath }] of routes) {
+    const zhUrl = `${baseUrl}${zhPath.replace(/\/index\.html$/, "/")}`;
+    const enUrl = enPath ? `${baseUrl}${enPath.replace(/\/index\.html$/, "/")}` : null;
+
+    entries.push(`  <url>
+    <loc>${escapeXml(zhUrl)}</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="${escapeXml(zhUrl)}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(zhUrl)}" />
+    ${enUrl ? `<xhtml:link rel="alternate" hreflang="en" href="${escapeXml(enUrl)}" />` : ""}
+  </url>`);
+
+    if (enUrl) {
+      entries.push(`  <url>
+    <loc>${escapeXml(enUrl)}</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="${escapeXml(zhUrl)}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(zhUrl)}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(enUrl)}" />
+  </url>`);
+    }
+  }
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${entries.join("\n")}
+</urlset>
+`;
+
+  await writeFile(join(distDir, "sitemap.xml"), sitemap, "utf8");
+}
+
+async function writeRobotsTxt(siteUrl: string, distDir: string): Promise<void> {
+  const baseUrl = siteUrl.endsWith("/") ? siteUrl : `${siteUrl}/`;
+  const content = `User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: ${baseUrl}sitemap.xml
+`;
+  await writeFile(join(distDir, "robots.txt"), content, "utf8");
+}
+
+function escapeXml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+function normalizePublicHealth(value: string | undefined): PublicSource["healthStatus"] {
+  if (value === "healthy" || value === "degraded" || value === "failed" || value === "skipped")
+    return value;
+  return "unchecked";
 }
 
 async function writeJson(path: string, value: unknown): Promise<void> {

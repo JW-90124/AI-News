@@ -1,0 +1,29 @@
+# 测试方案
+
+## 1. 抓取与生命周期
+
+- HTML 有无日期卡片但声明 RSS 时，使用 RSS 的真实日期；
+- RSS 失败时保留可验证 HTML 结果，不让单源异常中断批次；
+- active 连续失败进入 degraded，degraded 持续失败进入 quarantined；
+- shadow 不满足 20 次/7 天不能自动激活，满足后可以激活；
+- 恢复来源先经过 observation，不直接越过资格门槛。
+
+## 2. 雷达与星探
+
+- 已有来源发现自动 matched，已有 signal 自动 merged；
+- 强候选只生成 disabled draft，弱候选和共享域不自动创建；
+- 星探会跳过冷却事件继续扫描后续事件；
+- 连续运行不会生成相同 cooldown key，且新卡只进入 inbox。
+
+## 3. 后台来源操作
+
+- 启用、隔离、单源拉取和观察模式均覆盖成功与阻塞路径；
+- readiness 与真正写接口使用相同判定；
+- 前端重复点击被禁用，成功后刷新，失败展示具体原因。
+
+## 4. 评测与发布
+
+- 评测无反馈样本时保持 insufficient，不生成虚假 80 分；
+- 自动运营链路不公开 Event、不公开 Scout、不自动激活许可不明来源；
+- workflow YAML 可解析，权限最小化，定时任务具有 concurrency；
+- `npm run check`、真实来源审计、静态隐私扫描和关键浏览器 smoke 通过。

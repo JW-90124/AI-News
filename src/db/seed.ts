@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import type { Kysely } from "kysely";
 import { type CuratedEventSeed, historicalEvents } from "../catalog/history.js";
 import { sourceCatalog } from "../catalog/sources.js";
+import { canonicalizeUrl } from "../domain/url.js";
 import { Repository } from "./repository.js";
 import type { DatabaseSchema } from "./types.js";
 
@@ -1010,7 +1011,12 @@ async function seedEvent(
       await db
         .selectFrom("signals")
         .select("id")
-        .where("external_id", "=", event.slug)
+        .where((expression) =>
+          expression.or([
+            expression("external_id", "=", event.slug),
+            expression("canonical_url", "=", canonicalizeUrl(event.url)),
+          ]),
+        )
         .executeTakeFirstOrThrow()
     ).id;
   await repository.attachSignal(id, signalId, "primary", 100);

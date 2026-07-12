@@ -1,5 +1,7 @@
 const state = {
   token: sessionStorage.getItem("agent-pulse-admin-token") || "",
+  autoMode: sessionStorage.getItem("agent-pulse-auto-mode") !== "false",
+  lastAutoActions: null,
   sources: [],
   events: [],
   tracks: [],
@@ -38,6 +40,109 @@ const titles = {
   view: "视觉与视图",
 };
 $("#tokenInput").value = state.token;
+
+// ─── Auto Mode ────────────────────────────────────────────────
+
+$("#autoModeToggle").checked = state.autoMode;
+renderAutoIndicator();
+
+$("#autoModeToggle").addEventListener("change", () => {
+  state.autoMode = $("#autoModeToggle").checked;
+  sessionStorage.setItem("agent-pulse-auto-mode", String(state.autoMode));
+  renderAutoIndicator();
+  loadAll();
+});
+
+function renderAutoIndicator() {
+  const indicator = $("#autoIndicator");
+  const autoActions = $("#autoPipelineActions");
+  const manualPipeline = document.querySelectorAll("[data-action]");
+  if (state.autoMode) {
+    indicator.className = "auto-status running";
+    indicator.textContent = "自动运行中";
+    if (autoActions) autoActions.hidden = false;
+    for (const btn of manualPipeline) {
+      btn.closest(".pipeline-actions")?.classList.add("with-auto");
+    }
+  } else {
+    indicator.className = "auto-status stopped";
+    indicator.textContent = "手动模式";
+    if (autoActions) autoActions.hidden = true;
+    for (const btn of manualPipeline) {
+      btn.closest(".pipeline-actions")?.classList.remove("with-auto");
+    }
+  }
+}
+
+async function _runAutoPipeline() {
+  const indicator = $("#autoPipelineIndicator");
+  const output = $("#pipelineOutput");
+  const status = $("#pipelineStatus");
+  if (!state.autoMode) return;
+  status.textContent = "AUTO";
+  if (indicator) indicator.hidden = false;
+  try {
+    const [events, scout, merges, lifecycle] = await Promise.all([
+      api("/api/admin/pipeline/auto-publish", { method: "POST", body: "{}" }),
+      api("/api/admin/pipeline/auto-advance-scout", { method: "POST", body: "{}" }),
+      api("/api/admin/pipeline/auto-merge", { method: "POST", body: "{}" }),
+      api("/api/admin/pipeline/auto-lifecycle", { method: "POST", body: "{}" }),
+    ]);
+    state.lastAutoActions = { events, scout, merges, lifecycle, at: new Date().toISOString() };
+    status.textContent = "DONE";
+    renderLastAutoActions();
+    output.textContent = JSON.stringify(state.lastAutoActions, null, 2);
+    await loadAll();
+  } catch (error) {
+    status.textContent = "FAILED";
+    output.textContent = error.message;
+  }
+}
+
+function renderLastAutoActions() {
+  const root = $("#lastAutoActions");
+  if (!root || !state.lastAutoActions) return;
+  root.hidden = false;
+  const { events, scout, merges, lifecycle, at } = state.lastAutoActions;
+  root.replaceChildren(
+    node("strong", "", `上次自动执行 · ${new Date(at).toLocaleString("zh-CN")}`),
+    autoActionRow("发布就绪候选", events.ready, events.errors.length),
+    autoActionRow("星探建议候选", scout.recommended, scout.errors.length),
+    autoActionRow("事件合并候选", merges.mergeableEvents, merges.errors.length),
+    autoActionRow(
+      "生命周期管理",
+      lifecycle.degraded + lifecycle.quarantined,
+      lifecycle.errors.length,
+    ),
+  );
+}
+
+function autoActionRow(label, ok, err) {
+  const row = node("div", "auto-action-row");
+  row.append(
+    document.createTextNode(`${label}：`),
+    err > 0 ? node("span", "stat", `${ok} / ${err} errors`) : node("span", "stat", `${ok}`),
+  );
+  return row;
+}
+
+// ─── Auto Pipeline Buttons ────────────────────────────────────
+
+document.querySelectorAll("[data-auto]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const action = button.dataset.auto;
+    $("#pipelineStatus").textContent = "RUNNING";
+    try {
+      const result = await api(`/api/admin/pipeline/${action}`, { method: "POST", body: "{}" });
+      $("#pipelineOutput").textContent = JSON.stringify(result, null, 2);
+      $("#pipelineStatus").textContent = "DONE";
+      await loadAll();
+    } catch (error) {
+      $("#pipelineOutput").textContent = error.message;
+      $("#pipelineStatus").textContent = "FAILED";
+    }
+  });
+});
 
 async function api(path, options = {}) {
   const headers = { "content-type": "application/json", ...(options.headers || {}) };
@@ -122,7 +227,7 @@ function renderMergeCandidates() {
   const count = $("#mergeCandidateCount");
   if (!root || !count) return;
   const groups = state.mergeCandidates || [];
-  count.textContent = `${groups.length} GROUPS`;
+  count.textContent = `${groups.length} GROUP${state.autoMode ? " · 自动模式" : ""}`;
   root.replaceChildren();
   groups.slice(0, 20).forEach((group) => {
     const card = node("article", "merge-candidate");
@@ -153,7 +258,7 @@ function renderMergeCandidates() {
     const mergeable = group.events.filter(
       (event) => event.id !== group.targetEventId && event.status !== "published",
     );
-    if (mergeable.length) {
+    if (mergeable.length && !state.autoMode) {
       const action = node(
         "button",
         "row-action merge-confirm",
@@ -376,6 +481,9 @@ function renderJobs(jobs) {
 function renderSources(filter = "") {
   const root = $("#sourcesTable");
   root.replaceChildren();
+  const advanced = node("button", "advanced-toggle", "⚙ 高级操作");
+  const advancedSection = node("div", "advanced-section");
+  advanced.addEventListener("click", () => advancedSection.classList.toggle("visible"));
   state.sources
     .filter((item) => includes(item, filter))
     .forEach((source) => {
@@ -409,11 +517,19 @@ function renderSources(filter = "") {
       const actions = node("div", "row-actions");
       sourceActions(source).forEach(([action, label]) => {
         const button = node("button", "row-action", label);
-        button.addEventListener("click", () => sourceLifecycle(source.id, action));
+        const operation = sourceOperation(source, action);
+        button.disabled = operation.allowed === false;
+        if (operation.reason) button.title = sourceOperationReason(operation.reason, operation);
+        button.addEventListener("click", () =>
+          withBusy(button, () => sourceLifecycle(source.id, action)),
+        );
         actions.append(button);
       });
       const run = node("button", "row-action", "单源拉取");
-      run.addEventListener("click", () => runSource(source.id));
+      const collectOperation = source.operations?.collect;
+      run.disabled = collectOperation?.allowed === false;
+      if (collectOperation?.reason) run.title = sourceOperationReason(collectOperation.reason);
+      run.addEventListener("click", () => withBusy(run, () => runSource(source.id)));
       if (["shadow", "active", "degraded"].includes(source.lifecycle_status)) actions.append(run);
       if (source.lifecycle_status === "shadow") {
         const observe = node(
@@ -421,14 +537,21 @@ function renderSources(filter = "") {
           "row-action",
           source.observation_enabled === 1 ? "停止观察" : "开启观察",
         );
+        const observeOperation = source.operations?.observe;
+        observe.disabled = observeOperation?.allowed === false;
+        if (observeOperation?.reason)
+          observe.title = sourceOperationReason(observeOperation.reason);
         observe.addEventListener("click", () =>
-          sourceObservation(source.id, source.observation_enabled !== 1),
+          withBusy(observe, () => sourceObservation(source.id, source.observation_enabled !== 1)),
         );
         actions.append(observe);
       }
       row.append(actions);
       root.append(row);
     });
+  if (state.autoMode && state.sources.length) {
+    root.append(advanced, advancedSection);
+  }
 }
 
 function renderDiscoveries(filter = "") {
@@ -531,6 +654,7 @@ function renderDiscoveryMetrics() {
     ["candidate", "候选待复核"],
     ["matched_source", "已匹配一手源"],
     ["merged_signal", "已并入信号"],
+    ["insufficient_identity", "身份信息不足"],
   ].forEach(([key, label]) => {
     const card = node("div", `discovery-metric ${key}`);
     card.append(node("strong", "", String(summary[key] || 0)), node("span", "", label));
@@ -547,6 +671,7 @@ function normalizeDiscoverySummary(summary, items) {
     candidate: Number(byStatus.candidate ?? count("candidate")),
     matched_source: Number(byStatus.matched_source ?? count("matched_source")),
     merged_signal: Number(byStatus.merged_signal ?? count("merged_signal")),
+    insufficient_identity: Number(byStatus.insufficient_identity ?? count("insufficient_identity")),
   };
 }
 
@@ -557,6 +682,7 @@ function discoveryStatusLabel(status) {
       candidate: "候选待复核",
       matched_source: "已匹配一手源",
       merged_signal: "已并入信号",
+      insufficient_identity: "身份信息不足",
     }[status] || status
   );
 }
@@ -634,6 +760,54 @@ function sourceActions(source) {
   );
 }
 
+function sourceOperation(source, action) {
+  if (["activate", "activate_strict", "auto_activate"].includes(action)) {
+    return source.operations?.activate || { allowed: true, reason: null };
+  }
+  if (action === "quarantine") {
+    return source.operations?.quarantine || { allowed: true, reason: null };
+  }
+  return { allowed: true, reason: null };
+}
+
+function sourceOperationReason(reason, operation = {}) {
+  const labels = {
+    latest_check_not_healthy: "最近一次检查不健康，请先执行单源拉取或审计",
+    healthy_checks_below_20: `健康检查不足 20 次（当前 ${operation.healthyChecks ?? 0} 次）`,
+    observation_window_below_7_days: `观察窗口不足 7 天（当前 ${operation.observationDays ?? 0} 天）`,
+    missing_check: "尚无来源检查记录",
+    lifecycle_not_shadow: "只有观察期来源可以开启观察",
+    aggregator_discovery_only: "聚合来源仅用于发现，不进入事实采集",
+    non_automated_source: "该来源需要人工或平台授权访问",
+    empty_content: "最近检查没有可用内容",
+    quality_below_60: "最近检查质量分低于 60",
+    missing_freshness: "最近检查缺少内容新鲜度",
+    content_older_than_90_days: "最近内容已超过 90 天",
+  };
+  if (labels[reason]) return labels[reason];
+  if (reason.startsWith("latest_check_")) return `最近一次检查状态：${reason.slice(13)}`;
+  if (reason.startsWith("policy_")) return `访问策略不允许：${reason.slice(7)}`;
+  if (reason.startsWith("lifecycle_")) return `当前生命周期不支持此操作：${reason.slice(10)}`;
+  return reason;
+}
+
+async function withBusy(button, action) {
+  if (button.disabled) return;
+  const label = button.textContent;
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  button.textContent = "处理中…";
+  try {
+    await action();
+  } finally {
+    if (button.isConnected) {
+      button.disabled = false;
+      button.removeAttribute("aria-busy");
+      button.textContent = label;
+    }
+  }
+}
+
 async function sourceLifecycle(id, action) {
   try {
     await api(`/api/admin/sources/${id}/lifecycle`, {
@@ -643,7 +817,7 @@ async function sourceLifecycle(id, action) {
     toast("来源状态已更新");
     await loadAll();
   } catch (error) {
-    toast(error.message, true);
+    toast(formatOperationError(error), true);
   }
 }
 
@@ -659,7 +833,7 @@ async function runSource(sourceId) {
     );
     await loadAll();
   } catch (error) {
-    toast(error.message, true);
+    toast(formatOperationError(error), true);
   }
 }
 
@@ -672,13 +846,22 @@ async function sourceObservation(sourceId, enabled) {
     toast(enabled ? "已进入 shadow 观察采集" : "已停止 shadow 观察采集");
     await loadAll();
   } catch (error) {
-    toast(error.message, true);
+    toast(formatOperationError(error), true);
   }
+}
+
+function formatOperationError(error) {
+  const evidence = error.payload?.evidence;
+  if (!evidence) return error.message;
+  return `${error.message}；最近检查 ${evidence.latestStatus ?? "无"}，健康 ${evidence.healthyChecks ?? 0} 次，观察 ${evidence.observationDays ?? 0} 天`;
 }
 
 function renderScout(filter = "") {
   const root = $("#scoutTable");
   root.replaceChildren();
+  const advanced = node("button", "advanced-toggle", "⚙ 高级操作");
+  const advancedSection = node("div", "advanced-section");
+  advanced.addEventListener("click", () => advancedSection.classList.toggle("visible"));
   state.scout
     .filter((item) => includes(item, filter))
     .forEach((insight) => {
@@ -721,6 +904,9 @@ function renderScout(filter = "") {
       row.append(actions);
       root.append(row);
     });
+  if (!state.autoMode && state.scout.length) {
+    root.append(advanced, advancedSection);
+  }
 }
 function renderEvents(filter = "") {
   const root = $("#eventsTable");

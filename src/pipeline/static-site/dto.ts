@@ -81,6 +81,26 @@ export interface PublicSource {
   observationEnabled: boolean;
   qualityScore: number;
   cadence: string;
+  healthStatus: "healthy" | "degraded" | "failed" | "skipped" | "unchecked";
+  lastCheckedAt: string | null;
+  latestItemAt: string | null;
+  healthErrorCode: string | null;
+}
+
+export type CoverageStatus = "covered" | "watch" | "gap" | "unchecked";
+
+export interface TechnologyCoverage {
+  slug: string;
+  name: string;
+  description: string;
+  status: CoverageStatus;
+  sources: PublicSource[];
+  healthySources: number;
+  activeSources: number;
+  observingSources: number;
+  channels: string[];
+  missingChannels: string[];
+  nextAction: string;
 }
 
 export interface ScoutEvidence {

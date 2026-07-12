@@ -7,6 +7,7 @@ export type ReadinessBlocker =
   | "event_not_found"
   | "placeholder_content"
   | "thin_fact"
+  | "thin_research_analysis"
   | "generic_entity"
   | "missing_category"
   | "missing_keywords"
@@ -83,6 +84,7 @@ export async function evaluateEventReadiness(
   if (content.some(hasPlaceholder)) blockers.push("placeholder_content");
   if (candidate.fact_summary.trim().length < 20 || candidate.summary.trim().length < 20)
     blockers.push("thin_fact");
+  if (hasThinResearchAnalysis(candidate)) blockers.push("thin_research_analysis");
   if (
     ["industry", "unknown", "other", "其他", "未知"].includes(
       candidate.company.trim().toLowerCase(),
@@ -193,6 +195,7 @@ function evaluateReadinessRow(
   if (content.some(hasPlaceholder)) blockers.push("placeholder_content");
   if (candidate.fact_summary.trim().length < 20 || candidate.summary.trim().length < 20)
     blockers.push("thin_fact");
+  if (hasThinResearchAnalysis(candidate)) blockers.push("thin_research_analysis");
   if (
     ["industry", "unknown", "other", "其他", "未知"].includes(
       candidate.company.trim().toLowerCase(),
@@ -230,6 +233,15 @@ function evaluateReadinessRow(
 
 function hasPlaceholder(value: string): boolean {
   return /待编辑|待补充|\bTBD\b|\bTODO\b|placeholder/i.test(value);
+}
+
+function hasThinResearchAnalysis(candidate: EventRow): boolean {
+  if (!["research", "paper"].includes(candidate.category.trim().toLowerCase())) return false;
+  return (
+    candidate.technical_insight.trim().length < 56 ||
+    candidate.industry_insight.trim().length < 36 ||
+    candidate.future_outlook.trim().length < 28
+  );
 }
 
 function result(

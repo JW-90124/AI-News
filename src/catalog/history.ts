@@ -607,6 +607,150 @@ export const historicalEvents = [
     tracks: ["investing", "commercialization", "to-b", "model-economics"],
     actors: ["anthropic"],
   }),
+  event({
+    slug: "predicatelongbench-long-context-difficulty",
+    title: "PredicateLongBench：长上下文评测开始测量“任务难度”而非只测长度",
+    fact: "2026 年 7 月 9 日提交的 PredicateLongBench 预印本提出可控生成长上下文任务的两条流水线，并报告前沿模型随谓词难度上升出现明显性能下降。",
+    summary:
+      "长上下文能力长期被“上下文窗口有多长”主导，但窗口可容纳信息不等于模型能在复杂约束下可靠找到并组合证据。该研究把长度与任务难度拆开控制，为企业文档、研究和 Agent 评测提供更接近真实工作的压力测试思路。",
+    technical:
+      "论文通过谓词结构控制检索条件、组合关系与推理复杂度，并以两类生成流水线构造可重复的数据。核心贡献不是再增加一个平均分，而是提供难度轴，使团队能观察模型在上下文长度相同、约束复杂度不同条件下的退化曲线。",
+    industry:
+      "模型厂商仅公布长上下文窗口和单一 benchmark 分数将更难支持采购判断；应用团队需要围绕自己的文档结构、约束数量和证据组合方式建立分层评测。",
+    future:
+      "这是尚未完成独立复现的预印本。下一步应检查数据生成是否引入捷径、不同模型版本的复现实验，以及难度轴与真实法律、金融和研发文档任务的相关性。",
+    business:
+      "采购长上下文模型时，应把“最大窗口”替换为按任务难度分层的成功率、重试率和人工核验成本，避免为无法转化为可靠结果的容量付费。",
+    category: "research",
+    company: "PredicateLongBench",
+    keywords: ["长上下文", "benchmark", "难度轴", "评测"],
+    scores: [92, 0, 84, 86],
+    date: "2026-07-09T09:28:06.000Z",
+    source: "arxiv-ai",
+    url: "https://arxiv.org/abs/2607.08284",
+    tracks: ["tech-evolution", "agi-progress", "to-d", "to-b"],
+    actors: [],
+  }),
+  event({
+    slug: "compete-then-collaborate-multi-agent",
+    title: "Compete Then Collaborate：多智能体推理不再默认“越合作越好”",
+    fact: "2026 年 7 月 9 日提交的预印本 Compete Then Collaborate 提出先让 Agent 独立竞争、再选择性协作的推理框架，用于降低过早共识和错误传播。",
+    summary:
+      "多智能体系统常把更多讨论轮次当成质量来源，但 Agent 过早共享中间结论也可能放大同一种错误。该研究将独立探索与后续协作分阶段，提示系统设计应关注观点多样性、选择机制与协作时机，而不只是增加 Agent 数量。",
+    technical:
+      "框架先保留多个独立解题轨迹，再根据候选质量和差异选择进入协作的方案，从结构上减少早期信息污染。技术判断重点应放在选择器是否可靠、额外推理成本、不同任务上的收益稳定性，以及失败案例是否真正互补。",
+    industry:
+      "Agent 平台的竞争将从编排更多角色转向管理推理多样性和协作预算；企业不应把角色数量、消息数量或工作流复杂度直接当成更高可靠性的证据。",
+    future:
+      "该结果仍属于预印本证据。需要独立复现其基线、公平比较单 Agent 的等成本推理，并验证在代码、研究和工具调用任务中能否保持收益。",
+    business:
+      "设计高价值 Agent 流程时，可用“独立候选 → 质量门控 → 有条件协作”替代全程群聊，并以每个正确结果的总推理成本衡量是否值得。",
+    category: "research",
+    company: "Compete Then Collaborate",
+    keywords: ["多智能体", "协作", "推理", "Agent 编排"],
+    scores: [91, 0, 85, 84],
+    date: "2026-07-09T08:32:31.000Z",
+    source: "arxiv-ai",
+    url: "https://arxiv.org/abs/2607.08255",
+    tracks: ["tech-evolution", "agi-progress", "to-d"],
+    actors: [],
+  }),
+  event({
+    slug: "autopersonas-agent-simulation-diversity",
+    title: "AutoPersonas：Agent 模拟的瓶颈从规模转向角色多样性与重复污染",
+    fact: "2026 年 7 月 9 日提交的 AutoPersonas 预印本分析 8 个模型生成的 1,600 个角色，并讨论自动生成 Persona 时的重复、偏差与有效多样性问题。",
+    summary:
+      "用大量虚拟用户或专家 Agent 做产品研究看似可以低成本扩样，但角色数量并不等于观点覆盖。研究把 Persona 生成本身变成可测量对象，揭示重复模板和模型偏差可能制造虚假的“用户共识”。",
+    technical:
+      "论文比较多模型生成角色的语义覆盖、重复模式与人口属性分布，核心方法是把 Persona 集合质量从主观观感转成多样性和冗余指标。对模拟系统而言，采样策略、去重和真实用户校准与下游 Agent 能力同等重要。",
+    industry:
+      "合成用户研究、市场模拟和多 Agent 社会实验需要新的数据质量规范；未经覆盖度与偏差审计的 Persona 池不能替代真实访谈或被包装成市场证据。",
+    future:
+      "预印本结论仍需在更多语言、地区与垂直人群中复现，并检验角色多样性指标能否预测下游决策质量，而不只是文本表面差异。",
+    business:
+      "使用合成 Persona 做早期探索时，应保留真实样本校准集，披露模型与采样方法，并把去重率、覆盖缺口和与真实用户的偏差纳入决策置信度。",
+    category: "research",
+    company: "AutoPersonas",
+    keywords: ["Persona", "Agent 模拟", "合成用户", "多样性"],
+    scores: [90, 0, 82, 85],
+    date: "2026-07-09T08:25:44.000Z",
+    source: "arxiv-ai",
+    url: "https://arxiv.org/abs/2607.08252",
+    tracks: ["tech-evolution", "to-b", "to-d"],
+    actors: [],
+  }),
+  event({
+    slug: "blind-spots-bench-vision-language",
+    title: "Blind-Spots-Bench：多模态模型高分背后仍有系统性视觉盲区",
+    fact: "2026 年 7 月 9 日提交的 Blind-Spots-Bench 预印本构建 235 个样本，评测 10 类视觉语言理解缺口，用于暴露常规平均分容易掩盖的系统性失败。",
+    summary:
+      "多模态模型在主流 benchmark 上持续提升，但平均准确率难以回答它会在哪类图像关系、局部细节或视觉条件下稳定失败。该研究按盲区类型组织测试，使安全评估从单一排行榜转向可诊断的能力边界。",
+    technical:
+      "基准通过小规模、类型化样本隔离不同视觉语言缺口，强调失败分布而非总分。落地时需要检查样本规模、任务构造和模型是否见过相似数据，并将类别级召回与置信校准加入真实场景测试。",
+    industry:
+      "视觉 Agent、文档理解和质检产品不能只引用通用多模态分数；采购和上线门槛需要明确业务中不可接受的盲区，并对这些类别单独验收。",
+    future:
+      "该预印本样本规模有限，需扩展到真实世界分布、更多语言与视频任务，并验证模型更新后盲区是否迁移而非真正消失。",
+    business:
+      "在医疗、制造和文档审核场景，应建立盲区清单、人工接管规则与类别级回归集，把“何时不能信模型”作为部署决策的一部分。",
+    category: "research",
+    company: "Blind-Spots-Bench",
+    keywords: ["多模态", "视觉语言模型", "盲区", "安全评测"],
+    scores: [91, 0, 86, 87],
+    date: "2026-07-09T11:05:17.000Z",
+    source: "arxiv-ai",
+    url: "https://arxiv.org/abs/2607.08317",
+    tracks: ["tech-evolution", "agi-progress", "to-b"],
+    actors: [],
+  }),
+  event({
+    slug: "overthinking-secret-leakage-reasoning-models",
+    title: "Overthinking：推理模型的长思考可能把秘密泄露风险放大至 10 倍",
+    fact: "2026 年 7 月 9 日提交的 Overthinking 预印本评测 2B 至 32B 参数模型，并报告更长推理过程在部分设置下使秘密泄露风险最高增加约 10 倍。",
+    summary:
+      "推理时间扩展通常被视为能力增强手段，但更长的中间推理也扩大了模型重建、重复或暴露敏感上下文的机会。研究把“想得更久”与信息泄露联系起来，提示推理预算同时是安全预算。",
+    technical:
+      "论文跨多个模型规模比较秘密保留与推理长度的关系，关注泄露随计算预算变化的趋势。关键技术问题包括威胁模型、提示设置、可见推理与隐藏状态的差异，以及过滤器是否只是掩盖输出而非降低内部暴露。",
+    industry:
+      "企业在引入 reasoning model 和长链 Agent 时需要重新审视日志、上下文拼接、可观察性与数据最小化；能力评测不能与隐私和安全评测分开。",
+    future:
+      "“最高约 10 倍”来自特定预印本实验，不应外推为所有模型。需独立复现不同 API、推理可见性、系统提示和防护机制下的绝对风险。",
+    business:
+      "高敏数据流程应限制不必要的推理预算与上下文范围，分离秘密，审计日志，并以泄露率随推理预算变化的曲线决定哪些任务可以使用深度推理。",
+    category: "research",
+    company: "Overthinking",
+    keywords: ["推理模型", "秘密泄露", "安全", "推理预算"],
+    scores: [91, 0, 91, 92],
+    date: "2026-07-09T06:02:41.000Z",
+    source: "arxiv-ai",
+    url: "https://arxiv.org/abs/2607.08173",
+    tracks: ["tech-evolution", "agi-progress", "to-b", "to-g"],
+    actors: [],
+  }),
+  event({
+    slug: "causalds-causal-data-science-agents",
+    title: "CausalDS：数据科学 Agent 从生成代码走向结构因果推断与拒答",
+    fact: "2026 年 7 月 9 日提交的 CausalDS 预印本提出面向数据科学 Agent 的因果评测，覆盖结构因果模型、Pearl 三层因果阶梯与在证据不足时拒绝回答。",
+    summary:
+      "当前数据 Agent 擅长生成查询、图表和相关性分析，但业务决策需要区分观察、干预与反事实。该研究把因果结构和拒答能力纳入评测，使“能产出分析”与“能支持行动决策”之间的差距变得可见。",
+    technical:
+      "基准围绕结构因果模型构造关联、干预和反事实问题，并检查模型在不可识别或信息不足时是否能够 abstain。核心价值是同时测推理正确性与认识边界，而不是只看最终答案格式或代码是否可运行。",
+    industry:
+      "企业数据 Copilot 若不能识别因果假设和证据边界，可能把相关性包装成策略建议；数据 Agent 的验收需要增加因果层级、假设披露和拒答率。",
+    future:
+      "该研究仍是预印本和受控基准。需验证在脏数据、隐藏混杂、时间序列和真实组织指标中是否成立，并比较工具增强 Agent 与纯模型的差异。",
+    business:
+      "将数据 Agent 用于定价、增长或运营决策前，应要求它明确因果图、识别假设和不可回答条件，并由领域专家审核干预建议，而非只验收 SQL 与图表。",
+    category: "research",
+    company: "CausalDS",
+    keywords: ["因果推断", "数据科学 Agent", "拒答", "评测"],
+    scores: [92, 0, 88, 91],
+    date: "2026-07-09T02:51:43.000Z",
+    source: "arxiv-ai",
+    url: "https://arxiv.org/abs/2607.08093",
+    tracks: ["tech-evolution", "to-b", "to-d"],
+    actors: [],
+  }),
 ] as const satisfies readonly CuratedEventSeed[];
 
 export const industryNarratives = {

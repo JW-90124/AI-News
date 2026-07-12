@@ -37,10 +37,16 @@
     "repair:activations": "tsx src/cli/repair-activations.ts",
     "repair:review-noise": "tsx src/cli/repair-review-noise.ts",
     "activate": "tsx src/cli/activate.ts",
+    "activate:auto": "tsx src/cli/auto-activate.ts",
     "observe:sources": "tsx src/cli/observe-sources.ts",
+    "ops:reconcile": "tsx src/cli/autonomous-operations.ts",
+    "scout:generate": "tsx src/cli/scout.ts",
+    "evaluate:system": "tsx src/cli/evaluate.ts",
     "evolve": "tsx src/cli/evolve.ts",
     "monitor": "tsx src/cli/monitor-cli.ts",
+    "monitor:check": "tsx src/cli/monitor-check.ts",
     "export": "tsx src/cli/export.ts",
+    "auto:publish": "tsx src/cli/auto-publish.ts",
     "check": "npm run lint && npm run typecheck && npm test && npm run export"
   },
   "keywords": [

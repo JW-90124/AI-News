@@ -9,6 +9,12 @@ import type { AppConfig } from "../config/env.js";
 import { Repository, secureTokenEquals } from "../db/repository.js";
 import type { DatabaseSchema } from "../db/types.js";
 import { transitionSource } from "../domain/source-lifecycle.js";
+import {
+  autoAdvanceScout,
+  autoManageLifecycle,
+  autoMergeEvents,
+  autoPublishReadyEvents,
+} from "../pipeline/auto-publish.js";
 import { clusterSignals } from "../pipeline/cluster.js";
 import { collectSources } from "../pipeline/collect.js";
 import { evaluateSystem, latestEvaluation } from "../pipeline/evaluate.js";
@@ -21,6 +27,10 @@ import { inspectProvenanceDebt, purgeUnattachedAggregatorSignals } from "../pipe
 import { evaluateEventReadiness, eventReadinessSummary } from "../pipeline/readiness.js";
 import { runScout } from "../pipeline/scout.js";
 import { auditSources } from "../pipeline/source-audit.js";
+import {
+  activationQualification,
+  sourceOperationReadiness,
+} from "../pipeline/source-operations.js";
 
 const SourcePatch = z.object({
   authorityScore: z.number().int().min(0).max(100).optional(),
@@ -34,13 +44,24 @@ const SourcePatch = z.object({
 });
 
 const SourceAction = z.object({
-  action: z.enum(["verify", "activate", "degrade", "quarantine", "restore", "retire"]),
+  action: z.enum([
+    "verify",
+    "activate",
+    "activate_strict",
+    "auto_activate",
+    "degrade",
+    "quarantine",
+    "restore",
+    "retire",
+  ]),
 });
 
 const ObservationPatch = z.object({ enabled: z.boolean() });
 
 const SourceDiscoveryQuery = z.object({
-  status: z.enum(["pending", "candidate", "matched_source", "merged_signal"]).optional(),
+  status: z
+    .enum(["pending", "candidate", "matched_source", "merged_signal", "insufficient_identity"])
+    .optional(),
   limit: z.coerce.number().int().min(1).max(500).default(100),
 });
 
@@ -172,7 +193,14 @@ export async function buildApp(db: Kysely<DatabaseSchema>, config: AppConfig) {
     const after = await inspectProvenanceDebt(db);
     return { before, action, after };
   });
-  app.get("/api/admin/sources", async () => repository.listSources());
+  app.get("/api/admin/sources", async (_request, reply) => {
+    const [sources, operations] = await Promise.all([
+      repository.listSources(),
+      sourceOperationReadiness(db),
+    ]);
+    reply.header("Cache-Control", "no-store");
+    return sources.map((source) => ({ ...source, operations: operations.get(source.id) }));
+  });
   app.get("/api/admin/source-runs", async (request) => {
     const query = z.object({ sourceId: z.string().uuid().optional() }).parse(request.query);
     return repository.listSourceRuns(query.sourceId);
@@ -277,22 +305,14 @@ export async function buildApp(db: Kysely<DatabaseSchema>, config: AppConfig) {
     const { action } = SourceAction.parse(request.body);
     const source = await repository.getSource(id);
     if (!source) return reply.code(404).send({ error: "Source not found" });
-    if (action === "activate") {
+    if (action === "activate" || action === "activate_strict" || action === "auto_activate") {
       const checks = await repository.listSourceChecks(source.id, 100);
-      const healthyChecks = checks.filter((check) => check.status === "healthy");
-      const oldestHealthy = healthyChecks.at(-1);
-      const observationDays = oldestHealthy
-        ? (Date.now() - new Date(oldestHealthy.finished_at).getTime()) / 86_400_000
-        : 0;
-      if (checks[0]?.status !== "healthy" || healthyChecks.length < 20 || observationDays < 7) {
+      const qualification = activationQualification(checks);
+      if (!qualification.allowed) {
         return reply.code(409).send({
           error:
             "Source activation requires a healthy latest check, 20 healthy checks, and a 7-day observation window",
-          evidence: {
-            latestStatus: checks[0]?.status ?? null,
-            healthyChecks: healthyChecks.length,
-            observationDays: Math.floor(observationDays),
-          },
+          evidence: qualification,
         });
       }
     }
@@ -508,6 +528,10 @@ export async function buildApp(db: Kysely<DatabaseSchema>, config: AppConfig) {
   });
   app.post("/api/admin/pipeline/evaluate", async () => evaluateSystem(db));
   app.post("/api/admin/pipeline/export", async () => exportStaticSite(db, config));
+  app.post("/api/admin/pipeline/auto-publish", async () => autoPublishReadyEvents(db));
+  app.post("/api/admin/pipeline/auto-advance-scout", async () => autoAdvanceScout(db));
+  app.post("/api/admin/pipeline/auto-merge", async () => autoMergeEvents(db));
+  app.post("/api/admin/pipeline/auto-lifecycle", async () => autoManageLifecycle(db));
 
   await app.register(fastifyStatic, { root: config.distDir, prefix: "/" });
   await app.register(fastifyStatic, {

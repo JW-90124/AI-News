@@ -22,7 +22,12 @@ import type {
   SourceUpdate,
 } from "./types.js";
 
-export type DiscoveryStatus = "pending" | "candidate" | "matched_source" | "merged_signal";
+export type DiscoveryStatus =
+  | "pending"
+  | "candidate"
+  | "matched_source"
+  | "merged_signal"
+  | "insufficient_identity";
 
 export interface SourceDiscoveryListItem {
   id: string;
@@ -565,6 +570,7 @@ export class Repository {
       candidate: 0,
       matched_source: 0,
       merged_signal: 0,
+      insufficient_identity: 0,
       total: 0,
     };
     for (const row of rows) {

@@ -76,6 +76,25 @@ export async function releaseObservationTriage(
   return rows.length;
 }
 
+export async function autoEnableObservation(
+  db: Kysely<DatabaseSchema>,
+): Promise<{ enabled: number; slugs: string[] }> {
+  const rows = (await observationEligibility(db)).filter(
+    (item) => item.eligible && !item.observationEnabled,
+  );
+
+  const timestamp = new Date().toISOString();
+  for (const row of rows) {
+    await db
+      .updateTable("sources")
+      .set({ observation_enabled: 1, updated_at: timestamp })
+      .where("id", "=", row.sourceId)
+      .execute();
+  }
+
+  return { enabled: rows.length, slugs: rows.map((row) => row.slug) };
+}
+
 function observationRejection(
   source: {
     lifecycle_status: string;

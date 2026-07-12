@@ -1,4 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
+import { historicalEvents } from "../src/catalog/history.js";
 import { loadConfig } from "../src/config/env.js";
 import { createDatabase } from "../src/db/database.js";
 import { migrateToLatest } from "../src/db/migrate.js";
@@ -90,10 +91,51 @@ describe("event publication readiness", () => {
     expect(readiness.blockers).toContain("unsupported_heat");
   });
 
+  it("blocks research events that do not explain method, impact, and what to verify next", async () => {
+    const { db, repository } = await setup();
+    const event = (await repository.listEvents("published")).find(
+      (item) => item.slug === "openai-o1-test-time-reasoning",
+    );
+
+    const readiness = await evaluateEventReadiness(db, event?.id ?? "missing", {
+      category: "research",
+      technical_insight: "Only a result headline.",
+      industry_insight: "Too little context.",
+      future_outlook: "Wait.",
+    });
+
+    expect(readiness.status).toBe("blocked");
+    expect(readiness.blockers).toContain("thin_research_analysis");
+  });
+
+  it("accepts concise research analysis above the reduced depth floor", async () => {
+    const { db, repository } = await setup();
+    const event = (await repository.listEvents("published")).find(
+      (item) => item.slug === "openai-o1-test-time-reasoning",
+    );
+    const technical =
+      "The method compares controlled reasoning budgets across reproducible task variants.";
+    const industry = "This changes how teams compare model reliability and total task cost.";
+    const future = "Reproduce the result on private workloads and newer model versions.";
+    expect(technical.length).toBeGreaterThanOrEqual(56);
+    expect(industry.length).toBeGreaterThanOrEqual(36);
+    expect(future.length).toBeGreaterThanOrEqual(28);
+
+    const readiness = await evaluateEventReadiness(db, event?.id ?? "missing", {
+      category: "research",
+      technical_insight: technical,
+      industry_insight: industry,
+      future_outlook: future,
+    });
+
+    expect(readiness.status).toBe("ready");
+    expect(readiness.blockers).not.toContain("thin_research_analysis");
+  });
+
   it("summarizes blockers across the editorial backlog", async () => {
     const { db } = await setup();
     const summary = await eventReadinessSummary(db);
-    expect(summary.total).toBe(36);
+    expect(summary.total).toBe(historicalEvents.length + 6);
     expect(summary.ready).toBeGreaterThan(0);
     expect(summary.ready + summary.blocked).toBe(summary.total);
   });

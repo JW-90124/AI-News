@@ -18,6 +18,46 @@ afterEach(async () => {
 });
 
 describe("SQLite application", () => {
+  it("reuses an already collected canonical paper signal when seeding a curated event", async () => {
+    const config = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
+    const db = createDatabase(config);
+    databases.push(db);
+    await migrateToLatest(db, config);
+    await seedDatabase(db);
+    const slug = "predicatelongbench-long-context-difficulty";
+    const curated = await db
+      .selectFrom("events")
+      .select("id")
+      .where("slug", "=", slug)
+      .executeTakeFirstOrThrow();
+    const evidence = await db
+      .selectFrom("event_signals")
+      .select("signal_id")
+      .where("event_id", "=", curated.id)
+      .executeTakeFirstOrThrow();
+    await db.deleteFrom("events").where("id", "=", curated.id).execute();
+    await db
+      .updateTable("signals")
+      .set({ external_id: null })
+      .where("id", "=", evidence.signal_id)
+      .execute();
+
+    await expect(seedDatabase(db)).resolves.toBeUndefined();
+
+    const restored = await db
+      .selectFrom("events")
+      .select("id")
+      .where("slug", "=", slug)
+      .executeTakeFirstOrThrow();
+    await expect(
+      db
+        .selectFrom("event_signals")
+        .select("signal_id")
+        .where("event_id", "=", restored.id)
+        .executeTakeFirstOrThrow(),
+    ).resolves.toEqual({ signal_id: evidence.signal_id });
+  });
+
   it("migrates, seeds and exports a privacy-safe static site", async () => {
     const base = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
     const temp = await mkdtemp(join(tmpdir(), "agent-pulse-"));
@@ -73,39 +113,101 @@ describe("SQLite application", () => {
             item.score <= 45 && item.score <= item.scoreCap,
         ),
     ).toBe(true);
+    const publicSources = JSON.parse(
+      await readFile(join(config.distDir, "data/sources.json"), "utf8"),
+    );
+    expect(publicSources[0]).toMatchObject({
+      healthStatus: "unchecked",
+      lastCheckedAt: null,
+      latestItemAt: null,
+    });
+    expect(publicSources[0]).not.toHaveProperty("sample_json");
+    expect(publicSources[0]).not.toHaveProperty("error_summary");
     const staticPages = [
-      ["index.html", "Agent Pulse · 今日 AI 行业判断"],
-      ["lines/index.html", "AI 行业六条主线 · Agent Pulse"],
-      ["lines/tech-evolution/index.html", "技术演进主线 · Agent Pulse"],
-      ["timeline/index.html", "AI 行业证据时间轴 · Agent Pulse"],
-      ["scout/index.html", "星探机会 · Agent Pulse"],
-      ["actors/index.html", "中国 AI 角色雷达 · Agent Pulse"],
-      ["resources/index.html", "模型与 API 获取 · Agent Pulse"],
-      ["product/index.html", "能力、评测与路线图 · Agent Pulse"],
+      ["index.html", "今日 AI 行业判断 · Agent Pulse"],
+      ["lines/index.html", "趋势判断 · Agent Pulse"],
+      ["lines/tech-evolution/index.html", "技术演进 · Agent Pulse"],
+      ["timeline/index.html", "事件脉络 · Agent Pulse"],
+      ["scout/index.html", "行动参考 · Agent Pulse"],
+      ["actors/index.html", "关键参与者 · Agent Pulse"],
+      ["resources/index.html", "选型与成本 · Agent Pulse"],
+      ["product/index.html", "判断方法 · Agent Pulse"],
       ["changelog/index.html", "Changelog · Agent Pulse"],
-      ["sources/index.html", "AI 信息来源地图 · Agent Pulse"],
-      ["legal/index.html", "版权与来源政策 · Agent Pulse"],
+      ["sources/index.html", "覆盖与来源 · Agent Pulse"],
+      ["legal/index.html", "版权与纠错 · Agent Pulse"],
       ["404.html", "页面未找到 · Agent Pulse"],
     ] as const;
     for (const [path, title] of staticPages) {
       const html = await readFile(join(config.distDir, path), "utf8");
       expect(html, path).toContain(`<title>${title}</title>`);
       expect(html, path).toContain('rel="canonical"');
+      expect(html, path).toContain("data-event-drawer");
       expect(html, path).not.toContain("__PREFIX__");
       expect(html, path).not.toContain("/Users/");
     }
+    const englishActors = await readFile(join(config.distDir, "en/actors/index.html"), "utf8");
+    expect(englishActors).toContain('href="../../assets/icons.svg#sun"');
+    expect(englishActors).not.toContain('href="../assets/icons.svg#sun"');
+    expect(englishActors).toContain('data-timeline-src="../../data/timeline.json"');
     const home = await readFile(join(config.distDir, "index.html"), "utf8");
     expect(home).toContain("GPT-5.6");
-    expect(home.indexOf("今天，先判断这件事")).toBeLessThan(
+    expect(home).toContain("每天 10 分钟，看懂 AI 行业变化并形成判断");
+    expect(home).toContain("30 秒");
+    expect(home).toContain("3 分钟");
+    expect(home).toContain("10 分钟");
+    expect(home).toContain("本周值得读的技术论文");
+    expect(home).toContain("PredicateLongBench");
+    expect(home).toContain('class="github-star-button"');
+    expect(home).toContain('data-event-link="gpt-5-6-agent-platform-shift"');
+    expect(home.indexOf("今天最值得关注的变化")).toBeLessThan(
       home.indexOf("别追每条新闻。<em>看清变化的方向。</em>"),
     );
+    expect(home).not.toContain(">六条主线<");
+    expect(home).not.toContain(">证据时间轴<");
+    expect(home).not.toContain(">决策工具<");
+    const timelinePage = await readFile(join(config.distDir, "timeline/index.html"), "utf8");
+    expect(timelinePage).toContain("一个事件，一条完整脉络");
+    expect(timelinePage).toContain("最近进展");
+    expect(timelinePage).toContain('id="event-drawer"');
+    expect(timelinePage).toContain('aria-haspopup="dialog"');
+    expect(timelinePage).toContain('data-timeline-year="2026"');
+    expect(timelinePage).toContain('data-filter-track="research"');
+    expect(timelinePage).toContain('data-research="true"');
+    expect(timelinePage).not.toMatch(/data-category="(?:research|paper)" data-research="false"/);
+    expect(timelinePage).toContain('data-research-day="2026-07-09"');
+    expect(timelinePage).toContain("当天收录 6 篇研究");
+    for (const slug of [
+      "predicatelongbench-long-context-difficulty",
+      "compete-then-collaborate-multi-agent",
+      "autopersonas-agent-simulation-diversity",
+      "blind-spots-bench-vision-language",
+      "overthinking-secret-leakage-reasoning-models",
+      "causalds-causal-data-science-agents",
+    ]) {
+      expect(timelinePage).toContain(`data-event="${slug}"`);
+    }
+    expect(timelinePage).toContain("inert");
+    expect(timelinePage).not.toContain("data-event-panel");
+    const sourcesPage = await readFile(join(config.distDir, "sources/index.html"), "utf8");
+    expect(sourcesPage).toContain("我们持续看到了什么，又漏掉了什么");
+    for (const domain of ["Claude Code", "OpenAI / Codex", "Lovable", "MCP", "A2A"]) {
+      expect(sourcesPage).toContain(domain);
+    }
     const eventSlug = JSON.parse(timeline).events[0].slug as string;
     const eventPage = await readFile(
       join(config.distDir, "events", eventSlug, "index.html"),
       "utf8",
     );
-    expect(eventPage).toContain("事实陈述");
+    expect(eventPage).toContain("发生了什么");
+    expect(eventPage).toContain("事情是如何发展到今天的");
+    expect(eventPage).toContain("当前判断");
     expect(eventPage).toContain("原始证据");
+    const researchEventPage = await readFile(
+      join(config.distDir, "events", "predicatelongbench-long-context-difficulty", "index.html"),
+      "utf8",
+    );
+    expect(researchEventPage).toContain("研究预印本：方法和结果尚待独立复现");
+    expect(researchEventPage).toContain("核心贡献不是再增加一个平均分");
     const github = JSON.parse(await readFile(join(config.distDir, "data/github.json"), "utf8"));
     expect(github).toMatchObject({
       repositoryUrl: "https://github.com/barretlee/agent-pulse",
@@ -150,6 +252,20 @@ describe("SQLite application", () => {
     expect(funnel.json()).toMatchObject({
       signals: { backlog: expect.any(Number), deferred: expect.any(Number) },
       events: { ready: expect.any(Number), blocked: expect.any(Number) },
+    });
+    const sources = await app.inject({
+      method: "GET",
+      url: "/api/admin/sources",
+      headers: { authorization: "Bearer a-secure-token-for-tests" },
+    });
+    expect(sources.statusCode).toBe(200);
+    expect(sources.json()[0]).toMatchObject({
+      operations: {
+        activate: { allowed: expect.any(Boolean), healthyChecks: expect.any(Number) },
+        collect: { allowed: expect.any(Boolean) },
+        observe: { allowed: expect.any(Boolean) },
+        quarantine: { allowed: expect.any(Boolean) },
+      },
     });
     for (const url of [
       "/api/admin/source-checks",

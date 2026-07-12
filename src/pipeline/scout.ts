@@ -8,14 +8,19 @@ const kinds = ["venture", "media", "work"] as const;
 
 export async function runScout(db: Kysely<DatabaseSchema>, limit = 3) {
   const repository = new Repository(db);
-  const events = (await repository.listEvents("published"))
-    .sort((a, b) => b.value_score + b.impact_score - (a.value_score + a.impact_score))
-    .slice(0, Math.max(1, Math.min(limit, 10)));
+  const target = Math.max(1, Math.min(limit, 10));
+  const events = (await repository.listEvents("published")).sort(
+    (a, b) =>
+      b.value_score + b.impact_score - (a.value_score + a.impact_score) ||
+      Date.parse(b.updated_at) - Date.parse(a.updated_at),
+  );
+  const existingCount = (await repository.listScoutInsights()).length;
   let created = 0;
   let skipped = 0;
 
   for (const [index, event] of events.entries()) {
-    const kind = kinds[index % kinds.length] ?? "venture";
+    if (created >= target) break;
+    const kind = kinds[(existingCount + index) % kinds.length] ?? "venture";
     const cooldownKey = `${kind}:${event.slug}`;
     const since = new Date(Date.now() - COOLDOWN_MS).toISOString();
     if (await repository.findRecentScoutInsight(cooldownKey, since)) {
@@ -38,7 +43,13 @@ export async function runScout(db: Kysely<DatabaseSchema>, limit = 3) {
     );
     created += 1;
   }
-  return { scanned: events.length, created, skipped, mode: "deterministic-v1" };
+  return {
+    scanned: Math.min(events.length, created + skipped),
+    candidates: events.length,
+    created,
+    skipped,
+    mode: "deterministic-v2-rotating",
+  };
 }
 
 export function buildScoutCard(event: EventRow, kind: (typeof kinds)[number]) {

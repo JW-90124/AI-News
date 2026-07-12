@@ -11,8 +11,10 @@ import {
   applySourceFailure,
   applySourceSuccess,
   type SourceLifecycle,
+  transitionSource,
 } from "../domain/source-lifecycle.js";
 import type { CollectedSignal, SourceDescriptor } from "../domain/types.js";
+import { releaseObservationTriage } from "./observation.js";
 import { scoreSignal } from "./quality.js";
 
 export interface CollectionSummary {
@@ -60,6 +62,8 @@ export async function collectSources(
       }),
       result,
     );
+    // Auto-activate qualifying shadow sources after collection
+    await autoActivateQualifiedShadows(repository, db);
   } catch (error) {
     result.errors.push(`pipeline: ${message(error)}`);
   } finally {
@@ -331,6 +335,47 @@ export function isDiscoveryOnlySource(
   source: Pick<SourceRow, "role" | "source_category">,
 ): boolean {
   return source.role === "aggregator" || source.source_category === "aggregator";
+}
+
+export async function autoActivateQualifiedShadows(
+  repository: Repository,
+  db: Kysely<DatabaseSchema>,
+): Promise<{ activated: number; slugs: string[] }> {
+  const shadows = await db
+    .selectFrom("sources")
+    .selectAll()
+    .where("lifecycle_status", "=", "shadow")
+    .execute();
+
+  const activated: string[] = [];
+  for (const source of shadows) {
+    const checks = await repository.listSourceChecks(source.id, 100);
+    const healthyChecks = checks.filter((check) => check.status === "healthy");
+    const oldestHealthy = healthyChecks.at(-1);
+    const observationDays = oldestHealthy
+      ? (Date.now() - new Date(oldestHealthy.finished_at).getTime()) / 86_400_000
+      : 0;
+
+    if (checks[0]?.status === "healthy" && healthyChecks.length >= 20 && observationDays >= 7) {
+      const lifecycle = transitionSource(source.lifecycle_status, "auto_activate");
+      await db
+        .updateTable("sources")
+        .set({
+          lifecycle_status: lifecycle,
+          enabled: 1,
+          observation_enabled: 0,
+          maintenance_status: "ready",
+          retired_at: null,
+          last_verified_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        })
+        .where("id", "=", source.id)
+        .execute();
+      await releaseObservationTriage(db, source.id);
+      activated.push(source.slug);
+    }
+  }
+  return { activated: activated.length, slugs: activated };
 }
 
 export async function concurrentMap<T, R>(

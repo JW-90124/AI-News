@@ -110,6 +110,73 @@ describe("signal eventability triage", () => {
         .executeTakeFirstOrThrow(),
     ).toEqual({ reason: "shadow_observation" });
   });
+
+  it("creates a review event for a decision-relevant research contribution", async () => {
+    const { db, repository } = await setup();
+    const source = (await repository.listSources()).find((item) => item.slug === "arxiv-ai");
+    expect(source?.lifecycle_status).toBe("active");
+    await repository.insertSignal(source?.id ?? "missing", {
+      url: "https://arxiv.org/abs/2607.99991",
+      title: "FixtureLongBench: A benchmark for difficulty-aware long-context reasoning",
+      summary:
+        "This paper introduces a benchmark and controlled evaluation method for long-context reasoning in large language models. It varies retrieval difficulty, reasoning depth, and context length independently, then evaluates multiple frontier systems with reproducible artifacts. The study finds that accuracy degrades sharply as difficulty rises even when the relevant evidence remains inside the context window, which changes how teams should assess models for high-stakes document and agent workflows.",
+      language: "en",
+      publishedAt: "2026-07-12T00:00:00.000Z",
+      category: "research",
+      tags: ["benchmark", "long-context", "reasoning"],
+      metrics: {},
+      rawMeta: { quality: { score: 88 } },
+    });
+
+    const result = await clusterSignals(db);
+
+    expect(result).toMatchObject({ created: 1, deferred: 0 });
+    expect(
+      (await repository.listEvents("review")).some((event) =>
+        event.title.includes("FixtureLongBench"),
+      ),
+    ).toBe(true);
+  });
+
+  it("defers a thin research listing without a clear contribution", async () => {
+    const { db, repository } = await setup();
+    const source = (await repository.listSources()).find((item) => item.slug === "arxiv-ai");
+    await repository.insertSignal(source?.id ?? "missing", {
+      url: "https://arxiv.org/abs/2607.99992",
+      title: "Some observations about intelligent systems",
+      summary: "A short abstract without enough method, evidence, or decision context.",
+      language: "en",
+      publishedAt: "2026-07-12T00:00:00.000Z",
+      category: "research",
+      tags: [],
+      metrics: {},
+      rawMeta: { quality: { score: 90 } },
+    });
+
+    await expect(clusterSignals(db)).resolves.toMatchObject({ created: 0, deferred: 1 });
+  });
+
+  it("admits a concise but concrete research abstract into review", async () => {
+    const { db, repository } = await setup();
+    const source = (await repository.listSources()).find((item) => item.slug === "arxiv-ai");
+    const summary =
+      "This paper introduces a benchmark for tool-using language model agents. It evaluates planning, recovery, and grounded action across reproducible tasks, and reports where current agents fail under delayed feedback and limited context.";
+    expect(summary.length).toBeGreaterThanOrEqual(160);
+    expect(summary.length).toBeLessThan(240);
+    await repository.insertSignal(source?.id ?? "missing", {
+      url: "https://arxiv.org/abs/2607.99993",
+      title: "FixtureAgentBench: Evaluating tool-using language model agents",
+      summary,
+      language: "en",
+      publishedAt: "2026-07-12T00:00:00.000Z",
+      category: "research",
+      tags: ["benchmark", "agent"],
+      metrics: {},
+      rawMeta: { quality: { score: 82 } },
+    });
+
+    await expect(clusterSignals(db)).resolves.toMatchObject({ created: 1, deferred: 0 });
+  });
 });
 
 async function eventCount(db: ReturnType<typeof createDatabase>): Promise<number> {

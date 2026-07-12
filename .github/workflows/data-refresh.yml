@@ -59,6 +59,18 @@ jobs:
             npm run collect
           fi
 
+      - name: Reconcile sources and source radar
+        run: npm run ops:reconcile
+
+      - name: Generate fresh Scout inbox candidates
+        run: npm run scout:generate -- 5
+
+      - name: Evaluate measured system quality
+        run: npm run evaluate:system | tee "$RUNNER_TEMP/evaluation.json"
+
+      - name: Export public site as a contract check
+        run: npm run export -- --skip-seed
+
       - name: Write privacy-safe text snapshot
         run: npm run db:snapshot -- write
 
@@ -95,6 +107,13 @@ jobs:
           git rebase origin/main
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Upload quality evidence
+        uses: actions/upload-artifact@v7
+        with:
+          name: quality-evidence-${{ github.run_id }}
+          path: ${{ runner.temp }}/evaluation.json
+          retention-days: 14
 
       # Pushes made with GITHUB_TOKEN intentionally do not trigger other push workflows.
       - name: Dispatch Pages deployment for the new snapshot

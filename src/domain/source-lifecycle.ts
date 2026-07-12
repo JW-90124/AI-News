@@ -57,9 +57,21 @@ export function canRunScheduled(lifecycle: string): boolean {
 export function transitionSource(current: string, action: string): SourceLifecycle {
   const allowed: Record<string, Partial<Record<string, SourceLifecycle>>> = {
     draft: { verify: "shadow", retire: "retired" },
-    shadow: { activate: "active", quarantine: "quarantined", retire: "retired" },
+    shadow: {
+      activate: "active",
+      activate_strict: "active",
+      auto_activate: "active",
+      quarantine: "quarantined",
+      retire: "retired",
+    },
     active: { degrade: "degraded", quarantine: "quarantined", retire: "retired" },
-    degraded: { activate: "active", quarantine: "quarantined", retire: "retired" },
+    degraded: {
+      activate: "active",
+      activate_strict: "active",
+      auto_activate: "active",
+      quarantine: "quarantined",
+      retire: "retired",
+    },
     quarantined: { restore: "shadow", retire: "retired" },
     retired: { restore: "shadow" },
   };

@@ -193,6 +193,37 @@ describe("web-scraper adapter", () => {
     expect(result.length).toBeGreaterThanOrEqual(1);
   });
 
+  it("prefers a discovered feed when HTML cards only have inferred dates", async () => {
+    const pageHtml = `<!DOCTYPE html><html><head>
+      <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+    </head><body><article><h2><a href="/undated">Undated HTML card</a></h2></article></body></html>`;
+    const feedXml = `<rss><channel><item><title>Dated feed item</title><link>https://example.com/dated</link><pubDate>Wed, 08 Jul 2026 10:00:00 GMT</pubDate><description>Trusted date.</description></item></channel></rss>`;
+    const requests: string[] = [];
+    const context = makeContext("");
+    context.fetchText = async (url) => {
+      requests.push(url);
+      const responseBody = requests.length === 1 ? pageHtml : feedXml;
+      return {
+        body: responseBody,
+        status: 200,
+        headers: new Headers(),
+        attemptCount: 1,
+        responseBytes: responseBody.length,
+        finalUrl: url,
+      };
+    };
+
+    const result = await adapter.collect(makeSource(), context);
+
+    expect(requests).toEqual(["https://example.com", "https://example.com/feed.xml"]);
+    expect(result).toHaveLength(1);
+    expect(result[0]).toMatchObject({
+      title: "Dated feed item",
+      publishedAt: "2026-07-08T10:00:00.000Z",
+      rawMeta: { source: "discovered-feed", dateInferred: false },
+    });
+  });
+
   it("falls back to page meta when no articles found", async () => {
     const html = `<!DOCTYPE html><html><head>
       <meta property="og:title" content="Page Meta Title" />

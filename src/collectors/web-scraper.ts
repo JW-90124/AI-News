@@ -42,13 +42,17 @@ export const webScraperAdapter: SourceAdapter = {
     const listItems = extractListItems(body, source);
     results.push(...listItems);
 
-    // Strategy 4: Extract from RSS/Atom discovery links
+    // Strategy 4: Extract from RSS/Atom discovery links. HTML listing cards
+    // without a publication date cannot pass the collector contract, so they
+    // must not prevent a stable first-party feed from being used.
     const feedUrl = discoverFeed(body, source.homepageUrl);
-    if (feedUrl && results.length === 0) {
+    if (feedUrl && !results.some(hasTrustedPublicationDate)) {
       const { body: feedBody, status: feedStatus } = await context.fetchText(feedUrl);
       if (feedStatus === 200 && feedBody) {
         const feedItems = parseFeed(feedBody, source);
-        results.push(...feedItems);
+        if (feedItems.some(hasTrustedPublicationDate)) {
+          results.splice(0, results.length, ...feedItems);
+        }
       }
     }
 
@@ -69,6 +73,10 @@ export const webScraperAdapter: SourceAdapter = {
     return deduped.slice(0, source.config.take ?? MAX_ITEMS);
   },
 };
+
+function hasTrustedPublicationDate(item: CollectedSignal): boolean {
+  return item.rawMeta.dateInferred !== true && Number.isFinite(Date.parse(item.publishedAt));
+}
 
 // ─── JSON-LD Extraction ────────────────────────────────────────────────
 

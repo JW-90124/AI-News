@@ -43,8 +43,14 @@ jobs:
       - name: Audit every configured source
         run: npm run sources:audit -- --concurrency=4 --report=data/reports/source-health.json
 
+      - name: Reconcile unstable sources and radar
+        run: npm run ops:reconcile
+
       - name: Reconcile eligible shadow observation
         run: npm run observe:sources -- --confirm
+
+      - name: Activate only qualified observation sources
+        run: npm run activate:auto
 
       - name: Write privacy-safe snapshot with accumulated checks
         run: npm run db:snapshot -- write

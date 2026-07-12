@@ -140,6 +140,8 @@ export async function clusterSignals(
 
 export function eventabilityScore(signal: SignalRow, source?: SourceRow): number {
   if (!source || source.role === "aggregator" || source.source_category === "aggregator") return 0;
+  const researchSource = source.role === "research" || source.source_category === "research-eval";
+  const decisionRelevantResearch = researchSource && isDecisionRelevantResearch(signal);
   let score = source.tier === 1 ? 25 : source.tier === 2 ? 10 : 0;
   if (source.role === "primary" || source.role === "policy") score += 20;
   else if (source.role === "research") score += 10;
@@ -152,9 +154,11 @@ export function eventabilityScore(signal: SignalRow, source?: SourceRow): number
       "agent-devtool",
       "policy",
       "infra-chip-cloud",
+      "research-eval",
     ].includes(source.source_category)
   )
     score += 15;
+  if (decisionRelevantResearch) score += 25;
   if (
     /\breleas(?:e|ed|es|ing)|\blaunch(?:es|ed|ing)?|\bannounc(?:e|ed|es|ing)|\bintroduc(?:e|ed|es|ing)|\bavailable\b|availability|general(?:ly)? available|\bpreview(?:ing|ed)?\b|\badds?\b|now supports?|support for|open[- ]source|funding|acqui(?:re|red|sition)|regulation|policy|发布|推出|上线|可用|预览|新增|支持|开源|融资|并购|收购|监管|政策/i.test(
       signal.title,
@@ -165,7 +169,21 @@ export function eventabilityScore(signal: SignalRow, source?: SourceRow): number
   const quality = parseJson<{ quality?: { score?: number } }>(signal.raw_meta_json, {}).quality
     ?.score;
   if (typeof quality === "number" && quality >= 70) score += 10;
+  if (researchSource && !decisionRelevantResearch) return Math.min(65, score);
   return Math.min(100, score);
+}
+
+export function isDecisionRelevantResearch(signal: SignalRow): boolean {
+  const content = `${signal.title} ${signal.summary}`;
+  const hasResearchContribution =
+    /benchmark|dataset|framework|method|mechanism|architecture|evaluation|empirical|study|analysis|taxonomy|基准|数据集|框架|方法|机制|架构|评测|实证|研究/i.test(
+      content,
+    );
+  const hasDecisionDomain =
+    /large language model|\bLLMs?\b|agent|reasoning|long[- ]context|coding|code model|multimodal|vision[- ]language|training|inference|alignment|robot|memory|context compression|tool use|causal|智能体|推理|长上下文|编码|多模态|训练|推理|对齐|机器人|记忆|上下文压缩|工具使用|因果/i.test(
+      content,
+    );
+  return signal.summary.trim().length >= 160 && hasResearchContribution && hasDecisionDomain;
 }
 
 export async function rescoreEvent(repository: Repository, event: EventRow): Promise<void> {

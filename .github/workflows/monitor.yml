@@ -1,0 +1,91 @@
+name: Monitor system health
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: agent-pulse-monitor-main
+  cancel-in-progress: true
+
+env:
+  DATABASE_URL: sqlite:./var/monitor-check.db
+  PUBLIC_SITE_URL: https://barretlee.github.io/agent-pulse/
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Restore auditable repository snapshot
+        run: npm run db:snapshot -- restore
+
+      - name: Run monitor check
+        id: monitor
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run --silent monitor:check > "$RUNNER_TEMP/monitor.json" || true
+          jq -e . "$RUNNER_TEMP/monitor.json" >/dev/null
+          status="$(jq -r '.status // "critical"' "$RUNNER_TEMP/monitor.json")"
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          jq . "$RUNNER_TEMP/monitor.json"
+
+      - name: Upload monitor evidence
+        uses: actions/upload-artifact@v7
+        with:
+          name: monitor-${{ github.run_id }}
+          path: ${{ runner.temp }}/monitor.json
+          retention-days: 7
+
+      - name: Update the single monitor incident
+        if: steps.monitor.outputs.status == 'critical'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          report="$RUNNER_TEMP/monitor.json"
+          body="$RUNNER_TEMP/monitor-issue.md"
+          {
+            echo '<!-- agent-pulse-monitor:v1 -->'
+            echo '# Agent Pulse 自动监控告警'
+            echo
+            echo "- 时间：$(jq -r '.timestamp' "$report")"
+            echo "- 系统分：$(jq -r '.systemScore' "$report") / 100"
+            echo "- 状态：$(jq -r '.status' "$report")"
+            echo
+            echo '## 问题'
+            jq -r '.issues[]? | "- " + .' "$report"
+            echo
+            echo '## 建议动作'
+            jq -r '.recommendations[]? | "- " + .' "$report"
+            echo
+            echo "[查看本次 Actions 运行](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+          } > "$body"
+          gh label create "monitor:critical" --color d73a4a --description "Automated critical monitor incident" --force
+          issue="$(gh issue list --state open --label 'monitor:critical' --limit 1 --json number --jq '.[0].number // empty')"
+          if [[ -n "$issue" ]]; then
+            gh issue edit "$issue" --body-file "$body"
+          else
+            gh issue create --title "[Monitor] Agent Pulse critical health incident" --label "monitor:critical" --body-file "$body"
+          fi

@@ -219,6 +219,145 @@ export async function probeQuarantinedSources(
   }));
 }
 
+// ─── Alert & Severity ────────────────────────────────────────────────────
+
+/**
+ * Returns true if the monitor report indicates a critical state.
+ * A report is critical when:
+ *  - the site is unavailable (passed via options), or
+ *  - more than 30% of non-shadow sources are quarantined/failed, or
+ *  - the average health score is below 20.
+ */
+export function isCritical(report: MonitorReport, options?: { siteAvailable?: boolean }): boolean {
+  if (options?.siteAvailable === false) return true;
+
+  const effective = report.totalSources - report.shadowSources - report.draftSources;
+  if (effective <= 0) return false;
+
+  const failedRatio = (report.quarantinedSources + report.retiredSources) / effective;
+  if (failedRatio > 0.3) return true;
+
+  if (report.avgHealthScore < 20) return true;
+
+  return false;
+}
+
+/**
+ * Derive the overall severity level from a monitor report.
+ */
+export function getSeverityLevel(
+  report: MonitorReport,
+  options?: { siteAvailable?: boolean },
+): "critical" | "warning" | "ok" {
+  if (isCritical(report, options)) return "critical";
+
+  const effective = report.totalSources - report.shadowSources - report.draftSources;
+  if (effective <= 0) return "ok";
+
+  const degradedRatio = report.degradedSources / effective;
+  if (degradedRatio > 0.1 || report.avgHealthScore < 40) return "warning";
+
+  const criticalGaps = report.coverageGaps.filter((g) => g.severity === "critical");
+  if (criticalGaps.length > 0) return "warning";
+
+  return "ok";
+}
+
+/**
+ * Generate a structured email alert body from a monitor report.
+ * Produces a plain-text message with what happened, root cause, and fix suggestions.
+ */
+export function generateAlertEmail(report: MonitorReport): { subject: string; body: string } {
+  const lines: string[] = [];
+  const push = (text: string) => lines.push(text);
+
+  push("=== Agent Pulse — Critical Alert ===");
+  push(`Generated: ${report.timestamp}`);
+  push("");
+
+  // What happened
+  push("--- What Happened ---");
+  push(`Total sources: ${report.totalSources}`);
+  push(
+    `Active: ${report.activeSources} | Degraded: ${report.degradedSources} | Quarantined: ${report.quarantinedSources} | Retired: ${report.retiredSources}`,
+  );
+  push(`Average health score: ${report.avgHealthScore}/100`);
+  push(`Audit healthy rate: ${report.auditHealthyPercent ?? "N/A"}%`);
+  if (report.sourcesNeedingAttention.length > 0) {
+    push("");
+    push("Sources needing attention (top 5):");
+    for (const s of report.sourcesNeedingAttention.slice(0, 5)) {
+      push(
+        `  - ${s.slug} [${s.lifecycle}] health=${s.healthScore} failures=${s.consecutiveFailures}`,
+      );
+    }
+  }
+
+  // Root cause
+  push("");
+  push("--- Root Cause ---");
+  if (report.avgHealthScore < 20) {
+    push("- Critically low average health score indicates systemic issues.");
+  }
+  const failed = report.quarantinedSources;
+  const effective = report.totalSources - report.shadowSources - report.draftSources;
+  if (effective > 0 && failed / effective > 0.3) {
+    push(
+      `- ${failed}/${effective} active sources are quarantined (${Math.round((failed / effective) * 100)}%).`,
+    );
+  }
+  if (report.degradedSources > 0) {
+    push(`- ${report.degradedSources} sources are in a degraded state.`);
+  }
+  const failedChecks = report.repairableCheckedSources ?? 0;
+  if (failedChecks > 0) {
+    push(`- Latest audit found ${failedChecks} sources with failed/degraded checks.`);
+  }
+
+  // Gaps
+  const criticalGaps = report.coverageGaps.filter((g) => g.severity === "critical");
+  if (criticalGaps.length > 0) {
+    push("");
+    push("Critical coverage gaps:");
+    for (const gap of criticalGaps) {
+      push(`  - ${gap.label}: ${gap.current}/${gap.target} sources`);
+    }
+  }
+
+  // Fix suggestions
+  push("");
+  push("--- Suggested Fixes ---");
+  if (report.avgHealthScore < 20) {
+    push("- Run `npm run sources:audit` to re-check all sources and identify failing endpoints.");
+    push("- Review disconnected or permanently changed upstream feeds.");
+  }
+  if (failed > 0) {
+    push("- Check quarantined sources: review error logs and decide whether to repair or retire.");
+    push("- Update adapter configurations or endpoint URLs as needed.");
+  }
+  if (report.degradedSources > 0) {
+    push("- Inspect degraded sources for network issues or rate limiting.");
+    push("- Run `npm run monitor -- --fix` to apply adaptive health transitions.");
+  }
+  if (failedChecks > 0) {
+    push("- Run `npm run sources:audit -- --concurrency=4` for detailed per-source diagnostics.");
+  }
+  push("- Review the full health report at: https://github.com/barretlee/agent-pulse/actions");
+  push("");
+
+  push("=== End of Alert ===");
+
+  // Build subject
+  let subjectSummary = "";
+  if (report.avgHealthScore < 20) subjectSummary = "System health score critically low";
+  else if (failed > 0) subjectSummary = `${failed} sources quarantined`;
+  else subjectSummary = "Critical system anomaly detected";
+
+  const subject = `AGENT-PULSE CRITICAL: ${subjectSummary}`;
+
+  return { subject, body: lines.join("\n") };
+}
+
 // ─── Coverage Analysis ────────────────────────────────────────────────────
 
 interface CoverageTarget {
