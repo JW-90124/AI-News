@@ -1,7 +1,10 @@
 import { describe, expect, it } from "vitest";
+import { ecosystemEvidenceSources20260714 } from "../src/catalog/ecosystem-evidence-sources-2026-07.js";
 import { influencerCatalog } from "../src/catalog/influencers.js";
 import { capabilities, releases, roadmap } from "../src/catalog/product.js";
+import { sourceExpansionWave20260713 } from "../src/catalog/source-expansion-2026-07.js";
 import { sourceCatalog } from "../src/catalog/sources.js";
+import { vendorEvidenceSources20260714 } from "../src/catalog/vendor-evidence-sources-2026-07.js";
 
 describe("knowledge source catalog", () => {
   it("has at least 100 unique, classified and safe-by-default sources", () => {
@@ -42,14 +45,119 @@ describe("knowledge source catalog", () => {
     expect(releaseSources.every((source) => source.lifecycleStatus === "shadow")).toBe(true);
   });
 
+  it("adds official macro and filing sources without activating unverified collectors", () => {
+    const supplementalSlugs = [
+      "fred",
+      "alfred",
+      "imf-weo",
+      "bis-credit-gaps",
+      "bls-public-data",
+      "bea-api",
+      "us-treasury-fiscal-data",
+      "ecb-data-portal",
+      "nbs-china",
+      "pboc-statistics",
+      "oecd-data-explorer",
+      "world-bank-indicators",
+      "eurostat-data",
+      "sec-edgar",
+      "cninfo",
+      "sse-announcements",
+      "szse-announcements",
+      "nasdaq-data-link",
+    ];
+    const supplemental = sourceCatalog.filter((source) => supplementalSlugs.includes(source.slug));
+
+    expect(supplemental).toHaveLength(supplementalSlugs.length);
+    expect(supplemental.every((source) => source.tier === 1)).toBe(true);
+    expect(supplemental.every((source) => !source.enabled)).toBe(true);
+    expect(supplemental.every((source) => source.lifecycleStatus === "shadow")).toBe(true);
+    expect(
+      supplemental.every((source) =>
+        ["candidate", "manual", "restricted"].includes(source.maintenanceStatus),
+      ),
+    ).toBe(true);
+    expect(
+      supplemental
+        .filter((source) => source.region === "CN")
+        .every((source) => source.acquisition === "manual"),
+    ).toBe(true);
+    expect(sourceCatalog.find((source) => source.slug === "nasdaq-data-link")).toMatchObject({
+      maintenanceStatus: "restricted",
+      enabled: false,
+    });
+  });
+
+  it("adds exactly 100 diverse wave-2 sources behind the shadow gate", () => {
+    const wave = sourceExpansionWave20260713;
+
+    expect(wave).toHaveLength(100);
+    expect(new Set(wave.map((source) => source.slug)).size).toBe(100);
+    expect(new Set(wave.map((source) => source.endpoint)).size).toBe(100);
+    expect(wave.filter((source) => source.acquisition === "github")).toHaveLength(80);
+    expect(wave.filter((source) => source.acquisition === "rss")).toHaveLength(20);
+    expect(wave.filter((source) => source.region === "CN").length).toBeGreaterThanOrEqual(15);
+    expect(wave.filter((source) => source.category === "robotics")).toHaveLength(10);
+    expect(
+      wave.filter((source) => source.category === "agent-devtool").length,
+    ).toBeGreaterThanOrEqual(25);
+    expect(
+      wave.filter((source) =>
+        ["research-eval", "open-source", "infra-chip-cloud"].includes(source.category),
+      ).length,
+    ).toBeGreaterThanOrEqual(25);
+    expect(wave.every((source) => source.enabled === false)).toBe(true);
+    expect(wave.every((source) => source.lifecycleStatus === "shadow")).toBe(true);
+    expect(wave.every((source) => source.maintenanceStatus === "candidate")).toBe(true);
+    expect(
+      wave.every((source) =>
+        source.acquisition === "github"
+          ? source.adapter === "github-releases"
+          : source.adapter === "rss",
+      ),
+    ).toBe(true);
+    expect(wave.every((source) => source.licenseNote.length > 40)).toBe(true);
+    expect(wave.every((source) => sourceCatalog.some((entry) => entry.slug === source.slug))).toBe(
+      true,
+    );
+  });
+
+  it("keeps the priority vendor evidence network broad and shadow-first", () => {
+    const vendorSources = [...vendorEvidenceSources20260714, ...ecosystemEvidenceSources20260714];
+
+    expect(vendorEvidenceSources20260714).toHaveLength(12);
+    expect(ecosystemEvidenceSources20260714).toHaveLength(15);
+    expect(vendorSources).toHaveLength(27);
+    expect(new Set(vendorSources.map((source) => source.slug)).size).toBe(27);
+    expect(new Set(vendorSources.map((source) => source.endpoint)).size).toBe(27);
+    expect(vendorSources.filter((source) => source.acquisition === "rss")).toHaveLength(17);
+    expect(vendorSources.filter((source) => source.acquisition === "html")).toHaveLength(10);
+    expect(vendorSources.every((source) => source.tier === 1)).toBe(true);
+    expect(vendorSources.every((source) => source.role === "primary")).toBe(true);
+    expect(vendorSources.every((source) => source.enabled === false)).toBe(true);
+    expect(vendorSources.every((source) => source.lifecycleStatus === "shadow")).toBe(true);
+    expect(vendorSources.every((source) => source.maintenanceStatus === "candidate")).toBe(true);
+    expect(
+      vendorSources.every((source) =>
+        source.acquisition === "rss" ? source.adapter === "rss" : source.adapter === "web-scraper",
+      ),
+    ).toBe(true);
+    expect(
+      vendorSources.every((source) => sourceCatalog.some((entry) => entry.slug === source.slug)),
+    ).toBe(true);
+  });
+
   it("keeps roadmap and releases tied to capability evidence", () => {
     expect(roadmap).toHaveLength(5);
     expect(roadmap.every((state) => state.milestones.length >= 3)).toBe(true);
     expect(capabilities.length).toBeGreaterThanOrEqual(25);
     expect(capabilities.every((capability) => capability.evidence.length > 10)).toBe(true);
-    expect(releases[0]?.capabilities.length).toBeGreaterThanOrEqual(5);
-    expect(releases[0]).toMatchObject({ version: "0.8.1" });
-    expect(releases[1]).toMatchObject({ version: "0.8.0" });
+    expect(releases[0]).toMatchObject({ version: "unreleased", status: "unreleased" });
+    expect(releases[1]?.capabilities.length).toBeGreaterThanOrEqual(5);
+    expect(releases[1]).toMatchObject({ version: "0.10.0", status: "released" });
+    expect(releases[2]).toMatchObject({ version: "0.9.0", status: "released" });
+    expect(releases[3]).toMatchObject({ version: "0.8.1" });
+    expect(releases[4]).toMatchObject({ version: "0.8.0" });
   });
 
   it("keeps a unique, public and policy-aware AI influencer matrix", () => {

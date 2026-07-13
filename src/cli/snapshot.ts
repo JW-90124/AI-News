@@ -5,24 +5,25 @@ import { seedDatabase } from "../db/seed.js";
 import { restoreRepositorySnapshot, writeRepositorySnapshot } from "../pipeline/snapshot.js";
 
 const command = process.argv[2];
-if (command !== "restore" && command !== "write") {
-  throw new Error("Usage: npm run db:snapshot -- <restore|write>");
+if (command !== "restore" && command !== "merge" && command !== "write") {
+  throw new Error("Usage: npm run db:snapshot -- <restore|merge|write> [--file=<path>]");
 }
+const snapshotFile = process.argv.find((argument) => argument.startsWith("--file="))?.slice(7);
 
 const config = loadConfig();
 const db = createDatabase(config);
 try {
   await migrateToLatest(db, config);
   const result =
-    command === "restore"
-      ? await restoreSnapshot()
-      : await writeRepositorySnapshot(db, config.rootDir);
+    command === "restore" || command === "merge"
+      ? await restoreSnapshot(command === "restore")
+      : await writeRepositorySnapshot(db, config.rootDir, snapshotFile);
   console.log(JSON.stringify(result, null, 2));
 } finally {
   await db.destroy();
 }
 
-async function restoreSnapshot() {
-  await seedDatabase(db);
-  return restoreRepositorySnapshot(db, config.rootDir);
+async function restoreSnapshot(seed: boolean) {
+  if (seed) await seedDatabase(db);
+  return restoreRepositorySnapshot(db, config.rootDir, snapshotFile);
 }

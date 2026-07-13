@@ -17,8 +17,22 @@ describe("GitHub source governance workflows", () => {
       audit.indexOf("npm run sources:audit"),
     );
     expect(audit.indexOf("npm run sources:audit")).toBeLessThan(
+      audit.indexOf("npm run db:snapshot -- merge"),
+    );
+    expect(audit.indexOf("git fetch origin main")).toBeLessThan(
+      audit.indexOf("npm run db:snapshot -- merge"),
+    );
+    expect(audit.indexOf("npm run db:snapshot -- merge")).toBeLessThan(
       audit.indexOf("npm run db:snapshot -- write"),
     );
+    expect(refresh.indexOf("git fetch origin main")).toBeLessThan(
+      refresh.indexOf("npm run db:snapshot -- merge"),
+    );
+    expect(refresh.indexOf("npm run db:snapshot -- merge")).toBeLessThan(
+      refresh.indexOf("npm run db:snapshot -- write"),
+    );
+    expect(audit).not.toContain("git push --force");
+    expect(refresh).not.toContain("git push --force");
     expect(audit).toContain("npm run observe:sources -- --confirm");
     expect(audit).toContain("gh workflow run pages.yml --ref main");
     expect(audit).toContain("agent-pulse-source-health-summary:v1");
@@ -50,9 +64,9 @@ describe("GitHub source governance workflows", () => {
     expect(pages.indexOf("gh api")).toBeLessThan(pages.indexOf("npm run export"));
   });
 
-  it("refreshes content six times daily and runs the autonomous publication loop", async () => {
+  it("refreshes daily and deploys Pages after each successful refresh", async () => {
     const refresh = await workflow("data-refresh.yml");
-    expect(refresh).toContain('cron: "17 */4 * * *"');
+    expect(refresh).toContain('cron: "17 12 * * *"');
     for (const command of [
       "npm run collect",
       "npm run ops:reconcile",
@@ -61,18 +75,36 @@ describe("GitHub source governance workflows", () => {
       "npm run scout:generate -- 12",
       "npm run auto:publish",
       "npm run evaluate:system",
+      "npm run --silent public:fingerprint",
       "npm run db:snapshot -- write",
       "gh workflow run pages.yml --ref main",
     ]) {
       expect(refresh).toContain(command);
     }
+    expect(refresh).not.toContain("daily:issue");
+    expect(refresh).not.toContain("agent-pulse-daily-brief");
+    expect(refresh).toContain("Dispatch Pages deployment after the daily refresh");
+    expect(refresh).not.toContain(
+      "steps.commit.outputs.changed == 'true' && steps.public.outputs.changed == 'true'",
+    );
+    const audit = await workflow("source-audit.yml");
+    expect(audit).toContain('cron: "37 22 * * 6"');
+    expect(audit).toContain("public:fingerprint -- --include-sources");
+    expect(audit).toContain(
+      "steps.commit.outputs.changed == 'true' && steps.public.outputs.changed == 'true'",
+    );
   });
 
-  it("dispatches one cooled-down refresh when measured quality is below 60", async () => {
-    const guard = await workflow("quality-guard.yml");
-    expect(guard).toContain('cron: "47 */2 * * *"');
+  it("runs weekly guards and dispatches one cooled-down refresh when quality is below 60", async () => {
+    const [guard, monitor] = await Promise.all([
+      workflow("quality-guard.yml"),
+      workflow("monitor.yml"),
+    ]);
+    expect(guard).toContain('cron: "47 0 * * 1"');
+    expect(monitor).toContain('cron: "17 0 * * 1"');
+    expect(monitor).toContain("9 * 24 * 60 * 60 * 1000");
     expect(guard).toContain("QUALITY_FLOOR: 60");
-    expect(guard).toContain("REFRESH_COOLDOWN_HOURS: 2");
+    expect(guard).toContain("REFRESH_COOLDOWN_HOURS: 120");
     expect(guard).toContain("gh run list --workflow data-refresh.yml");
     expect(guard).toContain("gh workflow run data-refresh.yml --ref main --field mode=incremental");
   });

@@ -24,3 +24,7 @@ export function getAdapter(kind: string): SourceAdapter {
   if (!adapter) throw new Error(`Unknown source adapter: ${kind}`);
   return adapter;
 }
+
+export function hasAdapter(kind: string): boolean {
+  return adapters.has(kind);
+}

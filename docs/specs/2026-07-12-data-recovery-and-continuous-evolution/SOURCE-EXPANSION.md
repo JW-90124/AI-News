@@ -64,3 +64,34 @@ E3 只允许 Signal 进入观察与可逆分诊池，不能生成或补强公开
 2. 维持“90 天内更新且质量不低于 60”的 104 个严格实时有效源，并优先补中国厂商官方公告、资本机构原始文章和中美欧政策机构稳定 feed，降低工程 release 流的占比；
 3. 为同一厂商的多个仓库维护 owner / media-group 身份，避免它们在多源交叉验证中被误算为独立证据；
 4. 对 release notes 增加 breaking-change、capability、pricing、security 和 deprecation 事件分类，避免把每个补丁版本都升级为行业事件。
+
+## 2026-07-13 Wave 2 实测
+
+在既有目录和宏观/披露候选池之上，新增 100 个 disabled + shadow 来源：80 个官方 GitHub Release Feed、20 个官方研究/产业/政策/资本 RSS 或 Atom。最终清单经过两轮 endpoint 探测、全量 source audit 和一次 E3 隔离采集。
+
+```text
+Catalog entries                         384
+
+Full audit
+  healthy                               243
+  degraded                               24
+  failed                                 65
+  manual / policy skipped                52
+  with valid content                    252
+  effective                             225
+  effective + latest <= 90 days         198
+
+Wave 2 (100 sources)
+  healthy                               100
+  effective                              95
+  effective + latest <= 90 days          86
+  audited items                        1092
+  E3 sources collected                   86
+  collected items                       940
+  created Signals                       939
+  collection errors                       0
+```
+
+`cisa-news-feed`、`federal-reserve-press-feed`、`inspect-ai-releases`、`radical-ventures-feed` 和 `gradient-feed` 虽可稳定解析，但批次质量只有 54–59，继续留在 Shadow；另有 9 个有效但超过 90 天未更新的来源不进入 E3。TensorFlow Blog Feed 因本机 DNS 安全前置检查无法解析，未放宽 SSRF 门禁，改用经复测健康的 CISA 官方 Feed 补充基础设施安全与政策覆盖。
+
+快照：`data/snapshot/v1.json`。健康报告：`data/reports/source-health.json`。

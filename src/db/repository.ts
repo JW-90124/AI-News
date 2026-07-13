@@ -294,6 +294,32 @@ export class Repository {
     return [...latest.values()];
   }
 
+  async publicSignals() {
+    return this.db
+      .selectFrom("signals")
+      .innerJoin("sources", "sources.id", "signals.source_id")
+      .select([
+        "signals.title",
+        "signals.summary",
+        "signals.canonical_url as url",
+        "signals.published_at as publishedAt",
+        "signals.collected_at as collectedAt",
+        "signals.category",
+        "signals.tags_json as tagsJson",
+        "signals.language",
+        "sources.slug as sourceSlug",
+        "sources.name as sourceName",
+        "sources.tier as sourceTier",
+        "sources.role as sourceRole",
+        "sources.region as sourceRegion",
+      ])
+      .where("sources.role", "!=", "aggregator")
+      .where("sources.source_category", "!=", "aggregator")
+      .orderBy("signals.published_at", "desc")
+      .orderBy("signals.collected_at", "desc")
+      .execute();
+  }
+
   async listScoutInsights(status?: string) {
     let query = this.db.selectFrom("scout_insights").selectAll();
     if (status) query = query.where("status", "=", status);
@@ -787,6 +813,30 @@ export class Repository {
       .where("url_hash", "=", urlHash)
       .executeTakeFirst();
     if (existing) {
+      const timestamp = now();
+      await this.upsertSignalObservation(existing.id, sourceId, item, canonicalUrl, timestamp);
+      const existingTags = parseJson<string[]>(existing.tags_json, []);
+      const incomingTags = item.tags.slice(0, 20);
+      const tags = [...new Set([...existingTags, ...incomingTags])].slice(0, 20);
+      const existingMetrics = parseJson<Record<string, unknown>>(existing.metrics_json, {});
+      const title =
+        item.title.length > existing.title.length ? item.title.slice(0, 2_000) : existing.title;
+      const summary =
+        item.summary.length > existing.summary.length
+          ? item.summary.slice(0, 8_000)
+          : existing.summary;
+      await this.db
+        .updateTable("signals")
+        .set({
+          title,
+          summary,
+          author: existing.author ?? item.author?.slice(0, 255) ?? null,
+          tags_json: json(tags),
+          metrics_json: json({ ...existingMetrics, ...item.metrics }),
+          updated_at: timestamp,
+        })
+        .where("id", "=", existing.id)
+        .execute();
       await this.mergePendingDiscoveriesIntoSignal(existing);
       return undefined;
     }
@@ -816,6 +866,7 @@ export class Repository {
         updated_at: timestamp,
       })
       .execute();
+    await this.upsertSignalObservation(id, sourceId, item, canonicalUrl, timestamp);
     const inserted = await this.db
       .selectFrom("signals")
       .selectAll()
@@ -824,6 +875,58 @@ export class Repository {
     if (!inserted) return undefined;
     await this.mergePendingDiscoveriesIntoSignal(inserted);
     return this.db.selectFrom("signals").selectAll().where("id", "=", id).executeTakeFirst();
+  }
+
+  private async upsertSignalObservation(
+    signalId: string,
+    sourceId: string,
+    item: CollectedSignal,
+    canonicalUrl: string,
+    timestamp: string,
+  ): Promise<void> {
+    const existing = await this.db
+      .selectFrom("signal_observations")
+      .selectAll()
+      .where("signal_id", "=", signalId)
+      .where("source_id", "=", sourceId)
+      .executeTakeFirst();
+    await this.db
+      .insertInto("signal_observation_occurrences")
+      .values({
+        id: existing ? randomUUID() : `initial:${sha256(`${canonicalUrl}:${sourceId}`)}`,
+        signal_id: signalId,
+        source_id: sourceId,
+        observed_at: timestamp,
+        count_delta: 1,
+      })
+      .onConflict((conflict) => conflict.column("id").doNothing())
+      .execute();
+    if (existing) {
+      await this.db
+        .updateTable("signal_observations")
+        .set({
+          external_id: item.externalId ?? existing.external_id,
+          observed_url: canonicalUrl,
+          last_seen_at: timestamp,
+          observation_count: existing.observation_count + 1,
+        })
+        .where("signal_id", "=", signalId)
+        .where("source_id", "=", sourceId)
+        .execute();
+      return;
+    }
+    await this.db
+      .insertInto("signal_observations")
+      .values({
+        signal_id: signalId,
+        source_id: sourceId,
+        external_id: item.externalId ?? null,
+        observed_url: canonicalUrl,
+        first_seen_at: timestamp,
+        last_seen_at: timestamp,
+        observation_count: 1,
+      })
+      .execute();
   }
 
   async listUnclusteredSignals(limit = 200): Promise<SignalRow[]> {

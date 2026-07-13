@@ -6,6 +6,7 @@ export type PageKey =
   | "home"
   | "lines"
   | "timeline"
+  | "signals"
   | "scout"
   | "actors"
   | "resources"
@@ -85,6 +86,11 @@ export function pageLayout(input: PageChrome): string {
     { key: "home", label: t("nav.home", locale), route: "" },
     { key: "lines", label: t("nav.lines", locale), route: "lines/" },
     { key: "timeline", label: t("nav.timeline", locale), route: "timeline/" },
+    {
+      key: "signals",
+      label: locale === "en" ? "Source Updates" : "来源动态",
+      route: "signals/",
+    },
     { key: "scout", label: t("nav.scout", locale), route: "scout/" },
   ];
   const navHtml = navItems
@@ -98,8 +104,13 @@ export function pageLayout(input: PageChrome): string {
     { key: "home", icon: "home", label: t("mobile.home", locale), route: "" },
     { key: "lines", icon: "route", label: t("mobile.lines", locale), route: "lines/" },
     { key: "timeline", icon: "clock", label: t("mobile.timeline", locale), route: "timeline/" },
+    {
+      key: "signals",
+      icon: "menu",
+      label: locale === "en" ? "Updates" : "动态",
+      route: "signals/",
+    },
     { key: "scout", icon: "sparkles", label: t("mobile.scout", locale), route: "scout/" },
-    { key: "sources", icon: "menu", label: t("mobile.more", locale), route: "sources/" },
   ];
 
   // ── Language switcher ───────────────────────────────────────
@@ -166,6 +177,7 @@ export function pageLayout(input: PageChrome): string {
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(hreflangZhUrl)}">
   <link rel="icon" href="${assetPrefix}assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${assetPrefix}assets/app.css">
+  <script type="module" src="${assetPrefix}assets/core.js"></script>
   <script type="application/ld+json">${escapeHtml(JSON.stringify(websiteJsonLd))}</script>
   ${(input.jsonLd ?? []).map((obj) => `<script type="application/ld+json">${escapeHtml(JSON.stringify(obj))}</script>`).join("\n  ")}
   <title>${escapeHtml(input.title)}</title>
@@ -179,7 +191,6 @@ export function pageLayout(input: PageChrome): string {
     </a>
     <nav class="desktop-nav" aria-label="${escapeHtml(t("ui.desktopNav", locale))}">${navHtml}</nav>
     <div class="top-actions">
-      <a class="lang-switcher" href="${escapeHtml(otherLocaleHref)}" aria-label="${escapeHtml(t("lang.label", locale))}">${t("brand.switchLang", locale)}</a>
       <button class="icon-button" data-theme-toggle type="button" aria-label="${escapeHtml(t("ui.toggleTheme", locale))}">${icon("sun")}</button>
       ${githubStarButton(input.github, locale)}
     </div>
@@ -188,16 +199,15 @@ export function pageLayout(input: PageChrome): string {
   ${eventDrawerShell(locale, assetPrefix, prefix)}
   <footer class="site-footer">
     <div class="shell footer-grid">
-      <div><strong>AGENT PULSE</strong><p>${escapeHtml(t("footer.tagline", locale))}</p></div>
-      <nav aria-label="${escapeHtml(t("ui.footerNav", locale))}">
-        <a href="${prefix}lines/">${escapeHtml(t("footer.lines", locale))}</a>
-        <a href="${prefix}timeline/">${escapeHtml(t("footer.timeline", locale))}</a>
-        <a href="${prefix}scout/">${escapeHtml(t("footer.scout", locale))}</a>
-        <a href="${prefix}sources/">${escapeHtml(t("footer.sources", locale))}</a>
-        <a href="${prefix}legal/">${escapeHtml(t("footer.legal", locale))}</a>
-        <a href="${prefix}changelog/">${escapeHtml(t("footer.changelog", locale))}</a>
-      </nav>
+      <div class="footer-brand"><strong>AGENT PULSE</strong><p>${escapeHtml(t("footer.tagline", locale))}</p>${footerSubscriptions(input.github, locale)}</div>
+      <div class="footer-links">
+        <nav aria-label="${locale === "en" ? "Explore" : "探索"}"><span>${locale === "en" ? "EXPLORE" : "探索"}</span><a href="${prefix}lines/">${escapeHtml(t("footer.lines", locale))}</a><a href="${prefix}industry-evolution/">${locale === "en" ? "Industry Evolution" : "行业演化"}</a><a href="${prefix}timeline/">${escapeHtml(t("footer.timeline", locale))}</a><a href="${prefix}signals/">${locale === "en" ? "Source updates" : "来源动态"}</a><a href="${prefix}scout/">${escapeHtml(t("footer.scout", locale))}</a><a href="${prefix}sources/">${escapeHtml(t("footer.sources", locale))}</a></nav>
+        <nav aria-label="${locale === "en" ? "More" : "更多"}"><span>${locale === "en" ? "MORE" : "更多"}</span><a href="${prefix}actors/">${escapeHtml(t("tab.actors", locale))}</a><a href="${prefix}resources/">${escapeHtml(t("tab.resources", locale))}</a><a href="${prefix}legal/">${escapeHtml(t("footer.legal", locale))}</a><a href="${prefix}changelog/">${escapeHtml(t("footer.changelog", locale))}</a></nav>
+      </div>
+    </div>
+    <div class="shell footer-meta">
       <p>${t("footer.generatedAt", locale).replace("{date}", formatDate(input.generatedAt, locale))}</p>
+      <div><a class="footer-lang" href="${escapeHtml(otherLocaleHref)}" aria-label="${escapeHtml(t("lang.label", locale))}">${t("brand.switchLang", locale)}</a><span>OPEN SOURCE · STATIC BY DEFAULT</span></div>
     </div>
   </footer>
   <nav class="mobile-nav" aria-label="${escapeHtml(t("ui.mobileNav", locale))}">
@@ -208,11 +218,17 @@ export function pageLayout(input: PageChrome): string {
       )
       .join("")}
   </nav>
-  <script type="module" src="${assetPrefix}assets/core.js"></script>
 </body>
 </html>`
     .replaceAll("__ASSET_PREFIX__", assetPrefix)
     .replaceAll("__PREFIX__", prefix);
+}
+
+function footerSubscriptions(github: GithubData, locale: Locale): string {
+  const repository = github.repositoryUrl.replace(/\/$/, "");
+  const watchUrl = `${repository}/subscription`;
+  const weeklyUrl = `${repository}/issues?q=is%3Aissue+label%3Aweekly-brief`;
+  return `<nav class="footer-subscriptions" aria-label="${locale === "en" ? "Agent Pulse subscriptions" : "Agent Pulse 订阅入口"}"><a href="${escapeHtml(watchUrl)}" target="_blank" rel="noopener noreferrer">${icon("github")} Watch</a><a href="${escapeHtml(weeklyUrl)}" target="_blank" rel="noopener noreferrer">${icon("route")} ${locale === "en" ? "Weekly brief" : "AI 周报"}</a></nav>`;
 }
 
 function eventDrawerShell(locale: Locale, assetPrefix: string, prefix: string): string {
@@ -228,7 +244,7 @@ function githubStarButton(github: GithubData, locale: Locale): string {
     locale === "en"
       ? `Star Agent Pulse on GitHub, ${github.stars ?? "count unavailable"} stars`
       : `在 GitHub 为 Agent Pulse 点赞，当前 ${github.stars ?? "未知"} 个 Star`;
-  return `<a class="github-star-button" href="${escapeHtml(github.repositoryUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(label)}"><span class="github-star-action">${icon("github")}<span>Star</span></span><strong class="github-star-count">${escapeHtml(count)}</strong></a>`;
+  return `<a class="github-star-button" data-github-star-button href="${escapeHtml(github.repositoryUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(label)}"><span class="github-star-action">${icon("github")}<span>Star</span></span><strong class="github-star-count" data-github-star-count>${escapeHtml(count)}</strong></a>`;
 }
 
 function ensureSlash(value: string): string {

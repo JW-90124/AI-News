@@ -1,5 +1,5 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
-import { dirname, join } from "node:path";
+import { dirname, isAbsolute, join } from "node:path";
 import type { Kysely, Transaction } from "kysely";
 import { parseJson } from "../db/repository.js";
 import type { DatabaseSchema } from "../db/types.js";
@@ -14,10 +14,15 @@ interface RepositorySnapshot {
   sourceChecks?: Array<Record<string, unknown>>;
   sourceRuns?: Array<Record<string, unknown>>;
   signals: Array<Record<string, unknown>>;
+  signalObservations?: Array<Record<string, unknown>>;
+  signalObservationOccurrences?: Array<Record<string, unknown>>;
   signalTriage?: Array<Record<string, unknown>>;
   discoveries: Array<Record<string, unknown>>;
   events: Array<Record<string, unknown>>;
   eventSignals: Array<Record<string, unknown>>;
+  eventTracks?: Array<Record<string, unknown>>;
+  eventActors?: Array<Record<string, unknown>>;
+  eventMerges?: Array<Record<string, unknown>>;
   scoutInsights?: Array<Record<string, unknown>>;
   scoutEvidence?: Array<Record<string, unknown>>;
 }
@@ -30,7 +35,7 @@ export async function writeRepositorySnapshot(
   const snapshot = await buildRepositorySnapshot(db);
   const serialized = `${JSON.stringify(snapshot, null, 2)}\n`;
   assertSnapshotSafe(serialized);
-  const path = join(rootDir, relativePath);
+  const path = snapshotPath(rootDir, relativePath);
   const previous = await readFile(path, "utf8").catch(() => "");
   if (previous === serialized) {
     return { path, changed: false, sha256: sha256(serialized), counts: snapshotCounts(snapshot) };
@@ -47,7 +52,7 @@ export async function restoreRepositorySnapshot(
   rootDir: string,
   relativePath = DEFAULT_SNAPSHOT_PATH,
 ) {
-  const path = join(rootDir, relativePath);
+  const path = snapshotPath(rootDir, relativePath);
   const serialized = await readFile(path, "utf8").catch((error: NodeJS.ErrnoException) => {
     if (error.code === "ENOENT") return "";
     throw error;
@@ -65,10 +70,15 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
     sourceRows,
     sourceCheckRows,
     signalRows,
+    observationRows,
+    observationOccurrenceRows,
     triageRows,
     discoveryRows,
     eventRows,
     eventSignalRows,
+    eventTrackRows,
+    eventActorRows,
+    eventMergeRows,
   ] = await Promise.all([
     db.selectFrom("sources").selectAll().execute(),
     db
@@ -81,6 +91,18 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
       .selectFrom("signals")
       .innerJoin("sources", "sources.id", "signals.source_id")
       .selectAll("signals")
+      .select("sources.slug as sourceSlug")
+      .execute(),
+    db
+      .selectFrom("signal_observations")
+      .innerJoin("sources", "sources.id", "signal_observations.source_id")
+      .selectAll("signal_observations")
+      .select("sources.slug as sourceSlug")
+      .execute(),
+    db
+      .selectFrom("signal_observation_occurrences")
+      .innerJoin("sources", "sources.id", "signal_observation_occurrences.source_id")
+      .selectAll("signal_observation_occurrences")
       .select("sources.slug as sourceSlug")
       .execute(),
     db.selectFrom("signal_triage").selectAll().execute(),
@@ -97,6 +119,24 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
       .execute(),
     db.selectFrom("events").selectAll().execute(),
     db.selectFrom("event_signals").selectAll().execute(),
+    db
+      .selectFrom("event_tracks")
+      .innerJoin("tracks", "tracks.id", "event_tracks.track_id")
+      .selectAll("event_tracks")
+      .select("tracks.slug as trackSlug")
+      .execute(),
+    db
+      .selectFrom("event_actors")
+      .innerJoin("actors", "actors.id", "event_actors.actor_id")
+      .selectAll("event_actors")
+      .select("actors.slug as actorSlug")
+      .execute(),
+    db
+      .selectFrom("event_merges")
+      .innerJoin("events", "events.id", "event_merges.target_event_id")
+      .selectAll("event_merges")
+      .select("events.slug as targetEventSlug")
+      .execute(),
   ]);
   const sourceSlugById = new Map(sourceRows.map((source) => [source.id, source.slug]));
   const [sourceRunRows, scoutRows, scoutEvidenceRows] = await Promise.all([
@@ -122,8 +162,6 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
       .where("scout_insights.status", "=", "published")
       .execute(),
   ]);
-  const latestSourceRuns = [...new Map(sourceRunRows.map((run) => [run.source_id, run])).values()];
-
   const snapshot: RepositorySnapshot = {
     schemaVersion: SNAPSHOT_SCHEMA_VERSION,
     sources: sourceRows
@@ -182,7 +220,7 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
           `${right.sourceSlug}:${right.finishedAt}:${right.id}`,
         ),
       ),
-    sourceRuns: latestSourceRuns
+    sourceRuns: sourceRunRows
       .map((run) => ({
         id: run.id,
         sourceSlug: run.sourceSlug,
@@ -200,7 +238,11 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
         startedAt: run.started_at,
         finishedAt: run.finished_at,
       }))
-      .sort(byString("sourceSlug")),
+      .sort((left, right) =>
+        `${left.sourceSlug}:${left.startedAt}:${left.id}`.localeCompare(
+          `${right.sourceSlug}:${right.startedAt}:${right.id}`,
+        ),
+      ),
     signals: signalRows
       .map((signal) => {
         const canonicalUrl = snapshotUrl(signal.canonical_url);
@@ -220,9 +262,34 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
           metrics: snapshotMetrics(parseJson(signal.metrics_json, {})),
           contentHash: signal.content_hash,
           createdAt: signal.created_at,
+          updatedAt: signal.updated_at,
         };
       })
       .sort(byString("urlHash")),
+    signalObservations: observationRows
+      .map((observation) => ({
+        signalId: observation.signal_id,
+        sourceSlug: observation.sourceSlug,
+        externalId: observation.external_id,
+        observedUrl: snapshotUrl(observation.observed_url),
+        firstSeenAt: observation.first_seen_at,
+        lastSeenAt: observation.last_seen_at,
+        observationCount: observation.observation_count,
+      }))
+      .sort((left, right) =>
+        `${left.signalId}:${left.sourceSlug}`.localeCompare(
+          `${right.signalId}:${right.sourceSlug}`,
+        ),
+      ),
+    signalObservationOccurrences: observationOccurrenceRows
+      .map((occurrence) => ({
+        id: occurrence.id,
+        signalId: occurrence.signal_id,
+        sourceSlug: occurrence.sourceSlug,
+        observedAt: occurrence.observed_at,
+        countDelta: occurrence.count_delta,
+      }))
+      .sort(byString("id")),
     signalTriage: triageRows
       .map((triage) => ({
         signalId: triage.signal_id,
@@ -231,6 +298,7 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
         eventabilityScore: triage.eventability_score,
         details: parseJson(triage.details_json, {}),
         createdAt: triage.created_at,
+        updatedAt: triage.updated_at,
       }))
       .sort(byString("signalId")),
     discoveries: discoveryRows
@@ -265,7 +333,9 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
           matchedSignalId: discovery.matched_signal_id,
           status: discovery.status,
           firstSeenAt: discovery.first_seen_at,
+          lastSeenAt: discovery.last_seen_at,
           createdAt: discovery.created_at,
+          updatedAt: discovery.updated_at,
         };
       })
       .sort(byString("identityHash")),
@@ -294,6 +364,7 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
         happenedAt: event.happened_at,
         publishedAt: event.published_at,
         createdAt: event.created_at,
+        updatedAt: event.updated_at,
       }))
       .sort(byString("slug")),
     eventSignals: eventSignalRows
@@ -307,6 +378,42 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
       .sort((left, right) =>
         `${left.eventId}:${left.signalId}`.localeCompare(`${right.eventId}:${right.signalId}`),
       ),
+    eventTracks: eventTrackRows
+      .map((link) => ({
+        eventId: link.event_id,
+        trackSlug: link.trackSlug,
+        nodeRole: link.node_role,
+        narrative: link.narrative,
+        stage: link.stage,
+        orderIndex: link.order_index,
+        createdAt: link.created_at,
+      }))
+      .sort((left, right) =>
+        `${left.eventId}:${left.trackSlug}`.localeCompare(`${right.eventId}:${right.trackSlug}`),
+      ),
+    eventActors: eventActorRows
+      .map((link) => ({
+        eventId: link.event_id,
+        actorSlug: link.actorSlug,
+        actorRole: link.actor_role,
+        progressStage: link.progress_stage,
+        relevanceScore: link.relevance_score,
+        createdAt: link.created_at,
+      }))
+      .sort((left, right) =>
+        `${left.eventId}:${left.actorSlug}`.localeCompare(`${right.eventId}:${right.actorSlug}`),
+      ),
+    eventMerges: eventMergeRows
+      .map((merge) => ({
+        id: merge.id,
+        targetEventSlug: merge.targetEventSlug,
+        sourceEventId: merge.source_event_id,
+        sourceSnapshot: parseJson(merge.source_snapshot_json, {}),
+        reason: merge.reason,
+        mergedBy: merge.merged_by,
+        createdAt: merge.created_at,
+      }))
+      .sort(byString("id")),
     scoutInsights: scoutRows.map((insight) => ({
       id: insight.id,
       slug: insight.slug,
@@ -352,22 +459,46 @@ async function restoreSnapshot(
     const slug = requiredString(value, "slug");
     const sourceId = sourceIdBySlug.get(slug);
     if (!sourceId) continue;
+    const current = sources.find((source) => source.id === sourceId);
+    if (!current) continue;
+    const incomingLatest = latestTimestamp(
+      optionalString(value.lastVerifiedAt),
+      optionalString(value.lastCollectedAt),
+    );
+    const currentLatest = latestTimestamp(current.last_verified_at, current.last_collected_at);
+    const incomingIsNewer = compareTimestamp(incomingLatest, currentLatest) >= 0;
     await db
       .updateTable("sources")
       .set({
-        enabled: requiredNumber(value, "enabled"),
-        observation_enabled:
-          typeof value.observationEnabled === "number" ? value.observationEnabled : 0,
-        lifecycle_status: requiredString(value, "lifecycleStatus"),
-        health_score: requiredNumber(value, "healthScore"),
-        consecutive_failures: requiredNumber(value, "consecutiveFailures"),
-        success_count: optionalNumber(value.successCount) ?? 0,
-        failure_count: optionalNumber(value.failureCount) ?? 0,
-        last_collected_at: optionalString(value.lastCollectedAt),
-        last_success_at: optionalString(value.lastSuccessAt),
-        last_error: optionalString(value.lastError),
-        last_verified_at: optionalString(value.lastVerifiedAt),
-        state_json: JSON.stringify(value.state ?? {}),
+        enabled: incomingIsNewer ? requiredNumber(value, "enabled") : current.enabled,
+        observation_enabled: incomingIsNewer
+          ? typeof value.observationEnabled === "number"
+            ? value.observationEnabled
+            : 0
+          : current.observation_enabled,
+        lifecycle_status: incomingIsNewer
+          ? requiredString(value, "lifecycleStatus")
+          : current.lifecycle_status,
+        health_score: incomingIsNewer ? requiredNumber(value, "healthScore") : current.health_score,
+        consecutive_failures: incomingIsNewer
+          ? requiredNumber(value, "consecutiveFailures")
+          : current.consecutive_failures,
+        success_count: Math.max(current.success_count, optionalNumber(value.successCount) ?? 0),
+        failure_count: Math.max(current.failure_count, optionalNumber(value.failureCount) ?? 0),
+        last_collected_at: latestTimestamp(
+          current.last_collected_at,
+          optionalString(value.lastCollectedAt),
+        ),
+        last_success_at: latestTimestamp(
+          current.last_success_at,
+          optionalString(value.lastSuccessAt),
+        ),
+        last_error: incomingIsNewer ? optionalString(value.lastError) : current.last_error,
+        last_verified_at: latestTimestamp(
+          current.last_verified_at,
+          optionalString(value.lastVerifiedAt),
+        ),
+        state_json: incomingIsNewer ? JSON.stringify(value.state ?? {}) : current.state_json,
       })
       .where("id", "=", sourceId)
       .execute();
@@ -416,8 +547,7 @@ async function restoreSnapshot(
       finished_at: requiredString(value, "finishedAt"),
       duration_ms: requiredNumber(value, "durationMs"),
     };
-    if (existing) await db.updateTable("source_checks").set(row).where("id", "=", id).execute();
-    else
+    if (!existing)
       await db
         .insertInto("source_checks")
         .values({ id, ...row })
@@ -477,8 +607,7 @@ async function restoreSnapshot(
         started_at: requiredString(value, "startedAt"),
         finished_at: optionalString(value.finishedAt),
       };
-      if (existing) await db.updateTable("source_runs").set(row).where("id", "=", id).execute();
-      else
+      if (!existing)
         await db
           .insertInto("source_runs")
           .values({ id, ...row })
@@ -495,36 +624,177 @@ async function restoreSnapshot(
     const urlHash = sha256(canonicalUrl);
     const existing = await db
       .selectFrom("signals")
-      .select("id")
+      .selectAll()
       .where("url_hash", "=", urlHash)
       .executeTakeFirst();
     const id = existing?.id ?? snapshotId;
+    const incomingUpdatedAt = optionalString(value.updatedAt) ?? requiredString(value, "createdAt");
+    const incomingTitle = requiredString(value, "title");
+    const incomingSummary = requiredString(value, "summary");
+    const incomingTags = Array.isArray(value.tags) ? value.tags : [];
+    const incomingMetrics = asRecord(value.metrics);
     const row = {
       source_id: sourceId,
       external_id: optionalString(value.externalId),
       canonical_url: canonicalUrl,
       url_hash: urlHash,
-      title: requiredString(value, "title"),
-      summary: requiredString(value, "summary"),
+      title: incomingTitle,
+      summary: incomingSummary,
       author: optionalString(value.author),
       language: requiredString(value, "language"),
       published_at: requiredString(value, "publishedAt"),
       collected_at: requiredString(value, "createdAt"),
       category: requiredString(value, "category"),
-      tags_json: JSON.stringify(value.tags ?? []),
-      metrics_json: JSON.stringify(value.metrics ?? {}),
+      tags_json: JSON.stringify(incomingTags),
+      metrics_json: JSON.stringify(incomingMetrics),
       raw_meta_json: "{}",
       content_hash: requiredString(value, "contentHash"),
       created_at: requiredString(value, "createdAt"),
-      updated_at: requiredString(value, "createdAt"),
+      updated_at: incomingUpdatedAt,
     };
-    if (existing) await db.updateTable("signals").set(row).where("id", "=", id).execute();
-    else
+    if (existing) {
+      const tags = [
+        ...new Set([...parseJson<string[]>(existing.tags_json, []), ...incomingTags.map(String)]),
+      ].slice(0, 20);
+      const title = incomingTitle.length > existing.title.length ? incomingTitle : existing.title;
+      const summary =
+        incomingSummary.length > existing.summary.length ? incomingSummary : existing.summary;
+      const incomingIsNewer = compareTimestamp(incomingUpdatedAt, existing.updated_at) > 0;
+      await db
+        .updateTable("signals")
+        .set({
+          title,
+          summary,
+          author: existing.author ?? row.author,
+          language: incomingIsNewer ? row.language : existing.language,
+          category: incomingIsNewer ? row.category : existing.category,
+          tags_json: JSON.stringify(tags),
+          metrics_json: JSON.stringify({
+            ...incomingMetrics,
+            ...parseJson<Record<string, unknown>>(existing.metrics_json, {}),
+          }),
+          content_hash: sha256(`${title}\n${summary}`),
+          collected_at:
+            latestTimestamp(existing.collected_at, row.collected_at) ?? existing.collected_at,
+          updated_at:
+            latestTimestamp(existing.updated_at, incomingUpdatedAt) ?? existing.updated_at,
+        })
+        .where("id", "=", id)
+        .execute();
+    } else
       await db
         .insertInto("signals")
         .values({ id, ...row })
         .execute();
     signalIdMap.set(snapshotId, id);
+  }
+
+  const observations =
+    snapshot.signalObservations ??
+    snapshot.signals.map((signal) => ({
+      signalId: signal.id,
+      sourceSlug: signal.sourceSlug,
+      externalId: signal.externalId,
+      observedUrl: signal.canonicalUrl,
+      firstSeenAt: signal.createdAt,
+      lastSeenAt: signal.updatedAt ?? signal.createdAt,
+      observationCount: 1,
+    }));
+  for (const value of observations) {
+    const signalId = signalIdMap.get(requiredString(value, "signalId"));
+    const sourceId = sourceIdBySlug.get(requiredString(value, "sourceSlug"));
+    if (!signalId || !sourceId) continue;
+    const existing = await db
+      .selectFrom("signal_observations")
+      .selectAll()
+      .where("signal_id", "=", signalId)
+      .where("source_id", "=", sourceId)
+      .executeTakeFirst();
+    const firstSeenAt = requiredString(value, "firstSeenAt");
+    const lastSeenAt = requiredString(value, "lastSeenAt");
+    const observationCount = requiredNumber(value, "observationCount");
+    if (existing) {
+      await db
+        .updateTable("signal_observations")
+        .set({
+          external_id: existing.external_id ?? optionalString(value.externalId),
+          observed_url: snapshotUrl(requiredString(value, "observedUrl")),
+          first_seen_at: earliestTimestamp(existing.first_seen_at, firstSeenAt),
+          last_seen_at: latestTimestamp(existing.last_seen_at, lastSeenAt) ?? existing.last_seen_at,
+          observation_count: Math.max(existing.observation_count, observationCount),
+        })
+        .where("signal_id", "=", signalId)
+        .where("source_id", "=", sourceId)
+        .execute();
+    } else {
+      await db
+        .insertInto("signal_observations")
+        .values({
+          signal_id: signalId,
+          source_id: sourceId,
+          external_id: optionalString(value.externalId),
+          observed_url: snapshotUrl(requiredString(value, "observedUrl")),
+          first_seen_at: firstSeenAt,
+          last_seen_at: lastSeenAt,
+          observation_count: observationCount,
+        })
+        .execute();
+    }
+  }
+
+  const occurrences =
+    snapshot.signalObservationOccurrences ??
+    observations.map((observation) => ({
+      id: `baseline:${requiredString(observation, "signalId")}:${requiredString(
+        observation,
+        "sourceSlug",
+      )}`,
+      signalId: observation.signalId,
+      sourceSlug: observation.sourceSlug,
+      observedAt: observation.lastSeenAt,
+      countDelta: observation.observationCount,
+    }));
+  for (const value of occurrences) {
+    if (!requiredString(value, "id").startsWith("baseline:")) continue;
+    const signalId = signalIdMap.get(requiredString(value, "signalId"));
+    const sourceId = sourceIdBySlug.get(requiredString(value, "sourceSlug"));
+    if (!signalId || !sourceId) continue;
+    await db
+      .deleteFrom("signal_observation_occurrences")
+      .where("signal_id", "=", signalId)
+      .where("source_id", "=", sourceId)
+      .where("id", "like", "initial:%")
+      .execute();
+  }
+  for (const value of occurrences) {
+    const signalId = signalIdMap.get(requiredString(value, "signalId"));
+    const sourceId = sourceIdBySlug.get(requiredString(value, "sourceSlug"));
+    if (!signalId || !sourceId) continue;
+    await db
+      .insertInto("signal_observation_occurrences")
+      .values({
+        id: requiredString(value, "id"),
+        signal_id: signalId,
+        source_id: sourceId,
+        observed_at: requiredString(value, "observedAt"),
+        count_delta: requiredNumber(value, "countDelta"),
+      })
+      .onConflict((conflict) => conflict.column("id").doNothing())
+      .execute();
+  }
+  const occurrenceTotals = await db
+    .selectFrom("signal_observation_occurrences")
+    .select(["signal_id", "source_id"])
+    .select(({ fn }) => fn.sum<number>("count_delta").as("total"))
+    .groupBy(["signal_id", "source_id"])
+    .execute();
+  for (const total of occurrenceTotals) {
+    await db
+      .updateTable("signal_observations")
+      .set({ observation_count: Number(total.total) })
+      .where("signal_id", "=", total.signal_id)
+      .where("source_id", "=", total.source_id)
+      .execute();
   }
 
   const eventIdMap = new Map<string, string>();
@@ -533,7 +803,7 @@ async function restoreSnapshot(
     const slug = requiredString(value, "slug");
     const existing = await db
       .selectFrom("events")
-      .select("id")
+      .selectAll()
       .where("slug", "=", slug)
       .executeTakeFirst();
     const id = existing?.id ?? snapshotId;
@@ -560,10 +830,11 @@ async function restoreSnapshot(
       happened_at: requiredString(value, "happenedAt"),
       published_at: optionalString(value.publishedAt),
       created_at: requiredString(value, "createdAt"),
-      updated_at: requiredString(value, "createdAt"),
+      updated_at: optionalString(value.updatedAt) ?? requiredString(value, "createdAt"),
     };
-    if (existing) await db.updateTable("events").set(row).where("id", "=", id).execute();
-    else
+    if (existing && shouldReplaceEvent(existing, value, row.updated_at))
+      await db.updateTable("events").set(row).where("id", "=", id).execute();
+    else if (!existing)
       await db
         .insertInto("events")
         .values({ id, ...row })
@@ -577,7 +848,7 @@ async function restoreSnapshot(
     if (!signalId) continue;
     const existing = await db
       .selectFrom("signal_triage")
-      .select("signal_id")
+      .selectAll()
       .where("signal_id", "=", signalId)
       .executeTakeFirst();
     const row = {
@@ -585,9 +856,9 @@ async function restoreSnapshot(
       reason: requiredString(value, "reason"),
       eventability_score: requiredNumber(value, "eventabilityScore"),
       details_json: JSON.stringify(value.details ?? {}),
-      updated_at: requiredString(value, "createdAt"),
+      updated_at: optionalString(value.updatedAt) ?? requiredString(value, "createdAt"),
     };
-    if (existing) {
+    if (existing && compareTimestamp(row.updated_at, existing.updated_at) >= 0) {
       await db.updateTable("signal_triage").set(row).where("signal_id", "=", signalId).execute();
     } else {
       await db
@@ -603,7 +874,7 @@ async function restoreSnapshot(
     const identityHash = requiredString(value, "identityHash");
     const existing = await db
       .selectFrom("source_discoveries")
-      .select("id")
+      .selectAll()
       .where("identity_hash", "=", identityHash)
       .executeTakeFirst();
     const id = existing?.id ?? requiredString(value, "id");
@@ -641,13 +912,29 @@ async function restoreSnapshot(
       matched_signal_id: signalIdMap.get(optionalString(value.matchedSignalId) ?? "") ?? null,
       status: requiredString(value, "status"),
       first_seen_at: requiredString(value, "firstSeenAt"),
-      last_seen_at: requiredString(value, "firstSeenAt"),
+      last_seen_at: optionalString(value.lastSeenAt) ?? requiredString(value, "firstSeenAt"),
       created_at: requiredString(value, "createdAt"),
-      updated_at: requiredString(value, "createdAt"),
+      updated_at: optionalString(value.updatedAt) ?? requiredString(value, "createdAt"),
     };
-    if (existing)
-      await db.updateTable("source_discoveries").set(row).where("id", "=", id).execute();
-    else
+    if (existing) {
+      const incomingIsNewer = compareTimestamp(row.updated_at, existing.updated_at) > 0;
+      await db
+        .updateTable("source_discoveries")
+        .set({
+          ...(incomingIsNewer ? row : {}),
+          summary: row.summary.length > existing.summary.length ? row.summary : existing.summary,
+          first_seen_at: earliestTimestamp(existing.first_seen_at, row.first_seen_at),
+          last_seen_at:
+            latestTimestamp(existing.last_seen_at, row.last_seen_at) ?? existing.last_seen_at,
+          metrics_json: JSON.stringify({
+            ...parseJson<Record<string, unknown>>(row.metrics_json, {}),
+            ...parseJson<Record<string, unknown>>(existing.metrics_json, {}),
+          }),
+          updated_at: latestTimestamp(existing.updated_at, row.updated_at) ?? existing.updated_at,
+        })
+        .where("id", "=", id)
+        .execute();
+    } else
       await db
         .insertInto("source_discoveries")
         .values({ id, ...row })
@@ -682,6 +969,65 @@ async function restoreSnapshot(
         .values({ event_id: eventId, signal_id: signalId, ...row })
         .execute();
     }
+  }
+
+  const tracks = await db.selectFrom("tracks").select(["id", "slug"]).execute();
+  const trackIdBySlug = new Map(tracks.map((track) => [track.slug, track.id]));
+  for (const value of snapshot.eventTracks ?? []) {
+    const eventId = eventIdMap.get(requiredString(value, "eventId"));
+    const trackId = trackIdBySlug.get(requiredString(value, "trackSlug"));
+    if (!eventId || !trackId) continue;
+    await db
+      .insertInto("event_tracks")
+      .values({
+        event_id: eventId,
+        track_id: trackId,
+        node_role: requiredString(value, "nodeRole"),
+        narrative: requiredString(value, "narrative"),
+        stage: requiredString(value, "stage"),
+        order_index: requiredNumber(value, "orderIndex"),
+        created_at: requiredString(value, "createdAt"),
+      })
+      .onConflict((conflict) => conflict.columns(["event_id", "track_id"]).doNothing())
+      .execute();
+  }
+
+  const actors = await db.selectFrom("actors").select(["id", "slug"]).execute();
+  const actorIdBySlug = new Map(actors.map((actor) => [actor.slug, actor.id]));
+  for (const value of snapshot.eventActors ?? []) {
+    const eventId = eventIdMap.get(requiredString(value, "eventId"));
+    const actorId = actorIdBySlug.get(requiredString(value, "actorSlug"));
+    if (!eventId || !actorId) continue;
+    await db
+      .insertInto("event_actors")
+      .values({
+        event_id: eventId,
+        actor_id: actorId,
+        actor_role: requiredString(value, "actorRole"),
+        progress_stage: requiredString(value, "progressStage"),
+        relevance_score: requiredNumber(value, "relevanceScore"),
+        created_at: requiredString(value, "createdAt"),
+      })
+      .onConflict((conflict) => conflict.columns(["event_id", "actor_id"]).doNothing())
+      .execute();
+  }
+
+  for (const value of snapshot.eventMerges ?? []) {
+    const targetEventId = eventIdMap.get(requiredString(value, "targetEventSlug"));
+    if (!targetEventId) continue;
+    await db
+      .insertInto("event_merges")
+      .values({
+        id: requiredString(value, "id"),
+        target_event_id: targetEventId,
+        source_event_id: requiredString(value, "sourceEventId"),
+        source_snapshot_json: JSON.stringify(asRecord(value.sourceSnapshot)),
+        reason: requiredString(value, "reason"),
+        merged_by: requiredString(value, "mergedBy"),
+        created_at: requiredString(value, "createdAt"),
+      })
+      .onConflict((conflict) => conflict.column("id").doNothing())
+      .execute();
   }
 
   const scoutIdBySlug = new Map<string, string>();
@@ -752,6 +1098,10 @@ function safeSourceState(value: unknown): Record<string, string> {
     if (typeof source[key] === "string") result[key] = source[key].slice(0, 1_000);
   }
   return result;
+}
+
+function snapshotPath(rootDir: string, path: string): string {
+  return isAbsolute(path) ? path : join(rootDir, path);
 }
 
 function snapshotMetrics(value: unknown): Record<string, unknown> {
@@ -852,6 +1202,46 @@ function optionalNumber(value: unknown): number | null {
   return typeof value === "number" && Number.isFinite(value) ? value : null;
 }
 
+function asRecord(value: unknown): Record<string, unknown> {
+  return value && typeof value === "object" && !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : {};
+}
+
+function compareTimestamp(left: string | null, right: string | null): number {
+  if (left === right) return 0;
+  if (!left) return -1;
+  if (!right) return 1;
+  return left.localeCompare(right);
+}
+
+function latestTimestamp(...values: Array<string | null>): string | null {
+  return (
+    values
+      .filter((value): value is string => Boolean(value))
+      .sort()
+      .at(-1) ?? null
+  );
+}
+
+function earliestTimestamp(...values: string[]): string {
+  return [...values].sort()[0] ?? values[0] ?? "";
+}
+
+function shouldReplaceEvent(
+  existing: DatabaseSchema["events"],
+  incoming: Record<string, unknown>,
+  incomingUpdatedAt: string,
+): boolean {
+  const incomingManual = requiredNumber(incoming, "manualOverride");
+  if (incomingManual !== existing.manual_override) return incomingManual > existing.manual_override;
+  const statusRank = (status: string) => (status === "published" ? 3 : status === "review" ? 2 : 1);
+  const rankDifference =
+    statusRank(requiredString(incoming, "status")) - statusRank(existing.status);
+  if (rankDifference !== 0) return rankDifference > 0;
+  return compareTimestamp(incomingUpdatedAt, existing.updated_at) >= 0;
+}
+
 function byString(key: string) {
   return (left: Record<string, unknown>, right: Record<string, unknown>) =>
     String(left[key] ?? "").localeCompare(String(right[key] ?? ""));
@@ -863,10 +1253,15 @@ function snapshotCounts(snapshot: RepositorySnapshot) {
     sourceChecks: snapshot.sourceChecks?.length ?? 0,
     sourceRuns: snapshot.sourceRuns?.length ?? 0,
     signals: snapshot.signals.length,
+    signalObservations: snapshot.signalObservations?.length ?? 0,
+    signalObservationOccurrences: snapshot.signalObservationOccurrences?.length ?? 0,
     signalTriage: snapshot.signalTriage?.length ?? 0,
     discoveries: snapshot.discoveries.length,
     events: snapshot.events.length,
     eventSignals: snapshot.eventSignals.length,
+    eventTracks: snapshot.eventTracks?.length ?? 0,
+    eventActors: snapshot.eventActors?.length ?? 0,
+    eventMerges: snapshot.eventMerges?.length ?? 0,
     scoutInsights: snapshot.scoutInsights?.length ?? 0,
     scoutEvidence: snapshot.scoutEvidence?.length ?? 0,
   };
@@ -878,10 +1273,15 @@ function emptyCounts() {
     sourceChecks: 0,
     sourceRuns: 0,
     signals: 0,
+    signalObservations: 0,
+    signalObservationOccurrences: 0,
     signalTriage: 0,
     discoveries: 0,
     events: 0,
     eventSignals: 0,
+    eventTracks: 0,
+    eventActors: 0,
+    eventMerges: 0,
     scoutInsights: 0,
     scoutEvidence: 0,
   };

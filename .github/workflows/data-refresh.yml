@@ -2,7 +2,8 @@ name: Refresh intelligence data
 
 on:
   schedule:
-    - cron: "17 */4 * * *"
+    # Daily at 20:17 Asia/Shanghai; the weekly Issue remains Sunday-gated below.
+    - cron: "17 12 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -13,6 +14,11 @@ on:
         options:
           - incremental
           - backfill
+      publish_weekly:
+        description: Publish or re-render the current weekly review
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   actions: write
@@ -31,6 +37,7 @@ jobs:
       DATABASE_URL: sqlite:./var/automation.db
       PUBLIC_SITE_URL: https://barretlee.github.io/agent-pulse/
       REFRESH_MODE: ${{ inputs.mode || 'incremental' }}
+      PUBLISH_WEEKLY: ${{ inputs.publish_weekly || false }}
     steps:
       - name: Check out main
         uses: actions/checkout@v7
@@ -49,6 +56,13 @@ jobs:
 
       - name: Restore auditable repository snapshot
         run: npm run db:snapshot -- restore
+
+      - name: Capture the current public content fingerprint
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run export -- --skip-seed
+          npm run --silent public:fingerprint > "$RUNNER_TEMP/public-before.sha256"
 
       - name: Collect and cluster signals
         shell: bash
@@ -82,21 +96,49 @@ jobs:
       - name: Evaluate measured system quality
         run: npm run evaluate:system | tee "$RUNNER_TEMP/evaluation.json"
 
-      - name: Export public site as a contract check
-        run: npm run export -- --skip-seed
-
-      - name: Render today's incremental intelligence brief
+      - name: Merge latest remote repository snapshot
         shell: bash
         run: |
           set -euo pipefail
-          REPORT_DATE="$(TZ=Asia/Shanghai date +%F)"
-          npm run --silent daily:issue -- \
-            --timeline dist/data/timeline.json \
-            --scout dist/data/scout.json \
-            --product dist/data/product.json \
-            --date "$REPORT_DATE" \
-            --time-zone Asia/Shanghai > "$RUNNER_TEMP/daily-brief.md"
-          echo "report_date=$REPORT_DATE" >> "$GITHUB_ENV"
+          git fetch origin main
+          git show origin/main:data/snapshot/v1.json > "$RUNNER_TEMP/remote-snapshot.json"
+          npm run db:snapshot -- merge --file="$RUNNER_TEMP/remote-snapshot.json"
+
+      - name: Export converged public content and detect a material change
+        id: public
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run export -- --skip-seed
+          npm run --silent public:fingerprint > "$RUNNER_TEMP/public-after.sha256"
+          if cmp -s "$RUNNER_TEMP/public-before.sha256" "$RUNNER_TEMP/public-after.sha256"; then
+            echo "No material public content changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Material public content changed."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Render the weekly intelligence review on the final Sunday refresh
+        shell: bash
+        run: |
+          set -euo pipefail
+          report_date="$(TZ=Asia/Shanghai date +%F)"
+          report_week="$(TZ=Asia/Shanghai date +%G-W%V)"
+          weekday="$(TZ=Asia/Shanghai date +%u)"
+          hour="$(TZ=Asia/Shanghai date +%H)"
+          publish_weekly=false
+          if [[ "$PUBLISH_WEEKLY" == "true" || ( "$weekday" == "7" && "$hour" -ge 20 ) ]]; then
+            npm run --silent weekly:issue -- \
+              --timeline dist/data/timeline.json \
+              --scout dist/data/scout.json \
+              --product dist/data/product.json \
+              --end-date "$report_date" \
+              --time-zone Asia/Shanghai > "$RUNNER_TEMP/weekly-brief.md"
+            publish_weekly=true
+          fi
+          echo "publish_weekly=$publish_weekly" >> "$GITHUB_ENV"
+          echo "report_week=$report_week" >> "$GITHUB_ENV"
 
       - name: Write privacy-safe text snapshot
         run: npm run db:snapshot -- write
@@ -130,7 +172,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): refresh intelligence snapshot"
-          git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -142,27 +183,27 @@ jobs:
           path: ${{ runner.temp }}/evaluation.json
           retention-days: 14
 
-      - name: Create or update today's GitHub Issue
+      - name: Create or update this week's GitHub Issue
+        if: env.publish_weekly == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
-          marker="agent-pulse-daily-brief:${report_date}"
-          title="Agent Pulse AI 日报 · ${report_date}"
-          gh label create daily-brief --color 6f42c1 --description "Automated daily intelligence brief" 2>/dev/null || true
-          issue_number="$(gh issue list --state all --label daily-brief --limit 100 --json number,body \
+          marker="agent-pulse-weekly-brief:${report_week}"
+          title="Agent Pulse AI 周报 · ${report_week}"
+          gh label create weekly-brief --color 087e70 --description "Automated weekly intelligence brief" 2>/dev/null || true
+          issue_number="$(gh issue list --state all --label weekly-brief --limit 100 --json number,body \
             --jq ".[] | select(.body | contains(\"$marker\")) | .number" | head -1)"
           if [[ -n "$issue_number" ]]; then
-            gh issue edit "$issue_number" --title "$title" --body-file "$RUNNER_TEMP/daily-brief.md" --add-label daily-brief
+            gh issue edit "$issue_number" --title "$title" --body-file "$RUNNER_TEMP/weekly-brief.md" --add-label weekly-brief
             gh issue reopen "$issue_number" >/dev/null 2>&1 || true
           else
-            gh issue create --title "$title" --body-file "$RUNNER_TEMP/daily-brief.md" --label daily-brief
+            gh issue create --title "$title" --body-file "$RUNNER_TEMP/weekly-brief.md" --label weekly-brief
           fi
 
       # Pushes made with GITHUB_TOKEN intentionally do not trigger other push workflows.
-      - name: Dispatch Pages deployment for the new snapshot
-        if: steps.commit.outputs.changed == 'true'
+      - name: Dispatch Pages deployment after the daily refresh
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main

@@ -6,16 +6,24 @@ import { githubReleasesAdapter } from "../src/collectors/github-releases.js";
 import { rssAdapter } from "../src/collectors/rss.js";
 import type { CollectContext } from "../src/collectors/types.js";
 import type { SourceDescriptor } from "../src/domain/types.js";
-import type { EnrichedEvent, PublicSource } from "../src/pipeline/static-site/dto.js";
+import type {
+  EnrichedEvent,
+  NarrativeStage,
+  PublicSource,
+} from "../src/pipeline/static-site/dto.js";
 import {
   analyzeTechnologyCoverage,
   eventDevelopments,
+  eventTouchesNarrativeStage,
+  evidenceForNarrativeStage,
   groupEventsByYearMonth,
   groupTimelineMonthItems,
   isRecentEvent,
+  latestNarrativeStageDevelopmentAt,
   recentMonthlyDensity,
   recentResearchBatches,
   sortEventsByLatestDevelopment,
+  summarizeSourcePortfolio,
 } from "../src/pipeline/static-site/intelligence.js";
 
 describe("static-site intelligence consumption model", () => {
@@ -30,6 +38,30 @@ describe("static-site intelligence consumption model", () => {
     expect(
       sortEventsByLatestDevelopment([newerEvent, olderEventWithNewUpdate]).map((item) => item.slug),
     ).toEqual(["older", "newer"]);
+  });
+
+  it("associates incremental evidence with its real stage without rewriting the event origin", () => {
+    const originStage = stage("2025-01-01", "2025-12-31");
+    const currentStage = stage("2026-01-01", "9999-12-31");
+    const item = event("long-running-shift", "2025-06-01T00:00:00Z", [
+      evidence("Initial release", "primary", "2025-06-01T00:00:00Z"),
+      evidence("Incremental adoption", "secondary", "2026-07-13T00:00:00Z"),
+    ]);
+
+    expect(eventTouchesNarrativeStage(item, originStage)).toBe(true);
+    expect(eventTouchesNarrativeStage(item, currentStage)).toBe(true);
+    expect(evidenceForNarrativeStage(item, originStage).map((item) => item.title)).toEqual([
+      "Initial release",
+    ]);
+    expect(evidenceForNarrativeStage(item, currentStage).map((item) => item.title)).toEqual([
+      "Incremental adoption",
+    ]);
+    expect(latestNarrativeStageDevelopmentAt(item, currentStage)).toBe("2026-07-13T00:00:00.000Z");
+
+    const futureEvidence = evidence("Future validation", "secondary", "2027-02-01T00:00:00Z");
+    item.evidence.push(futureEvidence);
+    expect(evidenceForNarrativeStage(item, currentStage)).toContain(futureEvidence);
+    expect(latestNarrativeStageDevelopmentAt(item, currentStage)).toBe("2027-02-01T00:00:00.000Z");
   });
 
   it("turns evidence into a chronological event development path", () => {
@@ -163,6 +195,42 @@ describe("static-site intelligence consumption model", () => {
     });
     expect(coverage.find((item) => item.slug === "a2a")).toMatchObject({ status: "gap" });
   });
+
+  it("summarizes the source portfolio without confusing catalog size with health", () => {
+    const sources = [
+      {
+        ...source("cn-agent", "China Agent", "healthy", "github", ["agent"]),
+        region: "CN",
+      },
+      {
+        ...source("global-feed", "Global Feed", "failed", "rss", ["research"]),
+        category: "research-eval",
+      },
+      {
+        ...source("observing-feed", "Observing Feed", "healthy", "rss", ["policy"]),
+        category: "policy",
+        observationEnabled: true,
+      },
+    ];
+    const portfolio = summarizeSourcePortfolio(sources);
+
+    expect(portfolio.acquisitions).toEqual([
+      { key: "rss", total: 2, healthy: 1, observing: 1 },
+      { key: "github", total: 1, healthy: 1, observing: 0 },
+    ]);
+    expect(portfolio.health).toEqual([
+      { key: "healthy", total: 2, healthy: 2, observing: 1 },
+      { key: "failed", total: 1, healthy: 0, observing: 0 },
+    ]);
+    for (const dimension of [
+      portfolio.categories,
+      portfolio.regions,
+      portfolio.acquisitions,
+      portfolio.health,
+    ]) {
+      expect(dimension.reduce((sum, bucket) => sum + bucket.total, 0)).toBe(sources.length);
+    }
+  });
 });
 
 describe("new first-party technology source fixtures", () => {
@@ -279,6 +347,19 @@ function evidence(
     publishedAt,
     source: `${title} source`,
     url: `https://example.com/${title.toLowerCase().replaceAll(" ", "-")}`,
+  };
+}
+
+function stage(start: string, end: string): NarrativeStage {
+  return {
+    start,
+    end,
+    period: `${start} — ${end}`,
+    label: "Stage",
+    summary: "Summary",
+    interpretation: "Interpretation",
+    chinaPosition: "China position",
+    nextSignal: "Next signal",
   };
 }
 

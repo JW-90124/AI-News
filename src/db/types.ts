@@ -195,6 +195,24 @@ export interface SignalTable {
   updated_at: string;
 }
 
+export interface SignalObservationTable {
+  signal_id: string;
+  source_id: string;
+  external_id: string | null;
+  observed_url: string;
+  first_seen_at: string;
+  last_seen_at: string;
+  observation_count: number;
+}
+
+export interface SignalObservationOccurrenceTable {
+  id: string;
+  signal_id: string;
+  source_id: string;
+  observed_at: string;
+  count_delta: number;
+}
+
 export interface SignalTriageTable {
   signal_id: string;
   status: string;
@@ -363,6 +381,8 @@ export interface DatabaseSchema {
   source_checks: SourceCheckTable;
   source_discoveries: SourceDiscoveryTable;
   signals: SignalTable;
+  signal_observations: SignalObservationTable;
+  signal_observation_occurrences: SignalObservationOccurrenceTable;
   signal_triage: SignalTriageTable;
   events: EventTable;
   event_signals: EventSignalTable;

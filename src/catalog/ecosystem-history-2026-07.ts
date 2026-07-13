@@ -1,0 +1,313 @@
+import type { CuratedEventSeed } from "./history.js";
+
+const event = (value: CuratedEventSeed): CuratedEventSeed => value;
+
+export const ecosystemHistoryEvents = [
+  event({
+    slug: "yi-1-5-open-bilingual-models",
+    title: "Yi-1.5 开源：零一万物继续押注中英双语开放模型",
+    fact: "零一万物于 2024 年 5 月开放 Yi-1.5 系列，增强代码、数学、推理与指令遵循能力。",
+    summary:
+      "Yi-1.5 延续零一万物以开放权重建立全球开发者覆盖的路线，也为观察中国创业模型在闭源商业化与开源生态之间如何取舍提供了基准。",
+    technical:
+      "官方仓库提供 6B、9B、34B 等不同尺寸及量化、微调和部署路径，强调中英双语训练与长上下文版本。",
+    industry:
+      "中国开放模型早期竞争不仅来自大厂，创业公司也通过兼容主流推理栈和宽松许可争取全球开发者。",
+    future: "观察后续模型更新频率、社区活跃度、企业产品承接和开放权重能否继续保持技术竞争力。",
+    business:
+      "采用方需要同时评估模型质量与项目持续维护能力，避免只依据发布时榜单承担长期依赖风险。",
+    category: "open-source",
+    company: "零一万物 / 01.AI",
+    keywords: ["零一万物", "01.AI", "Yi", "Yi-1.5", "开放权重"],
+    scores: [98, 0, 83, 82],
+    date: "2024-05-13T00:00:00.000Z",
+    source: "01ai-yi-updates",
+    url: "https://github.com/01-ai/Yi",
+    tracks: ["global-innovation", "tech-evolution", "to-d"],
+    actors: ["01ai"],
+  }),
+  event({
+    slug: "ernie-4-5-open-multimodal-family",
+    title: "ERNIE 4.5 全家族开源：百度用异构 MoE 补齐多模态开放路线",
+    fact: "百度于 2025 年 6 月开放 ERNIE 4.5 的 10 个模型变体，并采用 Apache 2.0 许可。",
+    summary:
+      "文心大模型从主要依赖自有产品和云服务，转向同时提供完整开放模型家族，百度开始用 PaddlePaddle 生态和多硬件部署争取开发者。",
+    technical:
+      "ERNIE 4.5 包含文本与视觉语言模型，最大 424B 总参数、47B 激活参数，使用跨模态共享与专用参数结合的异构 MoE。",
+    industry:
+      "大厂闭源 API 与开放权重不再是二选一，完整模型矩阵、训练框架和硬件兼容成为中国开发者生态竞争的共同组成。",
+    future: "观察开源仓库维护、Paddle 之外推理框架兼容、海外采用和商业 API 与开放版本的能力差异。",
+    business:
+      "企业可在百度云与自部署之间比较，但应统一任务集、硬件成本和版本升级口径，避免只看模型参数。",
+    category: "open-source",
+    company: "百度文心 / Baidu ERNIE",
+    keywords: ["百度", "文心", "ERNIE", "ERNIE 4.5", "PaddlePaddle", "开源"],
+    scores: [99, 0, 91, 91],
+    date: "2025-06-30T00:00:00.000Z",
+    source: "baidu-ernie-updates",
+    url: "https://ernie.baidu.com/blog/posts/ernie4.5/",
+    tracks: ["tech-evolution", "global-innovation", "commercialization", "to-d"],
+    actors: ["baidu"],
+  }),
+  event({
+    slug: "perplexity-comet-enterprise-browser",
+    title: "Comet 进入企业版：Perplexity 从答案引擎扩展到可行动浏览器",
+    fact: "Perplexity 于 2025 年 8 月向 Enterprise Pro 用户推出 Comet 浏览器。",
+    summary:
+      "Perplexity 不再只提供带引用的搜索答案，而是把研究、邮件、日历和网页操作放进浏览器 Agent，开始竞争用户的完整信息工作流。",
+    technical:
+      "Comet 基于 Chromium，结合页面上下文和助手执行能力，并提供本地历史存储、管理权限与企业部署控制。",
+    industry: "搜索产品、浏览器和 Agent 的边界继续融合，分发入口与网页执行权限成为新的平台竞争点。",
+    future: "观察提示注入防护、跨站操作成功率、企业留存和与 Chrome、Edge 等既有入口的迁移成本。",
+    business: "企业试用应限制敏感站点和高风险动作，分别验证研究质量、执行成功率与权限治理。",
+    category: "agent-product",
+    company: "Perplexity / Comet",
+    keywords: ["Perplexity", "Comet", "AI 浏览器", "搜索 Agent", "Enterprise"],
+    scores: [98, 0, 91, 92],
+    date: "2025-08-14T00:00:00.000Z",
+    source: "perplexity",
+    url: "https://www.perplexity.ai/hub/blog/the-intelligent-business-introducing-comet-for-enterprise-pro",
+    tracks: ["commercialization", "tech-evolution", "to-b", "to-c"],
+    actors: [],
+  }),
+  event({
+    slug: "hunyuan-mt-open-translation-models",
+    title: "混元翻译模型开源：腾讯用 7B 模型切入低成本多语言生产",
+    fact: "腾讯混元官方仓库于 2025 年 9 月开放 Hunyuan-MT-7B 与 Hunyuan-MT-Chimera-7B。",
+    summary:
+      "混元把通用大模型能力拆成可部署的垂直模型，翻译成为验证小尺寸模型、数据工程和生产成本效率的明确场景。",
+    technical: "官方模型以 7B 规模覆盖多语言翻译，并提供 Chimera 版本与公开权重、评测和推理方法。",
+    industry:
+      "模型竞争从统一旗舰扩展到可量化 ROI 的专业任务，小模型在高频企业工作负载中可能比通用模型更具成本优势。",
+    future: "观察专业术语、低资源语言、长文一致性、真实吞吐和腾讯云产品化采用。",
+    business: "跨境和内容团队应使用自有术语库与人工接受率评测，不应只依据通用翻译榜单选型。",
+    category: "open-source",
+    company: "腾讯混元 / Tencent Hunyuan",
+    keywords: ["腾讯", "混元", "Hunyuan", "Hunyuan-MT", "翻译模型"],
+    scores: [98, 0, 84, 87],
+    date: "2025-09-01T00:00:00.000Z",
+    source: "tencent-hunyuan-updates",
+    url: "https://github.com/Tencent-Hunyuan/Hy-MT",
+    tracks: ["tech-evolution", "global-innovation", "model-economics", "to-b", "to-d"],
+    actors: ["tencent"],
+  }),
+  event({
+    slug: "seed-2-general-agent-models",
+    title: "Seed 2.0 发布：字节把多模态理解与长时 Agent 推进生产部署",
+    fact: "字节跳动 Seed 团队于 2026 年 2 月发布 Seed 2.0 Pro、Lite 与 Mini 三档通用 Agent 模型。",
+    summary:
+      "字节不再只通过豆包产品体现模型能力，而是公开完整模型矩阵与技术路线，把多模态、推理和长时任务组织为不同成本层级的生产供给。",
+    technical:
+      "Seed 2.0 系列覆盖复杂工作流、高并发和轻量部署，强调动态视觉理解、交互式应用生成与研究级任务处理。",
+    industry:
+      "拥有消费级分发和内容业务的大厂正在把内部模型能力转成开发者与企业供给，模型、云服务和产品数据形成联动。",
+    future: "观察 API 开放范围、外部开发者采用、长时任务轨迹、成本和与豆包产品的能力同步。",
+    business:
+      "评估字节模型时应拆分模型本身、火山引擎交付和豆包分发三层价值，避免把内部应用规模等同外部 API 留存。",
+    category: "model-release",
+    company: "字节跳动 Seed / 豆包",
+    keywords: ["字节跳动", "ByteDance", "Seed", "Seed 2.0", "豆包", "Doubao"],
+    scores: [99, 0, 93, 93],
+    date: "2026-02-14T00:00:00.000Z",
+    source: "bytedance-seed-blog",
+    url: "https://seed.bytedance.com/en/seed2",
+    tracks: ["tech-evolution", "commercialization", "global-innovation", "to-b", "to-d"],
+    actors: ["bytedance"],
+  }),
+  event({
+    slug: "baichuan-m3-medical-reasoning",
+    title: "Baichuan-M3 开源：百川把大模型竞争收敛到医疗决策链",
+    fact: "百川智能于 2026 年初开放 Baichuan-M3-235B，面向临床问诊与可靠医疗决策。",
+    summary:
+      "百川从通用模型转向高门槛医疗场景，竞争重点变成专业知识、追问、证据和风险控制，而不是继续追逐统一通用榜单。",
+    technical: "官方仓库围绕临床问询、推理与验证设计模型和评测，并提供开放代码、权重与技术材料。",
+    industry:
+      "中国模型创业公司开始通过垂直深度寻找差异化，但医疗模型必须同时接受临床有效性、数据合规和责任边界检验。",
+    future: "观察独立临床评测、真实部署、错误分层、医生接受率和监管路径。",
+    business: "医疗机构只能把模型作为受监督辅助工具，必须保留证据、医生复核和明确不可用场景。",
+    category: "vertical-model",
+    company: "百川智能 / Baichuan",
+    keywords: ["百川", "Baichuan", "Baichuan-M3", "医疗大模型", "临床推理"],
+    scores: [97, 0, 86, 88],
+    date: "2026-01-12T00:00:00.000Z",
+    source: "baichuan-m3-updates",
+    url: "https://github.com/baichuan-inc/Baichuan-M3-235B",
+    tracks: ["commercialization", "global-innovation", "to-b", "to-g"],
+    actors: ["baichuan"],
+  }),
+  event({
+    slug: "kimi-k2-5-multimodal-agent-swarm",
+    title: "Kimi K2.5 开源：月之暗面加入原生多模态与 Agent Swarm",
+    fact: "月之暗面于 2026 年 1 月开放 Kimi K2.5，提供原生多模态理解、工具使用和并行 Agent Swarm。",
+    summary:
+      "Kimi 从长文本和代码模型推进到视觉驱动的 Agent 系统，并尝试让主 Agent 动态创建多个子 Agent 并行完成开放任务。",
+    technical:
+      "K2.5 基于约 15T 图文 token 持续预训练，采用 1T 总参数、32B 激活参数的 MoE，支持 256K 上下文与原生 INT4。",
+    industry:
+      "国产开放模型开始同时竞争多模态、工具链和多 Agent 编排，模型能力与 runtime 设计进一步耦合。",
+    future: "观察 Swarm 的成本放大、子任务独立性、视觉工具可靠性和社区部署复现。",
+    business: "并行 Agent 应优先用于可拆分、可核验的研究和工程任务，并追踪每个子任务的证据与失败。",
+    category: "model-release",
+    company: "月之暗面 / Moonshot AI / Kimi",
+    keywords: ["月之暗面", "Moonshot", "Kimi", "Kimi K2.5", "Agent Swarm"],
+    scores: [99, 0, 96, 96],
+    date: "2026-01-30T00:00:00.000Z",
+    source: "moonshot-kimi-updates",
+    url: "https://github.com/MoonshotAI/Kimi-K2.5",
+    tracks: ["tech-evolution", "agi-progress", "global-innovation", "to-d"],
+    actors: ["moonshot"],
+  }),
+  event({
+    slug: "step-3-5-flash-efficient-agent-model",
+    title: "Step 3.5 Flash 开源：阶跃星辰用稀疏模型争夺高效 Agent 推理",
+    fact: "阶跃星辰于 2026 年初开放 Step 3.5 Flash，定位为兼顾推理、工具使用与效率的基础模型。",
+    summary:
+      "阶跃从多模态产品公司进一步进入全球开放模型竞争，试图用小激活参数、长上下文和 Agent 能力建立差异化。",
+    technical: "官方仓库披露模型面向长链推理和 Agent 任务，提供开放权重、推理说明与主流框架接入。",
+    industry:
+      "国内模型市场不再只由头部大厂和少数明星公司构成，更多团队通过开放权重争取开发者与海外可见度。",
+    future: "观察真实工具任务、推理吞吐、海外社区采用和阶跃 API 产品的持续更新。",
+    business: "技术团队可将其作为多模型路由候选，但需要用相同硬件和任务比较单位有效结果成本。",
+    category: "open-source",
+    company: "阶跃星辰 / StepFun",
+    keywords: ["阶跃星辰", "StepFun", "Step", "Step 3.5 Flash", "Agent"],
+    scores: [98, 0, 87, 88],
+    date: "2026-01-31T00:00:00.000Z",
+    source: "stepfun-model-updates",
+    url: "https://github.com/stepfun-ai/Step-3.5-Flash",
+    tracks: ["tech-evolution", "global-innovation", "model-economics", "to-d"],
+    actors: ["stepfun"],
+  }),
+  event({
+    slug: "iflytek-spark-x1-domestic-reasoning",
+    title: "讯飞星火 X1 发布：国产算力进入深度推理模型验证",
+    fact: "科大讯飞于 2025 年 1 月发布星火 X1，并在 4 月升级其数学、代码与逻辑推理能力。",
+    summary:
+      "星火 X1 将模型能力与全国产算力训练绑定，讯飞试图证明本土软硬件栈可以支撑深度推理并进入教育、医疗等行业产品。",
+    technical:
+      "官方资料将知识连接、工具验证的数据合成和细粒度强化学习列为关键方法，并持续更新模型与行业助手。",
+    industry:
+      "国产算力的价值需要通过模型质量、训练稳定性和生产成本共同证明，行业场景成为检验技术闭环的重要入口。",
+    future: "观察独立评测、国产硬件训练成本、通用 API 开放程度和教育医疗场景的真实效果。",
+    business: "采购方应把供应链自主与任务效果分别打分，避免用国产化标签替代质量、成本和安全验收。",
+    category: "reasoning",
+    company: "科大讯飞 / 讯飞星火",
+    keywords: ["科大讯飞", "iFlytek", "讯飞星火", "Spark", "星火 X1", "国产算力"],
+    scores: [98, 0, 88, 90],
+    date: "2025-01-15T00:00:00.000Z",
+    source: "iflytek-spark-docs",
+    url: "https://xinghuo.xfyun.cn/doc/spark-guide/spark.html",
+    tracks: ["tech-evolution", "global-innovation", "commercialization", "to-b", "to-g"],
+    actors: ["iflytek"],
+  }),
+  event({
+    slug: "minimax-m2-5-production-agent",
+    title: "MiniMax M2.5 开源：编码与办公 Agent 转向生产效率竞争",
+    fact: "MiniMax 于 2026 年 2 月发布并开放 MiniMax-M2.5，面向编程、工具调用、搜索和办公任务。",
+    summary:
+      "MiniMax 在 M1 推理路线之后继续强化生产力 Agent，将竞争口径从模型答题能力转向任务分解、执行速度和完整交付。",
+    technical:
+      "官方仓库提供模型权重、部署说明和 Agent 评测，强调相较前代在复杂软件工程任务中的执行速度提升。",
+    industry:
+      "国产模型厂商越来越直接进入编码和办公工作流，模型价格优势必须与任务成功率和交付速度一起验证。",
+    future: "观察独立 SWE 评测、工具失败分布、API SLA、海外开发者采用和修改版 MIT 许可边界。",
+    business: "企业应按一次被接受的代码或文档结果计算成本，并保留模型切换与输出审查机制。",
+    category: "coding-agent",
+    company: "MiniMax / 稀宇科技",
+    keywords: ["MiniMax", "稀宇科技", "MiniMax-M2.5", "编码 Agent", "办公 Agent"],
+    scores: [99, 0, 92, 94],
+    date: "2026-02-13T00:00:00.000Z",
+    source: "minimax-model-releases",
+    url: "https://github.com/MiniMax-AI/MiniMax-M2.5",
+    tracks: ["tech-evolution", "commercialization", "global-innovation", "to-b", "to-d"],
+    actors: ["minimax"],
+  }),
+  event({
+    slug: "sensetime-sensenova-u1-unified-model",
+    title: "SenseNova U1 开源：商汤把理解与生成合并为原生多模态模型",
+    fact: "商汤于 2026 年 4 月发布并开源 SenseNova U1 原生统一多模态模型系列。",
+    summary:
+      "商汤从视觉能力和日日新大模型平台推进到理解、推理与生成统一架构，试图用多模态原生路线连接内容生产和 Agent 场景。",
+    technical: "官方介绍 U1 在单一模型中处理多模态理解与生成，并提供开源权重和技术材料。",
+    industry:
+      "视觉公司正在把既有感知积累升级为统一模型能力，竞争从单项图像任务扩展到跨模态工作流。",
+    future: "观察开源许可、生成一致性、视觉推理、部署成本和日日新平台的企业采用。",
+    business:
+      "内容与视觉团队应分别评估理解准确率、生成可控性和版权边界，避免用统一架构概念替代生产验收。",
+    category: "multimodal",
+    company: "商汤科技 / SenseTime / 日日新",
+    keywords: ["商汤", "SenseTime", "日日新", "SenseNova", "SenseNova U1", "多模态"],
+    scores: [99, 0, 89, 90],
+    date: "2026-04-28T00:00:00.000Z",
+    source: "sensetime-news-en",
+    url: "https://www.sensetime.com/en/news/51170625/",
+    tracks: ["tech-evolution", "global-innovation", "commercialization", "to-d"],
+    actors: ["sensetime"],
+  }),
+  event({
+    slug: "minicpm5-on-device-agent-skills",
+    title: "MiniCPM5-1B 开源：面壁把端侧小模型与 Agent Skills 连接",
+    fact: "面壁智能与 OpenBMB 于 2026 年 5 月发布 MiniCPM5-1B，并提供部署、微调和 Agent Skills。",
+    summary:
+      "MiniCPM 路线继续验证小参数模型在端侧和资源受限环境中的价值，并把模型权重、工具解析与技能包组织为可落地开发栈。",
+    technical: "MiniCPM5-1B 是 1B 级稠密模型，官方同时提供 BF16、GGUF、MLX 等版本和端侧部署资料。",
+    industry:
+      "前沿能力之外，端侧 AI 的竞争取决于内存、能耗、隐私和工具生态，小模型仍拥有独立市场空间。",
+    future: "观察手机与 PC 实测速度、量化损失、技能稳定性和真实离线应用留存。",
+    business:
+      "端侧项目应优先验证隐私、响应速度和离线可用性，不必用云端旗舰模型的统一分数衡量价值。",
+    category: "on-device",
+    company: "面壁智能 / ModelBest / OpenBMB",
+    keywords: ["面壁智能", "ModelBest", "OpenBMB", "MiniCPM", "MiniCPM5", "端侧模型"],
+    scores: [99, 0, 87, 91],
+    date: "2026-05-19T00:00:00.000Z",
+    source: "modelbest-minicpm-updates",
+    url: "https://github.com/OpenBMB/MiniCPM",
+    tracks: ["tech-evolution", "model-economics", "global-innovation", "to-d"],
+    actors: ["modelbest"],
+  }),
+  event({
+    slug: "cohere-command-a-plus-sovereign-agent",
+    title: "Command A+ 发布：Cohere 强化可私有部署的企业 Agent 模型",
+    fact: "Cohere 于 2026 年 5 月发布 Command A+，并通过标准 API 与私有部署方式提供。",
+    summary:
+      "Cohere 没有追逐消费级入口，而是继续围绕企业数据、主权部署、多语言和 Agent 工具构建差异化，代表前沿模型竞争的另一条路线。",
+    technical:
+      "Command A+ 是 Cohere 首个 MoE Command 模型，支持文本与图像、128K 输入、64K 输出及 48 种语言，并面向少量高端 GPU 部署优化。",
+    industry:
+      "企业模型市场不仅由峰值智能决定，私有部署、数据边界、硬件效率和跨语言能力可能形成长期壁垒。",
+    future: "观察真实企业采用、私有部署 TCO、Agent 工具成功率和与公有云模型的性能差距。",
+    business:
+      "有数据主权要求的组织应把 Command A+ 纳入同任务评测，并完整计算部署、运维、更新与治理成本。",
+    category: "model-release",
+    company: "Cohere / Command",
+    keywords: ["Cohere", "Command", "Command A+", "企业模型", "主权 AI", "MoE"],
+    scores: [99, 0, 89, 92],
+    date: "2026-05-20T00:00:00.000Z",
+    source: "cohere-release-notes",
+    url: "https://docs.cohere.com/changelog/",
+    tracks: ["commercialization", "tech-evolution", "global-innovation", "to-b"],
+    actors: [],
+  }),
+  event({
+    slug: "mistral-ocr-4-document-agent",
+    title: "Mistral OCR 4 发布：文档理解成为企业 Agent 的基础能力层",
+    fact: "Mistral 于 2026 年 6 月发布 OCR 4，继续扩展其文档解析与企业工作流能力。",
+    summary:
+      "Mistral 从开放语言模型扩展到文档智能和工具平台，说明企业 Agent 的竞争正在向 PDF、表格、版面和可追溯结构化数据下沉。",
+    technical: "OCR 4 面向复杂文档解析，将视觉、版面与文本结构转成可供检索和 Agent 使用的内容。",
+    industry:
+      "高质量文档摄取决定企业知识 Agent 的上限，模型厂商开始直接覆盖传统 OCR、解析和 RAG 数据准备市场。",
+    future: "观察多语言表格、手写内容、复杂版面、引用位置和大规模批处理成本。",
+    business: "企业应使用真实合同、报告和扫描件评测字段准确率与人工修正量，而不是只看演示文档。",
+    category: "document-ai",
+    company: "Mistral AI",
+    keywords: ["Mistral", "Mistral AI", "OCR 4", "文档智能", "企业 Agent"],
+    scores: [99, 0, 86, 90],
+    date: "2026-06-23T00:00:00.000Z",
+    source: "mistral",
+    url: "https://mistral.ai/news/ocr-4",
+    tracks: ["commercialization", "tech-evolution", "to-b", "to-d"],
+    actors: [],
+  }),
+] as const satisfies readonly CuratedEventSeed[];

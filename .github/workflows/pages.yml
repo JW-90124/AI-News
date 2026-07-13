@@ -3,6 +3,13 @@ name: Deploy static site
 on:
   push:
     branches: [main]
+    paths:
+      - ".github/workflows/pages.yml"
+      - "data/snapshot/v1.json"
+      - "package.json"
+      - "package-lock.json"
+      - "src/**"
+      - "web/**"
   workflow_dispatch:
 
 permissions:
@@ -17,6 +24,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     env:
       DATABASE_URL: sqlite:./var/pages.db
       PUBLIC_SITE_URL: https://barretlee.github.io/agent-pulse/
@@ -52,6 +60,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     needs: build
     steps:
       - name: Deploy to GitHub Pages

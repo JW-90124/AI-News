@@ -184,3 +184,65 @@ next ranked proposals
 - 管理台新页面失败不影响 collect/export；
 - Pages 继续从最后成功仓库 snapshot 构建；
 - 自动产生的 review Event 可以保留，不能自动公开。
+
+## 11. 2026-07-13 单调数据架构
+
+### 11.1 数据层次
+
+```text
+Source catalog + lifecycle
+        │
+        ▼
+SourceAdapter ── collect/probe outcome
+        │
+        ▼
+Signal (canonical fact candidate by URL hash)
+        ├── SignalObservation (one source's repeated observation)
+        ├── SignalTriage
+        └── EventSignal ── Event ── Track/Actor/merge relations
+
+Private database: operational state and controlled content
+Repository snapshot: public-safe normalized rows and recovery metadata
+Static export: published allowlist only
+```
+
+`Signal` 不再承担“由哪个来源第一次发现”之外的全部来源身份；`SignalObservation` 保存跨来源汇总，append-only occurrence ledger 保存每次唯一观测。快照按 occurrence ID 求并集并重新计算计数，因此两个环境从同一基线并发增长也不会互相覆盖。独立证据门禁仍按 source/author/media group 判断，observation 数量本身不自动增加事实可信度。
+
+### 11.2 Merge 规则
+
+| 对象 | 稳定键 | 合并规则 |
+|---|---|---|
+| Source | slug | catalog 字段同步；运行状态由更新的 verified/collected 时间获胜；累计计数取最大值 |
+| SourceCheck / SourceRun | id | append/upsert；快照保留完整公开历史 |
+| Signal | canonical URL hash | tags/metrics 合并；较新字段优先；旧快照不得用截断摘要覆盖更完整本地摘要 |
+| SignalObservation | signal + source | first=min、last=max、count 累加或取更大可证明值 |
+| Discovery | id | first=min、last=max；状态和指标按较新记录合并 |
+| Event | slug | manual override、published 和较新 updated_at 优先；关系采用并集 |
+
+快照 schema 只允许向后兼容增加字段。恢复必须接受旧快照缺少 observation、updated_at 或 last_seen_at，并用保守默认值补齐。
+
+### 11.3 全来源同步
+
+`collect --scope=all --backfill --drain` 的语义：
+
+1. 枚举完整 Source 目录；
+2. 选择具备自动 adapter、生命周期允许且不属于 manual/restricted/policy blocked 的来源；
+3. 对未选择来源输出结构化 skip 原因；
+4. backfill 只清理本次选中来源的 cursor/cache，不删除历史 Signal；
+5. collect 后持续处理聚类 backlog，直到为空或命中显式安全上限；
+6. 单来源失败被记录并隔离，不中断整批。
+
+### 11.4 CI 收敛协议
+
+```text
+checkout snapshot
+  -> restore local DB
+  -> collect/audit/operate
+  -> git fetch origin main
+  -> extract remote snapshot to temp file
+  -> merge remote snapshot into local DB
+  -> write deterministic union snapshot
+  -> commit + rebase + push (no force)
+```
+
+同仓库数据任务继续共享 concurrency group；远端 merge 是写快照前的最后一道门禁，解决任务启动后 `main` 已前进时的 stale snapshot 覆盖问题。

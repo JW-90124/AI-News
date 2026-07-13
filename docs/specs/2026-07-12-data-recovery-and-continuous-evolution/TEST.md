@@ -104,3 +104,17 @@
 - Pages 从新快照成功构建；
 - 公共 JSON 与仓库 approved 数据一致；
 - 无有效变化不产生提交。
+
+## 10. 2026-07-13 数据连续性回归
+
+- 同一快照连续恢复两次，Signal、observation、check、run、discovery 数量和字段保持稳定；
+- 本地较长摘要、较新 `updated_at` 和较新来源运行状态不会被旧快照覆盖；
+- 两个来源提供同一 canonical URL 时只有一个 Signal，但有两个 observation；同来源重复观测刷新 `last_seen_at` 和 count；
+- 两个环境从相同 observation 基线各自产生新 occurrence 后，merge 结果包含两个唯一 occurrence，计数不采用会丢并发增量的 last-write/max；
+- 新快照完整恢复所有 source run，不再只恢复每来源最新一条；
+- Event 的 track、actor 和 merge 关系在快照往返后不丢失；
+- 旧版本快照缺少新增字段时仍可恢复；
+- `collect --scope=all` 对所有目录项返回 selected 或结构化 skip，manual/restricted/quarantined 不会被强抓；
+- `--backfill` 不删除历史 Signal，`--drain` 清空可处理 backlog；
+- workflow 静态契约验证 `fetch remote -> merge remote snapshot -> write snapshot`，且禁止 force push；
+- 写快照前后的 cumulative 集合不得意外减少；显式清理必须使用单独维护流程并留下审计。

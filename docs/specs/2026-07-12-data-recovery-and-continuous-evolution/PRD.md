@@ -120,3 +120,31 @@ E4 production  20 次 healthy + 至少 7 天观察 + 人工确认后 active
 ## 6. 每轮报告
 
 每轮输出：目标、问题、根因、修改、能力/数据池、数据变化、页面变化、测试、遗留问题、下一轮。指标必须包含来源数、运行成功/失败、信号新增/重复、事件候选/evidence-ready/published、覆盖变化和公开页变化。
+
+## 7. 2026-07-13 数据连续性验收增补
+
+### 数据不丢失
+
+- 快照恢复是幂等、可交换的 merge；重复恢复不会减少 cumulative 表中的记录数；
+- `source_checks`、`source_runs`、Signal observation 等历史记录采用 append/upsert，不以“每来源最新一条”替代历史；
+- 较旧快照不得回滚来源 `last_collected_at`、`last_verified_at`、成功/失败计数，以及 Signal/Event 的较新内容；
+- 快照继续执行公开 DTO allowlist，不把隐私和许可风险转嫁给“数据不丢失”目标。
+
+### 友好合并
+
+- canonical URL hash 是 Signal 的稳定身份；同 URL 重抓合并 tags、metrics 和较新/更完整字段；
+- 同一 Signal 被第二个来源观测时，新增或刷新 `(signal_id, source_id)` observation，保留首次/最近观测时间和次数；
+- Event、discovery、triage 和关系按各自稳定键 merge，时间字段遵循 `first=min`、`last=max`，人工状态和已发布状态不会被旧自动结果降级。
+
+### 新来源融入
+
+- 新来源只通过统一目录、adapter capability 和生命周期进入系统；
+- `all` 同步覆盖所有自动采集资格来源，同时对 manual、restricted、policy blocked、quarantined、retired 给出明确跳过原因；
+- “全来源”指对全部目录项给出 collect 或 skip 结果，不等同于绕过许可和生命周期强抓所有 URL。
+
+### GitHub Actions 有序增长
+
+- 数据任务共用 concurrency group；
+- 每次写快照前 fetch `origin/main` 并把远端最新快照 merge 到当前数据库；
+- 只有合并完成后才能生成、提交和推送快照；推送冲突必须重新合并，而不是以强推覆盖；
+- workflow 契约测试验证 restore、remote merge、write 的顺序。

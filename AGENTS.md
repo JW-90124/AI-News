@@ -73,7 +73,7 @@ Agent Pulse 不是新闻聚合器，而是一个中国优先、全球覆盖的 A
 - `data/snapshot/v1.json` 与 `data/reports/source-health.json` 是受审计的版本化数据，不得通过 `.gitignore` 规避冲突；冲突时应恢复最新快照、重跑对应采集或审计流程，并重新生成公开数据。
 - 推送后必须等待 CI 与 Pages 工作流真实成功，并访问公开站确认 HTTP 200、目标变更和网站 Changelog 均已上线；工作流仍在排队、失败或 Pages 未更新时，不得宣称发布完成。
 - 修改来源审计、自动运营或相关工作流时，必须手动触发一次 `source-audit.yml`，确认自动健康摘要 Issue 保持开启、marker 和审计时间已更新，并继续验证数据提交与 Pages 部署闭环。
-- `data-refresh.yml` 每次增量构建都必须使用公开静态 DTO 幂等更新北京时间当天的 `daily-brief` Issue；同一天只允许一个带日期 marker 的日报，禁止把数据库、原始 payload 或管理字段写入 Issue。
+- `data-refresh.yml` 每日抓取并刷新公开站点；只在周日或显式 `publish_weekly=true` 时使用公开静态 DTO 幂等更新当前 ISO 周的 `weekly-brief` Issue。同一周只允许一个带周 marker 的周报，禁止把数据库、原始 payload 或管理字段写入 Issue。
 - 定时工作流可能因仓库长期无活动而被 GitHub 自动停用；健康监控必须检查来源审计最近一次成功运行和健康摘要 Issue 的新鲜度，发现超时应立即失败并留下可见证据。
 
 ## 星探精灵

@@ -31,10 +31,10 @@ AI has no shortage of news, feeds, or hot takes. What is scarce is a reliable wa
 
 Agent Pulse is built for that job:
 
-- **30 seconds:** see the few changes that matter today;
-- **3 minutes:** understand the evidence, context, and affected players;
-- **10 minutes:** form a judgment through the event history, counter-signals, and next checkpoints;
-- **Every day:** follow technology, AGI, commercialization, investment, China, and model economics as evolving narratives rather than disconnected headlines.
+- **Material shifts:** surface a new view only when a hotspot, major product update, or technical leap changes the evidence;
+- **Evidence trail:** connect primary sources, context, affected players, and counter-signals;
+- **Weekly review:** summarize what changed, which judgments remain stable, and what to watch next;
+- **Continuous monitoring:** follow technology, AGI, commercialization, investment, China, and model economics without inventing a publishing rhythm.
 
 If you want an open, evidence-first alternative to AI news overload, [star Agent Pulse](https://github.com/barretlee/agent-pulse). A star helps more decision-makers and builders discover the project, and tells us this public intelligence layer is worth maintaining.
 
@@ -42,9 +42,10 @@ If you want an open, evidence-first alternative to AI news overload, [star Agent
 
 | Product experience | The question it answers |
 | --- | --- |
-| **Today's brief** | What changed today, and what deserves my attention first? |
+| **Latest material shift** | What changed enough to update the current view? |
 | **Strategic narratives** | Is this a one-off announcement or part of a durable industry shift? |
 | **Evidence timeline** | What happened first, what changed later, and which claims are verified? |
+| **Source updates** | What are 411 monitored sources publishing before those signals converge into Events? |
 | **Research frontier** | Which papers change technical capability, evaluation, cost, or product direction? |
 | **China and global radar** | Who is leading, catching up, constrained, or expanding internationally? |
 | **Scout opportunities** | What product, company, content, or internal experiment is worth validating now? |
@@ -78,21 +79,23 @@ Aggregators can suggest candidates or propagation heat, but cannot become the so
 
 The repository is not a mockup. It contains the source catalog, collectors, evidence model, automatic quality gates, static renderer, source-health automation, and GitHub Pages delivery path used by the live product.
 
-Verification snapshot captured at **2026-07-13 00:27 UTC**:
+GitHub Actions refreshes public data and redeploys the static site once per day. The source audit, monitor, and quality guard remain weekly; the `weekly-brief` Issue is created or updated only on Sunday (or by an explicit manual run), so daily freshness does not create daily Issues.
+
+Verification snapshot captured at **2026-07-13 16:33 UTC**:
 
 | Measure | Verified state |
 | --- | ---: |
-| Sources in the current catalog | 266 |
-| Sources covered by that full audit | 260 |
-| Healthy in that full audit | 139 |
-| Isolated observation sources | 107 |
+| Sources in the current catalog | 411 |
+| Sources covered by that full audit | 411 |
+| Healthy in that full audit | 261 |
+| Isolated observation sources | 192 |
 | Production sources | 5 |
-| Published evidence-backed events | 64 |
-| Normalized direct signals in the repository snapshot | 2,187 |
+| Published evidence-backed events | 109 |
+| Normalized direct signals in the repository snapshot | 4,386 |
 
 See the machine-generated [source health report](data/reports/source-health.json), [data-source policy](docs/SOURCES.md), and [capability map](docs/CAPABILITIES.md).
 
-The limitations are equally important: production qualification still needs a real observation window; many historical events need more independent evidence; claim-level evidence, multilingual semantic clustering, real MySQL integration coverage, and user outcome feedback are still incomplete. Planned or experimental capabilities are never presented as shipped.
+The public source-update stream exposes only allowlisted titles, attribution, dates, categories, tags, and canonical links. It remains an observation layer and cannot bypass the evidence and readiness gates required for Event publication. The limitations are equally important: production qualification still needs a real observation window; many historical events need more independent evidence; claim-level evidence, multilingual semantic clustering, real MySQL integration coverage, and user outcome feedback are still incomplete. Planned or experimental capabilities are never presented as shipped.
 
 ## Architecture
 
@@ -141,6 +144,7 @@ Useful commands:
 ```bash
 npm run collect               # Collect, deduplicate, cluster, and score
 npm run sources:audit         # Run a non-destructive full source audit
+npm run weekly:issue          # Render the current public weekly brief
 npm run ops:reconcile         # Reconcile source health and discovery state
 npm run scout:generate -- 5   # Publish or archive evidence-linked Scout opportunities
 npm run export                # Generate the static site in dist/

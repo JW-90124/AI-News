@@ -10,17 +10,412 @@ document.querySelector("[data-theme-toggle]")?.addEventListener("click", () => {
 });
 
 setupEventDrawer();
+setupHomeDynamics();
+setupScrollReveals();
+setupSignalBrowser();
+setupTrendModules();
+runWhenIdle(setupGithubStarCount, 1800);
 const timeline = document.querySelector("[data-timeline]");
 if (timeline) setupTimeline(timeline);
 setupCardFilters();
 setupSourceFilters();
 setupStockWidgets();
 
+function runWhenIdle(callback, timeout = 2400) {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(callback, { timeout });
+    return;
+  }
+  setTimeout(callback, Math.min(timeout, 800));
+}
+
+function setupHomeDynamics() {
+  const trendItems = [...document.querySelectorAll("[data-random-trend]")];
+  if (trendItems.length) {
+    let selectedIndex = -1;
+    const showRandomTrend = () => {
+      if (trendItems.length === 1) selectedIndex = 0;
+      else {
+        const offset = 1 + Math.floor(Math.random() * (trendItems.length - 1));
+        selectedIndex = (Math.max(0, selectedIndex) + offset) % trendItems.length;
+      }
+      trendItems.forEach((item, index) => {
+        item.hidden = index !== selectedIndex;
+      });
+      const selected = trendItems[selectedIndex];
+      selected?.classList.remove("trend-refresh-in");
+      if (selected) void selected.offsetWidth;
+      selected?.classList.add("trend-refresh-in");
+    };
+    trendItems.forEach((item) => {
+      item.querySelector("[data-random-trend-next]")?.addEventListener("click", showRandomTrend);
+    });
+    selectedIndex = Math.floor(Math.random() * trendItems.length);
+    trendItems.forEach((item, index) => {
+      item.hidden = index !== selectedIndex;
+    });
+  }
+
+  revealRandomItems("[data-random-recent-list]", "[data-random-recent]");
+
+  document.querySelectorAll("[data-industry-carousel]").forEach(setupIndustryCarousel);
+}
+
+function revealRandomItems(rootSelector, itemSelector) {
+  document.querySelectorAll(rootSelector).forEach((root) => {
+    const visible = Math.max(1, Number(root.dataset.randomVisible || 1));
+    const items = [...root.querySelectorAll(itemSelector)];
+    const current = new Set(items.filter((item) => !item.hidden));
+    let shuffled = shuffle([...items]);
+    if (items.length > visible && shuffled.slice(0, visible).every((item) => current.has(item))) {
+      shuffled = [...shuffled.slice(visible), ...shuffled.slice(0, visible)];
+    }
+    const selectedItems = shuffled.slice(0, visible);
+    const selected = new Set(selectedItems);
+    items.forEach((item) => {
+      item.hidden = !selected.has(item);
+    });
+  });
+}
+
+function setupScrollReveals() {
+  if (!("IntersectionObserver" in window)) return;
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reducedMotion) return;
+  const modules = [
+    ...document.querySelectorAll(
+      "main > section:not([data-no-scroll-reveal]), main > .trend-detail > section:not([data-no-scroll-reveal])",
+    ),
+  ];
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -10%", threshold: 0.08 },
+  );
+  modules.forEach((module) => {
+    const rect = module.getBoundingClientRect();
+    module.classList.add("scroll-reveal");
+    if (rect.top < innerHeight * 0.92) module.classList.add("is-visible");
+    else observer.observe(module);
+  });
+}
+
+function setupIndustryCarousel(root) {
+  const track = root.querySelector("[data-carousel-track]");
+  const slides = [...root.querySelectorAll("[data-carousel-slide]")];
+  const previous = root.querySelector("[data-carousel-prev]");
+  const next = root.querySelector("[data-carousel-next]");
+  const dots = root.querySelector("[data-carousel-dots]");
+  const status = root.querySelector("[data-carousel-status]");
+  if (!track || slides.length < 2) return;
+
+  let index = 0;
+  let timer;
+  let touchStart = 0;
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const dotButtons = slides.map((_, dotIndex) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.setAttribute("aria-label", `${dotIndex + 1} / ${slides.length}`);
+    button.addEventListener("click", () => goTo(dotIndex, true));
+    dots?.append(button);
+    return button;
+  });
+
+  const render = () => {
+    track.style.transform = `translate3d(${-index * 100}%, 0, 0)`;
+    slides.forEach((slide, slideIndex) => {
+      slide.setAttribute("aria-hidden", String(slideIndex !== index));
+    });
+    dotButtons.forEach((button, dotIndex) => {
+      button.setAttribute("aria-current", String(dotIndex === index));
+    });
+    if (status) status.textContent = `${index + 1} / ${slides.length}`;
+  };
+  const stop = () => {
+    clearInterval(timer);
+    timer = undefined;
+  };
+  const start = () => {
+    stop();
+    if (reducedMotion) return;
+    timer = setInterval(() => goTo(index + 1, false), 6_500);
+  };
+  const goTo = (nextIndex, manual) => {
+    index = (nextIndex + slides.length) % slides.length;
+    render();
+    if (manual) start();
+  };
+
+  previous?.addEventListener("click", () => goTo(index - 1, true));
+  next?.addEventListener("click", () => goTo(index + 1, true));
+  root.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    goTo(index + (event.key === "ArrowRight" ? 1 : -1), true);
+  });
+  root.addEventListener("pointerenter", stop);
+  root.addEventListener("pointerleave", start);
+  root.addEventListener("focusin", stop);
+  root.addEventListener("focusout", start);
+  root.addEventListener("touchstart", (event) => {
+    touchStart = event.changedTouches[0]?.clientX || 0;
+    stop();
+  });
+  root.addEventListener("touchend", (event) => {
+    const delta = (event.changedTouches[0]?.clientX || 0) - touchStart;
+    if (Math.abs(delta) > 42) goTo(index + (delta < 0 ? 1 : -1), true);
+    else start();
+  });
+  render();
+  start();
+}
+
+function setupSignalBrowser() {
+  const root = document.querySelector("[data-signal-browser]");
+  const list = root?.querySelector("[data-signal-list]");
+  const search = root?.querySelector("[data-signal-search]");
+  const region = root?.querySelector("[data-signal-region]");
+  const more = root?.querySelector("[data-signal-more]");
+  const count = root?.querySelector("[data-signal-count]");
+  if (!root || !list) return;
+
+  const pageSize = Math.max(12, Number(root.dataset.pageSize || 48));
+  let visible = pageSize;
+  let signals = null;
+  let signalsPromise;
+
+  const loadSignals = () => {
+    if (signals) return Promise.resolve(signals);
+    if (signalsPromise) return signalsPromise;
+    signalsPromise = fetch(root.dataset.signalsSrc, { credentials: "same-origin" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Signal feed request failed: ${response.status}`);
+        return response.json();
+      })
+      .then((payload) => {
+        if (!Array.isArray(payload.signals)) throw new Error("Signal feed has no signals");
+        signals = payload.signals;
+        return signals;
+      })
+      .catch((error) => {
+        signalsPromise = undefined;
+        throw error;
+      });
+    return signalsPromise;
+  };
+
+  const render = () => {
+    const query = String(search?.value || "")
+      .trim()
+      .toLowerCase();
+    const selectedRegion = String(region?.value || "all");
+    const filtered = (signals || []).filter((signal) => {
+      const haystack = [
+        signal.title,
+        signal.description,
+        signal.sourceName,
+        signal.sourceSlug,
+        signal.category,
+        signal.sourceRegion,
+        ...(Array.isArray(signal.tags) ? signal.tags : []),
+      ]
+        .join(" ")
+        .toLowerCase();
+      return (
+        (!query || haystack.includes(query)) &&
+        (selectedRegion === "all" || signal.sourceRegion === selectedRegion)
+      );
+    });
+    const page = filtered.slice(0, visible);
+    list.replaceChildren(...page.map(signalObservationNode));
+    if (count) count.textContent = `${page.length} / ${filtered.length}`;
+    if (more) more.hidden = page.length >= filtered.length;
+  };
+
+  const applyFilter = () => {
+    visible = pageSize;
+    loadSignals()
+      .then(render)
+      .catch(() => {});
+  };
+  search?.addEventListener("input", applyFilter);
+  region?.addEventListener("change", applyFilter);
+  more?.addEventListener("click", () => {
+    loadSignals()
+      .then(() => {
+        visible += pageSize;
+        render();
+      })
+      .catch(() => {});
+  });
+}
+
+function signalObservationNode(signal) {
+  const article = createNode("article", "signal-observation-card");
+  const meta = createNode("div", "");
+  meta.append(
+    createNode("span", "", `${signal.category || "update"} · ${signal.sourceRegion || "GLOBAL"}`),
+    createNode("time", "", formatDrawerDate(signal.publishedAt)),
+  );
+  article.append(meta, createNode("h2", "", signal.title || "Untitled source update"));
+  if (signal.description) article.append(createNode("p", "", signal.description));
+  const footer = createNode("footer", "");
+  footer.append(
+    createNode(
+      "span",
+      "",
+      `${signal.sourceName || signal.sourceSlug || "Source"} · Tier ${signal.sourceTier || "—"}`,
+    ),
+  );
+  const url = safeHttpUrl(signal.url);
+  if (url) {
+    const link = createNode(
+      "a",
+      "",
+      document.documentElement.lang === "en" ? "Open source ↗" : "查看原文 ↗",
+    );
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    footer.append(link);
+  }
+  article.append(footer);
+  return article;
+}
+
+function shuffle(items) {
+  for (let index = items.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(Math.random() * (index + 1));
+    [items[index], items[target]] = [items[target], items[index]];
+  }
+  return items;
+}
+
+function setupGithubStarCount() {
+  const button = document.querySelector("[data-github-star-button]");
+  const count = button?.querySelector("[data-github-star-count]");
+  if (!button || !count || count.textContent?.trim() !== "—") return;
+
+  let repository;
+  try {
+    const url = new URL(button.href);
+    const [owner, name] = url.pathname
+      .replace(/^\//, "")
+      .replace(/\.git$/, "")
+      .split("/");
+    if (url.hostname !== "github.com" || !owner || !name) return;
+    repository = `${owner}/${name}`;
+  } catch {
+    return;
+  }
+
+  const apply = (stars) => {
+    if (!Number.isInteger(stars) || stars < 0) return;
+    count.textContent = new Intl.NumberFormat("en-US").format(stars);
+    button.setAttribute(
+      "aria-label",
+      document.documentElement.lang === "en"
+        ? `Star Agent Pulse on GitHub, ${stars} stars`
+        : `在 GitHub 为 Agent Pulse 点赞，当前 ${stars} 个 Star`,
+    );
+  };
+
+  const cacheKey = `agent-pulse-github-stars:${repository}`;
+  try {
+    const cached = JSON.parse(localStorage.getItem(cacheKey) || "null");
+    if (
+      Number.isInteger(cached?.stars) &&
+      Date.now() - Number(cached?.fetchedAt) < 6 * 60 * 60 * 1000
+    ) {
+      apply(cached.stars);
+      return;
+    }
+  } catch {
+    try {
+      localStorage.removeItem(cacheKey);
+    } catch {
+      // Ignore blocked storage and continue with a live request.
+    }
+  }
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 4_000);
+  fetch(`https://api.github.com/repos/${repository}`, {
+    headers: { Accept: "application/vnd.github+json" },
+    signal: controller.signal,
+  })
+    .then((response) => (response.ok ? response.json() : Promise.reject(new Error("GitHub API"))))
+    .then((metadata) => {
+      const stars = metadata?.stargazers_count;
+      if (!Number.isInteger(stars) || stars < 0) return;
+      apply(stars);
+      try {
+        localStorage.setItem(cacheKey, JSON.stringify({ stars, fetchedAt: Date.now() }));
+      } catch {
+        // A blocked cache must not prevent the public counter from updating.
+      }
+    })
+    .catch(() => {})
+    .finally(() => clearTimeout(timeout));
+}
+
+function setupTrendModules() {
+  const root = document.querySelector("[data-trend-detail]");
+  if (!root) return;
+  root.querySelectorAll("[data-module-expand]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const module = button.closest("[data-module-expand-root]");
+      const expanded = !module?.classList.contains("is-expanded");
+      module?.classList.toggle("is-expanded", expanded);
+      button.setAttribute("aria-expanded", String(expanded));
+      const label = button.querySelector("span");
+      if (label) {
+        label.textContent = expanded
+          ? button.dataset.expandedLabel || "Show less"
+          : button.dataset.collapsedLabel || "View all";
+      }
+    });
+  });
+  root.querySelectorAll(".phase-rail").forEach((rail) => {
+    rail.addEventListener("keydown", (event) => {
+      if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+      event.preventDefault();
+      rail.scrollBy({ left: event.key === "ArrowRight" ? 320 : -320, behavior: "smooth" });
+    });
+  });
+}
+
 function setupTimeline(root) {
   const cards = [...root.querySelectorAll("[data-event]")];
   const search = root.querySelector("[data-timeline-search]");
   const count = root.querySelector("[data-result-count]");
   let activeTrack = new URLSearchParams(location.search).get("track") || "all";
+  const centerFilter = (button) => {
+    button?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  };
+
+  if ("IntersectionObserver" in window) {
+    const monthObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const year = entry.target.closest("[data-timeline-year]");
+          const marker = year?.querySelector("[data-timeline-current-month]");
+          if (marker) marker.textContent = entry.target.dataset.timelineLabel || "";
+        }
+      },
+      { rootMargin: "-142px 0px -62% 0px", threshold: 0 },
+    );
+    root.querySelectorAll("[data-timeline-month]").forEach((month) => {
+      monthObserver.observe(month);
+    });
+  }
 
   const apply = () => {
     const query = String(search?.value || "")
@@ -69,10 +464,14 @@ function setupTimeline(root) {
       activeTrack === "all" ? params.delete("track") : params.set("track", activeTrack);
       history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}`);
       apply();
+      centerFilter(button);
     });
   });
   search?.addEventListener("input", apply);
   apply();
+  requestAnimationFrame(() => {
+    centerFilter(root.querySelector(`[data-filter-track="${CSS.escape(activeTrack)}"]`));
+  });
 }
 
 function setupEventDrawer() {
@@ -462,9 +861,14 @@ function setupSourceFilters() {
 }
 
 function setupStockWidgets() {
-  document.querySelectorAll(".actor-stock-chart[data-stock-ticker]").forEach((container) => {
+  const containers = [...document.querySelectorAll(".actor-stock-chart[data-stock-ticker]")];
+  if (!containers.length) return;
+
+  const loadWidget = (container) => {
+    if (container.dataset.stockLoaded === "true") return;
     const ticker = container.dataset.stockTicker;
     if (!ticker) return;
+    container.dataset.stockLoaded = "true";
     const widgetContainer = document.createElement("div");
     widgetContainer.className = "tradingview-widget-container";
     const widgetEl = document.createElement("div");
@@ -490,5 +894,23 @@ function setupStockWidgets() {
       "https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js";
     widgetContainer.append(widgetEl, script);
     container.append(widgetContainer);
+  };
+
+  if (!("IntersectionObserver" in window)) {
+    runWhenIdle(() => containers.forEach(loadWidget));
+    return;
+  }
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        loadWidget(entry.target);
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "360px 0px" },
+  );
+  containers.forEach((container) => {
+    observer.observe(container);
   });
 }

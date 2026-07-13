@@ -66,3 +66,13 @@
 - [x] 评测重标定：insufficient-data 计入总分并应用样本/证据硬上限
 - [x] 最终真实评测从旧口径 69 降为 30，显示 raw 42 与证据覆盖 20%，E3 不冒充 E4
 - [x] Timeline、事件预览和 390px 移动体验完成改版与浏览器复验
+
+## 7. 第七轮：跨环境单调恢复与全来源同步
+
+- [x] 快照 merge 保护较新/更完整本地数据，并补齐 discovery 时间语义
+- [x] source run/check 公开历史完整往返，关系数据不因恢复丢失
+- [x] 新增 SignalObservation，重复 canonical URL 保留跨来源观测
+- [x] 全来源同步提供 eligible/all scope、合规跳过报告和 backlog drain
+- [x] GitHub Actions 写前合并 `origin/main` 最新快照并通过顺序契约测试
+- [x] 本地数据库备份后完成全目录 audit、所有合规可采来源拉取和结果核验
+- [ ] `npm run check`、`npm run build`、SQLite 集成和隐私扫描通过（SQLite 新库恢复、282 tests 与 export 已通过；并行在途 Timeline 改动的 lint/type 错误待其自身收口）

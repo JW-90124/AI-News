@@ -1,5 +1,5 @@
 import type { PublicEvidence } from "../../domain/types.js";
-import type { EnrichedEvent, PublicSource, TechnologyCoverage } from "./dto.js";
+import type { EnrichedEvent, NarrativeStage, PublicSource, TechnologyCoverage } from "./dto.js";
 
 export interface EventDevelopment {
   kind: "origin" | "official" | "discussion" | "response";
@@ -31,6 +31,20 @@ export interface ResearchBatchDay {
   day: string;
   count: number;
   status: "published" | "weekend" | "waiting";
+}
+
+export interface SourcePortfolioBucket {
+  key: string;
+  total: number;
+  healthy: number;
+  observing: number;
+}
+
+export interface SourcePortfolio {
+  categories: SourcePortfolioBucket[];
+  regions: SourcePortfolioBucket[];
+  acquisitions: SourcePortfolioBucket[];
+  health: SourcePortfolioBucket[];
 }
 
 interface CoverageDefinition {
@@ -157,6 +171,36 @@ export const coverageDefinitions: CoverageDefinition[] = [
   },
 ];
 
+export function summarizeSourcePortfolio(sources: PublicSource[]): SourcePortfolio {
+  return {
+    categories: groupSourcePortfolio(sources, (source) => source.category),
+    regions: groupSourcePortfolio(sources, (source) => source.region),
+    acquisitions: groupSourcePortfolio(sources, (source) => source.acquisition),
+    health: groupSourcePortfolio(sources, (source) => source.healthStatus),
+  };
+}
+
+function groupSourcePortfolio(
+  sources: PublicSource[],
+  keyFor: (source: PublicSource) => string,
+): SourcePortfolioBucket[] {
+  const buckets = new Map<string, PublicSource[]>();
+  for (const source of sources) {
+    const key = keyFor(source) || "unknown";
+    const bucket = buckets.get(key) ?? [];
+    bucket.push(source);
+    buckets.set(key, bucket);
+  }
+  return [...buckets.entries()]
+    .map(([key, entries]) => ({
+      key,
+      total: entries.length,
+      healthy: entries.filter((source) => source.healthStatus === "healthy").length,
+      observing: entries.filter((source) => source.observationEnabled).length,
+    }))
+    .sort((left, right) => right.total - left.total || left.key.localeCompare(right.key));
+}
+
 export function sortEventsByLatestDevelopment(events: EnrichedEvent[]): EnrichedEvent[] {
   return [...events].sort(
     (left, right) => latestDevelopmentTime(right) - latestDevelopmentTime(left),
@@ -165,6 +209,36 @@ export function sortEventsByLatestDevelopment(events: EnrichedEvent[]): Enriched
 
 export function latestDevelopmentAt(event: EnrichedEvent): string {
   return new Date(latestDevelopmentTime(event)).toISOString();
+}
+
+export function evidenceForNarrativeStage(
+  event: EnrichedEvent,
+  stage: NarrativeStage,
+): PublicEvidence[] {
+  return event.evidence.filter((evidence) => dateFallsInStage(evidence.publishedAt, stage));
+}
+
+export function eventTouchesNarrativeStage(event: EnrichedEvent, stage: NarrativeStage): boolean {
+  return latestNarrativeStageDevelopmentAt(event, stage) !== null;
+}
+
+export function latestNarrativeStageDevelopmentAt(
+  event: EnrichedEvent,
+  stage: NarrativeStage,
+): string | null {
+  const timestamps = evidenceForNarrativeStage(event, stage).map((evidence) =>
+    Date.parse(evidence.publishedAt),
+  );
+  if (dateFallsInStage(event.happenedAt, stage)) timestamps.push(Date.parse(event.happenedAt));
+  const validTimestamps = timestamps.filter(Number.isFinite);
+  return validTimestamps.length ? new Date(Math.max(...validTimestamps)).toISOString() : null;
+}
+
+function dateFallsInStage(value: string, stage: NarrativeStage): boolean {
+  const timestamp = Date.parse(value);
+  if (!Number.isFinite(timestamp)) return false;
+  const day = new Date(timestamp).toISOString().slice(0, 10);
+  return day >= stage.start && day <= stage.end;
 }
 
 export function isRecentEvent(

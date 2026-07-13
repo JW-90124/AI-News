@@ -2,7 +2,8 @@ name: Audit source health
 
 on:
   schedule:
-    - cron: "37 3,11,19 * * *"
+    # Sunday 06:37 Asia/Shanghai, before the weekly refresh.
+    - cron: "37 22 * * 6"
   workflow_dispatch:
 
 permissions:
@@ -40,6 +41,13 @@ jobs:
       - name: Restore auditable repository snapshot
         run: npm run db:snapshot -- restore
 
+      - name: Capture the current public source fingerprint
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run export -- --skip-seed
+          npm run --silent public:fingerprint -- --include-sources > "$RUNNER_TEMP/public-before.sha256"
+
       - name: Audit every configured source
         run: npm run sources:audit -- --concurrency=4 --report=data/reports/source-health.json
 
@@ -51,6 +59,29 @@ jobs:
 
       - name: Activate only qualified observation sources
         run: npm run activate:auto
+
+      - name: Merge latest remote repository snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git show origin/main:data/snapshot/v1.json > "$RUNNER_TEMP/remote-snapshot.json"
+          npm run db:snapshot -- merge --file="$RUNNER_TEMP/remote-snapshot.json"
+
+      - name: Export converged source state and detect a material public change
+        id: public
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run export -- --skip-seed
+          npm run --silent public:fingerprint -- --include-sources > "$RUNNER_TEMP/public-after.sha256"
+          if cmp -s "$RUNNER_TEMP/public-before.sha256" "$RUNNER_TEMP/public-after.sha256"; then
+            echo "No material public source changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Material public source state changed."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Write privacy-safe snapshot with accumulated checks
         run: npm run db:snapshot -- write
@@ -122,13 +153,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): refresh source health report"
-          git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
-      - name: Dispatch Pages deployment for refreshed source state
-        if: steps.commit.outputs.changed == 'true'
+      - name: Dispatch Pages deployment for material public source changes
+        if: steps.commit.outputs.changed == 'true' && steps.public.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main

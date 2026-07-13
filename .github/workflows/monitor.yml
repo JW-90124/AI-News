@@ -2,7 +2,8 @@ name: Monitor system health
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Monday 08:17 Asia/Shanghai, after the weekly refresh and Pages deployment.
+    - cron: "17 0 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -54,7 +55,7 @@ jobs:
           test "$issue_state" = "OPEN"
           grep -F '<!-- agent-pulse-source-health-summary:v1 -->' <<< "$issue_body" >/dev/null
           LATEST_SUCCESS="$latest_success" ISSUE_UPDATED="$issue_updated" node --input-type=module <<'NODE'
-          const maximumAgeMs = 14 * 60 * 60 * 1000;
+          const maximumAgeMs = 9 * 24 * 60 * 60 * 1000;
           const now = Date.now();
           for (const [label, value] of Object.entries({
             "source audit success": process.env.LATEST_SUCCESS,

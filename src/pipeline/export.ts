@@ -1,5 +1,6 @@
-import { cp, mkdir, rm, writeFile } from "node:fs/promises";
+import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
+import { transform } from "esbuild";
 import type { Kysely } from "kysely";
 import { industryNarratives } from "../catalog/history.js";
 import { influencerCatalog } from "../catalog/influencers.js";
@@ -16,6 +17,7 @@ import type {
   PublicInfluencer,
   PublicResource,
   PublicScoutInsight,
+  PublicSignal,
   PublicSource,
   PublicTrack,
   StaticSiteModel,
@@ -27,15 +29,17 @@ import { renderStaticPages } from "./static-site/pages.js";
 export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppConfig) {
   const repository = new Repository(db);
   const evaluation = await evaluateSystem(db);
-  const [events, tracks, actors, resources, view, scout, latestSourceChecks] = await Promise.all([
-    repository.publicEvents(),
-    repository.listTracks(),
-    repository.listActors(),
-    repository.listResources(),
-    repository.getDefaultView(),
-    repository.publicScoutInsights(),
-    repository.latestSourceChecks(),
-  ]);
+  const [events, tracks, actors, resources, view, scout, latestSourceChecks, signals] =
+    await Promise.all([
+      repository.publicEvents(),
+      repository.listTracks(),
+      repository.listActors(),
+      repository.listResources(),
+      repository.getDefaultView(),
+      repository.publicScoutInsights(),
+      repository.latestSourceChecks(),
+      repository.publicSignals(),
+    ]);
   const sources = (await repository.listSources()).filter(
     (source) => source.lifecycle_status !== "retired",
   );
@@ -114,6 +118,23 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     riskLevel: resource.risk_level,
     verifiedAt: resource.verified_at,
   }));
+  const publicSignals: PublicSignal[] = signals
+    .filter((signal) => safePublicUrl(signal.url))
+    .map((signal) => ({
+      title: signal.title,
+      description: briefPublicText(signal.summary),
+      url: signal.url,
+      sourceSlug: signal.sourceSlug,
+      sourceName: signal.sourceName,
+      sourceTier: signal.sourceTier,
+      sourceRole: signal.sourceRole,
+      sourceRegion: signal.sourceRegion,
+      publishedAt: signal.publishedAt,
+      collectedAt: signal.collectedAt,
+      category: signal.category,
+      tags: parseJson(signal.tagsJson, []),
+      language: signal.language,
+    }));
   const github = await githubDataAtBuildTime(productVersion, {
     allowNetwork: config.NODE_ENV !== "test" && process.env.VITEST !== "true",
   });
@@ -150,6 +171,7 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
   await rm(config.distDir, { recursive: true, force: true });
   await mkdir(join(config.distDir, "data"), { recursive: true });
   await cp(join(config.rootDir, "web/public"), config.distDir, { recursive: true });
+  await optimizeStaticAssets(config.distDir);
 
   await Promise.all([
     writeJson(join(config.distDir, "data/timeline.json"), {
@@ -174,6 +196,13 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
       ...productData,
     }),
     writeJson(join(config.distDir, "data/sources.json"), publicSources),
+    writeJson(join(config.distDir, "data/signals.json"), {
+      schemaVersion: 1,
+      generatedAt,
+      disclaimer:
+        "Source observations are not verified public facts. Follow the original URL and use published Events for evidence-backed judgments.",
+      signals: publicSignals,
+    }),
     writeJson(join(config.distDir, "data/influencers.json"), publicInfluencers),
     writeJson(join(config.distDir, "data/actors.json"), publicActors),
     writeJson(
@@ -200,6 +229,7 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     actors: publicActors,
     resources: publicResources,
     sources: publicSources,
+    signals: publicSignals,
     influencers: publicInfluencers,
     scout: scout as PublicScoutInsight[],
     narratives: {
@@ -211,6 +241,13 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
       tracks: industryNarratives.tracks.map((track) => ({
         ...track,
         stages: track.stages.map((stage) => ({ ...stage })),
+        lenses: track.lenses.map((lens) => ({
+          ...lens,
+          implications: [...lens.implications],
+          actions: [...lens.actions],
+          watch: [...lens.watch],
+          evidenceSlugs: [...lens.evidenceSlugs],
+        })),
       })),
     } satisfies IndustryNarratives,
     product: productData,
@@ -232,9 +269,26 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
     resources: resources.length,
     scout: scout.length,
     sources: sources.length,
+    signals: publicSignals.length,
     version: productVersion,
     generatedAt,
   };
+}
+
+function safePublicUrl(value: string): boolean {
+  try {
+    return ["http:", "https:"].includes(new URL(value).protocol);
+  } catch {
+    return false;
+  }
+}
+
+function briefPublicText(value: string): string {
+  const text = value
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return text.length <= 220 ? text : `${text.slice(0, 217).trimEnd()}…`;
 }
 
 async function writeAllPages(pages: StaticPage[], distDir: string): Promise<void> {
@@ -337,5 +391,29 @@ function normalizePublicHealth(value: string | undefined): PublicSource["healthS
 }
 
 async function writeJson(path: string, value: unknown): Promise<void> {
-  await writeFile(path, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  await writeFile(path, `${JSON.stringify(value)}\n`, "utf8");
+}
+
+async function optimizeStaticAssets(distDir: string): Promise<void> {
+  const cssPath = join(distDir, "assets/app.css");
+  const scriptPath = join(distDir, "assets/core.js");
+  const [css, script] = await Promise.all([
+    readFile(cssPath, "utf8"),
+    readFile(scriptPath, "utf8"),
+  ]);
+  const [optimizedCss, optimizedScript] = await Promise.all([
+    transform(css, { loader: "css", minify: true, legalComments: "none" }),
+    transform(script, {
+      loader: "js",
+      minifyWhitespace: true,
+      minifySyntax: true,
+      minifyIdentifiers: false,
+      legalComments: "none",
+      target: "es2022",
+    }),
+  ]);
+  await Promise.all([
+    writeFile(cssPath, optimizedCss.code, "utf8"),
+    writeFile(scriptPath, optimizedScript.code, "utf8"),
+  ]);
 }

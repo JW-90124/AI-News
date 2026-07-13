@@ -87,6 +87,22 @@ export interface PublicSource {
   healthErrorCode: string | null;
 }
 
+export interface PublicSignal {
+  title: string;
+  description: string;
+  url: string;
+  sourceSlug: string;
+  sourceName: string;
+  sourceTier: number;
+  sourceRole: string;
+  sourceRegion: string;
+  publishedAt: string;
+  collectedAt: string;
+  category: string;
+  tags: string[];
+  language: string;
+}
+
 export interface PublicInfluencer {
   slug: string;
   name: string;
@@ -145,10 +161,24 @@ export interface PublicScoutInsight {
 }
 
 export interface NarrativeStage {
+  start: string;
+  end: string;
   period: string;
   label: string;
   summary: string;
+  interpretation: string;
   chinaPosition: string;
+  nextSignal: string;
+}
+
+export interface DecisionLens {
+  role: "ceo" | "investor" | "cto" | "product";
+  question: string;
+  answer: string;
+  implications: string[];
+  actions: string[];
+  watch: string[];
+  evidenceSlugs: string[];
 }
 
 export interface TrackNarrative {
@@ -157,6 +187,7 @@ export interface TrackNarrative {
   now: string;
   next: string;
   stages: NarrativeStage[];
+  lenses: DecisionLens[];
 }
 
 export interface IndustryNarratives {
@@ -260,6 +291,7 @@ export interface StaticSiteModel {
   actors: PublicActor[];
   resources: PublicResource[];
   sources: PublicSource[];
+  signals: PublicSignal[];
   influencers: PublicInfluencer[];
   scout: PublicScoutInsight[];
   narratives: IndustryNarratives;

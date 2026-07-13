@@ -1,7 +1,7 @@
 import type { Kysely } from "kysely";
 import { createDefaultCache, type ResponseCache } from "../collectors/cache.js";
 import { createSafeFetcher, FetchError } from "../collectors/fetcher.js";
-import { getAdapter } from "../collectors/index.js";
+import { getAdapter, hasAdapter } from "../collectors/index.js";
 import { createDefaultRateLimiter, RateLimiter } from "../collectors/rate-limiter.js";
 import type { FetchResult } from "../collectors/types.js";
 import type { AppConfig } from "../config/env.js";
@@ -22,6 +22,22 @@ export interface CollectionSummary {
   created: number;
   skipped: number;
   errors: string[];
+  selection?: CollectionSelection;
+}
+
+export type CollectionScope = "eligible" | "all";
+
+export interface CollectionSelection {
+  scope: CollectionScope;
+  total: number;
+  selected: number;
+  skippedByReason: Record<string, number>;
+}
+
+export interface CollectionOptions {
+  sourceId?: string;
+  scope?: CollectionScope;
+  resetState?: boolean;
 }
 
 interface SourceResult extends CollectionSummary {
@@ -31,21 +47,48 @@ interface SourceResult extends CollectionSummary {
 export async function collectSources(
   db: Kysely<DatabaseSchema>,
   config: AppConfig,
-  sourceId?: string,
+  sourceOrOptions?: string | CollectionOptions,
 ): Promise<CollectionSummary> {
   const repository = new Repository(db);
   const rateLimiter = createDefaultRateLimiter();
   const cache = createDefaultCache();
-  const sources = sourceId
+  const options: CollectionOptions =
+    typeof sourceOrOptions === "string" ? { sourceId: sourceOrOptions } : (sourceOrOptions ?? {});
+  const sourceId = options.sourceId;
+  const scope = options.scope ?? "eligible";
+  const catalog = sourceId
     ? [await repository.getSourceByIdOrSlug(sourceId)].filter((source): source is SourceRow =>
         Boolean(source),
       )
-    : await repository.getEnabledSources();
-  if (sourceId && sources.length === 0) throw new Error(`Source not found: ${sourceId}`);
-  if (sourceId && !["shadow", "active", "degraded"].includes(sources[0]?.lifecycle_status ?? ""))
-    throw new Error(`Source cannot run while ${sources[0]?.lifecycle_status ?? "unknown"}`);
+    : scope === "all"
+      ? await repository.listSources()
+      : await repository.getEnabledSources();
+  if (sourceId && catalog.length === 0) throw new Error(`Source not found: ${sourceId}`);
+  const selection = planSourceCollection(catalog, scope, Boolean(sourceId));
+  const sources = selection.sources;
+  if (sourceId && sources.length === 0) {
+    const reason = Object.keys(selection.summary.skippedByReason)[0] ?? "ineligible";
+    throw new Error(`Source cannot run: ${reason}`);
+  }
+  if (options.resetState && sources.length > 0) {
+    await db
+      .updateTable("sources")
+      .set({ state_json: "{}" })
+      .where(
+        "id",
+        "in",
+        sources.map((source) => source.id),
+      )
+      .execute();
+  }
   const jobId = await repository.startJob("collect", sourceId ?? null);
-  let result: CollectionSummary = { collected: 0, created: 0, skipped: 0, errors: [] };
+  let result: CollectionSummary = {
+    collected: 0,
+    created: 0,
+    skipped: 0,
+    errors: [],
+    selection: selection.summary,
+  };
 
   try {
     const sourceResults = await concurrentMap(
@@ -59,6 +102,7 @@ export async function collectSources(
         created: summary.created + current.created,
         skipped: summary.skipped + current.skipped,
         errors: [...summary.errors, ...current.errors],
+        ...(summary.selection ? { selection: summary.selection } : {}),
       }),
       result,
     );
@@ -70,6 +114,44 @@ export async function collectSources(
     await repository.finishJob(jobId, result);
   }
   return result;
+}
+
+export function planSourceCollection(
+  catalog: SourceRow[],
+  scope: CollectionScope,
+  explicit: boolean,
+): { sources: SourceRow[]; summary: CollectionSelection } {
+  const sources: SourceRow[] = [];
+  const skippedByReason: Record<string, number> = {};
+  for (const source of catalog) {
+    const reason = sourceSkipReason(source, scope, explicit);
+    if (!reason) sources.push(source);
+    else skippedByReason[reason] = (skippedByReason[reason] ?? 0) + 1;
+  }
+  return {
+    sources,
+    summary: { scope, total: catalog.length, selected: sources.length, skippedByReason },
+  };
+}
+
+function sourceSkipReason(
+  source: SourceRow,
+  scope: CollectionScope,
+  explicit: boolean,
+): string | null {
+  if (!["shadow", "active", "degraded"].includes(source.lifecycle_status)) {
+    return `lifecycle:${source.lifecycle_status}`;
+  }
+  if (["manual", "restricted", "proposal"].includes(source.maintenance_status)) {
+    return `maintenance:${source.maintenance_status}`;
+  }
+  if (source.adapter === "manual") return "acquisition:manual";
+  if (!hasAdapter(source.adapter)) return `adapter:${source.adapter}:unavailable`;
+  if (explicit || scope === "all") return null;
+  const enabled =
+    (source.enabled === 1 && ["active", "degraded"].includes(source.lifecycle_status)) ||
+    (source.observation_enabled === 1 && source.lifecycle_status === "shadow");
+  return enabled ? null : "not_enabled";
 }
 
 async function collectOneSource(

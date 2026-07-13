@@ -37,6 +37,17 @@ describe("repository data snapshot", () => {
       httpStatus: 200,
       responseBytes: 1_024,
     });
+    const secondRunId = await repository.startSourceRun(openai?.id ?? "", jobId);
+    await repository.finishSourceRun(secondRunId, {
+      status: "not_modified",
+      attemptCount: 1,
+      durationMs: 50,
+      collected: 0,
+      created: 0,
+      skipped: 0,
+      httpStatus: 304,
+      responseBytes: 0,
+    });
     await repository.finishJob(jobId, { collected: 10, created: 8, skipped: 2, errors: [] });
     await repository.insertSourceCheck({
       id: "snapshot-source-check",
@@ -85,6 +96,31 @@ describe("repository data snapshot", () => {
       metrics: { platforms: ["official"] },
       rawMeta: { ignored: true },
     });
+    await repository.insertSignal(openai?.id ?? "", {
+      externalId: "snapshot-repeat-observation",
+      url: "https://openai.com/index/snapshot-test",
+      title: "Snapshot persistence test signal",
+      summary: "The source observed the canonical item again.",
+      language: "en",
+      publishedAt: "2026-07-11T08:00:00.000Z",
+      category: "test",
+      tags: ["repeat"],
+      metrics: {},
+      rawMeta: {},
+    });
+    const deepmind = (await repository.listSources()).find((source) => source.slug === "deepmind");
+    await repository.insertSignal(deepmind?.id ?? "", {
+      externalId: "snapshot-second-observation",
+      url: "https://openai.com/index/snapshot-test?utm_medium=syndication",
+      title: "Snapshot persistence test signal",
+      summary: "The same canonical item was independently observed by another source.",
+      language: "en",
+      publishedAt: "2026-07-11T08:00:00.000Z",
+      category: "test",
+      tags: ["cross-source"],
+      metrics: { platforms: ["syndication"] },
+      rawMeta: {},
+    });
     await repository.deferSignal(snapshotSignal?.id ?? "", "snapshot-triage-fixture", 42, {
       reversible: true,
     });
@@ -106,7 +142,8 @@ describe("repository data snapshot", () => {
     expect(persisted.summary.length).toBeLessThanOrEqual(320);
     expect(first.counts.signalTriage).toBe(1);
     expect(first.counts.sourceChecks).toBe(1);
-    expect(first.counts.sourceRuns).toBe(1);
+    expect(first.counts.sourceRuns).toBe(2);
+    expect(first.counts.signalObservations).toBeGreaterThanOrEqual(2);
     expect(first.counts.scoutInsights).toBe(1);
 
     const targetDb = createDatabase(config);
@@ -117,6 +154,37 @@ describe("repository data snapshot", () => {
     const targetOpenai = (await targetRepository.listSources()).find(
       (source) => source.slug === "openai",
     );
+    await targetRepository.updateSource(targetOpenai?.id ?? "", {
+      last_collected_at: "2027-01-01T00:00:00.000Z",
+      last_verified_at: "2027-01-01T00:00:00.000Z",
+      success_count: 99,
+      health_score: 99,
+    });
+    const localSummary = `A newer and deliberately more complete local summary. ${"local detail ".repeat(80)}`;
+    await targetRepository.insertSignal(targetOpenai?.id ?? "", {
+      externalId: "local-existing-signal",
+      url: "https://openai.com/index/snapshot-test",
+      title: "Snapshot persistence test signal with local detail",
+      summary: localSummary,
+      language: "en",
+      publishedAt: "2026-07-11T08:00:00.000Z",
+      category: "test",
+      tags: ["local"],
+      metrics: { platforms: ["local"] },
+      rawMeta: { privateLocalDetail: true },
+    });
+    await targetRepository.insertSignal(targetOpenai?.id ?? "", {
+      externalId: "local-repeat-observation",
+      url: "https://openai.com/index/snapshot-test",
+      title: "Snapshot persistence test signal with local detail",
+      summary: localSummary,
+      language: "en",
+      publishedAt: "2026-07-11T08:00:00.000Z",
+      category: "test",
+      tags: ["local-repeat"],
+      metrics: {},
+      rawMeta: {},
+    });
     const catalogSignal = await targetRepository.insertSignal(targetOpenai?.id ?? "", {
       externalId: "new-catalog-signal",
       url: "https://openai.com/index/new-catalog-signal",
@@ -142,10 +210,43 @@ describe("repository data snapshot", () => {
     const restoredSignal = await targetDb
       .selectFrom("signals")
       .selectAll()
-      .where("title", "=", "Snapshot persistence test signal")
+      .where("canonical_url", "=", "https://openai.com/index/snapshot-test")
       .executeTakeFirst();
     expect(restoredSignal?.canonical_url).toBe("https://openai.com/index/snapshot-test");
-    expect(restoredSignal?.raw_meta_json).toBe("{}");
+    expect(restoredSignal?.summary).toBe(localSummary);
+    expect(restoredSignal?.raw_meta_json).toContain("privateLocalDetail");
+    expect(
+      await targetDb
+        .selectFrom("sources")
+        .select(["last_verified_at", "success_count", "health_score"])
+        .where("id", "=", targetOpenai?.id ?? "")
+        .executeTakeFirst(),
+    ).toEqual({
+      last_verified_at: "2027-01-01T00:00:00.000Z",
+      success_count: 99,
+      health_score: 99,
+    });
+    expect(
+      await targetDb
+        .selectFrom("signal_observations")
+        .select(({ fn }) => fn.countAll<number>().as("count"))
+        .where("signal_id", "=", restoredSignal?.id ?? "")
+        .executeTakeFirstOrThrow(),
+    ).toEqual({ count: 2 });
+    expect(
+      await targetDb
+        .selectFrom("signal_observations")
+        .select(({ fn }) => fn.sum<number>("observation_count").as("count"))
+        .where("signal_id", "=", restoredSignal?.id ?? "")
+        .executeTakeFirstOrThrow(),
+    ).toEqual({ count: 4 });
+    expect(
+      await targetDb
+        .selectFrom("signal_observation_occurrences")
+        .select(({ fn }) => fn.countAll<number>().as("count"))
+        .where("signal_id", "=", restoredSignal?.id ?? "")
+        .executeTakeFirstOrThrow(),
+    ).toEqual({ count: 4 });
     expect(
       await targetDb
         .selectFrom("signal_triage")
@@ -178,6 +279,13 @@ describe("repository data snapshot", () => {
         .where("id", "=", runId)
         .executeTakeFirst(),
     ).toEqual({ status: "succeeded", collected_count: 10, created_count: 8 });
+    expect(
+      await targetDb
+        .selectFrom("source_runs")
+        .select("status")
+        .where("id", "=", secondRunId)
+        .executeTakeFirst(),
+    ).toEqual({ status: "not_modified" });
     expect(await targetRepository.publicScoutInsights()).toHaveLength(1);
   });
 });

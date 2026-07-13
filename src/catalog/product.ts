@@ -1,4 +1,4 @@
-export const productVersion = "0.8.1";
+export const productVersion = "0.10.0";
 
 export const capabilities = [
   {
@@ -8,7 +8,7 @@ export const capabilities = [
     status: "operational",
     maturity: 68,
     release: "0.2.0",
-    evidence: "266 sources classified by region, role, acquisition and maintenance state",
+    evidence: "411 sources classified by region, role, acquisition and maintenance state",
   },
   {
     slug: "upstream-discovery",
@@ -27,7 +27,27 @@ export const capabilities = [
     maturity: 72,
     release: "0.7.0",
     evidence:
-      "six daily GitHub Actions refreshes plus a two-hour quality guard, serialized snapshot writes and explicit Pages dispatch",
+      "daily data refresh and Pages deployment, weekly source audit, serialized writers and monotonic snapshot merge",
+  },
+  {
+    slug: "public-source-observations",
+    name: "公开来源观察流",
+    domain: "sensing",
+    status: "operational",
+    maturity: 66,
+    release: "0.9.0",
+    evidence:
+      "4,386 allowlisted source observations are searchable by title, description, attribution, date, category, tags and canonical link without exposing raw payloads",
+  },
+  {
+    slug: "dynamic-home-discovery",
+    name: "动态首页发现",
+    domain: "product",
+    status: "operational",
+    maturity: 72,
+    release: "0.9.0",
+    evidence:
+      "multiple evidence-backed trend candidates, randomized recent Events and six visible trend blocks with internal Event carousels are consumed by the public homepage",
   },
   {
     slug: "industry-history-baseline",
@@ -94,7 +114,7 @@ export const capabilities = [
     maturity: 68,
     release: "0.5.0",
     evidence:
-      "259/259 live rows checked; 131 healthy, 120 strict effective and 104 strict realtime effective sources",
+      "411/411 live rows checked; 261 healthy, 395 accessible and 272 produced parseable content",
   },
   {
     slug: "shadow-observation",
@@ -104,7 +124,7 @@ export const capabilities = [
     maturity: 58,
     release: "0.5.0",
     evidence:
-      "99 qualified shadow sources supply an isolated observation pool; their signals cannot enter public events before production promotion",
+      "192 qualified sources supply an isolated observation pool; full backfill retained 4,386 Signals without bypassing production promotion",
   },
   {
     slug: "source-contract",
@@ -120,9 +140,10 @@ export const capabilities = [
     name: "增量同步",
     domain: "sensing",
     status: "experimental",
-    maturity: 32,
+    maturity: 52,
     release: "0.2.0",
-    evidence: "ETag and Last-Modified state; cursor/fingerprint pending",
+    evidence:
+      "ETag/Last-Modified state, monotonic snapshot merge, full source-run history and policy-aware all-source synchronization; general cursor pagination pending",
   },
   {
     slug: "coverage-map",
@@ -148,9 +169,10 @@ export const capabilities = [
     name: "URL 与内容去重",
     domain: "understanding",
     status: "operational",
-    maturity: 48,
+    maturity: 58,
     release: "0.1.0",
-    evidence: "canonical URL/content hash; cross-source observations pending",
+    evidence:
+      "canonical URL/content hash plus per-source observations with first/last seen time and idempotent snapshot recovery",
   },
   {
     slug: "event-clustering",
@@ -275,7 +297,7 @@ export const capabilities = [
   },
   {
     slug: "today",
-    name: "Today 决策摘要",
+    name: "关键变化摘要",
     domain: "experience",
     status: "experimental",
     maturity: 36,
@@ -348,7 +370,7 @@ export const capabilities = [
     maturity: 70,
     release: "0.6.0",
     evidence:
-      "Today above the fold, six detailed strategic lines, event permalinks, four decision tools and a productized changelog",
+      "latest material shift above the fold, six strategic lines, event permalinks, four decision tools and a productized changelog",
   },
   {
     slug: "issue-source-governance",
@@ -495,6 +517,114 @@ export const roadmap = [
 
 export const releases = [
   {
+    status: "unreleased",
+    version: "unreleased",
+    date: "",
+    name: "Evidence First Render",
+    summary: "阶段证据默认可见，并修复行动参考 tabs 的错误纵向滚动。",
+    capabilities: ["阶段证据默认展示", "行动参考 tabs 滚动修复"],
+    changes: [
+      "趋势详情的阶段证据退出全局滚入动画，其他模块动效保持不变",
+      "行动参考 tabs 关闭纵向溢出，只在极窄屏保留横向容错",
+    ],
+  },
+  {
+    status: "released",
+    version: "0.10.0",
+    date: "2026-07-14",
+    name: "Living Evidence Interface",
+    summary:
+      "把重点厂商覆盖、全来源回填和更轻的静态交互连接起来，让趋势、阶段证据与来源动态在保持证据边界的同时承载更多可探索信息。",
+    capabilities: [
+      "22 家重点厂商覆盖矩阵",
+      "27 个官方来源入口",
+      "32 个关键 Event",
+      "411 源全量审计与回填",
+      "静态资源与 JSON 压缩",
+      "非关键数据按需加载",
+      "模块级趋势展开",
+      "阶段序号证据映射",
+      "每日数据与 Pages 刷新",
+    ],
+    changes: [
+      "事件脉络补齐全球前沿模型、中国重点模型团队与 AI 原生搜索产品，不再只按单个品牌补漏",
+      "新增覆盖契约，重点厂商只有在同时具备官方来源与可检索 Event 时才算进入事件脉络",
+      "新增来源保持 disabled + shadow，目录登记、端点可访问和公开事实继续使用不同门禁",
+      "完成 411 个来源的全量审计，并在 284 个合规来源上回填 299 条新 Signal；16 个来源错误保持单源隔离",
+      "CSS、JavaScript 和公开 JSON 在导出时压缩，主脚本提前下载，全量来源数据改为交互时按需请求，Stars 与第三方行情延后加载",
+      "来源动态地域筛选改为与搜索框一致的自定义选择控件，并保留键盘和原生 select 可访问性",
+      "趋势判断取消全局展示模式，默认使用简洁呈现；阶段轨迹、阶段证据、角色判断和观察源池各自在模块内展开",
+      "阶段轨迹的整块展开与收起位于标题栏右侧，阶段证据用相同的 01、02 序号对应轨迹阶段",
+      "Data Refresh 每天抓取并刷新 Pages；weekly-brief 仍只在周日或显式触发时按 ISO 周幂等更新",
+    ],
+  },
+  {
+    status: "released",
+    version: "0.9.0",
+    date: "2026-07-13",
+    name: "Evidence-Dense Decision Intelligence",
+    summary:
+      "把扩大的来源与事件供给组织为真实阶段、分阶段证据和角色决策镜头；持续监测，只在重要证据出现时更新公开判断，并以 GitHub 周报完成周期复盘。",
+    capabilities: [
+      "5—8 段真实趋势轨迹",
+      "简洁 / 全量双密度模式",
+      "分阶段证据与观察源池",
+      "24 组角色决策镜头",
+      "GitHub AI 周报",
+      "100-source 扩展波次",
+      "来源组合四维视图",
+      "18 个 Tier 1 来源",
+      "宏观与央行覆盖",
+      "监管与交易所披露",
+      "Shadow-first 治理",
+      "授权数据隔离",
+      "单调快照合并",
+      "跨来源观测",
+      "合规全来源同步",
+      "事件驱动判断更新",
+      "公开内容变更部署",
+      "动态首页内容发现",
+      "公开来源观察流",
+      "周更自动运营",
+    ],
+    changes: [
+      "首页移除冗长宣言区并直接展示最新关键变化；全站内容区取消右上角说明文案，主要标题统一收短",
+      "趋势总览改为六个视角，总览与详情页统一使用轻量横向列表，并移除首屏与阶段证据统计仪表",
+      "六条趋势按各自主线拆成 5—8 个阶段，单行横向滚动，并按阶段展示全部公开 Event、证据计数、解读与下一验证",
+      "增量证据按发布时间进入开放阶段，同时保留唯一 Event 的事实起点与证据回链，阶段计数互不串位",
+      "四种角色补齐核心回答、影响链、动作、继续观察和 Event 回链，不再各取一条事件字段作为答案",
+      "新增可持久化的简洁/全量模式；观察源池与事实证据严格分开，低覆盖主线保留可见缺口",
+      "紫色实心按钮统一使用白字，行动参考内容区取消纵向 section padding",
+      "Watch 与 AI 周报订阅入口并入 Footer，主导航页标题、间距和行动参考布局统一",
+      "首页首模块改为趋势阶段、当前判断、最新证据与下一信号，轻量证据网络替代悬浮黑球动效",
+      "首页移除形成判断和继续深入模块，相关入口并入 Footer；行动参考只展示行动、角色和成本三个入口",
+      "简洁模式支持逐阶段展开全部证据并随时收起",
+      "趋势详情移除证据缺口块，Footer 重构为品牌、订阅、分组导航与元信息层",
+      "趋势总览移除理解框架，Timeline 左侧粘性时间标记随滚动展示年月",
+      "四个主入口使用各自不同的轻量动效，语言切换移入暖灰渐变 Footer",
+      "趋势判断默认进入模型能力与研究，行业演化拆为 Footer 独立入口，并移除中国实践模块",
+      "字体统一为浏览器系统字体栈，链接焦点不再显示 outline 外框",
+      "首页移除本周研究，行业趋势整卡可点击；事件脉络筛选项选中后自动居中",
+      "Footer 改为浅暖灰渐变与更大留白，证据状态简化为官方来源、多源核验等直接表达",
+      "修复右上角 GitHub Stars 在构建元数据缺失和窄屏下不展示的问题，增加浏览器补取缓存与紧凑移动端样式",
+      "全站只保留 Watch 与周报订阅入口；取消固定日更，Data Refresh 在北京时间周日幂等更新 weekly-brief Issue",
+      "新增 FRED、ALFRED、IMF WEO、BIS、BLS、BEA、美国财政部、ECB、OECD、World Bank 与 Eurostat",
+      "新增 SEC EDGAR、国家统计局、人民银行、CNINFO、SSE 与 SZSE 官方入口",
+      "新增 80 个官方 Release Feed 与 20 个研究、产业、政策和资本 Feed，全部从 shadow 开始",
+      "来源页按领域、地域、采集通道和真实运行状态展示来源组合，并提供健康与通道筛选",
+      "Nasdaq Data Link 明确保持 restricted，未授权行情和估值数据不进入公开输出",
+      "所有新增来源默认 disabled 与 shadow/manual，不改变既有采集、排名和发布门禁",
+      "快照恢复保留较新和更完整的本地记录、完整来源运行历史与事件关系",
+      "同一 canonical Signal 保存多来源 observation，不再因 URL 去重丢失观测来源",
+      "GitHub Actions 写入前合并 origin/main 最新快照，避免旧任务覆盖有序增长",
+      "首页按刷新随机展示一个有公开证据的趋势方向；近期变化在刷新页面时随机展示六条，桌面端一行两条",
+      "六个行业趋势块保持同时可见，以六种主题色区分方向；每块内部轮播多个 Event，并支持手动切换、键盘、触摸与 reduced-motion",
+      "趋势判断、近期换批与主要模块滚入使用克制的上浮淡入；阶段轨迹以序号、间距与连接关系表达阶段变化",
+      "新增来源动态瀑布流，以独立动效、简述和 allowlist DTO 搜索、筛选、分批呈现 4,057 条合规 Signal",
+      "Data Refresh、Source Audit、Quality Guard 与 Monitor 从日内高频统一收敛为周计划",
+    ],
+  },
+  {
     version: "0.8.1",
     date: "2026-07-13",
     name: "A Denser Action Surface",
@@ -508,12 +638,12 @@ export const releases = [
       "确定性去重与过期轮换",
     ],
     changes: [
-      "首页把 30 秒、3 分钟、10 分钟阅读路径移到价值标题右侧，并保留窄屏单列阅读体验",
+      "首页把关键变化、证据脉络、每周复盘阅读路径移到价值标题右侧，并保留窄屏单列阅读体验",
       "趋势总览用六条可点击主线替换事件数、时间跨度和引导标签，减少进入详情前的判断成本",
       "收紧星探机会标题、观察与假设之间的纵向间距，提高同屏信息密度",
       "星探扩展为创业、内容、工作、学习、产物与影响力六类，并自动补齐缺失类型",
       "公开机会池维持至少 18 条唯一建议，生成内容 14 天后自动轮换，避免无限累积与重复上架",
-      "每日数据刷新单轮最多生成 12 条候选，以便在机会池不足时及时恢复公开密度",
+      "每轮后台数据刷新最多生成 12 条候选，以便在机会池不足时及时恢复公开密度",
     ],
   },
   {
@@ -521,14 +651,14 @@ export const releases = [
     date: "2026-07-13",
     name: "The Industry Evolution Map",
     summary:
-      "把 2022—今天的技术、产品、公司与商业变化连接成可追溯的产业演化地图，并把每日增量判断自动发布为 GitHub 日报。",
+      "把 2022—当前的技术、产品、公司与商业变化连接成可追溯的产业演化地图；早期增量简报能力现已统一收敛为周报。",
     capabilities: [
       "2022—今天产业骨架",
       "六个趋势判断维度",
       "项目生命周期状态",
       "完整证据抽屉",
       "高置信星探去重",
-      "GitHub AI 日报",
+      "GitHub 增量简报（已收敛为周报）",
     ],
     changes: [
       "六个趋势重新定义为模型研究、Agent 软件、产品商业、基础设施、资本公司与全球创新，每个板块提供明确详情入口",
@@ -537,7 +667,7 @@ export const releases = [
       "移除论文批次和近三月密度运营模块，事件筛选改为普通用户可理解的官方发布、研究与趋势问题",
       "证据抽屉展示完整发展节点、五类分析、置信度和全部原始资料，并统一桌面与移动端间距",
       "公开星探自动去重，标签左对齐，补充目标用户、四项质量指标和完整实验信息",
-      "数据刷新每四小时幂等更新北京时间当天的 GitHub AI 日报，并只消费公开静态 DTO",
+      "数据刷新每四小时运行，并只消费公开静态 DTO；固定频率公开简报现已停止",
     ],
   },
   {
@@ -556,12 +686,12 @@ export const releases = [
       "GitHub Release 闭环",
     ],
     changes: [
-      "首页围绕 30 秒了解变化、3 分钟理解影响、10 分钟形成判断重建信息消费路径",
+      "首页围绕关键变化、影响与判断重建信息消费路径",
       "事件脉络按年月倒序组织，证据在首页、趋势、研究、事件和星探等入口原地打开",
       "最近 7 天内容统一高亮，并把最近三个完整自然月补齐到每月不少于 6 个官方来源事件",
       "论文区域展示最近三天批次状态，区分真实更新、周末节奏与等待下一批，不用空卡或虚构数据掩盖缺口",
       "事件通过事实门禁后自动发布；星探建议通过质量门禁后直接上架，不合格项自动归档",
-      "数据每日刷新 6 次，评测低于 60 分时由两小时质量守卫按冷却规则触发增量更新",
+      "数据每四小时后台刷新，评测低于 60 分时由两小时质量守卫按冷却规则触发增量更新",
       "新增 12 位国内外核心 AI 专家矩阵，个人 RSS 自动采集，受限社交账户明确标记而不绕过平台限制",
       "CI 校验仓库与网站 Changelog 后自动创建对应 GitHub Release，并继续触发隐私安全的 Pages 发布",
     ],
@@ -583,7 +713,7 @@ export const releases = [
       "版权与纠错边界",
     ],
     changes: [
-      "首页将 Today 判断提升到首屏，把产品宣言移动到末尾，并复用主线、证据、工具与版本数据",
+      "首页将关键变化判断提升到首屏，把产品宣言移动到末尾，并复用主线、证据、工具与版本数据",
       "生成 60 个可独立访问的静态内容页，六条主线、证据时间轴、事件和四个决策工具不再挤在单页",
       "来源 Proposal Issue 先离线校验，再经可信维护者标签进入 disabled draft PR，不能直接激活或写入生产",
       "来源审计与数据刷新共享串行写锁、恢复并回写同一快照；健康摘要由单一 Issue 幂等维护",
@@ -630,7 +760,7 @@ export const releases = [
       "99 个合格 shadow 来源进入 E3 隔离观察，数据可采集但不会绕过 E4 门禁进入公开事实",
       "建立逐源检查、失败分类、代理降级、质量门禁、可逆 triage、事件合并候选和发布就绪漏斗",
       "评测从目录数量和人工自评分转向真实样本、证据覆盖与硬上限，旧口径 69 分回落到诚实水位",
-      "公开页改为 30 秒判断、六条主线和证据优先时间轴；默认事件必须包含一手来源",
+      "公开页改为关键变化判断、六条主线和证据优先时间轴；默认事件必须包含一手来源",
       "管理台补齐来源健康、观察开关、漏斗、阻断原因、证据详情、合并队列与校准评测",
     ],
   },
@@ -649,7 +779,7 @@ export const releases = [
     changes: [
       "新增每 6 小时 GitHub Actions 数据刷新；数据变化后提交隐私安全 JSON 快照并显式部署 Pages",
       "建立 2024-07 至 2026-07 行业基线，加入 30 个一手来源里程碑和 5 个发展阶段",
-      "将默认公开体验收敛为 Today、六条趋势主线和两年演进摘要，其他工具按需展开",
+      "将默认公开体验收敛为关键变化、六条趋势主线和两年演进摘要，其他工具按需展开",
       "新增全球创新版图的阶段性同维度对照，不再只呈现静态公司排名",
     ],
   },
