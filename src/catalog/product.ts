@@ -541,9 +541,13 @@ export const releases = [
     version: "unreleased",
     date: "",
     name: "Next Evidence Iteration",
-    summary: "后续变化将在验证完成后记录。",
-    capabilities: [],
-    changes: [],
+    summary: "让公开站的导航、趋势结构和跨页入口更容易理解。",
+    capabilities: ["全站用户语言导航", "领域趋势信息层级", "目的明确的跨页入口"],
+    changes: [
+      "公开站统一使用领域趋势、事件时间线、来源更新、行动建议、公司与机构、模型价格和信息来源等直白名称",
+      "首页明确随机展示六个领域中的一个趋势；趋势页把阶段轨迹和阶段证据改为趋势变化轨迹与关键事件和证据",
+      "查看趋势详情等含糊入口改为查看领域分析、查看相关事件、查看事件时间线等明确目的文案",
+    ],
   },
   {
     status: "released",
