@@ -541,9 +541,11 @@ export const releases = [
     version: "unreleased",
     date: "",
     name: "Next Evidence Iteration",
-    summary: "让公开站的导航、趋势结构和跨页入口更容易理解。",
+    summary: "让公开站更容易理解，并保持自动化来源生命周期证据准确可审计。",
     capabilities: ["全站用户语言导航", "领域趋势信息层级", "目的明确的跨页入口"],
     changes: [
+      "直接研究源采集失败时，Actions warning 只陈述本次未采集、生命周期不变与批次继续，不再把实际 quarantined 状态误写成 shadow",
+      "Source Audit 与 Data Refresh 在远端快照 merge 后重新执行来源对账，防止旧生命周期覆盖已满足连续健康门槛的隔离来源恢复结果",
       "公开站统一使用领域趋势、事件时间线、来源更新、行动建议、公司与机构、模型价格和信息来源等直白名称",
       "首页明确随机展示六个领域中的一个趋势；趋势页把阶段轨迹和阶段证据改为趋势变化轨迹与关键事件和证据",
       "查看趋势详情等含糊入口改为查看领域分析、查看相关事件、查看事件时间线等明确目的文案",
@@ -554,7 +556,8 @@ export const releases = [
     version: "0.11.1",
     date: "2026-07-14",
     name: "Audited Research Continuity",
-    summary: "持续改善研究质量门禁、直接信源覆盖与移动端阅读体验。",
+    summary:
+      "少一点噪声，多一点能行动的判断：研究先经过直接信源与影响审计，AI 再在证据门禁后参与整理，Timeline 与移动阅读也更顺手。",
     capabilities: [
       "年龄感知研究质量门禁",
       "限期审计的直接信源影响路径",

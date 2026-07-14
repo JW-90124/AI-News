@@ -25,11 +25,23 @@ describe("GitHub source governance workflows", () => {
     expect(audit.indexOf("npm run db:snapshot -- merge")).toBeLessThan(
       audit.indexOf("npm run db:snapshot -- write"),
     );
+    expect(audit.lastIndexOf("npm run ops:reconcile")).toBeGreaterThan(
+      audit.indexOf("npm run db:snapshot -- merge"),
+    );
+    expect(audit.lastIndexOf("npm run ops:reconcile")).toBeLessThan(
+      audit.lastIndexOf("npm run export"),
+    );
     expect(refresh.indexOf("git fetch origin main")).toBeLessThan(
       refresh.indexOf("npm run db:snapshot -- merge"),
     );
     expect(refresh.indexOf("npm run db:snapshot -- merge")).toBeLessThan(
       refresh.indexOf("npm run db:snapshot -- write"),
+    );
+    expect(refresh.lastIndexOf("npm run ops:reconcile")).toBeGreaterThan(
+      refresh.indexOf("npm run db:snapshot -- merge"),
+    );
+    expect(refresh.lastIndexOf("npm run ops:reconcile")).toBeLessThan(
+      refresh.lastIndexOf("npm run export"),
     );
     expect(audit).not.toContain("git push --force");
     expect(refresh).not.toContain("git push --force");
@@ -95,7 +107,9 @@ describe("GitHub source governance workflows", () => {
     expect(refresh).toContain("Observe direct research feeds in shadow");
     expect(refresh).toContain('npm run collect -- --source="$source"');
     expect(refresh).toContain("microsoft-research google-research");
-    expect(refresh).toContain("remains in shadow and does not block the batch");
+    expect(refresh).toContain(
+      "was not collected; its lifecycle state is unchanged and the batch will continue",
+    );
     expect(refresh.indexOf("npm run --silent research:impact -- --skip-seed")).toBeLessThan(
       refresh.indexOf("npm run --silent ai:enrich -- --require-success"),
     );
