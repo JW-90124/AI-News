@@ -4190,6 +4190,55 @@ body:is([data-page="scout"], [data-page="actors"], [data-page="resources"], [dat
   color: var(--footer-muted);
   font-size: 16px;
 }
+.footer-ai-access {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  gap: 11px;
+  align-items: center;
+  width: min(100%, 480px);
+  min-height: 58px;
+  margin-top: 28px;
+  padding: 10px 13px;
+  border: 1px solid color-mix(in srgb, var(--fact) 45%, var(--footer-border));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--surface) 68%, transparent);
+  color: var(--footer-text);
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+.footer-ai-access > .icon:first-child {
+  color: var(--fact);
+}
+.footer-ai-access span {
+  display: grid;
+  line-height: 1.25;
+}
+.footer-ai-access small {
+  color: var(--footer-quiet);
+  font-size: 11px;
+}
+.footer-ai-access code {
+  color: var(--fact);
+  font: 10px var(--mono);
+}
+.footer-ai-access > .icon:last-child {
+  width: 14px;
+  transition: transform 0.2s ease;
+}
+.footer-ai-access:hover,
+.footer-ai-access:focus-visible {
+  border-color: var(--fact);
+  transform: translateY(-2px);
+}
+.footer-ai-access:hover > .icon:last-child,
+.footer-ai-access:focus-visible > .icon:last-child {
+  transform: translateX(3px);
+}
+.footer-ai-access:active {
+  transform: scale(0.98);
+}
 .footer-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -192,6 +192,7 @@ export function pageLayout(input: PageChrome): string {
   <link rel="alternate" hreflang="zh-CN" href="${escapeHtml(hreflangZhUrl)}">
   <link rel="alternate" hreflang="en" href="${escapeHtml(hreflangEnUrl)}">
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(hreflangZhUrl)}">
+  <link rel="alternate" type="text/plain" href="${assetPrefix}llms.txt" title="Agent Pulse llms.txt">
   <link rel="icon" href="${assetPrefix}assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${assetPrefix}assets/app.css">
   <script type="module" src="${assetPrefix}assets/core.js"></script>
@@ -216,7 +217,7 @@ export function pageLayout(input: PageChrome): string {
   ${eventDrawerShell(locale, assetPrefix, prefix)}
   <footer class="site-footer">
     <div class="shell footer-grid">
-      <div class="footer-brand"><strong>AGENT PULSE</strong><p>${escapeHtml(t("footer.tagline", locale))}</p>${footerSubscriptions(input.github, locale)}${footerContacts(locale)}</div>
+      <div class="footer-brand"><strong>AGENT PULSE</strong><p>${escapeHtml(t("footer.tagline", locale))}</p>${footerAiAccess(assetPrefix, locale)}${footerSubscriptions(input.github, locale)}${footerContacts(locale)}</div>
       <div class="footer-links">
         <nav aria-label="${locale === "en" ? "Explore" : "探索"}"><span>${locale === "en" ? "EXPLORE" : "探索"}</span><a href="${prefix}lines/">${escapeHtml(t("footer.lines", locale))}</a><a href="${prefix}industry-evolution/">${locale === "en" ? "Industry History" : "行业发展历程"}</a><a href="${prefix}timeline/">${escapeHtml(t("footer.timeline", locale))}</a><a href="${prefix}signals/">${locale === "en" ? "Source updates" : "来源更新"}</a><a href="${prefix}scout/">${escapeHtml(t("footer.scout", locale))}</a><a href="${prefix}sources/">${escapeHtml(t("footer.sources", locale))}</a></nav>
         <nav aria-label="${locale === "en" ? "More" : "更多"}"><span>${locale === "en" ? "MORE" : "更多"}</span><a href="${prefix}actors/">${escapeHtml(t("tab.actors", locale))}</a><a href="${prefix}resources/">${escapeHtml(t("tab.resources", locale))}</a><a href="${prefix}legal/">${escapeHtml(t("footer.legal", locale))}</a><a href="${prefix}changelog/">${escapeHtml(t("footer.changelog", locale))}</a></nav>
@@ -240,6 +241,10 @@ export function pageLayout(input: PageChrome): string {
 </html>`
     .replaceAll("__ASSET_PREFIX__", assetPrefix)
     .replaceAll("__PREFIX__", prefix);
+}
+
+function footerAiAccess(assetPrefix: string, locale: Locale): string {
+  return `<a class="footer-ai-access" href="${assetPrefix}llms.txt">${icon("sparkles")}<span><strong>${escapeHtml(t("footer.aiAccess", locale))}</strong><small>${escapeHtml(t("footer.aiAccessDesc", locale))}</small></span><code>llms.txt</code>${icon("arrow-right")}</a>`;
 }
 
 function footerSubscriptions(github: GithubData, locale: Locale): string {

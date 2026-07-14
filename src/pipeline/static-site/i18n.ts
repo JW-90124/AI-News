@@ -52,6 +52,11 @@ const translations: Record<string, Record<Locale, string>> = {
   },
   "footer.snapshot": { "zh-CN": "静态快照 {date}", en: "Static snapshot {date}" },
   "footer.contacts": { "zh-CN": "联系作者", en: "Contact" },
+  "footer.aiAccess": { "zh-CN": "供 AI 阅读", en: "AI-readable index" },
+  "footer.aiAccessDesc": {
+    "zh-CN": "事实边界、证据与公开数据入口",
+    en: "Facts, evidence, and public data",
+  },
 
   // ─── Language switcher ─────────────────────────────────────
   "lang.label": { "zh-CN": "语言", en: "Language" },

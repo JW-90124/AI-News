@@ -24,6 +24,7 @@ import type {
   StaticSiteModel,
 } from "./static-site/dto.js";
 import { githubDataAtBuildTime } from "./static-site/github.js";
+import { renderLlmsTxt } from "./static-site/llms.js";
 import type { StaticPage } from "./static-site/pages.js";
 import { renderStaticPages } from "./static-site/pages.js";
 
@@ -324,6 +325,7 @@ export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppCo
   await Promise.all([
     writeSitemap(allPages, config.PUBLIC_SITE_URL, config.distDir),
     writeRobotsTxt(config.PUBLIC_SITE_URL, config.distDir),
+    writeFile(join(config.distDir, "llms.txt"), renderLlmsTxt(model), "utf8"),
   ]);
 
   return {

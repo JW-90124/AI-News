@@ -213,6 +213,8 @@ describe("SQLite application", () => {
       const html = await readFile(join(config.distDir, path), "utf8");
       expect(html, path).toContain(`<title>${title}</title>`);
       expect(html, path).toContain('rel="canonical"');
+      expect(html, path).toContain('rel="alternate" type="text/plain"');
+      expect(html, path).toContain("llms.txt");
       expect(html, path).toContain("data-event-drawer");
       expect(html, path).toContain("data-back-to-top");
       expect(html, path).not.toContain("__PREFIX__");
@@ -236,7 +238,18 @@ describe("SQLite application", () => {
     expect(englishChangelog).toContain("LATEST RELEASE");
     const css = await readFile(join(config.distDir, "assets/app.css"), "utf8");
     const home = await readFile(join(config.distDir, "index.html"), "utf8");
-    expect(Buffer.byteLength(css)).toBeLessThan(98_000);
+    const llms = await readFile(join(config.distDir, "llms.txt"), "utf8");
+    expect(Buffer.byteLength(css)).toBeLessThan(100_000);
+    expect(llms).toMatch(/^# Agent Pulse\n\n> /);
+    expect(llms).toContain("## Core Machine-Readable Data");
+    expect(llms).toContain("published Events");
+    expect(llms).toContain("not as verified facts");
+    expect(llms).toContain("analysis or hypotheses");
+    expect(llms).toContain("https://barretlee.github.io/agent-pulse/data/timeline.json");
+    expect(llms).toContain("https://barretlee.github.io/agent-pulse/data/signals.json");
+    expect(llms).toContain(`${result.events} published events`);
+    expect(llms).toContain(`${result.sources} catalogued sources`);
+    expect(llms).toContain(`${result.signals} source observations`);
     expect(home.indexOf('src="./assets/core.js"')).toBeLessThan(home.indexOf("</head>"));
     expect(home.match(/src="\.\/assets\/core\.js"/g)).toHaveLength(1);
     expect(home).toContain("GPT-5.6");
@@ -267,6 +280,10 @@ describe("SQLite application", () => {
     expect(home).not.toContain('class="signal-wave"');
     expect(home).toContain('class="footer-links"');
     expect(home).toContain('class="footer-contacts"');
+    expect(home).toContain('class="footer-ai-access" href="./llms.txt"');
+    expect(home).toContain("供 AI 阅读");
+    expect(home).toContain("事实边界、证据与公开数据入口");
+    expect(home).toContain("<code>llms.txt</code>");
     expect(home).toContain('href="mailto:barret.china@gmail.com"');
     expect(home).toContain('class="footer-snapshot"');
     expect(home).toContain("/commits/main/");
@@ -361,6 +378,7 @@ describe("SQLite application", () => {
     expect(siteStyles).toMatch(/\[data-theme=(?:"paper"|paper)\] \.site-footer/);
     expect(siteStyles).toMatch(/\.tool-tabs\{[^}]*overflow-x:auto;[^}]*overflow-y:hidden/);
     expect(siteStyleSource).toContain(".timeline-controls .chip-row");
+    expect(siteStyleSource).not.toMatch(/\.footer-ai-access code\s*\{[^}]*display:\s*none/);
     expect(siteStyles).toContain("overscroll-behavior-y:contain");
     expect(siteStyles).toContain(".back-to-top");
     expect(siteStyles).toContain("[data-mobile-list-extra]");

@@ -207,8 +207,12 @@ export async function validatePublicSite(
   }
 
   const siteUrl = ensureSlash(typeof timeline.siteUrl === "string" ? timeline.siteUrl : "");
-  if (!/^https:\/\//.test(siteUrl))
+  if (!/^https:\/\//.test(siteUrl)) {
     add("invalid_site_url", dataPaths.timeline, "siteUrl must use HTTPS");
+  } else {
+    const llmsText = await read("llms.txt");
+    validateLlmsTxt(llmsText, siteUrl, add);
+  }
   const sitemapText = await read("sitemap.xml");
   const sitemapUrls = new Set(
     [...sitemapText.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => decodeXml(match[1] ?? "")),
@@ -275,10 +279,69 @@ function validatePageHead(
     ["zh-CN hreflang", /hreflang="zh-CN"/g],
     ["en hreflang", /hreflang="en"/g],
     ["x-default hreflang", /hreflang="x-default"/g],
+    ["llms.txt discovery link", /<link rel="alternate" type="text\/plain" href="[^"]*llms\.txt"/g],
   ];
   for (const [label, pattern] of requirements) {
     const count = html.match(pattern)?.length ?? 0;
     if (count !== 1) add("invalid_page_head", path, `Expected one ${label}, found ${count}`);
+  }
+}
+
+function validateLlmsTxt(
+  text: string,
+  siteUrl: string,
+  add: (code: string, path: string, message: string) => void,
+): void {
+  const path = "llms.txt";
+  if (!text.startsWith("# Agent Pulse\n\n> ")) {
+    add("invalid_llms_txt", path, "Expected an H1 followed by a blockquote summary");
+  }
+  if ((text.match(/^# /gm) ?? []).length !== 1) {
+    add("invalid_llms_txt", path, "Expected exactly one H1 heading");
+  }
+  for (const section of [
+    "## Start Here",
+    "## Core Machine-Readable Data",
+    "## Provenance and Governance",
+    "## Optional",
+  ]) {
+    if (!text.includes(section)) add("invalid_llms_txt", path, `Missing ${section}`);
+  }
+  for (const boundary of [
+    "published Events",
+    "not as verified facts",
+    "analysis or hypotheses",
+    "original evidence URLs",
+  ]) {
+    if (!text.includes(boundary)) add("invalid_llms_txt", path, `Missing boundary: ${boundary}`);
+  }
+  for (const resource of [
+    "data/timeline.json",
+    "data/tracks.json",
+    "data/narratives.json",
+    "data/product.json",
+    "data/signals.json",
+    "data/sources.json",
+    "sitemap.xml",
+  ]) {
+    const expected = new URL(resource, siteUrl).toString();
+    if (!text.includes(`](${expected})`)) {
+      add("invalid_llms_txt", path, `Missing public resource ${expected}`);
+    }
+  }
+  const links = [...text.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)].map((match) => match[1] ?? "");
+  if (links.length < 12) add("invalid_llms_txt", path, "Expected at least 12 curated links");
+  for (const link of links) {
+    try {
+      if (new URL(link).protocol !== "https:") {
+        add("invalid_llms_txt", path, `Non-HTTPS link: ${link}`);
+      }
+    } catch {
+      add("invalid_llms_txt", path, `Invalid link: ${link}`);
+    }
+  }
+  if (/\/Users\/|\/home\/runner\/|<<<<<<<|__PREFIX__/.test(text)) {
+    add("private_material", path, "llms.txt contains a local path or template marker");
   }
 }
 
