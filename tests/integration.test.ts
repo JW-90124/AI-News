@@ -307,6 +307,10 @@ describe("SQLite application", () => {
       join(config.rootDir, "web/public/assets/app.css"),
       "utf8",
     );
+    const timelineSource = await readFile(
+      join(config.rootDir, "web/public/assets/timeline.js"),
+      "utf8",
+    );
     const coreScript = await readFile(join(config.distDir, "assets/core.js"), "utf8");
     const timelineScript = await readFile(join(config.distDir, "assets/timeline.js"), "utf8");
     const siteStyles = await readFile(join(config.distDir, "assets/app.css"), "utf8");
@@ -319,6 +323,14 @@ describe("SQLite application", () => {
     expect(timelineScript).toContain("data-research-group");
     expect(timelineScript).toContain("jumpToMonth");
     expect(timelineScript).toContain('params.set("date"');
+    expect(timelineSource).toContain('addEventListener("pointerdown"');
+    expect(timelineSource).toContain("setPointerCapture");
+    expect(timelineSource).toMatch(/addEventListener\("pointermove"[\s\S]*?setPointerCapture/);
+    expect(timelineSource).not.toMatch(
+      /addEventListener\("pointerdown"[\s\S]*?setPointerCapture[\s\S]*?addEventListener\("pointermove"/,
+    );
+    expect(timelineSource).toContain("filterRow.scrollLeft = startScrollLeft - delta");
+    expect(timelineSource).not.toContain("centerFilter(root.querySelector");
     expect(coreScript).toContain("setupGithubStarCount");
     expect(coreScript).toContain('cache:"no-store"');
     expect(coreScript).toContain("githubStarsSource=source");
@@ -348,6 +360,7 @@ describe("SQLite application", () => {
     expect(siteStyles).not.toContain("#17191f");
     expect(siteStyles).toMatch(/\[data-theme=(?:"paper"|paper)\] \.site-footer/);
     expect(siteStyles).toMatch(/\.tool-tabs\{[^}]*overflow-x:auto;[^}]*overflow-y:hidden/);
+    expect(siteStyleSource).toContain(".timeline-controls .chip-row");
     expect(siteStyles).toContain("overscroll-behavior-y:contain");
     expect(siteStyles).toContain(".back-to-top");
     expect(siteStyles).toContain("[data-mobile-list-extra]");

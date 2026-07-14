@@ -1,8 +1,10 @@
 export function setupTimeline(root) {
   const search = root.querySelector("[data-timeline-search]");
   const count = root.querySelector("[data-result-count]");
+  const filterRow = root.querySelector(".chip-row");
   const dateJumpOffset = 154;
   let activeTrack = new URLSearchParams(location.search).get("track") || "all";
+  let filterDragged = false;
   const cards = () => [...root.querySelectorAll("[data-event]")];
   const centerFilter = (button) => {
     const row = button?.closest(".chip-row");
@@ -13,6 +15,27 @@ export function setupTimeline(root) {
       behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
     });
   };
+  if (filterRow) {
+    let startX = 0;
+    let startScrollLeft = 0;
+
+    filterRow.addEventListener("pointerdown", (event) => {
+      if (event.pointerType !== "mouse" || event.button !== 0) return;
+      startX = event.clientX;
+      startScrollLeft = filterRow.scrollLeft;
+      filterDragged = false;
+    });
+    filterRow.addEventListener("pointermove", (event) => {
+      if (event.buttons !== 1) return;
+      const delta = event.clientX - startX;
+      if (!filterDragged && Math.abs(delta) < 5) return;
+      if (!filterDragged) filterRow.setPointerCapture(event.pointerId);
+      filterDragged = true;
+      event.preventDefault();
+      filterRow.scrollLeft = startScrollLeft - delta;
+    });
+    filterRow.addEventListener("pointercancel", () => (filterDragged = false));
+  }
   const setMonthExpanded = (month, expanded) => {
     month.classList.toggle("is-expanded", expanded);
     month.dataset.userExpanded = String(expanded);
@@ -214,6 +237,10 @@ export function setupTimeline(root) {
   root.querySelectorAll("[data-filter-track]").forEach((button) => {
     button.classList.toggle("active", button.dataset.filterTrack === activeTrack);
     button.addEventListener("click", () => {
+      if (filterDragged) {
+        filterDragged = false;
+        return;
+      }
       activeTrack = button.dataset.filterTrack || "all";
       root.querySelectorAll("[data-filter-track]").forEach((item) => {
         item.classList.toggle("active", item === button);
@@ -228,7 +255,6 @@ export function setupTimeline(root) {
   search?.addEventListener("input", apply);
   apply();
   requestAnimationFrame(() => {
-    centerFilter(root.querySelector(`[data-filter-track="${CSS.escape(activeTrack)}"]`));
     const selectedDate = new URLSearchParams(location.search).get("date");
     if (selectedDate) {
       jumpToMonth(root.querySelector(`[data-timeline-month="${CSS.escape(selectedDate)}"]`), false);

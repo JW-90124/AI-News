@@ -2114,6 +2114,10 @@ body[data-page="home"] .section {
   overflow-x: auto;
   scrollbar-width: none;
 }
+.timeline-controls .chip-row,
+.timeline-controls .chip-row button {
+  cursor: grab;
+}
 .chip-row button,
 .filter-toolbar button {
   flex: none;
