@@ -7,7 +7,7 @@ import { capabilities, productVersion, releases, roadmap } from "../catalog/prod
 import type { AppConfig } from "../config/env.js";
 import { parseJson, Repository } from "../db/repository.js";
 import type { DatabaseSchema } from "../db/types.js";
-import { evaluateSystem } from "./evaluate.js";
+import { evaluateSystem, latestEvaluation } from "./evaluate.js";
 import { loadResearchImpactReport, researchImpactAssessmentForEvent } from "./research-impact.js";
 import { loadMergedIndustryNarratives } from "./stage-promotion.js";
 import type {
@@ -87,7 +87,7 @@ function clarifyLegacyScoutCopy(insight: PublicScoutInsight): PublicScoutInsight
 
 export async function exportStaticSite(db: Kysely<DatabaseSchema>, config: AppConfig) {
   const repository = new Repository(db);
-  const evaluation = await evaluateSystem(db);
+  const evaluation = (await latestEvaluation(db)) ?? (await evaluateSystem(db));
   const narratives = await loadMergedIndustryNarratives(config.rootDir);
   const [events, tracks, actors, resources, view, scout, latestSourceChecks, signals] =
     await Promise.all([

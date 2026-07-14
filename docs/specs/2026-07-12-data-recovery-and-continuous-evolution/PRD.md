@@ -148,3 +148,10 @@ E4 production  20 次 healthy + 至少 7 天观察 + 人工确认后 active
 - 每次写快照前 fetch `origin/main` 并把远端最新快照 merge 到当前数据库；
 - 只有合并完成后才能生成、提交和推送快照；推送冲突必须重新合并，而不是以强推覆盖；
 - workflow 契约测试验证 restore、remote merge、write 的顺序。
+
+### 系统能力评测连续性
+
+- `evaluation_runs` 与 Signal、SourceRun 一样属于需要恢复的运行证据，仓库快照必须保留完整历史；
+- Data Refresh 在合并远端快照后重新评测，并把最新报告和评测历史随同快照原子提交；
+- CI 必须恢复完整数据再评测，基于上一提交阻止分数或证据覆盖回退，并把最高优先级改进动作写入 Actions Summary；
+- 所谓“持续提升”是“真实证据增长 -> 分数增长 -> 新基线”，禁止通过修改权重、降低样本门槛、删除低分维度或写死分数实现。

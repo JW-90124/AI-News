@@ -22,6 +22,20 @@ describe("repository data snapshot", () => {
     databases.push(sourceDb);
     await migrateToLatest(sourceDb, config);
     await seedDatabase(sourceDb);
+    await sourceDb
+      .insertInto("evaluation_runs")
+      .values({
+        id: "snapshot-evaluation-run",
+        release_version: "test",
+        status: "partial",
+        overall_score: 51,
+        dimensions_json: JSON.stringify([{ slug: "coverage", score: 51 }]),
+        capability_snapshot_json: JSON.stringify([{ slug: "snapshot", status: "operational" }]),
+        notes: "Measured evidence only.",
+        started_at: "2026-07-11T07:59:00.000Z",
+        finished_at: "2026-07-11T08:00:00.000Z",
+      })
+      .execute();
     const repository = new Repository(sourceDb);
     const openai = (await repository.listSources()).find((source) => source.slug === "openai");
     expect(openai).toBeDefined();
@@ -145,6 +159,7 @@ describe("repository data snapshot", () => {
     expect(first.counts.sourceRuns).toBe(2);
     expect(first.counts.signalObservations).toBeGreaterThanOrEqual(2);
     expect(first.counts.scoutInsights).toBe(1);
+    expect(first.counts.evaluationRuns).toBe(1);
 
     const targetDb = createDatabase(config);
     databases.push(targetDb);
@@ -272,6 +287,28 @@ describe("repository data snapshot", () => {
       final_url: "https://openai.com/feed.xml",
       sample_json: "{}",
     });
+    expect(
+      await targetDb
+        .selectFrom("evaluation_runs")
+        .select(["overall_score", "dimensions_json", "capability_snapshot_json"])
+        .where("id", "=", "snapshot-evaluation-run")
+        .executeTakeFirst(),
+    ).toEqual({
+      overall_score: 51,
+      dimensions_json: JSON.stringify([{ slug: "coverage", score: 51 }]),
+      capability_snapshot_json: JSON.stringify([{ slug: "snapshot", status: "operational" }]),
+    });
+    await restoreRepositorySnapshot(targetDb, root);
+    expect(
+      Number(
+        (
+          await targetDb
+            .selectFrom("evaluation_runs")
+            .select(({ fn }) => fn.countAll<number>().as("count"))
+            .executeTakeFirstOrThrow()
+        ).count,
+      ),
+    ).toBe(1);
     expect(
       await targetDb
         .selectFrom("source_runs")

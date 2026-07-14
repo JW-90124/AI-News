@@ -25,6 +25,7 @@ interface RepositorySnapshot {
   eventMerges?: Array<Record<string, unknown>>;
   scoutInsights?: Array<Record<string, unknown>>;
   scoutEvidence?: Array<Record<string, unknown>>;
+  evaluationRuns?: Array<Record<string, unknown>>;
 }
 
 export async function writeRepositorySnapshot(
@@ -139,7 +140,7 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
       .execute(),
   ]);
   const sourceSlugById = new Map(sourceRows.map((source) => [source.id, source.slug]));
-  const [sourceRunRows, scoutRows, scoutEvidenceRows] = await Promise.all([
+  const [sourceRunRows, scoutRows, scoutEvidenceRows, evaluationRows] = await Promise.all([
     db
       .selectFrom("source_runs")
       .innerJoin("sources", "sources.id", "source_runs.source_id")
@@ -161,6 +162,7 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
       ])
       .where("scout_insights.status", "=", "published")
       .execute(),
+    db.selectFrom("evaluation_runs").selectAll().orderBy("finished_at", "asc").execute(),
   ]);
   const snapshot: RepositorySnapshot = {
     schemaVersion: SNAPSHOT_SCHEMA_VERSION,
@@ -444,6 +446,17 @@ async function buildRepositorySnapshot(db: Kysely<DatabaseSchema>): Promise<Repo
       evidenceRole: link.evidenceRole,
       weight: link.weight,
       createdAt: link.createdAt,
+    })),
+    evaluationRuns: evaluationRows.map((evaluation) => ({
+      id: evaluation.id,
+      releaseVersion: evaluation.release_version,
+      status: evaluation.status,
+      overallScore: evaluation.overall_score,
+      dimensions: parseJson(evaluation.dimensions_json, []),
+      capabilities: parseJson(evaluation.capability_snapshot_json, []),
+      notes: evaluation.notes,
+      startedAt: evaluation.started_at,
+      finishedAt: evaluation.finished_at,
     })),
   };
   return sanitizeSnapshotValue(snapshot) as RepositorySnapshot;
@@ -1088,6 +1101,26 @@ async function restoreSnapshot(
       .onConflict((conflict) => conflict.columns(["insight_id", "event_id"]).doNothing())
       .execute();
   }
+
+  for (const value of snapshot.evaluationRuns ?? []) {
+    await db
+      .insertInto("evaluation_runs")
+      .values({
+        id: requiredString(value, "id"),
+        release_version: requiredString(value, "releaseVersion"),
+        status: requiredString(value, "status"),
+        overall_score: requiredNumber(value, "overallScore"),
+        dimensions_json: JSON.stringify(Array.isArray(value.dimensions) ? value.dimensions : []),
+        capability_snapshot_json: JSON.stringify(
+          Array.isArray(value.capabilities) ? value.capabilities : [],
+        ),
+        notes: requiredString(value, "notes"),
+        started_at: requiredString(value, "startedAt"),
+        finished_at: requiredString(value, "finishedAt"),
+      })
+      .onConflict((conflict) => conflict.column("id").doNothing())
+      .execute();
+  }
 }
 
 function safeSourceState(value: unknown): Record<string, string> {
@@ -1264,6 +1297,7 @@ function snapshotCounts(snapshot: RepositorySnapshot) {
     eventMerges: snapshot.eventMerges?.length ?? 0,
     scoutInsights: snapshot.scoutInsights?.length ?? 0,
     scoutEvidence: snapshot.scoutEvidence?.length ?? 0,
+    evaluationRuns: snapshot.evaluationRuns?.length ?? 0,
   };
 }
 
@@ -1284,5 +1318,6 @@ function emptyCounts() {
     eventMerges: 0,
     scoutInsights: 0,
     scoutEvidence: 0,
+    evaluationRuns: 0,
   };
 }

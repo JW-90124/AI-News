@@ -37,6 +37,12 @@ describe("GitHub source governance workflows", () => {
     expect(refresh.indexOf("npm run db:snapshot -- merge")).toBeLessThan(
       refresh.indexOf("npm run db:snapshot -- write"),
     );
+    expect(refresh.indexOf("npm run db:snapshot -- merge")).toBeLessThan(
+      refresh.indexOf("--output=data/reports/system-evaluation.json"),
+    );
+    expect(refresh.indexOf("--output=data/reports/system-evaluation.json")).toBeLessThan(
+      refresh.indexOf("npm run db:snapshot -- write"),
+    );
     expect(refresh.lastIndexOf("npm run ops:reconcile")).toBeGreaterThan(
       refresh.indexOf("npm run db:snapshot -- merge"),
     );
@@ -156,6 +162,7 @@ describe("GitHub source governance workflows", () => {
     expect(refresh).toContain("if: always()");
     expect(refresh).toContain("if-no-files-found: ignore");
     expect(refresh).toContain("data/reports/research-impact.json");
+    expect(refresh).toContain("data/reports/system-evaluation.json");
     expect(refresh).not.toContain(
       "steps.commit.outputs.changed == 'true' && steps.public.outputs.changed == 'true'",
     );
@@ -178,6 +185,12 @@ describe("GitHub source governance workflows", () => {
       "run: npm test",
       "name: Export static site",
       "run: npm run export",
+      "name: Restore complete repository data",
+      "run: npm run db:seed",
+      "name: Evaluate system capability and prevent score regression",
+      "--fail-on-regression",
+      '--summary="$GITHUB_STEP_SUMMARY"',
+      "name: Upload system evaluation evidence",
       "name: Build",
       "run: npm run build",
       "name: Validate public content across every main tab",
@@ -186,6 +199,11 @@ describe("GitHub source governance workflows", () => {
       expect(ci).toContain(step);
     }
     expect(ci).not.toContain("run: npm run check");
+    expect(ci).toContain("git show HEAD^:data/reports/system-evaluation.json");
+    expect(ci.indexOf("run: npm run db:seed")).toBeLessThan(ci.indexOf("--fail-on-regression"));
+    expect(ci.indexOf("--fail-on-regression")).toBeLessThan(
+      ci.indexOf("npm run export -- --skip-seed"),
+    );
     const pages = await workflow("pages.yml");
     expect(pages).toContain("public:validate");
     expect(pages.indexOf("public:validate")).toBeLessThan(
@@ -210,6 +228,8 @@ describe("GitHub source governance workflows", () => {
     expect(guard).toContain("REFRESH_COOLDOWN_HOURS: 120");
     expect(guard).toContain("gh run list --workflow data-refresh.yml");
     expect(guard).toContain("gh workflow run data-refresh.yml --ref main --field mode=incremental");
+    expect(guard).toContain("--baseline=data/reports/system-evaluation.json");
+    expect(guard).toContain('--summary="$GITHUB_STEP_SUMMARY"');
   });
 
   it("creates a missing GitHub Release only after CI verifies main", async () => {

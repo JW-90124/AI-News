@@ -8,7 +8,7 @@ export const capabilities = [
     status: "operational",
     maturity: 68,
     release: "0.2.0",
-    evidence: "411 sources classified by region, role, acquisition and maintenance state",
+    evidence: "414 sources classified by region, role, acquisition and maintenance state",
   },
   {
     slug: "upstream-discovery",
@@ -47,7 +47,7 @@ export const capabilities = [
     maturity: 66,
     release: "0.9.0",
     evidence:
-      "4,386 allowlisted source observations are searchable by title, description, attribution, date, category, tags and canonical link without exposing raw payloads",
+      "4,940 allowlisted source observations are searchable by title, description, attribution, date, category, tags and canonical link without exposing raw payloads",
   },
   {
     slug: "dynamic-home-discovery",
@@ -134,7 +134,7 @@ export const capabilities = [
     maturity: 68,
     release: "0.5.0",
     evidence:
-      "411/411 live rows checked; 261 healthy, 395 accessible and 272 produced parseable content",
+      "414/414 live rows checked; 266 healthy, 398 accessible and 276 produced parseable content",
   },
   {
     slug: "shadow-observation",
@@ -144,7 +144,7 @@ export const capabilities = [
     maturity: 58,
     release: "0.5.0",
     evidence:
-      "192 qualified sources supply an isolated observation pool; full backfill retained 4,386 Signals without bypassing production promotion",
+      "188 qualified sources supply an isolated observation pool; the repository snapshot retains 4,940 Signals without bypassing production promotion",
   },
   {
     slug: "source-contract",
@@ -437,10 +437,10 @@ export const capabilities = [
     name: "多维评测体系",
     domain: "governance",
     status: "experimental",
-    maturity: 56,
+    maturity: 62,
     release: "0.2.0",
     evidence:
-      "persisted scorecards plus live source audit, coverage and Signal-to-Ready-to-Published funnel with blocker counts",
+      "versioned evaluation history, a current scorecard, previous-main CI regression gates and ranked evidence-backed improvement actions",
   },
   {
     slug: "bounded-evolution",
@@ -552,6 +552,7 @@ export const releases = [
       "趋势变化轨迹与关键事件改为最新阶段优先，阶段箭头同步反向",
       "来源更新新增粗粒度来源类型过滤，移动端地域与来源类型过滤器紧凑并排",
       "本地启动、数据库 seed 与默认静态导出自动合并仓库最新快照，避免新 clone 停留在不完整的 seed 数据",
+      "系统能力评测历史进入版本化快照，CI 以上一提交为基线阻止分数回退，并持续输出按加权缺口排序的真实改进动作",
     ],
   },
   {

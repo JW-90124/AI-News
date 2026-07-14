@@ -63,3 +63,24 @@ Actions 分工：
 - Source audit：审计、生命周期协调、观察模式和健康 issue；
 - Data refresh：采集、聚类、雷达推进、星探生成、评测、导出和快照；
 - Monitor：只读健康检查与告警，不修改业务数据。
+
+## 7. 版本化评测与 CI 提升闭环
+
+```text
+repository snapshot
+  -> restore evaluation history + current evidence
+  -> run deterministic evaluation
+  -> compare with previous main report
+       regression -> fail CI with exact dimension
+       stable/growth -> export ranked evidence gaps
+  -> Data Refresh gathers real evidence
+  -> persist latest report + append evaluation run to snapshot
+  -> next CI uses the new score as its baseline
+```
+
+- `evaluation_runs` 使用运行 ID 作为稳定键进入 `data/snapshot/v1.json`，恢复时 append/upsert，旧快照缺字段仍兼容；
+- `data/reports/system-evaluation.json` 保存最新总分、原始加权分、证据覆盖、完整维度和按加权缺口排序的改进动作；
+- CI 基线来自上一提交，而不是 PR 自己修改后的报告，防止通过下调版本化分数绕过回退门禁；
+- 回退门禁覆盖 overall score、evidence coverage 和各维度 score；维度新增允许进入基线，维度删除视为回退；
+- 低于 80 分不是伪造数据或放宽门槛的理由。CI/Quality Guard 只暴露下一步，Data Refresh 只能通过真实审计、采集、证据绑定和用户结果样本改善分数；
+- 静态导出优先读取最近一次评测，不再因为每次页面构建重复制造等价评测记录。

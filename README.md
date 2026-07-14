@@ -91,7 +91,7 @@ Repository evidence checked on **2026-07-14**. Source-health numbers below come 
 | Published evidence-backed events | 331 |
 | Normalized Signals in the repository snapshot | 4,940 |
 
-See the machine-generated [source health report](data/reports/source-health.json), [data-source policy](docs/SOURCES.md), and [capability map](docs/CAPABILITIES.md).
+See the machine-generated [source health report](data/reports/source-health.json), [system capability evaluation](data/reports/system-evaluation.json), [data-source policy](docs/SOURCES.md), and [capability map](docs/CAPABILITIES.md). CI restores the complete repository snapshot, compares a fresh evaluation with the previous commit, fails on score or evidence regression, and publishes the highest-priority evidence gaps as its improvement queue.
 
 The public source-update stream exposes only allowlisted titles, attribution, dates, categories, tags, and canonical links. It remains an observation layer and cannot bypass the evidence and readiness gates required for Event publication. The limitations are equally important: production qualification still needs a real observation window; many historical events need more independent evidence; claim-level evidence, multilingual semantic clustering, real MySQL integration coverage, and user outcome feedback are still incomplete. Planned or experimental capabilities are never presented as shipped.
 

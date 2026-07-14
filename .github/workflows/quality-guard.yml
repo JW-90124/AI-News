@@ -45,7 +45,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          npm run --silent evaluate:system > "$RUNNER_TEMP/evaluation.json"
+          npm run --silent evaluate:system -- \
+            --skip-bootstrap \
+            --baseline=data/reports/system-evaluation.json \
+            --output="$RUNNER_TEMP/evaluation.json" \
+            --summary="$GITHUB_STEP_SUMMARY" > "$RUNNER_TEMP/evaluation-output.json"
           jq -e . "$RUNNER_TEMP/evaluation.json" >/dev/null
           score="$(jq -r '.overallScore' "$RUNNER_TEMP/evaluation.json")"
           test "$score" -ge 0

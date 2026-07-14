@@ -92,9 +92,10 @@ describe("repository database bootstrap", () => {
     const config = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
     const snapshot = JSON.parse(
       await readFile(join(config.rootDir, "data/snapshot/v1.json"), "utf8"),
-    ) as { sources: unknown[]; signals: unknown[] };
+    ) as { sources: unknown[]; signals: unknown[]; evaluationRuns: unknown[] };
     expect(snapshot.sources.length).toBeGreaterThanOrEqual(414);
     expect(snapshot.signals.length).toBeGreaterThanOrEqual(4_940);
+    expect(snapshot.evaluationRuns.length).toBeGreaterThanOrEqual(373);
   });
 
   it("uses the shared bootstrap for local serve, seed, and default export", async () => {

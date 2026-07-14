@@ -135,13 +135,6 @@ jobs:
       - name: Publish every Event and Scout item that clears hard gates
         run: npm run auto:publish
 
-      - name: Evaluate measured system quality
-        shell: bash
-        run: |
-          set -euo pipefail
-          npm run --silent evaluate:system | tee "$RUNNER_TEMP/evaluation.json"
-          node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' "$RUNNER_TEMP/evaluation.json"
-
       - name: Merge latest remote repository snapshot
         shell: bash
         run: |
@@ -149,10 +142,22 @@ jobs:
           git fetch origin main
           git show origin/main:data/snapshot/v1.json > "$RUNNER_TEMP/remote-snapshot.json"
           git show origin/main:data/narratives/stage-promotions.json > data/narratives/stage-promotions.json
+          git show origin/main:data/reports/system-evaluation.json > data/reports/system-evaluation.json
           npm run db:snapshot -- merge --file="$RUNNER_TEMP/remote-snapshot.json"
 
       - name: Re-apply source reconciliation after remote merge
         run: npm run ops:reconcile
+
+      - name: Persist measured system quality and ranked improvement actions
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run --silent evaluate:system -- \
+            --skip-bootstrap \
+            --baseline=data/reports/system-evaluation.json \
+            --output=data/reports/system-evaluation.json \
+            --summary="$GITHUB_STEP_SUMMARY" | tee "$RUNNER_TEMP/evaluation.json"
+          node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' "$RUNNER_TEMP/evaluation.json"
 
       - name: Assess a major narrative stage promotion with DeepSeek V4 Pro
         id: stage_proposal
@@ -284,14 +289,16 @@ jobs:
           test -s data/snapshot/v1.json
           test -s data/narratives/stage-promotions.json
           test -s data/reports/research-impact.json
+          test -s data/reports/system-evaluation.json
           node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' data/narratives/stage-promotions.json
           node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' data/reports/research-impact.json
-          git diff --check -- data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json
-          if grep -E '"(token|secret|password|cookie|authorization|api[_-]?key|reasoning|prompt|completion)"[[:space:]]*:' data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json; then
+          node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' data/reports/system-evaluation.json
+          git diff --check -- data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json
+          if grep -E '"(token|secret|password|cookie|authorization|api[_-]?key|reasoning|prompt|completion)"[[:space:]]*:' data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json; then
             echo "Sensitive or raw model material detected in repository data" >&2
             exit 1
           fi
-          if grep -E -- '-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|/Users/[^/]+/|/home/runner/' data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json; then
+          if grep -E -- '-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|/Users/[^/]+/|/home/runner/' data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json; then
             echo "Private material or local path detected in repository data" >&2
             exit 1
           fi
@@ -301,7 +308,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -- data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json
+          git add -- data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json
           if git diff --cached --quiet; then
             echo "No material data changes; skipping commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -430,5 +437,6 @@ jobs:
             ${{ runner.temp }}/weekly-status.json
             ${{ runner.temp }}/public-integrity.json
             data/reports/research-impact.json
+            data/reports/system-evaluation.json
           if-no-files-found: ignore
           retention-days: 14

@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 1,
+  "id": "d0408813-69d5-4a4c-b138-ace10e9e7dfa",
+  "releaseVersion": "0.11.1",
+  "status": "partial",
+  "overallScore": 51,
+  "rawWeightedScore": 59,
+  "evidenceCoverage": 50,
+  "dimensions": [
+    {
+      "slug": "source-coverage",
+      "name": "有效来源覆盖",
+      "score": 60,
+      "rawScore": 72,
+      "scoreCap": 60,
+      "weight": 10,
+      "status": "insufficient_data",
+      "sampleSize": 5,
+      "sampleTarget": 100,
+      "summary": "414 个目录源中 266 个单轮健康、188 个处于隔离观察，只有 5 个既 active 且健康；E2/E3 不等同生产覆盖。",
+      "evidence": {
+        "catalog": 414,
+        "checked": 414,
+        "healthy": 266,
+        "degraded": 27,
+        "failed": 70,
+        "skipped": 51,
+        "active": 5,
+        "activeHealthy": 5,
+        "observingHealthy": 188,
+        "healthyCategories": 13,
+        "healthyChina": 60
+      },
+      "penalties": [
+        "active 且健康的生产来源不足 50",
+        "生产覆盖尚未经历 3 个自然日验证"
+      ],
+      "nextAction": "让 E3 来源完成 20 次健康检查和 7 天观察，再由自动契约验证逐批晋级 E4。"
+    },
+    {
+      "slug": "source-quality",
+      "name": "来源内容质量",
+      "score": 79,
+      "rawScore": 79,
+      "scoreCap": 100,
+      "weight": 10,
+      "status": "measured",
+      "sampleSize": 293,
+      "sampleTarget": 100,
+      "summary": "293 个可用/部分可用来源参与真实抓取质量计算；目录预填 quality_score 不再计分。",
+      "evidence": {
+        "usableChecks": 293,
+        "healthy": 266,
+        "auditWindows": 2,
+        "averageObservedQuality": 66,
+        "schemaValid": 266
+      },
+      "penalties": [
+        "连续观测不足 3 个自然日"
+      ],
+      "nextAction": "连续 7 天抽检 100+ 健康源，补原创率、正文完整度和人工准确率标签。"
+    },
+    {
+      "slug": "primary-source-provenance",
+      "name": "一手来源归属",
+      "score": 62,
+      "rawScore": 62,
+      "scoreCap": 100,
+      "weight": 10,
+      "status": "measured",
+      "sampleSize": 4940,
+      "sampleTarget": 100,
+      "summary": "4940 条信号中 3705 条来自 primary/research/policy，464 条证据进入事件。",
+      "evidence": {
+        "signals": 4940,
+        "direct": 4940,
+        "primary": 3705,
+        "linkedEvidence": 464,
+        "linkedSourceCount": 50,
+        "aggregatorDebt": 0
+      },
+      "penalties": [],
+      "nextAction": "提升一手信号占比和 Signal→Event 证据绑定率，并核验媒体集团独立性。"
+    },
+    {
+      "slug": "source-reliability",
+      "name": "采集稳定性",
+      "score": 77,
+      "rawScore": 77,
+      "scoreCap": 100,
+      "weight": 12,
+      "status": "measured",
+      "sampleSize": 414,
+      "sampleTarget": 100,
+      "summary": "按每个来源最新一次检查/运行去重：266/414 健康，不再让单一来源的重复成功运行抬高分数。",
+      "evidence": {
+        "checked": 414,
+        "healthy": 266,
+        "degraded": 27,
+        "failed": 70,
+        "skipped": 51,
+        "latestRuns": 290,
+        "latestRunSuccess": 272,
+        "auditWindows": 2
+      },
+      "penalties": [
+        "稳定性观察窗不足 3 天"
+      ],
+      "nextAction": "连续运行 7 天，按来源计算成功率、异常空结果、P95 延迟和恢复时间。"
+    },
+    {
+      "slug": "confidence",
+      "name": "事实置信度",
+      "score": 42,
+      "rawScore": 57,
+      "scoreCap": 42,
+      "weight": 12,
+      "status": "insufficient_data",
+      "sampleSize": 331,
+      "sampleTarget": 30,
+      "summary": "331 个公开事件仅 4 个拥有多源证据，306 个通过当前就绪门禁；人工置信分只占 10%。",
+      "evidence": {
+        "published": 331,
+        "primaryEvidence": 323,
+        "multiSource": 4,
+        "readyPublished": 306,
+        "averageEvidence": 1.02,
+        "averageSelfReportedConfidence": 91
+      },
+      "penalties": [
+        "多源公开事件不足 10"
+      ],
+      "nextAction": "优先把核心事件补成独立多源证据，并建立 claim 级事实错误标注集。"
+    },
+    {
+      "slug": "value",
+      "name": "认知与决策价值",
+      "score": 45,
+      "rawScore": 58,
+      "scoreCap": 45,
+      "weight": 12,
+      "status": "insufficient_data",
+      "sampleSize": 0,
+      "sampleTarget": 30,
+      "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
+      "evidence": {
+        "published": 331,
+        "fieldCompleteness": 100,
+        "readyPublished": 306,
+        "multiSource": 4,
+        "outcomeFeedback": 0
+      },
+      "penalties": [
+        "缺少真实用户结果反馈，分数上限 55"
+      ],
+      "nextAction": "采集至少 30 条读后帮助度、保存/引用、行动与付费意愿反馈。"
+    },
+    {
+      "slug": "realtime",
+      "name": "端到端实时性",
+      "score": 84,
+      "rawScore": 84,
+      "scoreCap": 100,
+      "weight": 8,
+      "status": "measured",
+      "sampleSize": 290,
+      "sampleTarget": 100,
+      "summary": "collector 耗时不是上游发布到页面可见的端到端延迟；以成功运行比例作为实时性估算。",
+      "evidence": {
+        "latestSourceRuns": 290,
+        "latestRunSuccess": 272,
+        "freshHealthySources": 143,
+        "activeWithRecentSuccess": 5,
+        "endToEndLatencySamples": 0
+      },
+      "penalties": [
+        "缺少端到端延迟样本，当前使用成功运行比例估算"
+      ],
+      "nextAction": "记录 upstream published→Signal→Event→Pages 四段延迟并建立 P50/P95 SLO。"
+    },
+    {
+      "slug": "timeliness",
+      "name": "内容时效性",
+      "score": 58,
+      "rawScore": 58,
+      "scoreCap": 100,
+      "weight": 10,
+      "status": "measured",
+      "sampleSize": 266,
+      "sampleTarget": 100,
+      "summary": "143/266 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 57 个。",
+      "evidence": {
+        "healthy": 266,
+        "freshHealthy": 143,
+        "active": 5,
+        "activeWithRecentSuccess": 5,
+        "published": 331,
+        "recentPublished": 57
+      },
+      "penalties": [],
+      "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
+    },
+    {
+      "slug": "effectiveness",
+      "name": "机会与行动效果",
+      "score": 19,
+      "rawScore": 19,
+      "scoreCap": 45,
+      "weight": 8,
+      "status": "insufficient_data",
+      "sampleSize": 0,
+      "sampleTarget": 30,
+      "summary": "19 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
+      "evidence": {
+        "ideas": 19,
+        "editorialAccepted": 19,
+        "outcomeFeedback": 0,
+        "completedArtifacts": 0
+      },
+      "penalties": [
+        "无 30 日行动结果样本，分数上限 45"
+      ],
+      "nextAction": "增加 save/act/complete 反馈，30 日后按机会类型复盘真实产物和收益。"
+    },
+    {
+      "slug": "governance",
+      "name": "安全与治理",
+      "score": 60,
+      "rawScore": 94,
+      "scoreCap": 60,
+      "weight": 8,
+      "status": "insufficient_data",
+      "sampleSize": 414,
+      "sampleTarget": 414,
+      "summary": "字段存在只证明策略已声明，不证明策略有效；当前缺少策略版本回放、发布回滚演练和审计抽检。",
+      "evidence": {
+        "sources": 414,
+        "checked": 414,
+        "licenseDeclared": 414,
+        "restrictedEnabled": 0,
+        "readyEvents": 306,
+        "totalEvents": 438,
+        "rollbackDrills": 0
+      },
+      "penalties": [
+        "无策略回放和回滚演练证据，分数上限 60"
+      ],
+      "nextAction": "增加 audit log、策略版本、release snapshot hash 与定期回滚演练。"
+    }
+  ],
+  "capabilities": [
+    {
+      "slug": "source-catalog",
+      "name": "重点来源目录",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 68,
+      "release": "0.2.0",
+      "evidence": "414 sources classified by region, role, acquisition and maintenance state"
+    },
+    {
+      "slug": "upstream-discovery",
+      "name": "聚合上游发现",
+      "domain": "sensing",
+      "status": "experimental",
+      "maturity": 56,
+      "release": "0.3.0",
+      "evidence": "aggregator observations are stored as discoveries and matched to direct publishers"
+    },
+    {
+      "slug": "continuous-data-refresh",
+      "name": "持续数据刷新",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 72,
+      "release": "0.7.0",
+      "evidence": "daily data refresh and Pages deployment, serialized monotonic snapshot writes, isolated optional AI stages and parse-validated quality artifacts"
+    },
+    {
+      "slug": "ai-event-convergence",
+      "name": "AI 事件整理与决策周报",
+      "domain": "intelligence",
+      "status": "experimental",
+      "maturity": 42,
+      "release": "unreleased",
+      "evidence": "DeepSeek V4 Flash produces schema-validated Event drafts and weekly decision cards behind evidence, readiness and public-DTO gates"
+    },
+    {
+      "slug": "public-source-observations",
+      "name": "公开来源观察流",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 66,
+      "release": "0.9.0",
+      "evidence": "4,940 allowlisted source observations are searchable by title, description, attribution, date, category, tags and canonical link without exposing raw payloads"
+    },
+    {
+      "slug": "dynamic-home-discovery",
+      "name": "动态首页发现",
+      "domain": "product",
+      "status": "operational",
+      "maturity": 72,
+      "release": "0.9.0",
+      "evidence": "multiple evidence-backed trend candidates, randomized recent Events and six visible trend blocks with internal Event carousels are consumed by the public homepage"
+    },
+    {
+      "slug": "industry-history-baseline",
+      "name": "2022—今天行业基线",
+      "domain": "understanding",
+      "status": "operational",
+      "maturity": 72,
+      "release": "0.8.0",
+      "evidence": "source-backed milestones from Stable Diffusion and ChatGPT in 2022 through the current public snapshot"
+    },
+    {
+      "slug": "track-synthesis",
+      "name": "主线阶段整理",
+      "domain": "intelligence",
+      "status": "operational",
+      "maturity": 66,
+      "release": "0.4.0",
+      "evidence": "five eras and six executive track narratives with China-position comparisons"
+    },
+    {
+      "slug": "major-stage-promotion",
+      "name": "重大里程碑阶段晋级",
+      "domain": "intelligence",
+      "status": "experimental",
+      "maturity": 46,
+      "release": "unreleased",
+      "evidence": "deterministic rarity gates, DeepSeek V4 Pro high-effort review, evidence allowlists, dedicated GitHub Issues and versioned narrative promotion records"
+    },
+    {
+      "slug": "primary-source-gate",
+      "name": "一手事实检查",
+      "domain": "governance",
+      "status": "operational",
+      "maturity": 65,
+      "release": "0.3.0",
+      "evidence": "aggregator-role collectors cannot write factual signals or enter event clustering"
+    },
+    {
+      "slug": "source-lifecycle",
+      "name": "信源生命周期",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 62,
+      "release": "0.2.0",
+      "evidence": "draft/shadow/active/degraded/quarantined/retired state machine"
+    },
+    {
+      "slug": "resilient-fetch",
+      "name": "弹性拉取",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 72,
+      "release": "0.2.0",
+      "evidence": "direct-first fetch with bounded fallback proxy, timeout, retry classification, backoff, cache, per-host rate limit and redirect guard"
+    },
+    {
+      "slug": "source-observability",
+      "name": "来源可观测性",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 70,
+      "release": "0.2.0",
+      "evidence": "append-only source checks plus separate production active coverage and latest-audit healthy-rate monitoring"
+    },
+    {
+      "slug": "source-audit",
+      "name": "逐源恢复审计",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 68,
+      "release": "0.5.0",
+      "evidence": "414/414 live rows checked; 266 healthy, 398 accessible and 276 produced parseable content"
+    },
+    {
+      "slug": "shadow-observation",
+      "name": "隔离观察数据池",
+      "domain": "sensing",
+      "status": "operational",
+      "maturity": 58,
+      "release": "0.5.0",
+      "evidence": "188 qualified sources supply an isolated observation pool; the repository snapshot retains 4,940 Signals without bypassing production promotion"
+    },
+    {
+      "slug": "source-contract",
+      "name": "适配器契约验证",
+      "domain": "sensing",
+      "status": "experimental",
+      "maturity": 36,
+      "release": "0.1.0",
+      "evidence": "shared SourceAdapter and partial parser fixtures"
+    },
+    {
+      "slug": "incremental-sync",
+      "name": "增量同步",
+      "domain": "sensing",
+      "status": "experimental",
+      "maturity": 52,
+      "release": "0.2.0",
+      "evidence": "ETag/Last-Modified state, monotonic snapshot merge, full source-run history and policy-aware all-source synchronization; general cursor pagination pending"
+    },
+    {
+      "slug": "coverage-map",
+      "name": "国内外覆盖地图",
+      "domain": "sensing",
+      "status": "experimental",
+      "maturity": 58,
+      "release": "0.7.0",
+      "evidence": "region/category coverage plus a 12-person AI expert identity matrix with automatic feeds and restricted social profiles"
+    },
+    {
+      "slug": "normalize",
+      "name": "信号规范化",
+      "domain": "understanding",
+      "status": "operational",
+      "maturity": 58,
+      "release": "0.1.0",
+      "evidence": "shared CollectedSignal model and sanitization"
+    },
+    {
+      "slug": "dedupe",
+      "name": "URL 与内容去重",
+      "domain": "understanding",
+      "status": "operational",
+      "maturity": 58,
+      "release": "0.1.0",
+      "evidence": "canonical URL/content hash plus per-source observations with first/last seen time and idempotent snapshot recovery"
+    },
+    {
+      "slug": "event-clustering",
+      "name": "事件聚类",
+      "domain": "understanding",
+      "status": "experimental",
+      "maturity": 48,
+      "release": "0.1.0",
+      "evidence": "eventability gate, model family/facet fingerprints and reviewable merge candidates; multilingual semantic clustering pending"
+    },
+    {
+      "slug": "reversible-signal-triage",
+      "name": "可逆信号分诊",
+      "domain": "understanding",
+      "status": "experimental",
+      "maturity": 58,
+      "release": "0.5.0",
+      "evidence": "533 low-eventability signals retained as deferred observations, zero clustering backlog and reversible review snapshots"
+    },
+    {
+      "slug": "event-convergence",
+      "name": "人工事件整理",
+      "domain": "understanding",
+      "status": "experimental",
+      "maturity": 50,
+      "release": "0.5.0",
+      "evidence": "family/facet merge queue, readiness-aware target selection, explicit confirmation and append-only merge audit"
+    },
+    {
+      "slug": "entity-resolution",
+      "name": "实体与别名对齐",
+      "domain": "understanding",
+      "status": "planned",
+      "maturity": 10,
+      "release": "future",
+      "evidence": "actor catalog only"
+    },
+    {
+      "slug": "claim-evidence",
+      "name": "Claim 级证据链",
+      "domain": "understanding",
+      "status": "planned",
+      "maturity": 12,
+      "release": "future",
+      "evidence": "event-signal provenance exists; claim mapping pending"
+    },
+    {
+      "slug": "fact-reason-impact",
+      "name": "Fact / Reason / Impact",
+      "domain": "understanding",
+      "status": "experimental",
+      "maturity": 38,
+      "release": "0.1.0",
+      "evidence": "event fields exist; automatic reasoning evaluation pending"
+    },
+    {
+      "slug": "confidence",
+      "name": "可信度评分",
+      "domain": "intelligence",
+      "status": "experimental",
+      "maturity": 35,
+      "release": "0.1.0",
+      "evidence": "explainable baseline; real calibration set pending"
+    },
+    {
+      "slug": "heat",
+      "name": "跨圈热度判断",
+      "domain": "intelligence",
+      "status": "experimental",
+      "maturity": 24,
+      "release": "0.1.0",
+      "evidence": "baseline factors; real cross-platform observation network pending"
+    },
+    {
+      "slug": "impact-value",
+      "name": "影响与价值分析",
+      "domain": "intelligence",
+      "status": "experimental",
+      "maturity": 32,
+      "release": "0.1.0",
+      "evidence": "scoring schema and curated examples; outcome calibration pending"
+    },
+    {
+      "slug": "trend",
+      "name": "趋势与拐点识别",
+      "domain": "intelligence",
+      "status": "planned",
+      "maturity": 8,
+      "release": "future",
+      "evidence": "timeline grouping only"
+    },
+    {
+      "slug": "contradiction",
+      "name": "反证与冲突检测",
+      "domain": "intelligence",
+      "status": "planned",
+      "maturity": 5,
+      "release": "future",
+      "evidence": "Scout counter-signal field only"
+    },
+    {
+      "slug": "scout",
+      "name": "Opportunity Scout",
+      "domain": "intelligence",
+      "status": "experimental",
+      "maturity": 56,
+      "release": "0.7.0",
+      "evidence": "evidence-bound deterministic opportunities with recency-aware selection, cooldown, automatic publication gates and archival"
+    },
+    {
+      "slug": "forecast",
+      "name": "预测与校准",
+      "domain": "intelligence",
+      "status": "planned",
+      "maturity": 0,
+      "release": "future",
+      "evidence": "roadmap only"
+    },
+    {
+      "slug": "today",
+      "name": "关键变化摘要",
+      "domain": "experience",
+      "status": "experimental",
+      "maturity": 36,
+      "release": "0.1.0",
+      "evidence": "executive lead from published events"
+    },
+    {
+      "slug": "timeline",
+      "name": "Timeline 主线",
+      "domain": "experience",
+      "status": "operational",
+      "maturity": 66,
+      "release": "0.6.0",
+      "evidence": "year/month evidence timeline with track/search filters, a global evidence drawer and 64 addressable event pages"
+    },
+    {
+      "slug": "radar",
+      "name": "Radar 格局观察",
+      "domain": "experience",
+      "status": "experimental",
+      "maturity": 30,
+      "release": "0.1.0",
+      "evidence": "actor catalog and visual radar; evidence-based movement pending"
+    },
+    {
+      "slug": "inbox",
+      "name": "自动机会沉淀",
+      "domain": "experience",
+      "status": "experimental",
+      "maturity": 55,
+      "release": "0.7.0",
+      "evidence": "Scout opportunities are automatically published or archived without a human queue"
+    },
+    {
+      "slug": "control-room",
+      "name": "Control Room",
+      "domain": "experience",
+      "status": "experimental",
+      "maturity": 70,
+      "release": "0.7.0",
+      "evidence": "read-only operational audit for source health, automated publication, merge candidates, evaluation and Scout outcomes"
+    },
+    {
+      "slug": "publication-readiness",
+      "name": "发布前检查",
+      "domain": "governance",
+      "status": "operational",
+      "maturity": 74,
+      "release": "0.7.0",
+      "evidence": "ready events publish automatically while missing evidence, placeholders, taxonomy gaps, low confidence and unsupported heat remain isolated"
+    },
+    {
+      "slug": "static-release",
+      "name": "隐私安全静态发布",
+      "domain": "delivery",
+      "status": "operational",
+      "maturity": 76,
+      "release": "0.6.0",
+      "evidence": "allowlist JSON export, 60-route static multipage renderer, repository metadata and GitHub Pages workflow"
+    },
+    {
+      "slug": "multipage-intelligence",
+      "name": "多页决策情报体验",
+      "domain": "experience",
+      "status": "operational",
+      "maturity": 70,
+      "release": "0.6.0",
+      "evidence": "latest material shift above the fold, six strategic lines, event permalinks, four decision tools and a productized changelog"
+    },
+    {
+      "slug": "issue-source-governance",
+      "name": "Issue 驱动的来源治理",
+      "domain": "governance",
+      "status": "experimental",
+      "maturity": 52,
+      "release": "0.6.0",
+      "evidence": "structured source proposals, offline validation, trusted maintainer gate and disabled draft PR import"
+    },
+    {
+      "slug": "content-rights-boundary",
+      "name": "内容版权与引用边界",
+      "domain": "governance",
+      "status": "operational",
+      "maturity": 64,
+      "release": "0.6.0",
+      "evidence": "320-character snapshot excerpts, canonical attribution, takedown route and explicit code/content license separation"
+    },
+    {
+      "slug": "repository-snapshot",
+      "name": "仓库数据快照",
+      "domain": "delivery",
+      "status": "operational",
+      "maturity": 72,
+      "release": "0.4.0",
+      "evidence": "deterministic privacy-safe JSON snapshot with merge restore and sensitive URL stripping"
+    },
+    {
+      "slug": "release-evolution",
+      "name": "版本演进与 Changelog",
+      "domain": "delivery",
+      "status": "operational",
+      "maturity": 74,
+      "release": "0.7.0",
+      "evidence": "versioned repository and website changelogs with an enforced contract and automatic GitHub Release creation"
+    },
+    {
+      "slug": "evaluation",
+      "name": "多维评测体系",
+      "domain": "governance",
+      "status": "experimental",
+      "maturity": 62,
+      "release": "0.2.0",
+      "evidence": "versioned evaluation history, a current scorecard, previous-main CI regression gates and ranked evidence-backed improvement actions"
+    },
+    {
+      "slug": "bounded-evolution",
+      "name": "有界持续进化循环",
+      "domain": "governance",
+      "status": "experimental",
+      "maturity": 54,
+      "release": "0.5.0",
+      "evidence": "bounded scheduled loop with atomic checkpoints, per-iteration reports, failure isolation, explicit mutation flags and graceful shutdown"
+    },
+    {
+      "slug": "security",
+      "name": "采集与管理安全",
+      "domain": "governance",
+      "status": "operational",
+      "maturity": 66,
+      "release": "0.1.0",
+      "evidence": "SSRF guard, body limit, CSP, bearer auth and text rendering"
+    },
+    {
+      "slug": "capability-accounting",
+      "name": "能力资产核算",
+      "domain": "governance",
+      "status": "operational",
+      "maturity": 58,
+      "release": "0.2.0",
+      "evidence": "capability map links status, maturity, release and implementation evidence"
+    }
+  ],
+  "notes": "5 dimensions lack sufficient evidence; calibrated weighted score 59, evidence coverage 50%, final score 51",
+  "startedAt": "2026-07-14T07:42:01.075Z",
+  "finishedAt": "2026-07-14T07:42:01.139Z",
+  "target": 80,
+  "targetReached": false,
+  "policy": "measured-evidence-only",
+  "improvementPlan": [
+    {
+      "slug": "effectiveness",
+      "name": "机会与行动效果",
+      "score": 19,
+      "status": "insufficient_data",
+      "weightedGap": 5,
+      "penalties": [
+        "无 30 日行动结果样本，分数上限 45"
+      ],
+      "nextAction": "增加 save/act/complete 反馈，30 日后按机会类型复盘真实产物和收益。"
+    },
+    {
+      "slug": "confidence",
+      "name": "事实置信度",
+      "score": 42,
+      "status": "insufficient_data",
+      "weightedGap": 5,
+      "penalties": [
+        "多源公开事件不足 10"
+      ],
+      "nextAction": "优先把核心事件补成独立多源证据，并建立 claim 级事实错误标注集。"
+    },
+    {
+      "slug": "value",
+      "name": "认知与决策价值",
+      "score": 45,
+      "status": "insufficient_data",
+      "weightedGap": 4,
+      "penalties": [
+        "缺少真实用户结果反馈，分数上限 55"
+      ],
+      "nextAction": "采集至少 30 条读后帮助度、保存/引用、行动与付费意愿反馈。"
+    },
+    {
+      "slug": "timeliness",
+      "name": "内容时效性",
+      "score": 58,
+      "status": "measured",
+      "weightedGap": 2,
+      "penalties": [],
+      "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
+    },
+    {
+      "slug": "governance",
+      "name": "安全与治理",
+      "score": 60,
+      "status": "insufficient_data",
+      "weightedGap": 2,
+      "penalties": [
+        "无策略回放和回滚演练证据，分数上限 60"
+      ],
+      "nextAction": "增加 audit log、策略版本、release snapshot hash 与定期回滚演练。"
+    },
+    {
+      "slug": "source-coverage",
+      "name": "有效来源覆盖",
+      "score": 60,
+      "status": "insufficient_data",
+      "weightedGap": 2,
+      "penalties": [
+        "active 且健康的生产来源不足 50",
+        "生产覆盖尚未经历 3 个自然日验证"
+      ],
+      "nextAction": "让 E3 来源完成 20 次健康检查和 7 天观察，再由自动契约验证逐批晋级 E4。"
+    },
+    {
+      "slug": "primary-source-provenance",
+      "name": "一手来源归属",
+      "score": 62,
+      "status": "measured",
+      "weightedGap": 2,
+      "penalties": [],
+      "nextAction": "提升一手信号占比和 Signal→Event 证据绑定率，并核验媒体集团独立性。"
+    }
+  ]
+}
