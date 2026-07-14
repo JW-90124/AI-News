@@ -402,12 +402,12 @@ function signalsPage(model: StaticSiteModel, locale: Locale): string {
   const initial = model.signals.slice(0, 48);
   return `<section class="page-hero compact has-motion shell"><span class="section-kicker">SOURCE UPDATES</span><h1>${escapeHtml(locale === "en" ? "Source Updates" : "来源更新")}</h1><p>${escapeHtml(locale === "en" ? "See what tracked sources have just published, with direct links to the original material. Items enter the event timeline only after verification." : "查看各来源刚发布的内容和原文链接。这里只是待核验线索，通过证据检查后才会进入事件时间线。")}</p>${pageStatus(`${model.signals.length} ${locale === "en" ? "updates" : "条更新"}`, `${sourceCount} ${locale === "en" ? "sources" : "个来源"}`, latest ? formatDate(latest, locale) : "—")}${heroMotion("signals")}</section>
     <section class="section section-tint"><div class="shell signal-browser" data-signal-browser data-signals-src="__ASSET_PREFIX__data/signals.json" data-page-size="48" data-mobile-page-size="12">
-      <div class="signal-browser-toolbar"><label>${icon("search")}<input type="search" data-signal-search placeholder="${locale === "en" ? "Search title, source, category or tag" : "搜索标题、来源、分类或标签"}"></label><div class="signal-region-control"><select data-signal-region aria-label="${locale === "en" ? "Filter by region" : "按地域筛选"}"><option value="all">${locale === "en" ? "All regions" : "全部地域"}</option>${[
+      <div class="signal-browser-toolbar"><label>${icon("search")}<input type="search" name="signalSearch" data-signal-search placeholder="${locale === "en" ? "Search title, source, category or tag" : "搜索标题、来源、分类或标签"}"></label><div class="signal-filter-row"><div class="signal-select-control signal-source-control"><select name="signalSourceKind" data-signal-source-kind aria-label="${locale === "en" ? "Filter by source type" : "按来源类型筛选"}"><option value="all">${locale === "en" ? "All sources" : "全部来源"}</option><option value="official">${locale === "en" ? "Official / Policy" : "官方 / 政策"}</option><option value="research">${locale === "en" ? "Research / Experts" : "研究 / 专家"}</option><option value="media">${locale === "en" ? "Media / Community" : "媒体 / 社区"}</option></select>${icon("chevron-down")}</div><div class="signal-select-control signal-region-control"><select name="signalRegion" data-signal-region aria-label="${locale === "en" ? "Filter by region" : "按地域筛选"}"><option value="all">${locale === "en" ? "All regions" : "全部地域"}</option>${[
         ...new Set(model.signals.map((signal) => signal.sourceRegion)),
       ]
         .sort()
         .map((region) => `<option value="${escapeHtml(region)}">${escapeHtml(region)}</option>`)
-        .join("")}</select>${icon("chevron-down")}</div></div>
+        .join("")}</select>${icon("chevron-down")}</div></div></div>
       <div class="signal-stream" data-signal-list>${initial.map((signal) => signalCard(signal, locale)).join("")}</div>
       <div class="signal-browser-footer"><span data-signal-count>${Math.min(initial.length, model.signals.length)} / ${model.signals.length}</span><button class="button quiet" type="button" data-signal-more>${locale === "en" ? "View more" : "查看更多"}</button></div>
     </div></section>`;
@@ -470,6 +470,7 @@ function lineDetail(
   const events = sortEventsByLatestDevelopment(eventsForTrack(model.events, track.slug));
   const sourcePool = sourcesForTrack(model.sources, track.slug);
   const stages = narrative?.stages ?? [];
+  const stagesNewestFirst = stages.map((stage, index) => ({ stage, index })).reverse();
   return `<div class="trend-detail" data-trend-detail style="--track-color:${escapeHtml(track.color)}"><section class="line-hero${defaultRoute ? " default-trend" : ""} shell">
       ${trendSwitcher(model, locale, track.slug, true, defaultRoute)}
       <div class="line-hero-grid"><div class="line-hero-copy"><span class="section-kicker">${locale === "en" ? "INDUSTRY TREND" : "领域趋势"} · ${t("lines.evidenceNodes", locale).replace("{count}", String(events.length))}</span><h1>${escapeHtml(track.name)}</h1><p class="line-now">${escapeHtml(narrative?.now || track.description)}</p>${defaultRoute ? heroMotion("lines") : ""}</div>
@@ -477,11 +478,11 @@ function lineDetail(
     </section>
     <section class="section shell" data-module-expand-root>
       <header class="section-head section-head-action"><div><span class="section-kicker">${escapeHtml(t("lines.phases", locale))}</span><h2>${escapeHtml(t("lines.phasesTitle", locale))}</h2></div>${moduleExpandButton(locale === "en" ? "Expand all stages" : "展开全部阶段", locale === "en" ? "Collapse stages" : "收起阶段", "section-module-toggle")}</header>
-      <div class="phase-rail" tabindex="0" aria-label="${locale === "en" ? "Scrollable trend history" : "可横向滚动的趋势变化轨迹"}">${stages.map((stage, index) => phaseCard(stage, eventsInStage(events, stage), locale, index)).join("") || emptyState(t("lines.noStages", locale), "")}</div>
+      <div class="phase-rail" data-stage-order="newest-first" tabindex="0" aria-label="${locale === "en" ? "Scrollable trend history, newest first" : "可横向滚动的趋势变化轨迹，最新阶段优先"}">${stagesNewestFirst.map(({ stage, index }) => phaseCard(stage, eventsInStage(events, stage), locale, index)).join("") || emptyState(t("lines.noStages", locale), "")}</div>
     </section>
     <section class="section section-tint" data-no-scroll-reveal><div class="shell">
       ${sectionHead(t("lines.evidenceSpine", locale), t("lines.evidenceSpineTitle", locale), t("lines.evidenceSpineDesc", locale).replace("{count}", String(events.length)))}
-      <div class="stage-evidence-atlas">${stages.map((stage, index) => stageEvidenceGroup(stage, eventsInStage(events, stage), locale, index)).join("") || emptyState(t("lines.noEvidence", locale), "")}</div>
+      <div class="stage-evidence-atlas" data-stage-order="newest-first">${stagesNewestFirst.map(({ stage, index }) => stageEvidenceGroup(stage, eventsInStage(events, stage), locale, index)).join("") || emptyState(t("lines.noEvidence", locale), "")}</div>
       <a class="text-link" href="__PREFIX__timeline/?track=${escapeHtml(track.slug)}">${t("lines.viewTimeline", locale)} ${icon("arrow-right")}</a>
     </div></section>
     <section class="section shell">

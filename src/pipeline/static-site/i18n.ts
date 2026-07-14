@@ -229,14 +229,14 @@ const translations: Record<string, Record<Locale, string>> = {
   "lines.phases": { "zh-CN": "01 / 趋势变化", en: "01 / TREND HISTORY" },
   "lines.phasesTitle": { "zh-CN": "趋势变化轨迹", en: "How the Trend Changed" },
   "lines.phasesDesc": {
-    "zh-CN": "按时间查看这个领域从早期到现在经历的主要变化。",
-    en: "Follow the major changes in this area from its early phase to today.",
+    "zh-CN": "从最新阶段向前回看这个领域经历的主要变化。",
+    en: "Start with the latest stage, then trace the major changes backward.",
   },
   "lines.evidenceSpine": { "zh-CN": "02 / 关键依据", en: "02 / SUPPORTING EVENTS" },
   "lines.evidenceSpineTitle": { "zh-CN": "关键事件与证据", en: "Events Behind the Shift" },
   "lines.evidenceSpineDesc": {
-    "zh-CN": "{count} 个已核验事件按变化阶段汇总，展开可查看全部。",
-    en: "{count} verified events grouped by trend phase. Expand a phase to see them all.",
+    "zh-CN": "{count} 个已核验事件按最新阶段优先汇总，展开可查看全部。",
+    en: "{count} verified events grouped by phase, with the latest stage first. Expand a phase to see them all.",
   },
   "lines.lenses": { "zh-CN": "03 / 决策影响", en: "03 / DECISION IMPACT" },
   "lines.lensesTitle": { "zh-CN": "对不同角色的影响", en: "What It Means by Role" },

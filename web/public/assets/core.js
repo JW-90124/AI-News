@@ -210,6 +210,7 @@ function setupSignalBrowser() {
   const root = document.querySelector("[data-signal-browser]");
   const list = root?.querySelector("[data-signal-list]");
   const search = root?.querySelector("[data-signal-search]");
+  const sourceKind = root?.querySelector("[data-signal-source-kind]");
   const region = root?.querySelector("[data-signal-region]");
   const more = root?.querySelector("[data-signal-more]");
   const count = root?.querySelector("[data-signal-count]");
@@ -269,6 +270,7 @@ function setupSignalBrowser() {
     const query = String(search?.value || "")
       .trim()
       .toLowerCase();
+    const selectedSourceKind = String(sourceKind?.value || "all");
     const selectedRegion = String(region?.value || "all");
     const filtered = (signals || []).filter((signal) => {
       const haystack = [
@@ -284,6 +286,8 @@ function setupSignalBrowser() {
         .toLowerCase();
       return (
         (!query || haystack.includes(query)) &&
+        (selectedSourceKind === "all" ||
+          signalSourceKind(signal.sourceRole) === selectedSourceKind) &&
         (selectedRegion === "all" || signal.sourceRegion === selectedRegion)
       );
     });
@@ -300,6 +304,7 @@ function setupSignalBrowser() {
       .catch(() => {});
   };
   search?.addEventListener("input", applyFilter);
+  sourceKind?.addEventListener("change", applyFilter);
   region?.addEventListener("change", applyFilter);
   more?.addEventListener("click", () => {
     loadSignals()
@@ -311,6 +316,13 @@ function setupSignalBrowser() {
   });
   mobileQuery.addEventListener("change", limitInitialCards);
   limitInitialCards();
+}
+
+function signalSourceKind(role) {
+  const normalized = String(role || "").toLowerCase();
+  if (["primary", "policy"].includes(normalized)) return "official";
+  if (["research", "expert"].includes(normalized)) return "research";
+  return "media";
 }
 
 function signalObservationNode(signal) {

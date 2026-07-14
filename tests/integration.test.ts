@@ -7,7 +7,7 @@ import { capitalHistoryEvents } from "../src/catalog/capital-history-2023-2025.j
 import { directResearchHistory2026 } from "../src/catalog/direct-research-history-2026.js";
 import { earlyHistoryEvents } from "../src/catalog/early-history.js";
 import { ecosystemHistoryEvents } from "../src/catalog/ecosystem-history-2026-07.js";
-import { historicalEvents } from "../src/catalog/history.js";
+import { historicalEvents, industryNarratives } from "../src/catalog/history.js";
 import { recentDensityEvents } from "../src/catalog/recent-density.js";
 import { sourceCatalog } from "../src/catalog/sources.js";
 import { vendorHistoryEvents } from "../src/catalog/vendor-history-2026-07.js";
@@ -303,6 +303,10 @@ describe("SQLite application", () => {
     expect(home).not.toContain(">决策工具<");
     const timelinePage = await readFile(join(config.distDir, "timeline/index.html"), "utf8");
     const coreSource = await readFile(join(config.rootDir, "web/public/assets/core.js"), "utf8");
+    const siteStyleSource = await readFile(
+      join(config.rootDir, "web/public/assets/app.css"),
+      "utf8",
+    );
     const coreScript = await readFile(join(config.distDir, "assets/core.js"), "utf8");
     const timelineScript = await readFile(join(config.distDir, "assets/timeline.js"), "utf8");
     const siteStyles = await readFile(join(config.distDir, "assets/app.css"), "utf8");
@@ -481,6 +485,32 @@ describe("SQLite application", () => {
     expect(trendDetailPage).toContain("趋势变化轨迹");
     expect(trendDetailPage).toContain("展开全部阶段");
     expect(trendDetailPage).toContain("关键事件与证据");
+    expect(trendDetailPage).toContain('class="phase-rail" data-stage-order="newest-first"');
+    expect(trendDetailPage).toContain(
+      'class="stage-evidence-atlas" data-stage-order="newest-first"',
+    );
+    const techNarrative = industryNarratives.tracks.find(
+      (narrative) => narrative.slug === "tech-evolution",
+    );
+    const oldestStage = techNarrative?.stages[0];
+    const newestStage = techNarrative?.stages[(techNarrative?.stages.length ?? 1) - 1];
+    expect(oldestStage).toBeDefined();
+    expect(newestStage).toBeDefined();
+    if (!oldestStage || !newestStage) throw new Error("tech evolution stages are required");
+    const phaseRailStart = trendDetailPage.indexOf('class="phase-rail"');
+    const evidenceAtlasStart = trendDetailPage.indexOf('class="stage-evidence-atlas"');
+    const roleGridStart = trendDetailPage.indexOf('class="role-grid"');
+    const phaseRailHtml = trendDetailPage.slice(phaseRailStart, evidenceAtlasStart);
+    const evidenceAtlasHtml = trendDetailPage.slice(evidenceAtlasStart, roleGridStart);
+    expect(phaseRailHtml.indexOf(newestStage.label)).toBeLessThan(
+      phaseRailHtml.indexOf(oldestStage.label),
+    );
+    expect(evidenceAtlasHtml.indexOf(newestStage.label)).toBeLessThan(
+      evidenceAtlasHtml.indexOf(oldestStage.label),
+    );
+    expect(siteStyleSource).toMatch(
+      /\.phase-rail\[data-stage-order="newest-first"\] article:not\(:last-child\)::after \{\s*content: "←";/,
+    );
     expect(trendDetailPage).toContain('class="module-expand-toggle section-module-toggle"');
     expect(trendDetailPage).toContain("查看完整建议");
     expect(trendDetailPage).toMatch(/查看全部 \d+ 个事件/);
@@ -513,8 +543,20 @@ describe("SQLite application", () => {
     expect(signalsPage).toContain("data-signal-browser");
     expect(signalsPage).toContain('data-mobile-page-size="12"');
     expect(signalsPage).toContain("data-signals-src");
-    expect(signalsPage).toContain('class="signal-region-control"');
-    expect(signalsPage).toContain('data-signal-region aria-label="按地域筛选"');
+    expect(signalsPage).toContain("signal-region-control");
+    expect(signalsPage).toContain('name="signalRegion" data-signal-region aria-label="按地域筛选"');
+    expect(signalsPage).toContain('class="signal-filter-row"');
+    expect(signalsPage).toContain(
+      'name="signalSourceKind" data-signal-source-kind aria-label="按来源类型筛选"',
+    );
+    expect(signalsPage).toContain('<option value="official">官方 / 政策</option>');
+    expect(signalsPage).toContain('<option value="research">研究 / 专家</option>');
+    expect(signalsPage).toContain('<option value="media">媒体 / 社区</option>');
+    expect(coreSource).toContain('sourceKind?.addEventListener("change", applyFilter)');
+    expect(coreSource).toContain("signalSourceKind(signal.sourceRole)");
+    expect(siteStyleSource).toMatch(
+      /\.signal-filter-row \{[\s\S]*?grid-template-columns: repeat\(2, minmax\(0, 1fr\)\);/,
+    );
     expect(signalsPage).toContain("assets/icons.svg#chevron-down");
     expect(sourcesPage).toContain("重点关注的人");
     expect(sourcesPage).toContain("宝玉");
