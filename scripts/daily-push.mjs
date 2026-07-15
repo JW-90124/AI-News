@@ -43,9 +43,15 @@ function beijingDateString(date = new Date()) {
 function pickEvents(timeline) {
   const cutoff = Date.now() - WINDOW_HOURS * 3600 * 1000;
   const fresh = timeline.events.filter((e) => Date.parse(e.publishedAt ?? e.happenedAt) >= cutoff);
-  const pool = fresh.length > 0 ? fresh : [...timeline.events]
-    .sort((a, b) => Date.parse(b.publishedAt ?? b.happenedAt) - Date.parse(a.publishedAt ?? a.happenedAt))
-    .slice(0, 5);
+  const pool =
+    fresh.length > 0
+      ? fresh
+      : [...timeline.events]
+          .sort(
+            (a, b) =>
+              Date.parse(b.publishedAt ?? b.happenedAt) - Date.parse(a.publishedAt ?? a.happenedAt),
+          )
+          .slice(0, 5);
   return {
     isFresh: fresh.length > 0,
     events: pool.sort((a, b) => (b.impactScore ?? 0) - (a.impactScore ?? 0)).slice(0, MAX_EVENTS),
@@ -97,16 +103,19 @@ async function sendWecomDigest({ events, isFresh }, siteUrl, dateStr) {
     })),
   ].slice(0, 8); // WeCom news message allows at most 8 articles
 
-  await wecomFetch(`https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=${access_token}`, {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({
-      touser: process.env.WECOM_TO_USER ?? "@all",
-      msgtype: "news",
-      agentid: Number(agentId),
-      news: { articles },
-    }),
-  });
+  await wecomFetch(
+    `https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=${access_token}`,
+    {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        touser: process.env.WECOM_TO_USER ?? "@all",
+        msgtype: "news",
+        agentid: Number(agentId),
+        news: { articles },
+      }),
+    },
+  );
   return true;
 }
 
@@ -117,7 +126,8 @@ const S = {
   p: "margin:8px 0;font-size:15px;color:#3f3f3f;line-height:1.8;",
   label: "color:#0b7a6b;font-weight:bold;",
   meta: "margin:4px 0 10px;font-size:13px;color:#9a9a9a;",
-  quote: "margin:10px 0;padding:10px 14px;background:#f6f8f7;border-radius:6px;font-size:14px;color:#575757;line-height:1.8;",
+  quote:
+    "margin:10px 0;padding:10px 14px;background:#f6f8f7;border-radius:6px;font-size:14px;color:#575757;line-height:1.8;",
   foot: "margin:28px 0 8px;font-size:13px;color:#9a9a9a;line-height:1.8;",
 };
 
@@ -134,7 +144,10 @@ function renderMpDraft({ events, isFresh }, dateStr, siteUrl) {
     .map((e, i) => {
       const track = e.tracks?.[0]?.name ?? trackNames[e.category] ?? e.category;
       const evidence = (e.evidence ?? [])
-        .map((ev) => `<p style="${S.meta}">🔗 ${escapeHtml(ev.source ?? "来源")}：${escapeHtml(ev.title ?? ev.url ?? "")}</p>`)
+        .map(
+          (ev) =>
+            `<p style="${S.meta}">🔗 ${escapeHtml(ev.source ?? "来源")}：${escapeHtml(ev.title ?? ev.url ?? "")}</p>`,
+        )
         .join("");
       const parts = [
         ["事实", e.factSummary],
@@ -143,7 +156,10 @@ function renderMpDraft({ events, isFresh }, dateStr, siteUrl) {
         ["值得关注", e.futureOutlook],
       ]
         .filter(([, v]) => v)
-        .map(([k, v]) => `<p style="${S.p}"><span style="${S.label}">${k}｜</span>${escapeHtml(v)}</p>`)
+        .map(
+          ([k, v]) =>
+            `<p style="${S.p}"><span style="${S.label}">${k}｜</span>${escapeHtml(v)}</p>`,
+        )
         .join("");
       return `<h2 style="${S.h2}">${i + 1}. ${escapeHtml(e.title)}</h2>
 <p style="${S.meta}">${escapeHtml(track)}${e.company ? ` · ${escapeHtml(e.company)}` : ""} · 影响力 ${e.impactScore ?? "—"}</p>
@@ -186,8 +202,16 @@ const picked = pickEvents(timeline);
 console.log(`Selected ${picked.events.length} events (fresh window: ${picked.isFresh}).`);
 
 await mkdir(DIGEST_DIR, { recursive: true });
-await writeFile(join(DIGEST_DIR, `${dateStr}.html`), renderMpDraft(picked, dateStr, timeline.siteUrl), "utf8");
-await writeFile(join(DIGEST_DIR, `${dateStr}.md`), renderMarkdown(picked, dateStr, timeline.siteUrl), "utf8");
+await writeFile(
+  join(DIGEST_DIR, `${dateStr}.html`),
+  renderMpDraft(picked, dateStr, timeline.siteUrl),
+  "utf8",
+);
+await writeFile(
+  join(DIGEST_DIR, `${dateStr}.md`),
+  renderMarkdown(picked, dateStr, timeline.siteUrl),
+  "utf8",
+);
 console.log(`Digest written to ${DIGEST_DIR}/${dateStr}.{html,md}`);
 
 const pushed = await sendWecomDigest(picked, timeline.siteUrl, dateStr);
