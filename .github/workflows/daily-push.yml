@@ -1,0 +1,62 @@
+name: Daily WeChat digest push
+
+on:
+  schedule:
+    # 21:30 Asia/Shanghai, roughly one hour after the upstream data refresh
+    # (data-refresh.yml runs 20:17) so the pushed digest uses today's snapshot.
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent-pulse-daily-push
+  cancel-in-progress: false
+
+jobs:
+  push-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Restore repository snapshot
+        run: npm run db:snapshot -- restore
+
+      - name: Export public content
+        run: npm run export -- --skip-seed
+
+      - name: Build digest and push to WeCom
+        env:
+          WECOM_CORP_ID: ${{ secrets.WECOM_CORP_ID }}
+          WECOM_APP_SECRET: ${{ secrets.WECOM_APP_SECRET }}
+          WECOM_AGENT_ID: ${{ secrets.WECOM_AGENT_ID }}
+        run: node scripts/daily-push.mjs
+
+      - name: Commit digest drafts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add digests
+          if git diff --cached --quiet; then
+            echo "No digest changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(digest): daily WeChat digest draft"
+          git pull --rebase origin main
+          git push origin HEAD:main
