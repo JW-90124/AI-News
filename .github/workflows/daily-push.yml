@@ -18,6 +18,9 @@ jobs:
   push-digest:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      PUBLIC_SITE_URL: https://jw-90124.github.io/AI-News/
+      GITHUB_REPOSITORY_URL: https://github.com/JW-90124/AI-News
     steps:
       - name: Check out main
         uses: actions/checkout@v7

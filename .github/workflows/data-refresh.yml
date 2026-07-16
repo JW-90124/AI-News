@@ -35,7 +35,8 @@ jobs:
     timeout-minutes: 35
     env:
       DATABASE_URL: sqlite:./var/automation.db
-      PUBLIC_SITE_URL: https://barretlee.github.io/agent-pulse/
+      PUBLIC_SITE_URL: https://jw-90124.github.io/AI-News/
+      GITHUB_REPOSITORY_URL: https://github.com/JW-90124/AI-News
       REFRESH_MODE: ${{ inputs.mode || 'incremental' }}
       PUBLISH_WEEKLY: ${{ inputs.publish_weekly || false }}
     steps:

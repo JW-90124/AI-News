@@ -27,7 +27,8 @@ jobs:
     timeout-minutes: 20
     env:
       DATABASE_URL: sqlite:./var/pages.db
-      PUBLIC_SITE_URL: https://barretlee.github.io/agent-pulse/
+      PUBLIC_SITE_URL: https://jw-90124.github.io/AI-News/
+      GITHUB_REPOSITORY_URL: https://github.com/JW-90124/AI-News
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v6
