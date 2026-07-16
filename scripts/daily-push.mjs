@@ -9,8 +9,10 @@
  *   2. Writes a WeChat Official Account (公众号) ready HTML draft plus a plain
  *      markdown copy under digests/.
  *
- * Required env for the WeCom push (skipped with a warning when absent):
- *   WECOM_CORP_ID, WECOM_APP_SECRET, WECOM_AGENT_ID
+ * WeCom delivery (skipped with a warning when neither is configured):
+ *   WECOM_WEBHOOK_URL — group robot webhook (preferred; no trusted-IP setup)
+ *   WECOM_CORP_ID + WECOM_APP_SECRET + WECOM_AGENT_ID — self-built app API
+ *     (requires a trusted IP / verified domain, impractical on GitHub Actions)
  * Optional env:
  *   TIMELINE_PATH (default dist/data/timeline.json)
  *   DIGEST_DIR (default digests)
@@ -74,23 +76,12 @@ async function wecomFetch(url, init) {
   return body;
 }
 
-async function sendWecomDigest({ events, isFresh }, siteUrl, dateStr) {
-  const corpId = process.env.WECOM_CORP_ID;
-  const secret = process.env.WECOM_APP_SECRET;
-  const agentId = process.env.WECOM_AGENT_ID;
-  if (!corpId || !secret || !agentId) {
-    console.warn("WECOM_* secrets missing; skipping WeCom push.");
-    return false;
-  }
-  const { access_token } = await wecomFetch(
-    `https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${corpId}&corpsecret=${secret}`,
-  );
-
+function digestArticles({ events, isFresh }, siteUrl, dateStr) {
   const headline = isFresh
     ? `📰 AI 日报 · ${dateStr} · 今日 ${events.length} 条重点`
     : `📰 AI 日报 · ${dateStr} · 今日无新事件，回顾近期 ${events.length} 条`;
 
-  const articles = [
+  return [
     {
       title: headline,
       description: "点击查看完整时间线与证据链",
@@ -101,8 +92,32 @@ async function sendWecomDigest({ events, isFresh }, siteUrl, dateStr) {
       description: e.factSummary ?? "",
       url: primaryLink(e, siteUrl),
     })),
-  ].slice(0, 8); // WeCom news message allows at most 8 articles
+  ].slice(0, 8); // WeCom news messages allow at most 8 articles
+}
 
+async function sendWecomDigest(picked, siteUrl, dateStr) {
+  const articles = digestArticles(picked, siteUrl, dateStr);
+
+  const webhookUrl = process.env.WECOM_WEBHOOK_URL;
+  if (webhookUrl) {
+    await wecomFetch(webhookUrl, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ msgtype: "news", news: { articles } }),
+    });
+    return true;
+  }
+
+  const corpId = process.env.WECOM_CORP_ID;
+  const secret = process.env.WECOM_APP_SECRET;
+  const agentId = process.env.WECOM_AGENT_ID;
+  if (!corpId || !secret || !agentId) {
+    console.warn("Neither WECOM_WEBHOOK_URL nor WECOM_* app secrets set; skipping WeCom push.");
+    return false;
+  }
+  const { access_token } = await wecomFetch(
+    `https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${corpId}&corpsecret=${secret}`,
+  );
   await wecomFetch(
     `https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=${access_token}`,
     {

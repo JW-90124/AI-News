@@ -41,6 +41,7 @@ jobs:
 
       - name: Build digest and push to WeCom
         env:
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
           WECOM_CORP_ID: ${{ secrets.WECOM_CORP_ID }}
           WECOM_APP_SECRET: ${{ secrets.WECOM_APP_SECRET }}
           WECOM_AGENT_ID: ${{ secrets.WECOM_AGENT_ID }}

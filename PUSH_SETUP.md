@@ -7,7 +7,7 @@
 
 每天产出两样东西：
 
-1. **企业微信图文卡片消息** → 通过"微信插件"直达你的个人微信，每条卡片点开是事件的原始信源
+1. **企业微信群机器人图文卡片** → 推送到你企业微信里的日报群，每条卡片点开是事件的原始信源
 2. **公众号排版草稿** → 提交到仓库 `digests/日期.html`（内联样式，可直接粘贴进公众号编辑器）和 `digests/日期.md`（纯文本备份）
 
 ---
@@ -21,38 +21,34 @@
 3. 在你的 fork 页面 → **Settings → Actions → General** → 确认 "Allow all actions" 且 Workflow permissions 选 **Read and write permissions**
 4. 在 **Actions** 标签页点 "I understand my workflows, enable them"（fork 默认禁用定时任务）
 
-### 第 2 步：注册企业微信并创建应用
+### 第 2 步：注册企业微信
 
-1. 打开 https://work.weixin.qq.com → 立即注册 → 选"其他组织"，填个名字（如"我的AI日报"），微信扫码验证即可，**不需要营业执照**
-2. 登录管理后台 https://work.weixin.qq.com/wework_admin/
-3. **应用管理 → 自建 → 创建应用**，名字随意（如"AI日报"），可见范围选你自己
-4. 记下三个参数：
-   - **企业 ID**：我的企业 → 企业信息 → 最底部"企业ID"
-   - **AgentId** 和 **Secret**：应用管理 → 点进你刚建的应用页面里查看
-5. **配置可信 IP**（应用页面 → 开发者接口 → 企业可信IP）：GitHub Actions 的出口 IP 不固定，
-   最省事的方式是应用页面里关闭 IP 校验相关限制；若必须填写，可先手动触发一次 workflow，
-   从报错信息 `from ip: x.x.x.x` 中把 IP 加进去（IP 变化时需要再加）。
+打开 https://work.weixin.qq.com → 立即注册 → 选"其他组织"，填个名字（如"我的AI日报"），
+微信扫码验证即可，**不需要营业执照**。手机也安装"企业微信"App 并登录（日报在这里收）。
 
-### 第 3 步：开启微信插件（让消息进你的个人微信）
+### 第 3 步：创建群机器人（拿 Webhook 地址）
 
-1. 管理后台 → **我的企业 → 微信插件**
-2. 用你的**个人微信**扫码关注
-3. 在"允许成员在微信插件中接收和回复聊天消息"处打勾
+> 为什么用群机器人：自建应用的 API 要求配置"可信 IP + 备案域名"，个人主体无法满足，
+> 而且 GitHub Actions 的 IP 每次都变。群机器人是官方提供的推送通道，没有这些限制。
+
+1. 在企业微信 App（手机或电脑客户端均可）里**发起群聊**，只选自己，建一个单人群，
+   群名随意（如"AI日报"）
+2. 进入群 → 右上角群设置 → **群机器人 → 添加机器人 → 新创建一个**，名字如"日报推送"
+3. 创建后会得到一个 **Webhook 地址**（`https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=...`），
+   复制它。**这个地址等同于密钥，不要泄漏**
 
 ### 第 4 步：在 GitHub 配置密钥
 
-你的 fork 页面 → **Settings → Secrets and variables → Actions → New repository secret**，添加三条：
+你的 fork 页面 → **Settings → Secrets and variables → Actions → New repository secret**，添加一条：
 
 | Secret 名称 | 值 |
 |---|---|
-| `WECOM_CORP_ID` | 第 2 步的企业 ID |
-| `WECOM_AGENT_ID` | 第 2 步的 AgentId |
-| `WECOM_APP_SECRET` | 第 2 步的 Secret |
+| `WECOM_WEBHOOK_URL` | 第 3 步的完整 Webhook 地址 |
 
 ### 第 5 步：手动触发验证
 
 fork 页面 → **Actions → Daily WeChat digest push → Run workflow**。
-一两分钟后你的微信应该收到当天的日报卡片；仓库 `digests/` 目录出现当天的 html/md 草稿。
+一两分钟后企业微信的日报群里应该收到当天的日报卡片；仓库 `digests/` 目录出现当天的 html/md 草稿。
 
 ---
 
