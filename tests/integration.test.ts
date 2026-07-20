@@ -102,6 +102,21 @@ describe("SQLite application", () => {
         .where("external_id", "=", "deepseek-v3-efficient-frontier")
         .executeTakeFirstOrThrow(),
     ).toEqual({ title: "DeepSeek-V3 开源：训练效率成为全球模型竞争的新变量" });
+    // Keep the data-recent assertion calendar-independent: anchor the newest
+    // published non-research event to yesterday so the 7-day recency window
+    // always contains at least one event regardless of when the suite runs.
+    const recentAnchor = await db
+      .selectFrom("events")
+      .select(["id"])
+      .where("status", "=", "published")
+      .where("category", "not in", ["research", "paper"])
+      .orderBy("happened_at", "desc")
+      .executeTakeFirstOrThrow();
+    await db
+      .updateTable("events")
+      .set({ happened_at: new Date(Date.now() - 86_400_000).toISOString() })
+      .where("id", "=", recentAnchor.id)
+      .execute();
     const perEventEvidence = vi.spyOn(Repository.prototype, "toPublicEvent");
     const perEventTracks = vi.spyOn(Repository.prototype, "eventTracks");
     const perEventActors = vi.spyOn(Repository.prototype, "eventActors");
