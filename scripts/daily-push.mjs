@@ -42,9 +42,26 @@ function beijingDateString(date = new Date()) {
   return new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Shanghai" }).format(date);
 }
 
-function pickEvents(timeline) {
+const STATE_PATH = process.env.DIGEST_STATE_PATH ?? join(DIGEST_DIR, ".sent.json");
+const SENT_TTL_DAYS = 14;
+
+async function loadSentState() {
+  try {
+    const state = JSON.parse(await readFile(STATE_PATH, "utf8"));
+    const cutoff = Date.now() - SENT_TTL_DAYS * 86400 * 1000;
+    return Object.fromEntries(
+      Object.entries(state).filter(([, sentAt]) => Date.parse(sentAt) >= cutoff),
+    );
+  } catch {
+    return {};
+  }
+}
+
+function pickEvents(timeline, sent) {
   const cutoff = Date.now() - WINDOW_HOURS * 3600 * 1000;
-  const fresh = timeline.events.filter((e) => Date.parse(e.publishedAt ?? e.happenedAt) >= cutoff);
+  const fresh = timeline.events.filter(
+    (e) => Date.parse(e.publishedAt ?? e.happenedAt) >= cutoff && !(e.slug in sent),
+  );
   const pool =
     fresh.length > 0
       ? fresh
@@ -213,7 +230,8 @@ function renderMarkdown({ events, isFresh }, dateStr, siteUrl) {
 
 const timeline = JSON.parse(await readFile(TIMELINE_PATH, "utf8"));
 const dateStr = beijingDateString();
-const picked = pickEvents(timeline);
+const sent = await loadSentState();
+const picked = pickEvents(timeline, sent);
 console.log(`Selected ${picked.events.length} events (fresh window: ${picked.isFresh}).`);
 
 await mkdir(DIGEST_DIR, { recursive: true });
@@ -231,3 +249,10 @@ console.log(`Digest written to ${DIGEST_DIR}/${dateStr}.{html,md}`);
 
 const pushed = await sendWecomDigest(picked, timeline.siteUrl, dateStr);
 console.log(pushed ? "WeCom push sent." : "WeCom push skipped.");
+
+if (picked.isFresh) {
+  const now = new Date().toISOString();
+  for (const e of picked.events) sent[e.slug] = now;
+  await writeFile(STATE_PATH, `${JSON.stringify(sent, null, 2)}\n`, "utf8");
+  console.log(`Sent-state updated (${Object.keys(sent).length} slugs tracked).`);
+}
