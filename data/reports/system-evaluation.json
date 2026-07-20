@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "b8e59484-774a-4a69-bcc4-d09bbb520da7",
+  "id": "ccf24229-eca9-4bfb-a3ab-a181c982d291",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 57,
@@ -67,15 +67,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 6425,
+      "sampleSize": 6564,
       "sampleTarget": 100,
-      "summary": "6425 条信号中 4877 条来自 primary/research/policy，678 条证据进入事件。",
+      "summary": "6564 条信号中 4903 条来自 primary/research/policy，695 条证据进入事件。",
       "evidence": {
-        "signals": 6425,
-        "direct": 6425,
-        "primary": 4877,
-        "linkedEvidence": 678,
-        "linkedSourceCount": 61,
+        "signals": 6564,
+        "direct": 6564,
+        "primary": 4903,
+        "linkedEvidence": 695,
+        "linkedSourceCount": 74,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -98,8 +98,8 @@
         "degraded": 27,
         "failed": 70,
         "skipped": 51,
-        "latestRuns": 197,
-        "latestRunSuccess": 197,
+        "latestRuns": 223,
+        "latestRunSuccess": 223,
         "auditWindows": 2
       },
       "penalties": [
@@ -162,12 +162,12 @@
       "scoreCap": 100,
       "weight": 8,
       "status": "measured",
-      "sampleSize": 197,
+      "sampleSize": 223,
       "sampleTarget": 100,
       "summary": "collector 耗时不是上游发布到页面可见的端到端延迟；以成功运行比例作为实时性估算。",
       "evidence": {
-        "latestSourceRuns": 197,
-        "latestRunSuccess": 197,
+        "latestSourceRuns": 223,
+        "latestRunSuccess": 223,
         "freshHealthySources": 143,
         "activeWithRecentSuccess": 127,
         "endToEndLatencySamples": 0
@@ -238,7 +238,7 @@
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
         "readyEvents": 311,
-        "totalEvents": 617,
+        "totalEvents": 625,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -691,8 +691,8 @@
     }
   ],
   "notes": "4 dimensions lack sufficient evidence; calibrated weighted score 63, evidence coverage 60%, final score 57",
-  "startedAt": "2026-07-20T04:31:49.232Z",
-  "finishedAt": "2026-07-20T04:31:49.336Z",
+  "startedAt": "2026-07-20T14:40:02.829Z",
+  "finishedAt": "2026-07-20T14:40:02.937Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -762,12 +762,12 @@
   ],
   "comparison": {
     "passed": true,
-    "baselineScore": 52,
+    "baselineScore": 57,
     "currentScore": 57,
-    "scoreDelta": 5,
-    "baselineEvidenceCoverage": 50,
+    "scoreDelta": 0,
+    "baselineEvidenceCoverage": 60,
     "currentEvidenceCoverage": 60,
-    "evidenceCoverageDelta": 10,
+    "evidenceCoverageDelta": 0,
     "regressions": []
   }
 }
