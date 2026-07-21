@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "ccf24229-eca9-4bfb-a3ab-a181c982d291",
+  "id": "861c5ab5-f6fd-47a4-8f5c-98c46f62df1f",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 57,
@@ -67,15 +67,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 6564,
+      "sampleSize": 6913,
       "sampleTarget": 100,
-      "summary": "6564 条信号中 4903 条来自 primary/research/policy，695 条证据进入事件。",
+      "summary": "6913 条信号中 5160 条来自 primary/research/policy，776 条证据进入事件。",
       "evidence": {
-        "signals": 6564,
-        "direct": 6564,
-        "primary": 4903,
-        "linkedEvidence": 695,
-        "linkedSourceCount": 74,
+        "signals": 6913,
+        "direct": 6913,
+        "primary": 5160,
+        "linkedEvidence": 776,
+        "linkedSourceCount": 81,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -169,7 +169,7 @@
         "latestSourceRuns": 223,
         "latestRunSuccess": 223,
         "freshHealthySources": 143,
-        "activeWithRecentSuccess": 127,
+        "activeWithRecentSuccess": 126,
         "endToEndLatencySamples": 0
       },
       "penalties": [
@@ -192,7 +192,7 @@
         "healthy": 266,
         "freshHealthy": 143,
         "active": 128,
-        "activeWithRecentSuccess": 127,
+        "activeWithRecentSuccess": 126,
         "published": 336,
         "recentPublished": 57
       },
@@ -225,7 +225,7 @@
       "slug": "governance",
       "name": "安全与治理",
       "score": 60,
-      "rawScore": 90,
+      "rawScore": 89,
       "scoreCap": 60,
       "weight": 8,
       "status": "insufficient_data",
@@ -238,7 +238,7 @@
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
         "readyEvents": 311,
-        "totalEvents": 625,
+        "totalEvents": 681,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -691,8 +691,8 @@
     }
   ],
   "notes": "4 dimensions lack sufficient evidence; calibrated weighted score 63, evidence coverage 60%, final score 57",
-  "startedAt": "2026-07-20T14:40:02.829Z",
-  "finishedAt": "2026-07-20T14:40:02.937Z",
+  "startedAt": "2026-07-21T14:31:27.257Z",
+  "finishedAt": "2026-07-21T14:31:27.374Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
