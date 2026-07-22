@@ -2,9 +2,9 @@ name: Daily WeChat digest push
 
 on:
   schedule:
-    # 21:30 Asia/Shanghai, roughly one hour after the upstream data refresh
-    # (data-refresh.yml runs 20:17) so the pushed digest uses today's snapshot.
-    - cron: "30 13 * * *"
+    # 10:00 Asia/Shanghai, after the 08:47 morning data refresh, so the digest
+    # covers overnight US announcements plus the previous Asian day.
+    - cron: "0 2 * * *"
   workflow_dispatch:
 
 permissions:

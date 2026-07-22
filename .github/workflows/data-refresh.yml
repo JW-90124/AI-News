@@ -4,6 +4,9 @@ on:
   schedule:
     # Daily at 20:17 Asia/Shanghai; the weekly Issue remains Sunday-gated below.
     - cron: "17 12 * * *"
+    # Morning run at 08:47 Asia/Shanghai so the 10:00 digest push includes
+    # overnight US announcements plus the previous Asian day.
+    - cron: "47 0 * * *"
   workflow_dispatch:
     inputs:
       mode:
