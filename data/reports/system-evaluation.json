@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "861c5ab5-f6fd-47a4-8f5c-98c46f62df1f",
+  "id": "8db935da-13f9-4b14-a0ac-28f7c0809c44",
   "releaseVersion": "0.11.1",
   "status": "partial",
-  "overallScore": 57,
+  "overallScore": 56,
   "rawWeightedScore": 63,
   "evidenceCoverage": 60,
   "dimensions": [
@@ -67,15 +67,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 6913,
+      "sampleSize": 7266,
       "sampleTarget": 100,
-      "summary": "6913 条信号中 5160 条来自 primary/research/policy，776 条证据进入事件。",
+      "summary": "7266 条信号中 5411 条来自 primary/research/policy，837 条证据进入事件。",
       "evidence": {
-        "signals": 6913,
-        "direct": 6913,
-        "primary": 5160,
-        "linkedEvidence": 776,
-        "linkedSourceCount": 81,
+        "signals": 7266,
+        "direct": 7266,
+        "primary": 5411,
+        "linkedEvidence": 837,
+        "linkedSourceCount": 92,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -98,8 +98,8 @@
         "degraded": 27,
         "failed": 70,
         "skipped": 51,
-        "latestRuns": 223,
-        "latestRunSuccess": 223,
+        "latestRuns": 218,
+        "latestRunSuccess": 217,
         "auditWindows": 2
       },
       "penalties": [
@@ -157,17 +157,17 @@
     {
       "slug": "realtime",
       "name": "端到端实时性",
-      "score": 86,
-      "rawScore": 86,
+      "score": 85,
+      "rawScore": 85,
       "scoreCap": 100,
       "weight": 8,
       "status": "measured",
-      "sampleSize": 223,
+      "sampleSize": 218,
       "sampleTarget": 100,
       "summary": "collector 耗时不是上游发布到页面可见的端到端延迟；以成功运行比例作为实时性估算。",
       "evidence": {
-        "latestSourceRuns": 223,
-        "latestRunSuccess": 223,
+        "latestSourceRuns": 218,
+        "latestRunSuccess": 217,
         "freshHealthySources": 143,
         "activeWithRecentSuccess": 126,
         "endToEndLatencySamples": 0
@@ -238,7 +238,7 @@
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
         "readyEvents": 311,
-        "totalEvents": 681,
+        "totalEvents": 725,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -690,9 +690,9 @@
       "evidence": "capability map links status, maturity, release and implementation evidence"
     }
   ],
-  "notes": "4 dimensions lack sufficient evidence; calibrated weighted score 63, evidence coverage 60%, final score 57",
-  "startedAt": "2026-07-21T14:31:27.257Z",
-  "finishedAt": "2026-07-21T14:31:27.374Z",
+  "notes": "4 dimensions lack sufficient evidence; calibrated weighted score 63, evidence coverage 60%, final score 56",
+  "startedAt": "2026-07-22T14:31:52.222Z",
+  "finishedAt": "2026-07-22T14:31:52.340Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -761,13 +761,16 @@
     }
   ],
   "comparison": {
-    "passed": true,
+    "passed": false,
     "baselineScore": 57,
-    "currentScore": 57,
-    "scoreDelta": 0,
+    "currentScore": 56,
+    "scoreDelta": -1,
     "baselineEvidenceCoverage": 60,
     "currentEvidenceCoverage": 60,
     "evidenceCoverageDelta": 0,
-    "regressions": []
+    "regressions": [
+      "overall score regressed from 57 to 56",
+      "dimension realtime regressed from 86 to 85"
+    ]
   }
 }
