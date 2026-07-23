@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "b413b4f0-a3b6-4a97-a858-d852b91d3602",
+  "id": "4c012f71-b5c7-4899-9bd2-2d53b8c330e3",
   "releaseVersion": "0.11.1",
   "status": "partial",
-  "overallScore": 57,
+  "overallScore": 56,
   "rawWeightedScore": 63,
   "evidenceCoverage": 60,
   "dimensions": [
@@ -67,14 +67,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 7558,
+      "sampleSize": 7669,
       "sampleTarget": 100,
-      "summary": "7558 条信号中 5650 条来自 primary/research/policy，906 条证据进入事件。",
+      "summary": "7669 条信号中 5694 条来自 primary/research/policy，925 条证据进入事件。",
       "evidence": {
-        "signals": 7558,
-        "direct": 7558,
-        "primary": 5650,
-        "linkedEvidence": 906,
+        "signals": 7669,
+        "direct": 7669,
+        "primary": 5694,
+        "linkedEvidence": 925,
         "linkedSourceCount": 96,
         "aggregatorDebt": 0
       },
@@ -99,7 +99,7 @@
         "failed": 70,
         "skipped": 51,
         "latestRuns": 218,
-        "latestRunSuccess": 218,
+        "latestRunSuccess": 217,
         "auditWindows": 2
       },
       "penalties": [
@@ -157,8 +157,8 @@
     {
       "slug": "realtime",
       "name": "端到端实时性",
-      "score": 86,
-      "rawScore": 86,
+      "score": 85,
+      "rawScore": 85,
       "scoreCap": 100,
       "weight": 8,
       "status": "measured",
@@ -167,7 +167,7 @@
       "summary": "collector 耗时不是上游发布到页面可见的端到端延迟；以成功运行比例作为实时性估算。",
       "evidence": {
         "latestSourceRuns": 218,
-        "latestRunSuccess": 218,
+        "latestRunSuccess": 217,
         "freshHealthySources": 143,
         "activeWithRecentSuccess": 126,
         "endToEndLatencySamples": 0
@@ -238,7 +238,7 @@
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
         "readyEvents": 311,
-        "totalEvents": 779,
+        "totalEvents": 788,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -690,9 +690,9 @@
       "evidence": "capability map links status, maturity, release and implementation evidence"
     }
   ],
-  "notes": "4 dimensions lack sufficient evidence; calibrated weighted score 63, evidence coverage 60%, final score 57",
-  "startedAt": "2026-07-23T04:04:32.986Z",
-  "finishedAt": "2026-07-23T04:04:33.095Z",
+  "notes": "4 dimensions lack sufficient evidence; calibrated weighted score 63, evidence coverage 60%, final score 56",
+  "startedAt": "2026-07-23T14:40:39.129Z",
+  "finishedAt": "2026-07-23T14:40:39.240Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -761,13 +761,16 @@
     }
   ],
   "comparison": {
-    "passed": true,
-    "baselineScore": 56,
-    "currentScore": 57,
-    "scoreDelta": 1,
+    "passed": false,
+    "baselineScore": 57,
+    "currentScore": 56,
+    "scoreDelta": -1,
     "baselineEvidenceCoverage": 60,
     "currentEvidenceCoverage": 60,
     "evidenceCoverageDelta": 0,
-    "regressions": []
+    "regressions": [
+      "overall score regressed from 57 to 56",
+      "dimension realtime regressed from 86 to 85"
+    ]
   }
 }
