@@ -1185,8 +1185,16 @@ function snapshotUrl(value: string): string {
   url.username = "";
   url.password = "";
   for (const key of [...url.searchParams.keys()]) {
+    const lower = key.toLowerCase();
     if (
-      /(?:^|_)(?:token|secret|password|signature|credential|api[_-]?key|auth)(?:$|_)/i.test(key)
+      // AWS SigV4 and GCP signed-URL presigning parameters (e.g. a presigned
+      // S3 download link embeds a temporary access-key id in X-Amz-Credential).
+      lower.startsWith("x-amz-") ||
+      lower.startsWith("x-goog-") ||
+      // Sensitive words on either _ or - boundaries.
+      /(?:^|[_-])(?:token|secret|password|signature|credential|api[_-]?key|auth)(?:$|[_-])/i.test(
+        key,
+      )
     ) {
       url.searchParams.delete(key);
     }
@@ -1199,6 +1207,10 @@ function assertSnapshotSafe(serialized: string): void {
   const forbidden = [
     /"(?:token|secret|password|cookie|authorization|api[_-]?key)"\s*:/i,
     /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/,
+    // Presigned-URL credentials (e.g. an AWS temporary access-key id in an
+    // X-Amz-Credential query parameter) that must never reach the repository.
+    /[Xx]-[Aa]mz-(?:Credential|Signature|Security-Token)=/,
+    /\bASIA[A-Z0-9]{16}\b/,
     /\/Users\/[A-Za-z0-9._-]+\//,
     /\/home\/runner\//,
   ];
