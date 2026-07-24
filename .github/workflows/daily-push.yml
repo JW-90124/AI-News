@@ -1,10 +1,15 @@
 name: Daily WeChat digest push
 
 on:
+  # Chain directly off the data refresh so the digest always uses fresh data
+  # and is not subject to a second round of GitHub cron queueing.
+  workflow_run:
+    workflows: ["Refresh intelligence data"]
+    types: [completed]
   schedule:
-    # 10:00 Asia/Shanghai, after the 08:47 morning data refresh, so the digest
-    # covers overnight US announcements plus the previous Asian day.
-    - cron: "0 2 * * *"
+    # Fallback at 12:23 Asia/Shanghai in case the morning refresh was dropped
+    # entirely; the gate below skips it when today's digest already exists.
+    - cron: "23 4 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +20,42 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      go: ${{ steps.decide.outputs.go }}
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Decide whether to publish today's digest
+        id: decide
+        shell: bash
+        run: |
+          set -euo pipefail
+          today="$(TZ=Asia/Shanghai date +%F)"
+          hour="$(TZ=Asia/Shanghai date +%-H)"
+          event="${{ github.event_name }}"
+          conclusion="${{ github.event.workflow_run.conclusion || 'n/a' }}"
+          go=false
+          if [[ "$event" == "workflow_dispatch" ]]; then
+            go=true
+          elif [[ -f "digests/$today.md" ]]; then
+            echo "Digest for $today already exists; skipping."
+          elif [[ "$event" == "workflow_run" && "$conclusion" == "success" && "$hour" -ge 5 && "$hour" -lt 17 ]]; then
+            go=true
+          elif [[ "$event" == "schedule" ]]; then
+            go=true
+          fi
+          echo "event=$event conclusion=$conclusion hour=$hour go=$go"
+          echo "go=$go" >> "$GITHUB_OUTPUT"
+
   push-digest:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
