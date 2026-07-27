@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "38eb66c6-10c1-4a52-83eb-3a0ce75a473d",
+  "id": "f1b0e074-a033-48b7-b579-6dbf955e6ba9",
   "releaseVersion": "0.11.1",
   "status": "partial",
-  "overallScore": 60,
-  "rawWeightedScore": 65,
+  "overallScore": 61,
+  "rawWeightedScore": 66,
   "evidenceCoverage": 72,
   "dimensions": [
     {
@@ -67,14 +67,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 8326,
+      "sampleSize": 8536,
       "sampleTarget": 100,
-      "summary": "8326 条信号中 6069 条来自 primary/research/policy，1073 条证据进入事件。",
+      "summary": "8536 条信号中 6235 条来自 primary/research/policy，1108 条证据进入事件。",
       "evidence": {
-        "signals": 8326,
-        "direct": 8326,
-        "primary": 6069,
-        "linkedEvidence": 1073,
+        "signals": 8536,
+        "direct": 8536,
+        "primary": 6235,
+        "linkedEvidence": 1108,
         "linkedSourceCount": 105,
         "aggregatorDebt": 0
       },
@@ -115,15 +115,15 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 354,
+      "sampleSize": 357,
       "sampleTarget": 30,
-      "summary": "354 个公开事件仅 6 个拥有多源证据，329 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "357 个公开事件仅 8 个拥有多源证据，332 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 354,
-        "primaryEvidence": 346,
-        "multiSource": 6,
-        "readyPublished": 329,
-        "averageEvidence": 1.07,
+        "published": 357,
+        "primaryEvidence": 349,
+        "multiSource": 8,
+        "readyPublished": 332,
+        "averageEvidence": 1.09,
         "averageSelfReportedConfidence": 90
       },
       "penalties": [
@@ -143,10 +143,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 354,
+        "published": 357,
         "fieldCompleteness": 100,
-        "readyPublished": 329,
-        "multiSource": 6,
+        "readyPublished": 332,
+        "multiSource": 8,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -187,14 +187,14 @@
       "status": "measured",
       "sampleSize": 266,
       "sampleTarget": 100,
-      "summary": "143/266 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 73 个。",
+      "summary": "143/266 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 76 个。",
       "evidence": {
         "healthy": 266,
         "freshHealthy": 143,
         "active": 128,
         "activeWithRecentSuccess": 126,
-        "published": 354,
-        "recentPublished": 73
+        "published": 357,
+        "recentPublished": 76
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -202,17 +202,17 @@
     {
       "slug": "effectiveness",
       "name": "机会与行动效果",
-      "score": 19,
-      "rawScore": 19,
+      "score": 30,
+      "rawScore": 30,
       "scoreCap": 45,
       "weight": 8,
       "status": "insufficient_data",
       "sampleSize": 0,
       "sampleTarget": 30,
-      "summary": "19 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
+      "summary": "31 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
       "evidence": {
-        "ideas": 19,
-        "editorialAccepted": 19,
+        "ideas": 31,
+        "editorialAccepted": 23,
         "outcomeFeedback": 0,
         "completedArtifacts": 0
       },
@@ -237,8 +237,8 @@
         "checked": 414,
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
-        "readyEvents": 329,
-        "totalEvents": 877,
+        "readyEvents": 332,
+        "totalEvents": 906,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -690,9 +690,9 @@
       "evidence": "capability map links status, maturity, release and implementation evidence"
     }
   ],
-  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 65, evidence coverage 72%, final score 60",
-  "startedAt": "2026-07-26T14:07:37.259Z",
-  "finishedAt": "2026-07-26T14:07:37.365Z",
+  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
+  "startedAt": "2026-07-27T04:32:33.845Z",
+  "finishedAt": "2026-07-27T04:32:33.963Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -700,9 +700,9 @@
     {
       "slug": "effectiveness",
       "name": "机会与行动效果",
-      "score": 19,
+      "score": 30,
       "status": "insufficient_data",
-      "weightedGap": 5,
+      "weightedGap": 4,
       "penalties": [
         "无 30 日行动结果样本，分数上限 45"
       ],
@@ -763,8 +763,8 @@
   "comparison": {
     "passed": true,
     "baselineScore": 60,
-    "currentScore": 60,
-    "scoreDelta": 0,
+    "currentScore": 61,
+    "scoreDelta": 1,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
