@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "4f51459f-8dd3-44a2-93b1-b8db0db42c89",
+  "id": "480e996f-2941-4bb5-aef9-8bee35527171",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -67,15 +67,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 8942,
+      "sampleSize": 9043,
       "sampleTarget": 100,
-      "summary": "8942 条信号中 6530 条来自 primary/research/policy，1224 条证据进入事件。",
+      "summary": "9043 条信号中 6564 条来自 primary/research/policy，1236 条证据进入事件。",
       "evidence": {
-        "signals": 8942,
-        "direct": 8942,
-        "primary": 6530,
-        "linkedEvidence": 1224,
-        "linkedSourceCount": 112,
+        "signals": 9043,
+        "direct": 9043,
+        "primary": 6564,
+        "linkedEvidence": 1236,
+        "linkedSourceCount": 114,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -115,15 +115,15 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 362,
+      "sampleSize": 367,
       "sampleTarget": 30,
-      "summary": "362 个公开事件仅 8 个拥有多源证据，337 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "367 个公开事件仅 9 个拥有多源证据，342 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 362,
-        "primaryEvidence": 354,
-        "multiSource": 8,
-        "readyPublished": 337,
-        "averageEvidence": 1.1,
+        "published": 367,
+        "primaryEvidence": 359,
+        "multiSource": 9,
+        "readyPublished": 342,
+        "averageEvidence": 1.11,
         "averageSelfReportedConfidence": 90
       },
       "penalties": [
@@ -143,10 +143,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 362,
+        "published": 367,
         "fieldCompleteness": 100,
-        "readyPublished": 337,
-        "multiSource": 8,
+        "readyPublished": 342,
+        "multiSource": 9,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -180,21 +180,21 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 59,
-      "rawScore": 59,
+      "score": 60,
+      "rawScore": 60,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
       "sampleSize": 266,
       "sampleTarget": 100,
-      "summary": "143/266 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 81 个。",
+      "summary": "143/266 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 86 个。",
       "evidence": {
         "healthy": 266,
         "freshHealthy": 143,
         "active": 128,
         "activeWithRecentSuccess": 126,
-        "published": 362,
-        "recentPublished": 81
+        "published": 367,
+        "recentPublished": 86
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -212,7 +212,7 @@
       "summary": "32 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
       "evidence": {
         "ideas": 32,
-        "editorialAccepted": 26,
+        "editorialAccepted": 27,
         "outcomeFeedback": 0,
         "completedArtifacts": 0
       },
@@ -237,8 +237,8 @@
         "checked": 414,
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
-        "readyEvents": 337,
-        "totalEvents": 999,
+        "readyEvents": 342,
+        "totalEvents": 1007,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -691,8 +691,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-07-28T03:57:47.825Z",
-  "finishedAt": "2026-07-28T03:57:47.951Z",
+  "startedAt": "2026-07-28T14:47:20.951Z",
+  "finishedAt": "2026-07-28T14:47:21.058Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -731,15 +731,6 @@
       "nextAction": "优先把核心事件补成独立多源证据，并建立 claim 级事实错误标注集。"
     },
     {
-      "slug": "timeliness",
-      "name": "内容时效性",
-      "score": 59,
-      "status": "measured",
-      "weightedGap": 2,
-      "penalties": [],
-      "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
-    },
-    {
       "slug": "governance",
       "name": "安全与治理",
       "score": 60,
@@ -749,6 +740,15 @@
         "无策略回放和回滚演练证据，分数上限 60"
       ],
       "nextAction": "增加 audit log、策略版本、release snapshot hash 与定期回滚演练。"
+    },
+    {
+      "slug": "timeliness",
+      "name": "内容时效性",
+      "score": 60,
+      "status": "measured",
+      "weightedGap": 2,
+      "penalties": [],
+      "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
     },
     {
       "slug": "primary-source-provenance",
