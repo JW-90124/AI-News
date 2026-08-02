@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "0ef5f75e-6f37-4e95-96af-55fca228b22b",
+  "id": "a45a4dc5-7bf8-4d24-84ba-84d41cb100d4",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -63,15 +63,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 10460,
+      "sampleSize": 10531,
       "sampleTarget": 100,
-      "summary": "10460 条信号中 7521 条来自 primary/research/policy，1614 条证据进入事件。",
+      "summary": "10531 条信号中 7543 条来自 primary/research/policy，1631 条证据进入事件。",
       "evidence": {
-        "signals": 10460,
-        "direct": 10460,
-        "primary": 7521,
-        "linkedEvidence": 1614,
-        "linkedSourceCount": 127,
+        "signals": 10531,
+        "direct": 10531,
+        "primary": 7543,
+        "linkedEvidence": 1631,
+        "linkedSourceCount": 129,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -109,16 +109,16 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 412,
+      "sampleSize": 419,
       "sampleTarget": 30,
-      "summary": "412 个公开事件仅 11 个拥有多源证据，387 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "419 个公开事件仅 12 个拥有多源证据，394 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 412,
-        "primaryEvidence": 404,
-        "multiSource": 11,
-        "readyPublished": 387,
-        "averageEvidence": 1.21,
-        "averageSelfReportedConfidence": 89
+        "published": 419,
+        "primaryEvidence": 411,
+        "multiSource": 12,
+        "readyPublished": 394,
+        "averageEvidence": 1.22,
+        "averageSelfReportedConfidence": 88
       },
       "penalties": [],
       "nextAction": "优先把核心事件补成独立多源证据，并建立 claim 级事实错误标注集。"
@@ -135,10 +135,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 412,
+        "published": 419,
         "fieldCompleteness": 100,
-        "readyPublished": 387,
-        "multiSource": 11,
+        "readyPublished": 394,
+        "multiSource": 12,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -172,21 +172,21 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 61,
-      "rawScore": 61,
+      "score": 62,
+      "rawScore": 62,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
       "sampleSize": 265,
       "sampleTarget": 100,
-      "summary": "141/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 131 个。",
+      "summary": "141/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 138 个。",
       "evidence": {
         "healthy": 265,
         "freshHealthy": 141,
         "active": 128,
         "activeWithRecentSuccess": 126,
-        "published": 412,
-        "recentPublished": 131
+        "published": 419,
+        "recentPublished": 138
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
-        "readyEvents": 387,
-        "totalEvents": 1270,
+        "readyEvents": 394,
+        "totalEvents": 1278,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-08-02T04:22:06.309Z",
-  "finishedAt": "2026-08-02T04:22:06.453Z",
+  "startedAt": "2026-08-02T14:05:31.256Z",
+  "finishedAt": "2026-08-02T14:05:31.380Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -732,15 +732,6 @@
       "nextAction": "增加 audit log、策略版本、release snapshot hash 与定期回滚演练。"
     },
     {
-      "slug": "timeliness",
-      "name": "内容时效性",
-      "score": 61,
-      "status": "measured",
-      "weightedGap": 2,
-      "penalties": [],
-      "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
-    },
-    {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
       "score": 62,
@@ -748,20 +739,25 @@
       "weightedGap": 2,
       "penalties": [],
       "nextAction": "提升一手信号占比和 Signal→Event 证据绑定率，并核验媒体集团独立性。"
+    },
+    {
+      "slug": "timeliness",
+      "name": "内容时效性",
+      "score": 62,
+      "status": "measured",
+      "weightedGap": 2,
+      "penalties": [],
+      "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
     }
   ],
   "comparison": {
-    "passed": false,
+    "passed": true,
     "baselineScore": 61,
     "currentScore": 61,
     "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
-    "regressions": [
-      "dimension source-coverage regressed from 99 to 98",
-      "dimension realtime regressed from 86 to 85",
-      "dimension timeliness regressed from 62 to 61"
-    ]
+    "regressions": []
   }
 }
