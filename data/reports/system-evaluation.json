@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "48a67526-b068-40ad-b205-9cabbc2f8a07",
+  "id": "9a9fe312-d770-4c9d-8c5e-3ed09dcf3cf1",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -10,24 +10,24 @@
     {
       "slug": "source-coverage",
       "name": "有效来源覆盖",
-      "score": 98,
-      "rawScore": 98,
+      "score": 97,
+      "rawScore": 97,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 128,
+      "sampleSize": 133,
       "sampleTarget": 100,
-      "summary": "415 个目录源中 265 个单轮健康、92 个处于隔离观察，只有 128 个既 active 且健康；E2/E3 不等同生产覆盖。",
+      "summary": "415 个目录源中 265 个单轮健康、85 个处于隔离观察，只有 133 个既 active 且健康；E2/E3 不等同生产覆盖。",
       "evidence": {
         "catalog": 415,
         "checked": 414,
         "healthy": 265,
-        "degraded": 26,
-        "failed": 76,
-        "skipped": 47,
-        "active": 128,
-        "activeHealthy": 128,
-        "observingHealthy": 92,
+        "degraded": 27,
+        "failed": 71,
+        "skipped": 51,
+        "active": 134,
+        "activeHealthy": 133,
+        "observingHealthy": 85,
         "healthyCategories": 13,
         "healthyChina": 59
       },
@@ -42,14 +42,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 291,
+      "sampleSize": 292,
       "sampleTarget": 100,
-      "summary": "291 个可用/部分可用来源参与真实抓取质量计算；目录预填 quality_score 不再计分。",
+      "summary": "292 个可用/部分可用来源参与真实抓取质量计算；目录预填 quality_score 不再计分。",
       "evidence": {
-        "usableChecks": 291,
+        "usableChecks": 292,
         "healthy": 265,
-        "auditWindows": 3,
-        "averageObservedQuality": 67,
+        "auditWindows": 4,
+        "averageObservedQuality": 66,
         "schemaValid": 265
       },
       "penalties": [],
@@ -63,14 +63,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 12572,
+      "sampleSize": 12628,
       "sampleTarget": 100,
-      "summary": "12572 条信号中 8968 条来自 primary/research/policy，2173 条证据进入事件。",
+      "summary": "12628 条信号中 8990 条来自 primary/research/policy，2186 条证据进入事件。",
       "evidence": {
-        "signals": 12572,
-        "direct": 12572,
-        "primary": 8968,
-        "linkedEvidence": 2173,
+        "signals": 12628,
+        "direct": 12628,
+        "primary": 8990,
+        "linkedEvidence": 2186,
         "linkedSourceCount": 143,
         "aggregatorDebt": 0
       },
@@ -91,12 +91,12 @@
       "evidence": {
         "checked": 414,
         "healthy": 265,
-        "degraded": 26,
-        "failed": 76,
-        "skipped": 47,
+        "degraded": 27,
+        "failed": 71,
+        "skipped": 51,
         "latestRuns": 216,
         "latestRunSuccess": 216,
-        "auditWindows": 3
+        "auditWindows": 4
       },
       "penalties": [],
       "nextAction": "连续运行 7 天，按来源计算成功率、异常空结果、P95 延迟和恢复时间。"
@@ -109,15 +109,15 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 487,
+      "sampleSize": 493,
       "sampleTarget": 30,
-      "summary": "487 个公开事件仅 17 个拥有多源证据，462 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "493 个公开事件仅 19 个拥有多源证据，468 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 487,
-        "primaryEvidence": 479,
-        "multiSource": 17,
-        "readyPublished": 462,
-        "averageEvidence": 1.3,
+        "published": 493,
+        "primaryEvidence": 485,
+        "multiSource": 19,
+        "readyPublished": 468,
+        "averageEvidence": 1.31,
         "averageSelfReportedConfidence": 87
       },
       "penalties": [],
@@ -135,10 +135,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 487,
+        "published": 493,
         "fieldCompleteness": 100,
-        "readyPublished": 462,
-        "multiSource": 17,
+        "readyPublished": 468,
+        "multiSource": 19,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -160,8 +160,8 @@
       "evidence": {
         "latestSourceRuns": 216,
         "latestRunSuccess": 216,
-        "freshHealthySources": 141,
-        "activeWithRecentSuccess": 126,
+        "freshHealthySources": 138,
+        "activeWithRecentSuccess": 131,
         "endToEndLatencySamples": 0
       },
       "penalties": [
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 265,
       "sampleTarget": 100,
-      "summary": "141/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 193 个。",
+      "summary": "138/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 199 个。",
       "evidence": {
         "healthy": 265,
-        "freshHealthy": 141,
-        "active": 128,
-        "activeWithRecentSuccess": 126,
-        "published": 487,
-        "recentPublished": 193
+        "freshHealthy": 138,
+        "active": 134,
+        "activeWithRecentSuccess": 131,
+        "published": 493,
+        "recentPublished": 199
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 415,
         "restrictedEnabled": 0,
-        "readyEvents": 462,
-        "totalEvents": 1679,
+        "readyEvents": 468,
+        "totalEvents": 1685,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-08-08T13:19:53.494Z",
-  "finishedAt": "2026-08-08T13:19:53.655Z",
+  "startedAt": "2026-08-09T02:57:37.291Z",
+  "finishedAt": "2026-08-09T02:57:37.453Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -752,15 +752,14 @@
   ],
   "comparison": {
     "passed": false,
-    "baselineScore": 62,
+    "baselineScore": 61,
     "currentScore": 61,
-    "scoreDelta": -1,
+    "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
     "regressions": [
-      "overall score regressed from 62 to 61",
-      "dimension timeliness regressed from 64 to 63"
+      "dimension source-coverage regressed from 98 to 97"
     ]
   }
 }
