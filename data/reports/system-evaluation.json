@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "80d5b130-e3d8-4354-b462-e042ff43713a",
+  "id": "eca2be05-9e18-49c1-8c74-6b31a0f03be3",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -15,19 +15,19 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 132,
+      "sampleSize": 133,
       "sampleTarget": 100,
-      "summary": "416 个目录源中 265 个单轮健康、85 个处于隔离观察，只有 132 个既 active 且健康；E2/E3 不等同生产覆盖。",
+      "summary": "416 个目录源中 265 个单轮健康、84 个处于隔离观察，只有 133 个既 active 且健康；E2/E3 不等同生产覆盖。",
       "evidence": {
         "catalog": 416,
         "checked": 414,
         "healthy": 265,
-        "degraded": 27,
+        "degraded": 26,
         "failed": 71,
-        "skipped": 51,
+        "skipped": 52,
         "active": 133,
-        "activeHealthy": 132,
-        "observingHealthy": 85,
+        "activeHealthy": 133,
+        "observingHealthy": 84,
         "healthyCategories": 13,
         "healthyChina": 59
       },
@@ -42,14 +42,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 292,
+      "sampleSize": 291,
       "sampleTarget": 100,
-      "summary": "292 个可用/部分可用来源参与真实抓取质量计算；目录预填 quality_score 不再计分。",
+      "summary": "291 个可用/部分可用来源参与真实抓取质量计算；目录预填 quality_score 不再计分。",
       "evidence": {
-        "usableChecks": 292,
+        "usableChecks": 291,
         "healthy": 265,
-        "auditWindows": 4,
-        "averageObservedQuality": 66,
+        "auditWindows": 5,
+        "averageObservedQuality": 67,
         "schemaValid": 265
       },
       "penalties": [],
@@ -63,14 +63,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 14723,
+      "sampleSize": 14772,
       "sampleTarget": 100,
-      "summary": "14723 条信号中 10467 条来自 primary/research/policy，3161 条证据进入事件。",
+      "summary": "14772 条信号中 10489 条来自 primary/research/policy，3174 条证据进入事件。",
       "evidence": {
-        "signals": 14723,
-        "direct": 14723,
-        "primary": 10467,
-        "linkedEvidence": 3161,
+        "signals": 14772,
+        "direct": 14772,
+        "primary": 10489,
+        "linkedEvidence": 3174,
         "linkedSourceCount": 149,
         "aggregatorDebt": 0
       },
@@ -91,12 +91,12 @@
       "evidence": {
         "checked": 414,
         "healthy": 265,
-        "degraded": 27,
+        "degraded": 26,
         "failed": 71,
-        "skipped": 51,
+        "skipped": 52,
         "latestRuns": 215,
         "latestRunSuccess": 214,
-        "auditWindows": 4
+        "auditWindows": 5
       },
       "penalties": [],
       "nextAction": "连续运行 7 天，按来源计算成功率、异常空结果、P95 延迟和恢复时间。"
@@ -109,14 +109,14 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 564,
+      "sampleSize": 570,
       "sampleTarget": 30,
-      "summary": "564 个公开事件仅 30 个拥有多源证据，539 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "570 个公开事件仅 30 个拥有多源证据，545 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 564,
-        "primaryEvidence": 556,
+        "published": 570,
+        "primaryEvidence": 562,
         "multiSource": 30,
-        "readyPublished": 539,
+        "readyPublished": 545,
         "averageEvidence": 1.38,
         "averageSelfReportedConfidence": 86
       },
@@ -135,9 +135,9 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 564,
+        "published": 570,
         "fieldCompleteness": 100,
-        "readyPublished": 539,
+        "readyPublished": 545,
         "multiSource": 30,
         "outcomeFeedback": 0
       },
@@ -160,7 +160,7 @@
       "evidence": {
         "latestSourceRuns": 215,
         "latestRunSuccess": 214,
-        "freshHealthySources": 138,
+        "freshHealthySources": 140,
         "activeWithRecentSuccess": 130,
         "endToEndLatencySamples": 0
       },
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 265,
       "sampleTarget": 100,
-      "summary": "138/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 228 个。",
+      "summary": "140/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 234 个。",
       "evidence": {
         "healthy": 265,
-        "freshHealthy": 138,
+        "freshHealthy": 140,
         "active": 133,
         "activeWithRecentSuccess": 130,
-        "published": 564,
-        "recentPublished": 228
+        "published": 570,
+        "recentPublished": 234
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 416,
         "restrictedEnabled": 0,
-        "readyEvents": 539,
-        "totalEvents": 2494,
+        "readyEvents": 545,
+        "totalEvents": 2503,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-08-15T13:06:55.570Z",
-  "finishedAt": "2026-08-15T13:06:55.772Z",
+  "startedAt": "2026-08-16T02:17:25.773Z",
+  "finishedAt": "2026-08-16T02:17:25.987Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -751,15 +751,13 @@
     }
   ],
   "comparison": {
-    "passed": false,
+    "passed": true,
     "baselineScore": 61,
     "currentScore": 61,
     "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
-    "regressions": [
-      "dimension primary-source-provenance regressed from 64 to 63"
-    ]
+    "regressions": []
   }
 }
