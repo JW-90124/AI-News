@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "5f9900d1-16d7-48b2-bb5e-66c5cc1e3e03",
+  "id": "7933b543-ae98-4675-bd5e-10616e460e90",
   "releaseVersion": "0.11.1",
   "status": "partial",
-  "overallScore": 61,
+  "overallScore": 62,
   "rawWeightedScore": 66,
   "evidenceCoverage": 72,
   "dimensions": [
@@ -58,19 +58,19 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 63,
-      "rawScore": 63,
+      "score": 64,
+      "rawScore": 64,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 14821,
+      "sampleSize": 15009,
       "sampleTarget": 100,
-      "summary": "14821 条信号中 10507 条来自 primary/research/policy，3185 条证据进入事件。",
+      "summary": "15009 条信号中 10663 条来自 primary/research/policy，3296 条证据进入事件。",
       "evidence": {
-        "signals": 14821,
-        "direct": 14821,
-        "primary": 10507,
-        "linkedEvidence": 3185,
+        "signals": 15009,
+        "direct": 15009,
+        "primary": 10663,
+        "linkedEvidence": 3296,
         "linkedSourceCount": 149,
         "aggregatorDebt": 0
       },
@@ -109,14 +109,14 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 575,
+      "sampleSize": 579,
       "sampleTarget": 30,
-      "summary": "575 个公开事件仅 31 个拥有多源证据，550 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "579 个公开事件仅 32 个拥有多源证据，554 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 575,
-        "primaryEvidence": 567,
-        "multiSource": 31,
-        "readyPublished": 550,
+        "published": 579,
+        "primaryEvidence": 571,
+        "multiSource": 32,
+        "readyPublished": 554,
         "averageEvidence": 1.39,
         "averageSelfReportedConfidence": 86
       },
@@ -135,10 +135,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 575,
+        "published": 579,
         "fieldCompleteness": 100,
-        "readyPublished": 550,
-        "multiSource": 31,
+        "readyPublished": 554,
+        "multiSource": 32,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -172,21 +172,21 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 63,
-      "rawScore": 63,
+      "score": 64,
+      "rawScore": 64,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
       "sampleSize": 265,
       "sampleTarget": 100,
-      "summary": "140/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 239 个。",
+      "summary": "140/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 243 个。",
       "evidence": {
         "healthy": 265,
         "freshHealthy": 140,
         "active": 133,
         "activeWithRecentSuccess": 130,
-        "published": 575,
-        "recentPublished": 239
+        "published": 579,
+        "recentPublished": 243
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 416,
         "restrictedEnabled": 0,
-        "readyEvents": 550,
-        "totalEvents": 2508,
+        "readyEvents": 554,
+        "totalEvents": 2616,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -682,9 +682,9 @@
       "evidence": "capability map links status, maturity, release and implementation evidence"
     }
   ],
-  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-08-16T13:08:23.494Z",
-  "finishedAt": "2026-08-16T13:08:23.659Z",
+  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 62",
+  "startedAt": "2026-08-17T02:15:11.399Z",
+  "finishedAt": "2026-08-17T02:15:11.594Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -734,7 +734,7 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 63,
+      "score": 64,
       "status": "measured",
       "weightedGap": 2,
       "penalties": [],
@@ -743,7 +743,7 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 63,
+      "score": 64,
       "status": "measured",
       "weightedGap": 2,
       "penalties": [],
@@ -753,8 +753,8 @@
   "comparison": {
     "passed": true,
     "baselineScore": 61,
-    "currentScore": 61,
-    "scoreDelta": 0,
+    "currentScore": 62,
+    "scoreDelta": 1,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
