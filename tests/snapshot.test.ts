@@ -8,6 +8,7 @@ import { migrateToLatest } from "../src/db/migrate.js";
 import { Repository } from "../src/db/repository.js";
 import { seedDatabase } from "../src/db/seed.js";
 import { restoreRepositorySnapshot, writeRepositorySnapshot } from "../src/pipeline/snapshot.js";
+import { readSnapshotFile, writeSnapshotFile } from "../src/pipeline/snapshot-storage.js";
 
 const databases: ReturnType<typeof createDatabase>[] = [];
 
@@ -16,7 +17,10 @@ afterEach(async () => {
 });
 
 describe("repository data snapshot", () => {
-  it("is deterministic, strips sensitive URL parameters and restores into a fresh database", async () => {
+  it.each([
+    false,
+    true,
+  ])("is deterministic, private and restores into a fresh database (sharded: %s)", async (sharded) => {
     const config = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
     const sourceDb = createDatabase(config);
     databases.push(sourceDb);
@@ -144,7 +148,11 @@ describe("repository data snapshot", () => {
     const second = await writeRepositorySnapshot(sourceDb, root);
     expect(first.changed).toBe(true);
     expect(second).toMatchObject({ changed: false, sha256: first.sha256 });
-    const serialized = await readFile(join(root, "data/snapshot/v1.json"), "utf8");
+    const snapshotPath = join(root, "data/snapshot/v1.json");
+    if (sharded) {
+      await writeSnapshotFile(snapshotPath, await readFile(snapshotPath, "utf8"), 16 * 1024);
+    }
+    const serialized = await readSnapshotFile(snapshotPath);
     expect(serialized).not.toContain("must-not-leak");
     expect(serialized).not.toContain("raw_meta_json");
     expect(serialized).not.toContain("/Users/");

@@ -144,10 +144,11 @@ jobs:
         run: |
           set -euo pipefail
           git fetch origin main
-          git show origin/main:data/snapshot/v1.json > "$RUNNER_TEMP/remote-snapshot.json"
+          mkdir -p "$RUNNER_TEMP/remote-snapshot"
+          git archive origin/main data/snapshot | tar -x -C "$RUNNER_TEMP/remote-snapshot"
           git show origin/main:data/narratives/stage-promotions.json > data/narratives/stage-promotions.json
           git show origin/main:data/reports/system-evaluation.json > data/reports/system-evaluation.json
-          npm run db:snapshot -- merge --file="$RUNNER_TEMP/remote-snapshot.json"
+          npm run db:snapshot -- merge --file="$RUNNER_TEMP/remote-snapshot/data/snapshot/v1.json"
 
       - name: Re-apply source reconciliation after remote merge
         run: npm run ops:reconcile
@@ -297,12 +298,12 @@ jobs:
           node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' data/narratives/stage-promotions.json
           node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' data/reports/research-impact.json
           node -e 'JSON.parse(require("node:fs").readFileSync(process.argv[1], "utf8"))' data/reports/system-evaluation.json
-          git diff --check -- data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json
-          if grep -E '"(token|secret|password|cookie|authorization|api[_-]?key|reasoning|prompt|completion)"[[:space:]]*:' data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json; then
+          git diff --check -- data/snapshot/ data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json
+          if grep -rE '"(token|secret|password|cookie|authorization|api[_-]?key|reasoning|prompt|completion)"[[:space:]]*:' data/snapshot/ data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json; then
             echo "Sensitive or raw model material detected in repository data" >&2
             exit 1
           fi
-          if grep -E -- '-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|/Users/[^/]+/|/home/runner/' data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json; then
+          if grep -rE -- '-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|/Users/[^/]+/|/home/runner/' data/snapshot/ data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json; then
             echo "Private material or local path detected in repository data" >&2
             exit 1
           fi
@@ -312,7 +313,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -- data/snapshot/v1.json data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json
+          git add -- data/snapshot/ data/narratives/stage-promotions.json data/reports/research-impact.json data/reports/system-evaluation.json
           if git diff --cached --quiet; then
             echo "No material data changes; skipping commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"

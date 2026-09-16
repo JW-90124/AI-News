@@ -550,6 +550,7 @@ export const releases = [
       "AI 可读站点索引",
     ],
     changes: [
+      "大快照自动拆为每片不超过 8 MiB 的可校验 JSON，避免每日刷新和来源审计触发 GitHub 单文件限制；保留完整历史及旧格式兼容",
       "直接研究源采集失败时，Actions warning 只陈述本次未采集、生命周期不变与批次继续，不再把实际 quarantined 状态误写成 shadow",
       "Source Audit 与 Data Refresh 在远端快照 merge 后重新执行来源对账，防止旧生命周期覆盖已满足连续健康门槛的隔离来源恢复结果",
       "公开站统一使用领域趋势、事件时间线、来源更新、行动建议、公司与机构、模型价格和信息来源等直白名称",

@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/pages.yml"
-      - "data/snapshot/v1.json"
+      - "data/snapshot/**"
       - "package.json"
       - "package-lock.json"
       - "src/**"

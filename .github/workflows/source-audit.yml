@@ -65,8 +65,9 @@ jobs:
         run: |
           set -euo pipefail
           git fetch origin main
-          git show origin/main:data/snapshot/v1.json > "$RUNNER_TEMP/remote-snapshot.json"
-          npm run db:snapshot -- merge --file="$RUNNER_TEMP/remote-snapshot.json"
+          mkdir -p "$RUNNER_TEMP/remote-snapshot"
+          git archive origin/main data/snapshot | tar -x -C "$RUNNER_TEMP/remote-snapshot"
+          npm run db:snapshot -- merge --file="$RUNNER_TEMP/remote-snapshot/data/snapshot/v1.json"
 
       - name: Re-apply source reconciliation after remote merge
         run: npm run ops:reconcile
@@ -105,8 +106,8 @@ jobs:
           set -euo pipefail
           test -s data/reports/source-health.json
           test -s data/snapshot/v1.json
-          git diff --check -- data/reports/source-health.json data/snapshot/v1.json
-          if grep -E 'gh[opsu]_[A-Za-z0-9_]{20,}|-----BEGIN .*PRIVATE KEY-----|/Users/[^/]+/|/home/runner/|"(token|secret|password|cookie|authorization|api[_-]?key)"[[:space:]]*:' data/reports/source-health.json data/snapshot/v1.json; then
+          git diff --check -- data/reports/source-health.json data/snapshot/
+          if grep -rE 'gh[opsu]_[A-Za-z0-9_]{20,}|-----BEGIN .*PRIVATE KEY-----|/Users/[^/]+/|/home/runner/|"(token|secret|password|cookie|authorization|api[_-]?key)"[[:space:]]*:' data/reports/source-health.json data/snapshot/; then
             echo "Private material detected in source health output" >&2
             exit 1
           fi
@@ -157,7 +158,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -- data/reports/source-health.json data/snapshot/v1.json
+          git add -- data/reports/source-health.json data/snapshot/
           if git diff --cached --quiet; then
             echo "No report changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"

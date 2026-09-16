@@ -1,9 +1,10 @@
-import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
-import { dirname, isAbsolute, join } from "node:path";
+import { isAbsolute, join } from "node:path";
 import type { Kysely, Transaction } from "kysely";
 import { parseJson } from "../db/repository.js";
 import type { DatabaseSchema } from "../db/types.js";
 import { canonicalizeUrl, sha256 } from "../domain/url.js";
+
+import { readSnapshotFile, writeSnapshotFile } from "./snapshot-storage.js";
 
 export const SNAPSHOT_SCHEMA_VERSION = 1;
 export const DEFAULT_SNAPSHOT_PATH = join("data", "snapshot", "v1.json");
@@ -37,15 +38,8 @@ export async function writeRepositorySnapshot(
   const serialized = `${JSON.stringify(snapshot, null, 2)}\n`;
   assertSnapshotSafe(serialized);
   const path = snapshotPath(rootDir, relativePath);
-  const previous = await readFile(path, "utf8").catch(() => "");
-  if (previous === serialized) {
-    return { path, changed: false, sha256: sha256(serialized), counts: snapshotCounts(snapshot) };
-  }
-  await mkdir(dirname(path), { recursive: true });
-  const temporary = `${path}.tmp`;
-  await writeFile(temporary, serialized, { encoding: "utf8", mode: 0o600 });
-  await rename(temporary, path);
-  return { path, changed: true, sha256: sha256(serialized), counts: snapshotCounts(snapshot) };
+  const changed = await writeSnapshotFile(path, serialized);
+  return { path, changed, sha256: sha256(serialized), counts: snapshotCounts(snapshot) };
 }
 
 export async function restoreRepositorySnapshot(
@@ -54,10 +48,7 @@ export async function restoreRepositorySnapshot(
   relativePath = DEFAULT_SNAPSHOT_PATH,
 ) {
   const path = snapshotPath(rootDir, relativePath);
-  const serialized = await readFile(path, "utf8").catch((error: NodeJS.ErrnoException) => {
-    if (error.code === "ENOENT") return "";
-    throw error;
-  });
+  const serialized = await readSnapshotFile(path);
   if (!serialized) return { path, restored: false, counts: emptyCounts() };
   assertSnapshotSafe(serialized);
   const snapshot = JSON.parse(serialized) as RepositorySnapshot;
