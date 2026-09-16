@@ -22,6 +22,7 @@ import { buildApp } from "../src/server/app.js";
 
 const databases: ReturnType<typeof createDatabase>[] = [];
 afterEach(async () => {
+  vi.useRealTimers();
   while (databases.length) await databases.pop()?.destroy();
 });
 
@@ -68,6 +69,12 @@ describe("SQLite application", () => {
 
   it("migrates, seeds and exports a privacy-safe static site", async () => {
     const base = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
+    // The repository impact report is a dated fixture; test rendering while it is fresh.
+    const impactReport = JSON.parse(
+      await readFile(join(base.rootDir, "data/reports/research-impact.json"), "utf8"),
+    );
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date(impactReport.generatedAt));
     const temp = await mkdtemp(join(tmpdir(), "agent-pulse-"));
     const config = { ...base, distDir: join(temp, "dist") };
     const db = createDatabase(config);
@@ -655,7 +662,7 @@ describe("SQLite application", () => {
         sources: result.sources,
       },
     });
-  });
+  }, 30_000);
 
   it("protects production admin APIs", async () => {
     const config = loadConfig({

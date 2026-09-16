@@ -11,3 +11,7 @@
 - 实际数据库恢复：分别从原始单文件和分片恢复到独立 SQLite，16 张快照相关表的行数全部一致。
 
 尚未完成：远端发布、手动触发 Data Refresh / Source Audit、CI 和 Pages 云端验收。需要可用的 GitHub 写入认证；插件已启用，但当前会话未暴露 GitHub 工具，本地 Git/gh 尚未登录。
+
+## 2026-09-16 晚间复验
+
+GitHub 认证恢复后，云端 CI 确认 Scout 与 research rendering 两项旧测试受当前日期影响。已让测试使用对应样本的日期，保持生产新鲜度门禁不变；两项较重的数据库集成测试允许 30 秒执行时间。同步最新 main 后，完整 npm run check 与 npm run build 均通过（55 个测试文件、344 项测试），静态站点完整性 issues 为空。

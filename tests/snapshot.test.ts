@@ -332,5 +332,5 @@ describe("repository data snapshot", () => {
         .executeTakeFirst(),
     ).toEqual({ status: "not_modified" });
     expect(await targetRepository.publicScoutInsights()).toHaveLength(1);
-  });
+  }, 30_000);
 });
