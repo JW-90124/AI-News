@@ -49,6 +49,13 @@ describe("GitHub source governance workflows", () => {
     expect(refresh.lastIndexOf("npm run ops:reconcile")).toBeLessThan(
       refresh.lastIndexOf("npm run export"),
     );
+    for (const writer of [audit, refresh]) {
+      expect(writer).toContain("git archive origin/main data/snapshot");
+      expect(writer).toContain('--file="$RUNNER_TEMP/remote-snapshot/data/snapshot/v1.json"');
+      expect(writer).toContain("grep -rE");
+      expect(writer).toMatch(/git add -- .*data\/snapshot\//);
+    }
+    expect(await workflow("pages.yml")).toContain('"data/snapshot/**"');
     expect(audit).not.toContain("git push --force");
     expect(refresh).not.toContain("git push --force");
     expect(audit).toContain("npm run observe:sources -- --confirm");

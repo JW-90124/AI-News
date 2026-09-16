@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { loadConfig } from "../src/config/env.js";
 import { createDatabase } from "../src/db/database.js";
 import { migrateToLatest } from "../src/db/migrate.js";
@@ -16,6 +16,7 @@ import {
 const databases: ReturnType<typeof createDatabase>[] = [];
 
 afterEach(async () => {
+  vi.useRealTimers();
   while (databases.length) await databases.pop()?.destroy();
 });
 
@@ -48,6 +49,9 @@ describe("Scout deterministic cards", () => {
   });
 
   it("fills distinct opportunity kinds and auto-publishes only viable cards", async () => {
+    // Keep the seeded events' recency ranking stable as the calendar advances.
+    vi.useFakeTimers({ toFake: ["Date"] });
+    vi.setSystemTime(new Date("2026-07-14T12:00:00.000Z"));
     const config = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
     const db = createDatabase(config);
     databases.push(db);
