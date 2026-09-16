@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "9ad4f755-b99f-485b-a284-6d64740eb446",
+  "id": "5ce102e8-fbe1-4478-a819-5867c3fb2822",
   "releaseVersion": "0.11.1",
   "status": "partial",
-  "overallScore": 61,
+  "overallScore": 60,
   "rawWeightedScore": 65,
   "evidenceCoverage": 72,
   "dimensions": [
     {
       "slug": "source-coverage",
       "name": "有效来源覆盖",
-      "score": 97,
-      "rawScore": 97,
+      "score": 96,
+      "rawScore": 96,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 133,
+      "sampleSize": 131,
       "sampleTarget": 100,
-      "summary": "416 个目录源中 266 个单轮健康、84 个处于隔离观察，只有 133 个既 active 且健康；E2/E3 不等同生产覆盖。",
+      "summary": "416 个目录源中 265 个单轮健康、80 个处于隔离观察，只有 131 个既 active 且健康；E2/E3 不等同生产覆盖。",
       "evidence": {
         "catalog": 416,
         "checked": 414,
-        "healthy": 266,
-        "degraded": 26,
-        "failed": 71,
-        "skipped": 51,
-        "active": 133,
-        "activeHealthy": 133,
-        "observingHealthy": 84,
+        "healthy": 265,
+        "degraded": 27,
+        "failed": 70,
+        "skipped": 52,
+        "active": 132,
+        "activeHealthy": 131,
+        "observingHealthy": 80,
         "healthyCategories": 13,
-        "healthyChina": 59
+        "healthyChina": 60
       },
       "penalties": [],
       "nextAction": "让 E3 来源完成 20 次健康检查和 7 天观察，再由自动契约验证逐批晋级 E4。"
@@ -47,10 +47,10 @@
       "summary": "292 个可用/部分可用来源参与真实抓取质量计算；目录预填 quality_score 不再计分。",
       "evidence": {
         "usableChecks": 292,
-        "healthy": 266,
-        "auditWindows": 6,
-        "averageObservedQuality": 66,
-        "schemaValid": 266
+        "healthy": 265,
+        "auditWindows": 7,
+        "averageObservedQuality": 67,
+        "schemaValid": 265
       },
       "penalties": [],
       "nextAction": "连续 7 天抽检 100+ 健康源，补原创率、正文完整度和人工准确率标签。"
@@ -63,15 +63,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 16381,
+      "sampleSize": 16420,
       "sampleTarget": 100,
-      "summary": "16381 条信号中 11745 条来自 primary/research/policy，3572 条证据进入事件。",
+      "summary": "16420 条信号中 11755 条来自 primary/research/policy，3631 条证据进入事件。",
       "evidence": {
-        "signals": 16381,
-        "direct": 16381,
-        "primary": 11745,
-        "linkedEvidence": 3572,
-        "linkedSourceCount": 152,
+        "signals": 16420,
+        "direct": 16420,
+        "primary": 11755,
+        "linkedEvidence": 3631,
+        "linkedSourceCount": 155,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -87,16 +87,16 @@
       "status": "measured",
       "sampleSize": 414,
       "sampleTarget": 100,
-      "summary": "按每个来源最新一次检查/运行去重：266/414 健康，不再让单一来源的重复成功运行抬高分数。",
+      "summary": "按每个来源最新一次检查/运行去重：265/414 健康，不再让单一来源的重复成功运行抬高分数。",
       "evidence": {
         "checked": 414,
-        "healthy": 266,
-        "degraded": 26,
-        "failed": 71,
-        "skipped": 51,
+        "healthy": 265,
+        "degraded": 27,
+        "failed": 70,
+        "skipped": 52,
         "latestRuns": 215,
-        "latestRunSuccess": 213,
-        "auditWindows": 6
+        "latestRunSuccess": 214,
+        "auditWindows": 7
       },
       "penalties": [],
       "nextAction": "连续运行 7 天，按来源计算成功率、异常空结果、P95 延迟和恢复时间。"
@@ -109,14 +109,14 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 593,
+      "sampleSize": 600,
       "sampleTarget": 30,
-      "summary": "593 个公开事件仅 32 个拥有多源证据，568 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "600 个公开事件仅 32 个拥有多源证据，575 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 593,
-        "primaryEvidence": 585,
+        "published": 600,
+        "primaryEvidence": 592,
         "multiSource": 32,
-        "readyPublished": 568,
+        "readyPublished": 575,
         "averageEvidence": 1.39,
         "averageSelfReportedConfidence": 85
       },
@@ -135,9 +135,9 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 593,
+        "published": 600,
         "fieldCompleteness": 100,
-        "readyPublished": 568,
+        "readyPublished": 575,
         "multiSource": 32,
         "outcomeFeedback": 0
       },
@@ -149,8 +149,8 @@
     {
       "slug": "realtime",
       "name": "端到端实时性",
-      "score": 85,
-      "rawScore": 85,
+      "score": 84,
+      "rawScore": 84,
       "scoreCap": 100,
       "weight": 8,
       "status": "measured",
@@ -159,9 +159,9 @@
       "summary": "collector 耗时不是上游发布到页面可见的端到端延迟；以成功运行比例作为实时性估算。",
       "evidence": {
         "latestSourceRuns": 215,
-        "latestRunSuccess": 213,
-        "freshHealthySources": 145,
-        "activeWithRecentSuccess": 128,
+        "latestRunSuccess": 214,
+        "freshHealthySources": 128,
+        "activeWithRecentSuccess": 129,
         "endToEndLatencySamples": 0
       },
       "penalties": [
@@ -172,21 +172,21 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 54,
-      "rawScore": 54,
+      "score": 52,
+      "rawScore": 52,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 266,
+      "sampleSize": 265,
       "sampleTarget": 100,
-      "summary": "145/266 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 7 个。",
+      "summary": "128/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 14 个。",
       "evidence": {
-        "healthy": 266,
-        "freshHealthy": 145,
-        "active": 133,
-        "activeWithRecentSuccess": 128,
-        "published": 593,
-        "recentPublished": 7
+        "healthy": 265,
+        "freshHealthy": 128,
+        "active": 132,
+        "activeWithRecentSuccess": 129,
+        "published": 600,
+        "recentPublished": 14
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -201,10 +201,10 @@
       "status": "insufficient_data",
       "sampleSize": 0,
       "sampleTarget": 30,
-      "summary": "52 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
+      "summary": "54 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
       "evidence": {
-        "ideas": 52,
-        "editorialAccepted": 42,
+        "ideas": 54,
+        "editorialAccepted": 44,
         "outcomeFeedback": 0,
         "completedArtifacts": 0
       },
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 416,
         "restrictedEnabled": 0,
-        "readyEvents": 568,
-        "totalEvents": 2846,
+        "readyEvents": 575,
+        "totalEvents": 2882,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -682,9 +682,9 @@
       "evidence": "capability map links status, maturity, release and implementation evidence"
     }
   ],
-  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 65, evidence coverage 72%, final score 61",
-  "startedAt": "2026-09-16T15:46:08.722Z",
-  "finishedAt": "2026-09-16T15:46:08.951Z",
+  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 65, evidence coverage 72%, final score 60",
+  "startedAt": "2026-09-16T17:09:54.721Z",
+  "finishedAt": "2026-09-16T17:09:54.945Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -714,7 +714,7 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 54,
+      "score": 52,
       "status": "measured",
       "weightedGap": 3,
       "penalties": [],
@@ -752,16 +752,17 @@
   ],
   "comparison": {
     "passed": false,
-    "baselineScore": 62,
-    "currentScore": 61,
+    "baselineScore": 61,
+    "currentScore": 60,
     "scoreDelta": -1,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
     "regressions": [
-      "overall score regressed from 62 to 61",
-      "raw weighted score regressed from 66 to 65",
-      "dimension timeliness regressed from 64 to 54"
+      "overall score regressed from 61 to 60",
+      "dimension source-coverage regressed from 97 to 96",
+      "dimension realtime regressed from 85 to 84",
+      "dimension timeliness regressed from 54 to 52"
     ]
   }
 }
