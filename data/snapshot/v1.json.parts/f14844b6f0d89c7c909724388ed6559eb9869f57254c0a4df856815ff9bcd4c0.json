@@ -1,5 +1,636 @@
 [
 {
+  "id": "98bc5fac-ff67-4d2d-ac76-2ce731a9a204",
+  "slug": "spanish-bert-benchmark",
+  "title": "Spanish Pre-trained BERT Model and Evaluation Data：西班牙语专用BERT模型与评测基准发布",
+  "factSummary": "该论文发布了首个完全基于西班牙语数据预训练的BERT模型，并整合了多个西班牙语自然语言处理任务形成类似GLUE的评测基准。实验表明，该模型在大多数任务上优于多语言BERT模型，部分任务达到新最优水平。模型、预训练数据和基准已公开。",
+  "summary": "针对西班牙语资源匮乏问题，论文贡献了纯西班牙语预训练的BERT模型和统一评测基准，显著提升了西班牙语NLP任务性能，并开源了全部资源。",
+  "technicalInsight": "模型采用BERT架构，在西班牙语维基百科、新闻、书籍等大规模语料上预训练。评测基准涵盖情感分析、命名实体识别、自然语言推理等任务。与多语言BERT（如mBERT）对比，西班牙语BERT在多数任务上准确率提升2-5个百分点，部分任务（如情感分析）达到新SOTA。局限性在于未探索更大模型或更先进架构。",
+  "industryInsight": "西班牙语是全球第三大语言，该模型可直接用于西班牙语客服、搜索、翻译等商业场景，降低对多语言模型的依赖，提升本地化效果。",
+  "futureOutlook": "后续需验证模型在更多下游任务（如问答、摘要）上的表现，以及与其他西班牙语模型（如RoBERTa）的对比。",
+  "businessValue": "建议西班牙语市场团队在客服、内容审核和搜索排序数据上对比该模型与现有mBERT，按准确率、语言变体覆盖和推理成本验收，不直接把论文基准增益外推到生产。",
+  "category": "research",
+  "company": "Spanish-BERT",
+  "keywords": [
+    "西班牙语",
+    "BERT",
+    "预训练",
+    "评测基准",
+    "自然语言处理"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 88,
+  "valueScore": 85,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2023-08-06T12:00:00.000Z",
+  "publishedAt": "2023-08-06T12:00:00.000Z",
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
+},
+{
+  "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
+  "slug": "spark-to-paper-end-to-end-research-paper-generation-as-a-composable-skill-2026-08-13",
+  "title": "Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill",
+  "factSummary": "Turning a research idea into a complete paper requires more than text generation: the system must retrieve literature, design and execute experiments, revise claims according to evidence, produce publication-ready figures, and maintain consistency across a long generation process. We present Spark-to-Paper, an end-to-end research paper generation system implemented as thirteen composable skills inside an existing coding assistant, without requiring a separate agent platform or orchestration service. Spark-to-Paper separates model-based judgment from deterministic operations that can be directly executed and checked. It further separates experiment planning from reporting, so that required evidence is specified before results are observed and manuscript claims are revised according to measured outcomes. To improve reliability over long research trajectories, the system combines deterministic integrity checks with self-critique and bounds a failure mode we call the Self-Refutation Loop, in which repeated experiments continue to reject the original research objective. Spark-to-Paper also produces editable vector figures through programmatic plotting for experimental results and code-based reconstruction for generated method diagrams. Across eight controlled research topics, Spark-to-Paper achieves 99.5% citation validity and 96.4% figure editability. A controlled ablation increases fabrication detection from 14% for a single-pass draft to 92% with the full integrity and review stack, while adversarial review achieves 74% precision. The full system uses 11.9M tokens, costs $8.1 per manuscript, and requires 3.2 hours on average. These results show that end-to-end research paper generation can be implemented as a lightweight, composable workflow inside existing coding assistants while keeping experimental evidence central to how claims are accepted, revised, or abandoned.",
+  "summary": "Turning a research idea into a complete paper requires more than text generation: the system must retrieve literature, design and execute experiments, revise claims according to evidence, produce publication-ready figures, and maintain consistency across a long generation process. We present Spark-to-Paper, an end-to-end research paper generation system implemented as thirteen composable skills inside an existing coding assistant, without requiring a separate agent platform or orchestration service. Spark-to-Paper separates model-based judgment from deterministic operations that can be directly executed and checked. It further separates experiment planning from reporting, so that required evidence is specified before results are observed and manuscript claims are revised according to measured outcomes. To improve reliability over long research trajectories, the system combines deterministic integrity checks with self-critique and bounds a failure mode we call the Self-Refutation Loop, in which repeated experiments continue to reject the original research objective. Spark-to-Paper also produces editable vector figures through programmatic plotting for experimental results and code-based reconstruction for generated method diagrams. Across eight controlled research topics, Spark-to-Paper achieves 99.5% citation validity and 96.4% figure editability. A controlled ablation increases fabrication detection from 14% for a single-pass draft to 92% with the full integrity and review stack, while adversarial review achieves 74% precision. The full system uses 11.9M tokens, costs $8.1 per manuscript, and requires 3.2 hours on average. These results show that end-to-end research paper generation can be implemented as a lightweight, composable workflow inside existing coding assistants while keeping experimental evidence central to how claims are accepted, revised, or abandoned.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spark",
+    "paper",
+    "end",
+    "research",
+    "generation",
+    "as",
+    "composable",
+    "skill"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T11:11:07.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:42.533Z",
+  "updatedAt": "2026-08-13T03:19:42.580Z"
+},
+{
+  "id": "ced38d09-8da9-4e9c-a985-2a875b784ed0",
+  "slug": "sparks-of-agi-gpt4",
+  "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4：GPT-4展现通用智能火花，AGI雏形已现",
+  "factSummary": "2023年3月，微软研究团队发布了对早期GPT-4的评估报告。论文通过大量实验证明，GPT-4在数学、编程、视觉、医学、法律、心理学等众多领域表现出接近人类水平的性能，且无需特殊提示。作者认为GPT-4可被视为早期（但不完整）的AGI系统，并指出其局限性在于仍基于下一个词预测范式。",
+  "summary": "该论文是GPT-4能力最全面的公开评估之一，首次系统论证了大型语言模型在广泛任务中达到接近人类水平，引发了对AGI临近的广泛讨论。它改变了业界对LLM能力边界的认知，推动了后续对通用智能的探索和风险讨论。",
+  "technicalInsight": "论文采用定性+定量方法，对GPT-4进行多领域零样本测试，包括数学推理、代码生成、视觉理解、医学考试等。结果显示GPT-4在多项基准上超越ChatGPT和PaLM，且无需微调。作者特别强调其局限性：在复杂推理、事实一致性、对抗性输入等方面仍有不足，并指出当前架构（下一个词预测）可能无法通向更全面的AGI。评估未使用标准化基准，而是自建任务集，因此结果可复现性有限。",
+  "industryInsight": "该论文直接影响了AI行业对LLM能力的预期，加速了GPT-4在客服、编程辅助、内容生成等领域的商业化部署。同时引发了对AI安全、对齐、监管的紧迫讨论，推动各国政府和企业制定AI治理框架。",
+  "futureOutlook": "后续需关注GPT-4在真实场景中的可靠性、幻觉率、以及多模态扩展。关键信号包括：OpenAI是否发布GPT-4的详细技术报告、第三方复现结果、以及基于GPT-4的AGI安全研究进展。",
+  "businessValue": "企业应评估GPT-4在内部知识管理、自动化报告生成、代码审查等场景的试点部署，同时建立AI输出审核机制以控制风险。投资可关注基于GPT-4的垂直应用和AI安全初创公司。",
+  "category": "research",
+  "company": "Microsoft Research",
+  "keywords": [
+    "GPT-4",
+    "AGI",
+    "通用智能",
+    "大型语言模型",
+    "能力评估"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 97,
+  "valueScore": 95,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2023-03-22T12:00:00.000Z",
+  "publishedAt": "2023-03-22T12:00:00.000Z",
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
+},
+{
+  "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
+  "slug": "sparks-protein-design",
+  "title": "Sparks: Multi-Agent Artificial Intelligence Model Discovers Protein Design Principles：多模态多智能体系统自主发现蛋白质设计新原理",
+  "factSummary": "2025年4月，MIT团队提出Sparks，一个多模态多智能体AI系统，能够自主完成从假设生成、实验设计到迭代优化的完整科学发现循环，无需人类干预。在蛋白质科学应用中，Sparks发现了两个此前未知的现象：1）β-折叠偏向的肽段在超过约80个残基时，其展开力超过α-螺旋肽段，建立了肽段力学的新设计原理；2）链长/二级结构稳定性图谱揭示了β-折叠富集架构的意外鲁棒性，以及混合α/β折叠中的高方差“挫败区”。这些发现完全由自驱动推理循环产生，结合了生成式序列设计、高精度结构预测和物理感知属性模型。",
+  "summary": "Sparks代表了AI从“知识检索”到“知识发现”的质变。与大多数AI系统仅复现训练数据中的知识不同，Sparks通过多智能体协作和迭代推理，自主发现了蛋白质科学中尚未被人类记录的新原理。这证明了AI在基础科学发现中的独立价值，尤其适用于复杂生物系统的规律挖掘。系统采用配对生成-反思智能体实现自我纠错和可重复性，为自动化科学发现提供了新范式。",
+  "technicalInsight": "Sparks采用多模态多智能体架构，包含生成智能体（generative agent）和反思智能体（reflection agent）的配对循环。生成智能体负责提出假设并设计实验（如序列设计），反思智能体则评估结果并驱动迭代优化。系统集成了高精度结构预测模型（如AlphaFold类模型）和物理感知属性模型（如分子动力学模拟）。关键创新在于完全自主的推理循环，无需人类提供初始假设或中间反馈。发现的两个新原理均通过计算实验验证，并形成可泛化的设计原则。",
+  "industryInsight": "该成果对生物技术和制药行业具有变革性影响。Sparks能够自主发现蛋白质设计原理，可加速抗体设计、酶工程和材料科学中的蛋白质优化。对于CRO/CDMO企业，该技术可提供从序列设计到功能预测的自动化管线。对于AI制药公司，Sparks的多智能体框架可扩展至小分子药物设计，降低研发成本。",
+  "futureOutlook": "需关注Sparks发现的原理是否能在湿实验中得到验证，以及系统能否推广到其他生物分子（如RNA、糖类）。关键信号包括：与实验团队的合作验证、系统在工业级蛋白质设计任务中的表现、以及开源代码的社区贡献。此外，系统的计算资源需求和推理时间也是实际部署的瓶颈。",
+  "businessValue": "建议生物技术公司立即与MIT团队合作，将Sparks集成到蛋白质设计工作流中。可投资开发基于Sparks的蛋白质工程SaaS平台，面向药企提供抗体优化、酶设计等服务。同时，关注Sparks在合成生物学和材料科学中的潜在应用，提前布局知识产权。",
+  "category": "research",
+  "company": "MIT",
+  "keywords": [
+    "蛋白质设计",
+    "多智能体系统",
+    "科学发现",
+    "自主推理",
+    "生物技术"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 93,
+  "valueScore": 90,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2025-04-26T12:00:00.000Z",
+  "publishedAt": "2025-04-26T12:00:00.000Z",
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
+},
+{
+  "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
+  "slug": "sparse-autoencoders-encode-both-concepts-and-functions-the-downstream-geometry-of-feature--2026-07-28",
+  "title": "Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects",
+  "factSummary": "The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead study the geometry of changes in model logits caused by feature interventions. We introduce Feature-Effect Geometry Analysis (FEGA), an unsupervised framework that removes the same active SAE feature across contexts and analyzes the resulting cloud of logit changes. Across SAE variants, consistent one-dimensional effects are rare: few features behave like reusable directions. To interpret this variation, we distinguish value-like features, tied to static information such as factual attributes, from pointer-like features, associated with context-dependent operations. Value-like features more often exhibit structured, low-dimensional effects, although these effects typically span several directions. Pointer-like features, by contrast, predominantly exhibit diffuse effects. Our results show that a feature can be interpretable and causally relevant without providing a stable direction for steering.",
+  "summary": "The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead study the geometry of changes in model logits caused by feature interventions. We introduce Feature-Effect Geometry Analysis (FEGA), an unsupervised framework that removes the same active SAE feature across contexts and analyzes the resulting cloud of logit changes. Across SAE variants, consistent one-dimensional effects are rare: few features behave like reusable directions. To interpret this variation, we distinguish value-like features, tied to static information such as factual attributes, from pointer-like features, associated with context-dependent operations. Value-like features more often exhibit structured, low-dimensional effects, although these effects typically span several directions. Pointer-like features, by contrast, predominantly exhibit diffuse effects. Our results show that a feature can be interpretable and causally relevant without providing a stable direction for steering.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sparse",
+    "autoencoders",
+    "encode",
+    "both",
+    "concepts",
+    "functions",
+    "downstream",
+    "geometry"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-27T16:45:08.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-28T03:56:55.014Z",
+  "updatedAt": "2026-07-28T03:56:55.050Z"
+},
+{
+  "id": "d6450d64-163f-4aa0-9b9e-d7a744be53c4",
+  "slug": "sparse-evidence-can-suffice-agentic-evidence-seeking-for-multimodal-video-misinformation-d-2026-07-21",
+  "title": "Sparse Evidence Can Suffice: Agentic Evidence Seeking for Multimodal Video Misinformation Detection",
+  "factSummary": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection.",
+  "summary": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sparse",
+    "evidence",
+    "can",
+    "suffice",
+    "agentic",
+    "seeking",
+    "multimodal",
+    "video"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 79,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-20T15:48:31.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-21T14:31:11.220Z",
+  "updatedAt": "2026-07-21T14:31:11.250Z"
+},
+{
+  "id": "66ccd0fd-2b55-4edb-b0bc-476409c3bd51",
+  "slug": "spatiotemporal-agility-time-constrained-reinforcement-learning-for-vision-guided-dynamic-q-2026-08-10",
+  "title": "Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception",
+  "factSummary": "Legged robots require robust agility to perceive and interact with complex and dynamic environments within a constrained time. However, most existing quadruped locomotion works rely on velocity-tracking policy, which struggle to reach precise targets within strict temporal constraints. Moreover, integrating real-time perception with agile locomotion for highly dynamic targets remains challenging due to sensor latency and processing delays. To concretely study and benchmark such agility in dynamic settings, we introduce a challenging ball-catching task for legged robots. This paper proposes an integrated framework that combines a vision module for landing point and time prediction with a direct position and time conditioned RL locomotion policy, instead of intermediate velocity commands. Beyond the method design, this work presents a system-level contribution that completes real-time robotic interception system that integrates multi-camera perception, online trajectory prediction, low-latency target communication, and sim-to-real locomotion control into a closed-loop deployment pipeline. By explicitly predicting the future spatial-temporal target, our approach mitigates perception latency during dynamic interception. We conducted extensive ball-catching experiments for the legged robot. Through comparative experiments against a velocity-tracking baseline, our direct target-conditioned approach achieves a higher success rate in catching balls with predicted landing spots within 2 meters and flight times between 0.8 and 1.2 seconds. This shows that the robot has successfully completed the dynamic ball-catching task under our tested setup. Furthermore, our policy exhibits a smaller performance gap after deployment, suggesting improved sim-to-real behavior in these trials.",
+  "summary": "Legged robots require robust agility to perceive and interact with complex and dynamic environments within a constrained time. However, most existing quadruped locomotion works rely on velocity-tracking policy, which struggle to reach precise targets within strict temporal constraints. Moreover, integrating real-time perception with agile locomotion for highly dynamic targets remains challenging due to sensor latency and processing delays. To concretely study and benchmark such agility in dynamic settings, we introduce a challenging ball-catching task for legged robots. This paper proposes an integrated framework that combines a vision module for landing point and time prediction with a direct position and time conditioned RL locomotion policy, instead of intermediate velocity commands. Beyond the method design, this work presents a system-level contribution that completes real-time robotic interception system that integrates multi-camera perception, online trajectory prediction, low-latency target communication, and sim-to-real locomotion control into a closed-loop deployment pipeline. By explicitly predicting the future spatial-temporal target, our approach mitigates perception latency during dynamic interception. We conducted extensive ball-catching experiments for the legged robot. Through comparative experiments against a velocity-tracking baseline, our direct target-conditioned approach achieves a higher success rate in catching balls with predicted landing spots within 2 meters and flight times between 0.8 and 1.2 seconds. This shows that the robot has successfully completed the dynamic ball-catching task under our tested setup. Furthermore, our policy exhibits a smaller performance gap after deployment, suggesting improved sim-to-real behavior in these trials.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatiotemporal",
+    "agility",
+    "time",
+    "constrained",
+    "reinforcement",
+    "learning",
+    "vision",
+    "guided"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 50,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-07T07:42:19.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-10T03:05:15.078Z",
+  "updatedAt": "2026-08-10T03:05:15.116Z"
+},
+{
+  "id": "59e674a5-dcaa-41ee-81a1-d57b20b9d735",
+  "slug": "spatiotemporal-context-dependent-personalized-movement-compensation-in-delayed-telemanipul-2026-08-11",
+  "title": "Spatiotemporal Context-dependent Personalized Movement Compensation in Delayed Telemanipulation",
+  "factSummary": "Communication delay remains a central challenge in telerobotics, where it disrupts visuomotor coordination and reduces task precision. Motion scaling is an effective countermeasure to delay-induced overshoot, yet typical deployments rely on uniform gains that neglect individual and contextual variability. We propose a human-centered method that fits personalized delay-, direction-, and distance-specific scaling parameters for each participant. We conducted experiments with twenty participants who performed delayed reaching tasks in a virtual simulator. Scaling gains were computed to minimize mean overshoot in simulation in each combination of experimental conditions. Evaluation was done in simulation and on a telesurgical robot to evaluate assistance benefits. Performance was assessed across multiple delays, distances, and movement directions using overshoot, endpoint error, trajectory smoothness, economy of motion, and a composite error-time metric. Motion scaling consistently improved performance relative to unassisted trials, yielding up to 20-25% performance gains in key metrics. Effects were most pronounced at longer delays. Personalization demonstrated additional accuracy benefits for inward reaching at a short distance under moderate delay. The results highlight the potential of personalized scaling as a foundation for more adaptive frameworks that integrate contextual information to improve the safety and precision of teleoperated procedures.",
+  "summary": "Communication delay remains a central challenge in telerobotics, where it disrupts visuomotor coordination and reduces task precision. Motion scaling is an effective countermeasure to delay-induced overshoot, yet typical deployments rely on uniform gains that neglect individual and contextual variability. We propose a human-centered method that fits personalized delay-, direction-, and distance-specific scaling parameters for each participant. We conducted experiments with twenty participants who performed delayed reaching tasks in a virtual simulator. Scaling gains were computed to minimize mean overshoot in simulation in each combination of experimental conditions. Evaluation was done in simulation and on a telesurgical robot to evaluate assistance benefits. Performance was assessed across multiple delays, distances, and movement directions using overshoot, endpoint error, trajectory smoothness, economy of motion, and a composite error-time metric. Motion scaling consistently improved performance relative to unassisted trials, yielding up to 20-25% performance gains in key metrics. Effects were most pronounced at longer delays. Personalization demonstrated additional accuracy benefits for inward reaching at a short distance under moderate delay. The results highlight the potential of personalized scaling as a foundation for more adaptive frameworks that integrate contextual information to improve the safety and precision of teleoperated procedures.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatiotemporal",
+    "context",
+    "dependent",
+    "personalized",
+    "movement",
+    "compensation",
+    "delayed",
+    "telemanipulation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 54,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-08T15:51:09.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:41.952Z",
+  "updatedAt": "2026-08-11T02:58:41.989Z"
+},
+{
+  "id": "4999f7d0-8e02-4e0f-8f4e-943ac42a2d9d",
+  "slug": "spectonet-a-physics-guided-spectral-deep-operator-network-for-euler-bernoulli-beam-dynamic-2026-07-29",
+  "title": "SpectONet: A Physics-Guided Spectral Deep Operator Network for Euler-Bernoulli Beam Dynamics",
+  "factSummary": "This paper proposes a novel physics-guided spectral deep operator network, termed SpectONet, for solving Euler-Bernoulli beam (EBB) vibration problems. The proposed framework integrates the operator-learning capability of DeepONet with physics-informed constraints and Chebyshev-Gauss-Lobatto (CGL) sensor placement. Unlike conventional DeepONet frameworks, which commonly employ uniformly distributed sensors, SpectONet uses nonuniform spectral sensor locations with a higher concentration of points near the domain boundaries. This sampling strategy improves the finite-dimensional representation of boundary-sensitive structural responses while requiring only a limited number of branch-network inputs. The governing beam equation, together with the associated initial and boundary conditions, incorporated into the training objective to promote physically consistent and generalizable predictions. Numerical experiments on three synthetic EBB vibration problems and a real-world bridge vibration dataset demonstrate the effectiveness of the proposed framework. Comparisons with strong baselines such as, Vanilla DeepONet, PI-DeepONet, PINN, and CNN-UNet show that SpectONet consistently achieves lower prediction errors across all considered evaluation metrics. In particular, SpectONet achieves at least \\(64\\%\\) improvement over the considered baseline models across the three synthetic problems and at least \\(37\\%\\) for the real-world problems. These results demonstrate that SpectONet provides an accurate, computationally efficient, and physically consistent operator-learning framework for structural vibration analysis.",
+  "summary": "This paper proposes a novel physics-guided spectral deep operator network, termed SpectONet, for solving Euler-Bernoulli beam (EBB) vibration problems. The proposed framework integrates the operator-learning capability of DeepONet with physics-informed constraints and Chebyshev-Gauss-Lobatto (CGL) sensor placement. Unlike conventional DeepONet frameworks, which commonly employ uniformly distributed sensors, SpectONet uses nonuniform spectral sensor locations with a higher concentration of points near the domain boundaries. This sampling strategy improves the finite-dimensional representation of boundary-sensitive structural responses while requiring only a limited number of branch-network inputs. The governing beam equation, together with the associated initial and boundary conditions, incorporated into the training objective to promote physically consistent and generalizable predictions. Numerical experiments on three synthetic EBB vibration problems and a real-world bridge vibration dataset demonstrate the effectiveness of the proposed framework. Comparisons with strong baselines such as, Vanilla DeepONet, PI-DeepONet, PINN, and CNN-UNet show that SpectONet consistently achieves lower prediction errors across all considered evaluation metrics. In particular, SpectONet achieves at least \\(64\\%\\) improvement over the considered baseline models across the three synthetic problems and at least \\(37\\%\\) for the real-world problems. These results demonstrate that SpectONet provides an accurate, computationally efficient, and physically consistent operator-learning framework for structural vibration analysis.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spectonet",
+    "physics",
+    "guided",
+    "spectral",
+    "deep",
+    "operator",
+    "network",
+    "euler"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T14:42:04.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-29T04:00:13.657Z",
+  "updatedAt": "2026-07-29T04:00:13.690Z"
+},
+{
+  "id": "daff6162-d080-4cd8-950c-3aec6d74efbb",
+  "slug": "speculate-while-you-reason-teaching-agents-to-predict-their-next-tool-call-via-joint-agent-2026-07-29",
+  "title": "Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL",
+  "factSummary": "Large language model agents often spend substantial wall-clock time waiting for tool call results. Tool-call speculation can hide this latency by predicting and pre-executing an agent's next tool call if the prediction matches the agent's eventual tool call, but existing speculators are typically separate draft models or cached traces that are poorly aligned with the deployed agent's own behavior. We identify this speculator-agent gap and show that the target agent itself is a strong next-call speculator. This points to a simpler design: unifying the agent and speculator within the same model. In this paper, we introduce the self-speculating agent, a single model that both solves tasks in agent mode and predicts its next tool call from partial trajectories in speculator mode, fully reusing prefix KV cache. To enable this dual-mode agent without degrading performance, we propose a joint agent-speculator reinforcement learning method, which derives speculation targets from the agent's own rollouts and alternates agent and speculator updates. Across agentic search QA and conversational tool-use agentic tasks, our method improves average next tool-call Hit@1 from 44.1 to 61.2 for Qwen3-4B and from 48.9 to 66.3 for Qwen3.5-4B, while preserving agent task success.",
+  "summary": "Large language model agents often spend substantial wall-clock time waiting for tool call results. Tool-call speculation can hide this latency by predicting and pre-executing an agent's next tool call if the prediction matches the agent's eventual tool call, but existing speculators are typically separate draft models or cached traces that are poorly aligned with the deployed agent's own behavior. We identify this speculator-agent gap and show that the target agent itself is a strong next-call speculator. This points to a simpler design: unifying the agent and speculator within the same model. In this paper, we introduce the self-speculating agent, a single model that both solves tasks in agent mode and predicts its next tool call from partial trajectories in speculator mode, fully reusing prefix KV cache. To enable this dual-mode agent without degrading performance, we propose a joint agent-speculator reinforcement learning method, which derives speculation targets from the agent's own rollouts and alternates agent and speculator updates. Across agentic search QA and conversational tool-use agentic tasks, our method improves average next tool-call Hit@1 from 44.1 to 61.2 for Qwen3-4B and from 48.9 to 66.3 for Qwen3.5-4B, while preserving agent task success.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "speculate",
+    "while",
+    "you",
+    "reason",
+    "teaching",
+    "agents",
+    "predict",
+    "their"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T15:00:10.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-29T04:00:13.617Z",
+  "updatedAt": "2026-07-29T04:00:13.650Z"
+},
+{
+  "id": "5c87a512-fd11-40fe-b42a-ce80d467569f",
+  "slug": "speedtuning-speeding-up-policy-execution-with-lightweight-reinforcement-learning-2026-08-11",
+  "title": "SpeedTuning: Speeding Up Policy Execution with Lightweight Reinforcement Learning",
+  "factSummary": "While learned robotic policies hold promise for advancing generalizable manipulation, their practical deployment is often hindered by suboptimal execution speeds. Imitation learning policies are inherently limited by hardware constraints and the speed of the operator during data collection. In addition, there are no established methods for accelerating policies learned via imitation, and the empirical relationship between execution speed and task success remains underexplored. To address these issues, we introduce SpeedTuning, a reinforcement learning framework specifically designed to enhance the speed of manipulation policies. SpeedTuning learns to predict the optimal execution speed for actions, thereby complementing a base policy without necessitating additional data collection. We provide empirical evidence that SpeedTuning achieves substantial improvements in execution speed, exceeding 2.4x speed-up, while preserving an adequate success rate compared to both the original task policy and straightforward speed-up methods such as linear interpolation at a fixed speed. We evaluate our approach across a diverse set of dynamic and precise tasks, including pouring, throwing, and picking, demonstrating its effectiveness and robustness in enhancing real-world robotic manipulation.",
+  "summary": "While learned robotic policies hold promise for advancing generalizable manipulation, their practical deployment is often hindered by suboptimal execution speeds. Imitation learning policies are inherently limited by hardware constraints and the speed of the operator during data collection. In addition, there are no established methods for accelerating policies learned via imitation, and the empirical relationship between execution speed and task success remains underexplored. To address these issues, we introduce SpeedTuning, a reinforcement learning framework specifically designed to enhance the speed of manipulation policies. SpeedTuning learns to predict the optimal execution speed for actions, thereby complementing a base policy without necessitating additional data collection. We provide empirical evidence that SpeedTuning achieves substantial improvements in execution speed, exceeding 2.4x speed-up, while preserving an adequate success rate compared to both the original task policy and straightforward speed-up methods such as linear interpolation at a fixed speed. We evaluate our approach across a diverse set of dynamic and precise tasks, including pouring, throwing, and picking, demonstrating its effectiveness and robustness in enhancing real-world robotic manipulation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "speedtuning",
+    "speeding",
+    "up",
+    "policy",
+    "execution",
+    "lightweight",
+    "reinforcement",
+    "learning"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 71,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T05:31:41.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T13:50:15.166Z",
+  "updatedAt": "2026-08-11T13:50:15.210Z"
+},
+{
+  "id": "2cc98b09-c899-40ee-8cf3-e2685e4d2c7d",
+  "slug": "spieval-evaluating-large-language-models-as-mobile-assistants-over-scattered-personal-info-2026-08-12",
+  "title": "SPIEval: Evaluating Large Language Models as Mobile Assistants over Scattered Personal Information",
+  "factSummary": "Large language models (LLMs) are increasingly deployed as mobile assistants, where a key challenge is leveraging personal information scattered across multiple applications (apps) to complete user instructions. However, due to the lack of dedicated benchmarks, their capabilities remain poorly understood. To address this gap, we introduce SPIEval, a human-curated benchmark grounded in five cognitive capabilities (i.e., reasoning, disambiguation, integration, preference inference, and multi-intent decomposition). SPIEval comprises 250 tasks spanning 4,335 personal records distributed across 10 apps and supports multi-turn interaction through 21 tools. Analysis shows that the benchmark exhibits diverse scenarios, challenging tasks, scattered information, controllable environments, and verifiable outcomes. We evaluate nine representative LLMs and find substantial room for improvement. The best-performing model, GPT-5.5 (xhigh), achieves only 57.3% accuracy, while the weakest achieves just 16.4%. Further analysis reveals that 79% of failures stem from inaccurate information localization, as LLMs often commit to plausible but incorrect information instead of continuing retrieval for verification. We also find that fewer than 2% of retrieval actions employ advanced search methods and observe substantial variation in search efficiency across models. These findings expose fundamental limitations of current LLM-based mobile assistants and motivate future research in this direction. Data and code are available at https://huggingface.co/datasets/Junjie-Ye/SPIEval.",
+  "summary": "Large language models (LLMs) are increasingly deployed as mobile assistants, where a key challenge is leveraging personal information scattered across multiple applications (apps) to complete user instructions. However, due to the lack of dedicated benchmarks, their capabilities remain poorly understood. To address this gap, we introduce SPIEval, a human-curated benchmark grounded in five cognitive capabilities (i.e., reasoning, disambiguation, integration, preference inference, and multi-intent decomposition). SPIEval comprises 250 tasks spanning 4,335 personal records distributed across 10 apps and supports multi-turn interaction through 21 tools. Analysis shows that the benchmark exhibits diverse scenarios, challenging tasks, scattered information, controllable environments, and verifiable outcomes. We evaluate nine representative LLMs and find substantial room for improvement. The best-performing model, GPT-5.5 (xhigh), achieves only 57.3% accuracy, while the weakest achieves just 16.4%. Further analysis reveals that 79% of failures stem from inaccurate information localization, as LLMs often commit to plausible but incorrect information instead of continuing retrieval for verification. We also find that fewer than 2% of retrieval actions employ advanced search methods and observe substantial variation in search efficiency across models. These findings expose fundamental limitations of current LLM-based mobile assistants and motivate future research in this direction. Data and code are available at https://huggingface.co/datasets/Junjie-Ye/SPIEval.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spieval",
+    "evaluating",
+    "large",
+    "language",
+    "models",
+    "as",
+    "mobile",
+    "assistants"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 83,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T09:14:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:46.651Z",
+  "updatedAt": "2026-08-12T03:17:46.688Z"
+},
+{
+  "id": "8ebe8163-a4f8-48c1-83d2-3d74c191878f",
+  "slug": "splitting-the-difference-interpretable-causal-forests-for-treatment-effect-heterogeneity-a-2026-09-16",
+  "title": "Splitting the Difference: Interpretable Causal Forests for Treatment Effect Heterogeneity and Bias",
+  "factSummary": "In various fields, such as medicine and marketing, accurately predicting individual treatment effects holds significant promise. However, achieving reliable predictions alone is often insufficient for making informed decisions; it is equally important to understand why the treatment effect is higher for some individuals than for others. To address this two-fold challenge of prediction and interpretation, we introduce an algorithm based on decision trees and random forests for estimating individual treatment effects. Our algorithm is simple: it operates exactly like a standard random forest, but with a different splitting criterion, and requires no additional workarounds such as double machine learning or orthogonalization as used in Generalized random forests. It handles observational studies with varying treatment propensities without requiring separate estimation of the full propensity function. This is achieved by combining two splitting criteria---one targeting heterogeneity in the treatment effect, the other targeting bias correction for the average treatment effect---which together improve split point selection and automatically distinguish confounders from features responsible for heterogeneity. As a result, interpretation follows directly from the fitted tree structure itself, that is, from which features the trees split on and with which split statistics, without requiring separate post-hoc analysis. For the theoretical analysis of this algorithm, we consider a change point model with step functions for potential outcomes and treatment propensity and provide insights into the theoretical underpinnings of our approach. Simulation studies show that our simple algorithm achieves comparable, and often better, prediction accuracy than existing methods, while substantially improving interpretability.",
+  "summary": "In various fields, such as medicine and marketing, accurately predicting individual treatment effects holds significant promise. However, achieving reliable predictions alone is often insufficient for making informed decisions; it is equally important to understand why the treatment effect is higher for some individuals than for others. To address this two-fold challenge of prediction and interpretation, we introduce an algorithm based on decision trees and random forests for estimating individual treatment effects. Our algorithm is simple: it operates exactly like a standard random forest, but with a different splitting criterion, and requires no additional workarounds such as double machine learning or orthogonalization as used in Generalized random forests. It handles observational studies with varying treatment propensities without requiring separate estimation of the full propensity function. This is achieved by combining two splitting criteria---one targeting heterogeneity in the treatment effect, the other targeting bias correction for the average treatment effect---which together improve split point selection and automatically distinguish confounders from features responsible for heterogeneity. As a result, interpretation follows directly from the fitted tree structure itself, that is, from which features the trees split on and with which split statistics, without requiring separate post-hoc analysis. For the theoretical analysis of this algorithm, we consider a change point model with step functions for potential outcomes and treatment propensity and provide insights into the theoretical underpinnings of our approach. Simulation studies show that our simple algorithm achieves comparable, and often better, prediction accuracy than existing methods, while substantially improving interpretability.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "splitting",
+    "difference",
+    "interpretable",
+    "causal",
+    "forests",
+    "treatment",
+    "effect",
+    "heterogeneity"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 74,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T10:43:57.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:10.041Z",
+  "updatedAt": "2026-09-16T15:45:10.067Z"
+},
+{
+  "id": "c6fe7f64-ab9c-4561-a90c-149039528020",
+  "slug": "spreadsheet-agent-multiformat-reasoning",
+  "title": "SpreadsheetAgent：企业表格理解从整表塞入模型转向分区读取与验证",
+  "factSummary": "2026 年 4 月 14 日提交的 SpreadsheetAgent 论文提出两阶段、多 Agent、多格式表格理解框架；使用 GPT-OSS-120B 时在 SpreadsheetBench 获得 38.16%，高于 ChatGPT Agent 基线的 35.27%。",
+  "summary": "真实企业表格往往规模大、布局复杂，单纯把单元格转成文本既丢失视觉结构，也容易超过上下文窗口。该研究用局部读取、结构草图和验证模块处理大规模表格，为审计、报表和科研数据理解提供更现实的 Agent 路线。",
+  "technicalInsight": "系统先按区域读取代码执行结果、图像与 LaTeX 表格，形成结构草图和行列摘要，再在求解阶段围绕任务选择证据；独立验证模块通过定向检查校正提取结构，减少早期解析错误向后续推理传播。",
+  "industryInsight": "企业数据 Agent 的效果取决于模型能力，也取决于能否保留布局语义、控制读取预算并验证中间结构。表格、文档和 BI 工具需要专门的环境与评测。",
+  "futureOutlook": "当前绝对准确率仍有限，需要验证跨语言、复杂公式、隐藏工作表、权限控制和超大文件中的稳定性，并比较视觉读取带来的额外成本。",
+  "businessValue": "在财务、审计和运营表格中，应优先部署只读理解与异常定位，并要求每个结论回链具体区域和验证步骤，再逐步开放写操作。",
+  "category": "research",
+  "company": "SpreadsheetAgent",
+  "keywords": [
+    "表格理解",
+    "多 Agent",
+    "多模态",
+    "验证"
+  ],
+  "confidenceScore": 94,
+  "heatScore": 0,
+  "impactScore": 88,
+  "valueScore": 91,
+  "scoreFactors": {
+    "authority": 94,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2026-04-14T04:47:21.000Z",
+  "publishedAt": "2026-04-14T04:47:21.000Z",
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
+},
+{
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
   "slug": "spreadsheet-rl-realistic-excel-agents",
   "title": "Spreadsheet-RL：表格 Agent 从提示工程转向真实 Excel 环境强化学习",
@@ -38,8 +669,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -301,8 +932,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "90c96ed9-a675-4003-a460-9acf690a4913",
@@ -880,8 +1511,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -1833,8 +2464,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "c3b4c55c-03a7-4560-a0f4-a05deae09984",
@@ -2105,8 +2736,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -2331,8 +2962,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -2644,8 +3275,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -3188,8 +3819,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -4641,8 +5272,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -7554,8 +8185,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "8f28194e-86ca-43ac-b814-b1d290b09356",
@@ -7868,8 +8499,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -7957,8 +8588,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -8092,8 +8723,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -9962,8 +10593,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "95e6a627-0531-4ee5-97a6-949b11b81ad3",
@@ -10725,8 +11356,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -10996,8 +11627,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -13110,6 +13741,52 @@
   "updatedAt": "2026-09-16T15:45:14.314Z"
 },
 {
+  "id": "1703cd4f-cb9b-40c3-a749-8063e42802a7",
+  "slug": "v0-30-0rc1-bugfix-isolate-supplemental-flashinfer-bf16-autotuning-57285-2026-09-17",
+  "title": "v0.30.0rc1: [Bugfix] Isolate supplemental FlashInfer BF16 autotuning (#57285)",
+  "factSummary": "Signed-off-by: jiahanc 173873397+jiahanc@users.noreply.github.com Co-authored-by: OpenAI Codex codex@openai.com",
+  "summary": "Signed-off-by: jiahanc 173873397+jiahanc@users.noreply.github.com Co-authored-by: OpenAI Codex codex@openai.com",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v0",
+    "30",
+    "0rc1",
+    "bugfix",
+    "isolate",
+    "supplemental",
+    "flashinfer",
+    "bf16"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T10:37:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T17:09:06.545Z",
+  "updatedAt": "2026-09-17T17:09:06.571Z"
+},
+{
   "id": "450fde20-3eb2-4619-8a52-e6b7d6bc76f7",
   "slug": "v0-32-10-rc0-nn-speed-up-prefill-on-double-scale-nvfp4-models-2026-08-13",
   "title": "v0.32.10-rc0: nn: speed up prefill on double-scale nvfp4 models",
@@ -13586,6 +14263,50 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:05.698Z",
   "updatedAt": "2026-09-17T05:32:42.396Z"
+},
+{
+  "id": "b767f550-30ef-4a2e-bc7f-00ddd46a3ec1",
+  "slug": "v0-34-2-rc2-mlxrunner-release-freed-kv-buffers-during-speculative-decode-2026-09-17",
+  "title": "v0.34.2-rc2: mlxrunner: Release freed KV buffers during speculative decode",
+  "factSummary": "Ollama 发布 v0.34.2-rc2，修复 mlxrunner 在投机解码（speculative decode）中的 KV 缓冲区释放问题。原逻辑每生成 256 个 token 释放一次 MLX 已释放缓冲区池，但检查仅在 token 数恰好落在 256 的整数倍时触发；投机解码每轮生成多个 token，多数轮次会跨过该边界，导致缓冲区池从不释放。长上下文下每次 KV 缓存增长都会留下数 GB 无法被后续分配复用的缓冲区，使 runner 内存占用持续攀升直至系统内存耗尽。修复后，只要一轮跨过 256 的整数倍就释放缓冲区池，与单 token 轮次原有行为一致。在 128 GB 机器、98k token 上下文、qwen3.8:27b-mlx 模型下，长投机生成此前会使 runner 超过 90 GB 并触发内核 panic，现在稳定在 30 GB。",
+  "summary": "Ollama v0.34.2-rc2 修复了 mlxrunner 在投机解码下的 KV 缓冲区释放缺陷：原释放检查只在 token 数恰好为 256 整数倍时触发，而投机解码每轮输出多个 token 常跨过边界，导致长上下文生成时内存持续增长。修复后改为每轮跨过 256 整数倍即释放，官方给出的 qwen3.8:27b-mlx 在 98k 上下文、128 GB 机器上的测试显示内存从超过 90 GB 并 panic 降至稳定 30 GB。",
+  "technicalInsight": "该修复针对的是投机解码与周期性资源回收之间的边界条件不匹配：按精确倍数触发的回收逻辑在每轮产出多 token 时被跳过，属于典型的步长假设错误。改为跨边界触发后，回收频率与 KV 缓存增长节奏重新对齐，长上下文内存曲线由持续上升转为平稳。可验证的下一信号是后续 rc 或正式版是否将该逻辑推广到其他后端，以及是否补充针对跨边界场景的回归测试。",
+  "industryInsight": "本地推理运行时在长上下文与投机解码组合下的内存管理仍是工程薄弱点，此类缺陷会直接影响消费级与工作站级硬件的可用上下文长度。Ollama 以发布说明形式公开具体内存数据，说明本地推理的竞争点正从模型支持转向长上下文稳定性与资源效率。可验证的下一信号是其他本地推理项目是否跟进类似的缓冲区回收策略或发布对比数据。",
+  "futureOutlook": "若该修复在正式版中保持，长上下文投机解码在 128 GB 级设备上的可用性将提升，但 30 GB 的稳定占用仍意味着上下文长度与并发受硬件约束。可验证的下一信号是正式版发布说明中的内存数据是否与 rc 一致，以及是否出现针对更低内存设备的进一步优化。",
+  "businessValue": "对使用 Ollama 进行本地长上下文生成的开发者与团队，该修复降低了因内存耗尽导致进程崩溃的风险，减少重试与资源监控成本。可验证的下一信号是正式版发布后用户报告的长上下文稳定性与内存占用是否与官方数据吻合。",
+  "category": "local-inference-runtime",
+  "company": "Ollama",
+  "keywords": [
+    "Ollama",
+    "mlxrunner",
+    "speculative decoding",
+    "KV cache",
+    "memory management",
+    "long context"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T16:45:01.000Z",
+  "publishedAt": "2026-09-17T17:09:48.449Z",
+  "createdAt": "2026-09-17T17:09:05.880Z",
+  "updatedAt": "2026-09-17T17:09:48.449Z"
 },
 {
   "id": "e918d10c-b01d-42f8-be20-e48d5386a742",
@@ -14741,17 +15462,17 @@
   "confidenceScore": 100,
   "heatScore": 52,
   "impactScore": 55,
-  "valueScore": 70,
+  "valueScore": 68,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 100,
     "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 5,
+    "independentSources": 6,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 67,
+    "freshness": 59,
     "crossRegion": false
   },
   "status": "review",
@@ -14760,7 +15481,7 @@
   "happenedAt": "2026-09-15T15:14:42.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:10.890Z",
-  "updatedAt": "2026-09-17T05:32:42.473Z"
+  "updatedAt": "2026-09-17T17:09:06.691Z"
 },
 {
   "id": "dd40c924-7e77-4b33-bb01-c94ddfebc764",
@@ -15835,6 +16556,46 @@
   "publishedAt": "2026-07-27T15:22:25.248Z",
   "createdAt": "2026-07-27T15:21:44.415Z",
   "updatedAt": "2026-07-27T15:22:25.248Z"
+},
+{
+  "id": "bd7809ec-b8a9-4bb9-9567-f44ed08d35b8",
+  "slug": "v2-1-0-rc0-2026-09-17",
+  "title": "v2.1.0-rc0",
+  "factSummary": "cut the revison v2.1.0-rc0",
+  "summary": "cut the revison v2.1.0-rc0",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v2",
+    "rc0"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T14:40:08.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T17:09:06.231Z",
+  "updatedAt": "2026-09-17T17:09:06.256Z"
 },
 {
   "id": "ac72bb04-97d5-4dce-aab6-830265d14753",
@@ -18240,6 +19001,46 @@
   "updatedAt": "2026-09-16T15:45:12.990Z"
 },
 {
+  "id": "4d818ac4-aad4-4017-80b4-0d31ee1acdd2",
+  "slug": "v4-1-19-2026-09-17",
+  "title": "v4.1.19",
+  "factSummary": "Added Images attached to a model that cannot read them are now flagged instead of silently discarded. Thumbnails get a warning badge and the composer explains that the images will be ignored, with a button to switch to an image-capable model. Previously the thumbnail looked normal and the image was replaced with a text placeholder just before the request, so there was no way to tell it had been dropped. Model info and the attachment picker also report image support accurately for models that declare text-only input without listing capabilities. Changed Cline's logo and icons have been refreshed throughout the extension, including the activity bar and panel icons. The W B Inference provider is now listed as CoreWeave, with its sign-up and API-key links updated to match CoreWeave's current documentation. Fixed Long tasks now compact when they actually need to rather than running out of room. The trigger compared a character-based estimate of the conversation (~3 characters per token) against the model's context limit, so content that tokenizes far denser than that — disassembly, image dumps, minified sources — could fill the real context window while the estimate stayed under the threshold and compaction never fired; the turn was then squeezed down to a handful of output tokens. The trigger now also uses the token count the provider itself reports, and how much history is kept is scaled by how far off the estimate turned out to be. The summarizer's output budget also doubled, so a model that reasons before answering can no longer spend the whole budget thinking and return no summary at all. On Windows, opening a repository that contains a file named rg.exe , git.exe , or powershell.exe no longer runs that file in place of the real program. Bare program names were resolved through the workspace directory before PATH, so a planted executable ran with your privileges as soon as the workspace was indexed. Cline now sets Windows' NoDefaultCurrentDirectoryInExePath opt-out…",
+  "summary": "Added Images attached to a model that cannot read them are now flagged instead of silently discarded. Thumbnails get a warning badge and the composer explains that the images will be ignored, with a button to switch to an image-capable model. Previously the thumbnail looked normal and the image was replaced with a text placeholder just before the request, so there was no way to tell it had been dropped. Model info and the attachment picker also report image support accurately for models that declare text-only input without listing capabilities. Changed Cline's logo and icons have been refreshed throughout the extension, including the activity bar and panel icons. The W B Inference provider is now listed as CoreWeave, with its sign-up and API-key links updated to match CoreWeave's current documentation. Fixed Long tasks now compact when they actually need to rather than running out of room. The trigger compared a character-based estimate of the conversation (~3 characters per token) against the model's context limit, so content that tokenizes far denser than that — disassembly, image dumps, minified sources — could fill the real context window while the estimate stayed under the threshold and compaction never fired; the turn was then squeezed down to a handful of output tokens. The trigger now also uses the token count the provider itself reports, and how much history is kept is scaled by how far off the estimate turned out to be. The summarizer's output budget also doubled, so a model that reasons before answering can no longer spend the whole budget thinking and return no summary at all. On Windows, opening a repository that contains a file named rg.exe , git.exe , or powershell.exe no longer runs that file in place of the real program. Bare program names were resolved through the workspace directory before PATH, so a planted executable ran with your privileges as soon as the workspace was indexed. Cline now sets Windows' NoDefaultCurrentDirectoryInExePath opt-out…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "19"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T07:51:58.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T17:09:06.662Z",
+  "updatedAt": "2026-09-17T17:09:06.686Z"
+},
+{
   "id": "1987ea1f-eda6-4224-9ac9-ff386128f037",
   "slug": "v4-1-7-2026-08-09",
   "title": "v4.1.7",
@@ -18790,6 +19591,46 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:05.427Z",
   "updatedAt": "2026-09-16T15:45:05.453Z"
+},
+{
+  "id": "99ad6f7a-5b85-4036-8b36-4f6b64b9d42d",
+  "slug": "v4-38-0-2026-09-17",
+  "title": "v4.38.0",
+  "factSummary": "What's Changed Features feat(api)!: reject legacy reads for new organizations by @maxdeichmann in #17487 feat(ci): deploy AI Gateway automatically to staging by @hassiebp in #17532 feat(api): attribute legacy GET rejections to clients by @maxdeichmann in #17539 feat(web): persistent trace summary strip with tags by @nmtrang29 in #17536 feat(filters): metadata key presence operators; coerce legacy empty-substring filters by @niklassemmler in #17357 feat(ai-gateway): isolate caller tracing context for generations by @hassiebp in #17549 feat(web): graph becomes a view on the tree/timeline switch by @nmtrang29 in #17537 feat(transcript): implement transcript generation from observations by @marliessophie in #17371 feat(ai-gateway): correlate coding agent requests by @hassiebp in #17573 feat(openai): add anonymized customer fixtures for enhanced testing by @marliessophie in #17599 feat(auth): lfe 15680 mcp two level authorization seam all modes by @marksalpeter in #16711 feat(ai-gateway): relay Responses compact and GET models by @hassiebp in #17594 Fixes fix(ai-gateway): clean up generation fields and streaming timing by @hassiebp in #17545 fix(web): remove dead markdown toggle, tabs inset and badge polish by @nmtrang29 in #17446 fix(sessions): Improve tool call deduplication by @bezbac in #17530 fix(web): collapse the corrected output section behind a button by @nmtrang29 in #17534 fix(rbac): return 400 on duplicate org membership in members.create by @niklassemmler in #17428 fix(web): observation Attributes tab by @nmtrang29 in #17540 fix(web): keep LLM connection editor stable during list updates by @nkabardin in #17576 fix(prompts): avoid spilling distinct prompt counts by @sumerman in #17579 fix: normalize leaked orderBy aliases for observations by @sumerman in #17583 fix(web): adding color tokens for JSON viewer by @nmtrang29 in #17559 fix(web): alignment tweaks for observation details by @nmtrang29 in #17560 fix(web): use IBM Plex Mono for monospace text by @nmt…",
+  "summary": "What's Changed Features feat(api)!: reject legacy reads for new organizations by @maxdeichmann in #17487 feat(ci): deploy AI Gateway automatically to staging by @hassiebp in #17532 feat(api): attribute legacy GET rejections to clients by @maxdeichmann in #17539 feat(web): persistent trace summary strip with tags by @nmtrang29 in #17536 feat(filters): metadata key presence operators; coerce legacy empty-substring filters by @niklassemmler in #17357 feat(ai-gateway): isolate caller tracing context for generations by @hassiebp in #17549 feat(web): graph becomes a view on the tree/timeline switch by @nmtrang29 in #17537 feat(transcript): implement transcript generation from observations by @marliessophie in #17371 feat(ai-gateway): correlate coding agent requests by @hassiebp in #17573 feat(openai): add anonymized customer fixtures for enhanced testing by @marliessophie in #17599 feat(auth): lfe 15680 mcp two level authorization seam all modes by @marksalpeter in #16711 feat(ai-gateway): relay Responses compact and GET models by @hassiebp in #17594 Fixes fix(ai-gateway): clean up generation fields and streaming timing by @hassiebp in #17545 fix(web): remove dead markdown toggle, tabs inset and badge polish by @nmtrang29 in #17446 fix(sessions): Improve tool call deduplication by @bezbac in #17530 fix(web): collapse the corrected output section behind a button by @nmtrang29 in #17534 fix(rbac): return 400 on duplicate org membership in members.create by @niklassemmler in #17428 fix(web): observation Attributes tab by @nmtrang29 in #17540 fix(web): keep LLM connection editor stable during list updates by @nkabardin in #17576 fix(prompts): avoid spilling distinct prompt counts by @sumerman in #17579 fix: normalize leaked orderBy aliases for observations by @sumerman in #17583 fix(web): adding color tokens for JSON viewer by @nmtrang29 in #17559 fix(web): alignment tweaks for observation details by @nmtrang29 in #17560 fix(web): use IBM Plex Mono for monospace text by @nmt…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "38"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T15:26:11.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T17:09:06.201Z",
+  "updatedAt": "2026-09-17T17:09:06.227Z"
 },
 {
   "id": "25b58c6c-b14c-477c-badb-4a5d09d2bc7b",
@@ -20272,8 +21113,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "0c34b82e-6080-4e69-bdc8-a88ea60c83ca",
@@ -20406,8 +21247,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -20627,8 +21468,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -20670,8 +21511,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -20893,8 +21734,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -21074,8 +21915,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -21163,8 +22004,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -23504,6 +24345,52 @@
   "updatedAt": "2026-09-16T15:45:08.153Z"
 },
 {
+  "id": "8ef04c17-a1cd-4a10-884d-b4054c52ce54",
+  "slug": "where-the-industry-is-investing-a-look-at-mlperf-inference-v6-1-2026-09-17",
+  "title": "Where the Industry Is Investing: A Look at MLPerf Inference v6.1",
+  "factSummary": "In this analysis, MLPerf Inference Working Group chairs Miro Hodak and Frank Han break down a record field of 30 submitters and 120 systems, the arrival of agentic and end-to-end benchmarks, and what the results signal about where inference engineering is headed. The post Where the Industry Is Investing: A Look at MLPerf Inference v6.1 appeared first on MLCommons .",
+  "summary": "In this analysis, MLPerf Inference Working Group chairs Miro Hodak and Frank Han break down a record field of 30 submitters and 120 systems, the arrival of agentic and end-to-end benchmarks, and what the results signal about where inference engineering is headed. The post Where the Industry Is Investing: A Look at MLPerf Inference v6.1 appeared first on MLCommons .",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "where",
+    "industry",
+    "is",
+    "investing",
+    "look",
+    "at",
+    "mlperf",
+    "inference"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T15:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T17:09:05.918Z",
+  "updatedAt": "2026-09-17T17:09:05.946Z"
+},
+{
   "id": "32df8089-caf1-420f-b234-8a679da91c84",
   "slug": "where-you-measure-decides-what-you-measure-position-selection-in-ablation-based-sae-evalua-2026-08-14",
   "title": "Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation",
@@ -23727,8 +24614,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -24319,8 +25206,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "e092be25-ce0d-4a0e-92b6-360963fe2874",
@@ -24636,8 +25523,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -24680,8 +25567,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -24994,8 +25881,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -25037,8 +25924,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -25080,8 +25967,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -25123,8 +26010,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-17T05:28:08.648Z",
-  "updatedAt": "2026-09-17T05:28:08.648Z"
+  "createdAt": "2026-09-17T17:04:42.177Z",
+  "updatedAt": "2026-09-17T17:04:42.177Z"
 },
 {
   "id": "e0fb253b-fe25-44ba-a026-fdbf2f6acb1b",
