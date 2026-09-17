@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "5ce102e8-fbe1-4478-a819-5867c3fb2822",
+  "id": "7c20a1fe-a544-444e-8b1c-d186b3f0bb9e",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 60,
@@ -63,15 +63,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 16420,
+      "sampleSize": 16712,
       "sampleTarget": 100,
-      "summary": "16420 条信号中 11755 条来自 primary/research/policy，3631 条证据进入事件。",
+      "summary": "16712 条信号中 11993 条来自 primary/research/policy，3803 条证据进入事件。",
       "evidence": {
-        "signals": 16420,
-        "direct": 16420,
-        "primary": 11755,
-        "linkedEvidence": 3631,
-        "linkedSourceCount": 155,
+        "signals": 16712,
+        "direct": 16712,
+        "primary": 11993,
+        "linkedEvidence": 3803,
+        "linkedSourceCount": 156,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -109,15 +109,15 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 600,
+      "sampleSize": 608,
       "sampleTarget": 30,
-      "summary": "600 个公开事件仅 32 个拥有多源证据，575 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "608 个公开事件仅 33 个拥有多源证据，583 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 600,
-        "primaryEvidence": 592,
-        "multiSource": 32,
-        "readyPublished": 575,
-        "averageEvidence": 1.39,
+        "published": 608,
+        "primaryEvidence": 600,
+        "multiSource": 33,
+        "readyPublished": 583,
+        "averageEvidence": 1.4,
         "averageSelfReportedConfidence": 85
       },
       "penalties": [],
@@ -135,10 +135,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 600,
+        "published": 608,
         "fieldCompleteness": 100,
-        "readyPublished": 575,
-        "multiSource": 32,
+        "readyPublished": 583,
+        "multiSource": 33,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 265,
       "sampleTarget": 100,
-      "summary": "128/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 14 个。",
+      "summary": "128/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 22 个。",
       "evidence": {
         "healthy": 265,
         "freshHealthy": 128,
         "active": 132,
         "activeWithRecentSuccess": 129,
-        "published": 600,
-        "recentPublished": 14
+        "published": 608,
+        "recentPublished": 22
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -201,10 +201,10 @@
       "status": "insufficient_data",
       "sampleSize": 0,
       "sampleTarget": 30,
-      "summary": "54 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
+      "summary": "56 条星探卡片的编辑状态不是用户行动结果，当前真实行动/产物复盘样本为 0。",
       "evidence": {
-        "ideas": 54,
-        "editorialAccepted": 44,
+        "ideas": 56,
+        "editorialAccepted": 46,
         "outcomeFeedback": 0,
         "completedArtifacts": 0
       },
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 416,
         "restrictedEnabled": 0,
-        "readyEvents": 575,
-        "totalEvents": 2882,
+        "readyEvents": 583,
+        "totalEvents": 3029,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 65, evidence coverage 72%, final score 60",
-  "startedAt": "2026-09-16T17:09:54.721Z",
-  "finishedAt": "2026-09-16T17:09:54.945Z",
+  "startedAt": "2026-09-17T05:33:44.423Z",
+  "finishedAt": "2026-09-17T05:33:44.649Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -751,18 +751,13 @@
     }
   ],
   "comparison": {
-    "passed": false,
-    "baselineScore": 61,
+    "passed": true,
+    "baselineScore": 60,
     "currentScore": 60,
-    "scoreDelta": -1,
+    "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
-    "regressions": [
-      "overall score regressed from 61 to 60",
-      "dimension source-coverage regressed from 97 to 96",
-      "dimension realtime regressed from 85 to 84",
-      "dimension timeliness regressed from 54 to 52"
-    ]
+    "regressions": []
   }
 }
