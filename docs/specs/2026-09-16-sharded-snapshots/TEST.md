@@ -15,3 +15,7 @@
 ## 2026-09-16 晚间复验
 
 GitHub 认证恢复后，云端 CI 确认 Scout 与 research rendering 两项旧测试受当前日期影响。已让测试使用对应样本的日期，保持生产新鲜度门禁不变；两项较重的数据库集成测试允许 30 秒执行时间。同步最新 main 后，完整 npm run check 与 npm run build 均通过（55 个测试文件、344 项测试），静态站点完整性 issues 为空。
+
+## 2026-09-17 迁移后 CI 修复
+
+实际刷新与来源审计均已成功，快照已在 main 自动转换为分片。迁移后的 CI 暴露 bootstrap 测试仍直接 JSON.parse 清单并读取 sources.length，导致 TypeError。测试改用生产 readSnapshotFile，并新增单文件/分片两种 bootstrap 幂等恢复覆盖。对已迁移的真实 main 执行 npm run check 与 npm run build 全部通过（345 项测试）；静态导出 600 个公开 Event、16,420 个 Signal，完整性 issues 为空。

@@ -5,6 +5,7 @@ import { afterEach, describe, expect, it } from "vitest";
 import { loadConfig } from "../src/config/env.js";
 import { bootstrapRepositoryDatabase } from "../src/db/bootstrap.js";
 import { createDatabase } from "../src/db/database.js";
+import { readSnapshotFile, writeSnapshotFile } from "../src/pipeline/snapshot-storage.js";
 
 const databases: ReturnType<typeof createDatabase>[] = [];
 const temporaryRoots: string[] = [];
@@ -15,7 +16,10 @@ afterEach(async () => {
 });
 
 describe("repository database bootstrap", () => {
-  it("seeds a fresh database, restores the repository snapshot, and remains idempotent", async () => {
+  it.each([
+    false,
+    true,
+  ])("seeds, restores and remains idempotent (sharded: %s)", async (sharded) => {
     const root = await mkdtemp(join(tmpdir(), "agent-pulse-bootstrap-"));
     temporaryRoots.push(root);
     await mkdir(join(root, "data/snapshot"), { recursive: true });
@@ -69,6 +73,14 @@ describe("repository database bootstrap", () => {
       )}\n`,
     );
 
+    if (sharded) {
+      const path = join(root, "data/snapshot/v1.json");
+      await writeSnapshotFile(path, await readFile(path, "utf8"), 1024);
+      expect(JSON.parse(await readFile(path, "utf8")).format).toBe(
+        "agent-pulse-snapshot-shards-v1",
+      );
+    }
+
     const config = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
     const db = createDatabase(config);
     databases.push(db);
@@ -91,7 +103,7 @@ describe("repository database bootstrap", () => {
   it("keeps the main repository snapshot above the catalog-only seed baseline", async () => {
     const config = loadConfig({ NODE_ENV: "test", DATABASE_URL: "sqlite::memory:" });
     const snapshot = JSON.parse(
-      await readFile(join(config.rootDir, "data/snapshot/v1.json"), "utf8"),
+      await readSnapshotFile(join(config.rootDir, "data/snapshot/v1.json")),
     ) as { sources: unknown[]; signals: unknown[]; evaluationRuns: unknown[] };
     expect(snapshot.sources.length).toBeGreaterThanOrEqual(414);
     expect(snapshot.signals.length).toBeGreaterThanOrEqual(4_940);
