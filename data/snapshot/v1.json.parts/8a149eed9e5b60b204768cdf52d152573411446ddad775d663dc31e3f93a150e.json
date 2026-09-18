@@ -1,5 +1,790 @@
 [
 {
+  "id": "e9b5a65c-5aaa-43c8-89d9-93e184a31fe4",
+  "slug": "scores-are-not-decisions-cost-aware-stopping-for-tool-acquisition-in-llm-agents-2026-07-30",
+  "title": "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
+  "factSummary": "As LLM agents increasingly depend on diverse external services such as search engines, databases, and connectors, agent harnesses face a fundamental tool-selection challenge: acquiring too few tools leaves the task under-informed, while too many adds cost, context load, and privacy exposure. Routers and retrievers can rank candidate tools by relevance, but a ranking alone does not determine how many are worth selecting. Existing approaches leave acquisition under heterogeneous costs unaddressed. We formulate this decision as cost-aware marginal decision-focused stopping (CAM-DF) over ranked tool prefixes, with CAM-DF-lite as a compact interpretable variant. We train directly on the offline gap between stopping now and the best continuation: its sign labels the decision, its magnitude weights each error by the payoff at stake. We prove this objective is Bayes-aligned with the stopping target and that score-only rules are suboptimal under heterogeneous costs. We evaluate on 1,343 tasks across five tool-use domains. On $τ$-bench Retail, CAM-DF attains the highest payoff among deployable methods, with gains over a predict-then-threshold baseline across all five ranking sources and two cost regimes. Our approach is state-of-the-art under heterogeneous costs and high cost pressure, with larger gains under weaker rankings. In live execution, CAM-DF exposes the agent to 37\\% fewer tools than full access while maintaining comparable task success. The CAM-DF family is a lightweight pre-execution plugin that turns existing tool rankings into lower-cost acquisition decisions without fine-tuning the underlying LLM.",
+  "summary": "As LLM agents increasingly depend on diverse external services such as search engines, databases, and connectors, agent harnesses face a fundamental tool-selection challenge: acquiring too few tools leaves the task under-informed, while too many adds cost, context load, and privacy exposure. Routers and retrievers can rank candidate tools by relevance, but a ranking alone does not determine how many are worth selecting. Existing approaches leave acquisition under heterogeneous costs unaddressed. We formulate this decision as cost-aware marginal decision-focused stopping (CAM-DF) over ranked tool prefixes, with CAM-DF-lite as a compact interpretable variant. We train directly on the offline gap between stopping now and the best continuation: its sign labels the decision, its magnitude weights each error by the payoff at stake. We prove this objective is Bayes-aligned with the stopping target and that score-only rules are suboptimal under heterogeneous costs. We evaluate on 1,343 tasks across five tool-use domains. On $τ$-bench Retail, CAM-DF attains the highest payoff among deployable methods, with gains over a predict-then-threshold baseline across all five ranking sources and two cost regimes. Our approach is state-of-the-art under heterogeneous costs and high cost pressure, with larger gains under weaker rankings. In live execution, CAM-DF exposes the agent to 37\\% fewer tools than full access while maintaining comparable task success. The CAM-DF family is a lightweight pre-execution plugin that turns existing tool rankings into lower-cost acquisition decisions without fine-tuning the underlying LLM.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scores",
+    "are",
+    "not",
+    "decisions",
+    "cost",
+    "aware",
+    "stopping",
+    "tool"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T16:07:37.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:10.302Z",
+  "updatedAt": "2026-07-30T03:51:10.337Z"
+},
+{
+  "id": "085a3df0-ed50-48fa-b06c-0981fdc87899",
+  "slug": "scout-symmetric-consensus-outlier-detection-for-failure-localization-in-llm-pre-training-2026-08-12",
+  "title": "SCOUT: Symmetric Consensus Outlier Detection for Failure Localization in LLM Pre-Training",
+  "factSummary": "In LLM pre-training, synchronization propagates rank-local stalls, slowdowns, and numerical errors into job-wide symptoms, obscuring their origin. Existing diagnosis often relies on in-process monitors that cannot report after the trainer blocks or terminates, or on post-mortem logs that preserve only synchronized symptoms; offline health tests lose the workload and operating conditions that triggered the failure. We present SCOUT, a unified runtime failure-localization framework built on one design principle: identify outliers through strict-majority consensus among equivalent replicas. SCOUT aligns replica progress, timing, and numerical evidence, then uses its Consensus Collective Communication (C3) abstraction to identify ranks whose compact signatures disagree with their peers. An out-of-band CPU observer remains responsive when training hangs, whereas in-situ replay exercises recurring stragglers and silent data corruption (SDC) beside the live job with its model state, kernels, allocations, communication path, and thermal and memory pressure present. Collective fingerprints expose rank-local protocol divergence. Clean replay coverage certifies checkpoint numerical integrity, preventing recovery from selecting state corrupted by SDC. SCOUT integrates with PyTorch, TorchTitan, Megatron-Core, and DeepSpeed without training-loop or framework-source modifications. SCOUT is open source at https://github.com/LMResiliency/lm-resiliency.",
+  "summary": "In LLM pre-training, synchronization propagates rank-local stalls, slowdowns, and numerical errors into job-wide symptoms, obscuring their origin. Existing diagnosis often relies on in-process monitors that cannot report after the trainer blocks or terminates, or on post-mortem logs that preserve only synchronized symptoms; offline health tests lose the workload and operating conditions that triggered the failure. We present SCOUT, a unified runtime failure-localization framework built on one design principle: identify outliers through strict-majority consensus among equivalent replicas. SCOUT aligns replica progress, timing, and numerical evidence, then uses its Consensus Collective Communication (C3) abstraction to identify ranks whose compact signatures disagree with their peers. An out-of-band CPU observer remains responsive when training hangs, whereas in-situ replay exercises recurring stragglers and silent data corruption (SDC) beside the live job with its model state, kernels, allocations, communication path, and thermal and memory pressure present. Collective fingerprints expose rank-local protocol divergence. Clean replay coverage certifies checkpoint numerical integrity, preventing recovery from selecting state corrupted by SDC. SCOUT integrates with PyTorch, TorchTitan, Megatron-Core, and DeepSpeed without training-loop or framework-source modifications. SCOUT is open source at https://github.com/LMResiliency/lm-resiliency.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scout",
+    "symmetric",
+    "consensus",
+    "outlier",
+    "detection",
+    "failure",
+    "localization",
+    "llm"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T15:12:14.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:40.015Z",
+  "updatedAt": "2026-08-12T03:17:40.055Z"
+},
+{
+  "id": "0a0c9014-d702-4c48-8ac6-a31debf09529",
+  "slug": "scout-unlocking-enhanced-spatial-reasoning-via-structured-chain-of-thought-and-multi-objec-2026-08-13",
+  "title": "SCOUT: Unlocking Enhanced Spatial Reasoning via Structured Chain-of-Thought and Multi-Objective Process Reward",
+  "factSummary": "Existing Vision-Language Models (VLMs) exhibits a critical bottleneck in robust spatial reasoning. Recent reinforcement learning (RL) methods aim to close this gap with verifiable outcomes, yet they suffer from poor credit assignment across intermediate reasoning steps. Concurrently, structured reasoning approaches overlook the critical depth perception necessary for comprehensive 3D understanding. To address these challenges, we propose SCOUT (Structured Chain-Of-Thought Utilizing Process-Supervised RL Training). Specifically, we design a structured Chain-of-Thought (CoT) framework that explicitly models 3D environmental perception to ensure robust spatial understanding and reasoning. Furthermore, we introduce a novel RL algorithm featuring multi-objective process rewards and a tailored advantage estimation method, facilitating fine-grained credit assignment across distinct segments of the reasoning trajectory. To support our framework, we develop SCOUT-24k, a structured spatial reasoning CoT dataset synthesized through a customized pipeline. Extensive evaluations demonstrate that SCOUT-3B improves upon baseline models by 16.85% and 6.3% on general spatial benchmarks and complex spatial reasoning tasks respectively. Notably, our larger SCOUT-7B even outperforms GPT-4o by a margin of 4.28%. Moreover, despite being trained exclusively on single image, SCOUT-7B exhibits robust out-of-domain generalization to multi-image and video scenarios. These empirical results render SCOUT as a critical step towards next generation of spatially-aware VLMs.",
+  "summary": "Existing Vision-Language Models (VLMs) exhibits a critical bottleneck in robust spatial reasoning. Recent reinforcement learning (RL) methods aim to close this gap with verifiable outcomes, yet they suffer from poor credit assignment across intermediate reasoning steps. Concurrently, structured reasoning approaches overlook the critical depth perception necessary for comprehensive 3D understanding. To address these challenges, we propose SCOUT (Structured Chain-Of-Thought Utilizing Process-Supervised RL Training). Specifically, we design a structured Chain-of-Thought (CoT) framework that explicitly models 3D environmental perception to ensure robust spatial understanding and reasoning. Furthermore, we introduce a novel RL algorithm featuring multi-objective process rewards and a tailored advantage estimation method, facilitating fine-grained credit assignment across distinct segments of the reasoning trajectory. To support our framework, we develop SCOUT-24k, a structured spatial reasoning CoT dataset synthesized through a customized pipeline. Extensive evaluations demonstrate that SCOUT-3B improves upon baseline models by 16.85% and 6.3% on general spatial benchmarks and complex spatial reasoning tasks respectively. Notably, our larger SCOUT-7B even outperforms GPT-4o by a margin of 4.28%. Moreover, despite being trained exclusively on single image, SCOUT-7B exhibits robust out-of-domain generalization to multi-image and video scenarios. These empirical results render SCOUT as a critical step towards next generation of spatially-aware VLMs.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scout",
+    "unlocking",
+    "enhanced",
+    "spatial",
+    "reasoning",
+    "via",
+    "structured",
+    "chain"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T16:14:25.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:40.192Z",
+  "updatedAt": "2026-08-13T03:19:40.236Z"
+},
+{
+  "id": "858e2f99-4ed8-477d-834d-8a81ed3742ca",
+  "slug": "scratchsim-a-procedural-synthetic-data-pipeline-for-surface-scratch-detection-2026-07-30",
+  "title": "ScratchSim: A Procedural Synthetic Data Pipeline for Surface Scratch Detection",
+  "factSummary": "While automated defect detection such as the detection of surface scratched is an important aspect in industrial quality control, the scarcity of annotated defect data make this task challenging. This paper presents a procedural rendering pipeline that generates large-scale annotated synthetic training data using BlenderProc, with configurable material appearance, camera modes, and domain randomization, producing automatic COCO-format annotations. To show the potential of our approach, we evaluate four training strategies, namely synthetic-only, real-only, mixed, and fine-tuning from synthetic weights, across two objects with different material properties and three lightweight edge-deployable detectors, YOLOX, YOLO26, and LW-DETR. Our evaluation show that fine-tuning from synthetic weights consistently outperforms real-only training, and that mixed training effectively recovers performance under scarce real-data conditions, with findings validated across both convolutional and transformer-based architectures. The proposed approach enables scalable defect detection without the burden of large real annotated datasets, making it practical for on-device industrial inspection. The pipeline scripts, 3D model, and both synthetic and real annotated scratch datasets for a glossy toy Ferrari car will be made available through the project website upon acceptance.",
+  "summary": "While automated defect detection such as the detection of surface scratched is an important aspect in industrial quality control, the scarcity of annotated defect data make this task challenging. This paper presents a procedural rendering pipeline that generates large-scale annotated synthetic training data using BlenderProc, with configurable material appearance, camera modes, and domain randomization, producing automatic COCO-format annotations. To show the potential of our approach, we evaluate four training strategies, namely synthetic-only, real-only, mixed, and fine-tuning from synthetic weights, across two objects with different material properties and three lightweight edge-deployable detectors, YOLOX, YOLO26, and LW-DETR. Our evaluation show that fine-tuning from synthetic weights consistently outperforms real-only training, and that mixed training effectively recovers performance under scarce real-data conditions, with findings validated across both convolutional and transformer-based architectures. The proposed approach enables scalable defect detection without the burden of large real annotated datasets, making it practical for on-device industrial inspection. The pipeline scripts, 3D model, and both synthetic and real annotated scratch datasets for a glossy toy Ferrari car will be made available through the project website upon acceptance.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scratchsim",
+    "procedural",
+    "synthetic",
+    "data",
+    "pipeline",
+    "surface",
+    "scratch",
+    "detection"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T15:54:01.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:10.806Z",
+  "updatedAt": "2026-07-30T03:51:10.839Z"
+},
+{
+  "id": "e03a160f-6316-48bd-803c-90e16cc1a42f",
+  "slug": "screenshot-a-foundation-model-for-few-shot-combination-drug-screening-2026-08-13",
+  "title": "ScreenShot: A Foundation Model for Few-Shot Combination Drug Screening",
+  "factSummary": "Treating patients with combinations of drugs reduces the risk of resistance to any individual drug. Finding effective combinations is difficult because the large search space makes combinatorial screens prohibitively expensive, time consuming, and often technically infeasible. Predictive models can fill this gap, yet existing methods typically require molecular profiling of each sample and per-cohort training, limiting their applicability when time and tissue are scarce. To address this challenge, we introduce ScreenShot, a hierarchical transformer pretrained on 40 drug screening datasets covering 3,700 drugs and 6,000 biological samples, whose architecture mirrors the nested structure of screening data. Given a few-shot context of observations from a new patient, ScreenShot predicts the response of the sample to combination therapies through in-context learning, operating directly on functional measurements with no fine-tuning and no molecular profiling. On four held-out datasets, ScreenShot outperforms all baselines in both prediction accuracy and identification of selectively effective treatments. ScreenShot's internal representations are directly useful for experimental design: we use them to drive a weighted k-means++ active learning strategy that selects which experiments to run, achieving the same hit detection as uniform screening with a third of the budget. Source code and interactive dashboard: https://github.com/tansey-lab/screenshot.",
+  "summary": "Treating patients with combinations of drugs reduces the risk of resistance to any individual drug. Finding effective combinations is difficult because the large search space makes combinatorial screens prohibitively expensive, time consuming, and often technically infeasible. Predictive models can fill this gap, yet existing methods typically require molecular profiling of each sample and per-cohort training, limiting their applicability when time and tissue are scarce. To address this challenge, we introduce ScreenShot, a hierarchical transformer pretrained on 40 drug screening datasets covering 3,700 drugs and 6,000 biological samples, whose architecture mirrors the nested structure of screening data. Given a few-shot context of observations from a new patient, ScreenShot predicts the response of the sample to combination therapies through in-context learning, operating directly on functional measurements with no fine-tuning and no molecular profiling. On four held-out datasets, ScreenShot outperforms all baselines in both prediction accuracy and identification of selectively effective treatments. ScreenShot's internal representations are directly useful for experimental design: we use them to drive a weighted k-means++ active learning strategy that selects which experiments to run, achieving the same hit detection as uniform screening with a third of the budget. Source code and interactive dashboard: https://github.com/tansey-lab/screenshot.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "screenshot",
+    "foundation",
+    "model",
+    "few",
+    "shot",
+    "combination",
+    "drug",
+    "screening"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T16:13:50.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:40.245Z",
+  "updatedAt": "2026-08-13T03:19:40.288Z"
+},
+{
+  "id": "8b97b98c-3340-4f8c-87cd-f01615b5cb11",
+  "slug": "scrouting-cost-aware-routing-of-coding-agents-by-scouting-the-repository-first-2026-08-06",
+  "title": "Scrouting: Cost-Aware Routing of Coding Agents by Scouting the Repository First",
+  "factSummary": "Frontier language models can resolve repository-level software issues, but each attempt is expensive, and existing routers select a model from the issue text alone. We present SuperScout, which routes after scouting the repository: a 7B searcher, SuperScout-7B, first explores the repository and produces a structured handoff whose reproduction claims are sandbox-verified, with false claims stripped before delivery. The searcher's hidden states, together with the task text, then feed a resume-based router that dispatches the task to one of four frontier fixers. Adding a new fixer requires no retraining. On the full Python slice of SWE-bench Pro (266 tasks) under the benchmark's official capped budget tier, SuperScout matches the best single model's solve rate (159 of 266 for SuperScout, 158 for the best model) at about a fifth of the total cost per solve, and the reported configuration sits above the random traffic-splitting baseline. A no-router ablation, always the cheapest fixer with the handoff, ties the routed system on this benchmark, so the handoff rather than the routing decision carries the result. A paired calibration study points to the mechanism: the handoff appears to redistribute rather than add solving ability, lifting the three cheaper fixers while slightly hurting the strongest, though at $N=99$ the per-fixer effects are directional only; the searcher's hidden states improve cost routing on the calibration labels while the handoff's own text does not. The searcher's compute adds less than half a cent of GPU time per task.",
+  "summary": "Frontier language models can resolve repository-level software issues, but each attempt is expensive, and existing routers select a model from the issue text alone. We present SuperScout, which routes after scouting the repository: a 7B searcher, SuperScout-7B, first explores the repository and produces a structured handoff whose reproduction claims are sandbox-verified, with false claims stripped before delivery. The searcher's hidden states, together with the task text, then feed a resume-based router that dispatches the task to one of four frontier fixers. Adding a new fixer requires no retraining. On the full Python slice of SWE-bench Pro (266 tasks) under the benchmark's official capped budget tier, SuperScout matches the best single model's solve rate (159 of 266 for SuperScout, 158 for the best model) at about a fifth of the total cost per solve, and the reported configuration sits above the random traffic-splitting baseline. A no-router ablation, always the cheapest fixer with the handoff, ties the routed system on this benchmark, so the handoff rather than the routing decision carries the result. A paired calibration study points to the mechanism: the handoff appears to redistribute rather than add solving ability, lifting the three cheaper fixers while slightly hurting the strongest, though at $N=99$ the per-fixer effects are directional only; the searcher's hidden states improve cost routing on the calibration labels while the handoff's own text does not. The searcher's compute adds less than half a cent of GPU time per task.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scrouting",
+    "cost",
+    "aware",
+    "routing",
+    "coding",
+    "agents",
+    "by",
+    "scouting"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-05T13:11:31.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-06T03:59:12.203Z",
+  "updatedAt": "2026-08-06T03:59:12.236Z"
+},
+{
+  "id": "7f3d9324-2bc7-4f88-9ae8-dcec0a1dac2e",
+  "slug": "sdk-agents-v0-0-68-2026-08-01",
+  "title": "sdk/agents/v0.0.68",
+  "factSummary": "Cline 发布了 @cline/agents@0.0.68、@cline/llms@0.0.68 和 @cline/shared@0.0.68 三个 SDK 包的新版本，时间均为 2026-08-01。",
+  "summary": "Cline 于 2026 年 8 月 1 日发布了三个 SDK 包的新版本：@cline/agents@0.0.68、@cline/llms@0.0.68 和 @cline/shared@0.0.68。这些版本更新可能涉及 Agent 功能、LLM 集成和共享工具。",
+  "technicalInsight": "此次发布表明 Cline 正在持续迭代其 SDK 组件，agents 和 llms 包的同步更新可能意味着 Agent 与 LLM 集成层面的改进。下一步可关注 changelog 中具体的技术变更。",
+  "industryInsight": "Cline 作为开源 AI 助手，其 SDK 的频繁版本更新反映了开发者工具领域对模块化和可组合性的重视。",
+  "futureOutlook": "未来可关注这些 SDK 包是否引入新的 Agent 能力或 LLM 支持，以及社区采用情况。",
+  "businessValue": "对于使用 Cline SDK 的开发者，此次更新可能带来功能增强或 bug 修复，提升开发效率。",
+  "category": "open-source",
+  "company": "Cline",
+  "keywords": [
+    "Cline",
+    "SDK",
+    "agents",
+    "llms",
+    "shared",
+    "release"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 71,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-01T05:29:25.000Z",
+  "publishedAt": "2026-08-01T14:04:04.518Z",
+  "createdAt": "2026-08-01T14:03:22.965Z",
+  "updatedAt": "2026-08-02T14:04:35.580Z"
+},
+{
+  "id": "52d9b0e8-f407-42a9-b739-62323b8e4e65",
+  "slug": "sdk-agents-v0-0-72-2026-08-09",
+  "title": "sdk/agents/v0.0.72",
+  "factSummary": "Cline 于 2026-08-09 发布了 @cline/agents@0.0.72、@cline/shared@0.0.72 和 @cline/llms@0.0.72 三个 SDK 包的新版本。",
+  "summary": "Cline 发布了 agents、shared 和 llms 三个 SDK 包的 0.0.72 版本，属于常规版本更新。",
+  "technicalInsight": "此次发布涉及 agents、shared 和 llms 三个包，可能包含对 Agent 运行时、共享工具和 LLM 接口的改进，但具体变更内容未在证据中说明。",
+  "industryInsight": "Cline 作为 AI 编程助手，其 SDK 的持续更新表明开发者工具链正在快速迭代，但此次发布的具体影响尚不明确。",
+  "futureOutlook": "后续可关注 Cline 的更新日志或文档，以了解这些版本的具体变更及其对开发者生态的影响。",
+  "businessValue": "对于使用 Cline SDK 的开发者或企业，此次更新可能带来功能增强或修复，但商业价值需结合具体变更评估。",
+  "category": "sdk-release",
+  "company": "Cline",
+  "keywords": [
+    "Cline",
+    "SDK",
+    "agents",
+    "shared",
+    "llms",
+    "版本更新"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 54,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 47,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-09T02:33:22.000Z",
+  "publishedAt": "2026-08-09T02:57:26.018Z",
+  "createdAt": "2026-08-09T02:56:42.565Z",
+  "updatedAt": "2026-08-12T03:17:42.182Z"
+},
+{
+  "id": "51f7172d-f345-4281-86ff-ac28598d154e",
+  "slug": "sdk-agents-v0-0-75-2026-08-15",
+  "title": "sdk/agents/v0.0.75",
+  "factSummary": "@cline/agents@0.0.75",
+  "summary": "@cline/agents@0.0.75",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "sdk",
+    "agents",
+    "v0",
+    "75"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 60,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 82,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-14T07:32:43.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-15T02:08:54.996Z",
+  "updatedAt": "2026-08-15T02:08:55.063Z"
+},
+{
+  "id": "63353a98-c51c-4f64-b480-04ef187c4db6",
+  "slug": "sdk-core-v0-0-67-2026-07-31",
+  "title": "sdk/core/v0.0.67",
+  "factSummary": "Cline 于 2026-07-31 发布了 @cline/core、@cline/shared、@cline/llms、@cline/agents 四个包的 v0.0.67 版本。",
+  "summary": "Cline 发布了其 SDK 的多个核心包的新版本，包括 core、shared、llms 和 agents，版本号均为 v0.0.67。",
+  "technicalInsight": "此次发布涉及 SDK 的核心、共享、语言模型和代理模块，可能包含对 Agent 开发工具链的更新，但具体变更内容未在证据中说明。",
+  "industryInsight": "Cline 作为 AI 编程助手，其 SDK 的持续更新表明开发者工具链正在快速迭代，但本次发布的具体影响尚不明确。",
+  "futureOutlook": "后续可关注 Cline 官方发布说明或 changelog，以了解 v0.0.67 的具体功能变更及其对开发者生态的影响。",
+  "businessValue": "对于使用 Cline SDK 的开发者或企业，此次版本更新可能带来功能改进或修复，但商业价值需结合具体变更评估。",
+  "category": "open-source",
+  "company": "Cline",
+  "keywords": [
+    "Cline",
+    "SDK",
+    "release",
+    "v0.0.67"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 54,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 53,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-31T01:16:24.000Z",
+  "publishedAt": "2026-07-31T04:19:14.422Z",
+  "createdAt": "2026-07-31T04:18:34.786Z",
+  "updatedAt": "2026-08-02T14:04:35.580Z"
+},
+{
+  "id": "9ef3e2df-39cf-434c-a98e-461d314d1f16",
+  "slug": "sdk-core-v0-0-70-2026-08-05",
+  "title": "sdk/core/v0.0.70",
+  "factSummary": "@cline/core@0.0.70",
+  "summary": "@cline/core@0.0.70",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "sdk",
+    "core",
+    "v0",
+    "70"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 18,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 39,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-05T09:15:52.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-05T14:40:48.050Z",
+  "updatedAt": "2026-08-09T02:56:42.555Z"
+},
+{
+  "id": "1a77bc44-b863-4e31-96be-e8cd15121f48",
+  "slug": "sdk-core-v0-0-74-2026-08-13",
+  "title": "sdk/core/v0.0.74",
+  "factSummary": "Cline 发布了 @cline/core、@cline/shared、@cline/llms 和 @cline/agents 四个包的 v0.0.74 版本，时间均在 2026-08-13 05:58 UTC 左右。",
+  "summary": "Cline 于 2026 年 8 月 13 日发布了其 SDK 的 v0.0.74 版本，涉及 core、shared、llms 和 agents 四个子包。",
+  "technicalInsight": "此次发布涉及多个 SDK 子包，可能包含对核心逻辑、共享工具、语言模型接口和代理功能的更新，但具体变更内容未在证据中说明。",
+  "industryInsight": "Cline 作为 AI 编程助手，其 SDK 的频繁版本更新表明开发者工具链正在快速迭代，以增强 Agent 能力。",
+  "futureOutlook": "后续可关注 Cline 官方发布说明或 changelog，以了解 v0.0.74 的具体功能改进和修复。",
+  "businessValue": "SDK 的持续更新有助于维护开发者生态，增强 Cline 在 AI 编程工具市场的竞争力。",
+  "category": "open-source",
+  "company": "Cline",
+  "keywords": [
+    "Cline",
+    "SDK",
+    "release",
+    "v0.0.74"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 20,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 63,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-13T05:58:47.000Z",
+  "publishedAt": "2026-08-13T13:56:22.262Z",
+  "createdAt": "2026-08-13T13:55:32.265Z",
+  "updatedAt": "2026-08-15T02:08:54.986Z"
+},
+{
+  "id": "b670a8c8-71fd-4dbd-b955-743e20b999cb",
+  "slug": "sdk-core-v0-0-83-2026-09-16",
+  "title": "sdk/core/v0.0.83",
+  "factSummary": "@cline/core@0.0.83",
+  "summary": "@cline/core@0.0.83",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "sdk",
+    "core",
+    "v0",
+    "83"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T05:53:14.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:13.028Z",
+  "updatedAt": "2026-09-16T15:45:13.078Z"
+},
+{
+  "id": "da8180ea-1830-4879-a980-4253d74094e0",
+  "slug": "sdk-v0-0-65-2026-07-20",
+  "title": "SDK v0.0.65",
+  "factSummary": "Claude Code and Codex provider SDKs are now optional peer dependencies loaded on demand, dramatically cutting install size Added Kimi K3 to the bundled ClinePass model fallback Runs now retry once after refreshing expired OAuth credentials Team runs: the spawn tool is no longer exposed to teammate agents Team runs: errored teammate runs now report as failed instead of completed Improved shell-command parsing to fix a Windows shell mismatch New @cline/ui agent chat components with Storybook and npm packaging Updated the bundled model catalog Full Changelog : sdk/sdk/v0.0.64...sdk/sdk/v0.0.65",
+  "summary": "Claude Code and Codex provider SDKs are now optional peer dependencies loaded on demand, dramatically cutting install size Added Kimi K3 to the bundled ClinePass model fallback Runs now retry once after refreshing expired OAuth credentials Team runs: the spawn tool is no longer exposed to teammate agents Team runs: errored teammate runs now report as failed instead of completed Improved shell-command parsing to fix a Windows shell mismatch New @cline/ui agent chat components with Storybook and npm packaging Updated the bundled model catalog Full Changelog : sdk/sdk/v0.0.64...sdk/sdk/v0.0.65",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "sdk",
+    "v0",
+    "65"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 26,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 37,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-19T04:02:15.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-20T04:31:29.887Z",
+  "updatedAt": "2026-07-23T04:04:13.844Z"
+},
+{
+  "id": "37873dde-7bda-49ad-ac12-6952528f5dcc",
+  "slug": "sdk-v0-0-66-2026-07-29",
+  "title": "SDK v0.0.66",
+  "factSummary": "Cline 发布了 SDK v0.0.66，包含 @cline/llms、@cline/shared、@cline/agents、@cline/core 等子包。新版本支持免费 Cline 模型（cline-free），免费模型标记为“(free)”且定价为零，达到免费层时返回包含重置时间的专用限制错误。Agentic compaction 成为默认上下文压缩策略；修复了 agentic compaction 在 OpenAI Compatible 提供商上静默回退到 basic compaction 的问题（因构建 handler 时未提供 base URL 而访问 api.openai.com），以及手动压缩预算使用 64k 回退而非模型实际上下文窗口的问题。修复了 agentic compaction 在工具密集的转录中找不到切割点导致无限“auto-compaction skipped”的问题，现在助手消息是有效的切割边界。连接器会话在守护进程或中心重启后持久化并自动重连。计划/行动模式、工具自动批准和压缩模式现在持久化在全局设置中，并支持跨进程安全写入，避免两个主机互相覆盖。内置提供商列表现在从 models.dev 生成，扩大了开箱即用的提供商覆盖范围。编辑器工具保留文件的现有行尾，CRLF 文件不再出现混合行尾。",
+  "summary": "Cline 发布 SDK v0.0.66，引入免费模型支持、修复 agentic compaction 回退和上下文窗口预算问题，并增强会话持久化和全局设置跨进程安全。",
+  "technicalInsight": "Agentic compaction 成为默认策略，并修复了在 OpenAI Compatible 提供商上因缺少 base URL 而静默回退到 basic compaction 的问题，表明 Cline 正在强化其上下文压缩的鲁棒性。手动压缩预算使用 64k 回退而非模型实际上下文窗口的修复，暗示之前可能存在上下文窗口利用不充分的问题。",
+  "industryInsight": "Cline 通过从 models.dev 生成内置提供商列表，降低了用户配置门槛，可能推动更多开发者采用其 SDK。免费模型的支持和专用限制错误表明 Cline 正在构建分层定价体系，以吸引免费用户并平滑转化。",
+  "futureOutlook": "可验证的下一信号：Cline 是否会在后续版本中引入基于使用量的付费层或更细粒度的免费配额管理。",
+  "businessValue": "免费模型支持和跨进程安全的全局设置降低了团队协作的摩擦，可能加速 Cline SDK 在企业开发环境中的采用。",
+  "category": "open-source",
+  "company": "Cline",
+  "keywords": [
+    "SDK",
+    "v0.0.66",
+    "agentic compaction",
+    "免费模型",
+    "会话持久化",
+    "全局设置",
+    "models.dev"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 18,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 40,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T22:35:13.000Z",
+  "publishedAt": "2026-07-29T04:01:01.309Z",
+  "createdAt": "2026-07-29T04:00:11.330Z",
+  "updatedAt": "2026-08-01T14:03:22.959Z"
+},
+{
+  "id": "989a17d7-f02f-4d76-8d4b-e21c2f393863",
+  "slug": "sdk-v0-0-69-2026-08-02",
+  "title": "SDK v0.0.69",
+  "factSummary": "Cline 发布 SDK v0.0.69（含 @cline/shared@0.0.69 与 @cline/llms@0.0.69）。Ollama 的 response-start 超时默认值从 30 秒改为 5 分钟；完全空响应（无文本、推理或工具调用）在模型边界重试；VS Code 与 CLI 中重新创建检查点，恢复时快照包含任务期间创建的文件并移除检查点后创建的文件，.gitignore 路径（如 build output、node_modules、.env）不受影响，恢复前有恢复快照。",
+  "summary": "Cline 发布 SDK v0.0.69，主要修复 Ollama 大模型冷加载超时问题（默认超时从 30 秒改为 5 分钟），对空响应在模型边界重试，并修复 VS Code 与 CLI 中检查点未记录的问题，恢复时实现工作区回滚。",
+  "technicalInsight": "该版本针对 Ollama 集成做了超时与重试优化，并修复检查点机制，表明 Agent 工具链在长任务可靠性与状态恢复上持续迭代。",
+  "industryInsight": "Cline 作为开源 Agent 工具，其 SDK 更新反映开发者工具对模型服务稳定性与任务可恢复性的重视。",
+  "futureOutlook": "后续可观察 Ollama 冷加载性能优化或超时配置的进一步调整，以及检查点恢复功能在更多场景的验证。",
+  "businessValue": "提升 Agent 工具在真实工作流中的可靠性，降低因超时或状态丢失导致的任务失败率，增强开发者采用意愿。",
+  "category": "developer-tools",
+  "company": "Cline",
+  "keywords": [
+    "SDK",
+    "Ollama",
+    "checkpoint",
+    "timeout",
+    "retry"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 18,
+  "impactScore": 55,
+  "valueScore": 53,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 42,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-02T04:26:34.000Z",
+  "publishedAt": "2026-08-02T14:05:23.827Z",
+  "createdAt": "2026-08-02T14:04:35.546Z",
+  "updatedAt": "2026-08-05T14:40:48.045Z"
+},
+{
+  "id": "952e489a-62d4-439f-8293-afecf98f26a8",
+  "slug": "sdk-v0-0-71-2026-08-06",
+  "title": "SDK v0.0.71",
+  "factSummary": "Reasoning settings now resolve portably across AI SDK providers — effort levels and enable/disable flags map to the AI SDK's native reasoning setting (including Ollama), replacing the per-provider thinking overrides, and an explicit request to disable reasoning now takes priority sdk.error telemetry from agent runs is attributed to the model actually in use, and undefined values are stripped from the event properties Refreshed the model catalog from models.dev, and surfaced meta/muse-spark-1.2-contributor for the Cline provider Full Changelog : sdk/sdk/v0.0.70...sdk/sdk/v0.0.71",
+  "summary": "Reasoning settings now resolve portably across AI SDK providers — effort levels and enable/disable flags map to the AI SDK's native reasoning setting (including Ollama), replacing the per-provider thinking overrides, and an explicit request to disable reasoning now takes priority sdk.error telemetry from agent runs is attributed to the model actually in use, and undefined values are stripped from the event properties Refreshed the model catalog from models.dev, and surfaced meta/muse-spark-1.2-contributor for the Cline provider Full Changelog : sdk/sdk/v0.0.70...sdk/sdk/v0.0.71",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "sdk",
+    "v0",
+    "71"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 27,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 50,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-06T07:29:51.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-06T14:42:25.906Z",
+  "updatedAt": "2026-08-09T02:56:42.553Z"
+},
+{
+  "id": "534c266d-b05b-41ce-b2ef-cf0faf379a69",
+  "slug": "sdk-v0-0-73-2026-08-12",
+  "title": "SDK v0.0.73",
+  "factSummary": "Fixed hosts reconnecting to stale managed Hub daemons: daemons now carry a runtime build fingerprint, so upgrading retires and respawns a daemon still running older code instead of attaching to it Fixed compaction being silently skipped on reasoning models. The summarizer no longer hardcodes a 1024-token output cap — it honors an explicit max-output-tokens setting, defaults to 4096 (lowered when the model reports less), and logs a diagnostic when a summary comes back empty Added Fable 5 ( claude-fable-5 ) to the Vertex model catalog. Pricing is intentionally omitted because Vertex bills region-dependently, so cost shows as unknown rather than wrong Custom Vertex model IDs are now passed through unchanged, routing Claude-style IDs to the Anthropic-on-Vertex path Full Changelog : sdk/sdk/v0.0.72...sdk/sdk/v0.0.73",
+  "summary": "Fixed hosts reconnecting to stale managed Hub daemons: daemons now carry a runtime build fingerprint, so upgrading retires and respawns a daemon still running older code instead of attaching to it Fixed compaction being silently skipped on reasoning models. The summarizer no longer hardcodes a 1024-token output cap — it honors an explicit max-output-tokens setting, defaults to 4096 (lowered when the model reports less), and logs a diagnostic when a summary comes back empty Added Fable 5 ( claude-fable-5 ) to the Vertex model catalog. Pricing is intentionally omitted because Vertex bills region-dependently, so cost shows as unknown rather than wrong Custom Vertex model IDs are now passed through unchanged, routing Claude-style IDs to the Anthropic-on-Vertex path Full Changelog : sdk/sdk/v0.0.72...sdk/sdk/v0.0.73",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "sdk",
+    "v0",
+    "73"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 27,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 44,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T18:29:59.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:42.136Z",
+  "updatedAt": "2026-08-15T02:08:54.984Z"
+},
+{
   "id": "dff91f60-fbc0-49ec-9fac-401dff37a163",
   "slug": "sdk-v0-114-0-2026-07-24",
   "title": "sdk: v0.114.0",
@@ -80,8 +865,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -214,8 +999,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -623,8 +1408,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -1211,8 +1996,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -1662,8 +2447,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -1885,8 +2670,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -2020,8 +2805,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "ab3ace26-5eac-459c-a323-39b13f2698e8",
@@ -2565,8 +3350,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -2791,8 +3576,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -3062,8 +3847,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -3150,8 +3935,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -3236,8 +4021,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -3733,8 +4518,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -4049,8 +4834,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -4685,8 +5470,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -4774,8 +5559,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -4817,8 +5602,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -5319,8 +6104,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -5361,8 +6146,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -5624,8 +6409,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -6295,8 +7080,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -7382,8 +8167,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -7700,8 +8485,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -7926,8 +8711,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -8239,8 +9024,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -8783,8 +9568,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -10236,8 +11021,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -11718,6 +12503,50 @@
   "publishedAt": null,
   "createdAt": "2026-08-17T02:14:09.336Z",
   "updatedAt": "2026-08-17T02:14:09.380Z"
+},
+{
+  "id": "9aae038b-781f-4640-bf75-6d7f1aac14c3",
+  "slug": "the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts-2026-09-18",
+  "title": "The new AgentCore runtime: Elastic, optimized, and consistently fast starts",
+  "factSummary": "AWS 在 AWS Machine Learning Blog 宣布推出新的 AgentCore runtime，称其为 Amazon Bedrock AgentCore 的一项能力，面向生产级 agent 对速度、灵活性和成本效率的需求；该 runtime 会在会话释放内存时回收内存，并在不同镜像大小或并发条件下提供一致的冷启动表现。",
+  "summary": "AWS 发布新版 AgentCore runtime，定位为 Amazon Bedrock AgentCore 的组成部分，强调弹性、优化与稳定快速的启动。证据直接给出的两项特性是：会话释放内存时回收内存，以及无论镜像大小或并发如何都保持一致的冷启动。",
+  "technicalInsight": "判断：该公告把 runtime 层的资源回收与冷启动一致性作为核心卖点，指向 agent 生产部署中常见的启动延迟与内存占用问题。可验证的下一信号是 AWS 是否公布冷启动时延、内存回收比例或并发上限等可量化指标，以及是否提供与旧 runtime 的对比基准。",
+  "industryInsight": "判断：云厂商正把 agent 运行时作为托管平台能力来竞争，而非仅提供模型 API。若该 runtime 被纳入 Bedrock AgentCore 的默认路径，可能影响企业选择 agent 托管平台的考量维度。可验证的下一信号是其他云厂商或 agent 平台是否跟进类似的运行时弹性与冷启动承诺。",
+  "futureOutlook": "判断：短期内该能力更可能先服务已在 Bedrock 上构建 agent 的团队。可验证的下一信号是 AWS 后续是否发布迁移指南、定价细节或客户案例，以证明其在真实生产负载下的表现。",
+  "businessValue": "判断：对使用 Bedrock AgentCore 的团队，内存回收与冷启动一致性可能降低 agent 服务的资源成本与响应波动。可验证的下一信号是官方是否给出成本或性能的量化收益，以及是否有第三方复现测试。",
+  "category": "agent-runtime",
+  "company": "Amazon Bedrock AgentCore",
+  "keywords": [
+    "AgentCore",
+    "Amazon Bedrock",
+    "runtime",
+    "cold start",
+    "memory reclamation",
+    "agent infrastructure"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T15:31:34.000Z",
+  "publishedAt": "2026-09-18T16:34:06.272Z",
+  "createdAt": "2026-09-18T16:33:26.010Z",
+  "updatedAt": "2026-09-18T16:34:06.272Z"
 },
 {
   "id": "32c83b4e-eb55-4824-8d43-d58300f02e96",
@@ -13332,8 +14161,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "8f28194e-86ca-43ac-b814-b1d290b09356",
@@ -13692,8 +14521,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -13781,8 +14610,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -13916,8 +14745,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -15968,8 +16797,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "95e6a627-0531-4ee5-97a6-949b11b81ad3",
@@ -16731,8 +17560,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -17002,8 +17831,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -19909,6 +20738,46 @@
   "updatedAt": "2026-08-08T02:50:08.182Z"
 },
 {
+  "id": "1d444ae0-c3e2-40c6-a75b-dfc838f97fe8",
+  "slug": "v0-5-20-2026-09-18",
+  "title": "v0.5.20",
+  "factSummary": "Release v0.5.20",
+  "summary": "Release v0.5.20",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v0",
+    "20"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T08:02:22.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T16:33:26.608Z",
+  "updatedAt": "2026-09-18T16:33:26.640Z"
+},
+{
   "id": "76b47134-d080-4e99-9ecf-cb1403cbfa22",
   "slug": "v1-10-0-2026-08-06",
   "title": "v1.10.0",
@@ -20502,6 +21371,52 @@
   "updatedAt": "2026-07-20T14:39:45.871Z"
 },
 {
+  "id": "0192ad68-c9a8-47a3-9ab5-46d65571b0bf",
+  "slug": "v1-38-16-bug-fixes-and-performance-improvements-across-modules-roaringset-and-index-queues-2026-09-18",
+  "title": "v1.38.16 - Bug fixes and performance improvements across modules, roaringset, and index queues",
+  "factSummary": "Breaking Changes none New Features none Fixes Fix replica movement to be enable-able via runtime config by @tsmith023 in #13064 fix(objects): stop re-call the class the reference write already read by @moogacs in #13068 modules(rest): remove /v1/modules endpoint and contextionary extension/concept handlers by @antas-marcin in #13083 backport: fix(db): locks usage ( #12525 )( #12082 ) by @moogacs in #13100 perf(roaringset): stream the memtable flush and compact the bitmaps it writes by @aliszka in #13038 fix(roaringset-pr2): measure a memtable's size as the heap its tree holds by @aliszka in #13039 perf(roaringset-pr3): allocate a key's additions or deletions only when written by @aliszka in #13040 queue: release the chunk writer buffer once a chunk is promoted by @asdine in #13126 shard: a replica snapshot carries index.db, so a moved dynamic index keeps its upgrade (v1.38) by @asdine in #13130 perf(roaringsetrange): walk the memtable once per worker instead of once per bit by @aliszka in #13138 Opt/roaringsetrange direct flush by @aliszka in #13139 fix(queryadmission): deflake TestFIFOWakeOnRelease by @asdine in #13147 Remove unique objects IDs from RBAC checks by @dirkkul in #10688 Full Changelog : v1.38.15...v1.38.16",
+  "summary": "Breaking Changes none New Features none Fixes Fix replica movement to be enable-able via runtime config by @tsmith023 in #13064 fix(objects): stop re-call the class the reference write already read by @moogacs in #13068 modules(rest): remove /v1/modules endpoint and contextionary extension/concept handlers by @antas-marcin in #13083 backport: fix(db): locks usage ( #12525 )( #12082 ) by @moogacs in #13100 perf(roaringset): stream the memtable flush and compact the bitmaps it writes by @aliszka in #13038 fix(roaringset-pr2): measure a memtable's size as the heap its tree holds by @aliszka in #13039 perf(roaringset-pr3): allocate a key's additions or deletions only when written by @aliszka in #13040 queue: release the chunk writer buffer once a chunk is promoted by @asdine in #13126 shard: a replica snapshot carries index.db, so a moved dynamic index keeps its upgrade (v1.38) by @asdine in #13130 perf(roaringsetrange): walk the memtable once per worker instead of once per bit by @aliszka in #13138 Opt/roaringsetrange direct flush by @aliszka in #13139 fix(queryadmission): deflake TestFIFOWakeOnRelease by @asdine in #13147 Remove unique objects IDs from RBAC checks by @dirkkul in #10688 Full Changelog : v1.38.15...v1.38.16",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "38",
+    "16",
+    "bug",
+    "fixes",
+    "performance",
+    "improvements",
+    "across"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T12:58:58.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T16:33:26.310Z",
+  "updatedAt": "2026-09-18T16:33:26.343Z"
+},
+{
   "id": "2293ee5b-70b0-4d87-b7cb-e55c6aa2eb31",
   "slug": "v1-38-6-hybrid-diversity-mmr-improvements-lsm-store-inverted-compaction-improvements-raft--2026-07-21",
   "title": "v1.38.6 - Hybrid Diversity & MMR Improvements, LSM store inverted compaction improvements, Raft communication Fixes",
@@ -20956,6 +21871,47 @@
   "updatedAt": "2026-09-16T15:45:05.785Z"
 },
 {
+  "id": "de358098-adb6-423d-ad1c-675640400102",
+  "slug": "v1-40-0-rc-1-2026-09-18",
+  "title": "v1.40.0-rc.1",
+  "factSummary": "release v1.40.0-rc.1 -",
+  "summary": "release v1.40.0-rc.1 -",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "40",
+    "rc"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 95,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T11:41:05.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T16:33:26.385Z",
+  "updatedAt": "2026-09-18T16:33:26.419Z"
+},
+{
   "id": "abec8f9b-47bd-4a93-8917-a1625dea8f3d",
   "slug": "v1-6-0-2026-09-16",
   "title": "v1.6.0",
@@ -20971,9 +21927,9 @@
     "v1"
   ],
   "confidenceScore": 100,
-  "heatScore": 52,
+  "heatScore": 51,
   "impactScore": 55,
-  "valueScore": 68,
+  "valueScore": 66,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 100,
@@ -20983,7 +21939,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 59,
+    "freshness": 47,
     "crossRegion": false
   },
   "status": "review",
@@ -20992,7 +21948,7 @@
   "happenedAt": "2026-09-15T15:14:42.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:10.890Z",
-  "updatedAt": "2026-09-17T17:09:06.691Z"
+  "updatedAt": "2026-09-18T16:33:25.961Z"
 },
 {
   "id": "dd40c924-7e77-4b33-bb01-c94ddfebc764",
@@ -24191,6 +25147,50 @@
   "updatedAt": "2026-09-18T05:20:52.504Z"
 },
 {
+  "id": "eaa2738c-2cb9-40b8-b46c-e313417e2f73",
+  "slug": "v3-16-0-2026-09-18",
+  "title": "v3.16.0",
+  "factSummary": "OpenAI Python SDK 发布 v3.16.0（2026-09-18）。该版本新增 webhook endpoint 管理 API（#3892，commit 9a11f6e），并将 MCP connector_id 标记为弃用（#3894，commit 1ccaf07）。",
+  "summary": "OpenAI Python SDK 的 v3.16.0 版本在 API 层面加入 webhook endpoint 管理能力，同时对 MCP connector_id 做弃用处理。证据仅来自该版本的 release 说明，未披露具体接口形态、迁移路径或影响范围。",
+  "technicalInsight": "从 release 条目看，SDK 正在把 webhook 端点管理纳入官方 API 表面，并以弃用方式调整 MCP 相关标识字段，属于接口层的渐进式演进。可验证的下一信号是官方文档或后续版本中是否给出 connector_id 的替代字段与迁移说明。",
+  "industryInsight": "SDK 同时涉及 webhook 管理与 MCP 连接标识，反映开发者工具链在事件回调与工具/连接器接入两个方向上的持续标准化，但单条 release 不足以判断行业层面的趋势强度。",
+  "futureOutlook": "若后续版本继续围绕 webhook 与 MCP 连接管理迭代，可观察是否出现配套的迁移指南、弃用时间表或新连接器抽象；反之若仅此一次改动，则更可能是常规维护。",
+  "businessValue": "对使用该 SDK 的开发者而言，webhook endpoint 管理可降低自建回调管理的集成成本，而 connector_id 弃用意味着需要关注升级兼容性；具体收益与迁移成本需以官方文档为准。",
+  "category": "developer-sdk-release",
+  "company": "OpenAI Python SDK",
+  "keywords": [
+    "OpenAI Python SDK",
+    "v3.16.0",
+    "webhook",
+    "MCP",
+    "connector_id",
+    "deprecation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T14:52:49.000Z",
+  "publishedAt": "2026-09-18T16:34:06.271Z",
+  "createdAt": "2026-09-18T16:33:26.132Z",
+  "updatedAt": "2026-09-18T16:34:06.271Z"
+},
+{
   "id": "fcdcbe8d-082a-4f97-af4f-3f3dbeeba76d",
   "slug": "v3-222-0-2026-07-20",
   "title": "v3.222.0",
@@ -26371,20 +27371,20 @@
     "v0",
     "19"
   ],
-  "confidenceScore": 74,
-  "heatScore": 21,
+  "confidenceScore": 84,
+  "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 56,
+  "valueScore": 54,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 79,
+    "freshness": 48,
     "crossRegion": false
   },
   "status": "review",
@@ -26393,7 +27393,7 @@
   "happenedAt": "2026-09-15T17:34:18.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:05.948Z",
-  "updatedAt": "2026-09-16T15:45:05.973Z"
+  "updatedAt": "2026-09-18T16:33:25.952Z"
 },
 {
   "id": "56ad8cab-5fb1-433a-b99e-162b07f19d58",
@@ -26887,8 +27887,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "0c34b82e-6080-4e69-bdc8-a88ea60c83ca",
@@ -27021,8 +28021,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -27242,8 +28242,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -27285,8 +28285,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -27508,8 +28508,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -27735,8 +28735,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -27824,8 +28824,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -30526,8 +31526,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -31164,8 +32164,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "e092be25-ce0d-4a0e-92b6-360963fe2874",
@@ -31527,8 +32527,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -31571,8 +32571,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -31929,8 +32929,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -31972,8 +32972,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -32015,8 +33015,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -32058,8 +33058,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-18T05:15:42.491Z",
-  "updatedAt": "2026-09-18T05:15:42.491Z"
+  "createdAt": "2026-09-18T16:29:02.235Z",
+  "updatedAt": "2026-09-18T16:29:02.235Z"
 },
 {
   "id": "e0fb253b-fe25-44ba-a026-fdbf2f6acb1b",
