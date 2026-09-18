@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "50b76761-c162-4e15-a0f3-9d61594c549d",
+  "id": "e7cbfb9f-3727-425f-b749-d5cec50dad80",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 60,
@@ -63,15 +63,15 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 16854,
+      "sampleSize": 17126,
       "sampleTarget": 100,
-      "summary": "16854 条信号中 12051 条来自 primary/research/policy，3832 条证据进入事件。",
+      "summary": "17126 条信号中 12276 条来自 primary/research/policy，3984 条证据进入事件。",
       "evidence": {
-        "signals": 16854,
-        "direct": 16854,
-        "primary": 12051,
-        "linkedEvidence": 3832,
-        "linkedSourceCount": 157,
+        "signals": 17126,
+        "direct": 17126,
+        "primary": 12276,
+        "linkedEvidence": 3984,
+        "linkedSourceCount": 158,
         "aggregatorDebt": 0
       },
       "penalties": [],
@@ -95,7 +95,7 @@
         "failed": 70,
         "skipped": 52,
         "latestRuns": 215,
-        "latestRunSuccess": 214,
+        "latestRunSuccess": 215,
         "auditWindows": 7
       },
       "penalties": [],
@@ -109,15 +109,15 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 616,
+      "sampleSize": 624,
       "sampleTarget": 30,
-      "summary": "616 个公开事件仅 33 个拥有多源证据，591 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "624 个公开事件仅 33 个拥有多源证据，599 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 616,
-        "primaryEvidence": 608,
+        "published": 624,
+        "primaryEvidence": 616,
         "multiSource": 33,
-        "readyPublished": 591,
-        "averageEvidence": 1.4,
+        "readyPublished": 599,
+        "averageEvidence": 1.41,
         "averageSelfReportedConfidence": 85
       },
       "penalties": [],
@@ -135,9 +135,9 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 616,
+        "published": 624,
         "fieldCompleteness": 100,
-        "readyPublished": 591,
+        "readyPublished": 599,
         "multiSource": 33,
         "outcomeFeedback": 0
       },
@@ -159,7 +159,7 @@
       "summary": "collector 耗时不是上游发布到页面可见的端到端延迟；以成功运行比例作为实时性估算。",
       "evidence": {
         "latestSourceRuns": 215,
-        "latestRunSuccess": 214,
+        "latestRunSuccess": 215,
         "freshHealthySources": 128,
         "activeWithRecentSuccess": 129,
         "endToEndLatencySamples": 0
@@ -172,21 +172,21 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 52,
-      "rawScore": 52,
+      "score": 53,
+      "rawScore": 53,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
       "sampleSize": 265,
       "sampleTarget": 100,
-      "summary": "128/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 30 个。",
+      "summary": "128/265 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 38 个。",
       "evidence": {
         "healthy": 265,
         "freshHealthy": 128,
         "active": 132,
         "activeWithRecentSuccess": 129,
-        "published": 616,
-        "recentPublished": 30
+        "published": 624,
+        "recentPublished": 38
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 416,
         "restrictedEnabled": 0,
-        "readyEvents": 591,
-        "totalEvents": 3052,
+        "readyEvents": 599,
+        "totalEvents": 3183,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 65, evidence coverage 72%, final score 60",
-  "startedAt": "2026-09-17T17:09:57.484Z",
-  "finishedAt": "2026-09-17T17:09:57.667Z",
+  "startedAt": "2026-09-18T05:21:04.655Z",
+  "finishedAt": "2026-09-18T05:21:04.902Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -714,7 +714,7 @@
     {
       "slug": "timeliness",
       "name": "内容时效性",
-      "score": 52,
+      "score": 53,
       "status": "measured",
       "weightedGap": 3,
       "penalties": [],
