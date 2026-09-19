@@ -1,5 +1,276 @@
 [
 {
+  "id": "36618ebc-4e74-4577-817f-6f4fec23733e",
+  "slug": "scienceide-turning-world-s-scientific-codebase-into-agent-learnable-environments-2026-09-17",
+  "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+  "factSummary": "Scientific code repositories encode decades of human knowledge in executable models, methods, and tools. Yet fragmented toolchains, implicit domain conventions, and specialized correctness criteria make this knowledge difficult to convert into reliable learning experience-a challenge we call the scientific experience bottleneck. We introduce ScienceIDE, infrastructure for turning the world's scientific code into programmable environments for scientific agents. Guided by expert-defined scientific cases and acceptance criteria, agents transform repositories into executable environments that support task generation, execution, and scientific verification. These environments provide a shared foundation for supervised fine-tuning, reinforcement learning, and evaluation. Using verified interaction trajectories, we train PhAI-IDE-72B, PhAI-IDE-9B, and PhAI-IDE-4B. The model family shows gains in held-out scientific-code repair and across selected general-purpose benchmarks in code, reasoning, and knowledge, providing evidence of positive transfer from scientific experience to broader capabilities. ScienceIDE lays the foundation for an integrated workspace for agent learning and scientific practice, making humanity's scientific software a shared substrate for developing scientific intelligence. Code: https://github.com/aitofound/ScienceIDE",
+  "summary": "Scientific code repositories encode decades of human knowledge in executable models, methods, and tools. Yet fragmented toolchains, implicit domain conventions, and specialized correctness criteria make this knowledge difficult to convert into reliable learning experience-a challenge we call the scientific experience bottleneck. We introduce ScienceIDE, infrastructure for turning the world's scientific code into programmable environments for scientific agents. Guided by expert-defined scientific cases and acceptance criteria, agents transform repositories into executable environments that support task generation, execution, and scientific verification. These environments provide a shared foundation for supervised fine-tuning, reinforcement learning, and evaluation. Using verified interaction trajectories, we train PhAI-IDE-72B, PhAI-IDE-9B, and PhAI-IDE-4B. The model family shows gains in held-out scientific-code repair and across selected general-purpose benchmarks in code, reasoning, and knowledge, providing evidence of positive transfer from scientific experience to broader capabilities. ScienceIDE lays the foundation for an integrated workspace for agent learning and scientific practice, making humanity's scientific software a shared substrate for developing scientific intelligence. Code: https://github.com/aitofound/ScienceIDE",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scienceide",
+    "turning",
+    "world",
+    "scientific",
+    "codebase",
+    "into",
+    "agent",
+    "learnable"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-16T17:55:47.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T05:32:40.045Z",
+  "updatedAt": "2026-09-17T05:32:40.077Z"
+},
+{
+  "id": "c16a9af2-808e-4afc-a232-c23a0f97882f",
+  "slug": "scientific-computing-in-the-age-of-agentic-ai-2026-07-29",
+  "title": "Scientific computing in the age of agentic AI",
+  "factSummary": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
+  "summary": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scientific",
+    "computing",
+    "age",
+    "agentic",
+    "ai"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T17:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-29T04:00:11.716Z",
+  "updatedAt": "2026-07-29T04:00:11.742Z"
+},
+{
+  "id": "aaabd0b9-18cc-4a28-bdbf-ecb0a015c4ac",
+  "slug": "scifigalign-scoring-scientific-figures-by-fine-tuned-alignment-of-visuals-with-manuscript--2026-07-30",
+  "title": "SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence",
+  "factSummary": "Scientific figure assessment in peer review differs fundamentally from general image quality evaluation: a figure must be visually legible, faithfully support the manuscript's claims, and communicate evidence with a clear visual hierarchy. However, if we apply traditional image assessment methods to scientific figure quality assessment, limitations emerge: classic IQA models capture perceptual quality or aesthetics but cannot judge whether a figure serves the paper's scientific argument; CLIP-based methods assess generic image-text correspondence, yet lack understanding of manuscript context; and zero-shot LLM/VLM judges, when repurposed for figure scoring, often yield overly concentrated scores with limited fusion of visual and textual evidence. We introduce an annotated dataset of 3,857 scientific figures from peer-reviewed conference papers, each rated along four peer-review-oriented dimensions: Clarity, Relevance, Informativeness, and Structure. We propose SciFigAlign, a fine-tuned multimodal scorer that grounds figure quality assessment in manuscript evidence. Given a figure crop, caption, citing paragraphs, and light paper context, SciFigAlign fine-tunes CLIP and SciBERT end-to-end with per-modality cross-attention and CubeMLP fusion, jointly optimizing SmoothL1 regression with a within-paper ranking hinge loss. Under paper-level splits, SciFigAlign achieves a macro MAE of 0.3524 and a within-paper pairwise accuracy of 81.64% on the test set with n = 396, a 59% relative error reduction over the best LLM-as-judge baseline with MAE 0.864. Ablations confirm that manuscript-grounded inputs, citing-context denoising, and ranking supervision are all critical, showing that scientific figure assessment requires learned alignment between visual content and manuscript evidence rather than prompting alone, even with state-of-the-art VLMs.",
+  "summary": "Scientific figure assessment in peer review differs fundamentally from general image quality evaluation: a figure must be visually legible, faithfully support the manuscript's claims, and communicate evidence with a clear visual hierarchy. However, if we apply traditional image assessment methods to scientific figure quality assessment, limitations emerge: classic IQA models capture perceptual quality or aesthetics but cannot judge whether a figure serves the paper's scientific argument; CLIP-based methods assess generic image-text correspondence, yet lack understanding of manuscript context; and zero-shot LLM/VLM judges, when repurposed for figure scoring, often yield overly concentrated scores with limited fusion of visual and textual evidence. We introduce an annotated dataset of 3,857 scientific figures from peer-reviewed conference papers, each rated along four peer-review-oriented dimensions: Clarity, Relevance, Informativeness, and Structure. We propose SciFigAlign, a fine-tuned multimodal scorer that grounds figure quality assessment in manuscript evidence. Given a figure crop, caption, citing paragraphs, and light paper context, SciFigAlign fine-tunes CLIP and SciBERT end-to-end with per-modality cross-attention and CubeMLP fusion, jointly optimizing SmoothL1 regression with a within-paper ranking hinge loss. Under paper-level splits, SciFigAlign achieves a macro MAE of 0.3524 and a within-paper pairwise accuracy of 81.64% on the test set with n = 396, a 59% relative error reduction over the best LLM-as-judge baseline with MAE 0.864. Ablations confirm that manuscript-grounded inputs, citing-context denoising, and ranking supervision are all critical, showing that scientific figure assessment requires learned alignment between visual content and manuscript evidence rather than prompting alone, even with state-of-the-art VLMs.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scifigalign",
+    "scoring",
+    "scientific",
+    "figures",
+    "by",
+    "fine",
+    "tuned",
+    "alignment"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T15:54:14.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:10.770Z",
+  "updatedAt": "2026-07-30T03:51:10.802Z"
+},
+{
+  "id": "b9432dfb-3af7-497f-95c8-58f7e46a18dd",
+  "slug": "scifigqual-bench-a-benchmark-for-scientific-figure-quality-assessment-with-full-manuscript-2026-07-30",
+  "title": "SciFigQual-Bench: A Benchmark for Scientific Figure Quality Assessment with Full-Manuscript Context",
+  "factSummary": "Scientific images are the core elements of presenting experimental conclusions, elaborating system architecture, and supporting comparative arguments in scientific papers. However, existing image quality assessment (IQA) methods are predominantly designed for natural photographs or AI-generated content, which cannot be directly applied to scientific papers. The few existing studies on scholarly charts remain confined to visual-surface comparisons, failing to verify caption alignment, citation relevance, or visual misleadingness. To address this, we propose SciFigQual-Bench, a full-text contextual benchmark that evaluates scientific images across five dimensions (clarity, layout, caption fit, context relevance, and misleading risk). The data covers top computer-science conferences from 2020 to 2025; 6,308 images were independently scored by multiple domain experts in five dimensions and aggregated into gold-standard annotations. Unlike previous scientific figure benchmarks, our dataset binds each image to its caption, citing sentence, and manuscript context. To enable automated evaluation on this benchmark, we designed a staged cross-modal evaluation framework SFQ-Agent to achieve auditable and refined scoring through the collection and fusion of modal evidence. Multiple mainstream large models were evaluated on the test subset eval1200, and SFQ-Agent (F3) equipped with GPT-5.6-Sol achieved the lowest overall average absolute error (0.418) and the highest consistency rate (93.4%), consistently outperforming both direct evaluation and auxiliary (Sidecar) visual language model evaluation schemes.",
+  "summary": "Scientific images are the core elements of presenting experimental conclusions, elaborating system architecture, and supporting comparative arguments in scientific papers. However, existing image quality assessment (IQA) methods are predominantly designed for natural photographs or AI-generated content, which cannot be directly applied to scientific papers. The few existing studies on scholarly charts remain confined to visual-surface comparisons, failing to verify caption alignment, citation relevance, or visual misleadingness. To address this, we propose SciFigQual-Bench, a full-text contextual benchmark that evaluates scientific images across five dimensions (clarity, layout, caption fit, context relevance, and misleading risk). The data covers top computer-science conferences from 2020 to 2025; 6,308 images were independently scored by multiple domain experts in five dimensions and aggregated into gold-standard annotations. Unlike previous scientific figure benchmarks, our dataset binds each image to its caption, citing sentence, and manuscript context. To enable automated evaluation on this benchmark, we designed a staged cross-modal evaluation framework SFQ-Agent to achieve auditable and refined scoring through the collection and fusion of modal evidence. Multiple mainstream large models were evaluated on the test subset eval1200, and SFQ-Agent (F3) equipped with GPT-5.6-Sol achieved the lowest overall average absolute error (0.418) and the highest consistency rate (93.4%), consistently outperforming both direct evaluation and auxiliary (Sidecar) visual language model evaluation schemes.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scifigqual",
+    "bench",
+    "benchmark",
+    "scientific",
+    "figure",
+    "quality",
+    "assessment",
+    "full"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T16:07:44.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:10.664Z",
+  "updatedAt": "2026-07-30T03:51:10.695Z"
+},
+{
+  "id": "ba60818b-4fbc-4689-ab9a-514e387ccf25",
+  "slug": "sciforge-an-ai-native-multimodal-workbench-for-scientific-discovery-2026-07-20",
+  "title": "SciForge: An AI-Native, Multimodal Workbench for Scientific Discovery",
+  "factSummary": "Scientific work increasingly spans heterogeneous artifacts -- papers, code, datasets, scientific file formats, model outputs, figures, manuscripts, and team decisions -- yet general-purpose AI assistants rarely preserve these objects as a coherent, auditable research state. We present SciForge, a multimodal research-native AI workbench that reserves the graphical interface for human judgment while search, parsing, model routing, workflow execution, plotting, writing, and presentation generation run as modular agent-accessible services. SciForge is built around five pillars: (i) \\emph{goal-scoped scientific decision governance} for \\textbf{goal-oriented} research, with review gates and shared review surfaces; (ii) \\emph{translate-then-reason} for \\textbf{multimodal} input, routing scientific objects through domain translators before the agent reasons; (iii) \\emph{evidence governance} for \\textbf{auditable} traceability, linking claims to provenance chains and audit findings; (iv) \\emph{collaborative team science} for \\textbf{collaborative} research, enabling multi-role decision governance, with shared team workspaces planned for future releases; and (v) \\emph{real-world application scenarios} for \\textbf{practical} impact, demonstrated through eight end-to-end user cases, with flagship demonstrations including multi-day agentic research sprints for gene discovery, AI-guided de novo protein design, molecular optimization, and genome-to-BGC discovery. The system combines a thin interaction layer, contextual research capability patterns, an Agent Runtime and Workflow Engine, an Evidence-DAG audit sidecar and a Scientific Model Router. SciForge currently runs as a desktop application, with mobile supervision support; future releases will deepen team collaboration. The system is open-source and available at https://github.com/AGI4Sci/SciForge",
+  "summary": "Scientific work increasingly spans heterogeneous artifacts -- papers, code, datasets, scientific file formats, model outputs, figures, manuscripts, and team decisions -- yet general-purpose AI assistants rarely preserve these objects as a coherent, auditable research state. We present SciForge, a multimodal research-native AI workbench that reserves the graphical interface for human judgment while search, parsing, model routing, workflow execution, plotting, writing, and presentation generation run as modular agent-accessible services. SciForge is built around five pillars: (i) \\emph{goal-scoped scientific decision governance} for \\textbf{goal-oriented} research, with review gates and shared review surfaces; (ii) \\emph{translate-then-reason} for \\textbf{multimodal} input, routing scientific objects through domain translators before the agent reasons; (iii) \\emph{evidence governance} for \\textbf{auditable} traceability, linking claims to provenance chains and audit findings; (iv) \\emph{collaborative team science} for \\textbf{collaborative} research, enabling multi-role decision governance, with shared team workspaces planned for future releases; and (v) \\emph{real-world application scenarios} for \\textbf{practical} impact, demonstrated through eight end-to-end user cases, with flagship demonstrations including multi-day agentic research sprints for gene discovery, AI-guided de novo protein design, molecular optimization, and genome-to-BGC discovery. The system combines a thin interaction layer, contextual research capability patterns, an Agent Runtime and Workflow Engine, an Evidence-DAG audit sidecar and a Scientific Model Router. SciForge currently runs as a desktop application, with mobile supervision support; future releases will deepen team collaboration. The system is open-source and available at https://github.com/AGI4Sci/SciForge",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sciforge",
+    "ai",
+    "native",
+    "multimodal",
+    "workbench",
+    "scientific",
+    "discovery"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 53,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-17T15:13:03.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-20T04:31:29.552Z",
+  "updatedAt": "2026-07-20T04:31:29.571Z"
+},
+{
+  "id": "9cb2fd96-7088-4996-b804-84642199d2d2",
+  "slug": "score-centering-stabilizes-off-policy-reinforcement-learning-2026-09-18",
+  "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+  "factSummary": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step. We derive an additive \"score centering\" correction term that stabilizes RL under TIM by canceling drift. When training models from 0.6B to 30B parameters, score centering alone matches or outperforms methods based on importance sampling under quantization, with the gap growing as the mismatch becomes more severe. Because the correction is additive, score centering also composes with importance sampling -- their composition outperforms pure importance-sampling baselines in our staleness experiments.",
+  "summary": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step. We derive an additive \"score centering\" correction term that stabilizes RL under TIM by canceling drift. When training models from 0.6B to 30B parameters, score centering alone matches or outperforms methods based on importance sampling under quantization, with the gap growing as the mismatch becomes more severe. Because the correction is additive, score centering also composes with importance sampling -- their composition outperforms pure importance-sampling baselines in our staleness experiments.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "score",
+    "centering",
+    "stabilizes",
+    "off",
+    "policy",
+    "reinforcement",
+    "learning"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T17:58:17.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:07.054Z",
+  "updatedAt": "2026-09-18T05:20:07.109Z"
+},
+{
   "id": "e9b5a65c-5aaa-43c8-89d9-93e184a31fe4",
   "slug": "scores-are-not-decisions-cost-aware-stopping-for-tool-acquisition-in-llm-agents-2026-07-30",
   "title": "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
@@ -865,8 +1136,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -999,8 +1270,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -1408,8 +1679,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -1996,8 +2267,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -2447,8 +2718,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -2670,8 +2941,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -2805,8 +3076,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "ab3ace26-5eac-459c-a323-39b13f2698e8",
@@ -3350,8 +3621,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -3576,8 +3847,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -3847,8 +4118,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -3935,8 +4206,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -4021,8 +4292,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -4518,8 +4789,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -4834,8 +5105,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -5470,8 +5741,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -5559,8 +5830,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -5602,8 +5873,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -6104,8 +6375,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -6146,8 +6417,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -6409,8 +6680,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -6588,6 +6859,50 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T17:08:53.411Z",
   "updatedAt": "2026-09-16T17:08:53.442Z"
+},
+{
+  "id": "7f9b4ffd-b434-47b1-8e4a-aa509e9c4c81",
+  "slug": "stagehand-python-4-2-0a0-dev1524-feat-add-webmcp-tools-added-removed-event-hooks-2916-2026-09-19",
+  "title": "stagehand-python@4.2.0a0.dev1524: [feat]: add WebMCP tools added/removed event hooks (#2916)",
+  "factSummary": "Stagehand 发布 stagehand-python@4.2.0a0.dev1524，新增 WebMCP 工具添加/移除事件钩子（#2916）。该 PR 在 TypeScript 中新增 onToolsAdded()/onToolsRemoved()，Python 中新增 on_tools_added()/on_tools_removed()，Go 中新增 OnToolsAdded()/OnToolsRemoved()。由于 WebMCP.enable 会让 Chrome 对已存在的工具重复发出 toolsAdded 事件，PR 引入工具注册表来管理已添加/移除状态，page.tools() 改为读取该注册表而非再次启用 WebMCP。代码还涉及跨导航与 iframe 分离时的状态同步，复用已有订阅句柄实现 unsubscribe()/Close(ctx)，在原始 page.cdp_event 路径之外新增类型化 page.event 通知，并共享协议 schema 与生成的 SDK 模型，同时将订阅建立改为异步并处理注册失败或订阅者断开时的清理。",
+  "summary": "Stagehand 在 Python 包 4.2.0a0.dev1524 中为 WebMCP 增加工具添加/移除事件钩子，并同步覆盖 TypeScript 与 Go SDK。为应对 Chrome 重复触发 toolsAdded 的问题，改动引入工具注册表并让 page.tools() 读取注册表，同时处理导航、iframe 分离下的状态同步与订阅清理。",
+  "technicalInsight": "该改动把 WebMCP 工具生命周期从隐式副作用转为可订阅事件，并用注册表替代重复启用，属于浏览器 Agent 工具状态管理的基础设施修补。可验证下一信号：后续版本是否公开注册表查询接口或事件语义文档，以及 page.tools() 行为是否在跨导航场景下保持稳定。",
+  "industryInsight": "浏览器自动化 SDK 正在把页面内工具发现纳入统一事件模型，这有利于 Agent 在动态页面上维持工具视图一致。可验证下一信号：其他浏览器 Agent 框架是否跟进类似工具注册表或事件钩子设计。",
+  "futureOutlook": "若注册表与事件机制稳定，WebMCP 工具状态有望成为跨语言 SDK 的通用抽象。可验证下一信号：该 PR 后续是否进入稳定版本，以及是否出现基于 onToolsAdded/onToolsRemoved 的示例或文档。",
+  "businessValue": "对开发者而言，可订阅的工具事件降低了在页面变化时重复探测工具的成本，并减少重复启用 WebMCP 带来的副作用。可验证下一信号：SDK 文档或示例中是否展示基于事件驱动的工具同步用法。",
+  "category": "browser-agent-sdk",
+  "company": "Stagehand",
+  "keywords": [
+    "Stagehand",
+    "WebMCP",
+    "事件钩子",
+    "工具注册表",
+    "浏览器自动化",
+    "SDK"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T22:33:25.000Z",
+  "publishedAt": "2026-09-19T05:13:11.837Z",
+  "createdAt": "2026-09-19T05:12:29.431Z",
+  "updatedAt": "2026-09-19T05:13:11.837Z"
 },
 {
   "id": "52cf0fc3-5d1a-429d-8c10-1bb68f15cf02",
@@ -7080,8 +7395,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -8167,8 +8482,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -8485,8 +8800,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -8711,8 +9026,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -9024,8 +9339,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -9568,8 +9883,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -11021,8 +11336,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -14161,8 +14476,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "8f28194e-86ca-43ac-b814-b1d290b09356",
@@ -14521,8 +14836,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -14610,8 +14925,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -14745,8 +15060,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -16797,8 +17112,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "95e6a627-0531-4ee5-97a6-949b11b81ad3",
@@ -17560,8 +17875,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -17831,8 +18146,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -18775,6 +19090,52 @@
   "publishedAt": null,
   "createdAt": "2026-08-12T03:17:42.039Z",
   "updatedAt": "2026-08-12T03:17:42.077Z"
+},
+{
+  "id": "07f94428-a0ef-43b5-aa63-790753967c97",
+  "slug": "upcoming-deprecation-of-selected-github-copilot-models-in-mid-october-2026-09-19",
+  "title": "Upcoming deprecation of selected GitHub Copilot models in mid-October",
+  "factSummary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on October 19th, 2026: Model Deprecation date&#8230; The post Upcoming deprecation of selected GitHub Copilot models in mid-October appeared first on The GitHub Blog .",
+  "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on October 19th, 2026: Model Deprecation date&#8230; The post Upcoming deprecation of selected GitHub Copilot models in mid-October appeared first on The GitHub Blog .",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "upcoming",
+    "deprecation",
+    "selected",
+    "github",
+    "copilot",
+    "models",
+    "mid",
+    "october"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T19:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-19T05:12:29.968Z",
+  "updatedAt": "2026-09-19T05:12:30.008Z"
 },
 {
   "id": "0b5f4520-2469-4479-ba3c-bdec80bfa3e7",
@@ -19864,6 +20225,51 @@
   "updatedAt": "2026-08-10T13:52:17.058Z"
 },
 {
+  "id": "d0767555-6464-472d-95ee-576793206158",
+  "slug": "v0-27-0-rc0-2026-09-19",
+  "title": "v0.27.0.rc0",
+  "factSummary": "Apache TVM 发布 v0.27.0.rc0 候选版本，变更日志列出多项修复与改进，涉及 Web 端 tvmjs 版本升至 0.27.0-dev0、Relax/ONNX 的 Split 初始化器与 rank-0 Shape 输入处理、Arith 中 Z3 上下文隔离与记忆化确定性、TIRx 的 MSVC 构建与指针表达式遍历、CUDA 的 NVRTC 架构选择与 PTX 方言表驱动化、Metal 指针地址空间保留，以及 Python 侧 apache-tvm-ffi 最低版本提升至 >=0.1.13.post2 和 Relax 对 PEP 695 符号变量的支持。",
+  "summary": "Apache TVM 发布 v0.27.0.rc0 候选版本，变更集中在编译器与运行时修复：tvmjs 版本推进、Relax/ONNX 前端边界情况处理、Arith 求解确定性、TIRx 与 CUDA/Metal 后端代码生成改进，以及 Python 绑定与 FFI 版本下限调整。",
+  "technicalInsight": "从变更条目看，本版本偏向稳定性与后端代码生成正确性：Z3 上下文隔离与记忆化确定性、TIRx 指针表达式遍历与类型化缓冲区重映射、CUDA PTX 方言表驱动化，均指向编译器内部一致性与可复现性。可验证下一信号：正式版 v0.27.0 是否保留这些条目，以及 TIRx 的 PTX 方言迁移是否在后续版本中移除 tirx.ptx.* 兼容路径。",
+  "industryInsight": "TVM 作为开源深度学习编译器，其候选版本节奏反映开放生态在推理与算子编译层的持续维护，而非单一厂商产品发布。可验证下一信号：正式版发布说明与下游框架（如 ONNX 相关前端）是否跟进采用该版本。",
+  "futureOutlook": "若候选版本按惯例进入正式发布，相关修复将随发行版进入下游工具链；但候选版本本身不构成产品能力承诺。可验证下一信号：v0.27.0 正式标签的发布时间与变更日志差异。",
+  "businessValue": "对依赖 TVM 的开发者与部署方，此类修复可降低后端代码生成与前端转换的边界错误风险，但候选版本不宜直接用于生产。可验证下一信号：正式版发布后社区与下游项目的升级反馈。",
+  "category": "open-source-compiler-release",
+  "company": "Apache TVM",
+  "keywords": [
+    "Apache TVM",
+    "v0.27.0.rc0",
+    "TIRx",
+    "CUDA",
+    "Relax",
+    "ONNX",
+    "开源编译器"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-19T03:31:44.000Z",
+  "publishedAt": "2026-09-19T05:13:11.838Z",
+  "createdAt": "2026-09-19T05:12:29.568Z",
+  "updatedAt": "2026-09-19T05:13:11.838Z"
+},
+{
   "id": "52a320f3-080e-4f32-a3a0-e1968d9d423d",
   "slug": "v0-27-0rc1-2026-08-07",
   "title": "v0.27.0rc1",
@@ -20125,6 +20531,49 @@
   "publishedAt": null,
   "createdAt": "2026-09-17T17:09:06.545Z",
   "updatedAt": "2026-09-17T17:09:06.571Z"
+},
+{
+  "id": "4fb43999-44b9-453e-a67a-039fa804e198",
+  "slug": "v0-30-0rc2-2026-09-19",
+  "title": "v0.30.0rc2",
+  "factSummary": "vLLM 发布 v0.30.0rc2，发布说明中列出一条 Bugfix：[NIXL] Avoid receive reports for notification-only requests。",
+  "summary": "vLLM 项目发布 v0.30.0rc2 版本，该版本包含针对 NIXL 的修复，避免为仅通知类请求生成接收报告。",
+  "technicalInsight": "该修复指向 NIXL 传输路径中通知类请求与接收报告之间的处理逻辑，可能减少不必要的报告开销；但证据未给出性能数据或影响范围，实际收益需以后续基准或提交记录验证。",
+  "industryInsight": "这属于开源推理框架的常规迭代，反映 vLLM 在分布式传输组件上的持续维护；单条修复不足以判断竞争格局变化。",
+  "futureOutlook": "可观察下一信号：v0.30.0 正式版是否包含该修复，以及 NIXL 相关提交或 issue 中是否出现性能与稳定性数据。",
+  "businessValue": "对使用 vLLM 的部署方而言，此类修复可能降低通知类请求的额外开销，但当前证据不足以量化成本或吞吐收益。",
+  "category": "open-source-release",
+  "company": "vLLM",
+  "keywords": [
+    "vLLM",
+    "NIXL",
+    "Bugfix",
+    "推理框架",
+    "开源发布"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T21:15:44.000Z",
+  "publishedAt": "2026-09-19T05:13:11.836Z",
+  "createdAt": "2026-09-19T05:12:29.798Z",
+  "updatedAt": "2026-09-19T05:13:11.836Z"
 },
 {
   "id": "450fde20-3eb2-4619-8a52-e6b7d6bc76f7",
@@ -20583,7 +21032,7 @@
   "confidenceScore": 84,
   "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 55,
+  "valueScore": 53,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -20593,7 +21042,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 56,
+    "freshness": 44,
     "crossRegion": false
   },
   "status": "review",
@@ -20602,7 +21051,7 @@
   "happenedAt": "2026-09-15T21:21:07.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:05.698Z",
-  "updatedAt": "2026-09-18T05:20:10.447Z"
+  "updatedAt": "2026-09-19T05:12:29.834Z"
 },
 {
   "id": "b767f550-30ef-4a2e-bc7f-00ddd46a3ec1",
@@ -24149,6 +24598,91 @@
   "updatedAt": "2026-09-18T05:20:52.505Z"
 },
 {
+  "id": "faf48831-66a9-40c4-a328-67629d9a76c6",
+  "slug": "v2-1-277-2026-09-19",
+  "title": "v2.1.277",
+  "factSummary": "What's changed Added AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in /config (not yet on Bedrock, Vertex or Foundry) Added CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1 for Claude apps gateways whose only egress is a forward proxy: every outbound request hands the proxy the hostname instead of resolving it locally Added an optional headers: map on Claude apps gateway upstreams, to send static headers to a proxy you run in front of a provider Added a line saying a background task's update is waiting when it finishes while a panel such as /tasks is open Fixed claude -p and Agent SDK sessions that could hang with no result after an internal error; they now report the error and exit with code 1 Fixed conversations failing every request with \"text content blocks must be non-empty\" when an earlier assistant turn held an empty text block beside other content, including after --resume Fixed being unexpectedly logged out when an older Claude Code build (for example an IDE extension's bundled CLI) runs on the same machine as the current one Fixed interactive start-up hanging or showing an error for ANTHROPIC_API_KEY users when ~/.claude.json holds a malformed customApiKeyResponses value Fixed update checks erroring every 30 minutes, and claude update hanging when a minimum or maximum version is set, if a proxy returns an invalid version; a malformed minimumVersion is now ignored Fixed claude update on winget- or apk-managed installs reporting \"up to date\" when the version lookup failed Fixed claude plugin install sometimes failing and breaking the installed copy when reinstalling a plugin version that a session or another program was using; an unchanged copy is now left alone Fixed Grep and Glob reporting no matches when the search could not start because the system was out of processes, memory or file handles; they now return an error saying so Fixed the Write tool silently ending the turn as a de…",
+  "summary": "What's changed Added AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in /config (not yet on Bedrock, Vertex or Foundry) Added CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1 for Claude apps gateways whose only egress is a forward proxy: every outbound request hands the proxy the hostname instead of resolving it locally Added an optional headers: map on Claude apps gateway upstreams, to send static headers to a proxy you run in front of a provider Added a line saying a background task's update is waiting when it finishes while a panel such as /tasks is open Fixed claude -p and Agent SDK sessions that could hang with no result after an internal error; they now report the error and exit with code 1 Fixed conversations failing every request with \"text content blocks must be non-empty\" when an earlier assistant turn held an empty text block beside other content, including after --resume Fixed being unexpectedly logged out when an older Claude Code build (for example an IDE extension's bundled CLI) runs on the same machine as the current one Fixed interactive start-up hanging or showing an error for ANTHROPIC_API_KEY users when ~/.claude.json holds a malformed customApiKeyResponses value Fixed update checks erroring every 30 minutes, and claude update hanging when a minimum or maximum version is set, if a proxy returns an invalid version; a malformed minimumVersion is now ignored Fixed claude update on winget- or apk-managed installs reporting \"up to date\" when the version lookup failed Fixed claude plugin install sometimes failing and breaking the installed copy when reinstalling a plugin version that a session or another program was using; an unchanged copy is now left alone Fixed Grep and Glob reporting no matches when the search could not start because the system was out of processes, memory or file handles; they now return an error saying so Fixed the Write tool silently ending the turn as a de…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v2",
+    "277"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 30,
+  "impactScore": 55,
+  "valueScore": 65,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T18:06:32.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-19T05:12:30.054Z",
+  "updatedAt": "2026-09-19T05:12:30.090Z"
+},
+{
+  "id": "12ccce74-ec45-4c39-89eb-ab2b74dfe9bd",
+  "slug": "v2-1-278-2026-09-19",
+  "title": "v2.1.278",
+  "factSummary": "Claude Code v2.1.278 将 Claude API 与企业用户、以及 Bedrock、Vertex、Foundry 和网关上的 auto mode 默认切换为服务端分类器，该分类器不收取分类器开销费用；在 Bedrock、Vertex、Foundry 和网关上可用 CLAUDE_CODE_AUTO_MODE_SERVER=0 退出该默认行为，并对计费回退发出警告。该版本还在 /status 中新增 Auto mode server 行，显示当前会话的 auto mode 分类器是否运行在服务端。",
+  "summary": "Claude Code 发布 v2.1.278，把 auto mode 的默认分类器改为服务端实现，并明确服务端分类器不产生分类器开销费用，同时提供退出开关与计费回退警告，并在 /status 中暴露分类器运行位置。",
+  "technicalInsight": "该变更把 auto mode 的分类决策从客户端侧迁移到服务端，并通过环境变量保留回退路径，说明分类器位置会影响计费与可观测性；可验证的下一信号是官方文档中关于 auto mode 分类器计费规则的进一步说明，以及后续版本是否扩展 /status 中的分类器状态字段。",
+  "industryInsight": "对开发者工具而言，把安全/路由分类器放到服务端并区分计费，可能成为 Agent 类编码工具控制成本与合规的常见做法；可验证的下一信号是其他同类编码 Agent 工具是否跟进类似的分类器计费与状态展示机制。",
+  "futureOutlook": "若服务端分类器成为默认且不计费，客户端侧分类器可能逐步退居可选回退；可验证的下一信号是后续 release notes 是否移除或弱化 CLAUDE_CODE_AUTO_MODE_SERVER 退出选项，或将其标记为弃用。",
+  "businessValue": "对使用 Claude Code 的团队，该变更可能降低 auto mode 的分类器开销成本并提升分类器运行位置的可观测性，但需注意计费回退警告；可验证的下一信号是官方计费文档中服务端与回退分类器的具体计费差异说明。",
+  "category": "agent-tooling-billing",
+  "company": "Claude Code",
+  "keywords": [
+    "Claude Code",
+    "auto mode",
+    "server-side classifier",
+    "billing",
+    "Bedrock",
+    "Vertex",
+    "Foundry"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 66,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-19T03:10:40.000Z",
+  "publishedAt": "2026-09-19T05:13:11.838Z",
+  "createdAt": "2026-09-19T05:12:29.611Z",
+  "updatedAt": "2026-09-19T05:13:11.838Z"
+},
+{
   "id": "430ae318-aec4-4a59-98f6-28d9bb260a2f",
   "slug": "v2-13-0-2026-07-22",
   "title": "v2.13.0",
@@ -25166,20 +25700,20 @@
     "connector_id",
     "deprecation"
   ],
-  "confidenceScore": 74,
-  "heatScore": 23,
+  "confidenceScore": 84,
+  "heatScore": 22,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 60,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 98,
+    "freshness": 86,
     "crossRegion": false
   },
   "status": "published",
@@ -25188,7 +25722,7 @@
   "happenedAt": "2026-09-18T14:52:49.000Z",
   "publishedAt": "2026-09-18T16:34:06.271Z",
   "createdAt": "2026-09-18T16:33:26.132Z",
-  "updatedAt": "2026-09-18T16:34:06.271Z"
+  "updatedAt": "2026-09-19T05:12:29.962Z"
 },
 {
   "id": "fcdcbe8d-082a-4f97-af4f-3f3dbeeba76d",
@@ -26607,6 +27141,46 @@
   "updatedAt": "2026-09-18T05:20:52.504Z"
 },
 {
+  "id": "38c64c18-4027-4d83-97ca-9c5b9d6b2e09",
+  "slug": "v7-19-0-2026-09-19",
+  "title": "v7.19.0",
+  "factSummary": "7.19.0 (2026-09-18) Features api: add webhook endpoint management ( #2764 ) ( 2d18dfc ) Chores api: deprecate MCP connector_id ( #2767 ) ( 645c5ad )",
+  "summary": "7.19.0 (2026-09-18) Features api: add webhook endpoint management ( #2764 ) ( 2d18dfc ) Chores api: deprecate MCP connector_id ( #2767 ) ( 645c5ad )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v7",
+    "19"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T19:27:12.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-19T05:12:29.918Z",
+  "updatedAt": "2026-09-19T05:12:29.958Z"
+},
+{
   "id": "3b42405c-ae80-4d10-a351-fdf96fb03866",
   "slug": "v7-4-0-2026-08-04",
   "title": "v7.4.0",
@@ -27887,8 +28461,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "0c34b82e-6080-4e69-bdc8-a88ea60c83ca",
@@ -28021,8 +28595,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -28242,8 +28816,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -28285,8 +28859,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -28508,8 +29082,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -28735,8 +29309,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -28824,8 +29398,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -31526,8 +32100,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -32164,8 +32738,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "e092be25-ce0d-4a0e-92b6-360963fe2874",
@@ -32527,8 +33101,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -32571,8 +33145,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -32929,8 +33503,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -32972,8 +33546,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -33015,8 +33589,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -33058,8 +33632,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-18T16:29:02.235Z",
-  "updatedAt": "2026-09-18T16:29:02.235Z"
+  "createdAt": "2026-09-19T05:08:06.400Z",
+  "updatedAt": "2026-09-19T05:08:06.400Z"
 },
 {
   "id": "e0fb253b-fe25-44ba-a026-fdbf2f6acb1b",
