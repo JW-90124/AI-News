@@ -1,5 +1,1560 @@
 [
 {
+  "id": "b0fae092-796c-4050-9c80-a488f3688faa",
+  "sourceSlug": "kserve-releases",
+  "externalId": "tag:github.com,2008:Repository/178075572/v0.20.0-rc1",
+  "canonicalUrl": "https://github.com/kserve/kserve/releases/tag/v0.20.0-rc1",
+  "urlHash": "f1441a1998a6f28b5d1c359acee771de6e92c151831d770b294cc78b0a5305be",
+  "title": "v0.20.0-rc1",
+  "summary": "What's Changed since v0.20.0-rc0 feat(llmisvc): drop old flag to support new TLS flag for disagg-sidecar by @madhugoutham in #5875 fix(llmisvc): escape quotes in generated --kv-transfer-config by @Chung-Hsuan-Tsai in #5880 fix(llmisvc): skip v1alpha2 InfPool reconcile when CRD absent by @bartoszmajsak in #5890 release…",
+  "author": "cjohannsen-cloudera",
+  "language": "en",
+  "publishedAt": "2026-08-04T00:00:40.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "a6af0476c42cfe58131dbce55d00f922d38bfca3d2b257b13f6f76a931171e98",
+  "createdAt": "2026-08-04T03:58:17.177Z",
+  "updatedAt": "2026-09-16T15:44:03.039Z"
+},
+{
+  "id": "c8a7416e-4a59-4c51-a21c-e4c3180e2f8f",
+  "sourceSlug": "vercel-ai-sdk",
+  "externalId": "tag:github.com,2008:Repository/644461337/@ai-sdk/cerebras@3.0.28",
+  "canonicalUrl": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fcerebras%403.0.28",
+  "urlHash": "f1449f1ebbe0c9d066a03ae077049095ee0dd13720ce4bf5e6a9861cc755f92f",
+  "title": "@ai-sdk/cerebras@3.0.28",
+  "summary": "Patch Changes Updated dependencies [ 83e6510 ] @ai-sdk/openai-compatible@3.0.28",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-08-09T18:03:53.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "215c6808c2141703ac3d583e42607e4191f3892f8268e441295104d2bf59acea",
+  "createdAt": "2026-08-10T03:01:02.207Z",
+  "updatedAt": "2026-08-10T03:01:02.207Z"
+},
+{
+  "id": "8d4da2b4-d012-4a03-9adb-c0afdf87768d",
+  "sourceSlug": "langgraph-releases",
+  "externalId": "tag:github.com,2008:Repository/676672661/1.2.9",
+  "canonicalUrl": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.9",
+  "urlHash": "f1585d79bf242d2643c2419e39daf31e2c2f42e35c0fcb31bfaedb0532e4c89b",
+  "title": "langgraph==1.2.9",
+  "summary": "Changes since 1.2.8 release(langgraph): 1.2.9 ( #8316 ) fix: updateState metadata/counters for delta channel ( #8315 )",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-10T01:30:24.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "32c7b3f9b6a056fbd47cc64fefd8f253c693e49b16fa038a2d5cd860c994e0ff",
+  "createdAt": "2026-07-12T05:58:13.191Z",
+  "updatedAt": "2026-09-16T15:41:02.352Z"
+},
+{
+  "id": "83b3ec36-47db-43d2-b514-c7d837b32d0b",
+  "sourceSlug": "bitsandbytes-releases",
+  "externalId": "tag:github.com,2008:Repository/373674258/0.50.2",
+  "canonicalUrl": "https://github.com/bitsandbytes-foundation/bitsandbytes/releases/tag/0.50.2",
+  "urlHash": "f1596d00c456814110b528caa746401781e81d13d2f8bed6ec52f3f24e08f822",
+  "title": "0.50.2",
+  "summary": "Highlights ROCm 10.0 build is now included for both Linux and Windows. Additional AMD GPU targets are included in our prebuilt wheels. Performance improvement for certain 4bit GEMM shapes on NVIDIA GB10. What's Changed Mask the absmax store in the Triton 4-bit quantize kernels by @truong-v in #2043 Add sm121 (GB10) to…",
+  "author": "matthewdouglas",
+  "language": "en",
+  "publishedAt": "2026-08-27T00:13:56.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "8add1fde1f39aa39a53c7da57872020a874329205907afaa50e75109061009bf",
+  "createdAt": "2026-09-16T15:44:08.642Z",
+  "updatedAt": "2026-09-16T15:44:08.642Z"
+},
+{
+  "id": "ecb23770-bb85-4d9a-956f-9d4af12dc7bd",
+  "sourceSlug": "llamaindex",
+  "externalId": "tag:github.com,2008:Repository/560704231/v0.14.22",
+  "canonicalUrl": "https://github.com/run-llama/llama_index/releases/tag/v0.14.22",
+  "urlHash": "f15a335fe7d11c978e62b3550f8dba923aed818a3c99dc8279ddc5fd78ff7934",
+  "title": "v0.14.22",
+  "summary": "Release Notes [2026-05-14] llama-index-agent-agentmesh [0.2.0] mass uv lock --upgrade ( #21638 ) llama-index-callbacks-agentops [0.5.0] chore(deps): bump the pip group across 55 directories with 3 updates ( #21435 ) mass uv lock --upgrade ( #21638 ) llama-index-callbacks-aim [0.4.1] mass uv lock --upgrade ( #21638 ) l…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-05-14T20:22:24.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "ba9908b51b9834aa9160ee6d5fc7d6ab9730168fa2bb99adfc0ea1532ef6b61f",
+  "createdAt": "2026-07-12T05:57:45.938Z",
+  "updatedAt": "2026-09-16T15:40:57.040Z"
+},
+{
+  "id": "4cd2ead7-e859-4b84-9ada-bb80569b084e",
+  "sourceSlug": "vercel-ai-sdk",
+  "externalId": "tag:github.com,2008:Repository/644461337/@ai-sdk/vue@3.0.233",
+  "canonicalUrl": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%403.0.233",
+  "urlHash": "f166028dd29222c6aee809326dfa363efd77fec50f17c567756997cd2e14fa7a",
+  "title": "@ai-sdk/vue@3.0.233",
+  "summary": "Patch Changes Updated dependencies [ fe410e7 ] Updated dependencies [ af7188c ] ai@6.0.233",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-21T15:29:01.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "f2a4abf9b49b5dea4f302d59d9050b34dc738955d331c5cd2fc001ea97251ab7",
+  "createdAt": "2026-07-22T14:27:36.952Z",
+  "updatedAt": "2026-07-22T14:27:36.952Z"
+},
+{
+  "id": "452a3309-fb1e-4b40-a64f-7e555187bde1",
+  "sourceSlug": "arxiv-ro",
+  "externalId": "http://arxiv.org/abs/2607.16123v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.16123v1",
+  "urlHash": "f166cf252c945638f6e0bb4a6264e1e058cc3ab542e41fc97b9e1b697bacb8fc",
+  "title": "BayesContact: Uncertain Pose Estimation via Visuo-Tactile Proposals and Simulation-based Inference",
+  "summary": "Contact-rich manipulation requires pose estimates that are often more accurate than what depth-only sensing provides. Existing methods, relying on vision and contact, employ costly offline training procedures that need to be retrained for new environments and geometries. We propose BayesContact, a Simulation-Based Inf…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-17T17:00:42.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "52b013b16f3b75a6c60ac4a369e3790ee89510096739385ae25b31aa5e81328a",
+  "createdAt": "2026-07-20T04:27:34.866Z",
+  "updatedAt": "2026-07-20T14:35:25.878Z"
+},
+{
+  "id": "b57672a4-4e75-42ad-a9b2-9037a8138f73",
+  "sourceSlug": "vercel-ai-sdk",
+  "externalId": "tag:github.com,2008:Repository/644461337/@ai-sdk/xai@4.0.59",
+  "canonicalUrl": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.59",
+  "urlHash": "f167ea09d22fc30dddb3d5b474b89252351807dd3a351e471f4a2b6951d1f09e",
+  "title": "@ai-sdk/xai@4.0.59",
+  "summary": "Patch Changes 6e405ae : fix(xai): preserve additionalProperties: false in tool schemas Updated dependencies [ 5c0054d ] Updated dependencies [ 39535af ] @ai-sdk/provider@4.0.15 @ai-sdk/provider-utils@5.0.41",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-09-15T17:28:55.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "db0be7d42d9afac375cf0ed58cd1768b2ea573911d2eb60167f69080cf41dae0",
+  "createdAt": "2026-09-16T15:40:59.282Z",
+  "updatedAt": "2026-09-16T15:40:59.282Z"
+},
+{
+  "id": "3a340370-6328-4bfa-900e-bfb1b7814582",
+  "sourceSlug": "xtuner-releases",
+  "externalId": "tag:github.com,2008:Repository/664913876/v1.0.1",
+  "canonicalUrl": "https://github.com/InternLM/xtuner/releases/tag/v1.0.1",
+  "urlHash": "f1686b8039cfae730bbc2255bd12e7380c575bca476f37e682a2efc2674b2094",
+  "title": "bk main",
+  "summary": "Fix rollout_is_seq metrics by excluding padded tokens in packed seque... ...nces ( #1788 ) * fix rollout_is count packed pad sequence * fix redundant mismatch/valid all reduce ,fix is metrics lint --------- Co-authored-by: shenshuo",
+  "author": "hhaAndroid",
+  "language": "zh-CN",
+  "publishedAt": "2026-05-15T06:57:47.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "ada80516c73b937c437db1b219ffeff289bcba68dec4134d5437d4797881537d",
+  "createdAt": "2026-07-12T05:59:26.229Z",
+  "updatedAt": "2026-07-12T05:59:26.229Z"
+},
+{
+  "id": "9629c4f5-cb0e-441c-81d3-2320529d35a3",
+  "sourceSlug": "ithome-ai",
+  "externalId": "https://www.ithome.com/0/975/673.htm",
+  "canonicalUrl": "https://www.ithome.com/0/975/673.htm",
+  "urlHash": "f16a58e9d8f325af154adf6417848c077e81af49efc7065bbbbc8761d705e56f",
+  "title": "周星驰导演电影《功夫女足》首日票房超 2.5 亿，一举打破 7 项中国影史纪录",
+  "summary": "IT之家 7 月 12 日消息,据灯塔专业版实时数据,截至 7 月 12 日 9 时 43 分,影片《功夫女足》票房突破 3 亿。 值得一提的是,本片首日票房超 2.5 亿,贡献大盘票房 80.1%,带动大盘票房时隔 136 天再破 3 亿。另外,《功夫女足》首日排片场次超 23 万,观众人次超 579 万, 一举打破 7 项中国影史纪录 : 过去五年暑期档影片首映日人次纪录:579.0 万人次 过去三年暑期档影片首映日票房纪录:1.85 亿 过去三年暑期档影片首映日人次纪录:448.2 万人次 过去三年暑期档喜剧片首映日票房纪录:1.57 亿 中国影史暑期档影片首映日场次纪录:22.8 万场 过去三年暑期档影片首映日场次纪录:2…",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2026-07-12T03:14:13.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "web",
+      "rss"
+    ]
+  },
+  "contentHash": "381f41d4d1d0e7513e76b86e3d242b3c1e7ba04174b86949d4719e0f994c2be1",
+  "createdAt": "2026-07-12T04:11:20.440Z",
+  "updatedAt": "2026-07-12T04:11:20.440Z"
+},
+{
+  "id": "7020d1f8-f7d5-4cb4-b65e-85119c99b8d5",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2609.18555v1",
+  "canonicalUrl": "https://arxiv.org/abs/2609.18555v1",
+  "urlHash": "f171300976c8c1cbc2b01b4ad467d4b561acec5b2f24abf6ad43ea5d7a7401bf",
+  "title": "Interpretable Patch-Based Deep Learning for Wildfire Spread Prediction from Ensemble Simulations",
+  "summary": "Wildfire spread is traditionally predicted using physics-based simulators, which are physically interpretable but whose cost increases with each additional ensemble member. We ask how well deep learning surrogates can reproduce these simulations at a fraction of this cost, training them on 10,584 fire spread simulatio…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-16T12:17:47.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "0dc6c96e3a9288a7af974e28bc08c85e9a9366689f9ac5b45bbe2256038a1ef4",
+  "createdAt": "2026-09-17T05:28:33.201Z",
+  "updatedAt": "2026-09-17T17:05:00.364Z"
+},
+{
+  "id": "dbfd1ee0-0b70-4f91-8246-f946c9b8d515",
+  "sourceSlug": "peft-releases",
+  "externalId": "tag:github.com,2008:Repository/570384908/v0.19.1",
+  "canonicalUrl": "https://github.com/huggingface/peft/releases/tag/v0.19.1",
+  "urlHash": "f173535a0ea1d7cbd3b9595815c215bc16148093f4d896a123513f54dcba5279",
+  "title": "v0.19.1",
+  "summary": "A small patch release containing these fixes: #3161 #3165 Full Changelog : v0.19.0...v0.19.1",
+  "author": "BenjaminBossan",
+  "language": "en",
+  "publishedAt": "2026-04-16T15:50:38.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "9a281f2784e325d7c48eae09c74ad9a696d0150a03734f25128335bf416378d1",
+  "createdAt": "2026-07-12T05:58:36.938Z",
+  "updatedAt": "2026-09-19T15:56:33.896Z"
+},
+{
+  "id": "3966e72b-482a-493d-8e9e-75dae7f45af0",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49070028",
+  "canonicalUrl": "https://my.tildepay.ai/",
+  "urlHash": "f173a518f2d8879425b3a2bbf59d70d4ef9b29a0a8c0905972945725000c0d7d",
+  "title": "Show HN: Tilde Pay – Give your AI agent a bank account to pay for things",
+  "summary": "hey HN, I'm Daniel - I built Tilde Pay during a hackathon I took part in and couldn't stop working on it. It's an MCP server you can give your AI agent to buy things online with. It can process both x402, MPP payments & (hopefully soon), any card checkout form online. When you sign up, you get EUR and USD denominated.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-27T14:13:55.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "3b72498d513c8d356a997f7ee28cbf3972a624bd933596870926a5288fb76df7",
+  "createdAt": "2026-07-27T15:19:14.275Z",
+  "updatedAt": "2026-07-27T15:19:14.275Z"
+},
+{
+  "id": "79a3db01-5d51-4178-b451-6125e28af58e",
+  "sourceSlug": "product-hunt-ai",
+  "externalId": "tag:www.producthunt.com,2005:Post/1216207",
+  "canonicalUrl": "https://www.producthunt.com/products/gesture-synth-school",
+  "urlHash": "f17428fd32f7118d5ff687c080712bd9bdf2e4a58d0cda72df969721f6ea8352",
+  "title": "Gesture Synth School",
+  "summary": "A practice app for learning to play music with your hands. Discussion | Link",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-06T04:53:27.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "f0100149373bca261fe9e0f293790088f7324147baacf98bf79f3da3bcc6cf72",
+  "createdAt": "2026-08-06T14:39:59.293Z",
+  "updatedAt": "2026-08-07T13:43:47.053Z"
+},
+{
+  "id": "1a84cfdb-cd49-4ac1-a82c-b2834059a18d",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2608.06347v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.06347v1",
+  "urlHash": "f178d166a2f6f4e0767cf02bcf73f28a98e0bd8ccfccf9bf82f6417d054c5361",
+  "title": "RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer",
+  "summary": "Multilingual reasoning transfer is crucial for extending reasoning capabilities of large language models (LLMs) beyond high-resource languages. On-policy self-distillation (OPSD) and its variants have emerged as a promising paradigm, providing dense token-level supervision on student-generated rollouts, yet their obje…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-06T17:52:06.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "983c739241b1b09bd93779ad2ab4bf733e5fadb5129aa54399035db1c0b5bfc5",
+  "createdAt": "2026-08-07T03:40:26.374Z",
+  "updatedAt": "2026-08-09T13:18:05.527Z"
+},
+{
+  "id": "b12fb598-6b10-47cf-929f-09b36b0bafd1",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2607.08768v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.08768v1",
+  "urlHash": "f179c62327622ba69ab8e6c21a08496b6db5f22cf95782f7029add35b3744306",
+  "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+  "summary": "The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to evaluate such agents effectively, as they often rely on sand…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-09T17:59:32.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "bfbb666268fb8589d6bdb9e13362ebb42824707a7ee89a4089c65c7790c99e0f",
+  "createdAt": "2026-07-13T00:16:20.441Z",
+  "updatedAt": "2026-07-13T17:28:54.788Z"
+},
+{
+  "id": "e5061e57-602d-40f4-aa92-991c1159c7c1",
+  "sourceSlug": "cline",
+  "externalId": "tag:github.com,2008:Repository/824874689/sdk/shared/v0.0.70",
+  "canonicalUrl": "https://github.com/cline/cline/releases/tag/sdk%2Fshared%2Fv0.0.70",
+  "urlHash": "f179e317fbaaf57e00095b7647cca0d09cf4b73b995190350dce50f629dac7fb",
+  "title": "sdk/shared/v0.0.70",
+  "summary": "@cline/shared@0.0.70",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-08-05T09:15:47.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "8122d779edc99e3a0b62d6a8e72f4928f225190fd012807f104eab1460c19d6b",
+  "createdAt": "2026-08-05T14:36:36.927Z",
+  "updatedAt": "2026-08-06T14:38:16.481Z"
+},
+{
+  "id": "904302d0-37b4-48d1-bea0-7211de7e8ceb",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2608.07435v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.07435v1",
+  "urlHash": "f17a1ac4df62eb87def237a70bf234c1730db8884cbeec34e24cde23f0d69d6a",
+  "title": "SABRE: Scalable and Automated Benchmarking of VLMs under Stress",
+  "summary": "Vision-language models (VLMs) are improving rapidly, but benchmark development lags behind, making weaknesses hard to identify. Building stress tests is costly: samples must satisfy controlled conditions, remain answerable, and challenge current models. We present SABRE, a scalable, automated pipeline that converts a.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-07T17:21:04.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "adfb5369b22f22147e021c28a570cfd9b20827d0342c39793069736822977e86",
+  "createdAt": "2026-08-10T03:00:56.387Z",
+  "updatedAt": "2026-08-10T13:48:02.237Z"
+},
+{
+  "id": "ebef982c-920d-4817-bc84-576ea30a2643",
+  "sourceSlug": "weaviate-releases",
+  "externalId": "tag:github.com,2008:Repository/55072677/v1.37.17",
+  "canonicalUrl": "https://github.com/weaviate/weaviate/releases/tag/v1.37.17",
+  "urlHash": "f1839b9bb05e64cd4511da04fa5055ea897188caa928ac7d413e16df9f97541a",
+  "title": "v1.37.17 - Modules weaviate_module_error_total metric labels Fix",
+  "summary": "Breaking Changes none New Features none Fixes feat: node-level query admission control (P1b) by @etiennedi in #12078 Fix shifted weaviate_module_error_total labels and qna-openai nil-response panic by @jeroiraz in #13048 test: switch minio/minio image to cgr.dev/chainguard/minio by @antas-marcin in #13052 fix(schema):…",
+  "author": "antas-marcin",
+  "language": "en",
+  "publishedAt": "2026-09-14T18:10:44.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "8ebf708a2c1c7b4085126f8013cab34e89b8164d18d6d16ec69a7413d4ce5ce1",
+  "createdAt": "2026-09-16T15:41:36.348Z",
+  "updatedAt": "2026-09-18T16:29:57.589Z"
+},
+{
+  "id": "34d8099e-86c2-46a4-b37e-e9a705034248",
+  "sourceSlug": "google-research",
+  "externalId": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
+  "canonicalUrl": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression",
+  "urlHash": "f184b216bdc99940225f450ca0024d8ff0d9ce7c8061162f6cdca8a313e6e873",
+  "title": "TurboQuant: Redefining AI efficiency with extreme compression",
+  "summary": "Algorithms & Theory",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-03-24T19:54:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "74eca3ba05167003bf93d6ce94eeb794f1c4ae6f0a6de83bab1f7b53b3009579",
+  "createdAt": "2026-07-15T14:18:14.892Z",
+  "updatedAt": "2026-09-18T16:33:30.614Z"
+},
+{
+  "id": "0c649740-b4a2-4fc6-b1de-2db37f1f7148",
+  "sourceSlug": "the-decoder",
+  "externalId": "https://the-decoder.com/?p=37618",
+  "canonicalUrl": "https://the-decoder.com/apple-sues-openai-for-allegedly-running-a-coordinated-campaign-to-steal-trade-secrets-through-poached-employees",
+  "urlHash": "f185d34257ca0f76fbf0784c6fe764e4a33069f1951e3b00f619edb5c1b4155b",
+  "title": "Apple sues OpenAI for allegedly running a \"coordinated campaign\" to steal trade secrets through poached employees",
+  "summary": "Apple is suing OpenAI over systematic employee poaching and the alleged theft of trade secrets tied to unreleased products. According to the complaint, more than 400 ex-Apple employees now work at OpenAI, including former iPhone design chief Tang Tan. The lawsuit hits OpenAI right as it's building out its own hardware…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-11T06:56:20.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "16bacdaeca2b1738b334506482688ea01772406189b7a4bb9fa893f2ad9cc02d",
+  "createdAt": "2026-07-12T00:08:51.684Z",
+  "updatedAt": "2026-07-12T00:08:51.684Z"
+},
+{
+  "id": "711477b3-9ff2-4b57-b362-da9fb26642ae",
+  "sourceSlug": "apple-ml",
+  "externalId": "refactor-vla-motor-programs",
+  "canonicalUrl": "https://machinelearning.apple.com/research/refactor-vla-motor-programs",
+  "urlHash": "f188a766e989cb0e3cad70ec94cc816ab56f273a8b21c7449dc4d09aef7d2e3d",
+  "title": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs",
+  "summary": "Most current vision-language-action (VLA) models—such as OpenVLA, π0, RT-2, and RDT-1B—are “monolithic.” This means they generate raw motor commands or very short sequences of actions, without organizing behaviors into reusable, well-defined abstractions. As a result, these models perform poorly on long-horizon (multi…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-02T00:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "19669e2bba1fb393b72a34d03dd0c94f4130c88c71a0098af98f72f4d607714f",
+  "createdAt": "2026-09-16T15:40:51.479Z",
+  "updatedAt": "2026-09-17T17:04:58.947Z"
+},
+{
+  "id": "553ca448-6101-479b-9dcf-1865e5638884",
+  "sourceSlug": "deepseek",
+  "externalId": "deepseek-v3-efficient-frontier",
+  "canonicalUrl": "https://github.com/deepseek-ai/DeepSeek-V3",
+  "urlHash": "f18f997e9aeef638409b83411d0895c06c7bf7941e10c9989c0945febacc663d",
+  "title": "DeepSeek-V3 开源：训练效率成为全球模型竞争的新变量",
+  "summary": "DeepSeek 发布并开放 DeepSeek-V3 权重与技术报告,采用 671B MoE、37B 激活参数和 FP8 训练。",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2024-12-26T00:00:00.000Z",
+  "category": "model-release",
+  "tags": [
+    "DeepSeek-V3",
+    "MoE",
+    "FP8",
+    "训练效率"
+  ],
+  "metrics": {
+    "independentSources": 1,
+    "platforms": [
+      "official"
+    ],
+    "regions": [
+      "US"
+    ]
+  },
+  "contentHash": "526c73745ff2ede153d4c619096ead4e53bcb04b8165c6c8009e28b6d6bf4312",
+  "createdAt": "2026-09-19T15:55:54.816Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
+},
+{
+  "id": "4d8c7033-55b2-45df-a9a6-0e8688da1410",
+  "sourceSlug": "pytorch-core-releases",
+  "externalId": "tag:github.com,2008:Repository/65600975/viable/strict/1784873452",
+  "canonicalUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1784873452",
+  "urlHash": "f193738e29941fb1df5e6656346f31a0f12829f302c738a7cdc6cd27d994455f",
+  "title": "viable/strict/1784873452: [CUDA] Change nvmlDeviceGetGpuFabricInfoV assertion to warning (#186375)",
+  "summary": "nvmlDeviceGetGpuFabricInfoV is only supported on Hopper and above, but get_fabric_access wraps it in an assertion, causing a crash on Orin and other pre-Hopper devices instead of falling back gracefully. Similar to #185946 , this PR replaces the assertion with a warning and allows control flow to continue. Fixes #1863…",
+  "author": "gderossi",
+  "language": "en",
+  "publishedAt": "2026-07-24T01:49:43.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "19dbb83c50f4681b964475a54dbdafad9ffd68ccc7b93bafd6f8d32d8084ff30",
+  "createdAt": "2026-07-24T14:19:24.867Z",
+  "updatedAt": "2026-07-24T14:19:24.867Z"
+},
+{
+  "id": "4e409f1f-52d3-446c-9484-5e1b5fa4bf36",
+  "sourceSlug": "arxiv-lg",
+  "externalId": "http://arxiv.org/abs/2607.15242v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.15242v1",
+  "urlHash": "f1966e9fe61869b3052286f971c8ab1930e4495537b2da65eaf0bbf66ec32afe",
+  "title": "Mutable Low-Rank Sketches for Retrain-Free Recommendation",
+  "summary": "A common bottleneck in two-stage recommendation is embedding staleness: when a user rates a new item, their embedding remains fixed until the next retrain cycle. We propose mutable sketches, which store each user's preferences in a KP-tree (a sparse segment tree with sum aggregation), fit a low-rank projection once, a…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-16T17:39:38.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "8775698f154e8cdff59783b2000bb47c42f88ef43cc5558484afd41150494d27",
+  "createdAt": "2026-07-17T14:05:57.479Z",
+  "updatedAt": "2026-07-18T13:52:57.410Z"
+},
+{
+  "id": "a532e118-b34e-41bf-8840-98a839307a5b",
+  "sourceSlug": "arxiv-ro",
+  "externalId": "http://arxiv.org/abs/2607.09548v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.09548v1",
+  "urlHash": "f1974f205b474664d15c346ad7acec88d447e21cad240ec6080ede752e0b800e",
+  "title": "Task-Adaptive Design of Modular Aerial Manipulators Under Airflow Exposure Constraints",
+  "summary": "Aerial manipulation with multirotor platforms enables physical interaction in complex environments, but rotor-induced airflow remains a critical limitation for tasks involving airflow-sensitive targets or surroundings. This paper presents an optimization-based design framework for modular aerial manipulators that join…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-10T15:58:37.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "8f9645050b713414e60806340b439f51dd765a64920654cca903db4e68058b59",
+  "createdAt": "2026-07-13T02:11:11.045Z",
+  "updatedAt": "2026-07-13T17:28:54.811Z"
+},
+{
+  "id": "c9fbb125-0d5d-44a8-9fb7-0532cca0cd64",
+  "sourceSlug": "funasr-releases",
+  "externalId": "tag:github.com,2008:Repository/569959091/v1.3.19",
+  "canonicalUrl": "https://github.com/modelscope/FunASR/releases/tag/v1.3.19",
+  "urlHash": "f1a5af14a719195fc7009166eada0070ec3f364b716f14158e135e3cd6eb0b2f",
+  "title": "FunASR 1.3.19",
+  "summary": "FunASR 1.3.19 This release ships the realtime WebSocket long-session diagnostics in the PyPI package and keeps the 1.3.18 subtitle fixes available for CLI users. It is the recommended package for anyone testing long realtime sessions, speaker-enabled streaming, or subtitle export from the funasr command. Install or up…",
+  "author": "github-actions[bot]",
+  "language": "zh-CN",
+  "publishedAt": "2026-07-19T04:32:18.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "f627bb8c3e31af6cba9a5c73eb9108943e9b6d3cb3fec34d3e5fb4b657632f9b",
+  "createdAt": "2026-07-20T04:31:01.080Z",
+  "updatedAt": "2026-07-23T04:03:45.071Z"
+},
+{
+  "id": "cd47b29d-cb6b-445d-bb0e-e58129338c6e",
+  "sourceSlug": "bisheng-releases",
+  "externalId": "tag:github.com,2008:Repository/684031003/v2.6.0-cofco-0812",
+  "canonicalUrl": "https://github.com/dataelement/bisheng/releases/tag/v2.6.0-cofco-0812",
+  "urlHash": "f1b04c50676078e3d55feb3f51bb4b9e0323dedca56a985c624b153e7081c9a9",
+  "title": "v2.6.0-cofco-0812",
+  "summary": "v2.6.0-cofco-0812",
+  "author": "zgqgit",
+  "language": "zh-CN",
+  "publishedAt": "2026-08-12T11:37:27.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "02bbd160523de2131a87c1b66b891fd134b3dff9f9badbc5eb4ecc0ace0f1c65",
+  "createdAt": "2026-08-12T13:55:28.493Z",
+  "updatedAt": "2026-08-17T13:13:17.253Z"
+},
+{
+  "id": "e9bf7008-396f-49aa-b41c-a003d2ebbfa0",
+  "sourceSlug": "arxiv-lg",
+  "externalId": "http://arxiv.org/abs/2609.17138v1",
+  "canonicalUrl": "https://arxiv.org/abs/2609.17138v1",
+  "urlHash": "f1bdbcfb43fce59bdec7fb788b293f5f562be15d8b02cadd871e9fb82781234a",
+  "title": "From Foundation Embeddings to Cropland Maps: Label Efficiency, Temporal Transferability and Independent Human Validation",
+  "summary": "Geospatial foundation models provide reusable representations of satellite imagery that support downstream mapping with limited task-specific modelling. We evaluate whether annual AlphaEarth embeddings support binary cultivated-versus-non-cultivated mapping in Maine, USA, using 192 spatially separated patches and labe…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-15T13:04:35.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "420bcb31ad5a0f2d5679998fa085825340b873e1f8c78a13059381d4ef5a81b0",
+  "createdAt": "2026-09-16T15:40:51.995Z",
+  "updatedAt": "2026-09-16T17:04:40.726Z"
+},
+{
+  "id": "5844d031-12cd-418c-bed8-9b11b1704fcf",
+  "sourceSlug": "01ai-yi-updates",
+  "externalId": "tag:github.com,2008:Grit::Commit/8cb87023efef1541f4c2c45728820b311a350167",
+  "canonicalUrl": "https://github.com/01-ai/Yi/commit/8cb87023efef1541f4c2c45728820b311a350167",
+  "urlHash": "f1c145dfc4d646a49a5673b04f0c1303c7977480f45c0dc9b546b117dc428424",
+  "title": "Update README.md",
+  "summary": "Update README.md",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2024-11-27T09:06:47.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "e7c4a59a4a053d849cb9c799e989daee76f3caa5c937a0d5725ac5d76d8ef682",
+  "createdAt": "2026-07-13T16:27:46.748Z",
+  "updatedAt": "2026-07-13T16:27:46.748Z"
+},
+{
+  "id": "df29c9b7-1cc8-42c2-9d27-f95ebbb0ef64",
+  "sourceSlug": "arxiv-lg",
+  "externalId": "http://arxiv.org/abs/2607.14731v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.14731v1",
+  "urlHash": "f1c2f591a2efbc9162fdf3c8ae2a227581eaecb549381aecbbb69d2a8b07b577",
+  "title": "What's in a Smoothness Constant? Tighter Rates for Local SGD with Bounded Second-order Heterogeneity",
+  "summary": "Local SGD, also known as Federated Averaging, is a widely used distributed optimization algorithm. Although Local SGD often outperforms alternatives such as Mini-batch SGD in practice, theory still only partially explains when and why local updates help under realistic data heterogeneity. Recent work by [Patel et al.,…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-16T08:56:45.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "ffd4eb976785acb9d1feac30561558fb15f94357608e1e1f431d09aa1d5e2bb8",
+  "createdAt": "2026-07-17T14:05:57.533Z",
+  "updatedAt": "2026-07-18T13:52:57.447Z"
+},
+{
+  "id": "6348622c-f297-43b2-b168-5961f166bceb",
+  "sourceSlug": "openai-codex-releases",
+  "externalId": "tag:github.com,2008:Repository/965415649/rust-v0.145.0-alpha.18",
+  "canonicalUrl": "https://github.com/openai/codex/releases/tag/rust-v0.145.0-alpha.18",
+  "urlHash": "f1c3d15bd97c4a38fc25e91bb0fe86b029c47203df4c2ee6710465a73a72f398",
+  "title": "0.145.0-alpha.18",
+  "summary": "Release 0.145.0-alpha.18",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-16T18:15:04.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "df6bc869c336fe1417344bed322cdbbc4a8632123f6d20e0491a6d3ecb535f74",
+  "createdAt": "2026-07-17T14:06:03.965Z",
+  "updatedAt": "2026-07-20T04:27:41.167Z"
+},
+{
+  "id": "3612974f-329d-40bb-a0f7-ab851f5f88a7",
+  "sourceSlug": "pytorch-core-releases",
+  "externalId": "tag:github.com,2008:Repository/65600975/viable/strict/1786002083",
+  "canonicalUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1786002083",
+  "urlHash": "f1c4ae7ef2124f163b55aa5f6eeae9dbffc3c03525b574c8eb38a79602aa8b31",
+  "title": "viable/strict/1786002083",
+  "summary": "Revert \"[dynamo] Support user-defined object leaves in invoke_subgrap...",
+  "author": "pytorchmergebot",
+  "language": "en",
+  "publishedAt": "2026-08-06T02:53:16.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "5c01113fbe2e0f46418bf848329040f6acf66fd71e93c3f6333c146ac4ed2713",
+  "createdAt": "2026-08-06T14:41:33.391Z",
+  "updatedAt": "2026-08-06T14:41:33.391Z"
+},
+{
+  "id": "97ac1149-06cf-401e-b505-f342a5e7f5dd",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2608.14079v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.14079v1",
+  "urlHash": "f1c704175348010f3fad7839057ca2d742a0278b4ddf41da5879fa19681bff9e",
+  "title": "The conditional superiority of fast silicon sampling",
+  "summary": "Silicon sampling can produce surprisingly good population estimates at times. Does doing it fast attenuate such fidelity? In this study, we extend and assess ongoing work in silicon sampling by comparing the algorithmic fidelity of \"fast\" and \"slow\" modes of silicon sampling among a nationally representative sample of…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-14T08:42:07.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "ff2cdf8b1edfd29b8e23c955afd416a4b3e0fe003d691dcec7a6543d5bd70401",
+  "createdAt": "2026-08-17T02:09:53.015Z",
+  "updatedAt": "2026-08-17T13:09:21.723Z"
+},
+{
+  "id": "34ea3ed0-0e78-4ca1-9251-420cf7b7cf78",
+  "sourceSlug": "vercel-ai-sdk",
+  "externalId": "tag:github.com,2008:Repository/644461337/@ai-sdk/xai@4.0.14",
+  "canonicalUrl": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fxai%404.0.14",
+  "urlHash": "f1c71c370abf2e74823511903977b6886a00fb5d632a10d6780e8ee3843b3032",
+  "title": "@ai-sdk/xai@4.0.14",
+  "summary": "Patch Changes Updated dependencies [ 0b61267 ] @ai-sdk/openai-compatible@3.0.11",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-15T14:26:28.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "13901f35f25d27b8669b45c2ee3d8c02d3215be1392b9eb597dbabb7499ea741",
+  "createdAt": "2026-07-16T14:26:29.990Z",
+  "updatedAt": "2026-07-16T14:26:29.990Z"
+},
+{
+  "id": "ee4cd5cb-1cbd-420e-bd4c-46e1fea2ccb7",
+  "sourceSlug": "huggingface",
+  "externalId": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+  "canonicalUrl": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+  "urlHash": "f1c76f23a788b6884a2877cd63f8a9bdec3da0e05f2a60f5b1fd57979e05c843",
+  "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+  "summary": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-25T11:39:24.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "7ebb5aaed7da741f13cefceb037ac474a105d28bbf40af0646af2d1db647029b",
+  "createdAt": "2026-09-16T15:40:52.560Z",
+  "updatedAt": "2026-09-19T15:56:17.870Z"
+},
+{
+  "id": "c5a4293a-1284-4db6-a406-9922a919449e",
+  "sourceSlug": "the-verge-ai",
+  "externalId": "https://www.theverge.com/?p=976042",
+  "canonicalUrl": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+  "urlHash": "f1d122158348f57788be9fa0458f5614686f85a5ced9f8634f2b1c7530ba8fd4",
+  "title": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’",
+  "summary": "OpenAI has asked a federal judge to toss out Apple's landmark lawsuit accusing the ChatGPT maker of stealing trade secrets, describing the allegations as \"meritless.\" In a motion filed yesterday to dismiss the complaint, OpenAI says that Apple is mischaracterizing both the actions of the AI startup's employees as thef…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-06T09:33:11.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "f36596f7013656d6d78ee85d78cc7f50bd0cd4114fe28f07713c40b24cc7b4f6",
+  "createdAt": "2026-08-06T14:40:01.937Z",
+  "updatedAt": "2026-08-07T13:43:49.869Z"
+},
+{
+  "id": "ab722e95-7bf5-4a2e-acd2-f6074648dccd",
+  "sourceSlug": "github-ai-ml-feed",
+  "externalId": "https://github.blog/?p=97698",
+  "canonicalUrl": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows",
+  "urlHash": "f1d4877545a986a0c7349b5eb5d1a44624b88463c561ca50722ab9ee15c187b7",
+  "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+  "summary": "Learn how to build tools to simplify how you work—without writing a single line of code. The post How the GitHub legal team used Copilot CLI to streamline their workflows appeared first on The GitHub Blog .",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-04T19:02:34.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "00053ff66d9701b4a30f55dfd754dbd007e6fc5ab73d292c4d6b1e73e230390c",
+  "createdAt": "2026-08-05T03:54:28.399Z",
+  "updatedAt": "2026-08-15T02:08:47.678Z"
+},
+{
+  "id": "b9af1422-1f52-400a-a4d4-a970a0de6704",
+  "sourceSlug": "sequoia-ai",
+  "externalId": "https://sequoiacap.com/?p=21977",
+  "canonicalUrl": "https://sequoiacap.com/article/standard-intelligence-training-general-intelligence-in-pixel-space",
+  "urlHash": "f1d5ede17d321a65740684004abad82409da63501f912001e26af3c6516fa00b",
+  "title": "Standard Intelligence: Training General Intelligence in Pixel Space",
+  "summary": "The post Standard Intelligence: Training General Intelligence in Pixel Space appeared first on Sequoia Capital .",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-04-30T14:00:29.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "9151fe52c52810ccd1df4d912ab022832870c1bcf78e83c127dbc3aa743b1346",
+  "createdAt": "2026-07-14T04:42:08.587Z",
+  "updatedAt": "2026-07-14T04:42:08.587Z"
+},
+{
+  "id": "28f825e7-ebc6-412b-b6e7-3ba8fce966b6",
+  "sourceSlug": "semantic-kernel-releases",
+  "externalId": "tag:github.com,2008:Repository/607289185/python-1.43.1",
+  "canonicalUrl": "https://github.com/microsoft/semantic-kernel/releases/tag/python-1.43.1",
+  "urlHash": "f1dd5f5de69917a582604acc734e4bd3f88c4a41c7971aec0bec989216b3d466",
+  "title": "python-1.43.1",
+  "summary": "What's Changed Python: Add function_choice_behavior support to Azure AI and OpenAI Assistant agents by SergeyMenshykh in #14057 Fix MessagePack by SergeyMenshykh in #14079 .Net: fix: prevent duplicate \"null\" in JSON Schema type arrays for nullable parameters by Roli Bosch (@roli-lpci) in #13635 Python: Reject encoded.…",
+  "author": "moonbox3",
+  "language": "en",
+  "publishedAt": "2026-06-17T07:28:05.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "b46678ac7f80a59e7bc6191dc78abdc46187c3f405049ef107548a5790a60043",
+  "createdAt": "2026-07-12T05:58:14.344Z",
+  "updatedAt": "2026-09-16T15:41:02.432Z"
+},
+{
+  "id": "fc3d0f94-d25a-474d-a893-6a048390b7ef",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49097194",
+  "canonicalUrl": "https://studywisdom.co.uk/ai-study-strategies-choosing-tools-that-strengthen-learning",
+  "urlHash": "f1de5939f1982b687db7a04eb9f7e13fcc45b31dea6fc881978312d13a9bcea7",
+  "title": "Using AI to Strengthen Learning, Not Replace It",
+  "summary": "Article URL: https://studywisdom.co.uk/ai-study-strategies-choosing-tools-that-strengthen-learning/ Comments URL: https://news.ycombinator.com/item?id=49097194 Points: 1 # Comments: 0",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-29T13:23:18.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "c30e220163396f4ad6c206896f7291d4ff64280b40773684103ca61cf2f82a8d",
+  "createdAt": "2026-07-29T14:35:47.403Z",
+  "updatedAt": "2026-07-29T14:35:47.403Z"
+},
+{
+  "id": "505c3cd7-51e9-4447-9bc4-e2a126fe29cb",
+  "sourceSlug": "infoq-cn-ai",
+  "externalId": "https://www.infoq.cn/article/XEta3vMDDHVIeS6qQe2P?utm_source=rss&utm_medium=article",
+  "canonicalUrl": "https://www.infoq.cn/article/XEta3vMDDHVIeS6qQe2P",
+  "urlHash": "f1de8444a1d4fb89c6d88de9cc49f897496a7ebc3237c817f3091a765a08d6ae",
+  "title": "跟上 AI 的节奏:为演进式架构构建上下文存储库",
+  "summary": "点击查看原文>",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2026-07-22T09:50:52.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "a79022d8996b54ccfbb6d374112e037b6ce43bc306bb193037fe961f5884dd6a",
+  "createdAt": "2026-07-22T14:29:05.459Z",
+  "updatedAt": "2026-07-23T04:01:44.078Z"
+},
+{
+  "id": "963bd299-766e-4a72-a247-ce9eaa2dd8ff",
+  "sourceSlug": "product-hunt-ai",
+  "externalId": "tag:www.producthunt.com,2005:Post/1209848",
+  "canonicalUrl": "https://www.producthunt.com/products/prnotch",
+  "urlHash": "f1dede4282e130c06617592466fc8acf03e20664d5085be51204dc79ea0ab95f",
+  "title": "PRNotch",
+  "summary": "GitHub pull requests in your Mac's notch Discussion | Link",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-29T13:52:23.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "1144ebf34a62339852c9a1f6d4ca61bd366c99e7417a6ab24dae1e40d0137d43",
+  "createdAt": "2026-07-30T14:37:13.903Z",
+  "updatedAt": "2026-08-01T04:07:21.165Z"
+},
+{
+  "id": "458a9458-1b76-4f1c-be2f-3d1b9864335b",
+  "sourceSlug": "aws-ml",
+  "externalId": "cd519793c04f6ce372abfc901f9f14b3d13da36b",
+  "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization",
+  "urlHash": "f1ed3e7ffd0fcbf1d801819514523bd0f2ba3bff1c162a6f94df7a4d9dddd067",
+  "title": "Build an AI-powered product tagging system with Amazon SageMaker serverless model customization",
+  "summary": "Manually tagging thousands of catalog products is slow and inconsistent. This walkthrough shows how to customize Qwen3-8B with supervised fine-tuning (SFT) and reinforcement learning with verifiable rewards (RLVR) on Amazon SageMaker serverless model customization, then deploy it for asynchronous inference to build a.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-15T16:11:36.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "84737689798380f87bd2cbcaaeda422f33926f406649ccddc8e4e9bcf1973eee",
+  "createdAt": "2026-09-16T15:42:40.360Z",
+  "updatedAt": "2026-09-19T05:10:10.956Z"
+},
+{
+  "id": "bdfb4e16-40e6-4d4f-a7ca-288c21883408",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2607.28986v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.28986v1",
+  "urlHash": "f1f2748c0f087000a662adefd967eee50ed080d84aaa980a33a8ced1fde70779",
+  "title": "Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning",
+  "summary": "Zero-shot image captioning (ZIC) describes images without paired image-caption supervision during captioner training, relying on text-only corpora and frozen pretrained image-text scorers. Existing retrieval-augmented methods score image-text alignment once, at retrieval, then commit the captioner's autoregressive bea…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-31T03:27:57.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "19d2c359d29704cc07e58adc434e1cb5f9e8654107f1525616a11826b92ce9d9",
+  "createdAt": "2026-08-03T04:21:19.854Z",
+  "updatedAt": "2026-08-03T15:21:01.512Z"
+},
+{
+  "id": "b81bec64-420c-4c06-b16d-624f16d44256",
+  "sourceSlug": "product-hunt-ai",
+  "externalId": "tag:www.producthunt.com,2005:Post/1252832",
+  "canonicalUrl": "https://www.producthunt.com/products/bolt-new",
+  "urlHash": "f1f28c29e7e3c242c1ddceef0255142f851175608705d2755b2c552ad8054367",
+  "title": "Bolt Forge",
+  "summary": "Bolt's new agent with open-source models and 50X usage Discussion | Link",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-16T23:59:56.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "e3c76705e955ac7b42adc436f7c4eb809ae03e06b344e7aa5da3ce691c4ae409",
+  "createdAt": "2026-09-19T15:58:07.194Z",
+  "updatedAt": "2026-09-19T15:58:07.194Z"
+},
+{
+  "id": "791d1830-5732-41ba-8824-6029c3e57f80",
+  "sourceSlug": "infoq-cn-ai",
+  "externalId": "https://www.infoq.cn/article/HQD432MKSXMMR2UUag6P?utm_source=rss&utm_medium=article",
+  "canonicalUrl": "https://www.infoq.cn/article/HQD432MKSXMMR2UUag6P",
+  "urlHash": "f1f4675583865491474bd921e94591a4fd62ee0ef6d96cf9c7644ab66d52a58c",
+  "title": "最高节省 85% 成本:微软公布 AI 智能体 LLM 路由方案",
+  "summary": "点击查看原文>",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2026-08-07T15:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "fbc8c59870d7df790bb10edfe6f75f594a64130cd9148d4fa3ff0cd29c343572",
+  "createdAt": "2026-08-07T13:43:48.052Z",
+  "updatedAt": "2026-08-10T03:02:47.094Z"
+},
+{
+  "id": "0f0036b7-63fe-4c83-8d30-778f37e8ba64",
+  "sourceSlug": "ithome-ai",
+  "externalId": "https://www.ithome.com/0/976/003.htm",
+  "canonicalUrl": "https://www.ithome.com/0/976/003.htm",
+  "urlHash": "f1f6f11c8edbcad87de268e8638815cdfe1424c55f2610dd6b3ad7a37d51b290",
+  "title": "TrendForce:预估 2026 年下半年 SLC NAND 价格将上涨 120-170%",
+  "summary": "IT之家 7 月 13 日消息,TrendForce 集邦咨询最新价格调查显示,由于高层数 3D NAND 等高附加价值产品排挤成熟制程产能, MLC NAND 供给极度短缺 ,迫使部分工控、车用和网通客户计划改采用 SLC NAND, 将导致原已吃紧的 SLC 供应情况更加紧绷 。 同时,AI 边缘运算、数据中心、汽车电子等对 SLC 的需求持续提升,供需缺口急剧扩大, 预估将推升 2026 年下半年 SLC 合约价格较上半年调涨 120-170% ,不排除有上修空间。 TrendForce 集邦咨询表示, MLC 合约价格于 2026 年上半年达到历史高点 ,部分买方的拉货节奏转为谨慎,但工控、车用等客户对存储器认证、规格有刚…",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2026-07-13T07:02:52.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "web",
+      "rss"
+    ]
+  },
+  "contentHash": "6f28048c153ab2972c1063578d301ba1205c80155b6ab5a2799df01ceeb8ed16",
+  "createdAt": "2026-07-13T07:55:10.568Z",
+  "updatedAt": "2026-07-13T07:55:10.568Z"
+},
+{
+  "id": "219dfa11-35ce-4d5f-8dba-b93393a04154",
+  "sourceSlug": "ros-discourse",
+  "externalId": "discourse.openrobotics.org-topic-57113",
+  "canonicalUrl": "https://discourse.openrobotics.org/t/ros-2-realtime-support-package/57113",
+  "urlHash": "f1f7732467d41db83c7104d52c70bd0563c182c051ddbb78977888963ec398f8",
+  "title": "ROS 2 Realtime Support Package",
+  "summary": "We have been working on adding real-time functionality to rcl and rclcpp since 2022. In response to this proposal, we have created a new package that provides real-time functionality without changing the existing packages. esol-community/ros2_realtime_support Background The previous discussion is as follows: ROS lacks…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-02T13:21:09.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "d76bb434e123ee22e1fbe4affb5bb5698ccb4781acd06c60d2f0b2455e917d0d",
+  "createdAt": "2026-08-02T14:02:06.265Z",
+  "updatedAt": "2026-08-08T13:16:33.123Z"
+},
+{
+  "id": "a53d1270-75c2-40fe-aec9-98e5d0c89a3c",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "oai:arXiv.org:2607.07850v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.07850",
+  "urlHash": "f1f7a0887ae53f2dfc8483467aa5656b626ab3bab625a5da7617820cbb7efc11",
+  "title": "A Graph Neural Network Model for Real-Time Gesture Recognition Based on sEMG Signals",
+  "summary": "arXiv:2607.07850v1 Announce Type: new Abstract: For seemless control of advanced hand prostheses and augmented reality, accurate and immediate hand gestures recognition is essential. Surface electromyography (sEMG) signals obtained from the forearm are commonly employed for this purpose. In this paper, we present a no…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-11T04:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "11e4aa74bcb23c939a20a865bafef3adcb2b87af164f8e6e8611abcedbad60d5",
+  "createdAt": "2026-07-11T16:30:00.271Z",
+  "updatedAt": "2026-07-11T16:30:00.271Z"
+},
+{
+  "id": "34ed4166-c4c0-47a0-8c1b-832ba2ccaa34",
+  "sourceSlug": "openai",
+  "externalId": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+  "canonicalUrl": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+  "urlHash": "f1f7d4f8001b4288ac8c42bb6a97b81382ec638bd4f67fcb73232167c1282993",
+  "title": "Core dump epidemiology: fixing an 18-year-old bug",
+  "summary": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-06-30T00:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "d91281f89d9d0d9cf175d6c0439a52576b113ddfcbef21f8a17e5bac4b9f302c",
+  "createdAt": "2026-07-11T14:29:24.076Z",
+  "updatedAt": "2026-08-06T14:38:08.412Z"
+},
+{
+  "id": "a7044be4-b96f-4340-a2ad-c4b51100ad8f",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2607.16004v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.16004v1",
+  "urlHash": "f1fb4f69c6d8c77252b099fe0272973c213186369b7ec933189009f0279ddf77",
+  "title": "Robustness of Reinforcement Learning-Based Congestion Management in Low-Voltage Grids",
+  "summary": "Increases in photovoltaic generation, charging of electric vehicles and heat-pump demand challenge operating limits in low-voltage distribution grids. This requires curative curtailment methods that can operate under sparse observability, noisy measurements, and imperfect grid models. Unlike prior end-to-end reinforce…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-17T14:39:48.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "1ca9d0c07b760772a4c79df5fa97490246749047223f036bd7e5f76789118f76",
+  "createdAt": "2026-07-20T04:27:34.684Z",
+  "updatedAt": "2026-07-20T14:35:25.748Z"
+},
+{
+  "id": "259d3aef-6513-44f4-b7df-7dabbde53ab8",
+  "sourceSlug": "vercel-ai-sdk",
+  "externalId": "tag:github.com,2008:Repository/644461337/@ai-sdk/vue@4.0.107",
+  "canonicalUrl": "https://github.com/vercel/ai/releases/tag/%40ai-sdk%2Fvue%404.0.107",
+  "urlHash": "f2011fa725f91ba56533b72db446c27d9b542b05d00bb652d3201fc8afb04aa9",
+  "title": "@ai-sdk/vue@4.0.107",
+  "summary": "Patch Changes Updated dependencies [ 79681c4 ] Updated dependencies [ 98c7275 ] Updated dependencies [ 2973485 ] Updated dependencies [ a105059 ] Updated dependencies [ 31532f3 ] Updated dependencies [ e61cbd8 ] Updated dependencies [8ade040] Updated dependencies [ 970a01e ] Updated dependencies [ 85539c5 ] Updated de…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-09-18T22:37:12.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "682bde81a93b259bead9375cc384b9a026d6522bf2d9074678f6271808e474a8",
+  "createdAt": "2026-09-19T05:08:29.230Z",
+  "updatedAt": "2026-09-19T05:08:29.230Z"
+},
+{
+  "id": "38c4b277-d94c-4261-ae4e-c19800807e8c",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2607.09094v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.09094v1",
+  "urlHash": "f20608b9b8c8256e882388927797c11bafbd76cba3e841b73e0820d3eb05b946",
+  "title": "PRecG: Legal Precedent Retrieval with Graph Neural Networks and Rhetorical Role Segmentation",
+  "summary": "Legal precedent retrieval is a fundamental task in legal case preparation, planning, litigation strategy, and legal research. Current approaches for automatic precedent retrieval map legal documents to a low-dimensional semantic space and compute similarity based on the proximity of their representations. These approa…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-10T04:35:04.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "bb9d5b64b31f24928fb2f7eeb02590adc4a5ba6907f561091576eacf16fceab8",
+  "createdAt": "2026-07-13T02:11:10.924Z",
+  "updatedAt": "2026-07-13T17:28:54.786Z"
+},
+{
+  "id": "df5674cb-2b95-4aff-a6d5-eb8de05c3ce8",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49727714",
+  "canonicalUrl": "https://www.theatlantic.com/politics/2026/09/steve-bannon-bernie-sanders-ai-oligarch/688642",
+  "urlHash": "f2071a2189befafbd542a3141ec5a31991135f7c13ba67b12b86afdd917716b1",
+  "title": "The Bannon-Bernie Bromance over AI and Oligarchs",
+  "summary": "Article URL: https://www.theatlantic.com/politics/2026/09/steve-bannon-bernie-sanders-ai-oligarch/688642/ Comments URL: https://news.ycombinator.com/item?id=49727714 Points: 3 # Comments: 4",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-16T14:36:07.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "f47e686b4c6badebe6de2203a51c8673289843caf99ffeb3d888d6b8fc4b12f3",
+  "createdAt": "2026-09-16T15:42:44.836Z",
+  "updatedAt": "2026-09-16T15:42:44.836Z"
+},
+{
+  "id": "e1308a11-4b14-4d29-94a7-c94f5cc0fc98",
+  "sourceSlug": "openhands",
+  "externalId": "tag:github.com,2008:Repository/771302083/1.11.0",
+  "canonicalUrl": "https://github.com/OpenHands/OpenHands/releases/tag/1.11.0",
+  "urlHash": "f20b8e2caabc8e2aac8788d72b96134e9c77a3ddcfcaa6631464d31464d2ae47",
+  "title": "1.11.0",
+  "summary": "1.11.0 (2026-07-09) What's Changed Features feat: pass repository metadata to observability traces by @neubig in #14431 feat(enterprise): Agent Profiles on the cloud/SaaS backend ( #15044 ) by @simonrosenberg in #15060 feat(backend): Add Budgets dashboard and expand Usage Dashboard by @saurya in #15149 feat: budgets a…",
+  "author": "openhands-release-bot[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-09T19:37:16.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "144657a0aefeb1671d4b47420d234b530bded01a3ebe03c2af82a2d009792e0a",
+  "createdAt": "2026-07-12T05:57:49.678Z",
+  "updatedAt": "2026-07-30T14:35:30.215Z"
+},
+{
+  "id": "b96cd88d-d634-4913-a4fc-75171e3d60d4",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2609.17107v1",
+  "canonicalUrl": "https://arxiv.org/abs/2609.17107v1",
+  "urlHash": "f20c754af596e2a635e3ea7b3e822f052af87ec6d6ff594f3d1364d9f32503d1",
+  "title": "Symbolic Separation: Grounding Deep Agents in Knowledge Graphs for Trustworthy Operational Data Analytics",
+  "summary": "Generative AI promises natural language access to the massive numerical telemetry of data centers and Industry 4.0 installations, yet text-to-query and tool-using agents stay unreliable: even frontier models answer little more than half of real-world database questions, and far fewer of the multi-step, operational one…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-15T12:38:43.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "9424438e47f416a07bd479f1c6e029a01cec3a42cfbbb4468f00825ed6d5f529",
+  "createdAt": "2026-09-16T15:40:51.875Z",
+  "updatedAt": "2026-09-16T17:04:40.683Z"
+},
+{
+  "id": "686f0c02-fd91-4cf4-945f-e027bc997477",
+  "sourceSlug": "arxiv-ro",
+  "externalId": "http://arxiv.org/abs/2607.08265v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.08265v1",
+  "urlHash": "f20cdfe944cd7a8932d6762e8aff48a4a1c5fb79db2eff18a519823dd7c0b027",
+  "title": "X-ACTA: eXtended Analytic Center Tension distribution Algorithm for fixed and mobile cable-driven-parallel-robot",
+  "summary": "Steering Cable-Driven Parallel Robots (CDPRs) beyond their Wrench-Feasible Workspace (WFW) augments their capabilities in challenging scenarios such as during aggressive maneuvers or following a cable failure. In this context, although the determination of cable tensions is a well-studied topic, only a few approaches.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-09T09:07:56.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "8ef710732b5fdc4312124c8f84bf44c0bfa729450e19979674a09f51b975c580",
+  "createdAt": "2026-07-13T00:16:21.620Z",
+  "updatedAt": "2026-07-13T00:16:21.620Z"
+},
+{
+  "id": "81b8c55a-0a2b-491c-87da-f66e0eca9fa6",
+  "sourceSlug": "anthropic-typescript-releases",
+  "externalId": "tag:github.com,2008:Repository/595176353/vertex-sdk-v0.19.9",
+  "canonicalUrl": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.9",
+  "urlHash": "f20d08f41e69fe4947a04f080aef657991a605877b49d532c55a8dbf0c078c98",
+  "title": "vertex-sdk: v0.19.9",
+  "summary": "0.19.9 (2026-09-15) Full Changelog: vertex-sdk-v0.19.8...vertex-sdk-v0.19.9 Chores internal: move the sub-packages off ts-node and modernise their tsconfig ( 1d7cd91 )",
+  "author": "stainless-app[bot]",
+  "language": "en",
+  "publishedAt": "2026-09-15T17:34:18.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "77670017b4424214336dfb7a2a4f599ad702c1d51539a8780a3bd345e11f3ec8",
+  "createdAt": "2026-09-16T15:42:14.030Z",
+  "updatedAt": "2026-09-18T16:30:59.388Z"
+},
+{
+  "id": "4defb201-e86a-4a7e-93de-54872b4bf2f3",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49183321",
+  "canonicalUrl": "https://petapixel.com/2026/08/05/duckduckgos-smart-glasses-have-no-camera-no-ai-and-no-electronics",
+  "urlHash": "f20eede8ed8b7988753073971846ad3c9a973ecf73cb73947df8ffc510fe10bd",
+  "title": "DuckDuckGo's Smart Glasses Have No Camera, No AI, and No Electronics",
+  "summary": "Article URL: https://petapixel.com/2026/08/05/duckduckgos-smart-glasses-have-no-camera-no-ai-and-no-electronics/ Comments URL: https://news.ycombinator.com/item?id=49183321 Points: 2 # Comments: 0",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-05T14:19:36.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "d9dd7dd0ebdc27bb17e9d2e1fcfae7764fbe63dabdfae0240e630f97bdbb0e90",
+  "createdAt": "2026-08-05T14:38:21.733Z",
+  "updatedAt": "2026-08-05T14:38:21.733Z"
+},
+{
+  "id": "547e4a36-0e32-4bb1-b14c-95d89f6b1e03",
+  "sourceSlug": "cline",
+  "externalId": "tag:github.com,2008:Repository/824874689/desktop-v0.0.10",
+  "canonicalUrl": "https://github.com/cline/cline/releases/tag/desktop-v0.0.10",
+  "urlHash": "f20fa96683acdf6210145fbf43bcb643737677ea0f4b2d984d31132fa215982c",
+  "title": "Desktop v0.0.10",
+  "summary": "Remote MCP servers can now authenticate with OAuth from Settings → MCP — authorize a server, see its auth status, and cancel or retry a pending authorization. Servers that require a pre-registered OAuth client (client ID/secret) instead of dynamic registration are now supported, and stored tokens are invalidated when.…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-08-07T07:04:12.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "346530a7b5a21c94dbd8f52469f9364557086913c7f4057706061bdc71201c8a",
+  "createdAt": "2026-08-07T13:42:03.085Z",
+  "updatedAt": "2026-08-11T13:46:05.405Z"
+},
+{
+  "id": "d4ccbc44-2791-42c0-a7f4-f9c63f6b7bf0",
+  "sourceSlug": "arxiv-lg",
+  "externalId": "http://arxiv.org/abs/2608.10777v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.10777v1",
+  "urlHash": "f211170a50f112a8a57896d6aaf45b2a74c88703e3aff538286956c41152de9b",
+  "title": "Path Integral Value Matching for Linear Quadratic Stochastic Optimal Control",
+  "summary": "Linear Quadratic Stochastic Optimal Control (LQ-SOC) establishes a fundamental framework for steering noisy dynamical systems and has recently gained renewed interest in the machine learning community. However, current state-of-the-art policy-based methods suffer from prohibitive computational costs and instability du…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-11T10:29:49.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "115236bcea697731a4e65532782d961ab8dd1664a97920ab983d731bb8e21d82",
+  "createdAt": "2026-08-12T03:13:23.406Z",
+  "updatedAt": "2026-08-12T13:51:36.211Z"
+},
+{
+  "id": "891b7044-5ef6-4b75-ac07-4a2e45ce0dbc",
+  "sourceSlug": "langchain-releases",
+  "externalId": "tag:github.com,2008:Repository/552661142/langchain-anthropic==1.5.0",
+  "canonicalUrl": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.5.0",
+  "urlHash": "f218e50f7dd4e30dbe8b5fd0ea92ccbb0704a4e28bdaab250b33e31c271c279f",
+  "title": "langchain-anthropic==1.5.0",
+  "summary": "Changes since langchain-anthropic==1.4.8 release(anthropic): 1.5.0 ( #38985 ) feat(core): add reasoning_effort as a standard chat model parameter ( #38887 ) fix(anthropic): add advisor_ prefix to builtin tool recognition ( #38686 ) chore(deps): refresh lockfiles ( #38746 ) chore(model-profiles): refresh model profile.…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-21T18:17:28.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "22a2b564a8ca2e2c8bd6954a231e96c70eddfbd2526033bbe9a5e195a1a40a28",
+  "createdAt": "2026-07-22T14:28:46.463Z",
+  "updatedAt": "2026-07-25T03:56:33.106Z"
+},
+{
+  "id": "ce43d5c9-8b5d-4f72-8031-a3fbf03bc318",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=48887540",
+  "canonicalUrl": "https://www.seattletimes.com/nation-world/why-recruiters-cant-find-workers-and-new-grads-cant-find-jobs-its-not-ai",
+  "urlHash": "f2195c59d613b52bcc0daa854be73fe571f16148cdac9de858e00fc0631d91e4",
+  "title": "Why recruiters can't find workers and new grads can't find jobs (it's not AI)",
+  "summary": "Article URL: https://www.seattletimes.com/nation-world/why-recruiters-cant-find-workers-and-new-grads-cant-find-jobs-its-not-ai/ Comments URL: https://news.ycombinator.com/item?id=48887540 Points: 4 # Comments: 8",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-13T03:30:39.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "2d495d021e5a57d9bfa135f7ec5044e658c924aa9001a609ef4597283f2cd5c9",
+  "createdAt": "2026-07-13T05:32:16.882Z",
+  "updatedAt": "2026-07-13T05:32:16.882Z"
+},
+{
+  "id": "6f843480-2189-46d8-bcf3-bc99e530604d",
+  "sourceSlug": "arize-blog-feed",
+  "externalId": "https://arize.com/?p=29867",
+  "canonicalUrl": "https://arize.com/blog/own-the-loop-field-guide-agent-harnesses",
+  "urlHash": "f21c369d60e863d19ba62009768ad6d9caae239aaa5fa26a512ae99d67347260",
+  "title": "Own the loop: A field guide to agent harnesses",
+  "summary": "As models become cheaper and more interchangeable, the durable advantage shifts to the agent harness: the loop, tools, memory, permissions, and workflow you can own and refine. The post Own the loop: A field guide to agent harnesses appeared first on Arize AI .",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-06T15:25:37.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "89cf96ba3cf11774663ff09b1a69a4bf9cd059d5738835404c769937eb06a620",
+  "createdAt": "2026-07-13T15:38:30.814Z",
+  "updatedAt": "2026-07-17T14:09:48.405Z"
+},
+{
+  "id": "c8743926-76b3-421d-9349-f2a4272e850d",
+  "sourceSlug": "arxiv-ro",
+  "externalId": "http://arxiv.org/abs/2607.13033v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.13033v1",
+  "urlHash": "f22534a53668b1a8603f4a108ca193fd4242a34a656661df9e521c74e9894bbc",
+  "title": "DenseReward: Dense Reward Learning via Failure Synthesis for Robotic Manipulation",
+  "summary": "Reinforcement learning holds great promise for improving robot policies beyond the limits of imitation learning. However, its practical adoption remains bottlenecked by the lack of reliable vision-language reward models that provide dense and informative feedback. Two key challenges remain: acquiring diverse failure d…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-14T17:59:29.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "3232b519e794f486c00b0a85fe904b86ae87fb17c8ccf7a563f12dd4d4987962",
+  "createdAt": "2026-07-15T14:14:17.175Z",
+  "updatedAt": "2026-07-15T14:14:17.175Z"
+},
+{
   "id": "4726e6b5-7217-462c-b2ce-6d07be1edcb7",
   "sourceSlug": "hackernews-ai",
   "externalId": "https://news.ycombinator.com/item?id=49110320",
@@ -157,7 +1712,7 @@
       "github"
     ]
   },
-  "contentHash": "7241100a449483b6b7438faba30db11d1e01de478fa07812ec60f11101e8a915",
+  "contentHash": "b6caf9e7fa2f58edd0a28034fd6a59d50bfe351e2aa1a33848d307afce6fc01f",
   "createdAt": "2026-09-16T15:41:00.914Z",
   "updatedAt": "2026-09-19T05:08:31.573Z"
 },
@@ -318,7 +1873,7 @@
   },
   "contentHash": "0a10d8401a4e5ef5532c2553f184c478463bd4feacd6779e183b7ab0e58c85ac",
   "createdAt": "2026-09-16T15:40:51.413Z",
-  "updatedAt": "2026-09-19T05:08:21.949Z"
+  "updatedAt": "2026-09-19T15:56:16.582Z"
 },
 {
   "id": "1e6cf443-ff64-4ce6-b85e-d678144326f7",
@@ -590,7 +2145,7 @@
   },
   "contentHash": "f37cfd9843ad0e612698f4f8cfaf39ba7fb4bc72f0f0543cb09cd32a4483d7e9",
   "createdAt": "2026-07-12T00:08:48.021Z",
-  "updatedAt": "2026-09-19T05:10:11.630Z"
+  "updatedAt": "2026-09-19T15:58:05.716Z"
 },
 {
   "id": "0d7523a2-5a5f-49d0-9415-754dd17ff22a",
@@ -726,7 +2281,7 @@
   },
   "contentHash": "8a0fba8b23da523ed5aec950e02ba0ed3085b94029fff32fadea5292ceded619",
   "createdAt": "2026-09-18T05:16:00.713Z",
-  "updatedAt": "2026-09-19T05:08:22.840Z"
+  "updatedAt": "2026-09-19T15:56:17.069Z"
 },
 {
   "id": "c7c69fd3-6a43-4441-a7c1-197a06fa958d",
@@ -1136,7 +2691,7 @@
   },
   "contentHash": "0ea662f55f1b55598893859646e626da509f4ef31c51058333b41308f14b2ae2",
   "createdAt": "2026-07-12T05:57:55.678Z",
-  "updatedAt": "2026-09-19T05:08:31.761Z"
+  "updatedAt": "2026-09-19T15:56:25.070Z"
 },
 {
   "id": "2e8c3614-038d-4b67-ad29-90d0cba9b201",
@@ -1158,7 +2713,7 @@
   },
   "contentHash": "1d3b7ae5f6763cfe4247ba662c039aba45ce58c2a2788c541c16748e0c788d50",
   "createdAt": "2026-07-11T16:30:01.213Z",
-  "updatedAt": "2026-09-19T05:08:22.090Z"
+  "updatedAt": "2026-09-19T15:56:16.938Z"
 },
 {
   "id": "09e68312-46cd-41d7-8d89-ea7958ad1074",
@@ -1202,7 +2757,7 @@
   },
   "contentHash": "bf5ce79091b870d792fc954bc2d92e2b3575a76243eb90110cfe8bfd526fd71d",
   "createdAt": "2026-09-18T05:16:00.456Z",
-  "updatedAt": "2026-09-19T05:08:22.765Z"
+  "updatedAt": "2026-09-19T15:56:17.005Z"
 },
 {
   "id": "143f0030-f64e-4e0e-8ad0-388435927edd",
@@ -1360,7 +2915,7 @@
   },
   "contentHash": "b5cde81673d19929837c743193bcb0591f6ca542e63ca489da50391649f7d4fe",
   "createdAt": "2026-08-12T03:15:11.391Z",
-  "updatedAt": "2026-09-17T05:30:20.995Z"
+  "updatedAt": "2026-09-19T15:58:05.100Z"
 },
 {
   "id": "0b60152b-2058-4399-b0fd-c802875dfba1",
@@ -1456,7 +3011,7 @@
   },
   "contentHash": "34986065805c733ecfe17dc58bd7c28b5ecc749321176c0616b34d94b5f8b587",
   "createdAt": "2026-07-12T05:59:31.226Z",
-  "updatedAt": "2026-09-19T05:09:18.736Z"
+  "updatedAt": "2026-09-19T15:57:15.415Z"
 },
 {
   "id": "fda326e7-5f92-4175-a5f5-042fbeb61300",
@@ -1465,7 +3020,7 @@
   "canonicalUrl": "https://www.openrobotics.org/blog/2025/12/8/new-build-farm-backer-program-amp-infra-team-swagnbsp",
   "urlHash": "f31961c46856258843ae85845b40a04282c41e4bfb656928c7d053c72fed7c5c",
   "title": "New Build Farm Backer Program & Infra Team Swag&nbsp;",
-  "summary": "Ever wonder how sudo apt install just works for ROS? That’s the magic of the OSRF Build Farm! This beast serves over half a billion packages a year, saving us all from the headache of compiling from source. But maintaining this critical utility takes massive server power and a dedicated team of engineers. To keep the…",
+  "summary": "Ever wonder how sudo apt install just works for ROS? That’s the magic of the OSRF Build Farm! This beast serves over half a billion packages a year, saving us all from the headache of compiling from source. But maintaining this critical utility takes massive server power and a dedicated team of engineers. To keep the.…",
   "author": null,
   "language": "en",
   "publishedAt": "2025-12-10T17:13:25.000Z",
@@ -1476,7 +3031,7 @@
       "rss"
     ]
   },
-  "contentHash": "301bddb745fed5902dabeff02fe04ba56253c8cd1c64c597c15a19970e7d6c6b",
+  "contentHash": "b70e47c17d963586f0360d41340643183f048b1b81ab92df30bae349cb967f9c",
   "createdAt": "2026-07-12T05:58:10.950Z",
   "updatedAt": "2026-09-19T05:10:09.341Z"
 },
@@ -1718,7 +3273,7 @@
   },
   "contentHash": "195d1e4d66713f7d99bb91202d9b915728a16b268643acd9ab4355d6a4d5ee76",
   "createdAt": "2026-09-18T05:16:00.660Z",
-  "updatedAt": "2026-09-19T05:08:23.217Z"
+  "updatedAt": "2026-09-19T15:56:17.146Z"
 },
 {
   "id": "dbf87069-ab4b-4c58-a5b1-353d1d7a5386",
@@ -1836,7 +3391,7 @@
   },
   "contentHash": "f22229f62a95e0174065a00bd1524eeb2210309883f6143de4fb0107743c46b7",
   "createdAt": "2026-08-11T02:56:08.494Z",
-  "updatedAt": "2026-09-17T05:30:20.996Z"
+  "updatedAt": "2026-09-19T15:58:05.101Z"
 },
 {
   "id": "c1ce8eb5-7c42-4f61-9ed7-9bdf2a7a67c5",
@@ -1978,7 +3533,7 @@
       "github"
     ]
   },
-  "contentHash": "8f96160c533b0cff7e248cf7cdca5418ba239428b1d7e5fc2e354744a6ffa795",
+  "contentHash": "c214ab048d43fc24e29f946730eddd5f036306e95155ccda999cc6d192911054",
   "createdAt": "2026-09-16T15:41:00.910Z",
   "updatedAt": "2026-09-19T05:08:31.571Z"
 },
@@ -2124,7 +3679,7 @@
   },
   "contentHash": "1cc16dcc5da4399d380c35bbe28cb849c0fa442045d38f6bec22d4974b93a158",
   "createdAt": "2026-07-12T05:56:33.173Z",
-  "updatedAt": "2026-09-19T05:08:23.792Z"
+  "updatedAt": "2026-09-19T15:56:17.706Z"
 },
 {
   "id": "76dc6203-4f5b-42eb-bdcc-5c05ba724bf2",
@@ -2197,6 +3752,28 @@
   "updatedAt": "2026-09-16T17:06:28.590Z"
 },
 {
+  "id": "4bd68285-6413-4e0f-bab0-a4301f76e2f3",
+  "sourceSlug": "the-decoder",
+  "externalId": "https://the-decoder.com/?p=40380",
+  "canonicalUrl": "https://the-decoder.com/googles-gemini-also-accidentally-hacked-three-real-companies-during-security-testing",
+  "urlHash": "f37548f199851064f141603dd6dab418758ccfd8331e1837822f52b2d7949554",
+  "title": "Google&#039;s Gemini also accidentally hacked three real companies during security testing",
+  "summary": "During a security test run by the firm Irregular, Google's AI model Gemini escaped into the open internet and hacked three real companies, guessing passwords and pulling login credentials from public sources. The cause was a flawed test environment that had internet access left on accidentally. The same firm triggered…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-19T09:31:03.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "396fadd2483a1e47f918083f3fb4ee60456e460ed4eec733f4e76b8f4d3699ee",
+  "createdAt": "2026-09-19T15:58:11.583Z",
+  "updatedAt": "2026-09-19T15:58:11.583Z"
+},
+{
   "id": "cab06c0c-696d-44b3-9b3f-be628df22520",
   "sourceSlug": "github-copilot",
   "externalId": "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification",
@@ -2236,7 +3813,7 @@
       "rss"
     ]
   },
-  "contentHash": "dc81777a87de39a289d459adf9d2bc19572acc4f0067fd1b4f49a701ce3fe1cf",
+  "contentHash": "67c31583da13bd62344abd8aaed8c06047761be65b7f4afce07ae6cbd6bf2d47",
   "createdAt": "2026-09-16T15:42:41.282Z",
   "updatedAt": "2026-09-19T05:10:12.128Z"
 },
@@ -2359,7 +3936,7 @@
   },
   "contentHash": "97b7b0826beda9a5e837ed2ce8c9157404f4531900e4f49d127a3b8573043221",
   "createdAt": "2026-09-17T05:28:32.709Z",
-  "updatedAt": "2026-09-19T05:08:21.929Z"
+  "updatedAt": "2026-09-19T15:56:16.554Z"
 },
 {
   "id": "2a0a3a72-19d1-4a7c-b57a-6487b67af518",
@@ -2403,7 +3980,7 @@
   },
   "contentHash": "f8cf3e3de4ca37e48753bcf76e7d0b7169c90aafcf5b43ac64c5482010226385",
   "createdAt": "2026-09-16T15:40:52.093Z",
-  "updatedAt": "2026-09-19T05:08:22.287Z"
+  "updatedAt": "2026-09-19T15:56:16.805Z"
 },
 {
   "id": "355d3705-c35c-458f-a79a-caf68ec174d2",
@@ -2599,7 +4176,7 @@
   },
   "contentHash": "040e7f07a0d4898fe51c1fba444e04f6fb7e16ad815139c8921ca0ebc34d3d78",
   "createdAt": "2026-09-16T15:40:55.685Z",
-  "updatedAt": "2026-09-19T05:08:26.438Z"
+  "updatedAt": "2026-09-19T15:56:20.297Z"
 },
 {
   "id": "c824d402-63e5-47fd-8721-01dbba8fe0d4",
@@ -2900,7 +4477,7 @@
       "github"
     ]
   },
-  "contentHash": "e08d66f771e441a94e925116e9ce949d10efddcafe5ca72443f1dc7bc299b751",
+  "contentHash": "772d4e56a1160da42d5f9b64989bcbcbda4aafe3e83ce193172e87cfc69ff21d",
   "createdAt": "2026-09-18T16:33:05.475Z",
   "updatedAt": "2026-09-18T16:33:05.475Z"
 },
@@ -3529,7 +5106,7 @@
   },
   "contentHash": "0ef5085defa7e4903cc5fc860c995cb5720f14896cff6e097eaadf06a506ce70",
   "createdAt": "2026-07-16T14:26:25.072Z",
-  "updatedAt": "2026-09-19T05:08:24.962Z"
+  "updatedAt": "2026-09-19T15:56:17.885Z"
 },
 {
   "id": "7995a8bd-0544-42e5-8dd3-41ea43044aed",
@@ -3715,7 +5292,7 @@
       "rss"
     ]
   },
-  "contentHash": "3ef7eca4e2cbc2b9c0596e16520902d95b88f4de81db516267895aed29106c18",
+  "contentHash": "c1bdc97e61dc19f513df3e94ab13a7485cea05c3bdca57ae01f5cf02eefc29cc",
   "createdAt": "2026-07-13T15:38:18.762Z",
   "updatedAt": "2026-09-19T05:12:23.727Z"
 },
@@ -3831,7 +5408,7 @@
   },
   "contentHash": "01a6df3f0576e60cb585ae46baa8d25a8b853c0ed05f30249a486fc5c69cd0eb",
   "createdAt": "2026-07-13T15:38:17.740Z",
-  "updatedAt": "2026-09-19T05:12:24.915Z"
+  "updatedAt": "2026-09-19T16:00:13.212Z"
 },
 {
   "id": "0551910f-e4e5-4f4d-9b96-254acf2cf99e",
@@ -3925,7 +5502,7 @@
       "github"
     ]
   },
-  "contentHash": "a3a39bbaf1547cfda255eb1254c6a8595791864c096a8aa6e6818abc489ca52c",
+  "contentHash": "b04a56f35e7bbe0f26696d99b3c9f47a2b18c0e94b9f72772a2614f4463db3a3",
   "createdAt": "2026-07-12T05:59:18.054Z",
   "updatedAt": "2026-09-19T05:09:04.936Z"
 },
@@ -4440,7 +6017,7 @@
   },
   "contentHash": "8cf3c1cdb1a6813e0586e66dfe0f209afc31859a834bc40894f7b800100d1077",
   "createdAt": "2026-09-17T05:28:39.969Z",
-  "updatedAt": "2026-09-19T05:08:29.945Z"
+  "updatedAt": "2026-09-19T15:56:24.350Z"
 },
 {
   "id": "adf8d7d3-a85b-4e0f-8595-fb742a2e3147",
@@ -4668,7 +6245,7 @@
   },
   "contentHash": "caa9b7b26bdb3f54e87cf3690aa9eba0786416db49bfe3da39563c85796d2cbb",
   "createdAt": "2026-09-19T05:10:12.227Z",
-  "updatedAt": "2026-09-19T05:10:12.227Z"
+  "updatedAt": "2026-09-19T15:58:06.251Z"
 },
 {
   "id": "2750e41f-4ec3-4bb7-b901-0ffba700f6ba",
@@ -4710,7 +6287,7 @@
       "rss"
     ]
   },
-  "contentHash": "5cfedab161b8d6ec1a42fa8180bdc772a73219e4863b30bbe87db198ed75e2f7",
+  "contentHash": "aa68aa181815e7cdb92dee5e6102cb9148efa1a4dc582ade3e5f8d0611836907",
   "createdAt": "2026-09-16T15:42:40.654Z",
   "updatedAt": "2026-09-19T05:10:11.395Z"
 },
@@ -4756,7 +6333,7 @@
   },
   "contentHash": "883f44569b33dfa7e2862183c36ec84646b4f317573c2324fef3f2fff71be310",
   "createdAt": "2026-09-16T15:42:40.525Z",
-  "updatedAt": "2026-09-19T05:10:11.220Z"
+  "updatedAt": "2026-09-19T15:58:05.379Z"
 },
 {
   "id": "0ae539aa-39ce-4527-84ad-2b354a9f4b8d",
@@ -5028,7 +6605,7 @@
   },
   "contentHash": "9c98e78223df29a26e76ddb74910d5512b83974b235a04e75221b0dcdddfdc72",
   "createdAt": "2026-07-12T05:56:33.183Z",
-  "updatedAt": "2026-09-19T05:08:23.798Z"
+  "updatedAt": "2026-09-19T15:56:17.715Z"
 },
 {
   "id": "558a8a2d-0459-4b64-8402-390603096b76",
@@ -5053,6 +6630,28 @@
   "updatedAt": "2026-07-31T14:41:17.917Z"
 },
 {
+  "id": "78bd8469-3e1c-4327-b82d-a3d14196f090",
+  "sourceSlug": "product-hunt-ai",
+  "externalId": "tag:www.producthunt.com,2005:Post/1251773",
+  "canonicalUrl": "https://www.producthunt.com/products/nepo-network",
+  "urlHash": "f508a9a03f99fb5baf3f364169c317e4253e157040fdfd2a818437ff213e22a7",
+  "title": "Nepotism Network",
+  "summary": "Great things start by knowing friend of a friend of a friend Discussion | Link",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-15T21:54:23.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "5eca42fec21f91510172f171be7d37280ee9b9ed291ef99e4638afe66d20a69d",
+  "createdAt": "2026-09-19T15:58:07.201Z",
+  "updatedAt": "2026-09-19T15:58:07.201Z"
+},
+{
   "id": "6ab9ee84-ad45-40af-8391-abfc6f8da371",
   "sourceSlug": "amazon-science",
   "externalId": "https://www.amazon.science/blog/sop-bench-a-new-benchmark-for-evaluating-ai-agents-on-real-business-procedures",
@@ -5072,7 +6671,7 @@
   },
   "contentHash": "afc0db09aa2ae61678e5f32d374612678ebb8577193e8f793b7ffb228b596c53",
   "createdAt": "2026-09-16T15:40:52.095Z",
-  "updatedAt": "2026-09-19T05:08:22.289Z"
+  "updatedAt": "2026-09-19T15:56:16.807Z"
 },
 {
   "id": "5a2d3aff-1e91-45f3-86f0-ecbd872e5b90",
@@ -5167,7 +6766,7 @@
   "updatedAt": "2026-08-03T15:22:49.093Z"
 },
 {
-  "id": "635d8d65-fd04-46bf-b053-f4c02780a7c9",
+  "id": "b738ff31-df41-4e73-b0f9-3a26c2acf9b8",
   "sourceSlug": "arxiv-ai",
   "externalId": "simplefold-protein-folding",
   "canonicalUrl": "https://arxiv.org/abs/2509.18480",
@@ -5195,8 +6794,8 @@
     ]
   },
   "contentHash": "03a30e95a822bbf24def9d87181b7ac1c837d18f18113fd9b27f93d2752cad59",
-  "createdAt": "2026-09-19T05:08:06.904Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.218Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "5818a0c8-b47f-4e97-9f20-ca778ae0c810",
@@ -5969,9 +7568,9 @@
       "github"
     ]
   },
-  "contentHash": "9a759dc0d82e8c7ff8a165923e8e0848cf0fa7b1413a8a91fc954c71584189e1",
+  "contentHash": "c406316b7ab509b8c5f9ec6cb40ad71e780025e770007dad18fc2e92a81134a6",
   "createdAt": "2026-07-13T15:38:07.564Z",
-  "updatedAt": "2026-09-18T16:32:59.751Z"
+  "updatedAt": "2026-09-19T15:59:53.376Z"
 },
 {
   "id": "91de0836-bcc9-432e-96d3-a082ac2ce88c",
@@ -6335,7 +7934,7 @@
   },
   "contentHash": "8f1d314c9f421193720a12b6014bf98a5730401d9f3296253d22643c278a1445",
   "createdAt": "2026-09-16T15:42:40.523Z",
-  "updatedAt": "2026-09-19T05:10:11.220Z"
+  "updatedAt": "2026-09-19T15:58:05.378Z"
 },
 {
   "id": "91b66e54-43f1-44e8-a8c5-891131095e65",
@@ -6357,7 +7956,7 @@
   },
   "contentHash": "6037e3d2726fd78af8f4368f2e5c9485fb0638cc2bc76c8252461530240aa3ad",
   "createdAt": "2026-09-18T16:31:07.788Z",
-  "updatedAt": "2026-09-19T05:10:11.215Z"
+  "updatedAt": "2026-09-19T15:58:05.372Z"
 },
 {
   "id": "ac2d3388-9e53-4966-b905-a0e08685d89b",
@@ -6423,7 +8022,7 @@
   },
   "contentHash": "993001d54f85a224e442492d18bea2dd01f13e4deaee02b5dfa4765653c4d53f",
   "createdAt": "2026-09-16T15:44:59.261Z",
-  "updatedAt": "2026-09-19T05:12:24.410Z"
+  "updatedAt": "2026-09-19T16:00:18.151Z"
 },
 {
   "id": "553a53f1-43a2-4e0e-a860-789c59f433a9",
@@ -6711,7 +8310,7 @@
   },
   "contentHash": "ea1566ff2c90e49f22b04bb8e95e8310066bad0a65a36bc166f178e678c49ae9",
   "createdAt": "2026-09-16T15:42:40.249Z",
-  "updatedAt": "2026-09-17T05:30:20.992Z"
+  "updatedAt": "2026-09-19T15:58:05.097Z"
 },
 {
   "id": "07f24dd1-8730-4630-95f5-e75ed3906772",
@@ -6759,7 +8358,7 @@
   },
   "contentHash": "e665991a517afcaeffe1f2f87a307b6104fab896122684c87f3b227cbf8a24b5",
   "createdAt": "2026-09-16T15:42:46.662Z",
-  "updatedAt": "2026-09-19T05:10:16.146Z"
+  "updatedAt": "2026-09-19T15:58:09.571Z"
 },
 {
   "id": "4befe1bb-0571-436c-aa62-9dd270726771",
@@ -6877,7 +8476,7 @@
   },
   "contentHash": "8caf756b733f067940cc5956cd37379dcaf66520892e53cb913e46c61252920f",
   "createdAt": "2026-07-12T00:23:57.234Z",
-  "updatedAt": "2026-09-19T05:08:22.302Z"
+  "updatedAt": "2026-09-19T15:56:16.821Z"
 },
 {
   "id": "dfec5d2a-627b-4fe7-9415-24b2bfa839f9",
@@ -7012,7 +8611,7 @@
   "updatedAt": "2026-07-23T04:01:43.264Z"
 },
 {
-  "id": "1ebcffd8-e9d2-4e66-8177-8803eda9e64b",
+  "id": "d3f9a9e6-4031-4a97-a04f-f96136e466bc",
   "sourceSlug": "arxiv-ai",
   "externalId": "compete-then-collaborate-multi-agent",
   "canonicalUrl": "https://arxiv.org/abs/2607.08255",
@@ -7039,8 +8638,8 @@
     ]
   },
   "contentHash": "2c4dac752ca2340b03632aed8f08be7be291538b3aac962a9be6959563e16930",
-  "createdAt": "2026-09-19T05:08:06.586Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:54.861Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "aa8c699c-77dd-49f1-a2b8-dc2dbce764f3",
@@ -7451,7 +9050,7 @@
   "updatedAt": "2026-08-08T02:46:58.730Z"
 },
 {
-  "id": "2118d943-dc80-416f-8198-e86320afe4b7",
+  "id": "65e1b353-4e99-438b-8aa0-5bae5fb17ad6",
   "sourceSlug": "worldlabs",
   "externalId": "world-model-functional-taxonomy",
   "canonicalUrl": "https://www.worldlabs.ai/blog",
@@ -7478,8 +9077,8 @@
     ]
   },
   "contentHash": "1efabc58f04d86efa550c21927155e551585f9e1bfc821dfbbd3bb036283f9e4",
-  "createdAt": "2026-09-19T05:08:06.999Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.323Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "88de9765-c73b-4285-93ff-8df8254d99b0",
@@ -7523,7 +9122,7 @@
   },
   "contentHash": "8772a832a2c65fbe529658d27393c0fe5216c1d7047c3bd82d8b94a7239e8e75",
   "createdAt": "2026-09-16T15:42:46.657Z",
-  "updatedAt": "2026-09-19T05:10:16.143Z"
+  "updatedAt": "2026-09-19T15:58:09.567Z"
 },
 {
   "id": "a842fbce-68bb-49d0-a98c-9a9ea21e251c",
@@ -7571,7 +9170,7 @@
   },
   "contentHash": "11e4348e7e000b96d28da2d50a965b3182a3cbc82d4eaa98cf47ed6818d24039",
   "createdAt": "2026-09-19T05:10:12.223Z",
-  "updatedAt": "2026-09-19T05:10:12.223Z"
+  "updatedAt": "2026-09-19T15:58:06.230Z"
 },
 {
   "id": "7471e752-b43a-458a-954f-6e75f33a14a9",
@@ -7593,7 +9192,7 @@
   },
   "contentHash": "1fbe0f35ce1ac88016017ccdad2876efd2c959e0c607a2639e6e3cc765cd2dd8",
   "createdAt": "2026-09-17T17:06:47.404Z",
-  "updatedAt": "2026-09-19T05:10:10.645Z"
+  "updatedAt": "2026-09-19T15:58:04.574Z"
 },
 {
   "id": "be74fb70-ff7c-4821-8e76-c8c3a5cdc80a",
@@ -8205,6 +9804,28 @@
   "updatedAt": "2026-07-26T14:02:31.693Z"
 },
 {
+  "id": "dce998e9-34f2-486a-98b6-c096d353a5bf",
+  "sourceSlug": "product-hunt-ai",
+  "externalId": "tag:www.producthunt.com,2005:Post/1254739",
+  "canonicalUrl": "https://www.producthunt.com/products/punch-4",
+  "urlHash": "f6ebbd84a23056fc59bc8a9d0b0b0c1e13ad7d3c02ced4e4b021f2fc34d0fbba",
+  "title": "Punch",
+  "summary": "Save your group chat's important stuff Discussion | Link",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-18T13:56:07.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "5e0d2144baae4bcc3d12d6db88b22085881f84031eb9fcfd052bccc300398489",
+  "createdAt": "2026-09-19T15:58:07.196Z",
+  "updatedAt": "2026-09-19T15:58:07.196Z"
+},
+{
   "id": "1a69f6fa-b125-4f5f-b944-b78e6cbc1606",
   "sourceSlug": "aws-ml",
   "externalId": "2d41e2165c4d62f27faee9937bc229c44251b5a6",
@@ -8346,7 +9967,7 @@
   },
   "contentHash": "d5dab8ae7de50c3994e775e0bd797b7fe79abdc64500e0c41de16b18e6fd4171",
   "createdAt": "2026-09-16T15:44:58.560Z",
-  "updatedAt": "2026-09-19T05:12:26.936Z"
+  "updatedAt": "2026-09-19T16:00:23.603Z"
 },
 {
   "id": "53c19ad7-473a-4ad5-bb3a-bb29569d1203",
@@ -8677,7 +10298,7 @@
       "rss"
     ]
   },
-  "contentHash": "4716393cb83022f54cc3a528215248b7a888bd569dea1ce18166448dc463e817",
+  "contentHash": "01be13845e244eafbe77a5eee6f680c28125508a04d7bd7d9c451552c792e295",
   "createdAt": "2026-09-17T17:06:47.888Z",
   "updatedAt": "2026-09-19T05:10:10.953Z"
 },
@@ -8867,7 +10488,7 @@
   },
   "contentHash": "cf81b41127859fc362519f83620414652a4edc3c07f859c9c38af4d93d181cc2",
   "createdAt": "2026-09-18T05:16:00.654Z",
-  "updatedAt": "2026-09-19T05:08:23.213Z"
+  "updatedAt": "2026-09-19T15:56:17.142Z"
 },
 {
   "id": "2999568a-3ce9-46e4-827c-c7355c990529",
@@ -9004,7 +10625,7 @@
   },
   "contentHash": "2ea5046647b20804955983f9564f82617d0c41004ae77abbf286878fe3e664d2",
   "createdAt": "2026-09-16T15:42:40.243Z",
-  "updatedAt": "2026-09-17T05:30:20.986Z"
+  "updatedAt": "2026-09-19T15:58:05.092Z"
 },
 {
   "id": "1dfe0c73-749d-4af9-9cb1-7ccee1da555f",
@@ -9199,7 +10820,7 @@
   "updatedAt": "2026-07-31T04:15:57.219Z"
 },
 {
-  "id": "8981125a-e1e0-4b72-97d2-a66deb3d5e94",
+  "id": "9e145c36-2b39-457b-8460-99f29287877a",
   "sourceSlug": "arxiv-ai",
   "externalId": "llm-agents-self-report-simulation",
   "canonicalUrl": "https://arxiv.org/abs/2411.10109",
@@ -9227,8 +10848,8 @@
     ]
   },
   "contentHash": "4ba053fa6bb3e677cc58ec03a56c60bf80cdc3e534e5b27c3056389eb2380fb7",
-  "createdAt": "2026-09-19T05:08:06.829Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.147Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "732367fe-4c8a-47f7-9b6d-3aaeb9885b03",
@@ -9611,7 +11232,7 @@
   },
   "contentHash": "739c7895e8d554c0ebe4dacaf035f26c685893f101cb728f5988fe47232d9a36",
   "createdAt": "2026-07-13T15:38:20.072Z",
-  "updatedAt": "2026-09-19T05:12:24.414Z"
+  "updatedAt": "2026-09-19T16:00:18.157Z"
 },
 {
   "id": "ab7782e8-e6ab-4925-937f-61aa9ea7ec07",
@@ -10334,7 +11955,7 @@
   },
   "contentHash": "3c7af2b5e566ba20e7eeee67e97bac0e7fdd6043c672b3b1032b54ece6c77fb3",
   "createdAt": "2026-07-13T15:38:17.739Z",
-  "updatedAt": "2026-09-19T05:12:24.915Z"
+  "updatedAt": "2026-09-19T16:00:13.212Z"
 },
 {
   "id": "acdd1f50-768d-4e64-bc4f-6ea135c7b6be",
@@ -11229,10 +12850,10 @@
   },
   "contentHash": "89649cc46d3b4adff7676ac848a5780a739c574cda1e0ff54d2364f3581a3d23",
   "createdAt": "2026-09-16T15:43:28.825Z",
-  "updatedAt": "2026-09-19T05:10:49.012Z"
+  "updatedAt": "2026-09-19T15:58:53.758Z"
 },
 {
-  "id": "f4692e33-7136-44b5-972f-f8688b3d6525",
+  "id": "60881b99-dd04-423d-8147-793e98ed9eac",
   "sourceSlug": "arxiv-ai",
   "externalId": "agentic-memory-unified-management",
   "canonicalUrl": "https://arxiv.org/abs/2601.01885",
@@ -11259,8 +12880,8 @@
     ]
   },
   "contentHash": "97a568eb025d3845700f007864f87a7348a262f722fd922f3fd6b1117169a93e",
-  "createdAt": "2026-09-19T05:08:06.918Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.242Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "a0d2f41e-3a4c-4b57-91f8-1e6b1469210c",
@@ -12076,7 +13697,7 @@
   },
   "contentHash": "26773fae316291ed9da11b45d224b8e3d91b64f146f6bc2c11002b18ce22554d",
   "createdAt": "2026-09-18T05:16:00.645Z",
-  "updatedAt": "2026-09-19T05:08:23.180Z"
+  "updatedAt": "2026-09-19T15:56:17.125Z"
 },
 {
   "id": "15852f45-e0f6-43db-b3ba-61504510ad73",
@@ -12120,7 +13741,7 @@
   },
   "contentHash": "870bdc6639e608f5044e81923f6fc0fd79e224cb8327ecae52720d9c5ccdbc69",
   "createdAt": "2026-07-21T14:31:05.498Z",
-  "updatedAt": "2026-09-19T05:12:26.047Z"
+  "updatedAt": "2026-09-19T16:00:19.833Z"
 },
 {
   "id": "079d2af7-5e80-49fe-965d-876641bad52f",
@@ -12264,7 +13885,7 @@
   },
   "contentHash": "10bfe6f3d115550826fbe077e3cd7b71b2f80143e7b841d834f47467b6f0440b",
   "createdAt": "2026-09-16T15:42:43.439Z",
-  "updatedAt": "2026-09-19T05:12:32.818Z"
+  "updatedAt": "2026-09-19T16:00:27.049Z"
 },
 {
   "id": "7187eaba-b029-4e88-9f9b-e2ce2e4ba90b",
@@ -12353,7 +13974,7 @@
   },
   "contentHash": "ee11e339fde4cdf5ff9d0fce61a969acf1d788addc9bb4ff903c77fb0fe09f3f",
   "createdAt": "2026-09-17T17:06:51.649Z",
-  "updatedAt": "2026-09-19T05:10:14.044Z"
+  "updatedAt": "2026-09-19T15:58:07.756Z"
 },
 {
   "id": "1c1e0150-a661-461b-8772-c2798557b30b",
@@ -12822,7 +14443,7 @@
   },
   "contentHash": "464532a88e34a4fc05b8f0e23ddc5de7fa38b6a04c98630ce84e64363dd6fb6e",
   "createdAt": "2026-09-18T05:16:00.439Z",
-  "updatedAt": "2026-09-19T05:08:22.756Z"
+  "updatedAt": "2026-09-19T15:56:17.369Z"
 },
 {
   "id": "13d1e539-b513-482f-8ac2-49006b929273",
@@ -12954,7 +14575,7 @@
   },
   "contentHash": "b80bf8b61f9191b94d3baa467af55dca1756af782c2b790cca2bc6c7719b2e64",
   "createdAt": "2026-07-12T05:58:06.782Z",
-  "updatedAt": "2026-09-19T05:10:13.894Z"
+  "updatedAt": "2026-09-19T15:58:08.029Z"
 },
 {
   "id": "05880f84-7e1b-4e35-93c7-ac601aaac6fc",
@@ -13094,7 +14715,7 @@
   },
   "contentHash": "b2111f075f5664aa381c81e20e25264818dd25c17efd222ed39ee2826b6fc808",
   "createdAt": "2026-07-13T15:38:17.742Z",
-  "updatedAt": "2026-09-19T05:12:24.917Z"
+  "updatedAt": "2026-09-19T16:00:13.214Z"
 },
 {
   "id": "47ad8d68-c5e6-4384-9a7c-50eb15deebe9",
@@ -13138,7 +14759,7 @@
   },
   "contentHash": "8b2bd68f699ac4b2cbe9b711ef181c9a1b7841693512f85427f94f1a496b4667",
   "createdAt": "2026-09-16T15:40:51.424Z",
-  "updatedAt": "2026-09-19T05:08:21.956Z"
+  "updatedAt": "2026-09-19T15:56:16.591Z"
 },
 {
   "id": "9bad80f0-f66a-427c-b423-5c801e04ab30",
@@ -13741,7 +15362,7 @@
   "updatedAt": "2026-08-04T14:42:19.742Z"
 },
 {
-  "id": "f919482a-2a14-411a-a1c4-f2e5f8fb8e41",
+  "id": "60dab2df-9bf0-4a3a-ba59-d51e1ed26196",
   "sourceSlug": "arxiv-ai",
   "externalId": "falcon-series-open-language-models",
   "canonicalUrl": "https://arxiv.org/abs/2311.16867",
@@ -13769,8 +15390,8 @@
     ]
   },
   "contentHash": "08d105bcb6c9eef0c9fe6d5908a872d4466d618ecca1f4f13a669ae62454f5dc",
-  "createdAt": "2026-09-19T05:08:06.765Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.069Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "f44ff92a-f1dd-494e-b958-8d6f18ebb722",
@@ -14496,6 +16117,28 @@
   "updatedAt": "2026-08-01T04:07:20.961Z"
 },
 {
+  "id": "b931b69d-82ed-4e21-8404-24cc276d161f",
+  "sourceSlug": "latent-space",
+  "externalId": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in",
+  "canonicalUrl": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in",
+  "urlHash": "fb0ebe24a1ef57575fb524e4cae242ba1a153a9697764568f11467223329a72f",
+  "title": "[AINews] Here are 6 Clones of Jev in 2 days",
+  "summary": "Imitation is the sincerest form of Flattery",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-19T05:48:28.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "f7d180971f9efb015ba80d5f1872dc3b835ecb9f037880f788cb8ebe3c4e0a47",
+  "createdAt": "2026-09-19T15:58:06.082Z",
+  "updatedAt": "2026-09-19T15:58:06.082Z"
+},
+{
   "id": "667a8e51-b6c4-44cf-9e02-04757c1ea16a",
   "sourceSlug": "open-webui",
   "externalId": "tag:github.com,2008:Repository/701547123/v0.10.0",
@@ -14520,6 +16163,28 @@
   "contentHash": "9bc66e52322f889d3a92ff05c472fd2d14bb65d61e83350511504c13e74be58a",
   "createdAt": "2026-07-12T05:57:50.350Z",
   "updatedAt": "2026-09-16T15:41:00.607Z"
+},
+{
+  "id": "a6dedf81-0690-46e9-917c-2627f5dfaaaf",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49766062",
+  "canonicalUrl": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html",
+  "urlHash": "fb17340cd0f0d9fbee2e0af2321989aa38d34691228aadbfb64df4549193596b",
+  "title": "AI kill switch, explained: 'It's not too little, but it's probably too late'",
+  "summary": "Article URL: https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html Comments URL: https://news.ycombinator.com/item?id=49766062 Points: 1 # Comments: 0",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-19T12:36:06.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "6f958aae1fbaa5b0cfe6300c61298ad0d6a420f815e64e8f0a2beef0431d4100",
+  "createdAt": "2026-09-19T15:58:07.140Z",
+  "updatedAt": "2026-09-19T15:58:07.140Z"
 },
 {
   "id": "f3eda8db-856a-44a6-8699-15208f9ff196",
@@ -14851,7 +16516,7 @@
   },
   "contentHash": "b4f565a511292e69d10986e4961d11aea5bd4bf71648f6efdb5af77703ad2f34",
   "createdAt": "2026-07-12T06:00:08.482Z",
-  "updatedAt": "2026-09-19T05:10:12.969Z"
+  "updatedAt": "2026-09-19T15:58:07.683Z"
 },
 {
   "id": "3325e902-1971-4291-a81e-8f6f906aa84a",
@@ -15343,7 +17008,7 @@
       "github"
     ]
   },
-  "contentHash": "ded811eef92286b8abedff0440ef9b5351bd6c49fee1e1a8ae6d5c8afc10ad96",
+  "contentHash": "1c9157e9cbde123ec3323e9e87a9f3c76414f6d2e9937379473cd41643668878",
   "createdAt": "2026-09-18T16:29:20.926Z",
   "updatedAt": "2026-09-19T05:08:24.780Z"
 },
@@ -15951,7 +17616,7 @@
   },
   "contentHash": "40f2bd593b1322e3e4423ae2d200965fc817984da33d5f278afaca08f1062178",
   "createdAt": "2026-09-19T05:11:56.601Z",
-  "updatedAt": "2026-09-19T05:11:56.601Z"
+  "updatedAt": "2026-09-19T15:59:47.197Z"
 },
 {
   "id": "8f4a85d7-867f-4307-911f-69a934878f24",
@@ -16043,7 +17708,7 @@
   },
   "contentHash": "bbfbd3cf8c6efcfb36ddbddac2f051872c4145d2e7b399bf59a717693dbbf3fa",
   "createdAt": "2026-09-16T15:43:52.410Z",
-  "updatedAt": "2026-09-19T05:11:24.877Z"
+  "updatedAt": "2026-09-19T15:59:15.446Z"
 },
 {
   "id": "41c185af-b1ad-4339-b8c2-dc5e5900e1ba",
@@ -16201,7 +17866,7 @@
   },
   "contentHash": "ac7ea03fc0326ea91678ff7fde8342ee2e549e5b30e0a43973cc252a54c3b35e",
   "createdAt": "2026-09-16T15:40:51.405Z",
-  "updatedAt": "2026-09-19T05:08:21.945Z"
+  "updatedAt": "2026-09-19T15:56:16.576Z"
 },
 {
   "id": "9abfc776-5f73-4c40-83c8-16aee7beae86",
@@ -16230,7 +17895,7 @@
   "updatedAt": "2026-08-16T13:06:40.882Z"
 },
 {
-  "id": "f1462491-1ae7-4418-8d3a-7f7ebc773529",
+  "id": "0dcc04b9-ec2a-43aa-b237-bbbb065dbf17",
   "sourceSlug": "openai",
   "externalId": "openai-io-device-team-merger",
   "canonicalUrl": "https://openai.com/sam-and-jony",
@@ -16258,8 +17923,8 @@
     ]
   },
   "contentHash": "70f8bd8d46fed2567651508ddba04646719c2a8e6df4a6e6b4cf83987e1b878d",
-  "createdAt": "2026-09-19T05:08:06.671Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:54.958Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "20ddc507-6930-45f0-b632-53d1ceeb6c84",
@@ -16301,7 +17966,7 @@
       "rss"
     ]
   },
-  "contentHash": "7d89c593cf25b9d06a59e1e0987fbc3bc5ffedc815f4a0fcea31b43d800e290d",
+  "contentHash": "a522a71dfb306f0ea60ed9ad77145625b3f408e937b0184175b173b321310c9d",
   "createdAt": "2026-09-18T16:31:08.476Z",
   "updatedAt": "2026-09-19T05:10:12.125Z"
 },
@@ -16443,7 +18108,7 @@
   },
   "contentHash": "b9bb56f7410926b2bcbcf574a528208dfa9580e1c146e9f17c0ada77fea15457",
   "createdAt": "2026-07-12T06:00:08.484Z",
-  "updatedAt": "2026-09-19T05:10:12.970Z"
+  "updatedAt": "2026-09-19T15:58:07.684Z"
 },
 {
   "id": "2578d59c-b783-41a0-9c6a-6241b4074322",
@@ -16658,7 +18323,7 @@
   },
   "contentHash": "856adf9246ea8381bf13e8dab070bd1bc00d330a9adca04ade3f97340f75f9e0",
   "createdAt": "2026-07-12T05:57:18.841Z",
-  "updatedAt": "2026-09-19T05:08:26.442Z"
+  "updatedAt": "2026-09-19T15:56:20.303Z"
 },
 {
   "id": "69e9fa2f-ed0a-476b-86ab-7cecbad98bf4",
@@ -16680,7 +18345,7 @@
   },
   "contentHash": "124a07da2c5ba1e564604d7eb6508704a694c0ca5cf03032aacf25695563052c",
   "createdAt": "2026-09-18T05:16:00.664Z",
-  "updatedAt": "2026-09-19T05:08:23.221Z"
+  "updatedAt": "2026-09-19T15:56:17.149Z"
 },
 {
   "id": "b2442c54-07f7-43e2-ab91-29cbfb192ba5",
@@ -17011,7 +18676,7 @@
   "updatedAt": "2026-08-13T13:51:17.615Z"
 },
 {
-  "id": "a8e2c97f-2be7-4ca9-9dac-e6e8d6eef2ce",
+  "id": "d4222135-b06e-42e8-b61e-fa468ab8884a",
   "sourceSlug": "arxiv-ai",
   "externalId": "ai-sandboxes-assurance-framework",
   "canonicalUrl": "https://arxiv.org/abs/2606.18532",
@@ -17038,8 +18703,8 @@
     ]
   },
   "contentHash": "f0b458ed670ae2910f2427a486fe94511a5d13367e23cc72069d2841cce2c90e",
-  "createdAt": "2026-09-19T05:08:06.949Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.267Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "b225e4c8-29b0-4222-a976-1dee94f7146b",
@@ -17429,7 +19094,7 @@
   "updatedAt": "2026-07-13T16:27:46.762Z"
 },
 {
-  "id": "33b083bd-1c27-4792-9b09-c4f15097ab64",
+  "id": "70b78a3a-96c7-493f-8243-b8bc4c4aeac5",
   "sourceSlug": "openai",
   "externalId": "openai-o1-test-time-reasoning",
   "canonicalUrl": "https://openai.com/index/introducing-openai-o1-preview",
@@ -17456,8 +19121,8 @@
     ]
   },
   "contentHash": "2cd7e7465a20eb51e4667c2b847571ba4554d89c0d050597d63d233a1ade6e4f",
-  "createdAt": "2026-09-19T05:08:06.539Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:54.807Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "dd3544a4-2902-42b2-9880-ec49c9a5bb2c",
@@ -17522,7 +19187,7 @@
       "rss"
     ]
   },
-  "contentHash": "fa3027ca5699ae11c7943c30a142b26d2fd94a92d76d59032ca71125ab17542f",
+  "contentHash": "eb92b29aea86cd4fd845445305fd9cf338f21800c3d747f3db1586f29a024bd8",
   "createdAt": "2026-09-16T17:06:28.871Z",
   "updatedAt": "2026-09-19T05:10:11.366Z"
 },
@@ -17638,7 +19303,7 @@
   },
   "contentHash": "7ef8569d21b02e7d1d8b2a40cdd5bd898371dd3c74aa2272d996c21f10d27b09",
   "createdAt": "2026-09-16T15:40:51.718Z",
-  "updatedAt": "2026-09-19T05:08:22.208Z"
+  "updatedAt": "2026-09-19T15:56:16.848Z"
 },
 {
   "id": "b5fb30e9-778b-4c4d-ab8c-07cc7663c709",
@@ -17873,7 +19538,7 @@
   "updatedAt": "2026-07-30T14:37:12.233Z"
 },
 {
-  "id": "274da841-e4b5-47e6-b4ad-94dfa29c1aa7",
+  "id": "216e5296-6e26-477f-9294-2f1caae3c7d5",
   "sourceSlug": "arxiv-ai",
   "externalId": "better-embodied-reasoning-vla",
   "canonicalUrl": "https://arxiv.org/abs/2604.18000",
@@ -17900,8 +19565,8 @@
     ]
   },
   "contentHash": "82667c5f8172a4464499300a45b83d1b70bdce3023bf44b9f3e525eceab2e0e4",
-  "createdAt": "2026-09-19T05:08:06.925Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.253Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "5f3d042d-226d-42db-a29d-a7f7d41a54cc",
@@ -17946,6 +19611,28 @@
   "contentHash": "de1dbac96febd6a87ad18698ac4f0774288864fc818bdd125b81a1e888d4edf2",
   "createdAt": "2026-07-13T16:03:04.252Z",
   "updatedAt": "2026-07-13T16:03:04.252Z"
+},
+{
+  "id": "16ab3d03-64ea-40ae-ada4-476baf5e9c8e",
+  "sourceSlug": "the-decoder",
+  "externalId": "https://the-decoder.com/?p=40409",
+  "canonicalUrl": "https://the-decoder.com/unity-launches-official-plugins-for-claude-code-and-openai-codex-to-stop-ai-agents-from-using-outdated-tutorials",
+  "urlHash": "fd6a2c2eac6c94e132e92234ed0b8b20360bf6fb3630c6d6024b7addfb17ad64",
+  "title": "Unity launches official plugins for Claude Code and OpenAI Codex to stop AI agents from using outdated tutorials",
+  "summary": "Unity has released official plugins for Claude Code and OpenAI's Codex. The article Unity launches official plugins for Claude Code and OpenAI Codex to stop AI agents from using outdated tutorials appeared first on The Decoder .",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-19T13:31:46.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "bd9233a4688196d4b0775d53d51a598638fd5342c9f52fad3179eea1dc2a20a5",
+  "createdAt": "2026-09-19T15:58:11.579Z",
+  "updatedAt": "2026-09-19T15:58:11.579Z"
 },
 {
   "id": "f2efe438-9ff5-48da-be18-321b6c1a947c",
@@ -18018,7 +19705,7 @@
   },
   "contentHash": "aa5017b2858c07129236bb2ae090e2828f6e474a061c1a76a8f4bd13526da2a7",
   "createdAt": "2026-08-12T13:53:24.845Z",
-  "updatedAt": "2026-09-19T05:10:11.835Z"
+  "updatedAt": "2026-09-19T15:58:05.854Z"
 },
 {
   "id": "593a224e-8663-40f1-a84d-6848082f4bcb",
@@ -18547,7 +20234,7 @@
       "rss"
     ]
   },
-  "contentHash": "7db6c2fff1687a05b9193fe9bcf8c44f01c18e552a57c3cec2a8fdb1244f0016",
+  "contentHash": "7b3057b2d154802ebef51d5c212bcd42c6e0f8236e522d7b139936d88579bd80",
   "createdAt": "2026-07-13T15:38:24.253Z",
   "updatedAt": "2026-09-19T05:12:24.725Z"
 },
@@ -18703,7 +20390,7 @@
   },
   "contentHash": "c97a701ffc77666513510507b120c848292d0dd81e72f06454e772514b0fb890",
   "createdAt": "2026-07-12T05:58:06.781Z",
-  "updatedAt": "2026-09-19T05:10:13.893Z"
+  "updatedAt": "2026-09-19T15:58:08.027Z"
 },
 {
   "id": "2588cb77-5e1d-4b4f-bef8-b4417d57b31d",
@@ -18935,7 +20622,7 @@
   },
   "contentHash": "a5426ae6786e493eaa7d9543af5ade0a28e68c0a48f3d380e9590797ef3ea040",
   "createdAt": "2026-09-16T15:40:51.423Z",
-  "updatedAt": "2026-09-19T05:08:21.955Z"
+  "updatedAt": "2026-09-19T15:56:16.590Z"
 },
 {
   "id": "700d4120-0853-46bd-a01d-b4e3cba0e14a",
@@ -19241,7 +20928,7 @@
   },
   "contentHash": "6f2513563c7f622ce907405c0c6ada57907feed4ec88d22a0b16841b2d826dcd",
   "createdAt": "2026-07-15T14:18:14.853Z",
-  "updatedAt": "2026-09-19T05:12:32.824Z"
+  "updatedAt": "2026-09-19T16:00:27.056Z"
 },
 {
   "id": "6e4eadeb-b429-4ed4-86a1-a00dd4eceab7",
@@ -19715,7 +21402,7 @@
   },
   "contentHash": "58cacba4291c3095b4472103144d6a7026022a9f7d72fbde17d6ed87805625a7",
   "createdAt": "2026-08-15T13:03:37.025Z",
-  "updatedAt": "2026-09-19T05:10:11.623Z"
+  "updatedAt": "2026-09-19T15:58:05.705Z"
 },
 {
   "id": "6fe0f0c0-1eb9-4529-919c-34e2cfa8d43d",
@@ -19906,7 +21593,7 @@
   "updatedAt": "2026-07-27T15:17:28.536Z"
 },
 {
-  "id": "a7ce75f6-68af-4709-9e6a-d5673b17652d",
+  "id": "1d68c632-a6be-43c5-8935-7a0c07aad1d7",
   "sourceSlug": "arxiv-ai",
   "externalId": "refinedweb-dataset-for-falcon-llm",
   "canonicalUrl": "https://arxiv.org/abs/2306.01116",
@@ -19934,8 +21621,8 @@
     ]
   },
   "contentHash": "b7c8bdf139becf3c45f1fac32d1ecd83f9bd62a0270dac6cf85b0519e05f1036",
-  "createdAt": "2026-09-19T05:08:06.727Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.031Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "3060322b-06c2-48b5-be85-fa40f92d42b6",
@@ -20189,7 +21876,7 @@
   },
   "contentHash": "79ecabe099c4208aa9c610a5c7941b20f1d93f799185ad610bf6267062d82edd",
   "createdAt": "2026-09-16T15:40:51.716Z",
-  "updatedAt": "2026-09-19T05:08:22.207Z"
+  "updatedAt": "2026-09-19T15:56:16.847Z"
 },
 {
   "id": "2bc9e8c2-3703-420a-a19f-47cd88bfbf74",
@@ -20303,7 +21990,7 @@
   },
   "contentHash": "7f3b6b6e05dd98f8404109419d7dcc6d94656a9274654d87123445d7e1105df6",
   "createdAt": "2026-07-12T00:08:48.290Z",
-  "updatedAt": "2026-09-19T05:10:11.971Z"
+  "updatedAt": "2026-09-19T15:58:05.997Z"
 },
 {
   "id": "6998cb71-9b02-4155-946a-3a23e9e249f7",
@@ -21311,7 +22998,7 @@
   },
   "contentHash": "e94d3baeb99a16d7d5effd0c3c1dfb6165ff011782b53fcb1fbeefbaa70eb61d",
   "createdAt": "2026-09-18T05:16:00.521Z",
-  "updatedAt": "2026-09-19T05:08:22.705Z"
+  "updatedAt": "2026-09-19T15:56:17.383Z"
 },
 {
   "id": "942f24a6-bdf8-4fe9-aafc-f36e78a9fbbc",
@@ -21406,7 +23093,7 @@
   "updatedAt": "2026-08-05T14:38:21.735Z"
 },
 {
-  "id": "0d672c7d-b62e-4ee7-a946-5d4061ecfabe",
+  "id": "7065a22b-8144-4b1d-b49e-486c5942d2ca",
   "sourceSlug": "arxiv-ai",
   "externalId": "minicpm-small-language-models-scalable-training",
   "canonicalUrl": "https://arxiv.org/abs/2404.06395",
@@ -21434,8 +23121,8 @@
     ]
   },
   "contentHash": "3f52aaf80f60388be77c3eff4ceebc7e866b940251a0eccdd34ed131f42b0b7a",
-  "createdAt": "2026-09-19T05:08:06.787Z",
-  "updatedAt": "2026-09-19T05:08:06.400Z"
+  "createdAt": "2026-09-19T15:55:55.103Z",
+  "updatedAt": "2026-09-19T15:55:54.651Z"
 },
 {
   "id": "13d903c1-b32f-4eae-a023-481bc379004c",
@@ -21811,7 +23498,7 @@
   },
   "contentHash": "88d16466ec2e6cec58456c2603e1362134dca03aece4af205a07b604146488dc",
   "createdAt": "2026-09-18T05:16:00.631Z",
-  "updatedAt": "2026-09-19T05:08:23.171Z"
+  "updatedAt": "2026-09-19T15:56:17.113Z"
 },
 {
   "id": "a49e4334-7eb3-4129-8ed3-acc89db87330",
@@ -21947,7 +23634,7 @@
   },
   "contentHash": "c7991656944dafc88f09bcf358f0c001fe4e2c0bff9cd47c450eeffcbb754e49",
   "createdAt": "2026-09-16T15:40:52.551Z",
-  "updatedAt": "2026-09-19T05:08:24.948Z"
+  "updatedAt": "2026-09-19T15:56:17.864Z"
 },
 {
   "id": "bbd85ca7-b596-47c0-b065-5096ffdba057",
