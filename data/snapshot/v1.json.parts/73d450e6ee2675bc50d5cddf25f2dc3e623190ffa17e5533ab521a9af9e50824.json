@@ -3142,43 +3142,6 @@
   "updatedAt": "2026-08-13T03:19:43.778Z"
 },
 {
-  "signalId": "044061f7-beb8-4cd6-ad2e-a70b36d137b6",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "c4d8224c-27f6-4206-be98-ac5380502976",
-      "slug": "understanding-axes-of-difficulty-for-long-context-tasks-via-predicatelongbench-2026-07-12",
-      "title": "Understanding Axes of Difficulty For Long Context Tasks Via PredicateLongBench",
-      "fact_summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
-      "summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"understanding\",\"axes\",\"difficulty\",\"long\",\"context\",\"tasks\",\"via\",\"predicatelongbench\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:50.025Z",
-      "updated_at": "2026-07-12T00:24:50.033Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.289Z",
-  "updatedAt": "2026-07-12T01:14:31.289Z"
-},
-{
   "signalId": "04418ad4-9cee-447c-a364-0469011dc6d5",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -12347,6 +12310,43 @@
   "updatedAt": "2026-08-10T13:52:17.315Z"
 },
 {
+  "signalId": "10d16e5a-6cbc-4fb8-9e91-70ae2b1cbe4a",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "c4d8224c-27f6-4206-be98-ac5380502976",
+      "slug": "understanding-axes-of-difficulty-for-long-context-tasks-via-predicatelongbench-2026-07-12",
+      "title": "Understanding Axes of Difficulty For Long Context Tasks Via PredicateLongBench",
+      "fact_summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
+      "summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"understanding\",\"axes\",\"difficulty\",\"long\",\"context\",\"tasks\",\"via\",\"predicatelongbench\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:50.025Z",
+      "updated_at": "2026-07-12T00:24:50.033Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.289Z",
+  "updatedAt": "2026-07-12T01:14:31.289Z"
+},
+{
   "signalId": "10d1764f-0309-4050-935c-b14c770d0e5c",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -12506,43 +12506,6 @@
   },
   "createdAt": "2026-07-30T03:51:11.842Z",
   "updatedAt": "2026-07-30T03:51:11.842Z"
-},
-{
-  "signalId": "10ecce70-a1e0-40c1-a7cf-d94e3ecc647d",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "ac4dc6c2-d8f4-4bb5-a9fe-a2a6cea41160",
-      "slug": "overthinking-amplifying-reasoning-weights-to-extract-learned-secrets-2026-07-12",
-      "title": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
-      "fact_summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
-      "summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"overthinking\",\"amplifying\",\"reasoning\",\"weights\",\"extract\",\"learned\",\"secrets\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.936Z",
-      "updated_at": "2026-07-12T00:24:49.938Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.278Z",
-  "updatedAt": "2026-07-12T01:14:31.278Z"
 },
 {
   "signalId": "10f1ea18-acf4-4cd3-94de-9eeba7e1d736",
@@ -19461,6 +19424,19 @@
   },
   "createdAt": "2026-07-13T16:07:33.636Z",
   "updatedAt": "2026-07-13T16:07:33.636Z"
+},
+{
+  "signalId": "1aab8f92-5c14-4e61-86ca-0774914821bc",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 90,
+  "details": {
+    "sourceSlug": "mistral",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-07-12T06:00:58.959Z",
+  "updatedAt": "2026-07-12T06:00:58.959Z"
 },
 {
   "signalId": "1aadec05-fd1e-4e45-8243-dd8719b6c43e",
@@ -30822,43 +30798,6 @@
   "updatedAt": "2026-07-13T07:55:10.647Z"
 },
 {
-  "signalId": "2a6eedd5-9d94-40b7-8cc2-4f0a1aa8c16c",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "82829522-b114-4355-8b04-ad35fa2cfc0b",
-      "slug": "causalds-benchmarking-causal-reasoning-in-data-science-agents-2026-07-12",
-      "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
-      "fact_summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
-      "summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"causalds\",\"benchmarking\",\"causal\",\"reasoning\",\"data\",\"science\",\"agents\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.932Z",
-      "updated_at": "2026-07-12T00:24:49.932Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.270Z",
-  "updatedAt": "2026-07-12T01:14:31.270Z"
-},
-{
   "signalId": "2a6f4c8d-f9d4-4c4b-a855-106820d0aa10",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -33786,6 +33725,43 @@
   },
   "createdAt": "2026-07-12T01:14:31.210Z",
   "updatedAt": "2026-07-12T01:14:31.210Z"
+},
+{
+  "signalId": "2df9009a-cd70-4145-8dbf-8de9648d7bc2",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "82829522-b114-4355-8b04-ad35fa2cfc0b",
+      "slug": "causalds-benchmarking-causal-reasoning-in-data-science-agents-2026-07-12",
+      "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+      "fact_summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
+      "summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"causalds\",\"benchmarking\",\"causal\",\"reasoning\",\"data\",\"science\",\"agents\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.932Z",
+      "updated_at": "2026-07-12T00:24:49.932Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.270Z",
+  "updatedAt": "2026-07-12T01:14:31.270Z"
 },
 {
   "signalId": "2dff50ab-3f75-4a0d-869c-055d5b0fd53a",
@@ -40450,20 +40426,6 @@
   "updatedAt": "2026-08-15T02:08:55.717Z"
 },
 {
-  "signalId": "3636ebd2-de9d-49b6-9ed7-fe0a0003c681",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.886Z",
-  "updatedAt": "2026-07-12T01:16:27.886Z"
-},
-{
   "signalId": "3637f727-b26b-4b8b-a214-2a24a05aa8d6",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -41962,6 +41924,43 @@
   },
   "createdAt": "2026-07-30T03:51:13.258Z",
   "updatedAt": "2026-07-30T03:51:13.258Z"
+},
+{
+  "signalId": "385b3aa0-5742-4996-85d3-ee9ce28b2e7a",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "d27a4280-209a-4695-891a-ce1d87c280e9",
+      "slug": "compete-then-collaborate-frontier-ai-teachers-build-a-verifiable-curriculum-to-improve-a-c-2026-07-12",
+      "title": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum to Improve a Coding Student Beyond Imitation",
+      "fact_summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
+      "summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"compete\",\"then\",\"collaborate\",\"frontier\",\"ai\",\"teachers\",\"build\",\"verifiable\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.952Z",
+      "updated_at": "2026-07-12T00:24:49.954Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.271Z",
+  "updatedAt": "2026-07-12T01:14:31.271Z"
 },
 {
   "signalId": "385d14db-f1af-4cc4-94cb-cabcdfbf04ff",
@@ -50670,20 +50669,6 @@
   },
   "createdAt": "2026-08-11T13:50:18.799Z",
   "updatedAt": "2026-08-11T13:50:18.799Z"
-},
-{
-  "signalId": "440d5208-dadd-4a3a-91b7-4044da1379ee",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.885Z",
-  "updatedAt": "2026-07-12T01:16:27.885Z"
 },
 {
   "signalId": "440ea3d6-eb38-48f9-96f7-8e659236a918",
@@ -61557,6 +61542,43 @@
   },
   "createdAt": "2026-08-17T02:14:12.317Z",
   "updatedAt": "2026-08-17T02:14:12.317Z"
+},
+{
+  "signalId": "525d91f1-4373-4732-93e5-694910344134",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "178e66f6-7040-4d0e-8660-7b18d5160260",
+      "slug": "autopersonas-a-multi-timescale-loop-engine-for-open-ended-persona-evolution-2026-07-12",
+      "title": "AutoPersonas: A Multi-Timescale Loop Engine for Open-Ended Persona Evolution",
+      "fact_summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
+      "summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"autopersonas\",\"multi\",\"timescale\",\"loop\",\"engine\",\"open\",\"ended\",\"persona\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.949Z",
+      "updated_at": "2026-07-12T00:24:49.951Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.270Z",
+  "updatedAt": "2026-07-12T01:14:31.270Z"
 },
 {
   "signalId": "526e0ae3-5b47-43bf-9a2f-ebf00be6b618",
@@ -88165,19 +88187,6 @@
   "updatedAt": "2026-08-04T14:46:37.299Z"
 },
 {
-  "signalId": "75ec00b3-cb9c-40e4-b27f-758956c2f97f",
-  "status": "deferred",
-  "reason": "shadow_observation",
-  "eventabilityScore": 90,
-  "details": {
-    "sourceSlug": "mistral",
-    "latestLifecycle": "shadow",
-    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
-  },
-  "createdAt": "2026-07-12T06:00:58.959Z",
-  "updatedAt": "2026-07-12T06:00:58.959Z"
-},
-{
   "signalId": "75f10198-28de-4d94-ae35-7b48f98ce952",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -89934,20 +89943,6 @@
   },
   "createdAt": "2026-08-04T03:59:29.092Z",
   "updatedAt": "2026-08-04T03:59:29.092Z"
-},
-{
-  "signalId": "78965046-bf83-4366-bc6f-bc1d2bd0ce34",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.885Z",
-  "updatedAt": "2026-07-12T01:16:27.885Z"
 },
 {
   "signalId": "789ad0a8-4a07-4cc7-be1a-d0b20e9b22fa",
@@ -94632,6 +94627,43 @@
   },
   "createdAt": "2026-07-22T14:31:35.455Z",
   "updatedAt": "2026-07-22T14:31:35.455Z"
+},
+{
+  "signalId": "7de9cd28-2773-4a77-bf02-005a15ae5cf0",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "ac4dc6c2-d8f4-4bb5-a9fe-a2a6cea41160",
+      "slug": "overthinking-amplifying-reasoning-weights-to-extract-learned-secrets-2026-07-12",
+      "title": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
+      "fact_summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
+      "summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"overthinking\",\"amplifying\",\"reasoning\",\"weights\",\"extract\",\"learned\",\"secrets\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.936Z",
+      "updated_at": "2026-07-12T00:24:49.938Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.278Z",
+  "updatedAt": "2026-07-12T01:14:31.278Z"
 },
 {
   "signalId": "7df08bcd-b22c-4d87-b2bf-21d2175d0769",
@@ -116501,43 +116533,6 @@
   "updatedAt": "2026-07-29T04:00:11.976Z"
 },
 {
-  "signalId": "9b4aab88-24d5-4859-85d9-60ba9d15577a",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "2cecb5f4-750d-43ea-b776-c37d70a3608b",
-      "slug": "blind-spots-bench-evaluating-blind-spots-in-multimodal-models-2026-07-12",
-      "title": "Blind-Spots-Bench: Evaluating Blind Spots in Multimodal Models",
-      "fact_summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
-      "summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"blind\",\"spots\",\"bench\",\"evaluating\",\"multimodal\",\"models\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:50.044Z",
-      "updated_at": "2026-07-12T00:24:50.045Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.270Z",
-  "updatedAt": "2026-07-12T01:14:31.270Z"
-},
-{
   "signalId": "9b51b83c-ec3e-415b-8e78-334c807f819f",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -133613,20 +133608,6 @@
   "updatedAt": "2026-07-13T02:12:41.638Z"
 },
 {
-  "signalId": "b1086b5d-b2f0-4dea-8321-e533748c2b76",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.886Z",
-  "updatedAt": "2026-07-12T01:16:27.886Z"
-},
-{
   "signalId": "b10eae7d-2f8d-47e4-b806-f74ec91cb62b",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -133678,6 +133659,20 @@
   },
   "createdAt": "2026-07-13T15:39:07.144Z",
   "updatedAt": "2026-07-13T15:39:07.144Z"
+},
+{
+  "signalId": "b11298d5-cdfa-4f6d-8f76-5711bedcdc69",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.885Z",
+  "updatedAt": "2026-07-12T01:16:27.885Z"
 },
 {
   "signalId": "b11691de-439c-4eac-b3cd-026e4ae2fb4d",
@@ -136533,6 +136528,20 @@
   },
   "createdAt": "2026-08-11T02:58:38.881Z",
   "updatedAt": "2026-08-11T02:58:38.881Z"
+},
+{
+  "signalId": "b4f70d29-0f4b-4cfb-985e-f922687e76e7",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.885Z",
+  "updatedAt": "2026-07-12T01:16:27.885Z"
 },
 {
   "signalId": "b4f97695-a51f-46ea-bfa6-ed784c216fbd",
@@ -158945,43 +158954,6 @@
   "updatedAt": "2026-07-17T14:09:54.378Z"
 },
 {
-  "signalId": "d319b84e-b595-455f-8897-d2e20e14b0f2",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "178e66f6-7040-4d0e-8660-7b18d5160260",
-      "slug": "autopersonas-a-multi-timescale-loop-engine-for-open-ended-persona-evolution-2026-07-12",
-      "title": "AutoPersonas: A Multi-Timescale Loop Engine for Open-Ended Persona Evolution",
-      "fact_summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
-      "summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"autopersonas\",\"multi\",\"timescale\",\"loop\",\"engine\",\"open\",\"ended\",\"persona\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.949Z",
-      "updated_at": "2026-07-12T00:24:49.951Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.270Z",
-  "updatedAt": "2026-07-12T01:14:31.270Z"
-},
-{
   "signalId": "d31f79ef-f323-4441-b9e7-07c51fb7fda2",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -159517,43 +159489,6 @@
   },
   "createdAt": "2026-07-12T06:00:58.957Z",
   "updatedAt": "2026-07-12T06:00:58.957Z"
-},
-{
-  "signalId": "d3f9a9e6-4031-4a97-a04f-f96136e466bc",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "d27a4280-209a-4695-891a-ce1d87c280e9",
-      "slug": "compete-then-collaborate-frontier-ai-teachers-build-a-verifiable-curriculum-to-improve-a-c-2026-07-12",
-      "title": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum to Improve a Coding Student Beyond Imitation",
-      "fact_summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
-      "summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"compete\",\"then\",\"collaborate\",\"frontier\",\"ai\",\"teachers\",\"build\",\"verifiable\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.952Z",
-      "updated_at": "2026-07-12T00:24:49.954Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.271Z",
-  "updatedAt": "2026-07-12T01:14:31.271Z"
 },
 {
   "signalId": "d3fd5873-549b-47ff-992f-77e4b8dc498b",
@@ -164870,6 +164805,43 @@
   },
   "createdAt": "2026-07-13T16:07:33.686Z",
   "updatedAt": "2026-07-13T16:07:33.686Z"
+},
+{
+  "signalId": "dbd171e0-88ee-4eba-8f28-1a486f106368",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "2cecb5f4-750d-43ea-b776-c37d70a3608b",
+      "slug": "blind-spots-bench-evaluating-blind-spots-in-multimodal-models-2026-07-12",
+      "title": "Blind-Spots-Bench: Evaluating Blind Spots in Multimodal Models",
+      "fact_summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
+      "summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"blind\",\"spots\",\"bench\",\"evaluating\",\"multimodal\",\"models\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:50.044Z",
+      "updated_at": "2026-07-12T00:24:50.045Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.270Z",
+  "updatedAt": "2026-07-12T01:14:31.270Z"
 },
 {
   "signalId": "dbd195d3-990b-4983-9675-42e9a00c9db5",
@@ -173985,6 +173957,20 @@
   },
   "createdAt": "2026-07-12T06:00:58.992Z",
   "updatedAt": "2026-07-12T06:00:58.992Z"
+},
+{
+  "signalId": "e8a085f5-1dfb-4336-99d8-4490c7cc4730",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.886Z",
+  "updatedAt": "2026-07-12T01:16:27.886Z"
 },
 {
   "signalId": "e8a25ec6-d27b-42bb-83b4-1cee55fc19e3",
@@ -185231,6 +185217,20 @@
   },
   "createdAt": "2026-08-12T03:17:41.527Z",
   "updatedAt": "2026-08-12T03:17:41.527Z"
+},
+{
+  "signalId": "f7111a67-6f59-4af4-82f7-6f57b818239a",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.886Z",
+  "updatedAt": "2026-07-12T01:16:27.886Z"
 },
 {
   "signalId": "f715e9ae-85bf-44e4-a302-5b1c8c8bab78",
