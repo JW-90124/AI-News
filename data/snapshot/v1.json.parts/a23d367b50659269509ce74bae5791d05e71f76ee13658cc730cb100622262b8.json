@@ -1,5 +1,189 @@
 [
 {
+  "id": "393334e8-45f3-4bcc-8f03-9f655d422653",
+  "slug": "scaling-time-series-classification-via-xai-driven-data-reduction-2026-07-20",
+  "title": "Scaling Time Series Classification via XAI-Driven Data Reduction",
+  "factSummary": "Explainable AI (XAI) for time series has seen significant algorithmic growth, but its utility in providing measurable performance gains for downstream tasks remains under-explored. This paper bridges this gap by introducing drXAI, a novel methodology that repurposes XAI attribution methods for effective data reduction in Time Series Classification (TSC). The core challenge in modern TSC is scalability; state-of-the-art models, such as Transformers, exhibit quadratic complexity relative to sequence length and linear complexity relative to the number of channels. This renders them computationally prohibitive for massive datasets. drXAI addresses this by using a fast, GPU-accelerated classifier (Hydra) to generate local attributions. We aggregate these into global feature importance scores and employ an automated elbow-cut heuristic to select the most salient features without requiring manual thresholds. We evaluate our approach on both synthetic and real-world univariate and multivariate datasets. On synthetic benchmarks, drXAI successfully recovers ground-truth features where traditional baselines fail. On real-world data, drXAI achieves between 80% and 90% data reduction while maintaining classification accuracy comparable to models trained on the full dataset. Most importantly, we show that drXAI allows resource-intensive models like ConvTran to scale to datasets that were previously inaccessible due to memory constraints. Our results show the benefits of using XAI not just for interpretability, but as a robust tool for feature selection and scalability in time series analysis. All our code and data are openly available.",
+  "summary": "Explainable AI (XAI) for time series has seen significant algorithmic growth, but its utility in providing measurable performance gains for downstream tasks remains under-explored. This paper bridges this gap by introducing drXAI, a novel methodology that repurposes XAI attribution methods for effective data reduction in Time Series Classification (TSC). The core challenge in modern TSC is scalability; state-of-the-art models, such as Transformers, exhibit quadratic complexity relative to sequence length and linear complexity relative to the number of channels. This renders them computationally prohibitive for massive datasets. drXAI addresses this by using a fast, GPU-accelerated classifier (Hydra) to generate local attributions. We aggregate these into global feature importance scores and employ an automated elbow-cut heuristic to select the most salient features without requiring manual thresholds. We evaluate our approach on both synthetic and real-world univariate and multivariate datasets. On synthetic benchmarks, drXAI successfully recovers ground-truth features where traditional baselines fail. On real-world data, drXAI achieves between 80% and 90% data reduction while maintaining classification accuracy comparable to models trained on the full dataset. Most importantly, we show that drXAI allows resource-intensive models like ConvTran to scale to datasets that were previously inaccessible due to memory constraints. Our results show the benefits of using XAI not just for interpretability, but as a robust tool for feature selection and scalability in time series analysis. All our code and data are openly available.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scaling",
+    "time",
+    "series",
+    "classification",
+    "via",
+    "xai",
+    "driven",
+    "data"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 50,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-17T09:09:08.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-20T04:31:31.986Z",
+  "updatedAt": "2026-07-20T04:31:32.003Z"
+},
+{
+  "id": "048fdffa-d0be-4948-996f-29f1843e82fa",
+  "slug": "sceneactbench-can-agents-act-on-the-3d-scenes-they-see-2026-07-27",
+  "title": "SceneActBench: Can Agents Act on the 3D Scenes They See?",
+  "factSummary": "Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only describe them. Existing 3D benchmarks score textual responses or single-object operations, leaving agent action on complete multi-object 3D scenes under evaluated. We present SceneActBench, a benchmark for visually conditioned action across five 3D tasks under a unified agent-environment loop. Given PNG images or sampled video frames and, where applicable, supplied 3D assets, an agent acts on a 3D environment. We evaluate each final output against hidden ground truth with task-specific geometric metrics. SceneActBench comprises five tasks built from 210 source instances, yielding 520 task cases including paired input conditions. Every task runs through one fixed agent loop to keep the comparison fair. Across eleven proprietary VLM configurations, Overall scores span 38.6-50.2, and none performs consistently well across tasks. We further analyse where and how failures manifest.",
+  "summary": "Vision-language model (VLM) agents increasingly use tools to act on 3D scenes rather than only describe them. Existing 3D benchmarks score textual responses or single-object operations, leaving agent action on complete multi-object 3D scenes under evaluated. We present SceneActBench, a benchmark for visually conditioned action across five 3D tasks under a unified agent-environment loop. Given PNG images or sampled video frames and, where applicable, supplied 3D assets, an agent acts on a 3D environment. We evaluate each final output against hidden ground truth with task-specific geometric metrics. SceneActBench comprises five tasks built from 210 source instances, yielding 520 task cases including paired input conditions. Every task runs through one fixed agent loop to keep the comparison fair. Across eleven proprietary VLM configurations, Overall scores span 38.6-50.2, and none performs consistently well across tasks. We further analyse where and how failures manifest.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sceneactbench",
+    "can",
+    "agents",
+    "act",
+    "3d",
+    "scenes",
+    "they",
+    "see"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 53,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-24T15:16:47.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-27T04:31:44.423Z",
+  "updatedAt": "2026-07-27T04:31:44.455Z"
+},
+{
+  "id": "1f3fddcb-3c68-4457-8b3c-2cabcf0e3e8f",
+  "slug": "scenebind-binding-what-and-where-across-vision-audio-and-language-2026-07-17",
+  "title": "SceneBind: Binding What and Where Across Vision, Audio and Language",
+  "factSummary": "We present SceneBind, an omni-modal representation of realistic scenes with joint semantic and 3D spatial understanding across vision, audio and language. Existing omni-modal encoders excel at instance-level semantics (i.e., what is present), but often lack explicit spatial structure (i.e., where it is). SceneBind addresses this gap by representing each scene as a semantic-spatial entity, combining a global semantic embedding with object-centric semantic-spatial slots. This representation explicitly captures object-level semantics, spatial attributes, and uncertainty. We further propose SceneBind Matching, a semantic-spatial matching scheme that integrates global scene similarity with object alignment, supporting cross-modal scene retrieval and object grounding. To train and evaluate SceneBind, we curate a novel real-world binaural audio-visual dataset with structured semantic and spatial annotations, and propose a training protocol for aligning semantic and spatial signals across modalities. SceneBind is compatible with large-scale pretrained semantic encoders, adds lightweight spatial modeling with only a few additional tokens. It achieves state-of-the-art scene and spatial retrieval while enabling strong zero-shot transfer to downstream tasks such as audio-visual localization.",
+  "summary": "We present SceneBind, an omni-modal representation of realistic scenes with joint semantic and 3D spatial understanding across vision, audio and language. Existing omni-modal encoders excel at instance-level semantics (i.e., what is present), but often lack explicit spatial structure (i.e., where it is). SceneBind addresses this gap by representing each scene as a semantic-spatial entity, combining a global semantic embedding with object-centric semantic-spatial slots. This representation explicitly captures object-level semantics, spatial attributes, and uncertainty. We further propose SceneBind Matching, a semantic-spatial matching scheme that integrates global scene similarity with object alignment, supporting cross-modal scene retrieval and object grounding. To train and evaluate SceneBind, we curate a novel real-world binaural audio-visual dataset with structured semantic and spatial annotations, and propose a training protocol for aligning semantic and spatial signals across modalities. SceneBind is compatible with large-scale pretrained semantic encoders, adds lightweight spatial modeling with only a few additional tokens. It achieves state-of-the-art scene and spatial retrieval while enabling strong zero-shot transfer to downstream tasks such as audio-visual localization.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scenebind",
+    "binding",
+    "what",
+    "where",
+    "across",
+    "vision",
+    "audio",
+    "language"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 81,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-16T17:55:15.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-17T14:09:52.202Z",
+  "updatedAt": "2026-07-17T14:09:52.220Z"
+},
+{
+  "id": "089871df-1639-40e5-9fb2-2cd53bf7f07d",
+  "slug": "scgfm-art-amortized-relational-transport-for-structure-centric-graph-foundation-models-2026-09-18",
+  "title": "SCGFM-ART: Amortized Relational Transport for Structure-Centric Graph Foundation Models",
+  "factSummary": "Graph foundation models (GFMs) aim to learn transferable representations across severely heterogeneous graph domains. However, severe domain shifts in topology, graph scale, and feature semantics impede the construction of a unified, domain-agnostic representation space. To address this, we propose SCGFM-ART, a structure-centric GFM framework that aligns arbitrary graphs onto a shared relational atlas via Amortized Relational Transport (ART). The relational atlas serves as a universal coordinate system defined by a finite set of relational landmarks (bases), while ART directly predicts reusable, end-to-end graph-to-base transport plans, bypassing costly runtime Gromov-Wasserstein optimizations. Under this formulation, SCGFM-ART decomposes a graph into a unified representation: globally via its relational response coordinates relative to the atlas, and locally via its node-to-role structural correspondences. These correspondences project disparate node attributes into a canonical role space, resolving structural and semantic heterogeneity within a singular alignment interface. Rigorously modeling graphs and atlas bases as finite measured relational spaces, we establish coordinate fidelity bounds, prove stability under predicted transport plans, and derive an amortized coverage bound that guarantees our learning objective tightly surrogates ideal relational coverage. Benchmarked across 14 cross-domain graph- and node-level classification tasks, SCGFM-ART achieves state-of-the-art transferability, securing superior average ranks of 2.29 and 1.14, respectively. Topological perturbation analyses demonstrate that node-role transport retains fine-grained structural nuances beyond global coordinates. On real-world benchmarks, the amortized formulation yields 44.2 to 85.1 times faster frozen target-domain inference by avoiding iterative alignment at test time.",
+  "summary": "Graph foundation models (GFMs) aim to learn transferable representations across severely heterogeneous graph domains. However, severe domain shifts in topology, graph scale, and feature semantics impede the construction of a unified, domain-agnostic representation space. To address this, we propose SCGFM-ART, a structure-centric GFM framework that aligns arbitrary graphs onto a shared relational atlas via Amortized Relational Transport (ART). The relational atlas serves as a universal coordinate system defined by a finite set of relational landmarks (bases), while ART directly predicts reusable, end-to-end graph-to-base transport plans, bypassing costly runtime Gromov-Wasserstein optimizations. Under this formulation, SCGFM-ART decomposes a graph into a unified representation: globally via its relational response coordinates relative to the atlas, and locally via its node-to-role structural correspondences. These correspondences project disparate node attributes into a canonical role space, resolving structural and semantic heterogeneity within a singular alignment interface. Rigorously modeling graphs and atlas bases as finite measured relational spaces, we establish coordinate fidelity bounds, prove stability under predicted transport plans, and derive an amortized coverage bound that guarantees our learning objective tightly surrogates ideal relational coverage. Benchmarked across 14 cross-domain graph- and node-level classification tasks, SCGFM-ART achieves state-of-the-art transferability, securing superior average ranks of 2.29 and 1.14, respectively. Topological perturbation analyses demonstrate that node-role transport retains fine-grained structural nuances beyond global coordinates. On real-world benchmarks, the amortized formulation yields 44.2 to 85.1 times faster frozen target-domain inference by avoiding iterative alignment at test time.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "scgfm",
+    "art",
+    "amortized",
+    "relational",
+    "transport",
+    "structure",
+    "centric",
+    "graph"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T14:01:44.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:13.154Z",
+  "updatedAt": "2026-09-18T05:20:13.193Z"
+},
+{
   "id": "e74b3ba5-0e13-462c-ba28-8f3bc3243c00",
   "slug": "schema-anchored-latent-reasoning-for-semantic-parsing-based-knowledge-base-question-answer-2026-09-18",
   "title": "Schema-Anchored Latent Reasoning for Semantic Parsing-Based Knowledge Base Question Answering",
@@ -176,8 +360,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -1499,8 +1683,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -1633,8 +1817,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -2042,8 +2226,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -2630,8 +2814,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -3081,8 +3265,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -3304,8 +3488,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -3439,8 +3623,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "ab3ace26-5eac-459c-a323-39b13f2698e8",
@@ -3984,8 +4168,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -4210,8 +4394,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -4481,8 +4665,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -4569,8 +4753,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -4655,8 +4839,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -5152,8 +5336,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -5468,8 +5652,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -6104,8 +6288,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -6193,8 +6377,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -6236,8 +6420,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -6738,8 +6922,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -6780,8 +6964,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -7043,8 +7227,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -7271,23 +7455,21 @@
   "id": "b250c019-1fba-48b2-97c4-eb84b554adcf",
   "slug": "stagehand-python-4-2-0a0-dev1525-ci-avoid-rerunning-typescript-unit-tests-2985-2026-09-20",
   "title": "stagehand-python@4.2.0a0.dev1525: ci: avoid rerunning TypeScript unit tests (#2985)",
-  "factSummary": "Change The TypeScript unit job currently runs turbo run test:unit and then runs root vitest run . The second command repeats the package unit tests, so this change removes it along with the unused Chrome output ID. Chrome setup and the separate browser job remain unchanged. The baseline repeated root Vitest step took 81 seconds after Turbo unit tests had already completed. With this change, the TypeScript unit job took 2m 53s , compared with 4m 16s in the baseline. Coverage check We verified that removing the root Vitest run does not drop the relevant unit coverage: Root Vitest collects 239 test files; Turbo's test:unit tasks collect 235 files overlap. The four root-only files are all in packages/sdk-ts/tests/browser-runtime , which is already covered by the separate test:browser task. The Browserbase smoke test is also run separately with BROWSERBASE_SMOKE=1 . At the test-case level, all 33 root-only cases are browser-runtime tests. Turbo additionally covers 11 example integration-facade cases that root Vitest doesn't select. Package-level Vitest configs can differ from the root config, so we keep each package's existing test:unit command rather than replacing it with the root config. Validation On a branch based on the current upstream main : pnpm install --frozen-lockfile passed pnpm build — 14 tasks passed pnpm check — 36 tasks passed pnpm exec turbo run test:unit — 33 tasks passed The exact workflow change passed Build, Check, TypeScript unit, and all 32 integration jobs run 35329939833 The only fork limitation is the Browserbase smoke test, which requires BROWSERBASE_API_KEY . Summary by cubic Removes the duplicate root vitest run step from the TypeScript unit job so package unit tests run only once. The browser-runtime specs that root Vitest picked up are already covered by the browser-ts job, so coverage is unchanged. Written for commit de3f999 . Summary will update on new commits.",
-  "summary": "Change The TypeScript unit job currently runs turbo run test:unit and then runs root vitest run . The second command repeats the package unit tests, so this change removes it along with the unused Chrome output ID. Chrome setup and the separate browser job remain unchanged. The baseline repeated root Vitest step took 81 seconds after Turbo unit tests had already completed. With this change, the TypeScript unit job took 2m 53s , compared with 4m 16s in the baseline. Coverage check We verified that removing the root Vitest run does not drop the relevant unit coverage: Root Vitest collects 239 test files; Turbo's test:unit tasks collect 235 files overlap. The four root-only files are all in packages/sdk-ts/tests/browser-runtime , which is already covered by the separate test:browser task. The Browserbase smoke test is also run separately with BROWSERBASE_SMOKE=1 . At the test-case level, all 33 root-only cases are browser-runtime tests. Turbo additionally covers 11 example integration-facade cases that root Vitest doesn't select. Package-level Vitest configs can differ from the root config, so we keep each package's existing test:unit command rather than replacing it with the root config. Validation On a branch based on the current upstream main : pnpm install --frozen-lockfile passed pnpm build — 14 tasks passed pnpm check — 36 tasks passed pnpm exec turbo run test:unit — 33 tasks passed The exact workflow change passed Build, Check, TypeScript unit, and all 32 integration jobs run 35329939833 The only fork limitation is the Browserbase smoke test, which requires BROWSERBASE_API_KEY . Summary by cubic Removes the duplicate root vitest run step from the TypeScript unit job so package unit tests run only once. The browser-runtime specs that root Vitest picked up are already covered by the browser-ts job, so coverage is unchanged. Written for commit de3f999 . Summary will update on new commits.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "open-source",
-  "company": "industry",
+  "factSummary": "Stagehand 发布 stagehand-python@4.2.0a0.dev1525，对应变更（#2985）为 CI 调整：TypeScript unit job 原本先运行 turbo run test:unit，再运行根目录 vitest run，后者重复执行了包单元测试，因此移除该重复步骤及未使用的 Chrome output ID；Chrome 设置与独立的 browser job 保持不变。",
+  "summary": "Stagehand 的 Python 包发布 4.2.0a0.dev1525 版本，随附的 CI 变更（#2985）删除了 TypeScript unit job 中重复的根目录 Vitest 步骤和未使用的 Chrome output ID，Chrome 设置与独立 browser job 未变。",
+  "technicalInsight": "该变更属于 CI 流程去重，减少重复执行单元测试的步骤，不涉及产品能力或模型行为变化；可验证的下一信号是后续发布说明中是否继续出现同类 CI 清理，以及该 job 的实际耗时是否下降。",
+  "industryInsight": "开源 Agent 工具链项目在快速迭代中同步维护 CI 效率，反映开发者工具生态对构建与测试成本的持续关注；单一 CI 提交不足以推断行业趋势。",
+  "futureOutlook": "若后续多个版本持续出现 CI 精简类提交，可视为项目进入维护与稳定性优化阶段的信号；当前证据仅支持单次变更。",
+  "businessValue": "对使用 Stagehand 的开发者而言，CI 去重可能缩短流水线时间，但该价值需以实际构建时长数据验证。",
+  "category": "ci-optimization",
+  "company": "Stagehand",
   "keywords": [
-    "stagehand",
-    "python",
-    "0a0",
-    "dev1525",
-    "ci",
-    "avoid",
-    "rerunning",
-    "typescript"
+    "Stagehand",
+    "CI",
+    "TypeScript",
+    "Vitest",
+    "单元测试",
+    "开源"
   ],
   "confidenceScore": 74,
   "heatScore": 22,
@@ -7305,13 +7487,13 @@
     "freshness": 88,
     "crossRegion": false
   },
-  "status": "review",
+  "status": "published",
   "featured": 0,
   "manualOverride": 0,
   "happenedAt": "2026-09-19T17:19:35.000Z",
-  "publishedAt": null,
+  "publishedAt": "2026-09-20T16:17:24.098Z",
   "createdAt": "2026-09-20T05:31:06.470Z",
-  "updatedAt": "2026-09-20T05:31:06.514Z"
+  "updatedAt": "2026-09-20T16:17:24.098Z"
 },
 {
   "id": "8fc22b0b-e891-432b-a5f7-d6aecc1770a5",
@@ -7849,8 +8031,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -8936,8 +9118,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -9254,8 +9436,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -9480,8 +9662,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -9793,8 +9975,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -10337,8 +10519,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -11790,8 +11972,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -14930,8 +15112,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "8f28194e-86ca-43ac-b814-b1d290b09356",
@@ -15290,8 +15472,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -15379,8 +15561,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -15514,8 +15696,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -17566,8 +17748,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "95e6a627-0531-4ee5-97a6-949b11b81ad3",
@@ -18329,8 +18511,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -18600,8 +18782,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -21656,20 +21838,20 @@
     "v0",
     "20"
   ],
-  "confidenceScore": 74,
-  "heatScore": 22,
+  "confidenceScore": 91,
+  "heatScore": 27,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 59,
   "scoreFactors": {
     "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
+    "corroboration": 40,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 1,
+    "independentSources": 2,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 92,
+    "freshness": 56,
     "crossRegion": false
   },
   "status": "review",
@@ -21678,7 +21860,7 @@
   "happenedAt": "2026-09-18T08:02:22.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-18T16:33:26.608Z",
-  "updatedAt": "2026-09-18T16:33:26.640Z"
+  "updatedAt": "2026-09-20T16:16:39.257Z"
 },
 {
   "id": "76b47134-d080-4e99-9ecf-cb1403cbfa22",
@@ -22833,20 +23015,20 @@
     "40",
     "rc"
   ],
-  "confidenceScore": 74,
-  "heatScore": 23,
+  "confidenceScore": 91,
+  "heatScore": 28,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 60,
   "scoreFactors": {
     "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
+    "corroboration": 40,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 1,
+    "independentSources": 2,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 95,
+    "freshness": 58,
     "crossRegion": false
   },
   "status": "review",
@@ -22855,7 +23037,7 @@
   "happenedAt": "2026-09-18T11:41:05.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-18T16:33:26.385Z",
-  "updatedAt": "2026-09-18T16:33:26.419Z"
+  "updatedAt": "2026-09-20T16:16:39.258Z"
 },
 {
   "id": "abec8f9b-47bd-4a93-8917-a1625dea8f3d",
@@ -27641,17 +27823,20 @@
   "id": "38c64c18-4027-4d83-97ca-9c5b9d6b2e09",
   "slug": "v7-19-0-2026-09-19",
   "title": "v7.19.0",
-  "factSummary": "7.19.0 (2026-09-18) Features api: add webhook endpoint management ( #2764 ) ( 2d18dfc ) Chores api: deprecate MCP connector_id ( #2767 ) ( 645c5ad )",
-  "summary": "7.19.0 (2026-09-18) Features api: add webhook endpoint management ( #2764 ) ( 2d18dfc ) Chores api: deprecate MCP connector_id ( #2767 ) ( 645c5ad )",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "open-source",
-  "company": "industry",
+  "factSummary": "OpenAI Node SDK 发布 v7.19.0（2026-09-18）。该版本包含两项变更：api 新增 webhook endpoint management（#2764，commit 2d18dfc）；api 弃用 MCP connector_id（#2767，commit 645c5ad）。",
+  "summary": "OpenAI Node SDK 发布 v7.19.0，新增 webhook endpoint 管理能力，并弃用 MCP connector_id。",
+  "technicalInsight": "从变更条目看，SDK 在 API 层同时推进 webhook 端点管理与 MCP 相关标识的弃用，可能意味着接口层正在调整事件回调与连接器标识方式；但证据未说明具体接口形态、迁移路径或替代字段，需以官方 changelog 与迁移指南为准。可验证下一信号：后续版本是否给出 connector_id 的替代参数及弃用时间表。",
+  "industryInsight": "SDK 层面的 webhook 管理与 MCP 标识弃用，反映开发者工具链在事件集成与连接器抽象上的持续迭代；单一版本发布不足以判断行业走向。可验证下一信号：其他主流模型厂商 SDK 是否出现同类 webhook 或连接器标识调整。",
+  "futureOutlook": "若 webhook endpoint management 与 MCP 标识调整在后续版本延续，可能影响依赖旧 connector_id 的集成方；当前证据不足以判断影响范围。可验证下一信号：官方发布迁移说明或旧字段进入正式移除阶段。",
+  "businessValue": "对使用 OpenAI Node SDK 的开发者而言，该版本提供 webhook 端点管理入口，并提示 MCP connector_id 进入弃用流程，需评估现有集成是否依赖该字段。可验证下一信号：项目依赖升级后是否出现弃用告警或需要代码改动。",
+  "category": "sdk-release",
+  "company": "OpenAI Node SDK",
   "keywords": [
-    "v7",
-    "19"
+    "OpenAI Node SDK",
+    "v7.19.0",
+    "webhook endpoint management",
+    "MCP connector_id",
+    "deprecation"
   ],
   "confidenceScore": 74,
   "heatScore": 22,
@@ -27669,13 +27854,13 @@
     "freshness": 90,
     "crossRegion": false
   },
-  "status": "review",
+  "status": "published",
   "featured": 0,
   "manualOverride": 0,
   "happenedAt": "2026-09-18T19:27:12.000Z",
-  "publishedAt": null,
+  "publishedAt": "2026-09-20T16:17:24.096Z",
   "createdAt": "2026-09-19T05:12:29.918Z",
-  "updatedAt": "2026-09-19T05:12:29.958Z"
+  "updatedAt": "2026-09-20T16:17:24.096Z"
 },
 {
   "id": "46f2072a-fd0f-47dd-b451-e521f03f9ff7",
@@ -29002,8 +29187,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "0c34b82e-6080-4e69-bdc8-a88ea60c83ca",
@@ -29136,8 +29321,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -29357,8 +29542,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -29400,8 +29585,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -29623,8 +29808,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -29850,8 +30035,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -29939,8 +30124,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -32641,8 +32826,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -33279,8 +33464,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "e092be25-ce0d-4a0e-92b6-360963fe2874",
@@ -33642,8 +33827,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -33686,8 +33871,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -34044,8 +34229,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -34087,8 +34272,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -34130,8 +34315,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -34173,8 +34358,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-20T05:26:40.133Z",
-  "updatedAt": "2026-09-20T05:26:40.133Z"
+  "createdAt": "2026-09-20T16:12:10.801Z",
+  "updatedAt": "2026-09-20T16:12:10.801Z"
 },
 {
   "id": "e0fb253b-fe25-44ba-a026-fdbf2f6acb1b",
