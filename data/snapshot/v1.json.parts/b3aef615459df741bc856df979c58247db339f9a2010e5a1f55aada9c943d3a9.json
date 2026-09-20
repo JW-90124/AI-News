@@ -1,5 +1,185 @@
 [
 {
+  "id": "e74b3ba5-0e13-462c-ba28-8f3bc3243c00",
+  "slug": "schema-anchored-latent-reasoning-for-semantic-parsing-based-knowledge-base-question-answer-2026-09-18",
+  "title": "Schema-Anchored Latent Reasoning for Semantic Parsing-Based Knowledge Base Question Answering",
+  "factSummary": "Semantic parsing (SP)-based knowledge base question answering aims to answer natural language questions by generating executable logical forms (LFs) over knowledge bases (KBs). When applying Large Language Models (LLMs) to this task, a key challenge over large, heterogeneous KBs is selecting question-related schema elements (i.e., relations and classes) and composing them into complex LFs. Recent LLM-based methods often make early discrete commitments to schema elements during intermediate reasoning, allowing incorrect intermediate schema decisions to propagate and finally result in incorrect LFs. To overcome this limitation, we propose SALR, a schema-anchored latent reasoning method for LF construction. It performs multi-step reasoning by generating continuous thoughts in the model's hidden states, thereby delaying the explicit commitment to LF decisions. To ground this latent reasoning process in the corresponding KB schema, SALR aligns continuous thoughts with a codebook of KB schema elements through an alignment objective supervised by schema traces deterministically derived from gold LFs. It then incorporates the aligned schema codes into inputs for subsequent reasoning steps. This schema-mediated feedback guides LF generation without requiring the model to emit an explicit textual reasoning trajectory. Experiments on GrailQA and WebQSP show that SALR achieves consistent overall gains over strong baselines. Notably, on compositional questions from GrailQA, SALR outperforms TIARA, a strong SP-based baseline, by 2.86 F1 points. Further analyses show that schema-mediated feedback affects LF generation and that schema information is recoverable from the latent states.",
+  "summary": "Semantic parsing (SP)-based knowledge base question answering aims to answer natural language questions by generating executable logical forms (LFs) over knowledge bases (KBs). When applying Large Language Models (LLMs) to this task, a key challenge over large, heterogeneous KBs is selecting question-related schema elements (i.e., relations and classes) and composing them into complex LFs. Recent LLM-based methods often make early discrete commitments to schema elements during intermediate reasoning, allowing incorrect intermediate schema decisions to propagate and finally result in incorrect LFs. To overcome this limitation, we propose SALR, a schema-anchored latent reasoning method for LF construction. It performs multi-step reasoning by generating continuous thoughts in the model's hidden states, thereby delaying the explicit commitment to LF decisions. To ground this latent reasoning process in the corresponding KB schema, SALR aligns continuous thoughts with a codebook of KB schema elements through an alignment objective supervised by schema traces deterministically derived from gold LFs. It then incorporates the aligned schema codes into inputs for subsequent reasoning steps. This schema-mediated feedback guides LF generation without requiring the model to emit an explicit textual reasoning trajectory. Experiments on GrailQA and WebQSP show that SALR achieves consistent overall gains over strong baselines. Notably, on compositional questions from GrailQA, SALR outperforms TIARA, a strong SP-based baseline, by 2.86 F1 points. Further analyses show that schema-mediated feedback affects LF generation and that schema information is recoverable from the latent states.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "schema",
+    "anchored",
+    "latent",
+    "reasoning",
+    "semantic",
+    "parsing",
+    "based",
+    "knowledge"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T13:45:34.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:13.432Z",
+  "updatedAt": "2026-09-18T05:20:13.471Z"
+},
+{
+  "id": "a775e072-ce1a-4144-b694-c57c03b17c60",
+  "slug": "schema-guided-hierarchical-information-extraction-and-semantic-evaluation-using-generative-2026-08-07",
+  "title": "Schema-Guided Hierarchical Information Extraction and Semantic Evaluation Using Generative AI",
+  "factSummary": "We present a schema-based framework for extracting complex, structured information from unstructured text documents using generative AI, followed by automated semantic evaluation of the extracted information against a gold standard. The schema, serving as an information model encoding domain knowledge, provides a unified, systematic, and consistent framework for extraction of hierarchical, nested information, with attributes of variable cardinality, and subsequent evaluation of the results. Information extraction from a document is performed in a single call to the model, in zero-shot mode. In the evaluation step, we introduce a path-based semantic matching algorithm to align the nested, variable-cardinality attributes in the extracted results with those in the gold standard. We use generative AI for semantic comparison of the extracted and gold standard values of an attribute, and introduce a rubric to classify the result of the comparison, according to domain-specific considerations, as an exact, semantic, useful, or non-match. We were able to extract 12 out of 14 attributes with an F1 score of $>$90\\% from documents published by the health technology assessment organisation NICE, using the generative AI model Claude Opus 3. The time needed to extract the attributes from a document was $\\sim$30 times lower than the time taken by a human domain expert. We further demonstrate generalisability of this framework across different generative AI models and transferability across different HTA organisations and languages.",
+  "summary": "We present a schema-based framework for extracting complex, structured information from unstructured text documents using generative AI, followed by automated semantic evaluation of the extracted information against a gold standard. The schema, serving as an information model encoding domain knowledge, provides a unified, systematic, and consistent framework for extraction of hierarchical, nested information, with attributes of variable cardinality, and subsequent evaluation of the results. Information extraction from a document is performed in a single call to the model, in zero-shot mode. In the evaluation step, we introduce a path-based semantic matching algorithm to align the nested, variable-cardinality attributes in the extracted results with those in the gold standard. We use generative AI for semantic comparison of the extracted and gold standard values of an attribute, and introduce a rubric to classify the result of the comparison, according to domain-specific considerations, as an exact, semantic, useful, or non-match. We were able to extract 12 out of 14 attributes with an F1 score of $>$90\\% from documents published by the health technology assessment organisation NICE, using the generative AI model Claude Opus 3. The time needed to extract the attributes from a document was $\\sim$30 times lower than the time taken by a human domain expert. We further demonstrate generalisability of this framework across different generative AI models and transferability across different HTA organisations and languages.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "schema",
+    "guided",
+    "hierarchical",
+    "information",
+    "extraction",
+    "semantic",
+    "evaluation",
+    "using"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-06T15:33:30.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-07T03:44:43.685Z",
+  "updatedAt": "2026-08-07T03:44:43.717Z"
+},
+{
+  "id": "bfec11e6-8659-498e-983a-7fe7273024cd",
+  "slug": "sci-vbench-evaluating-knowledge-and-reasoning-intensive-video-generation-in-science-domain-2026-08-11",
+  "title": "Sci-VBench: Evaluating Knowledge- and Reasoning-Intensive Video Generation in Science Domains",
+  "factSummary": "We introduce Sci-VBench, a comprehensive benchmark for evaluating knowledge- and reasoning-intensive video generation across scientific domains. It contains 1,253 expert-annotated examples spanning 60 subjects across four core disciplines: Natural Science, Healthcare, Humanities & Social Sciences, and Engineering. Each example requires models to generate temporally rich videos that demand scientific reasoning and knowledge-grounded synthesis, going beyond surface-level visual plausibility. We further establish a rubric-based evaluation protocol. Our analysis shows that, under this protocol, both non-expert human evaluators and MLLM-as-Judge systems can achieve relatively high agreement with expert judgments, supporting reproducible evaluation at scale. We benchmark 16 frontier proprietary and open-source models and find that, while automatic perceptual-quality scores cluster tightly across systems, performance on Prompt Grounding and Scientific and Causal Correctness varies substantially, with a pronounced proprietary-open-source gap. These findings show that advances in visual realism have not yet translated into reliable modeling of scientific and causal dynamics.",
+  "summary": "We introduce Sci-VBench, a comprehensive benchmark for evaluating knowledge- and reasoning-intensive video generation across scientific domains. It contains 1,253 expert-annotated examples spanning 60 subjects across four core disciplines: Natural Science, Healthcare, Humanities & Social Sciences, and Engineering. Each example requires models to generate temporally rich videos that demand scientific reasoning and knowledge-grounded synthesis, going beyond surface-level visual plausibility. We further establish a rubric-based evaluation protocol. Our analysis shows that, under this protocol, both non-expert human evaluators and MLLM-as-Judge systems can achieve relatively high agreement with expert judgments, supporting reproducible evaluation at scale. We benchmark 16 frontier proprietary and open-source models and find that, while automatic perceptual-quality scores cluster tightly across systems, performance on Prompt Grounding and Scientific and Causal Correctness varies substantially, with a pronounced proprietary-open-source gap. These findings show that advances in visual realism have not yet translated into reliable modeling of scientific and causal dynamics.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sci",
+    "vbench",
+    "evaluating",
+    "knowledge",
+    "reasoning",
+    "intensive",
+    "video",
+    "generation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 81,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T17:27:32.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T13:50:15.896Z",
+  "updatedAt": "2026-08-11T13:50:15.937Z"
+},
+{
+  "id": "4b8b96a8-3ee9-4a0a-a60e-b37dd9da9e85",
+  "slug": "sciagentarena-scientific-agent-benchmark",
+  "title": "SciAgentArena：科研 Agent 在规范分析上有效，但仍难自主发现新洞察",
+  "factSummary": "2026 年 6 月 10 日提交的 SciAgentArena 构建约 200 个跨领域真实科研任务、逐步验证和交互环境；评测显示 Agent 能处理定义清楚的数据分析流程，但在新洞察、自主探索和开放问题上表现不稳定。",
+  "summary": "科研 Agent 容易在可展示的单次任务上被高估。SciAgentArena 把复杂科研需求转成可交互、可逐步核验的任务，分别测试规范化分析能力和开放式研究能力。",
+  "technicalInsight": "基准采用 Agent 无关的交互环境和逐步验证机制，覆盖多种科学领域与长程推理过程；它既评估最终答案，也记录任务分解、工具使用、证据形成和中间失败，使不同系统的可靠性可以按步骤比较。",
+  "industryInsight": "科研平台和垂直 Agent 需要把“自动完成分析”与“产生可信新发现”分开销售和验收，近期商业价值更可能来自有明确数据、方法和验证标准的研究流程。",
+  "futureOutlook": "需要继续评估任务代表性、评审一致性、数据泄漏和完整实验流程，并跟踪模型升级能否改善开放探索，以及是否只是适应固定基准。",
+  "businessValue": "研发团队应先把结构清楚、结果可核验的数据分析交给 Agent，并保留专家负责问题定义、新颖性判断和开放式假设验证。",
+  "category": "research",
+  "company": "SciAgentArena",
+  "keywords": [
+    "科研 Agent",
+    "benchmark",
+    "科学发现",
+    "逐步验证"
+  ],
+  "confidenceScore": 95,
+  "heatScore": 0,
+  "impactScore": 92,
+  "valueScore": 90,
+  "scoreFactors": {
+    "authority": 95,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2026-06-10T22:55:30.000Z",
+  "publishedAt": "2026-06-10T22:55:30.000Z",
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
+},
+{
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
   "slug": "scicode-verified-how-benchmark-defects-underestimated-the-scientific-coding-ability-of-lan-2026-08-06",
   "title": "SciCode-Verified: How Benchmark Defects Underestimated the Scientific-Coding Ability of Language Models",
@@ -1319,8 +1499,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -1453,8 +1633,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -1862,8 +2042,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -2450,8 +2630,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -2901,8 +3081,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -3124,8 +3304,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -3259,8 +3439,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "ab3ace26-5eac-459c-a323-39b13f2698e8",
@@ -3804,8 +3984,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -4030,8 +4210,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -4301,8 +4481,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -4389,8 +4569,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -4475,8 +4655,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -4972,8 +5152,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -5288,8 +5468,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -5924,8 +6104,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -6013,8 +6193,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -6056,8 +6236,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -6558,8 +6738,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -6600,8 +6780,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -6863,8 +7043,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -7086,6 +7266,97 @@
   "publishedAt": "2026-09-19T05:13:11.837Z",
   "createdAt": "2026-09-19T05:12:29.431Z",
   "updatedAt": "2026-09-19T05:13:11.837Z"
+},
+{
+  "id": "b250c019-1fba-48b2-97c4-eb84b554adcf",
+  "slug": "stagehand-python-4-2-0a0-dev1525-ci-avoid-rerunning-typescript-unit-tests-2985-2026-09-20",
+  "title": "stagehand-python@4.2.0a0.dev1525: ci: avoid rerunning TypeScript unit tests (#2985)",
+  "factSummary": "Change The TypeScript unit job currently runs turbo run test:unit and then runs root vitest run . The second command repeats the package unit tests, so this change removes it along with the unused Chrome output ID. Chrome setup and the separate browser job remain unchanged. The baseline repeated root Vitest step took 81 seconds after Turbo unit tests had already completed. With this change, the TypeScript unit job took 2m 53s , compared with 4m 16s in the baseline. Coverage check We verified that removing the root Vitest run does not drop the relevant unit coverage: Root Vitest collects 239 test files; Turbo's test:unit tasks collect 235 files overlap. The four root-only files are all in packages/sdk-ts/tests/browser-runtime , which is already covered by the separate test:browser task. The Browserbase smoke test is also run separately with BROWSERBASE_SMOKE=1 . At the test-case level, all 33 root-only cases are browser-runtime tests. Turbo additionally covers 11 example integration-facade cases that root Vitest doesn't select. Package-level Vitest configs can differ from the root config, so we keep each package's existing test:unit command rather than replacing it with the root config. Validation On a branch based on the current upstream main : pnpm install --frozen-lockfile passed pnpm build — 14 tasks passed pnpm check — 36 tasks passed pnpm exec turbo run test:unit — 33 tasks passed The exact workflow change passed Build, Check, TypeScript unit, and all 32 integration jobs run 35329939833 The only fork limitation is the Browserbase smoke test, which requires BROWSERBASE_API_KEY . Summary by cubic Removes the duplicate root vitest run step from the TypeScript unit job so package unit tests run only once. The browser-runtime specs that root Vitest picked up are already covered by the browser-ts job, so coverage is unchanged. Written for commit de3f999 . Summary will update on new commits.",
+  "summary": "Change The TypeScript unit job currently runs turbo run test:unit and then runs root vitest run . The second command repeats the package unit tests, so this change removes it along with the unused Chrome output ID. Chrome setup and the separate browser job remain unchanged. The baseline repeated root Vitest step took 81 seconds after Turbo unit tests had already completed. With this change, the TypeScript unit job took 2m 53s , compared with 4m 16s in the baseline. Coverage check We verified that removing the root Vitest run does not drop the relevant unit coverage: Root Vitest collects 239 test files; Turbo's test:unit tasks collect 235 files overlap. The four root-only files are all in packages/sdk-ts/tests/browser-runtime , which is already covered by the separate test:browser task. The Browserbase smoke test is also run separately with BROWSERBASE_SMOKE=1 . At the test-case level, all 33 root-only cases are browser-runtime tests. Turbo additionally covers 11 example integration-facade cases that root Vitest doesn't select. Package-level Vitest configs can differ from the root config, so we keep each package's existing test:unit command rather than replacing it with the root config. Validation On a branch based on the current upstream main : pnpm install --frozen-lockfile passed pnpm build — 14 tasks passed pnpm check — 36 tasks passed pnpm exec turbo run test:unit — 33 tasks passed The exact workflow change passed Build, Check, TypeScript unit, and all 32 integration jobs run 35329939833 The only fork limitation is the Browserbase smoke test, which requires BROWSERBASE_API_KEY . Summary by cubic Removes the duplicate root vitest run step from the TypeScript unit job so package unit tests run only once. The browser-runtime specs that root Vitest picked up are already covered by the browser-ts job, so coverage is unchanged. Written for commit de3f999 . Summary will update on new commits.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "stagehand",
+    "python",
+    "0a0",
+    "dev1525",
+    "ci",
+    "avoid",
+    "rerunning",
+    "typescript"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-19T17:19:35.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-20T05:31:06.470Z",
+  "updatedAt": "2026-09-20T05:31:06.514Z"
+},
+{
+  "id": "8fc22b0b-e891-432b-a5f7-d6aecc1770a5",
+  "slug": "stagehand-python-4-2-0a0-dev1526-claimed-2987-improve-python-sdk-type-checking-with-ty-299-2026-09-20",
+  "title": "stagehand-python@4.2.0a0.dev1526: [Claimed #2987] Improve Python SDK type checking with ty (#2992)",
+  "factSummary": "Stagehand 发布 stagehand-python@4.2.0a0.dev1526，该版本镜像了外部贡献者 PR #2987（经 @miguelg719 批准，原始作者 @antonvishal，批准源 head SHA ff8d7771e96c597b1adbcf7819fbe179b84d640a）。变更内容包括：将 ty 升级并固定到 0.0.82，把生成的 Python 模型纳入类型检查，启用部分更严格规则；为被标注为 Pydantic 模型的字典默认值生成经过校验的模型工厂；修复 Chrome 进程与返回类型诊断，补充 @override 装饰器，并在 Python 生成后立即运行 ty；新增针对生成默认值的测试。",
+  "summary": "Stagehand 的 Python SDK 发布 4.2.0a0.dev1526，通过镜像外部 PR #2987 的方式合入类型检查改进：ty 固定到 0.0.82、生成模型纳入检查、修复 Chrome 进程相关类型错误并补充测试。",
+  "technicalInsight": "该变更把生成代码纳入类型检查范围，并针对字典默认值生成 Pydantic 模型工厂，方向上减少 schema 到 Python 的类型漂移；但证据未给出错误数量、覆盖率或性能数据，实际收益仍需观察。可验证下一信号：后续版本是否继续固定 ty 版本、是否扩大严格规则集合，以及生成默认值测试是否在 CI 中稳定通过。",
+  "industryInsight": "这体现 AI 浏览器自动化 SDK 在类型安全与生成代码质量上的工程投入，属于开发者工具链的常规迭代，而非能力跃迁；单一 PR 不足以判断生态位变化。可验证下一信号：同类 Agent/浏览器 SDK 是否跟进将生成模型纳入静态检查。",
+  "futureOutlook": "若生成模型持续纳入类型检查，下游使用者的类型错误可能更早暴露；但当前仅为预发布版本（4.2.0a0.dev1526），稳定性与兼容性影响尚不确定。可验证下一信号：该版本是否进入正式发布，以及是否有下游项目报告类型检查行为变化。",
+  "businessValue": "对使用 Stagehand Python SDK 的开发者，类型检查前移可能降低集成阶段的调试成本；证据未提供采用量、收入或留存数据，商业影响无法量化。可验证下一信号：SDK 下载量、issue 中类型相关问题的变化，或官方文档对类型检查要求的更新。",
+  "category": "developer-sdk-type-checking",
+  "company": "Stagehand",
+  "keywords": [
+    "Stagehand",
+    "Python SDK",
+    "ty",
+    "type checking",
+    "Pydantic",
+    "generated models",
+    "browser automation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-19T21:04:38.000Z",
+  "publishedAt": "2026-09-20T05:31:50.720Z",
+  "createdAt": "2026-09-20T05:31:06.262Z",
+  "updatedAt": "2026-09-20T05:31:50.720Z"
 },
 {
   "id": "52cf0fc3-5d1a-429d-8c10-1bb68f15cf02",
@@ -7578,8 +7849,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -8665,8 +8936,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -8983,8 +9254,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -9209,8 +9480,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -9522,8 +9793,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -10066,8 +10337,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -11519,8 +11790,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -14659,8 +14930,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "8f28194e-86ca-43ac-b814-b1d290b09356",
@@ -15019,8 +15290,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -15108,8 +15379,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -15243,8 +15514,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -17295,8 +17566,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "95e6a627-0531-4ee5-97a6-949b11b81ad3",
@@ -18058,8 +18329,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -18329,8 +18600,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -21491,6 +21762,49 @@
   "publishedAt": "2026-08-13T03:20:26.514Z",
   "createdAt": "2026-08-13T03:19:42.853Z",
   "updatedAt": "2026-08-13T03:20:26.514Z"
+},
+{
+  "id": "c3c76b4e-2e75-4b0f-92ad-c29b8927baf1",
+  "slug": "v1-102-0-merge-pull-request-42059-from-berriai-litellm-backport-42053-rc-1-102-0-2026-09-20",
+  "title": "v1.102.0: Merge pull request #42059 from BerriAI/litellm_backport_42053_rc_1_102_0",
+  "factSummary": "LiteLLM 发布 v1.102.0，标题为合并来自 BerriAI 的 PR #42059（litellm_backport_42053_rc_1_102_0）。证据摘要显示该 PR 内容为 test(e2e)：将 Nova Sonic 的 nova-2-sonic 模型修复回移到 rc/1.102.0 分支。",
+  "summary": "LiteLLM 发布 v1.102.0，通过合并 PR #42059 将 Nova Sonic 的 nova-2-sonic 模型修复回移到 rc/1.102.0 发布分支。",
+  "technicalInsight": "证据仅表明这是一次针对 nova-2-sonic 的端到端测试相关修复回移，未披露修复的具体技术细节或影响范围。可验证下一信号：查看该 PR 的 diff 与关联 issue，确认修复对象是测试用例还是模型调用逻辑。",
+  "industryInsight": "这体现开源 LLM 网关项目对多模型供应商（如 Nova Sonic）兼容性修复采用发布分支回移的维护节奏，但单条发布记录不足以推断行业趋势。可验证下一信号：观察后续版本是否持续出现同类供应商适配回移。",
+  "futureOutlook": "若该修复被纳入正式发布，使用 LiteLLM 调用 nova-2-sonic 的开发者可能获得更稳定的行为；实际影响需以发布说明与测试结果为准。可验证下一信号：v1.102.0 之后的补丁版本是否再次涉及同一模型。",
+  "businessValue": "对依赖 LiteLLM 统一接入多家模型 API 的团队而言，此类回移可降低升级时的兼容性风险；但证据未提供性能或成本数据，商业价值无法量化。可验证下一信号：跟踪该版本在项目 issue 与下游集成中的采用反馈。",
+  "category": "open-source-release",
+  "company": "LiteLLM",
+  "keywords": [
+    "LiteLLM",
+    "Nova Sonic",
+    "nova-2-sonic",
+    "backport",
+    "release"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 95,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-20T00:36:17.000Z",
+  "publishedAt": "2026-09-20T05:31:50.721Z",
+  "createdAt": "2026-09-20T05:31:06.088Z",
+  "updatedAt": "2026-09-20T05:31:50.721Z"
 },
 {
   "id": "36d934da-660a-4ee6-9258-34b8b09d806c",
@@ -27364,6 +27678,50 @@
   "updatedAt": "2026-09-19T05:12:29.958Z"
 },
 {
+  "id": "46f2072a-fd0f-47dd-b451-e521f03f9ff7",
+  "slug": "v7-20-0-2026-09-20",
+  "title": "v7.20.0",
+  "factSummary": "OpenAI Node SDK 发布 v7.20.0（2026-09-19）。该版本新增 API 能力：环境变量 vault 凭据（#2768）、外部存储配置管理（#2773）、安全案例检索（#2774）、安全警告与停用 webhook 事件（#2772）、来电事件中的 SIP 媒体安全（#2770）；并修复 legacy GET 调用中请求选项被保留的问题（#2771）。",
+  "summary": "OpenAI Node SDK 发布 v7.20.0，新增环境变量 vault 凭据、外部存储配置管理、安全案例检索、安全警告与停用 webhook 事件、来电事件 SIP 媒体安全等 API 能力，并修复 legacy GET 调用中请求选项保留问题。",
+  "technicalInsight": "从变更条目看，该版本在 SDK 层扩展了凭据管理、存储配置与安全事件回调等接口面，属于开发者工具链的能力补齐；但证据未披露具体实现细节、接口签名或安全模型，因此无法判断其技术深度。可验证下一信号：官方仓库中对应 PR 的代码变更与文档说明。",
+  "industryInsight": "SDK 版本迭代本身不构成行业级事件，但安全案例检索、安全警告与停用 webhook 等条目显示，面向开发者的 API 正在把安全与合规操作纳入常规接口。该判断仅基于条目名称，尚不能推断行业整体趋势。可验证下一信号：其他主流模型厂商 SDK 是否跟进类似安全事件接口。",
+  "futureOutlook": "若后续版本继续围绕凭据、存储与安全事件扩展接口，可能反映 API 平台在治理与合规能力上的持续投入；反之若仅为一次性补齐，则影响有限。可验证下一信号：后续 release notes 中同类条目的出现频率。",
+  "businessValue": "对使用 OpenAI Node SDK 的开发者而言，新增接口可能降低自行实现凭据管理与安全事件处理的成本，但证据未提供性能、成本或采用数据，商业价值无法量化。可验证下一信号：官方文档与迁移指南的更新情况。",
+  "category": "developer-sdk-release",
+  "company": "OpenAI Node SDK",
+  "keywords": [
+    "OpenAI Node SDK",
+    "v7.20.0",
+    "API",
+    "webhook",
+    "安全事件",
+    "凭据管理"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-19T18:24:46.000Z",
+  "publishedAt": "2026-09-20T05:31:50.720Z",
+  "createdAt": "2026-09-20T05:31:06.315Z",
+  "updatedAt": "2026-09-20T05:31:50.720Z"
+},
+{
   "id": "3b42405c-ae80-4d10-a351-fdf96fb03866",
   "slug": "v7-4-0-2026-08-04",
   "title": "v7.4.0",
@@ -28644,8 +29002,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "0c34b82e-6080-4e69-bdc8-a88ea60c83ca",
@@ -28778,8 +29136,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -28999,8 +29357,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -29042,8 +29400,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -29265,8 +29623,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -29492,8 +29850,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -29581,8 +29939,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -32283,8 +32641,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -32921,8 +33279,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "e092be25-ce0d-4a0e-92b6-360963fe2874",
@@ -33284,8 +33642,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -33328,8 +33686,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -33686,8 +34044,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -33729,8 +34087,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -33772,8 +34130,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -33815,8 +34173,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-20T00:21:26.029Z",
-  "updatedAt": "2026-09-20T00:21:26.029Z"
+  "createdAt": "2026-09-20T05:26:40.133Z",
+  "updatedAt": "2026-09-20T05:26:40.133Z"
 },
 {
   "id": "e0fb253b-fe25-44ba-a026-fdbf2f6acb1b",
