@@ -2710,6 +2710,20 @@
   "updatedAt": "2026-07-22T14:31:36.901Z"
 },
 {
+  "signalId": "03b5bdc4-982a-4596-806e-82b7882fbd8b",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.611Z",
+  "updatedAt": "2026-09-21T05:36:27.611Z"
+},
+{
   "signalId": "03b8e380-12be-4d94-8bfd-c3b3fb99e8d6",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -4910,6 +4924,20 @@
   },
   "createdAt": "2026-07-16T14:30:21.748Z",
   "updatedAt": "2026-07-16T14:30:21.748Z"
+},
+{
+  "signalId": "0683a90b-3dc6-4c27-9a4f-29d8f988b633",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.596Z",
+  "updatedAt": "2026-09-21T05:36:27.596Z"
 },
 {
   "signalId": "0685bc90-4033-4598-a5f1-1ebf4f9b45f9",
@@ -7335,6 +7363,20 @@
   "updatedAt": "2026-07-13T00:43:34.451Z"
 },
 {
+  "signalId": "0a220680-058d-48be-8268-6e1e47be6dba",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.351Z",
+  "updatedAt": "2026-09-21T05:36:27.351Z"
+},
+{
   "signalId": "0a28be1e-1222-4c42-ae62-521e1e5bba98",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -9468,20 +9510,6 @@
   },
   "createdAt": "2026-08-07T03:44:44.220Z",
   "updatedAt": "2026-08-07T03:44:44.220Z"
-},
-{
-  "signalId": "0cfdd92a-f88d-4a4e-9104-e17429b29fb7",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.885Z",
-  "updatedAt": "2026-07-12T01:16:27.885Z"
 },
 {
   "signalId": "0cfff337-6be5-421b-a6ef-fbcad26169b2",
@@ -13306,6 +13334,20 @@
   "updatedAt": "2026-07-29T04:00:12.089Z"
 },
 {
+  "signalId": "11feeb80-4ce6-45af-945f-c94c32b1513a",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.833Z",
+  "updatedAt": "2026-09-21T05:36:27.833Z"
+},
+{
   "signalId": "121807b1-f67d-46f6-9660-a767c278b368",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -15366,6 +15408,20 @@
   "updatedAt": "2026-07-13T15:46:03.052Z"
 },
 {
+  "signalId": "14c231c5-c182-40ea-a139-ce0e1257f654",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.359Z",
+  "updatedAt": "2026-09-21T05:36:27.359Z"
+},
+{
   "signalId": "14cfbb79-4036-40d3-9801-b376f494225b",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -16225,6 +16281,43 @@
   },
   "createdAt": "2026-07-16T14:30:19.460Z",
   "updatedAt": "2026-07-16T14:30:19.460Z"
+},
+{
+  "signalId": "162d6e39-ab1a-4fa5-b536-40c5acf51aa7",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "ac4dc6c2-d8f4-4bb5-a9fe-a2a6cea41160",
+      "slug": "overthinking-amplifying-reasoning-weights-to-extract-learned-secrets-2026-07-12",
+      "title": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
+      "fact_summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
+      "summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"overthinking\",\"amplifying\",\"reasoning\",\"weights\",\"extract\",\"learned\",\"secrets\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.936Z",
+      "updated_at": "2026-07-12T00:24:49.938Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.278Z",
+  "updatedAt": "2026-07-12T01:14:31.278Z"
 },
 {
   "signalId": "16355ee4-7e98-472b-a449-9b88a038f6d1",
@@ -17451,6 +17544,20 @@
   "updatedAt": "2026-07-27T04:31:45.030Z"
 },
 {
+  "signalId": "17eb3645-9c7e-4154-8b95-c220a7c8318b",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.459Z",
+  "updatedAt": "2026-09-21T05:36:27.459Z"
+},
+{
   "signalId": "17ef9c76-5393-42d1-bf07-900c160b3716",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -18335,6 +18442,20 @@
   },
   "createdAt": "2026-07-27T04:31:45.202Z",
   "updatedAt": "2026-07-27T04:31:45.202Z"
+},
+{
+  "signalId": "19420aa8-c3b3-4ba0-b297-54dc46c20f71",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.369Z",
+  "updatedAt": "2026-09-21T05:36:27.369Z"
 },
 {
   "signalId": "194e7501-0f2e-46c5-ab7e-c9cd5ad6f77a",
@@ -20020,6 +20141,20 @@
   "updatedAt": "2026-08-01T04:09:52.658Z"
 },
 {
+  "signalId": "1b548450-fe99-46a0-8a9d-287d92b6b8fa",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.558Z",
+  "updatedAt": "2026-09-21T05:36:27.558Z"
+},
+{
   "signalId": "1b55caf6-d87d-4ad9-b0a3-af67afb95220",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -20372,6 +20507,20 @@
   },
   "createdAt": "2026-07-15T14:18:13.813Z",
   "updatedAt": "2026-07-15T14:18:13.813Z"
+},
+{
+  "signalId": "1bd733ed-775f-4924-96e2-91111a4546cc",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "infoq-cn-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.716Z",
+  "updatedAt": "2026-09-21T05:36:27.716Z"
 },
 {
   "signalId": "1be73eb0-da2c-48cd-afa3-8e974f733e39",
@@ -22180,6 +22329,19 @@
   "updatedAt": "2026-07-29T04:00:11.427Z"
 },
 {
+  "signalId": "1e356d40-8e2d-4565-a0ef-5529e2fe4417",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.239Z",
+  "updatedAt": "2026-09-21T05:36:27.239Z"
+},
+{
   "signalId": "1e4162a2-1865-49f0-b8c0-7af86541e9d7",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -23586,6 +23748,20 @@
   "updatedAt": "2026-07-13T16:07:33.691Z"
 },
 {
+  "signalId": "1fee02c7-8754-4902-9431-a15735715e07",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "simon-willison",
+    "sourceTier": 3,
+    "sourceRole": "expert",
+    "sourceCategory": "expert"
+  },
+  "createdAt": "2026-09-21T05:36:27.732Z",
+  "updatedAt": "2026-09-21T05:36:27.732Z"
+},
+{
   "signalId": "1ff17f7a-a028-444b-93b2-41d33dcb3f26",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -24063,6 +24239,20 @@
   },
   "createdAt": "2026-08-10T13:52:17.334Z",
   "updatedAt": "2026-08-10T13:52:17.334Z"
+},
+{
+  "signalId": "20cee8fc-3c34-4717-8c5e-13cad8c65508",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.839Z",
+  "updatedAt": "2026-09-21T05:36:27.839Z"
 },
 {
   "signalId": "20d595c0-c21c-4fe2-bd64-06c950338344",
@@ -28474,6 +28664,20 @@
   "updatedAt": "2026-07-13T16:07:33.687Z"
 },
 {
+  "signalId": "26395853-37b4-46a1-b1fa-4ed6ebc9b73d",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.774Z",
+  "updatedAt": "2026-09-21T05:36:27.774Z"
+},
+{
   "signalId": "263a35b5-0f4a-4da7-bdaf-583080aac38f",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -30071,6 +30275,20 @@
   "updatedAt": "2026-07-13T16:07:33.659Z"
 },
 {
+  "signalId": "28e88179-1949-4211-ad94-c33a5c215b2e",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.430Z",
+  "updatedAt": "2026-09-21T05:36:27.430Z"
+},
+{
   "signalId": "28f220fd-dbd0-4c77-8b52-ee2e77c300c5",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -30347,6 +30565,20 @@
   },
   "createdAt": "2026-07-18T13:56:50.960Z",
   "updatedAt": "2026-07-18T13:56:50.960Z"
+},
+{
+  "signalId": "2964f907-b97c-42ba-8b5d-92238cfb7c7d",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.437Z",
+  "updatedAt": "2026-09-21T05:36:27.437Z"
 },
 {
   "signalId": "29651982-59e8-4237-968a-69f436fa232a",
@@ -31129,6 +31361,19 @@
   },
   "createdAt": "2026-07-24T04:02:42.438Z",
   "updatedAt": "2026-07-24T04:02:42.438Z"
+},
+{
+  "signalId": "2a97cc6a-ac3d-4756-a078-560252bda666",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 90,
+  "details": {
+    "sourceSlug": "mistral",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-07-12T06:00:58.959Z",
+  "updatedAt": "2026-07-12T06:00:58.959Z"
 },
 {
   "signalId": "2a9c7f37-10b0-4b35-9ddc-d73b565c68ae",
@@ -32575,43 +32820,6 @@
   },
   "createdAt": "2026-09-18T16:33:26.457Z",
   "updatedAt": "2026-09-18T16:33:26.457Z"
-},
-{
-  "signalId": "2c502f03-8b6e-462f-b652-a7f805db6f12",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "82829522-b114-4355-8b04-ad35fa2cfc0b",
-      "slug": "causalds-benchmarking-causal-reasoning-in-data-science-agents-2026-07-12",
-      "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
-      "fact_summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
-      "summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"causalds\",\"benchmarking\",\"causal\",\"reasoning\",\"data\",\"science\",\"agents\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.932Z",
-      "updated_at": "2026-07-12T00:24:49.932Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.270Z",
-  "updatedAt": "2026-07-12T01:14:31.270Z"
 },
 {
   "signalId": "2c56d11a-672d-4ee5-ab6b-ac180fe32111",
@@ -35464,6 +35672,20 @@
   "updatedAt": "2026-07-12T06:00:59.090Z"
 },
 {
+  "signalId": "2f8f52d5-d5ed-4c03-b2c1-264812c138c8",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.466Z",
+  "updatedAt": "2026-09-21T05:36:27.466Z"
+},
+{
   "signalId": "2f95bbc4-e860-47b0-8d43-37acf990d4ee",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -37057,6 +37279,20 @@
   "updatedAt": "2026-08-09T02:56:42.544Z"
 },
 {
+  "signalId": "3198e645-3f7a-4c12-999f-a3ace9b958ed",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "ros-discourse",
+    "sourceTier": 3,
+    "sourceRole": "heat",
+    "sourceCategory": "robotics"
+  },
+  "createdAt": "2026-09-21T05:36:27.845Z",
+  "updatedAt": "2026-09-21T05:36:27.845Z"
+},
+{
   "signalId": "319c554b-d1de-4c98-ac5b-b64dfba02915",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -38581,6 +38817,19 @@
   },
   "createdAt": "2026-07-28T03:56:54.933Z",
   "updatedAt": "2026-07-28T03:56:54.933Z"
+},
+{
+  "signalId": "33a19969-2764-40c6-9a3c-065aa7eaf6a3",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.237Z",
+  "updatedAt": "2026-09-21T05:36:27.237Z"
 },
 {
   "signalId": "33a33763-42c0-442f-864d-17c981300989",
@@ -41052,43 +41301,6 @@
   "updatedAt": "2026-07-14T12:50:22.940Z"
 },
 {
-  "signalId": "36a42b30-1ecd-4d06-9c29-6543dc8f5084",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "178e66f6-7040-4d0e-8660-7b18d5160260",
-      "slug": "autopersonas-a-multi-timescale-loop-engine-for-open-ended-persona-evolution-2026-07-12",
-      "title": "AutoPersonas: A Multi-Timescale Loop Engine for Open-Ended Persona Evolution",
-      "fact_summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
-      "summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"autopersonas\",\"multi\",\"timescale\",\"loop\",\"engine\",\"open\",\"ended\",\"persona\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.949Z",
-      "updated_at": "2026-07-12T00:24:49.951Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.270Z",
-  "updatedAt": "2026-07-12T01:14:31.270Z"
-},
-{
   "signalId": "36b015c4-df04-4ce8-97db-f0a6a261084a",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -43470,6 +43682,20 @@
   "updatedAt": "2026-07-21T14:31:11.174Z"
 },
 {
+  "signalId": "39d3575f-6f8a-4365-af4c-5dcf1833842f",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.885Z",
+  "updatedAt": "2026-07-12T01:16:27.885Z"
+},
+{
   "signalId": "39d82893-dbf1-4d43-944f-0e41c6720293",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -43533,6 +43759,20 @@
   },
   "createdAt": "2026-07-18T13:56:50.953Z",
   "updatedAt": "2026-07-18T13:56:50.953Z"
+},
+{
+  "signalId": "39e24243-f357-4053-833e-28118ea14377",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.785Z",
+  "updatedAt": "2026-09-21T05:36:27.785Z"
 },
 {
   "signalId": "39e857e9-ea3a-4c97-a4ae-ab40e499a65d",
@@ -44047,6 +44287,19 @@
   "updatedAt": "2026-07-12T01:14:31.225Z"
 },
 {
+  "signalId": "3ac1bd0d-fa1b-4bcf-8e2b-89cd30ca18b9",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.238Z",
+  "updatedAt": "2026-09-21T05:36:27.238Z"
+},
+{
   "signalId": "3ac4fb0e-e185-4a94-9be1-a6806c625911",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -44474,6 +44727,20 @@
   },
   "createdAt": "2026-07-13T16:07:33.693Z",
   "updatedAt": "2026-07-13T16:07:33.693Z"
+},
+{
+  "signalId": "3b38470e-8242-4738-a369-e39a22141b93",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.581Z",
+  "updatedAt": "2026-09-21T05:36:27.581Z"
 },
 {
   "signalId": "3b38af74-7b9b-4c28-b49a-2f425ea2d919",
@@ -53875,6 +54142,20 @@
   "updatedAt": "2026-07-15T14:18:11.790Z"
 },
 {
+  "signalId": "47e8450b-2b85-4934-b051-d4ed98d53aea",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 20,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.689Z",
+  "updatedAt": "2026-09-21T05:36:27.689Z"
+},
+{
   "signalId": "47f2f1bf-4681-4a81-83e1-45783b78d2eb",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -57536,6 +57817,20 @@
   },
   "createdAt": "2026-07-13T16:33:33.043Z",
   "updatedAt": "2026-07-13T16:33:33.043Z"
+},
+{
+  "signalId": "4d1e3c9a-ba50-4355-a652-661955d299e3",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.519Z",
+  "updatedAt": "2026-09-21T05:36:27.519Z"
 },
 {
   "signalId": "4d21d91b-a0e5-4a61-a2bf-72deefd7a34a",
@@ -61446,6 +61741,20 @@
   "updatedAt": "2026-08-13T03:19:47.837Z"
 },
 {
+  "signalId": "5181300a-f546-43bc-9da6-8c15ad1506c5",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.398Z",
+  "updatedAt": "2026-09-21T05:36:27.398Z"
+},
+{
   "signalId": "51825171-4a96-4fd3-866c-77fd51dcd550",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -62003,6 +62312,20 @@
   },
   "createdAt": "2026-08-17T02:14:12.317Z",
   "updatedAt": "2026-08-17T02:14:12.317Z"
+},
+{
+  "signalId": "52635496-271f-472a-bff0-2293dddb6ace",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "marktechpost",
+    "sourceTier": 3,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.851Z",
+  "updatedAt": "2026-09-21T05:36:27.851Z"
 },
 {
   "signalId": "526e0ae3-5b47-43bf-9a2f-ebf00be6b618",
@@ -62963,6 +63286,20 @@
   },
   "createdAt": "2026-08-04T03:59:28.992Z",
   "updatedAt": "2026-08-04T03:59:28.992Z"
+},
+{
+  "signalId": "53d76f0e-35a4-4309-80e7-42fb21bacf34",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.488Z",
+  "updatedAt": "2026-09-21T05:36:27.488Z"
 },
 {
   "signalId": "53e0c100-8f89-4d16-95ef-4e41b74bdc24",
@@ -64755,6 +65092,20 @@
   "updatedAt": "2026-07-13T15:39:07.142Z"
 },
 {
+  "signalId": "5654ebab-0a24-4512-bc42-0837f63b2181",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.756Z",
+  "updatedAt": "2026-09-21T05:36:27.756Z"
+},
+{
   "signalId": "5655f55e-0479-4248-9656-9c4dea6e453b",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -65063,43 +65414,6 @@
   },
   "createdAt": "2026-07-23T04:04:16.208Z",
   "updatedAt": "2026-07-23T04:04:16.208Z"
-},
-{
-  "signalId": "56c01337-78e1-401b-992d-6a2abef78fe1",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "d27a4280-209a-4695-891a-ce1d87c280e9",
-      "slug": "compete-then-collaborate-frontier-ai-teachers-build-a-verifiable-curriculum-to-improve-a-c-2026-07-12",
-      "title": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum to Improve a Coding Student Beyond Imitation",
-      "fact_summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
-      "summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"compete\",\"then\",\"collaborate\",\"frontier\",\"ai\",\"teachers\",\"build\",\"verifiable\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.952Z",
-      "updated_at": "2026-07-12T00:24:49.954Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.271Z",
-  "updatedAt": "2026-07-12T01:14:31.271Z"
 },
 {
   "signalId": "56c12624-e236-43a2-a7c7-f6feb897a29b",
@@ -66143,43 +66457,6 @@
   },
   "createdAt": "2026-07-13T16:33:33.050Z",
   "updatedAt": "2026-07-13T16:33:33.050Z"
-},
-{
-  "signalId": "581dbc68-5fd2-48e8-bff3-8ac48b469e19",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "2cecb5f4-750d-43ea-b776-c37d70a3608b",
-      "slug": "blind-spots-bench-evaluating-blind-spots-in-multimodal-models-2026-07-12",
-      "title": "Blind-Spots-Bench: Evaluating Blind Spots in Multimodal Models",
-      "fact_summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
-      "summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"blind\",\"spots\",\"bench\",\"evaluating\",\"multimodal\",\"models\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:50.044Z",
-      "updated_at": "2026-07-12T00:24:50.045Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.270Z",
-  "updatedAt": "2026-07-12T01:14:31.270Z"
 },
 {
   "signalId": "581f5d29-0613-4276-a1cc-619289931ec3",
@@ -69820,43 +70097,6 @@
   "updatedAt": "2026-09-16T15:45:11.114Z"
 },
 {
-  "signalId": "5cf830c4-e3e2-4ba8-97d2-03b08b5b9723",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "c4d8224c-27f6-4206-be98-ac5380502976",
-      "slug": "understanding-axes-of-difficulty-for-long-context-tasks-via-predicatelongbench-2026-07-12",
-      "title": "Understanding Axes of Difficulty For Long Context Tasks Via PredicateLongBench",
-      "fact_summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
-      "summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"understanding\",\"axes\",\"difficulty\",\"long\",\"context\",\"tasks\",\"via\",\"predicatelongbench\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:50.025Z",
-      "updated_at": "2026-07-12T00:24:50.033Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.289Z",
-  "updatedAt": "2026-07-12T01:14:31.289Z"
-},
-{
   "signalId": "5cfb4ed4-1ca5-4a14-9a0d-9bb9197d0d14",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -70231,6 +70471,20 @@
   },
   "createdAt": "2026-07-12T06:00:15.436Z",
   "updatedAt": "2026-07-12T06:00:15.436Z"
+},
+{
+  "signalId": "5d902cf7-c1d9-4863-a36a-c4308fa03c9e",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "infoq-cn-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.705Z",
+  "updatedAt": "2026-09-21T05:36:27.705Z"
 },
 {
   "signalId": "5d983d59-a0c1-475a-82cd-b606c60d5e88",
@@ -71420,6 +71674,20 @@
   },
   "createdAt": "2026-07-22T14:31:34.419Z",
   "updatedAt": "2026-07-22T14:31:34.419Z"
+},
+{
+  "signalId": "5f3906a0-33bc-4f9d-a5e8-41988bc4cfea",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 30,
+  "details": {
+    "sourceSlug": "infoq-cn-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.672Z",
+  "updatedAt": "2026-09-21T05:36:27.672Z"
 },
 {
   "signalId": "5f3d042d-226d-42db-a29d-a7f7d41a54cc",
@@ -74163,6 +74431,20 @@
   "updatedAt": "2026-08-04T14:46:37.171Z"
 },
 {
+  "signalId": "62e10502-8dc8-4cbf-a4f2-9d3dd76bc4a7",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:30.286Z",
+  "updatedAt": "2026-09-21T05:36:30.286Z"
+},
+{
   "signalId": "62e35af0-6501-4a76-86f0-9835720b5f30",
   "status": "deferred",
   "reason": "low_eventability_review_suppressed",
@@ -74822,6 +75104,20 @@
   },
   "createdAt": "2026-08-10T03:05:15.573Z",
   "updatedAt": "2026-08-10T03:05:15.573Z"
+},
+{
+  "signalId": "63b9e5a0-5914-4bb1-a632-ba5fe69a121c",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.481Z",
+  "updatedAt": "2026-09-21T05:36:27.481Z"
 },
 {
   "signalId": "63bba485-1240-44fc-b658-c0cc4d64786d",
@@ -76153,6 +76449,20 @@
   },
   "createdAt": "2026-07-31T04:18:37.448Z",
   "updatedAt": "2026-07-31T04:18:37.448Z"
+},
+{
+  "signalId": "658dad2b-f65c-41d7-af50-6ded876320bf",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.542Z",
+  "updatedAt": "2026-09-21T05:36:27.542Z"
 },
 {
   "signalId": "658eb59c-b668-43e6-9513-6d3f59f950e8",
@@ -78073,6 +78383,20 @@
   "updatedAt": "2026-07-13T16:07:33.601Z"
 },
 {
+  "signalId": "67e90f22-537b-4aa2-a0f8-f82193dbe80a",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.642Z",
+  "updatedAt": "2026-09-21T05:36:27.642Z"
+},
+{
   "signalId": "67eb0cfd-5304-4881-83c3-58401b9ef7d6",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -78245,6 +78569,19 @@
   },
   "createdAt": "2026-07-13T00:17:51.257Z",
   "updatedAt": "2026-07-13T00:17:51.257Z"
+},
+{
+  "signalId": "6828357c-66e2-4e60-b809-0b45a573f4ca",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.236Z",
+  "updatedAt": "2026-09-21T05:36:27.236Z"
 },
 {
   "signalId": "683cb363-ee05-4bf2-83fe-3ed69c1f520e",
@@ -81185,6 +81522,20 @@
   "updatedAt": "2026-07-24T14:20:10.911Z"
 },
 {
+  "signalId": "6bf9448e-09cf-4495-a6e5-e6851f3f912a",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.343Z",
+  "updatedAt": "2026-09-21T05:36:27.343Z"
+},
+{
   "signalId": "6bff8db9-3e68-48d9-bafd-e093d58e140b",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -81438,6 +81789,20 @@
   },
   "createdAt": "2026-08-15T02:08:55.472Z",
   "updatedAt": "2026-08-15T02:08:55.472Z"
+},
+{
+  "signalId": "6c45e181-c2dd-44c9-a2a8-a6a80d74964f",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.526Z",
+  "updatedAt": "2026-09-21T05:36:27.526Z"
 },
 {
   "signalId": "6c4dd442-94af-48d9-81c4-4a780f3bd5f7",
@@ -83411,6 +83776,19 @@
   "updatedAt": "2026-08-06T03:59:12.443Z"
 },
 {
+  "signalId": "6ecb1e33-041d-42f7-8708-828007c2c4e7",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "executorch-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.237Z",
+  "updatedAt": "2026-09-21T05:36:27.237Z"
+},
+{
   "signalId": "6ece2e5c-23f6-4984-988d-35a091f41383",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -85102,6 +85480,20 @@
   "updatedAt": "2026-08-05T03:54:37.938Z"
 },
 {
+  "signalId": "70ebc9a0-1f1a-4790-9d70-e078222b3495",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.504Z",
+  "updatedAt": "2026-09-21T05:36:27.504Z"
+},
+{
   "signalId": "70ef07cc-2cad-4f1e-b5a8-ac59af72f9c9",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -86348,6 +86740,20 @@
   "updatedAt": "2026-07-16T14:30:19.444Z"
 },
 {
+  "signalId": "728023d2-ceff-41ba-bef4-bb2ea3160e92",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.384Z",
+  "updatedAt": "2026-09-21T05:36:27.384Z"
+},
+{
   "signalId": "7280a1df-e92b-447b-9854-c2b5bf7b3537",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -86359,6 +86765,20 @@
   },
   "createdAt": "2026-07-12T06:00:59.086Z",
   "updatedAt": "2026-07-12T06:00:59.086Z"
+},
+{
+  "signalId": "728e8733-6164-449d-bf8d-dcd3d3a16b92",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.377Z",
+  "updatedAt": "2026-09-21T05:36:27.377Z"
 },
 {
   "signalId": "728eaece-b9b3-4a33-a117-34e8e1d4c875",
@@ -89231,6 +89651,19 @@
   },
   "createdAt": "2026-08-13T03:19:44.044Z",
   "updatedAt": "2026-08-13T03:19:44.044Z"
+},
+{
+  "signalId": "7647521f-2a72-4cb0-924b-59351fff5d56",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.238Z",
+  "updatedAt": "2026-09-21T05:36:27.238Z"
 },
 {
   "signalId": "7653597e-e0ea-4db8-b5b7-af9fa7bcc8a0",
@@ -93980,6 +94413,20 @@
   "updatedAt": "2026-07-23T04:04:15.647Z"
 },
 {
+  "signalId": "7c72c1c0-cf0d-4071-97de-f9e55eb50815",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "infoq-cn-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.700Z",
+  "updatedAt": "2026-09-21T05:36:27.700Z"
+},
+{
   "signalId": "7c73b001-80a3-483f-9356-945f09920410",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -96820,19 +97267,6 @@
   "updatedAt": "2026-08-05T03:54:38.036Z"
 },
 {
-  "signalId": "7fdc3940-29f1-4391-98ba-598a479f45b2",
-  "status": "deferred",
-  "reason": "shadow_observation",
-  "eventabilityScore": 90,
-  "details": {
-    "sourceSlug": "mistral",
-    "latestLifecycle": "shadow",
-    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
-  },
-  "createdAt": "2026-07-12T06:00:58.959Z",
-  "updatedAt": "2026-07-12T06:00:58.959Z"
-},
-{
   "signalId": "7fe04a12-3a72-45c9-ab2a-f2d581ad5477",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -97006,20 +97440,6 @@
   },
   "createdAt": "2026-07-31T14:43:36.864Z",
   "updatedAt": "2026-07-31T14:43:36.864Z"
-},
-{
-  "signalId": "8016da5d-7ef3-435f-9a98-9fd7ea895108",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.886Z",
-  "updatedAt": "2026-07-12T01:16:27.886Z"
 },
 {
   "signalId": "801bfcb0-a1dd-4405-95de-b6edd76a38aa",
@@ -102005,6 +102425,20 @@
   "updatedAt": "2026-09-16T15:45:14.466Z"
 },
 {
+  "signalId": "86ba0bc1-a35f-4100-8810-eb3160e57b98",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.809Z",
+  "updatedAt": "2026-09-21T05:36:27.809Z"
+},
+{
   "signalId": "86c1233d-af17-4f6e-9b59-d3d92dd4a5c9",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -103531,43 +103965,6 @@
   "updatedAt": "2026-07-25T14:09:19.982Z"
 },
 {
-  "signalId": "88a61627-633e-4ddd-a245-892f3b0a53e2",
-  "status": "deferred",
-  "reason": "low_eventability_review_suppressed",
-  "eventabilityScore": 45,
-  "details": {
-    "suppressedEvent": {
-      "id": "ac4dc6c2-d8f4-4bb5-a9fe-a2a6cea41160",
-      "slug": "overthinking-amplifying-reasoning-weights-to-extract-learned-secrets-2026-07-12",
-      "title": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
-      "fact_summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
-      "summary": "arXiv:2607.08173v1 Announce Type: new Abstract: Black box auditing of language models is an essential pre-deployment tool, but it may miss subtle forms of misalignment and hidden information. To better elicit hidden information during an auditing process, we introduce \\emph{overthinking}: the process of using reasoning task vectors to amplify the propensity to think out loud of reasoning models. Given the parameters of a non-reasoning instruct model $M$ and reasoning-distilled model $R$, we define the \\emph{overthinking model} as $\\boldsymbol{\\theta}_{\\mathcal{O}_\\alpha} = \\boldsymbol{\\theta}_{\\mathcal{M}} + \\alpha(\\boldsymbol{\\theta}_{\\mathcal{R}} - \\boldsymbol{\\theta}_{\\mathcal{M}})$, where $\\alpha > 1$ amplifies reasoning beyond the pure reasoning model $R$. Additionally, we introduce new layer-wise attenuation strategies that selectively amplify reasoning without losing quality and coherence of model outputs. We demonstrate that overthinking models are more likely to reveal hidden information across four experimental settings, across 2B-32B models. Our findings suggest that reasoning amplification may surface secrets or unintended behaviors acquired during training up to $10\\times$ more frequently than the original reasoning model. How secrets surface depends on the secret type: some require perturbation along the reasoning direction, while others yield to any sufficiently large weight perturbation.",
-      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
-      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-      "category": "industry",
-      "company": "industry",
-      "keywords_json": "[\"overthinking\",\"amplifying\",\"reasoning\",\"weights\",\"extract\",\"learned\",\"secrets\"]",
-      "confidence_score": 74,
-      "heat_score": 21,
-      "impact_score": 55,
-      "value_score": 56,
-      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
-      "status": "review",
-      "featured": 0,
-      "manual_override": 0,
-      "happened_at": "2026-07-11T04:00:00.000Z",
-      "published_at": null,
-      "created_at": "2026-07-12T00:24:49.936Z",
-      "updated_at": "2026-07-12T00:24:49.938Z"
-    },
-    "reversible": true
-  },
-  "createdAt": "2026-07-12T01:14:31.278Z",
-  "updatedAt": "2026-07-12T01:14:31.278Z"
-},
-{
   "signalId": "88a982b7-a5ca-45ac-b4a6-1faa69b8c5e5",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -104885,6 +105282,43 @@
   },
   "createdAt": "2026-07-12T06:00:15.423Z",
   "updatedAt": "2026-07-12T06:00:15.423Z"
+},
+{
+  "signalId": "8a2a722b-bd3b-4309-800a-e4dbc0242314",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "178e66f6-7040-4d0e-8660-7b18d5160260",
+      "slug": "autopersonas-a-multi-timescale-loop-engine-for-open-ended-persona-evolution-2026-07-12",
+      "title": "AutoPersonas: A Multi-Timescale Loop Engine for Open-Ended Persona Evolution",
+      "fact_summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
+      "summary": "arXiv:2607.08252v1 Announce Type: new Abstract: Long-term persona agents must remain identifiable while adapting to new events, relationships, evidence, and social conditions. We identify self-locking as a runtime failure mode in continuing persona-life loops: locally plausible events keep appearing while the generated life collapses toward familiar environments, weak relationships, suspended decisions, and stale life stages. We trace this failure to model-level convergence toward high-probability behavioral channels and system-level context gravity from State, memory, history, and environment summaries. We introduce AutoPersonas, a multi-timescale life-environment engine for bounded persona-level recursive self-evolution. It separates environment-side Occurrences, accumulated Observations, and persona State. Its OSO loop admits divergent future-facing material while requiring evidence-governed absorption before State or reachability changes. A three-year compressed simulation exposed environment watermark shells, occurrence-hardening gaps, slow-change accumulation failures, recursive indecision, and weak relationship persistence. An eight-model 40-day stress test generated 1,600 events and found mean rolling 5-day action-category repetition of 95.2%-97.6%, with all models crossing 90% by day 11. Semantic re-keeping found 79.0%-88.0% macro-theme repetition across all direct-loop runs. In a same-runtime 40-day A/B, context-slice masking plus per-sample divergence targeting reduced macro-theme repetition from 61.8% to 36.3% and roughly doubled cumulative theme count. A juvenile-goblin fictional-world run reproduced the anti-fixation regime without hard real-world intrusions. These results support a bounded claim: separating controlled divergence from evidence-governed absorption can reduce persona-environment self-locking while preserving identity continuity.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"autopersonas\",\"multi\",\"timescale\",\"loop\",\"engine\",\"open\",\"ended\",\"persona\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.949Z",
+      "updated_at": "2026-07-12T00:24:49.951Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.270Z",
+  "updatedAt": "2026-07-12T01:14:31.270Z"
 },
 {
   "signalId": "8a2b6f57-aa64-4255-b0ed-b8dd9d6f3663",
@@ -110018,6 +110452,20 @@
   "updatedAt": "2026-08-10T13:52:17.219Z"
 },
 {
+  "signalId": "911b25c3-8c65-413e-af4b-b20a7512b683",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.391Z",
+  "updatedAt": "2026-09-21T05:36:27.391Z"
+},
+{
   "signalId": "911c88d5-188a-4a8f-b726-34af93d9a509",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -114469,6 +114917,20 @@
   "updatedAt": "2026-08-06T03:59:10.280Z"
 },
 {
+  "signalId": "96d38442-1ade-4f83-9380-9343e72b3e87",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.603Z",
+  "updatedAt": "2026-09-21T05:36:27.603Z"
+},
+{
   "signalId": "96d38eca-9e87-43e6-ab12-9c6abe9a3462",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -115197,6 +115659,20 @@
   },
   "createdAt": "2026-07-12T01:14:31.218Z",
   "updatedAt": "2026-07-12T01:14:31.218Z"
+},
+{
+  "signalId": "97b62dc2-dc9f-467f-a48c-3564c0356304",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 20,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.683Z",
+  "updatedAt": "2026-09-21T05:36:27.683Z"
 },
 {
   "signalId": "97b65c82-dda0-43c8-adc9-6a13191f04d1",
@@ -117090,6 +117566,20 @@
   "updatedAt": "2026-08-17T02:14:12.330Z"
 },
 {
+  "signalId": "9a72dcb4-5627-4ed0-b33a-22ef5e53b572",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.452Z",
+  "updatedAt": "2026-09-21T05:36:27.452Z"
+},
+{
   "signalId": "9a74c0bd-70c6-490a-b69b-57c332b37892",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -117127,6 +117617,20 @@
   },
   "createdAt": "2026-08-06T14:42:25.956Z",
   "updatedAt": "2026-08-06T14:42:25.956Z"
+},
+{
+  "signalId": "9a886f8a-7fa0-4398-a637-c3f4f2cc507f",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.512Z",
+  "updatedAt": "2026-09-21T05:36:27.512Z"
 },
 {
   "signalId": "9a8f1328-03f7-417b-a377-c7827ba7287e",
@@ -118140,6 +118644,20 @@
   "updatedAt": "2026-07-13T05:32:26.819Z"
 },
 {
+  "signalId": "9bfd176a-7aa0-494b-9d6f-fcc0fc53a9e9",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:30.270Z",
+  "updatedAt": "2026-09-21T05:36:30.270Z"
+},
+{
   "signalId": "9bfd18ec-b3c3-47cc-aa67-8e220515b887",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -118389,6 +118907,20 @@
   },
   "createdAt": "2026-07-12T01:14:31.241Z",
   "updatedAt": "2026-07-12T01:14:31.241Z"
+},
+{
+  "signalId": "9c3afd7f-0282-4751-b175-8208874e6d84",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.565Z",
+  "updatedAt": "2026-09-21T05:36:27.565Z"
 },
 {
   "signalId": "9c3e0f5c-e26e-4d49-bc18-d95e4c73c4ee",
@@ -118977,6 +119509,20 @@
   },
   "createdAt": "2026-07-12T06:00:59.147Z",
   "updatedAt": "2026-07-12T06:00:59.147Z"
+},
+{
+  "signalId": "9d218871-cd3b-4421-8553-887a7ab203df",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "simon-willison",
+    "sourceTier": 3,
+    "sourceRole": "expert",
+    "sourceCategory": "expert"
+  },
+  "createdAt": "2026-09-21T05:36:27.721Z",
+  "updatedAt": "2026-09-21T05:36:27.721Z"
 },
 {
   "signalId": "9d24589c-8d53-4c2b-9451-57aef89628d6",
@@ -120233,6 +120779,20 @@
   "updatedAt": "2026-07-12T01:14:31.206Z"
 },
 {
+  "signalId": "9e89863f-e7d2-41d5-ae7c-971e5b8f45fd",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:30.293Z",
+  "updatedAt": "2026-09-21T05:36:30.293Z"
+},
+{
   "signalId": "9e8c4e44-602c-413d-97e8-56b5b9054099",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -120376,6 +120936,20 @@
   },
   "createdAt": "2026-07-24T04:02:46.210Z",
   "updatedAt": "2026-07-24T04:02:46.210Z"
+},
+{
+  "signalId": "9eb3fc73-2bf6-4834-b514-ae0713fb380c",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.803Z",
+  "updatedAt": "2026-09-21T05:36:27.803Z"
 },
 {
   "signalId": "9eb5dfed-e41a-4600-902d-f2db060e1c30",
@@ -123344,6 +123918,20 @@
   "updatedAt": "2026-07-12T01:16:27.878Z"
 },
 {
+  "signalId": "a2843b3c-5643-4c88-bcee-778db8ef2f44",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.619Z",
+  "updatedAt": "2026-09-21T05:36:27.619Z"
+},
+{
   "signalId": "a28538cc-71a4-4be7-977b-6291a66f9324",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -124432,6 +125020,20 @@
   },
   "createdAt": "2026-07-16T14:30:19.381Z",
   "updatedAt": "2026-07-16T14:30:19.381Z"
+},
+{
+  "signalId": "a440d54d-3334-49d0-b875-23a5b1a62bd3",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.650Z",
+  "updatedAt": "2026-09-21T05:36:27.650Z"
 },
 {
   "signalId": "a455553e-b0a7-4f1c-94cb-76ed87f9c5fd",
@@ -126179,6 +126781,20 @@
   "updatedAt": "2026-07-17T14:09:54.346Z"
 },
 {
+  "signalId": "a66749e8-1356-43eb-af50-390bd14fc82a",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "techcrunch-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.727Z",
+  "updatedAt": "2026-09-21T05:36:27.727Z"
+},
+{
   "signalId": "a6683e09-d60a-45fd-9547-83c82d2ff892",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -126960,6 +127576,19 @@
   },
   "createdAt": "2026-07-13T14:27:32.328Z",
   "updatedAt": "2026-07-13T16:07:33.667Z"
+},
+{
+  "signalId": "a758e44b-48b6-4278-9d14-cf2e14f7d9b5",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.238Z",
+  "updatedAt": "2026-09-21T05:36:27.238Z"
 },
 {
   "signalId": "a75d2ce0-90cb-4547-b6fe-4103a41de390",
@@ -129546,6 +130175,20 @@
   "updatedAt": "2026-09-16T15:45:06.185Z"
 },
 {
+  "signalId": "aaa478b5-b007-4c97-9f93-f235343c686c",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.666Z",
+  "updatedAt": "2026-09-21T05:36:27.666Z"
+},
+{
   "signalId": "aaacad9b-8644-4251-826f-57e33cb3f6a0",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -130433,6 +131076,43 @@
   },
   "createdAt": "2026-07-30T03:51:11.762Z",
   "updatedAt": "2026-07-30T03:51:11.762Z"
+},
+{
+  "signalId": "ab7b7237-0e1e-4daf-860f-c129652f67b7",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "82829522-b114-4355-8b04-ad35fa2cfc0b",
+      "slug": "causalds-benchmarking-causal-reasoning-in-data-science-agents-2026-07-12",
+      "title": "CausalDS: Benchmarking Causal Reasoning in Data-Science Agents",
+      "fact_summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
+      "summary": "arXiv:2607.08093v1 Announce Type: new Abstract: Large language models (LLMs) increasingly act as integrated data-science agents, combining abstract reasoning with advanced tool use. Yet the relevant benchmark landscape largely divides into symbolic causal reasoning benchmarks without realistic data analysis or data analysis benchmarks without a principled causal data-generating structure. Furthermore, existing causal evaluation datasets are often restricted to curated examples from existing sources, with diversity coming from limited templatized variations rather than from systematic generation of novel synthetic causal structures. We introduce CausalDS, a benchmark for evaluating causal reasoning in agentic data-science workflows. Each benchmark instance is a scene consisting of a sampled structural causal model (SCM) with generated observational data and an accompanying synthetic natural-language story grounded in a realistic domain. We optionally ground the composition of the benchmark components in empirical distributions obtained from real-world datasets, thus retaining empirical structure while reducing the \"causal parrot\" risk through completely synthetic generation. From each scene, we then derive tasks spanning all three of Pearl's rungs, with typical data-science prediction tasks appearing as Rung 1. Most tasks include a data science coding component, where the model typically needs to use several tools to arrive at the final answer due to the frequent presence of imperfect observations, which are generated by an observation model. Additionally, recognizing when a question admits no warranted answer and abstaining is treated as a first-class scored outcome. The benchmark thus jointly evaluates symbolic causal reasoning, data science, uncertainty quantification, abstention, and tool use/coding.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"causalds\",\"benchmarking\",\"causal\",\"reasoning\",\"data\",\"science\",\"agents\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.932Z",
+      "updated_at": "2026-07-12T00:24:49.932Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.270Z",
+  "updatedAt": "2026-07-12T01:14:31.270Z"
 },
 {
   "signalId": "ab7ec8b6-e310-459b-a5aa-582efb92de27",
@@ -131444,6 +132124,20 @@
   },
   "createdAt": "2026-07-13T14:27:32.319Z",
   "updatedAt": "2026-07-13T16:07:33.728Z"
+},
+{
+  "signalId": "acf3bf09-4ee1-412a-843b-43a702d95d14",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.573Z",
+  "updatedAt": "2026-09-21T05:36:27.573Z"
 },
 {
   "signalId": "ad064f50-eb3e-4d3d-8e32-3e2ae9b385b0",
@@ -134435,6 +135129,43 @@
   "updatedAt": "2026-07-24T04:02:44.212Z"
 },
 {
+  "signalId": "b09019bc-b763-4491-8e82-6fde12a7f4a8",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "d27a4280-209a-4695-891a-ce1d87c280e9",
+      "slug": "compete-then-collaborate-frontier-ai-teachers-build-a-verifiable-curriculum-to-improve-a-c-2026-07-12",
+      "title": "Compete Then Collaborate: Frontier AI Teachers Build a Verifiable Curriculum to Improve a Coding Student Beyond Imitation",
+      "fact_summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
+      "summary": "arXiv:2607.08255v1 Announce Type: new Abstract: Large language models increasingly serve as teachers generating training data for smaller students. Prior multi-teacher knowledge distillation methods merge outputs without determining which frontier model teaches best, often relying on an LLM judge biased toward its own outputs. We introduce a compete-then-collaborate framework where four frontier AI teachers (Claude, Codex-GPT, Grok, Gemini) are ranked head-to-head by an execution-based judge (unit tests and stdin-stdout checks) with fairness controls, and then collaborate to build a verifiable curriculum for a student (Qwen2.5-Coder). We report three findings. (1) Under execution verification, all teachers solve standard problems near-perfectly after self-correction (99-100%) due to a saturation effect, but harder competition problems separate them (Gemini 77% > Claude 69% = Codex 69% > Grok 50%); however, the robust student-side results do not depend on teacher ranking. (2) Imitation (SFT) on verified solutions does not improve, and can degrade, an already-competent student at 7B and 32B (e.g., from 76.7% to 72.7% on MBPP-test, and 5.9% to 2.9% on competition problems). (3) Using the same collaborative curriculum as a reinforcement learning with verifiable rewards (RLVR) environment improves the student (from 5.9% to 8.8% peak on competition problems, a +49% relative gain), reversing SFT's direction. The value of AI-teacher collaboration lies not in pooling answers to imitate, but in jointly constructing a verifiable environment where the student learns by doing. We release a reproducible on-prem pipeline (NVIDIA GB10) with framework patches for running GRPO on a bleeding-edge stack.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"compete\",\"then\",\"collaborate\",\"frontier\",\"ai\",\"teachers\",\"build\",\"verifiable\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:49.952Z",
+      "updated_at": "2026-07-12T00:24:49.954Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.271Z",
+  "updatedAt": "2026-07-12T01:14:31.271Z"
+},
+{
   "signalId": "b092b317-3bc0-43bd-95c1-0295ea54fd14",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -134764,20 +135495,6 @@
   },
   "createdAt": "2026-08-04T03:59:31.026Z",
   "updatedAt": "2026-08-04T03:59:31.026Z"
-},
-{
-  "signalId": "b0f3147c-8baa-4855-b7d3-bae9ab4e75df",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.885Z",
-  "updatedAt": "2026-07-12T01:16:27.885Z"
 },
 {
   "signalId": "b0f40c20-e380-404d-a803-c0be3d03f587",
@@ -137239,6 +137956,20 @@
   "updatedAt": "2026-08-17T13:13:34.050Z"
 },
 {
+  "signalId": "b42a33c4-78de-4599-afda-bf973c7ae6df",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.827Z",
+  "updatedAt": "2026-09-21T05:36:27.827Z"
+},
+{
   "signalId": "b42aaae4-8648-41a0-a172-1a7261ebaa5d",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -139311,6 +140042,20 @@
   "updatedAt": "2026-08-06T14:42:26.026Z"
 },
 {
+  "signalId": "b6de535c-9085-4642-aaff-4d1feb1790cd",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.885Z",
+  "updatedAt": "2026-07-12T01:16:27.885Z"
+},
+{
   "signalId": "b6e17b06-5e02-4a3f-83ce-912930841a70",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -139482,6 +140227,19 @@
   },
   "createdAt": "2026-07-20T14:39:46.201Z",
   "updatedAt": "2026-07-20T14:39:46.201Z"
+},
+{
+  "signalId": "b7265925-f5dd-477e-888e-74574bedc9f4",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.235Z",
+  "updatedAt": "2026-09-21T05:36:27.235Z"
 },
 {
   "signalId": "b726e474-bee1-458d-9bb1-1c7af26abe39",
@@ -142822,6 +143580,20 @@
   "updatedAt": "2026-07-29T14:38:18.671Z"
 },
 {
+  "signalId": "bb621a98-1cb2-49ec-af2e-ec0c8edd4c1d",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.550Z",
+  "updatedAt": "2026-09-21T05:36:27.550Z"
+},
+{
   "signalId": "bb68b107-25dd-4aff-926a-7f7a81f8353c",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -143613,6 +144385,20 @@
   },
   "createdAt": "2026-07-14T02:58:19.418Z",
   "updatedAt": "2026-07-14T02:58:19.418Z"
+},
+{
+  "signalId": "bc5ebeec-89f7-4590-b848-be006e048129",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:30.278Z",
+  "updatedAt": "2026-09-21T05:36:30.278Z"
 },
 {
   "signalId": "bc5f154c-d2fd-4ee7-bad0-7e11d35eecf9",
@@ -145531,6 +146317,20 @@
   "updatedAt": "2026-07-12T01:15:58.090Z"
 },
 {
+  "signalId": "be797f1d-455c-4258-8c35-3e633d9f5412",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.473Z",
+  "updatedAt": "2026-09-21T05:36:27.473Z"
+},
+{
   "signalId": "be7b662a-bdea-46d7-b03b-5dc5d15f8047",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -147400,6 +148200,20 @@
   "updatedAt": "2026-09-19T05:12:30.353Z"
 },
 {
+  "signalId": "c107290d-a542-4395-a79b-15a8b8abd017",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.444Z",
+  "updatedAt": "2026-09-21T05:36:27.444Z"
+},
+{
   "signalId": "c10a082f-972f-4b9a-8760-84977e829972",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -148091,6 +148905,20 @@
   },
   "createdAt": "2026-07-24T04:02:46.292Z",
   "updatedAt": "2026-07-24T04:02:46.292Z"
+},
+{
+  "signalId": "c1d32aa7-55f9-4f07-8111-3240e6df04d5",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.413Z",
+  "updatedAt": "2026-09-21T05:36:27.413Z"
 },
 {
   "signalId": "c1d790cb-2e53-483f-8a49-213dec618408",
@@ -149676,6 +150504,20 @@
   "updatedAt": "2026-07-12T06:00:59.026Z"
 },
 {
+  "signalId": "c3c4dd28-f1cb-46b7-9062-6f449b5ac269",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.421Z",
+  "updatedAt": "2026-09-21T05:36:27.421Z"
+},
+{
   "signalId": "c3c5867f-253d-456c-b806-54e0fcfdb858",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -150842,20 +151684,6 @@
   },
   "createdAt": "2026-09-17T05:32:47.198Z",
   "updatedAt": "2026-09-17T05:32:47.198Z"
-},
-{
-  "signalId": "c555bdfd-221f-4363-9352-3ae0c3dc3829",
-  "status": "deferred",
-  "reason": "insufficient_eventability",
-  "eventabilityScore": 60,
-  "details": {
-    "sourceSlug": "deepmind",
-    "sourceTier": 1,
-    "sourceRole": "primary",
-    "sourceCategory": "frontier-lab"
-  },
-  "createdAt": "2026-07-12T01:16:27.886Z",
-  "updatedAt": "2026-07-12T01:16:27.886Z"
 },
 {
   "signalId": "c555ce25-91ab-4637-a8a5-8205fbb8ca02",
@@ -152425,6 +153253,20 @@
   "updatedAt": "2026-09-18T16:33:27.083Z"
 },
 {
+  "signalId": "c76c60e6-806e-416a-a51b-16cf10888b62",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.762Z",
+  "updatedAt": "2026-09-21T05:36:27.762Z"
+},
+{
   "signalId": "c76fd3a7-c374-45d0-b99b-e14a67d7b93e",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -152795,6 +153637,20 @@
   },
   "createdAt": "2026-08-07T13:46:13.488Z",
   "updatedAt": "2026-08-07T13:46:13.488Z"
+},
+{
+  "signalId": "c809c14f-209d-4d91-9495-b5667a936a61",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.497Z",
+  "updatedAt": "2026-09-21T05:36:27.497Z"
 },
 {
   "signalId": "c81c45f9-e3b6-47fa-b3bb-579e7cc63426",
@@ -160735,6 +161591,43 @@
   "updatedAt": "2026-08-12T03:17:43.003Z"
 },
 {
+  "signalId": "d3493717-8119-497d-b4c8-97540337f1ca",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "2cecb5f4-750d-43ea-b776-c37d70a3608b",
+      "slug": "blind-spots-bench-evaluating-blind-spots-in-multimodal-models-2026-07-12",
+      "title": "Blind-Spots-Bench: Evaluating Blind Spots in Multimodal Models",
+      "fact_summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
+      "summary": "arXiv:2607.08317v1 Announce Type: new Abstract: Modern AI models achieve strong performance on many established benchmarks, yet they still fail on tasks that humans find almost trivial, such as manipulating a string or drawing a dog with five legs. These examples suggest that existing benchmarks may under-measure persistent blind spots in current systems. We introduce $\\texttt{blind-spots-bench}$, a benchmark designed to expose such blind spots through tasks that appear simple for humans but remain challenging for modern AI. We collect raw questions from students in an AI course, clean and annotate them with structured reference solutions, and propose a task taxonomy tailored to the resulting dataset of 235 samples. We further develop an automated grading pipeline to evaluate a wide range of models, including open-weight and closed-source language, vision-language, and image-generation models. Our analysis on $\\texttt{blind-spots-bench}$ reveals that closed-source frontier models can substantially outperform open-weight models with even $\\approx10\\%$ gap, even when they attain comparable performance on existing benchmarks. A more fine-grained analysis shows that no single model dominates across all task types, and that some tasks remain challenging for all evaluated models. These results highlight the value of $\\texttt{blind-spots-bench}$ as a diagnostic stress test for identifying concrete weaknesses in current modern models.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"blind\",\"spots\",\"bench\",\"evaluating\",\"multimodal\",\"models\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:50.044Z",
+      "updated_at": "2026-07-12T00:24:50.045Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.270Z",
+  "updatedAt": "2026-07-12T01:14:31.270Z"
+},
+{
   "signalId": "d34d2e97-ff72-40ea-ae27-f6061b7f7017",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -163519,6 +164412,19 @@
   "updatedAt": "2026-07-12T06:00:59.145Z"
 },
 {
+  "signalId": "d72d3c1b-8793-486a-b6c5-7a6ec1d69c26",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.236Z",
+  "updatedAt": "2026-09-21T05:36:27.236Z"
+},
+{
   "signalId": "d734975c-0bd7-45f0-85eb-d9212b5cd5d4",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -163557,6 +164463,20 @@
   },
   "createdAt": "2026-09-19T16:00:24.380Z",
   "updatedAt": "2026-09-19T16:00:24.380Z"
+},
+{
+  "signalId": "d73e2e7e-558c-43d0-82e4-3e73251bb3ab",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "the-verge-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.744Z",
+  "updatedAt": "2026-09-21T05:36:27.744Z"
 },
 {
   "signalId": "d745ebd6-81d2-4638-843e-03c6b8531d23",
@@ -164633,6 +165553,20 @@
   },
   "createdAt": "2026-07-28T03:56:59.123Z",
   "updatedAt": "2026-07-28T03:56:59.123Z"
+},
+{
+  "signalId": "d8ce5511-1300-4bd1-847f-fee7796e3fe1",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.768Z",
+  "updatedAt": "2026-09-21T05:36:27.768Z"
 },
 {
   "signalId": "d8d0b09c-7173-46bd-b0ee-61dc2954da9d",
@@ -169610,6 +170544,20 @@
   "updatedAt": "2026-07-13T09:31:10.205Z"
 },
 {
+  "signalId": "e01ddef7-69e2-4c2b-95ad-763bd1abcb84",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.534Z",
+  "updatedAt": "2026-09-21T05:36:27.534Z"
+},
+{
   "signalId": "e02761d2-40bf-4209-bddf-2696a7c31657",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -169821,6 +170769,20 @@
   },
   "createdAt": "2026-07-16T14:30:19.489Z",
   "updatedAt": "2026-07-16T14:30:19.489Z"
+},
+{
+  "signalId": "e066ebbb-8cc9-42d0-be50-2b867c89d492",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.886Z",
+  "updatedAt": "2026-07-12T01:16:27.886Z"
 },
 {
   "signalId": "e0687e0e-e4ed-4e2a-a27e-654e2d8cf399",
@@ -171531,6 +172493,20 @@
   "updatedAt": "2026-07-14T02:58:19.419Z"
 },
 {
+  "signalId": "e2c0b0bc-bf77-4b75-bbbb-7590ab440122",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.791Z",
+  "updatedAt": "2026-09-21T05:36:27.791Z"
+},
+{
   "signalId": "e2cfcbc9-246b-4988-b163-2b7c23702a3e",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -171964,6 +172940,43 @@
   "updatedAt": "2026-07-20T04:31:32.208Z"
 },
 {
+  "signalId": "e355cc1c-1a2d-4a5c-9def-3725b615d549",
+  "status": "deferred",
+  "reason": "low_eventability_review_suppressed",
+  "eventabilityScore": 45,
+  "details": {
+    "suppressedEvent": {
+      "id": "c4d8224c-27f6-4206-be98-ac5380502976",
+      "slug": "understanding-axes-of-difficulty-for-long-context-tasks-via-predicatelongbench-2026-07-12",
+      "title": "Understanding Axes of Difficulty For Long Context Tasks Via PredicateLongBench",
+      "fact_summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
+      "summary": "arXiv:2607.08284v1 Announce Type: new Abstract: Large language models (LLMs) have demonstrated rapidly improving long-context capabilities, prompting a wave of benchmarks designed to evaluate them. However, existing long-context evaluations - from Needle-in-a-Haystack (NIAH) tests to more recent multi-hop reasoning and summarization tasks - predominantly measure average-case performance, and many are either saturated or lack robustness. Notably absent is a systematic way to probe how models perform as we scale up the difficulty of tasks along various axes. We address this gap by proposing PredicateLongBench, a benchmark that stress-tests long-context reasoning by asking models to identify the longest contiguous subsequence of words in a long input that satisfies given predicates/constraints (e.g., lexicographic ordering), drawn from a broader predicate class. The central innovation of our benchmark is the identification and systematic exploration of multiple different axes of difficulty which test multiple aspects of long context understanding. We provide two complementary generation pipelines - a fully synthetic setup using random word-like strings, and a real-world setup that samples words from natural documents while preserving their distributional properties. We find that frontier models struggle to perform well as we scale up the difficulty of tasks along our axes, demonstrating the utility of our benchmark in understanding the limitations of current long-context capabilities. Furthermore, the tasks in PredicateLongBench, though challenging, are conceptually simple and do not require LLM-based generations or judges.",
+      "technical_insight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+      "industry_insight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+      "future_outlook": "待编辑：接下来要观察哪些可验证信号？",
+      "business_value": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+      "category": "industry",
+      "company": "industry",
+      "keywords_json": "[\"understanding\",\"axes\",\"difficulty\",\"long\",\"context\",\"tasks\",\"via\",\"predicatelongbench\"]",
+      "confidence_score": 74,
+      "heat_score": 21,
+      "impact_score": 55,
+      "value_score": 56,
+      "score_factors_json": "{\"authority\":92,\"corroboration\":20,\"primaryEvidence\":50,\"uniqueAuthors\":0,\"independentSources\":1,\"platformBreadth\":1,\"regionBreadth\":0,\"velocity\":0,\"freshness\":81,\"crossRegion\":false}",
+      "status": "review",
+      "featured": 0,
+      "manual_override": 0,
+      "happened_at": "2026-07-11T04:00:00.000Z",
+      "published_at": null,
+      "created_at": "2026-07-12T00:24:50.025Z",
+      "updated_at": "2026-07-12T00:24:50.033Z"
+    },
+    "reversible": true
+  },
+  "createdAt": "2026-07-12T01:14:31.289Z",
+  "updatedAt": "2026-07-12T01:14:31.289Z"
+},
+{
   "signalId": "e35c5d3e-8d27-429d-ac0b-fa084d226ea1",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -172191,6 +173204,20 @@
   },
   "createdAt": "2026-08-04T03:59:28.954Z",
   "updatedAt": "2026-08-04T03:59:28.954Z"
+},
+{
+  "signalId": "e3bcbe2c-a993-41f4-a623-15abe5723023",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-cl",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.588Z",
+  "updatedAt": "2026-09-21T05:36:27.588Z"
 },
 {
   "signalId": "e3bdfffd-659b-4a5e-bfc8-61264c431203",
@@ -172441,6 +173468,20 @@
   },
   "createdAt": "2026-07-28T03:56:56.940Z",
   "updatedAt": "2026-07-28T03:56:56.940Z"
+},
+{
+  "signalId": "e4006e2f-3578-4463-b294-06656ef1cf03",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 20,
+  "details": {
+    "sourceSlug": "marktechpost",
+    "sourceTier": 3,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.695Z",
+  "updatedAt": "2026-09-21T05:36:27.695Z"
 },
 {
   "signalId": "e4029a0e-871e-47ce-89f6-4b581c6466b6",
@@ -172885,6 +173926,20 @@
   },
   "createdAt": "2026-07-22T14:31:34.826Z",
   "updatedAt": "2026-07-22T14:31:34.826Z"
+},
+{
+  "signalId": "e4b96b5d-a46c-452f-89fb-b3c25633c9b4",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-lg",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.406Z",
+  "updatedAt": "2026-09-21T05:36:27.406Z"
 },
 {
   "signalId": "e4bafdd2-dcde-41f6-8b1a-b91dc63a296d",
@@ -173982,6 +175037,20 @@
   "updatedAt": "2026-09-16T15:45:06.142Z"
 },
 {
+  "signalId": "e646572d-cec8-43a4-a8e7-e321c6b634b8",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "techcrunch-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.738Z",
+  "updatedAt": "2026-09-21T05:36:27.738Z"
+},
+{
   "signalId": "e64971b8-2a7d-4ab2-aeaa-6502a66764e3",
   "status": "deferred",
   "reason": "low_eventability_review_suppressed",
@@ -174890,6 +175959,20 @@
   "updatedAt": "2026-07-21T14:31:11.320Z"
 },
 {
+  "signalId": "e789edea-650b-43a6-8d29-d899e67c6340",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "infoq-cn-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.711Z",
+  "updatedAt": "2026-09-21T05:36:27.711Z"
+},
+{
   "signalId": "e78dbcbd-1922-49a4-9fd9-570194170dce",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -174970,6 +176053,20 @@
   },
   "createdAt": "2026-07-23T04:04:16.209Z",
   "updatedAt": "2026-07-23T04:04:16.209Z"
+},
+{
+  "signalId": "e7a653df-831f-475a-a187-642f0757a27a",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.816Z",
+  "updatedAt": "2026-09-21T05:36:27.816Z"
 },
 {
   "signalId": "e7a9d741-83a7-48d6-a4f6-796be64d2e6e",
@@ -176121,6 +177218,20 @@
   },
   "createdAt": "2026-07-12T07:10:34.341Z",
   "updatedAt": "2026-07-12T07:10:34.341Z"
+},
+{
+  "signalId": "e92be908-a1bf-469b-b6c5-dff012957719",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "simon-willison",
+    "sourceTier": 3,
+    "sourceRole": "expert",
+    "sourceCategory": "expert"
+  },
+  "createdAt": "2026-09-21T05:36:27.857Z",
+  "updatedAt": "2026-09-21T05:36:27.857Z"
 },
 {
   "signalId": "e92ee41e-8e72-4073-a4e1-6547486147b5",
@@ -178596,6 +179707,20 @@
   },
   "createdAt": "2026-07-16T14:30:21.811Z",
   "updatedAt": "2026-07-16T14:30:21.811Z"
+},
+{
+  "signalId": "ec5f81cb-06c0-4561-98f1-da9186965e58",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ai",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.627Z",
+  "updatedAt": "2026-09-21T05:36:27.627Z"
 },
 {
   "signalId": "ec6044f0-0b8f-4bfc-9219-eaf3a6b0df00",
@@ -181122,6 +182247,20 @@
   "updatedAt": "2026-09-16T15:45:14.448Z"
 },
 {
+  "signalId": "f00663e7-13e6-40c7-b699-d49bd26adb6f",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.635Z",
+  "updatedAt": "2026-09-21T05:36:27.635Z"
+},
+{
   "signalId": "f01137d3-6625-47e1-9d2a-864727741a39",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -182676,6 +183815,20 @@
   "updatedAt": "2026-08-17T02:14:12.443Z"
 },
 {
+  "signalId": "f1af2fd3-6bf9-42af-ac69-1409e362aa60",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.779Z",
+  "updatedAt": "2026-09-21T05:36:27.779Z"
+},
+{
   "signalId": "f1c0dcf7-9ff7-4556-93e4-6307926d41c8",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -182810,6 +183963,20 @@
   },
   "createdAt": "2026-08-08T02:49:23.171Z",
   "updatedAt": "2026-08-08T02:49:23.171Z"
+},
+{
+  "signalId": "f1f0238f-ea5d-4702-80c9-d0a3c7fc32a6",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "arxiv-ro",
+    "sourceTier": 1,
+    "sourceRole": "research",
+    "sourceCategory": "research-eval"
+  },
+  "createdAt": "2026-09-21T05:36:27.658Z",
+  "updatedAt": "2026-09-21T05:36:27.658Z"
 },
 {
   "signalId": "f1f34a55-b626-4f0a-98dc-5b12ad8ce214",
@@ -183365,6 +184532,20 @@
   "updatedAt": "2026-07-13T16:33:33.069Z"
 },
 {
+  "signalId": "f29ab100-5d9c-4a98-a801-79995a91ec2a",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 60,
+  "details": {
+    "sourceSlug": "deepmind",
+    "sourceTier": 1,
+    "sourceRole": "primary",
+    "sourceCategory": "frontier-lab"
+  },
+  "createdAt": "2026-07-12T01:16:27.886Z",
+  "updatedAt": "2026-07-12T01:16:27.886Z"
+},
+{
   "signalId": "f29b53b8-cd59-43cb-9b7b-f7a005bafca9",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -183580,6 +184761,19 @@
   },
   "createdAt": "2026-09-16T17:08:55.969Z",
   "updatedAt": "2026-09-16T17:08:55.969Z"
+},
+{
+  "signalId": "f2da949e-c5a7-4c7a-a742-fb69e5c02aee",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 90,
+  "details": {
+    "sourceSlug": "cherry-studio-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:22.405Z",
+  "updatedAt": "2026-09-21T05:36:22.405Z"
 },
 {
   "signalId": "f2dc6da9-f2df-4704-9649-12acd014ddd9",
@@ -183954,6 +185148,19 @@
   },
   "createdAt": "2026-07-20T14:39:46.209Z",
   "updatedAt": "2026-07-20T14:39:46.209Z"
+},
+{
+  "signalId": "f370b70d-7e92-471f-84f1-3e9718f97cd1",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.235Z",
+  "updatedAt": "2026-09-21T05:36:27.235Z"
 },
 {
   "signalId": "f37387ab-0d7b-4f99-a533-1ade7a9049cf",
@@ -188384,6 +189591,20 @@
   "updatedAt": "2026-08-17T13:13:33.956Z"
 },
 {
+  "signalId": "f8f9aa60-f01e-47b0-970d-e9f444317640",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 30,
+  "details": {
+    "sourceSlug": "techcrunch-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.678Z",
+  "updatedAt": "2026-09-21T05:36:27.678Z"
+},
+{
   "signalId": "f8fef295-d416-4bbb-a386-7f9c13cc9e95",
   "status": "deferred",
   "reason": "insufficient_eventability",
@@ -190896,6 +192117,20 @@
   "updatedAt": "2026-08-03T04:25:38.160Z"
 },
 {
+  "signalId": "fceb2b58-f437-4bc3-be5d-7f323914cd0b",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.797Z",
+  "updatedAt": "2026-09-21T05:36:27.797Z"
+},
+{
   "signalId": "fcefdec1-94db-48d7-8666-60c7155c5d4c",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -191264,6 +192499,20 @@
   },
   "createdAt": "2026-07-13T14:27:32.345Z",
   "updatedAt": "2026-07-13T16:07:33.600Z"
+},
+{
+  "signalId": "fd896556-992b-41bb-98f8-ad268a63a523",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 10,
+  "details": {
+    "sourceSlug": "techcrunch-ai",
+    "sourceTier": 2,
+    "sourceRole": "media",
+    "sourceCategory": "media"
+  },
+  "createdAt": "2026-09-21T05:36:27.750Z",
+  "updatedAt": "2026-09-21T05:36:27.750Z"
 },
 {
   "signalId": "fd8b99e1-cb1f-48bc-a7c3-143e1bc7c378",
@@ -191680,6 +192929,19 @@
   "updatedAt": "2026-07-29T04:00:12.080Z"
 },
 {
+  "signalId": "fe51eca7-d161-4c89-93e8-cbf29a8fb50c",
+  "status": "deferred",
+  "reason": "shadow_observation",
+  "eventabilityScore": 70,
+  "details": {
+    "sourceSlug": "pytorch-core-releases",
+    "latestLifecycle": "shadow",
+    "releaseCondition": "source_activation_after_20_healthy_checks_and_7_days"
+  },
+  "createdAt": "2026-09-21T05:36:27.235Z",
+  "updatedAt": "2026-09-21T05:36:27.235Z"
+},
+{
   "signalId": "fe53cfed-1e41-49b0-bfcd-e0df3fe3a190",
   "status": "deferred",
   "reason": "shadow_observation",
@@ -192060,6 +193322,20 @@
   },
   "createdAt": "2026-07-13T16:07:33.571Z",
   "updatedAt": "2026-07-13T16:07:33.571Z"
+},
+{
+  "signalId": "fec0c454-cdeb-41ea-8637-8ec121be7169",
+  "status": "deferred",
+  "reason": "insufficient_eventability",
+  "eventabilityScore": 0,
+  "details": {
+    "sourceSlug": "hackernews-ai",
+    "sourceTier": 4,
+    "sourceRole": "heat",
+    "sourceCategory": "community-heat"
+  },
+  "createdAt": "2026-09-21T05:36:27.822Z",
+  "updatedAt": "2026-09-21T05:36:27.822Z"
 },
 {
   "signalId": "fecd7851-6901-4a4a-80a7-2d30e12bf516",
