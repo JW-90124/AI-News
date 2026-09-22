@@ -1,5 +1,509 @@
 [
 {
+  "id": "87ec250d-c9c2-4f6b-a6ea-f347daaa5c99",
+  "slug": "pointzero-3d-point-track-completion-for-learning-transferable-3d-dynamics-2026-09-17",
+  "title": "PointZero: 3D Point Track Completion for Learning Transferable 3D Dynamics",
+  "factSummary": "World models endow perceptual systems with the ability to predict how scenes evolve under interaction. They are most beneficial when trained on diverse volumes of data, to instill a rich prior into downstream applications. Existing methods typically require robot action labels to learn action-conditioned 3D dynamics, which excludes web video data from the training pool. We study 3D point track completion as a pre-training objective for learning transferable 3D dynamics without robot data. Given a single RGB-D observation and sparse partial 3D trajectories (tracks), we predict future 3D tracks of all observed points. We show this objective produces a rich 3D dynamics prior, without requiring robot action labels. We contribute a diverse dataset of 2.9 million synthetic frames spanning deformable, articulated, and rigid objects, and use it to train PointZero. We show that a flexible and expressive transformer, PointZero, outperforms prior methods on the same data. We demonstrate the utility of our pre-training objective by post-training PointZero for two downstream applications: (1) action-conditioned 3D dynamics prediction and (2) imitation learning. When fine-tuned to condition on end-effector pose, PointZero outperforms the baselines on the recent PGND 3D dynamics benchmark. When fine-tuned to predict robot actions and 3D tracks, PointZero outperforms or matches the baselines on 6/7 simulated and real-world robot manipulation tasks. We furthermore evaluate training PointZero from scratch to isolate the benefits of our proposed architecture from those of our proposed pre-training objective and dataset. We release the dataset, checkpoints, and full training recipe.",
+  "summary": "World models endow perceptual systems with the ability to predict how scenes evolve under interaction. They are most beneficial when trained on diverse volumes of data, to instill a rich prior into downstream applications. Existing methods typically require robot action labels to learn action-conditioned 3D dynamics, which excludes web video data from the training pool. We study 3D point track completion as a pre-training objective for learning transferable 3D dynamics without robot data. Given a single RGB-D observation and sparse partial 3D trajectories (tracks), we predict future 3D tracks of all observed points. We show this objective produces a rich 3D dynamics prior, without requiring robot action labels. We contribute a diverse dataset of 2.9 million synthetic frames spanning deformable, articulated, and rigid objects, and use it to train PointZero. We show that a flexible and expressive transformer, PointZero, outperforms prior methods on the same data. We demonstrate the utility of our pre-training objective by post-training PointZero for two downstream applications: (1) action-conditioned 3D dynamics prediction and (2) imitation learning. When fine-tuned to condition on end-effector pose, PointZero outperforms the baselines on the recent PGND 3D dynamics benchmark. When fine-tuned to predict robot actions and 3D tracks, PointZero outperforms or matches the baselines on 6/7 simulated and real-world robot manipulation tasks. We furthermore evaluate training PointZero from scratch to isolate the benefits of our proposed architecture from those of our proposed pre-training objective and dataset. We release the dataset, checkpoints, and full training recipe.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "pointzero",
+    "3d",
+    "point",
+    "track",
+    "completion",
+    "learning",
+    "transferable",
+    "dynamics"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-16T17:59:30.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T05:32:39.935Z",
+  "updatedAt": "2026-09-17T05:32:39.967Z"
+},
+{
+  "id": "e9633e01-e19c-456c-a404-ee5b1e671614",
+  "slug": "poli-bias-understanding-and-measuring-large-language-model-biases-in-international-politic-2026-08-07",
+  "title": "Poli-Bias: Understanding and Measuring Large Language Model Biases in International Political Conflicts",
+  "factSummary": "Measuring political bias in large language models (LLMs) remains challenging as it can manifest through subtle differences in framing, argumentation, and legal reasoning that are difficult to capture with a single metric. In this work, we introduce Poli-Bias, a counterfactual framework for measuring whether LLMs treat legally equivalent conflict scenarios differently depending on the countries involved. Poli-Bias compares responses to paired prompts in which country identities are systematically swapped across diverse geopolitical relationships, legal violations, and reasoning tasks. Rather than reducing bias to a single judgment, our framework decomposes response disparities into five interpretable dimensions, revealing how and where unequal treatment manifests. Across 13 contemporary LLMs spanning diverse model families and sizes, we find that country identities and user affiliations can systematically affect how equivalent actions are described, evaluated, and defended under international law. Our results thus establish Poli-Bias as a fine-grained framework for auditing political even-handedness and sycophancy in LLMs.",
+  "summary": "Measuring political bias in large language models (LLMs) remains challenging as it can manifest through subtle differences in framing, argumentation, and legal reasoning that are difficult to capture with a single metric. In this work, we introduce Poli-Bias, a counterfactual framework for measuring whether LLMs treat legally equivalent conflict scenarios differently depending on the countries involved. Poli-Bias compares responses to paired prompts in which country identities are systematically swapped across diverse geopolitical relationships, legal violations, and reasoning tasks. Rather than reducing bias to a single judgment, our framework decomposes response disparities into five interpretable dimensions, revealing how and where unequal treatment manifests. Across 13 contemporary LLMs spanning diverse model families and sizes, we find that country identities and user affiliations can systematically affect how equivalent actions are described, evaluated, and defended under international law. Our results thus establish Poli-Bias as a fine-grained framework for auditing political even-handedness and sycophancy in LLMs.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "poli",
+    "bias",
+    "understanding",
+    "measuring",
+    "large",
+    "language",
+    "model",
+    "biases"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-06T14:54:30.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-07T03:44:43.952Z",
+  "updatedAt": "2026-08-07T03:44:43.985Z"
+},
+{
+  "id": "7ed3bec6-4759-4109-a6dd-99221c725ada",
+  "slug": "policy-as-logic-for-robust-reasoning-over-rules-2026-08-13",
+  "title": "Policy-as-logic for robust reasoning over rules",
+  "factSummary": "In many practical applications of generative AI systems, from tax rules to airline baggage allowance, responses to natural language queries must respect written policies or rules. We present a hybrid symbolic approach that expresses policies in formal logic and at inference time exploits the representation power of language models for fact extraction to ground predicates, and an answer set solver for reasoning such that responses are interpretable, auditable, and as we show, accurate and robust under input perturbations. Specifically, we show this separation of extraction and reasoning steps outperforms policy-as-prompt and policy-as-code methods in most cases with ~10x reduction in token usage. The results point to the value of structured reasoning and symbolic solvers in conjunction with generative models to make robust decisions involving objective criteria.",
+  "summary": "In many practical applications of generative AI systems, from tax rules to airline baggage allowance, responses to natural language queries must respect written policies or rules. We present a hybrid symbolic approach that expresses policies in formal logic and at inference time exploits the representation power of language models for fact extraction to ground predicates, and an answer set solver for reasoning such that responses are interpretable, auditable, and as we show, accurate and robust under input perturbations. Specifically, we show this separation of extraction and reasoning steps outperforms policy-as-prompt and policy-as-code methods in most cases with ~10x reduction in token usage. The results point to the value of structured reasoning and symbolic solvers in conjunction with generative models to make robust decisions involving objective criteria.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "policy",
+    "as",
+    "logic",
+    "robust",
+    "reasoning",
+    "over",
+    "rules"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T10:30:25.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:38.918Z",
+  "updatedAt": "2026-08-13T03:19:38.970Z"
+},
+{
+  "id": "f6a803a6-627b-4159-9452-8b2382ec15c9",
+  "slug": "policy-convergence-and-divergence-across-national-and-within-regional-ai-strategies-a-poli-2026-08-12",
+  "title": "Policy Convergence and Divergence Across National and Within Regional AI Strategies: A Policy Design Element Analysis",
+  "factSummary": "Governments worldwide have responded to the rapid expansion of AI by publishing national and regional AI strategies. Comparing national and regional AI strategies to identify their convergences and divergences can uncover their common practices, understand regional variations, and provide policy designers a comprehensive set of policy design elements for their ongoing AI strategy developments. Yet, existing work has not examined their underlying policy design elements or assessed whether those elements are horizontally (country-to-country) or vertical (region-to-country) converging or diverging over time. This paper addresses that gap by coding and analyzing 74 national and 3 regional AI strategies drawn from a global scan of all 205 UN member and non-member states. The coding used a latent-inductive approach organized around three functional policy design elements: goals, approaches, and principles. Two research questions guided the analysis: to what degree are national AI strategies becoming horizontally convergent or divergent over time; and to what degree are national strategies becoming vertically convergent or divergent with those countries' regional AI strategy. Results indicate strong horizontal convergence around economic competitiveness, research support, and ethical AI use, alongside persistent divergence in human rights goals, participatory governance approaches, and human-centric principles. Across the three regions, the AU exhibits the highest vertical convergence, the EU demonstrated strong alignment on regulatory and economic priorities but diverges on human-centric values, and the Nordic-Baltic Region displays mixed vertical convergence. These findings offer policy designers a comprehensive evidence base for identifying emerging AI policy design choice norms as AI strategies are developed and updated.",
+  "summary": "Governments worldwide have responded to the rapid expansion of AI by publishing national and regional AI strategies. Comparing national and regional AI strategies to identify their convergences and divergences can uncover their common practices, understand regional variations, and provide policy designers a comprehensive set of policy design elements for their ongoing AI strategy developments. Yet, existing work has not examined their underlying policy design elements or assessed whether those elements are horizontally (country-to-country) or vertical (region-to-country) converging or diverging over time. This paper addresses that gap by coding and analyzing 74 national and 3 regional AI strategies drawn from a global scan of all 205 UN member and non-member states. The coding used a latent-inductive approach organized around three functional policy design elements: goals, approaches, and principles. Two research questions guided the analysis: to what degree are national AI strategies becoming horizontally convergent or divergent over time; and to what degree are national strategies becoming vertically convergent or divergent with those countries' regional AI strategy. Results indicate strong horizontal convergence around economic competitiveness, research support, and ethical AI use, alongside persistent divergence in human rights goals, participatory governance approaches, and human-centric principles. Across the three regions, the AU exhibits the highest vertical convergence, the EU demonstrated strong alignment on regulatory and economic priorities but diverges on human-centric values, and the Nordic-Baltic Region displays mixed vertical convergence. These findings offer policy designers a comprehensive evidence base for identifying emerging AI policy design choice norms as AI strategies are developed and updated.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "policy",
+    "convergence",
+    "divergence",
+    "across",
+    "national",
+    "within",
+    "regional",
+    "ai"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T14:52:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:38.682Z",
+  "updatedAt": "2026-08-12T03:17:38.722Z"
+},
+{
+  "id": "4c07e19e-b61a-4b10-bb46-f323fe96c3df",
+  "slug": "policy-induced-hand-priors-in-humanoid-dual-arm-manipulation-diagnosing-and-mitigating-ini-2026-08-13",
+  "title": "Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence",
+  "factSummary": "Vision-language-action (VLA) policies are expected to operate robustly across variations in the robot's initial configuration, yet aggregate task success can conceal pose-specific failures and inappropriate hand selection. This work investigates initial-pose dependence in VLA-based humanoid dual-arm manipulation. We characterize the initial-condition-dependent early hand preference as a policy-induced hand prior and quantify it using HandPriorScore, residual hand bias, and target responsiveness. Evaluations across multiple policies and 17 initial configurations reveal strong initial-pose--policy interactions: the same pose produces substantially different success rates across policies, while a single policy exhibits large performance variation across poses. Specific initial arm configurations can suppress or induce an asymmetric hand preference, with the resulting effect varying in direction and strength across policies. Wrist-camera observations also influence hand selection and task performance. Expanding initial-pose coverage in the training dataset substantially improves robustness, while targeted augmentation around a low-performing configuration increases its success rate. Comparisons across training configurations show that sufficient exposure to the target simulation task is beneficial, whereas the effect of real or auxiliary data depends on pose coverage, simulation ratio, and observation availability. These findings characterize a pose-conditioned hand prior, identify a localized initial arm configuration as a causal handle on hand-selection behavior, and demonstrate how data coverage and training composition affect initial-pose robustness.",
+  "summary": "Vision-language-action (VLA) policies are expected to operate robustly across variations in the robot's initial configuration, yet aggregate task success can conceal pose-specific failures and inappropriate hand selection. This work investigates initial-pose dependence in VLA-based humanoid dual-arm manipulation. We characterize the initial-condition-dependent early hand preference as a policy-induced hand prior and quantify it using HandPriorScore, residual hand bias, and target responsiveness. Evaluations across multiple policies and 17 initial configurations reveal strong initial-pose--policy interactions: the same pose produces substantially different success rates across policies, while a single policy exhibits large performance variation across poses. Specific initial arm configurations can suppress or induce an asymmetric hand preference, with the resulting effect varying in direction and strength across policies. Wrist-camera observations also influence hand selection and task performance. Expanding initial-pose coverage in the training dataset substantially improves robustness, while targeted augmentation around a low-performing configuration increases its success rate. Comparisons across training configurations show that sufficient exposure to the target simulation task is beneficial, whereas the effect of real or auxiliary data depends on pose coverage, simulation ratio, and observation availability. These findings characterize a pose-conditioned hand prior, identify a localized initial arm configuration as a causal handle on hand-selection behavior, and demonstrate how data coverage and training composition affect initial-pose robustness.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "policy",
+    "induced",
+    "hand",
+    "priors",
+    "humanoid",
+    "dual",
+    "arm",
+    "manipulation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 82,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T08:13:44.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:45.670Z",
+  "updatedAt": "2026-08-13T03:19:45.714Z"
+},
+{
+  "id": "d4f46cc4-1a38-4b8b-abd9-6707e270d33c",
+  "slug": "poly-dialectal-neural-machine-translation-system-for-bangla-regional-dialects-2026-08-13",
+  "title": "Poly-Dialectal Neural Machine Translation System for Bangla Regional Dialects",
+  "factSummary": "Regional dialectal variation poses a fundamental challenge to natural language processing (NLP) in Bangla, where over 240 million speakers communicate across diverse regional variants that diverge significantly from Standard Colloquial Bangla (SCB) in phonology, morphology, and lexicon. Contemporary neural machine trans- lation (NMT) architectures and large language models (LLMs) predominantly as- sume a homogeneous language distribution, resulting in severe performance degra- dation when translating low-resource regional dialects. In this work, we present a unified Poly-Dialectal Neural Machine Translation System capable of multi-directional translation across 12 Bangla regional dialects without routing through an inter- mediary standard pivot. We compile the largest multi-dialect parallel corpus for Bangla to date, comprising 51,531 non-null parallel sentence pairs across 12 di- alects, incorporating 2,500 expert-verified, bidirectional parallel sentence pairs for five previously unaddressed dialects. Evaluating sequence-to-sequence architec- tures under Weight-Decomposed Low-Rank Adaptation (DoRA), our fine-tuned BanglaT5 model achieves state-of-the-art translation performance (29.26 BLEU, 57.26 chrF++), outperforming NLLB-200 (615M) and mBART-50 (611M) while preserving morphological coherence. Furthermore, we conduct a systematic cross- dialectal transfer analysis and dataset scaling study, establishing empirical thresh- olds for low-resource dialect adaptation. Finally, we deploy the optimized INT8- quantized model as an open-access web application to promote digital inclusion for marginalized dialect communities. The complete dataset is publicly available at Mendeley Data (https://data.mendeley.com/datasets/v9cf66fk2t/2).",
+  "summary": "Regional dialectal variation poses a fundamental challenge to natural language processing (NLP) in Bangla, where over 240 million speakers communicate across diverse regional variants that diverge significantly from Standard Colloquial Bangla (SCB) in phonology, morphology, and lexicon. Contemporary neural machine trans- lation (NMT) architectures and large language models (LLMs) predominantly as- sume a homogeneous language distribution, resulting in severe performance degra- dation when translating low-resource regional dialects. In this work, we present a unified Poly-Dialectal Neural Machine Translation System capable of multi-directional translation across 12 Bangla regional dialects without routing through an inter- mediary standard pivot. We compile the largest multi-dialect parallel corpus for Bangla to date, comprising 51,531 non-null parallel sentence pairs across 12 di- alects, incorporating 2,500 expert-verified, bidirectional parallel sentence pairs for five previously unaddressed dialects. Evaluating sequence-to-sequence architec- tures under Weight-Decomposed Low-Rank Adaptation (DoRA), our fine-tuned BanglaT5 model achieves state-of-the-art translation performance (29.26 BLEU, 57.26 chrF++), outperforming NLLB-200 (615M) and mBART-50 (611M) while preserving morphological coherence. Furthermore, we conduct a systematic cross- dialectal transfer analysis and dataset scaling study, establishing empirical thresh- olds for low-resource dialect adaptation. Finally, we deploy the optimized INT8- quantized model as an open-access web application to promote digital inclusion for marginalized dialect communities. The complete dataset is publicly available at Mendeley Data (https://data.mendeley.com/datasets/v9cf66fk2t/2).",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "poly",
+    "dialectal",
+    "neural",
+    "machine",
+    "translation",
+    "system",
+    "bangla",
+    "regional"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T12:55:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:41.805Z",
+  "updatedAt": "2026-08-13T03:19:41.848Z"
+},
+{
+  "id": "f33ce1cd-770f-4974-b8dd-2e01a010d549",
+  "slug": "popnavshift-stress-testing-social-navigation-under-behavioral-population-shift-2026-09-21",
+  "title": "PopNavShift: Stress-Testing Social Navigation under Behavioral Population Shift",
+  "factSummary": "Social-navigation algorithms are often evaluated under a fixed pedestrian-behavior distribution, despite substantial variation in pedestrian responses to robots across individuals and social contexts. We introduce PopNavShift, a matched simulation framework for stress-testing social-navigation strategies under pedestrian population shifts. PopNavShift constructs population-conditioned pedestrian motion profiles by prompting Gemini 3.7 Flash with 600 synthetic persona records from MatrAIx Persona 1M and deterministically mapping the responses into bounded motion parameters. It then compares three representative navigation strategies, reactive avoidance, early yielding, and reciprocal collision avoidance, across eight population conditions and 7,488 matched robot runs. In a matched intervention on the same 202 personas, changing only time pressure reverses 8.6% of controller rankings based on robot travel time, but 22.4% based on mean pedestrian delay and 23.9% based on worst-decile delay. Across population conditions, this sensitivity is greater for pedestrian burden than for robot travel time and increases in spatially constrained settings; the same qualitative pattern persists under a second pedestrian dynamics model. These findings support evaluating navigation strategies across behavioral populations using both robot performance and pedestrian burden.",
+  "summary": "Social-navigation algorithms are often evaluated under a fixed pedestrian-behavior distribution, despite substantial variation in pedestrian responses to robots across individuals and social contexts. We introduce PopNavShift, a matched simulation framework for stress-testing social-navigation strategies under pedestrian population shifts. PopNavShift constructs population-conditioned pedestrian motion profiles by prompting Gemini 3.7 Flash with 600 synthetic persona records from MatrAIx Persona 1M and deterministically mapping the responses into bounded motion parameters. It then compares three representative navigation strategies, reactive avoidance, early yielding, and reciprocal collision avoidance, across eight population conditions and 7,488 matched robot runs. In a matched intervention on the same 202 personas, changing only time pressure reverses 8.6% of controller rankings based on robot travel time, but 22.4% based on mean pedestrian delay and 23.9% based on worst-decile delay. Across population conditions, this sensitivity is greater for pedestrian burden than for robot travel time and increases in spatially constrained settings; the same qualitative pattern persists under a second pedestrian dynamics model. These findings support evaluating navigation strategies across behavioral populations using both robot performance and pedestrian burden.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "popnavshift",
+    "stress",
+    "testing",
+    "social",
+    "navigation",
+    "under",
+    "behavioral",
+    "population"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T14:36:42.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-21T05:36:24.515Z",
+  "updatedAt": "2026-09-21T05:36:24.556Z"
+},
+{
+  "id": "bc4b63d8-1ed0-4bac-b0c0-07b79668f4ff",
+  "slug": "port-hamiltonian-koopman-operator-synthesis-for-mechanical-systems-2026-09-16",
+  "title": "Port-Hamiltonian Koopman Operator Synthesis for Mechanical Systems",
+  "factSummary": "Finite-dimensional Koopman models enable efficient linear prediction and control of nonlinear robotic systems. However, models learned purely from trajectory data may violate the energetic structure of the underlying mechanics, producing predictions that exhibit artificial energy growth and diverge under recursive propagation. This work presents a structure-preserving Koopman framework for Euler-Lagrange systems built on generalized-momentum coordinates. The momentum transformation exposes the mechanical actuation as a known, state-independent port, which is preserved explicitly in the lifted dynamics. A structure-constrained neural architecture is developed to jointly learn the lifting functions and a port-Hamiltonian Koopman generator, rendering the learned dynamics passive by construction rather than through penalty terms or post-hoc projection. A Cayley-midpoint discretization further preserves the corresponding storage-dissipation balance exactly in discrete time. These properties are established analytically by deriving the discrete storage balance and associated stability guarantees of the learned predictor. Simulation and experimental studies demonstrate improved prediction accuracy, data efficiency, and closed-loop tracking over Koopman baselines, with increasing gains for higher-dimensional systems.",
+  "summary": "Finite-dimensional Koopman models enable efficient linear prediction and control of nonlinear robotic systems. However, models learned purely from trajectory data may violate the energetic structure of the underlying mechanics, producing predictions that exhibit artificial energy growth and diverge under recursive propagation. This work presents a structure-preserving Koopman framework for Euler-Lagrange systems built on generalized-momentum coordinates. The momentum transformation exposes the mechanical actuation as a known, state-independent port, which is preserved explicitly in the lifted dynamics. A structure-constrained neural architecture is developed to jointly learn the lifting functions and a port-Hamiltonian Koopman generator, rendering the learned dynamics passive by construction rather than through penalty terms or post-hoc projection. A Cayley-midpoint discretization further preserves the corresponding storage-dissipation balance exactly in discrete time. These properties are established analytically by deriving the discrete storage balance and associated stability guarantees of the learned predictor. Simulation and experimental studies demonstrate improved prediction accuracy, data efficiency, and closed-loop tracking over Koopman baselines, with increasing gains for higher-dimensional systems.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "port",
+    "hamiltonian",
+    "koopman",
+    "operator",
+    "synthesis",
+    "mechanical",
+    "systems"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 77,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T14:31:18.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:08.670Z",
+  "updatedAt": "2026-09-16T15:45:08.696Z"
+},
+{
+  "id": "d787db31-5066-49c8-a00c-828ac6985bc1",
+  "slug": "post-grokking-collapse-at-the-representation-readout-interface-in-muon-trained-transformer-2026-08-10",
+  "title": "Post-Grokking Collapse at the Representation-Readout Interface in Muon-Trained Transformers",
+  "factSummary": "Under the standard split, Muon gets hidden matrices and AdamW embeddings/output head. Muon groks modular addition faster, but its solutions do not hold. All nine configurations on $(a+b) \\bmod 113$ grok and later lose generalization. Across five seeds the selected AdamW reference falls below threshold on four, reaching 27.59%. Instability persists across two moduli, two widths, two training fractions, subtraction, and depth. The failure arises at the representation-readout interface, identified only jointly up to an invertible map unselected by the loss. After solving the training set, the gradient falls to order $10^{-6}$ and the optimizers respond differently: step-size elasticity is -0.03 for Muon versus +1.5 for AdamW, and the Muon group moves 8.0 times faster per parameter. From bit-identical states, freezing either group prevents failure. Freezing embeddings/readout removes it in five runs over 451,400 post-grokking steps and five paired seeds: unfrozen arms record 137-321 sub-threshold evaluations, frozen arms none. Removing Muon's normalization and orthogonalization is no substitute: it collapses representation from 326 effective conjugate pairs to 4, shows no recurrent collapse, and fails terminally. Fourier filtering separates circuit failure from masking. Across 43 checkpoints over five seeds and three regimes, the task-aligned family reaches exactly 100% alone. In circuit failure it no longer solves the task; in masking it remains perfect while the full model reaches 45.85%, giving a positive margin on every example, including errors, but being outvoted by a near-equal adversarial remainder. Rescaling it restores 99.9%; grokking is the same condition resolving upward. The task selects the family, swapping $(k,k)$ for $(k,-k)$ under subtraction. Across an abrupt collapse, standard Fourier support is unchanged and the power-distribution cosine remains 0.9899.",
+  "summary": "Under the standard split, Muon gets hidden matrices and AdamW embeddings/output head. Muon groks modular addition faster, but its solutions do not hold. All nine configurations on $(a+b) \\bmod 113$ grok and later lose generalization. Across five seeds the selected AdamW reference falls below threshold on four, reaching 27.59%. Instability persists across two moduli, two widths, two training fractions, subtraction, and depth. The failure arises at the representation-readout interface, identified only jointly up to an invertible map unselected by the loss. After solving the training set, the gradient falls to order $10^{-6}$ and the optimizers respond differently: step-size elasticity is -0.03 for Muon versus +1.5 for AdamW, and the Muon group moves 8.0 times faster per parameter. From bit-identical states, freezing either group prevents failure. Freezing embeddings/readout removes it in five runs over 451,400 post-grokking steps and five paired seeds: unfrozen arms record 137-321 sub-threshold evaluations, frozen arms none. Removing Muon's normalization and orthogonalization is no substitute: it collapses representation from 326 effective conjugate pairs to 4, shows no recurrent collapse, and fails terminally. Fourier filtering separates circuit failure from masking. Across 43 checkpoints over five seeds and three regimes, the task-aligned family reaches exactly 100% alone. In circuit failure it no longer solves the task; in masking it remains perfect while the full model reaches 45.85%, giving a positive margin on every example, including errors, but being outvoted by a near-equal adversarial remainder. Rescaling it restores 99.9%; grokking is the same condition resolving upward. The task selects the family, swapping $(k,k)$ for $(k,-k)$ under subtraction. Across an abrupt collapse, standard Fourier support is unchanged and the power-distribution cosine remains 0.9899.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "post",
+    "grokking",
+    "collapse",
+    "at",
+    "representation",
+    "readout",
+    "interface",
+    "muon"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 55,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-07T17:21:49.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-10T03:05:11.437Z",
+  "updatedAt": "2026-08-10T03:05:11.474Z"
+},
+{
+  "id": "824af2a2-a1e7-4eee-9d25-8a2a12794a90",
+  "slug": "post-training-in-time-series-foundation-models-a-unifying-framework-2026-07-23",
+  "title": "Post-Training in Time Series Foundation Models: A Unifying Framework",
+  "factSummary": "Time series foundation models (TSFMs) have emerged as general-purpose models for time series analysis, but pretraining alone is often insufficient for reliable downstream deployment. Bridging this gap requires further intervention to handle domain shift, task heterogeneity, limited supervision, and computational constraints, which motivates post-training as a broad class of methods to adapt, augment, compose, calibrate, or specialize pretrained TSFMs for downstream tasks. In this work, we analyze TSFM post-training methods based on their locus of intervention in the prediction pipeline, yielding five categories: parameter adaptation, context augmentation, model composition, output processing and uncertainty control, and compression and specialization. Within each category, we study main representative methods and discuss their current limitations. We further identify future directions toward controlled adaptation, reliable context construction, uncertainty-aware model composition, calibrated output processing, and deployment-aware specialization. Overall, by providing a unifying framework for the emerging TSFM post-training landscape, this work aims to support future research to navigate the design space between a pretrained TSFM and its reliable downstream deployment.",
+  "summary": "Time series foundation models (TSFMs) have emerged as general-purpose models for time series analysis, but pretraining alone is often insufficient for reliable downstream deployment. Bridging this gap requires further intervention to handle domain shift, task heterogeneity, limited supervision, and computational constraints, which motivates post-training as a broad class of methods to adapt, augment, compose, calibrate, or specialize pretrained TSFMs for downstream tasks. In this work, we analyze TSFM post-training methods based on their locus of intervention in the prediction pipeline, yielding five categories: parameter adaptation, context augmentation, model composition, output processing and uncertainty control, and compression and specialization. Within each category, we study main representative methods and discuss their current limitations. We further identify future directions toward controlled adaptation, reliable context construction, uncertainty-aware model composition, calibrated output processing, and deployment-aware specialization. Overall, by providing a unifying framework for the emerging TSFM post-training landscape, this work aims to support future research to navigate the design space between a pretrained TSFM and its reliable downstream deployment.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "post",
+    "training",
+    "time",
+    "series",
+    "foundation",
+    "models",
+    "unifying",
+    "framework"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 83,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-22T10:37:10.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-23T04:04:16.056Z",
+  "updatedAt": "2026-07-23T04:04:16.082Z"
+},
+{
+  "id": "887eabae-b3d1-4672-bf19-610e986bf847",
+  "slug": "posteriorbench-from-point-estimates-to-posterior-matching-in-evaluating-generative-inverse-2026-09-18",
+  "title": "PosteriorBench: From Point Estimates to Posterior Matching in Evaluating Generative Inverse Solvers",
+  "factSummary": "Generative models are increasingly used to solve scientific inverse problems, but existing evaluations still focus primarily on whether a method can produce a single plausible reconstruction. This is insufficient for ill-posed problems, where multiple solutions may be consistent with the same sparse or noisy observations. In these settings, a method can achieve strong pointwise accuracy while still failing to capture the true posterior through mode collapse, overconfident uncertainty, or averaging incompatible solutions. We introduce PosteriorBench, a benchmark for evaluating the distributional accuracy of generative inverse solvers. PosteriorBench evaluates four physics-based inverse problems: Darcy flow inversion, Poisson source recovery, carbon capture and storage, and light transport material inference. For each task, we construct high-fidelity reference posteriors using computationally heavy but established procedures such as rejection sampling and Markov chain Monte Carlo, enabling direct assessment of whether solvers recover the full set of solutions rather than the single best sample. We pair these references with a five-metric posterior evaluation suite: posterior-mean error, posterior-standard-deviation error, maximum mean discrepancy, sliced Wasserstein distance, and radially averaged power-spectrum error. These metrics assess pointwise accuracy, marginal uncertainty, distributional alignment, and global frequency fidelity. The benchmark spans sparse sensing, low-resolution observations, nonlinear forward models, varying noise levels, and multimodal priors, with a unified pipeline for distribution matching and uncertainty quantification. Our experiments reveal substantial distribution-matching gaps across current solvers, while showing that neural operators improve resolution robustness, and guidance weights and generation noise are key to posterior-variance calibration.",
+  "summary": "Generative models are increasingly used to solve scientific inverse problems, but existing evaluations still focus primarily on whether a method can produce a single plausible reconstruction. This is insufficient for ill-posed problems, where multiple solutions may be consistent with the same sparse or noisy observations. In these settings, a method can achieve strong pointwise accuracy while still failing to capture the true posterior through mode collapse, overconfident uncertainty, or averaging incompatible solutions. We introduce PosteriorBench, a benchmark for evaluating the distributional accuracy of generative inverse solvers. PosteriorBench evaluates four physics-based inverse problems: Darcy flow inversion, Poisson source recovery, carbon capture and storage, and light transport material inference. For each task, we construct high-fidelity reference posteriors using computationally heavy but established procedures such as rejection sampling and Markov chain Monte Carlo, enabling direct assessment of whether solvers recover the full set of solutions rather than the single best sample. We pair these references with a five-metric posterior evaluation suite: posterior-mean error, posterior-standard-deviation error, maximum mean discrepancy, sliced Wasserstein distance, and radially averaged power-spectrum error. These metrics assess pointwise accuracy, marginal uncertainty, distributional alignment, and global frequency fidelity. The benchmark spans sparse sensing, low-resolution observations, nonlinear forward models, varying noise levels, and multimodal priors, with a unified pipeline for distribution matching and uncertainty quantification. Our experiments reveal substantial distribution-matching gaps across current solvers, while showing that neural operators improve resolution robustness, and guidance weights and generation noise are key to posterior-variance calibration.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "posteriorbench",
+    "from",
+    "point",
+    "estimates",
+    "posterior",
+    "matching",
+    "evaluating",
+    "generative"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T17:54:12.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:07.594Z",
+  "updatedAt": "2026-09-18T05:20:07.633Z"
+},
+{
   "id": "a09ca530-cf0d-4134-a239-5afe7f603818",
   "slug": "potential-field-action-representation-for-reinforcement-learning-in-contact-rich-manipulat-2026-09-21",
   "title": "Potential-Field Action Representation for Reinforcement Learning in Contact-Rich Manipulation",
@@ -314,8 +818,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T09:28:06.000Z",
   "publishedAt": "2026-07-09T09:28:06.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "322b42a3-cd7d-41f3-8d27-f7ad9c1e9b97",
@@ -2557,8 +3061,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T12:00:00.000Z",
   "publishedAt": "2023-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "919573b4-8b7a-4148-a8ef-b6fb67fc3681",
@@ -3103,8 +3607,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-19T00:00:00.000Z",
   "publishedAt": "2024-09-19T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "006d1189-8941-42fd-a98b-3720645cc0a7",
@@ -3145,8 +3649,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-29T00:00:00.000Z",
   "publishedAt": "2025-04-29T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "a9290214-be63-4d6b-a99a-79738097db3f",
@@ -3186,8 +3690,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-03T00:00:00.000Z",
   "publishedAt": "2023-08-03T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "c9bce613-d160-46c4-a260-58b21cde26a0",
@@ -3229,8 +3733,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-24T12:00:00.000Z",
   "publishedAt": "2023-08-24T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "79ff590c-0dcd-4e1d-adb0-42e015b72f77",
@@ -3272,8 +3776,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-18T12:00:00.000Z",
   "publishedAt": "2024-09-18T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "709a4dc2-1599-4d38-a9c5-aef6e5fb04fa",
@@ -3315,8 +3819,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-14T12:00:00.000Z",
   "publishedAt": "2025-05-14T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "e7a5aff5-798a-45ab-a049-4c2752aa5bf2",
@@ -3358,8 +3862,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-26T12:00:00.000Z",
   "publishedAt": "2025-11-26T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "3ab54ff9-3037-46f4-b3f4-45082132d5c9",
@@ -4119,8 +4623,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T02:14:47.000Z",
   "publishedAt": "2026-04-02T02:14:47.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "e428c9f8-b1e1-44ea-a02a-2ca4e8777a9a",
@@ -4667,8 +5171,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-08T12:00:00.000Z",
   "publishedAt": "2025-05-08T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "27c19186-bcfd-45bc-a53e-3b13cbd24958",
@@ -5260,8 +5764,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-19T12:00:00.000Z",
   "publishedAt": "2024-11-19T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "7e00b275-1041-45e1-a2e5-2288a4027650",
@@ -5578,8 +6082,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "3303ae32-cdb3-424c-aba1-6ef95fcbfb93",
@@ -5713,8 +6217,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-20T12:00:00.000Z",
   "publishedAt": "2023-03-20T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "e2085c07-dd4d-4ed0-90c1-c902fb9e2837",
@@ -6073,8 +6577,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-03T12:00:00.000Z",
   "publishedAt": "2024-09-03T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "e8daa836-3ce4-4c60-833e-6e3fd8f06555",
@@ -6779,8 +7283,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T13:19:20.000Z",
   "publishedAt": "2026-01-20T13:19:20.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "06eea9d6-a1b2-46e2-86af-3da87baa1ba1",
@@ -8003,8 +8507,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-18T12:00:00.000Z",
   "publishedAt": "2023-12-18T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "5137c901-739b-4fd0-a77f-511031ed20d9",
@@ -8329,6 +8833,52 @@
   "updatedAt": "2026-08-04T03:59:27.434Z"
 },
 {
+  "id": "58030db2-8653-4200-87a3-7512489876bd",
+  "slug": "right-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai-2026-09-22",
+  "title": "Right-size generative AI endpoints with concurrency sweeps on Amazon SageMaker AI",
+  "factSummary": "Concurrency sweeps help you right-size a generative AI endpoint on Amazon SageMaker AI by systematically benchmarking it at increasing load levels. This post walks through deploying a model, running automated concurrency sweeps with the CreateAIBenchmarkJob API, and using the results to make data-driven capacity decisions about fleet size.",
+  "summary": "Concurrency sweeps help you right-size a generative AI endpoint on Amazon SageMaker AI by systematically benchmarking it at increasing load levels. This post walks through deploying a model, running automated concurrency sweeps with the CreateAIBenchmarkJob API, and using the results to make data-driven capacity decisions about fleet size.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "right",
+    "size",
+    "generative",
+    "ai",
+    "endpoints",
+    "concurrency",
+    "sweeps",
+    "amazon"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T15:35:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T17:05:45.193Z",
+  "updatedAt": "2026-09-22T17:05:45.234Z"
+},
+{
   "id": "a83d0067-4d9d-47e3-81dc-5df0011bff00",
   "slug": "right-tool-right-job-native-language-evaluation-tokenizer-sensitivity-and-methodological-f-2026-09-16",
   "title": "Right Tool, Right Job: Native-Language Evaluation, Tokenizer Sensitivity, and Methodological Findings from a French-Only BabyLM",
@@ -8552,8 +9102,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-14T12:00:00.000Z",
   "publishedAt": "2023-09-14T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "dabac98a-88a4-4aa1-964a-18ca4b67bce6",
@@ -8777,8 +9327,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-19T12:00:00.000Z",
   "publishedAt": "2025-05-19T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "d2771579-73c3-42ca-9568-8a6236699b30",
@@ -9369,8 +9919,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-28T12:00:00.000Z",
   "publishedAt": "2023-07-28T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "2c4b6489-7297-4036-a280-8324008ae05c",
@@ -9412,8 +9962,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "ffcbff37-3611-4128-b3a7-4d6b250a9f97",
@@ -10018,20 +10568,20 @@
     "alpha",
     "15"
   ],
-  "confidenceScore": 74,
-  "heatScore": 23,
+  "confidenceScore": 84,
+  "heatScore": 21,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 58,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 95,
+    "freshness": 75,
     "crossRegion": false
   },
   "status": "review",
@@ -10040,7 +10590,7 @@
   "happenedAt": "2026-09-21T13:32:56.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-21T18:18:08.092Z",
-  "updatedAt": "2026-09-21T18:18:08.129Z"
+  "updatedAt": "2026-09-22T17:05:45.657Z"
 },
 {
   "id": "8704c7aa-6a79-4ef3-971d-a9e6cc3dbd93",
@@ -10753,8 +11303,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-20T12:00:00.000Z",
   "publishedAt": "2025-11-20T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "330808de-1b6c-4d50-acc5-b5d2f12676b7",
@@ -10796,8 +11346,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "688fe7aa-3656-4b98-a097-7bf6998abe7e",
@@ -11069,8 +11619,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-18T12:00:00.000Z",
   "publishedAt": "2024-11-18T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "e4e22277-2fdc-4070-98c8-a80c85cde6d8",
@@ -11383,8 +11933,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-24T16:33:14.000Z",
   "publishedAt": "2026-05-24T16:33:14.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "18ed6b71-f76a-45ae-9471-77675d770065",
@@ -11516,8 +12066,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-31T12:00:00.000Z",
   "publishedAt": "2024-07-31T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "a967fe1e-cb01-4a76-a6bd-22ae332f0a3c",
@@ -11559,8 +12109,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-05T12:00:00.000Z",
   "publishedAt": "2024-03-05T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "4388f249-4f0e-4953-88e5-1eeba0e095d0",
@@ -12014,8 +12564,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -13046,6 +13596,48 @@
   "updatedAt": "2026-09-16T15:45:13.078Z"
 },
 {
+  "id": "c0ad7058-18f3-4dcf-bc43-4de6f178ef0e",
+  "slug": "sdk-core-v0-0-85-2026-09-22",
+  "title": "sdk/core/v0.0.85",
+  "factSummary": "@cline/core@0.0.85",
+  "summary": "@cline/core@0.0.85",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "sdk",
+    "core",
+    "v0",
+    "85"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 61,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T08:13:44.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T17:05:45.712Z",
+  "updatedAt": "2026-09-22T17:05:45.773Z"
+},
+{
   "id": "da8180ea-1830-4879-a980-4253d74094e0",
   "slug": "sdk-v0-0-65-2026-07-20",
   "title": "SDK v0.0.65",
@@ -13277,20 +13869,20 @@
     "appendContext",
     "tool_use"
   ],
-  "confidenceScore": 84,
-  "heatScore": 23,
+  "confidenceScore": 91,
+  "heatScore": 30,
   "impactScore": 55,
-  "valueScore": 62,
+  "valueScore": 64,
   "scoreFactors": {
     "authority": 92,
-    "corroboration": 20,
+    "corroboration": 40,
     "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 1,
+    "independentSources": 2,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 98,
+    "freshness": 87,
     "crossRegion": false
   },
   "status": "published",
@@ -13299,7 +13891,7 @@
   "happenedAt": "2026-09-22T03:26:20.000Z",
   "publishedAt": "2026-09-22T05:30:58.060Z",
   "createdAt": "2026-09-22T05:30:08.612Z",
-  "updatedAt": "2026-09-22T05:30:58.060Z"
+  "updatedAt": "2026-09-22T17:05:45.705Z"
 },
 {
   "id": "dff91f60-fbc0-49ec-9fac-401dff37a163",
@@ -13382,8 +13974,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -13516,8 +14108,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -13925,8 +14517,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -14558,8 +15150,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -15009,8 +15601,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -15232,8 +15824,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -15367,8 +15959,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "ab3ace26-5eac-459c-a323-39b13f2698e8",
@@ -15912,8 +16504,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -16138,8 +16730,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -16409,8 +17001,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -16497,8 +17089,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -16629,8 +17221,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -17126,8 +17718,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -17488,8 +18080,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -18170,8 +18762,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -18259,8 +18851,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -18302,8 +18894,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -18942,8 +19534,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -18984,8 +19576,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -19247,8 +19839,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -20140,8 +20732,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -21227,8 +21819,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -21591,8 +22183,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -21817,8 +22409,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -22220,8 +22812,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -22994,8 +23586,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -24447,8 +25039,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -27725,8 +28317,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -28220,8 +28812,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -28309,8 +28901,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -28444,8 +29036,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -30500,6 +31092,50 @@
   "updatedAt": "2026-07-27T04:31:44.774Z"
 },
 {
+  "id": "ffc1a0ee-e2f1-4f8e-88d3-38f1ea6c3f8d",
+  "slug": "transformers-now-runs-llama-cpp-quants-2026-09-22",
+  "title": "Transformers now runs llama.cpp quants",
+  "factSummary": "Transformers now runs llama.cpp quants",
+  "summary": "Transformers now runs llama.cpp quants",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "transformers",
+    "now",
+    "runs",
+    "llama",
+    "cpp",
+    "quants"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 35,
+  "impactScore": 55,
+  "valueScore": 60,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 2,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T00:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T17:05:45.968Z",
+  "updatedAt": "2026-09-22T17:05:46.007Z"
+},
+{
   "id": "aea382c1-259e-4cb5-847c-511a970890dd",
   "slug": "translation-with-thought-difficulty-adaptive-reasoning-via-reinforcement-learning-for-mult-2026-08-03",
   "title": "Translation with Thought: Difficulty-Adaptive Reasoning via Reinforcement Learning for Multi-Domain Machine Translation",
@@ -30722,8 +31358,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -31531,8 +32167,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -31802,8 +32438,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -33147,6 +33783,51 @@
   "publishedAt": null,
   "createdAt": "2026-08-05T14:40:48.004Z",
   "updatedAt": "2026-08-07T13:46:13.890Z"
+},
+{
+  "id": "b3dfcecf-96a4-485b-9ebc-32a905aaa830",
+  "slug": "v0-1-15-2026-09-22",
+  "title": "v0.1.15",
+  "factSummary": "小米发布并开源 MiMo-V2.6 系列，包含全模态旗舰模型 Pro、高效推理模型 Flash 与超高速模型 Pro-UltraSpeed。MiMoCode 0.1.15 同步发布，改进包括：同一次执行中模型发出的多个工具调用进入串行门禁，只读、检索类工具仍可并行，其余调用依次执行；若带副作用的调用失败，后续可能受影响的调用会被安全跳过。会话恢复方面，可恢复的模型错误会退避重试，中断的会话能够从正确的恢复点继续，空闲的子智能体会随主会话一并恢复。输入侧，Read 工具支持读取图像、音频与视频文件。",
+  "summary": "小米发布并开源 MiMo-V2.6 系列（Pro、Flash、Pro-UltraSpeed），并同步更新 MiMoCode 0.1.15，重点改进智能体工具调用的串行门禁、会话恢复可靠性与多模态文件读取能力。",
+  "technicalInsight": "证据显示 MiMoCode 在单步内对工具调用引入串行门禁：只读/检索类可并行，其余串行，副作用调用失败时跳过可能受影响的后续调用。这属于对智能体执行安全与一致性的工程约束，而非模型能力本身的提升；其实际效果需观察后续版本是否保留该机制及失败跳过策略的误伤率。",
+  "industryInsight": "小米同时开源全模态模型系列与配套编码智能体工具链，表明其将模型发布与开发者工具更新绑定推进。是否形成生态采用，需观察 MiMoCode 的后续版本节奏与外部贡献者参与情况。",
+  "futureOutlook": "可验证的下一信号包括：MiMo-V2.6 各模型是否公布评测结果或权重细节；MiMoCode 后续版本是否延续串行门禁与恢复机制；Read 工具的多模态支持是否扩展到更多文件类型或更大规模输入。",
+  "businessValue": "对开发者而言，工具调用串行门禁与更可靠的会话恢复可降低智能体长任务中的副作用风险与中断成本；多模态 Read 支持可减少预处理环节。商业价值取决于这些改进是否被外部开发者实际采用，需观察仓库活跃度与下游集成情况。",
+  "category": "open-source-model-release",
+  "company": "MiMo-V2.6",
+  "keywords": [
+    "MiMo-V2.6",
+    "MiMoCode",
+    "小米",
+    "开源",
+    "多模态",
+    "智能体工具调用",
+    "会话恢复"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T15:51:43.000Z",
+  "publishedAt": "2026-09-22T17:06:34.662Z",
+  "createdAt": "2026-09-22T17:05:45.005Z",
+  "updatedAt": "2026-09-22T17:06:34.662Z"
 },
 {
   "id": "084cef00-a7cd-4122-8f4d-fd06bd0db45d",
@@ -35492,20 +36173,20 @@
     "v1",
     "21"
   ],
-  "confidenceScore": 74,
-  "heatScore": 23,
+  "confidenceScore": 91,
+  "heatScore": 30,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 64,
   "scoreFactors": {
     "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
+    "corroboration": 40,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 1,
+    "independentSources": 2,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 96,
+    "freshness": 85,
     "crossRegion": false
   },
   "status": "review",
@@ -35514,7 +36195,51 @@
   "happenedAt": "2026-09-22T01:55:56.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-22T05:30:09.047Z",
-  "updatedAt": "2026-09-22T05:30:09.087Z"
+  "updatedAt": "2026-09-22T17:05:44.952Z"
+},
+{
+  "id": "4b79223d-46af-4716-9eb4-1d6020f31be7",
+  "slug": "v1-22-0-2026-09-22",
+  "title": "v1.22.0",
+  "factSummary": "OpenHands 发布 v1.22.0（2026-09-22），变更包括：通过 app server 在云后端测试远程 MCP 服务器（#17276）、向云后端组织管理员开放 Git Sync（#17216）、翻译新增土耳其语 UI 字符串（#17581）；修复向组织成员显示 add automation 菜单（#17526）、canvas 离开应用时保留 base path（#17617）、保存到云后端时保留同级 MCP 服务器（#17467）、将 home automation 行链接到 automation 视图（#17466）、隐藏服务器标记 is_visible=false 的云组织（#17624）；文档方面在 Canvas review guide 中加入仓库与产品范围（#17606）；维护方面升级测试依赖组（#17589）、消费 SDK 1.49.4 与 Automation 1.14.0（#17628）。同一时间窗口内，AG2 发布 v1.0.6（2026-09-21），变更包括修复 MCP 资源模板 URI 变量解码（#3250）、让被服务的 agent 拥有其 HTTP 传输设置（#3252）、为 tealtiger 增加 rate_limit 治理策略（#3246）、按读取渲染 MemorySkill 正文（#3254）。",
+  "summary": "两个开源 Agent 项目在同一时间窗口发布版本：OpenHands v1.22.0 聚焦云后端上的远程 MCP 服务器测试、Git Sync 权限开放与 canvas/automation 修复；AG2 v1.0.6 聚焦 MCP 资源模板 URI 解码、agent 自有 HTTP 传输设置、rate_limit 治理策略与 MemorySkill 按读取渲染。",
+  "technicalInsight": "证据显示两个项目都在 MCP 集成与 agent 运行时配置上做增量修补：OpenHands 处理云后端下 MCP 服务器保存与远程测试，AG2 处理 MCP 资源模板 URI 变量解码与 agent 自有 HTTP 传输设置。这属于工程细节层面的收敛，尚不足以判断架构方向变化。可验证下一信号：后续版本是否出现 MCP 相关的新增能力（而非修复）或跨项目兼容性说明。",
+  "industryInsight": "两个独立开源 Agent 项目在同一周发布版本，且都涉及 MCP 与权限/治理（Git Sync 组织管理员、rate_limit 策略），提示 MCP 已成为 Agent 工具链的常规集成面。但证据仅为 release notes，无法据此判断采用规模或商业影响。可验证下一信号：是否有第三方项目或企业文档引用这些 MCP 相关变更。",
+  "futureOutlook": "若 MCP 集成持续以修复与权限治理为主，短期内更可能看到配置一致性与多后端兼容性改进，而非新协议能力。可验证下一信号：下一版本 release notes 中 MCP 相关条目是否从 fix 转为 feat，以及是否出现 SDK 版本联动升级。",
+  "businessValue": "对使用 OpenHands 或 AG2 的团队，本次变更的直接价值在于云后端 MCP 服务器保存与远程测试、Git Sync 权限控制、rate_limit 治理策略等运维与权限细节的稳定性提升；但证据未提供性能、成本或采用数据，无法量化收益。可验证下一信号：项目是否发布迁移说明或破坏性变更提示。",
+  "category": "agent-mcp-integration",
+  "company": "OpenHands",
+  "keywords": [
+    "OpenHands",
+    "AG2",
+    "MCP",
+    "Git Sync",
+    "rate_limit",
+    "release notes"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 66,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T16:33:08.000Z",
+  "publishedAt": "2026-09-22T17:06:34.664Z",
+  "createdAt": "2026-09-22T17:05:44.749Z",
+  "updatedAt": "2026-09-22T17:06:34.664Z"
 },
 {
   "id": "a0fd5704-3244-4b09-b89e-25ea334fe015",
@@ -35825,6 +36550,51 @@
   "publishedAt": null,
   "createdAt": "2026-09-18T16:33:26.310Z",
   "updatedAt": "2026-09-18T16:33:26.343Z"
+},
+{
+  "id": "3852a9ed-95d8-44a0-85a7-e9a008409b04",
+  "slug": "v1-38-17-lsm-store-performance-improvements-2026-09-22",
+  "title": "v1.38.17 - LSM store performance improvements",
+  "factSummary": "Breaking Changes none New Features none Fixes perf(lsmkv): skip per-segment probe timing unless debug logging is enabled by @antas-marcin in #13159 test(go-client): replace text2vec-contextionary with text2vec-model2vec by @antas-marcin in #13155 test(acceptance): replace text2vec-contextionary with text2vec-model2vec in docker-compose tests by @antas-marcin in #13167 feat(config): name the properties that keep a rangeable index in memory by @aliszka in #13163 backport: hnsw: shrink vertex from 48 to 24 bytes per node by @asdine in #13176 perf(lsmkv): remove per-write overhead allocations from the map write path by @antas-marcin in #13178 perf(lsmkv): pool segment node readers and pre-join read metric names by @antas-marcin in #13180 fix(schema): apply the merged property to the DB, not the proposer's copy by @moogacs in #13185 perf(lsmkv): sort map values without reflection by @aliszka in #13183 async replication: arm the hashtree init write gate at scan start by @jeroiraz in #13191 Make no usable entrypoint retryable by @trengrj in #13204 Read /proc//maps every 30 s while far below the mapping limit by @dirkkul in #13195 perf(lsmkv): pointer-free keyword memtable entries, allocation-free keyword writes by @etiennedi in #13184 hnsw: fix ACORN seed-loop vs delete/reset tombstone deadlock (v1.38) by @abdelr in #13193 [v1.38] hnsw: dedup ACORN entrypoint (backport #13121 , fixes #656 ) by @abdelr in #13211 hnsw: one heap object per node by embedding the connections in the vertex by @asdine in #13179 Full Changelog : v1.38.16...v1.38.17",
+  "summary": "Breaking Changes none New Features none Fixes perf(lsmkv): skip per-segment probe timing unless debug logging is enabled by @antas-marcin in #13159 test(go-client): replace text2vec-contextionary with text2vec-model2vec by @antas-marcin in #13155 test(acceptance): replace text2vec-contextionary with text2vec-model2vec in docker-compose tests by @antas-marcin in #13167 feat(config): name the properties that keep a rangeable index in memory by @aliszka in #13163 backport: hnsw: shrink vertex from 48 to 24 bytes per node by @asdine in #13176 perf(lsmkv): remove per-write overhead allocations from the map write path by @antas-marcin in #13178 perf(lsmkv): pool segment node readers and pre-join read metric names by @antas-marcin in #13180 fix(schema): apply the merged property to the DB, not the proposer's copy by @moogacs in #13185 perf(lsmkv): sort map values without reflection by @aliszka in #13183 async replication: arm the hashtree init write gate at scan start by @jeroiraz in #13191 Make no usable entrypoint retryable by @trengrj in #13204 Read /proc//maps every 30 s while far below the mapping limit by @dirkkul in #13195 perf(lsmkv): pointer-free keyword memtable entries, allocation-free keyword writes by @etiennedi in #13184 hnsw: fix ACORN seed-loop vs delete/reset tombstone deadlock (v1.38) by @abdelr in #13193 [v1.38] hnsw: dedup ACORN entrypoint (backport #13121 , fixes #656 ) by @abdelr in #13211 hnsw: one heap object per node by embedding the connections in the vertex by @asdine in #13179 Full Changelog : v1.38.16...v1.38.17",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "38",
+    "17",
+    "lsm",
+    "store",
+    "performance",
+    "improvements"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T12:50:43.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T17:05:45.570Z",
+  "updatedAt": "2026-09-22T17:05:45.609Z"
 },
 {
   "id": "2293ee5b-70b0-4d87-b7cb-e55c6aa2eb31",
@@ -36233,6 +37003,52 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:11.015Z",
   "updatedAt": "2026-09-16T15:45:13.299Z"
+},
+{
+  "id": "15ab0300-55b2-40ff-b3a4-53a13fb8ca99",
+  "slug": "v1-39-6-lsm-store-performance-improvements-hnsw-acorn-hfresh-index-fixes-2026-09-22",
+  "title": "v1.39.6 - LSM store performance improvements, HNSW ACORN & HFresh index Fixes",
+  "factSummary": "Breaking Changes none New Features none Fixes ci: run adapters/repos/db/integrationslowtest as its own integration job by @antas-marcin in #13065 Couple authz/use listing bugfixes by @dirkkul in #13069 Remove fsync from CopyFile, which only writes backup copies by @dirkkul in #13079 Drop permanent copy of sharding state from memory by @dirkkul in #13078 Replace WEAVIATE_LICENSE env toggle with LICENSE_KEY form check by @etiennedi in #13081 Add LICENSE_KEY_FILE as an alternative to LICENSE_KEY by @etiennedi in #13089 modules(rest): remove /v1/modules endpoint and contextionary extension/concept handlers by @antas-marcin in #13083 add Weaviate Embeddings rate limit by @augustas1 in #13059 backport: fix(db): locks usage ( #12525 )( #12082 ) by @moogacs in #13100 ci(workflows): run only docker build, unit, integration and codecov jobs on branch pushes by @antas-marcin in #13111 List db users and their roles from the node's local state by @dirkkul in #13084 Use fewer syscalls and less memory to list an inactive shard for backup by @dirkkul in #13082 perf(roaringset): stream the memtable flush and compact the bitmaps it writes by @aliszka in #13038 fix(roaringset-pr2): measure a memtable's size as the heap its tree holds by @aliszka in #13039 perf(roaringset-pr3): allocate a key's additions or deletions only when written by @aliszka in #13040 test(inverted): order the ContainsAll early-exit tests instead of racing them by @aliszka in #13042 Retry user lists in multi-node tests until the users show up by @dirkkul in #13114 Reduce allocations in compactor logs by @dirkkul in #13109 ci(acceptance): split fast-group-3 into grpc-only and new fast-group-6 by @antas-marcin in #13120 Stop fetching bucket metadata before every chunk in backup-gcs by @dirkkul in #13125 queue: release the chunk writer buffer once a chunk is promoted by @asdine in #13126 shard: a replica snapshot carries index.db, so a moved dynamic index keeps its upgrade (v1.38) by @asdine in #13130 Reduce allocat…",
+  "summary": "Breaking Changes none New Features none Fixes ci: run adapters/repos/db/integrationslowtest as its own integration job by @antas-marcin in #13065 Couple authz/use listing bugfixes by @dirkkul in #13069 Remove fsync from CopyFile, which only writes backup copies by @dirkkul in #13079 Drop permanent copy of sharding state from memory by @dirkkul in #13078 Replace WEAVIATE_LICENSE env toggle with LICENSE_KEY form check by @etiennedi in #13081 Add LICENSE_KEY_FILE as an alternative to LICENSE_KEY by @etiennedi in #13089 modules(rest): remove /v1/modules endpoint and contextionary extension/concept handlers by @antas-marcin in #13083 add Weaviate Embeddings rate limit by @augustas1 in #13059 backport: fix(db): locks usage ( #12525 )( #12082 ) by @moogacs in #13100 ci(workflows): run only docker build, unit, integration and codecov jobs on branch pushes by @antas-marcin in #13111 List db users and their roles from the node's local state by @dirkkul in #13084 Use fewer syscalls and less memory to list an inactive shard for backup by @dirkkul in #13082 perf(roaringset): stream the memtable flush and compact the bitmaps it writes by @aliszka in #13038 fix(roaringset-pr2): measure a memtable's size as the heap its tree holds by @aliszka in #13039 perf(roaringset-pr3): allocate a key's additions or deletions only when written by @aliszka in #13040 test(inverted): order the ContainsAll early-exit tests instead of racing them by @aliszka in #13042 Retry user lists in multi-node tests until the users show up by @dirkkul in #13114 Reduce allocations in compactor logs by @dirkkul in #13109 ci(acceptance): split fast-group-3 into grpc-only and new fast-group-6 by @antas-marcin in #13120 Stop fetching bucket metadata before every chunk in backup-gcs by @dirkkul in #13125 queue: release the chunk writer buffer once a chunk is promoted by @asdine in #13126 shard: a replica snapshot carries index.db, so a moved dynamic index keeps its upgrade (v1.38) by @asdine in #13130 Reduce allocat…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "39",
+    "lsm",
+    "store",
+    "performance",
+    "improvements",
+    "hnsw",
+    "acorn"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T14:58:45.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T17:05:45.383Z",
+  "updatedAt": "2026-09-22T17:05:45.423Z"
 },
 {
   "id": "f5711c1b-d569-4c8d-a053-af98ab6eff82",
@@ -38647,6 +39463,50 @@
   "updatedAt": "2026-09-19T05:13:11.838Z"
 },
 {
+  "id": "565d936a-d59b-4c00-a777-854fd519dc05",
+  "slug": "v2-1-280-2026-09-22",
+  "title": "v2.1.280",
+  "factSummary": "Claude Code 发布 v2.1.280，新增 Claude Opus 5.5（claude-opus-5-5）并设为默认 Opus 模型，规格为 1M 上下文、$4/$20 per Mtok、缓存读取 $0.20/Mtok。同一版本在全屏模式下为更多列表加入鼠标支持（滚轮滚动 /skills 列表，/plugin 中技能状态选项可点击），新增 CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH 以调整会话内每个 MCP 服务器的 2,048 字符 MCP 工具描述与服务器指令上限，并在 hook_execution_complete OpenTelemetry 事件中加入 hook 输出大小与超限输出落盘数量。修复项包括：符号链接路径写入按实际落点判定、auto 模式在安全审查拒绝后不再反复重试、安全审查无响应时重试退避并在连续十次后终止回合、Write 调用在模型发送 path、file_text、file_content 等字段时的校验失败。",
+  "summary": "Claude Code v2.1.280 将 Claude Opus 5.5 设为默认 Opus 模型，给出 1M 上下文与 $4/$20 per Mtok（缓存读取 $0.20/Mtok）的定价，同时改进全屏列表鼠标交互、MCP 描述长度可配置、hook 执行可观测性，并修复符号链接写入判定与 auto 模式重试/拒绝循环等问题。",
+  "technicalInsight": "从发布说明看，本次变更集中在 Agent 工具链的边界控制：MCP 描述长度可配置、hook 输出大小进入遥测、符号链接写入按实际落点判定、auto 模式对安全审查结果做一次性拒绝或退避终止，均指向对工具调用与权限判定的可观测与可收敛。判断：这些是工程治理层面的改动，而非模型能力本身的证据；是否真正降低误判与重试成本，需看后续版本是否保留该退避与终止语义。",
+  "industryInsight": "默认模型切换与按 token 定价同时出现在同一版本说明中，说明编码 Agent 的竞争点正从单一模型能力转向默认模型选择、上下文规模与单位成本的可预期性。判断：1M 上下文与缓存读取定价的组合，可能被用于长会话编码场景的成本竞争，但证据仅来自发布说明，尚无第三方采用或成本实测数据。",
+  "futureOutlook": "可验证的下一信号：后续 Claude Code 版本说明中是否继续沿用 Opus 5.5 作为默认 Opus 模型、CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH 是否被写入公开文档、以及 auto 模式的重试退避与十次终止规则是否在更新日志中保持或调整。",
+  "businessValue": "对使用 Claude Code 的团队，可操作点是：按 1M 上下文与 $4/$20 per Mtok、缓存读取 $0.20/Mtok 重新估算长会话编码成本；通过 CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH 控制 MCP 工具描述开销；借助 hook_execution_complete 的新增字段监控 hook 输出体积；并复核依赖符号链接路径的写入权限规则是否因落点判定变化而需要调整。",
+  "category": "coding-agent-release",
+  "company": "Claude Opus 5.5",
+  "keywords": [
+    "Claude Code",
+    "Claude Opus 5.5",
+    "MCP",
+    "auto mode",
+    "OpenTelemetry",
+    "定价"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 67,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T16:38:14.000Z",
+  "publishedAt": "2026-09-22T17:06:34.665Z",
+  "createdAt": "2026-09-22T17:05:44.683Z",
+  "updatedAt": "2026-09-22T17:06:34.665Z"
+},
+{
   "id": "430ae318-aec4-4a59-98f6-28d9bb260a2f",
   "slug": "v2-13-0-2026-07-22",
   "title": "v2.13.0",
@@ -40096,6 +40956,46 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:05.345Z",
   "updatedAt": "2026-09-16T15:45:05.369Z"
+},
+{
+  "id": "203a53a3-aa05-4571-b75b-fe6025ce3211",
+  "slug": "v3-225-9-2026-09-22",
+  "title": "v3.225.9",
+  "factSummary": "What's Changed fix(auth): evict the API key cache after deleting the row (v3 backport of #17651 ) by @Steffen911 in #17767 Full Changelog : v3.225.8...v3.225.9",
+  "summary": "What's Changed fix(auth): evict the API key cache after deleting the row (v3 backport of #17651 ) by @Steffen911 in #17767 Full Changelog : v3.225.8...v3.225.9",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v3",
+    "225"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T06:36:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T17:05:45.874Z",
+  "updatedAt": "2026-09-22T17:05:45.912Z"
 },
 {
   "id": "13768a33-ca82-47ba-a58a-35b8ef0b23fb",
@@ -42269,6 +43169,49 @@
   "updatedAt": "2026-08-08T02:49:22.393Z"
 },
 {
+  "id": "59111071-fe72-4158-b44a-a5ec2c44b76a",
+  "slug": "vertex-sdk-v0-19-11-2026-09-22",
+  "title": "vertex-sdk: v0.19.11",
+  "factSummary": "Anthropic TypeScript SDK 的 vertex-sdk 发布 v0.19.11，日期为 2026-09-22，完整变更日志链接指向 vertex-sdk-v0.19.10...vertex-sdk-v0.19.11。",
+  "summary": "Anthropic TypeScript SDK Releases 页面显示 vertex-sdk 发布 v0.19.11（2026-09-22），并给出从 v0.19.10 到 v0.19.11 的 Full Changelog 链接。证据未披露该版本的具体功能、修复内容或影响范围。",
+  "technicalInsight": "从版本号递增与 changelog 链接看，这是一次常规小版本迭代；但证据未包含任何代码变更细节，无法判断是否涉及 API 行为、认证或依赖调整。可验证下一信号：查看该 Full Changelog 页面是否列出具体 commit 或 breaking change 说明。",
+  "industryInsight": "该发布属于 Anthropic 官方 TypeScript SDK 的 Vertex 适配分支，表明其持续维护多云/多平台接入路径；但单一版本号不足以推断竞争格局或采用率变化。可验证下一信号：后续版本是否同步更新主 SDK 与 Vertex 分支的版本对齐节奏。",
+  "futureOutlook": "若后续版本继续以补丁号递增并保持 changelog 链接，可视为维护性发布节奏；若出现 minor 或 major 跳变，则可能对应能力或接口变更。可验证下一信号：v0.19.12 或更高版本是否在短期内发布并附带变更说明。",
+  "businessValue": "对使用 Anthropic TypeScript SDK 接入 Vertex 的开发者而言，该版本提供可追踪的升级锚点，便于锁定依赖版本；但证据未显示性能、成本或功能收益，商业价值暂无法量化。可验证下一信号：npm 上该版本下载量或依赖该版本的公开项目数量变化。",
+  "category": "sdk-release",
+  "company": "vertex-sdk",
+  "keywords": [
+    "vertex-sdk",
+    "anthropic-sdk-typescript",
+    "release",
+    "v0.19.11",
+    "changelog"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T16:28:01.000Z",
+  "publishedAt": "2026-09-22T17:06:34.663Z",
+  "createdAt": "2026-09-22T17:05:44.908Z",
+  "updatedAt": "2026-09-22T17:06:34.663Z"
+},
+{
   "id": "73889f91-825c-4c97-b3b2-367cae35c720",
   "slug": "vertex-sdk-v0-19-4-2026-08-14",
   "title": "vertex-sdk: v0.19.4",
@@ -42845,8 +43788,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -43025,8 +43968,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -43384,8 +44327,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -43427,8 +44370,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -43650,8 +44593,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -43877,8 +44820,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -43966,8 +44909,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -47174,8 +48117,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -47812,8 +48755,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -48346,8 +49289,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -48390,8 +49333,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -48794,8 +49737,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -48837,8 +49780,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -48880,8 +49823,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -48923,8 +49866,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-22T05:25:36.627Z",
-  "updatedAt": "2026-09-22T05:25:36.627Z"
+  "createdAt": "2026-09-22T17:01:15.592Z",
+  "updatedAt": "2026-09-22T17:01:15.592Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
