@@ -1,5 +1,1501 @@
 [
 {
+  "id": "2077f8ef-6b51-4971-adbc-577c0c671bc8",
+  "slug": "onnx-runtime-v1-29-0-2026-08-12",
+  "title": "ONNX Runtime v1.29.0",
+  "factSummary": "Announcements Breaking Changes onnxruntime-web has announced the deprecation of WebGL and JSEP. The native WebGPU EP is the recommended path going forward. See the deprecation and migration plans for details ( #29716 , #31683 ). POSIX telemetry is now available on Linux, macOS, Android, and iOS when ONNX Runtime is built with telemetry enabled. It does not change the public ABI, WebAssembly remains telemetry-free, and setting ORT_DISABLE_TELEMETRY=1 before initialization disables non-Windows telemetry for the process ( #27379 , #29872 ). The unused internal onnxruntime/python/tools/tensorrt dashboard tooling was removed. This does not affect the TensorRT Execution Provider APIs ( #29395 ). Security Fixes Path, bounds, and input validation Fixed a path traversal vulnerability in TensorRT and NvTensorRTRTX engine refitting by making external-data path validation unconditional ( #29396 ). Validated the CPU MoE k attribute against the number of experts and fixed a CPU TensorScatter security issue ( #29907 , #29916 ). Added missing rank, shape, and parameter validation for pooling, LSTM and DynamicQuantizeLSTM, Sampling, FeatureVectorizer, SkipLayerNorm, QLinearConv, Whisper decoding, RNN activations, GridSample, contrib Range , and CropAndResize ( #29254 , #29255 , #29265 , #29579 , #29595 , #29605 , #29871 , #31636 , #31671 , #31675 , #31676 , #31684 ). Hardened CUDA indexing and buffer handling in GridSample, transpose, GatherBlockQuantized, InstanceNormalization, LayerNorm/RMSNorm, BeamSearch, DeformConv, AveragePool, and MaxPool ( #29581 , #29631 , #29638 , #31640 , #31642 , #31644 , #31645 , #31647 , #31650 ). Fixed packed sub-byte tensor over-copying in OrtApi::GetValue and validated DML constant tensor byte sizes ( #29157 , #31665 ). Supply chain and tooling Updated npm lockfiles, refreshed the Next.js end-to-end fixture lockfile for security advisories, and upgraded adm-zip for onnxruntime-node ( #29827 , #29926 , #31192 ). New Features Core APIs Runtime Defaul…",
+  "summary": "Announcements Breaking Changes onnxruntime-web has announced the deprecation of WebGL and JSEP. The native WebGPU EP is the recommended path going forward. See the deprecation and migration plans for details ( #29716 , #31683 ). POSIX telemetry is now available on Linux, macOS, Android, and iOS when ONNX Runtime is built with telemetry enabled. It does not change the public ABI, WebAssembly remains telemetry-free, and setting ORT_DISABLE_TELEMETRY=1 before initialization disables non-Windows telemetry for the process ( #27379 , #29872 ). The unused internal onnxruntime/python/tools/tensorrt dashboard tooling was removed. This does not affect the TensorRT Execution Provider APIs ( #29395 ). Security Fixes Path, bounds, and input validation Fixed a path traversal vulnerability in TensorRT and NvTensorRTRTX engine refitting by making external-data path validation unconditional ( #29396 ). Validated the CPU MoE k attribute against the number of experts and fixed a CPU TensorScatter security issue ( #29907 , #29916 ). Added missing rank, shape, and parameter validation for pooling, LSTM and DynamicQuantizeLSTM, Sampling, FeatureVectorizer, SkipLayerNorm, QLinearConv, Whisper decoding, RNN activations, GridSample, contrib Range , and CropAndResize ( #29254 , #29255 , #29265 , #29579 , #29595 , #29605 , #29871 , #31636 , #31671 , #31675 , #31676 , #31684 ). Hardened CUDA indexing and buffer handling in GridSample, transpose, GatherBlockQuantized, InstanceNormalization, LayerNorm/RMSNorm, BeamSearch, DeformConv, AveragePool, and MaxPool ( #29581 , #29631 , #29638 , #31640 , #31642 , #31644 , #31645 , #31647 , #31650 ). Fixed packed sub-byte tensor over-copying in OrtApi::GetValue and validated DML constant tensor byte sizes ( #29157 , #31665 ). Supply chain and tooling Updated npm lockfiles, refreshed the Next.js end-to-end fixture lockfile for security advisories, and upgraded adm-zip for onnxruntime-node ( #29827 , #29926 , #31192 ). New Features Core APIs Runtime Defaul…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "onnx",
+    "runtime",
+    "v1",
+    "29"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T06:42:41.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T13:55:51.711Z",
+  "updatedAt": "2026-08-12T13:55:51.748Z"
+},
+{
+  "id": "dd2a7ac0-cf7c-44bc-8a2f-90dc7124df05",
+  "slug": "onnx-runtime-webgpu-plugin-ep-v0-2-1-2026-07-30",
+  "title": "ONNX Runtime WebGPU Plugin EP v0.2.1",
+  "factSummary": "ONNX Runtime WebGPU Plugin EP v0.2.1 发布，包含 FlashAttention 解码内核融合与扩展、预填充共享内存路径泛化、NVIDIA 动态 max_k_step 支持、M4 Max 特定优化、Qwen3 和 Gemma 4 模型路径改进、LinearAttention 优化、GatherBlockQuantized 2-bit 支持以及多项可靠性修复。",
+  "summary": "ONNX Runtime WebGPU Plugin EP v0.2.1 发布，重点优化了注意力密集型 LLM 的性能，包括 FlashAttention 解码和预填充内核改进、Qwen3 和 Gemma 4 模型支持、LinearAttention 优化以及量化路径增强。",
+  "technicalInsight": "FlashAttention 解码内核的融合与扩展以及预填充共享内存路径的泛化，表明 ONNX Runtime 在 LLM 推理优化上持续投入，尤其针对变长序列场景。",
+  "industryInsight": "该版本对 Qwen3 和 Gemma 4 的专门优化，反映了开源推理框架紧跟最新模型架构的趋势，以保持对主流 LLM 的兼容性。",
+  "futureOutlook": "可关注后续版本是否进一步扩展 FlashAttention 对更多 GPU 架构的支持，以及是否引入更多模型架构的融合优化。",
+  "businessValue": "提升 ONNX Runtime 在 WebGPU 场景下的 LLM 推理性能，有助于吸引更多开发者采用该框架进行浏览器端 AI 应用开发。",
+  "category": "open-source",
+  "company": "ONNX Runtime",
+  "keywords": [
+    "ONNX Runtime",
+    "WebGPU",
+    "FlashAttention",
+    "LLM",
+    "推理优化",
+    "Qwen3",
+    "Gemma 4"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-30T01:36:24.000Z",
+  "publishedAt": "2026-07-30T03:51:54.315Z",
+  "createdAt": "2026-07-30T03:51:11.175Z",
+  "updatedAt": "2026-07-30T03:51:54.315Z"
+},
+{
+  "id": "71a5f081-1d08-4fd9-ac7a-5a50ebd8e220",
+  "slug": "onnx-runtime-webgpu-plugin-ep-v0-4-0-2026-09-23",
+  "title": "ONNX Runtime WebGPU Plugin EP v0.4.0",
+  "factSummary": "This release brings kernel performance improvements, expanded operator support, and reliability fixes to the ONNX Runtime WebGPU Plugin EP. Highlights Performance Optimized MatMulNBits wide-tile execution using subgroup shuffle ( #31703 ) Supplied fused activation parameters to Conv/MatMul as uniforms, and fused eight more activations into Conv ( #32116 , #32117 ) Added fused activation support to the im2col Conv path ( #32185 ) Vectorized Split when every output segment is vec4-aligned ( #32251 ) Shared subgroup matrix MatMul with pointwise Conv, and pinned subgroup size to 32 for subgroup-matrix MatMul/Gemm ( #32304 , #32306 ) Selected the pooling path by occupancy rather than output size ( #32313 ) Prepacked Conv weights for the im2col-matmul path ( #32420 ) Scaled Dawn pipeline compilation workers with CPU count ( #29820 ) Added PagedAttention metadata and GPT-OSS support, and continued optimizing PagedAttention (2/n) ( #32277 , #31727 ) Added int8 KV cache block quantization ( #32284 ) New Operator and Model Support Implemented WebGPU subgroup-size-control infrastructure and enabled the subgroup matrix path for WASM builds ( #32056 , #32269 ) Added more kernels for Qwen-3.5 ops and DeepSeek Engram contrib ops ( EngramGate , NGramHashMapping ) ( #32106 , #32268 ) Reliability and Correctness Fixed the 1D-dispatch shader fast path ( #32343 ) Fixed out-of-bounds subgroup-matrix loads for trailing partial tiles ( #32364 ) Made MatMulNaiveProgram 's pipeline cache key cover everything it bakes into WGSL ( #32048 ) Reported copy_tensors misuse instead of terminating the process, and rejected foreign GPU handles in the built-in data transfer ( #32315 , #32317 ) Build, Packaging, and Tooling Enabled Linux AArch64 WebGPU plugin EP packages ( #32287 ) Separated onnxruntime_providers compilation from its archive ( #32162 ) Ran wgsl_template Python tests in CI ( #32214 ) Contributors Thanks to everyone who contributed to this release: @4n4ny4 , @daijh , @edgchen1 , @hariha…",
+  "summary": "This release brings kernel performance improvements, expanded operator support, and reliability fixes to the ONNX Runtime WebGPU Plugin EP. Highlights Performance Optimized MatMulNBits wide-tile execution using subgroup shuffle ( #31703 ) Supplied fused activation parameters to Conv/MatMul as uniforms, and fused eight more activations into Conv ( #32116 , #32117 ) Added fused activation support to the im2col Conv path ( #32185 ) Vectorized Split when every output segment is vec4-aligned ( #32251 ) Shared subgroup matrix MatMul with pointwise Conv, and pinned subgroup size to 32 for subgroup-matrix MatMul/Gemm ( #32304 , #32306 ) Selected the pooling path by occupancy rather than output size ( #32313 ) Prepacked Conv weights for the im2col-matmul path ( #32420 ) Scaled Dawn pipeline compilation workers with CPU count ( #29820 ) Added PagedAttention metadata and GPT-OSS support, and continued optimizing PagedAttention (2/n) ( #32277 , #31727 ) Added int8 KV cache block quantization ( #32284 ) New Operator and Model Support Implemented WebGPU subgroup-size-control infrastructure and enabled the subgroup matrix path for WASM builds ( #32056 , #32269 ) Added more kernels for Qwen-3.5 ops and DeepSeek Engram contrib ops ( EngramGate , NGramHashMapping ) ( #32106 , #32268 ) Reliability and Correctness Fixed the 1D-dispatch shader fast path ( #32343 ) Fixed out-of-bounds subgroup-matrix loads for trailing partial tiles ( #32364 ) Made MatMulNaiveProgram 's pipeline cache key cover everything it bakes into WGSL ( #32048 ) Reported copy_tensors misuse instead of terminating the process, and rejected foreign GPU handles in the built-in data transfer ( #32315 , #32317 ) Build, Packaging, and Tooling Enabled Linux AArch64 WebGPU plugin EP packages ( #32287 ) Separated onnxruntime_providers compilation from its archive ( #32162 ) Ran wgsl_template Python tests in CI ( #32214 ) Contributors Thanks to everyone who contributed to this release: @4n4ny4 , @daijh , @edgchen1 , @hariha…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "onnx",
+    "runtime",
+    "webgpu",
+    "plugin",
+    "ep",
+    "v0"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T17:19:44.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T05:18:44.299Z",
+  "updatedAt": "2026-09-23T05:18:44.348Z"
+},
+{
+  "id": "da6c3ad0-ec2f-47b3-9192-2e9a71ab591b",
+  "slug": "onpanda-efficient-annotation-of-on-policy-alignment-data-for-llms-and-agents-via-token-lev-2026-09-22",
+  "title": "onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction",
+  "factSummary": "We present onPanda, an interactive tool for efficiently annotating LLM alignment data and agent trajectories. onPanda adopts token-level correction as its core interaction: while reading a model response, the annotator locates the first inappropriate token and either picks a substitute from the model's candidate tokens or types the correct text via free-form editing. The system then truncates everything after that position and continues generation from the corrected prefix, repeating this locate-correct-continue loop until a satisfactory response is obtained. This mechanism lets annotators precisely steer model outputs at low cost: a small controlled study suggests that onPanda reduces median annotation time by 52% over manual post-editing. Since the vast majority of tokens in the final response are generated by the model itself, the resulting data largely preserves the model's sampling distribution and is well suited for constructing on-policy SFT and preference data. Furthermore, the token-level corrections recorded during annotation provide fine-grained supervision with precise positions and naturally paired positive--negative samples. onPanda also connects to external tools and harnesses, enabling interactive trajectory annotation in realistic environments. In addition, we release Panda-CVL, a dataset annotated with onPanda, together with a benchmark for token-level correction.",
+  "summary": "We present onPanda, an interactive tool for efficiently annotating LLM alignment data and agent trajectories. onPanda adopts token-level correction as its core interaction: while reading a model response, the annotator locates the first inappropriate token and either picks a substitute from the model's candidate tokens or types the correct text via free-form editing. The system then truncates everything after that position and continues generation from the corrected prefix, repeating this locate-correct-continue loop until a satisfactory response is obtained. This mechanism lets annotators precisely steer model outputs at low cost: a small controlled study suggests that onPanda reduces median annotation time by 52% over manual post-editing. Since the vast majority of tokens in the final response are generated by the model itself, the resulting data largely preserves the model's sampling distribution and is well suited for constructing on-policy SFT and preference data. Furthermore, the token-level corrections recorded during annotation provide fine-grained supervision with precise positions and naturally paired positive--negative samples. onPanda also connects to external tools and harnesses, enabling interactive trajectory annotation in realistic environments. In addition, we release Panda-CVL, a dataset annotated with onPanda, together with a benchmark for token-level correction.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "onpanda",
+    "efficient",
+    "annotation",
+    "policy",
+    "alignment",
+    "data",
+    "llms",
+    "agents"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-21T17:56:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T05:30:05.196Z",
+  "updatedAt": "2026-09-22T05:30:05.251Z"
+},
+{
+  "id": "2c837249-4e5a-4758-b0bb-7f7283d40589",
+  "slug": "ontoextend-a-framework-for-requirement-driven-and-scalable-ontology-extension-with-llms-2026-07-21",
+  "title": "OntoExtend: A Framework for Requirement-driven and Scalable Ontology Extension with LLMs",
+  "factSummary": "Ontology extension refers to the process of enriching an existing ontology in response to emerging requirements, making it more complete. This task is a resource-intensive and error-prone process. Large Language Models (LLMs) have shown promising performance on generating ontologies from scratch, but current approaches rarely tie ontology extension explicitly to requirements or reusable core models, and offer limited, systematic evaluation of LLM outputs. This paper introduces OntoExtend, a requirements-driven framework for ontology extension with LLMs. It uses retrieval-augmented generation (RAG) over relevant input ontologies and requirements in the form of competency questions to propose grounded extensions. We evaluate OntoExtend on 39 CQs from two use cases: a public EU-project ontology, Onto-DESIDE, and an industrial ontology from Bosch. The generated fragments show few structural issues, satisfy all functional evaluation tests, and are rated by ontology engineers as requiring minor to moderate revision before integration. These results suggest that OntoExtend is useful as a drafting assistant for requirement-driven ontology extension in real world scenarios, while remaining sensitive to CQ specificity and modelling profile.",
+  "summary": "Ontology extension refers to the process of enriching an existing ontology in response to emerging requirements, making it more complete. This task is a resource-intensive and error-prone process. Large Language Models (LLMs) have shown promising performance on generating ontologies from scratch, but current approaches rarely tie ontology extension explicitly to requirements or reusable core models, and offer limited, systematic evaluation of LLM outputs. This paper introduces OntoExtend, a requirements-driven framework for ontology extension with LLMs. It uses retrieval-augmented generation (RAG) over relevant input ontologies and requirements in the form of competency questions to propose grounded extensions. We evaluate OntoExtend on 39 CQs from two use cases: a public EU-project ontology, Onto-DESIDE, and an industrial ontology from Bosch. The generated fragments show few structural issues, satisfy all functional evaluation tests, and are rated by ontology engineers as requiring minor to moderate revision before integration. These results suggest that OntoExtend is useful as a drafting assistant for requirement-driven ontology extension in real world scenarios, while remaining sensitive to CQ specificity and modelling profile.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "ontoextend",
+    "framework",
+    "requirement",
+    "driven",
+    "scalable",
+    "ontology",
+    "extension",
+    "llms"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-20T14:04:01.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-21T14:31:11.532Z",
+  "updatedAt": "2026-07-21T14:31:11.566Z"
+},
+{
+  "id": "0ae8e656-895b-466f-bac5-7e9610c79775",
+  "slug": "ontology-grounded-world-models-for-failure-diagnosis-and-closed-loop-repair-in-physical-ai-2026-08-17",
+  "title": "Ontology-Grounded World Models for Failure Diagnosis and Closed-Loop Repair in Physical AI Systems",
+  "factSummary": "EV-WM represents candidate quality with feature and event scores, but these scores do not explicitly record an unmet task predicate, a route label for an available correction mechanism, or a post-correction acceptance result. We present Onto-EV-WM, an ontology-grounded diagnosis and verification-gated correction interface layered above EV-WM rather than a replacement world-model architecture. The implemented task-local TBox defines entity types, predicate signatures, and constraints; source-specific grounding maps predicted or simulator-observed states to task ABoxes; and deterministic rules retain each missing predicate and its arguments when assigning a route label. Learned or heuristic proposers remain separate from this symbolic interface; native task predicates determine acceptance, and the bounded protocol determines whether a failed verification is retried. In the aligned PointMaze evaluation, EV-WM and Onto-EV-WM both report 94% success, with mean final-state distances of 0.90573 and 0.61177, respectively; the separately budgeted search reaches 100% success. On LIBERO-Goal, the ontology represents failed task conditions as typed records, retains their predicate arguments, and associates them with the declared source/joint correction route and predicate-gated acceptance; the complete configuration reports 93.8% corrected-window success on seed 0 and 94.05 +- 0.30% across four evaluation-sampling seeds. On the fixed 10,030-task LIBERO-Plus registry, Onto-EV-WM succeeds on 8,526 tasks (85.00%), with suite-level success rates of 65.98% for LIBERO-10, 91.39% for LIBERO-Goal, and 91.38% for both LIBERO-Object and LIBERO-Spatial. These numbers report the performance of the complete ontology-grounded configurations under the tested simulator protocols; an ontology-only causal share is not measured separately, and real-robot recovery is not evaluated.",
+  "summary": "EV-WM represents candidate quality with feature and event scores, but these scores do not explicitly record an unmet task predicate, a route label for an available correction mechanism, or a post-correction acceptance result. We present Onto-EV-WM, an ontology-grounded diagnosis and verification-gated correction interface layered above EV-WM rather than a replacement world-model architecture. The implemented task-local TBox defines entity types, predicate signatures, and constraints; source-specific grounding maps predicted or simulator-observed states to task ABoxes; and deterministic rules retain each missing predicate and its arguments when assigning a route label. Learned or heuristic proposers remain separate from this symbolic interface; native task predicates determine acceptance, and the bounded protocol determines whether a failed verification is retried. In the aligned PointMaze evaluation, EV-WM and Onto-EV-WM both report 94% success, with mean final-state distances of 0.90573 and 0.61177, respectively; the separately budgeted search reaches 100% success. On LIBERO-Goal, the ontology represents failed task conditions as typed records, retains their predicate arguments, and associates them with the declared source/joint correction route and predicate-gated acceptance; the complete configuration reports 93.8% corrected-window success on seed 0 and 94.05 +- 0.30% across four evaluation-sampling seeds. On the fixed 10,030-task LIBERO-Plus registry, Onto-EV-WM succeeds on 8,526 tasks (85.00%), with suite-level success rates of 65.98% for LIBERO-10, 91.39% for LIBERO-Goal, and 91.38% for both LIBERO-Object and LIBERO-Spatial. These numbers report the performance of the complete ontology-grounded configurations under the tested simulator protocols; an ontology-only causal share is not measured separately, and real-robot recovery is not evaluated.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "ontology",
+    "grounded",
+    "world",
+    "models",
+    "failure",
+    "diagnosis",
+    "closed",
+    "loop"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 48,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-14T03:13:57.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-17T02:14:10.974Z",
+  "updatedAt": "2026-08-17T02:14:11.018Z"
+},
+{
+  "id": "925a205b-2a04-4cc6-ac03-92cfaa20f13a",
+  "slug": "opaque-epistemic-mediation-how-llm-deployment-configurations-shape-the-validation-of-pseud-2026-07-27",
+  "title": "Opaque Epistemic Mediation: How LLM Deployment Configurations Shape the Validation of Pseudo-Science",
+  "factSummary": "Commercial large language models are increasingly used as knowledge references, yet their stance on contested scientific claims is neither stable nor transparent. We tested how four major LLM families (Claude, Grok, GPT, Gemini) evaluate ethnonationalist pseudo-science derived from Frank Salter's biosocial framework across four temporal snapshots (October 2025-February 2026), via both API and web interfaces. Grok's Fast versions (which power the default user experience on X) consistently assigned credibility scores of 70-75, two to five times higher than all other models (which scored 15-40). This pattern was absent from control prompts testing basic evolutionary consensus and refuted Lamarckian claims, where all models performed comparably. Three additional findings emerged: (1) a silent patch reversed Grok's behaviour from chaotic to stably high validation overnight, without any public documentation; (2) the same Grok model identifier produced radically divergent outputs via API (75) and web (5.5) three months later; (3) refusal to rate the pseudo-scientific claim, the most defensible response observed, appeared in two model families through different interfaces (Claude Opus 4.1 categorically via web, GPT-5.1 Chat intermittently via API) and eroded in the successor version of each. These results indicate that the epistemic stance of a commercial LLM is not a stable property of the model but a contingent effect of deployment configuration: system prompts, safety layers, interface routing, and silent updates. This remains opaque to users and researchers alike. We argue this constitutes a matter of public concern requiring new forms of epistemic accountability.",
+  "summary": "Commercial large language models are increasingly used as knowledge references, yet their stance on contested scientific claims is neither stable nor transparent. We tested how four major LLM families (Claude, Grok, GPT, Gemini) evaluate ethnonationalist pseudo-science derived from Frank Salter's biosocial framework across four temporal snapshots (October 2025-February 2026), via both API and web interfaces. Grok's Fast versions (which power the default user experience on X) consistently assigned credibility scores of 70-75, two to five times higher than all other models (which scored 15-40). This pattern was absent from control prompts testing basic evolutionary consensus and refuted Lamarckian claims, where all models performed comparably. Three additional findings emerged: (1) a silent patch reversed Grok's behaviour from chaotic to stably high validation overnight, without any public documentation; (2) the same Grok model identifier produced radically divergent outputs via API (75) and web (5.5) three months later; (3) refusal to rate the pseudo-scientific claim, the most defensible response observed, appeared in two model families through different interfaces (Claude Opus 4.1 categorically via web, GPT-5.1 Chat intermittently via API) and eroded in the successor version of each. These results indicate that the epistemic stance of a commercial LLM is not a stable property of the model but a contingent effect of deployment configuration: system prompts, safety layers, interface routing, and silent updates. This remains opaque to users and researchers alike. We argue this constitutes a matter of public concern requiring new forms of epistemic accountability.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "opaque",
+    "epistemic",
+    "mediation",
+    "how",
+    "llm",
+    "deployment",
+    "configurations",
+    "shape"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 54,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-24T17:32:43.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-27T04:31:44.163Z",
+  "updatedAt": "2026-07-27T04:31:44.198Z"
+},
+{
+  "id": "da6bd661-767c-445c-84bc-59b8ff6446dc",
+  "slug": "opd-v-visual-on-policy-self-distillation-with-modality-balance-2026-08-06",
+  "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
+  "factSummary": "On-Policy Self-Distillation (OPSD) has become a standard post-training approach for improving visual reasoning in multimodal large language models (MLLMs). Existing methods draw privileged information from diverse input sources to guide self-distillation. Yet these designs overlook Modality Imbalance, a challenge inherent to MLLM reasoning. When textual information dominates generation, the model cannot fully integrate its multimodal input. Consequently, carefully designed privileged information remains underused, limiting the effectiveness of OPSD. To examine this limitation, we construct a Positive Teacher with the Zoom-In Image and a Negative Teacher with the Mask Image, which exhibit different degrees of Modality Imbalance. Changes in their reasoning correctness and token logits reveal that Modality Balance can itself serve as privileged information. Motivated by this finding, we introduce OPD-V, a visual OPSD paradigm that instantiates such information through the Positive Teacher and Negative Teacher. Positive Modality-Balance Logits Margins define a Modality-Balance Trust Region that selects the on-policy tokens used for self-distillation. Experiments across 6 benchmarks, 4 MLLM backbones, and 5 post-training methods show that OPD-V consistently improves reasoning performance while reducing training cost.",
+  "summary": "On-Policy Self-Distillation (OPSD) has become a standard post-training approach for improving visual reasoning in multimodal large language models (MLLMs). Existing methods draw privileged information from diverse input sources to guide self-distillation. Yet these designs overlook Modality Imbalance, a challenge inherent to MLLM reasoning. When textual information dominates generation, the model cannot fully integrate its multimodal input. Consequently, carefully designed privileged information remains underused, limiting the effectiveness of OPSD. To examine this limitation, we construct a Positive Teacher with the Zoom-In Image and a Negative Teacher with the Mask Image, which exhibit different degrees of Modality Imbalance. Changes in their reasoning correctness and token logits reveal that Modality Balance can itself serve as privileged information. Motivated by this finding, we introduce OPD-V, a visual OPSD paradigm that instantiates such information through the Positive Teacher and Negative Teacher. Positive Modality-Balance Logits Margins define a Modality-Balance Trust Region that selects the on-policy tokens used for self-distillation. Experiments across 6 benchmarks, 4 MLLM backbones, and 5 post-training methods show that OPD-V consistently improves reasoning performance while reducing training cost.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "opd",
+    "visual",
+    "policy",
+    "self",
+    "distillation",
+    "modality",
+    "balance"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-05T17:53:06.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-06T03:59:08.503Z",
+  "updatedAt": "2026-08-06T03:59:08.542Z"
+},
+{
+  "id": "7e61ccdb-bc3a-427d-a237-251cd1610d2a",
+  "slug": "open-1b-a-fully-auditable-training-run-2026-09-16",
+  "title": "OPEN-1B: A Fully Auditable Training Run",
+  "factSummary": "Open-source language models have a reproducibility problem. Despite releasing weights, training data, and recipes, none of them are provably reproducible due to the non-associativity of floating-point arithmetic. Deep learning frameworks often offer a deterministic execution mode, allowing reproducible operations on the same machines. Unfortunately, this determinism does not carry across hardware such that a user can verify that a released checkpoint was actually produced using the declared training recipe. This leaves room for undisclosed data, injected biases, or backdoors that existing techniques such as proof-of-learning or proof-of-training-data cannot rule out. We introduce a new tier of model transparency, fully auditable, in which every operation on every data sample during training is independently reproducible on heterogeneous commodity hardware with bitwise certainty. By imposing a definite order on the sources of training nondeterminism, GPU kernel reductions, data batch ordering across a data-parallel cluster, and inter/intra-node collective communication, we make it possible to replay any individual step of a large, distributed training run on a single piece of commodity hardware and check it against the published trajectory. Because replaying an entire run on one machine is infeasible, we support this with a collective verification scheme in which many independent auditors each certify individual steps, together covering the whole run. We release Open-1B, a model trained under this regime, together with its full pretraining dataset, every intermediate checkpoint, the training codebase, and the audit harness needed to reproduce and verify any step of its training.",
+  "summary": "Open-source language models have a reproducibility problem. Despite releasing weights, training data, and recipes, none of them are provably reproducible due to the non-associativity of floating-point arithmetic. Deep learning frameworks often offer a deterministic execution mode, allowing reproducible operations on the same machines. Unfortunately, this determinism does not carry across hardware such that a user can verify that a released checkpoint was actually produced using the declared training recipe. This leaves room for undisclosed data, injected biases, or backdoors that existing techniques such as proof-of-learning or proof-of-training-data cannot rule out. We introduce a new tier of model transparency, fully auditable, in which every operation on every data sample during training is independently reproducible on heterogeneous commodity hardware with bitwise certainty. By imposing a definite order on the sources of training nondeterminism, GPU kernel reductions, data batch ordering across a data-parallel cluster, and inter/intra-node collective communication, we make it possible to replay any individual step of a large, distributed training run on a single piece of commodity hardware and check it against the published trajectory. Because replaying an entire run on one machine is infeasible, we support this with a collective verification scheme in which many independent auditors each certify individual steps, together covering the whole run. We release Open-1B, a model trained under this regime, together with its full pretraining dataset, every intermediate checkpoint, the training codebase, and the audit harness needed to reproduce and verify any step of its training.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "open",
+    "1b",
+    "fully",
+    "auditable",
+    "training",
+    "run"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T16:23:08.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:08.016Z",
+  "updatedAt": "2026-09-16T15:45:08.048Z"
+},
+{
+  "id": "470480ee-b9ed-4211-9703-63fc6f52b633",
+  "slug": "open-evaluation-agent-efficient-and-promptable-evaluation-of-visual-generative-models-2026-08-11",
+  "title": "Open Evaluation Agent: Efficient and Promptable Evaluation of Visual Generative Models",
+  "factSummary": "Recent advances in visual generative models have enabled high-quality image and video generation, but evaluating these models often demands sampling hundreds or thousands of images or videos, which is computationally expensive. Existing evaluation methods also rely on rigid pipelines that overlook specific user needs and provide numerical results without clear explanations. Mimicking how humans quickly form impressions of a model's capabilities from only a few samples, we propose the Evaluation Agent framework, which employs human-like strategies for efficient, dynamic, multi-round evaluations, offering detailed, user-tailored analyses. Given a natural-language evaluation request, the agent decomposes it into sub-aspects, generates targeted prompts, samples images or videos from the evaluated model, invokes suitable evaluation tools, and iteratively updates its plan from the observed evidence, covering both predefined benchmark dimensions and open-ended user concerns. The framework is thus efficient, promptable, explainable, and scalable across models and tools. Experiments show that Evaluation Agent reduces evaluation time to 10% of traditional methods while delivering comparable results. We further introduce Open Evaluation Agent (Open-EA) by constructing EA-CoT-10K, a corpus of history-conditioned step-level instruction-tuning records derived from multi-round evaluation rollouts, and training EA-3B from Qwen2.5-3B-Instruct as a local planning backbone that preserves the structured reasoning, tool invocation, and summary protocol of the API-based agent while reducing dependence on proprietary backbones. Experiments validate the API-based agent on established T2I/T2V benchmarks and open-ended queries, and evaluate Open-EA on four in-domain and three out-of-domain T2V generator families, showing partial cross-family transfer of the learned policy.",
+  "summary": "Recent advances in visual generative models have enabled high-quality image and video generation, but evaluating these models often demands sampling hundreds or thousands of images or videos, which is computationally expensive. Existing evaluation methods also rely on rigid pipelines that overlook specific user needs and provide numerical results without clear explanations. Mimicking how humans quickly form impressions of a model's capabilities from only a few samples, we propose the Evaluation Agent framework, which employs human-like strategies for efficient, dynamic, multi-round evaluations, offering detailed, user-tailored analyses. Given a natural-language evaluation request, the agent decomposes it into sub-aspects, generates targeted prompts, samples images or videos from the evaluated model, invokes suitable evaluation tools, and iteratively updates its plan from the observed evidence, covering both predefined benchmark dimensions and open-ended user concerns. The framework is thus efficient, promptable, explainable, and scalable across models and tools. Experiments show that Evaluation Agent reduces evaluation time to 10% of traditional methods while delivering comparable results. We further introduce Open Evaluation Agent (Open-EA) by constructing EA-CoT-10K, a corpus of history-conditioned step-level instruction-tuning records derived from multi-round evaluation rollouts, and training EA-3B from Qwen2.5-3B-Instruct as a local planning backbone that preserves the structured reasoning, tool invocation, and summary protocol of the API-based agent while reducing dependence on proprietary backbones. Experiments validate the API-based agent on established T2I/T2V benchmarks and open-ended queries, and evaluate Open-EA on four in-domain and three out-of-domain T2V generator families, showing partial cross-family transfer of the learned policy.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "open",
+    "evaluation",
+    "agent",
+    "efficient",
+    "promptable",
+    "visual",
+    "generative",
+    "models"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T14:42:10.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:35.489Z",
+  "updatedAt": "2026-08-11T02:58:35.526Z"
+},
+{
+  "id": "67b6305d-be19-47ac-afa9-d39b07e38288",
+  "slug": "open-problems-in-mechanistic-interpretability",
+  "title": "Open Problems in Mechanistic Interpretability：机制可解释性面临的关键挑战与未来方向",
+  "factSummary": "2025年1月，一篇前瞻性综述讨论了机制可解释性（MI）领域的开放问题，包括方法改进、应用目标和社会技术挑战。文章指出当前MI方法在揭示深层计算机制方面仍有局限，需要概念和实践上的提升，并强调MI在AI安全、科学发现中的潜力。",
+  "summary": "该综述系统梳理了MI领域的前沿问题，为研究者提供了清晰的路线图。MI旨在理解神经网络内部计算机制，对AI安全（如检测后门、对齐）和科学发现（如理解学习表示）至关重要。文章指出的开放问题包括：如何从电路级理解扩展到算法级理解，如何自动化MI分析，以及如何应对社会影响。",
+  "technicalInsight": "MI方法包括激活分析、探针、电路发现等，但当前方法难以处理大规模模型和复杂行为。开放问题包括：1）可扩展性：现有方法在百亿参数模型上计算成本高；2）自动化：需要自动发现和验证电路的技术；3）因果性：从相关性到因果推断的跨越；4）多模态：视觉、语言等模态的联合解释。边界：MI仍处于早期，实际应用有限。",
+  "industryInsight": "MI对AI安全行业至关重要，可帮助检测模型偏见、后门和未对齐行为。监管机构可能要求模型可解释性，MI技术将成为合规工具。对AI公司，投资MI可提升模型信任度和安全性，减少部署风险。",
+  "futureOutlook": "需关注：1）MI工具的开源生态发展，如TransformerLens；2）与AI安全（如红队测试）的结合；3）标准化评估基准的建立；4）跨学科合作（神经科学、认知科学）。",
+  "businessValue": "建议AI安全团队关注MI进展，评估将其集成到模型审计流程。投资可关注MI初创公司或开源项目。工程上，可尝试使用现有MI工具（如激活分析）进行模型调试。",
+  "category": "research",
+  "company": "MI开放问题综述",
+  "keywords": [
+    "机制可解释性",
+    "AI安全",
+    "神经网络电路",
+    "可扩展性",
+    "自动化"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 85,
+  "valueScore": 82,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2025-01-27T12:00:00.000Z",
+  "publishedAt": "2025-01-27T12:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "00688150-d8d1-4f6f-b3fb-f456a950f56f",
+  "slug": "open-research-tooling-038-optimization-at-pytorch-conference-north-america-2026-2026-09-17",
+  "title": "Open Research, Tooling &#038; Optimization at PyTorch Conference North America 2026",
+  "factSummary": "TL;DR Taking place October 20 to 21 in San Jose, California, PyTorch Conference North America 2026 highlights open research, tooling, and performance optimization across compiler architecture, cross-hardware kernel domain-specific languages,...",
+  "summary": "TL;DR Taking place October 20 to 21 in San Jose, California, PyTorch Conference North America 2026 highlights open research, tooling, and performance optimization across compiler architecture, cross-hardware kernel domain-specific languages,...",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "open",
+    "research",
+    "tooling",
+    "038",
+    "optimization",
+    "at",
+    "pytorch",
+    "conference"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-16T19:00:47.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T05:32:42.514Z",
+  "updatedAt": "2026-09-17T05:32:42.550Z"
+},
+{
+  "id": "ad9bff1e-56b5-4734-b79f-7d00b64d68da",
+  "slug": "open-robotics-announces-red-hat-enterprise-linux-tier-1-support-for-ros-2026-09-23",
+  "title": "Open Robotics announces Red Hat Enterprise Linux Tier 1 support for ROS",
+  "factSummary": "The Open Source Robotics Foundation, Inc. is pleased to announce that Red Hat Enterprise Linux (RHEL) is now a Tier 1-supported platform for ROS.",
+  "summary": "The Open Source Robotics Foundation, Inc. is pleased to announce that Red Hat Enterprise Linux (RHEL) is now a Tier 1-supported platform for ROS.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "open",
+    "robotics",
+    "announces",
+    "red",
+    "hat",
+    "enterprise",
+    "linux",
+    "tier"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T21:00:01.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T05:18:42.673Z",
+  "updatedAt": "2026-09-23T05:18:42.720Z"
+},
+{
+  "id": "f674feae-4618-4beb-a0d8-71a4174f570f",
+  "slug": "open-x-embodiment-robotic-learning-datasets-and-rt-x-models",
+  "title": "Open X-Embodiment: 跨机器人通用操作策略与数据集：中文决策要点：跨机器人通用操作策略与数据集",
+  "factSummary": "该论文由21个机构合作，收集了22种不同机器人的数据，涵盖527项技能和160266个任务，并训练了名为RT-X的高容量模型，展示了跨机器人平台的积极迁移效果，提升了多种机器人的操作能力。",
+  "summary": "该研究通过构建大规模、多机器人、多任务的数据集，并训练通用策略模型RT-X，验证了机器人领域可以像NLP和CV一样实现预训练模型的泛化，为机器人学习从专用模型向通用基础模型转变提供了实证基础。",
+  "technicalInsight": "论文构建了标准化数据格式的跨机器人数据集，包含22种机器人、527项技能、160266个任务。训练了基于Transformer的高容量模型RT-X，该模型在多个机器人平台上进行微调后，表现出正迁移，即利用其他平台的经验提升了目标机器人的性能。评估涉及多种机器人操作任务，但未提供具体数值指标，边界在于数据集和模型主要针对操作任务，且迁移效果依赖于数据多样性。",
+  "industryInsight": "该工作为机器人行业提供了首个大规模跨机器人数据集和通用策略基线，有望降低机器人应用开发成本，推动机器人操作技能的标准化和复用，加速服务机器人、工业机器人等领域的部署。",
+  "futureOutlook": "未来需验证模型在更多未见机器人、任务和环境上的泛化能力，以及数据集规模扩大后模型性能的持续提升，具体信号包括跨机器人迁移成功率、零样本泛化能力等。",
+  "businessValue": "建议机器人企业或自动化解决方案商采用RT-X模型作为基础策略，结合自有机器人数据进行微调，可缩短技能开发周期；同时可参与数据集贡献以获取更优模型。",
+  "category": "research",
+  "company": "RT-X",
+  "keywords": [
+    "跨机器人学习",
+    "通用操作策略",
+    "数据集",
+    "迁移学习",
+    "机器人操作"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 92,
+  "valueScore": 90,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2023-10-13T12:00:00.000Z",
+  "publishedAt": "2023-10-13T12:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "dfc385cd-2c0d-4211-a5c1-2f8f30939ba9",
+  "slug": "openai-039-s-gpt-5-6-sol-ultra-reportedly-solves-a-50-year-old-math-problem-in-under-an-ho-2026-07-12",
+  "title": "OpenAI&#039;s GPT-5.6 Sol Ultra reportedly solves a 50-year-old math problem in under an hour",
+  "factSummary": "OpenAI's GPT-5.6 Sol Ultra produced a proof of the Cycle Double Cover Conjecture in under an hour, using 64 subagents working in parallel. The conjecture had remained unsolved for 50 years. Mathematician Thomas Bloom calls the proof surprisingly elementary but criticizes the lack of citations for known prior work. The bigger question remains: Does AI just recombine existing knowledge, or does it create something new? The article OpenAI&#039;s GPT-5.6 Sol Ultra reportedly solves a 50-year-old math problem in under an hour appeared first on The Decoder .",
+  "summary": "OpenAI 的 GPT-5.6 Sol Ultra 在一小时内使用 64 个子代理并行工作，证明了悬而未决 50 年的图论「循环双覆盖猜想」。数学家 Thomas Bloom 评价证明「出人意料地初等」，但批评缺乏对已知先验工作的引用。",
+  "technicalInsight": "多 Agent 并行协作成为前沿推理的核心范式。64 个子代理协同攻克单一难题的模式验证了 agent swarm 架构在复杂科学推理中的可行性，标志着 AI agent 从「辅助工具」向「自主研究主体」的跃迁。",
+  "industryInsight": "AI agent 自主完成数学定理证明，将加速科学研究自动化进程。但证明引用缺失暴露了当前 agent 系统在学术规范性上的短板——可验证性和可复现性是 agent 研究从实验室走向学术界的必要条件。",
+  "futureOutlook": "观察 OpenAI 是否会将多 agent 数学推理能力产品化，以及学术界对 AI 生成证明的引用和验证标准如何建立。",
+  "businessValue": "对于药物研发、材料科学、金融建模等需要深度推理的行业，多 agent 推理架构提供了可复制的研究自动化方案。",
+  "category": "research",
+  "company": "OpenAI",
+  "keywords": [
+    "openai",
+    "039",
+    "gpt",
+    "sol",
+    "ultra",
+    "reportedly",
+    "solves",
+    "50"
+  ],
+  "confidenceScore": 62,
+  "heatScore": 43,
+  "impactScore": 55,
+  "valueScore": 46,
+  "scoreFactors": {
+    "authority": 78,
+    "corroboration": 40,
+    "primaryEvidence": 0,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 3,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 2,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-11T17:38:35.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-12T00:12:52.741Z",
+  "updatedAt": "2026-07-26T14:06:51.444Z"
+},
+{
+  "id": "7d3437ff-7952-44db-aa6b-48d1cec0b6c2",
+  "slug": "openai-40b-funding-300b-valuation",
+  "title": "OpenAI 融资 400 亿美元：前沿模型资本需求跃迁到基础设施级别",
+  "factSummary": "OpenAI 于 2025 年 3 月宣布获得 400 亿美元新资金，投后估值 3000 亿美元，并与 SoftBank Group 合作。",
+  "summary": "单轮融资规模进入大型基础设施项目量级，模型研究、计算扩张和全球产品分发被放入同一资本计划。",
+  "technicalInsight": "公告明确把资金用于前沿研究、计算基础设施和面向大规模用户交付，算力供给成为增长前提。",
+  "industryInsight": "资本进一步向拥有全球消费入口和开发者平台的少数公司集中，前沿竞争的融资门槛急剧上升。",
+  "futureOutlook": "观察资金分期、算力项目交付、用户增长、收入与治理结构变化是否匹配估值提升。",
+  "businessValue": "投资判断需要把承诺资本、实际到账、基础设施支出和收入增长分开，避免用总融资额替代经营质量。",
+  "category": "funding",
+  "company": "OpenAI",
+  "keywords": [
+    "OpenAI",
+    "SoftBank",
+    "融资",
+    "3000 亿美元估值",
+    "算力"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 100,
+  "valueScore": 99,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2025-03-31T00:00:00.000Z",
+  "publishedAt": "2025-03-31T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "3286f57a-1d16-455b-a624-ba5ea35fcefd",
+  "slug": "openai-6-6b-funding-157b-valuation",
+  "title": "OpenAI 融资 66 亿美元：前沿模型公司估值进入平台级规模",
+  "factSummary": "OpenAI 于 2024 年 10 月宣布融资 66 亿美元，投后估值为 1570 亿美元。",
+  "summary": "用户规模、企业采用和训练算力需求共同把前沿模型公司推向大型平台公司的资本密度。",
+  "technicalInsight": "公告将资金用途指向前沿研究与计算能力扩张，说明新增模型能力仍高度依赖持续基础设施投入。",
+  "industryInsight": "资本进一步集中到少数具备模型、产品入口和全球分发的公司，中小模型厂商面临更强规模压力。",
+  "futureOutlook": "观察新增算力、收入增长、治理变化和高估值下的长期毛利能否同步兑现。",
+  "businessValue": "评估此类融资不能只看估值，应拆分消费入口、API 收入、企业采用和计算承诺的真实质量。",
+  "category": "funding",
+  "company": "OpenAI",
+  "keywords": [
+    "OpenAI",
+    "融资",
+    "估值",
+    "算力",
+    "平台化"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 98,
+  "valueScore": 98,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2024-10-02T00:00:00.000Z",
+  "publishedAt": "2024-10-02T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "aa5bf8ec-dc26-44a0-b441-ecc74aed86d7",
+  "slug": "openai-8217-s-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot-2026-07-12",
+  "title": "OpenAI&#8217;s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot",
+  "factSummary": "OpenAI&#8217;s GPT-5.6 family is now rolling out in GitHub Copilot. GPT-5.6 comes in three variants, Sol, Terra, and Luna, so you can match the model to the job, whether that&#8217;s&#8230; The post OpenAI&#8217;s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot appeared first on The GitHub Blog .",
+  "summary": "OpenAI&#8217;s GPT-5.6 family is now rolling out in GitHub Copilot. GPT-5.6 comes in three variants, Sol, Terra, and Luna, so you can match the model to the job, whether that&#8217;s&#8230; The post OpenAI&#8217;s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot appeared first on The GitHub Blog .",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "openai",
+    "8217",
+    "gpt",
+    "sol",
+    "terra",
+    "luna",
+    "are",
+    "now"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 56,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-09T16:41:29.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-12T00:24:50.387Z",
+  "updatedAt": "2026-07-12T00:24:50.387Z"
+},
+{
+  "id": "aa2a4e28-1a37-4f5b-a413-6f5d525264a0",
+  "slug": "openai-acquires-ona",
+  "title": "OpenAI 收购 Ona：Agent 竞争延伸到长期软件工程能力",
+  "factSummary": "OpenAI 于 2026 年 6 月 11 日宣布收购 Ona。",
+  "summary": "并购信号表明模型公司正在吸收关键工程团队与工作流能力，以缩短从模型到可交付 Agent 的距离。",
+  "technicalInsight": "整合价值取决于仓库级上下文、长任务执行、结果验证和开发者体验能否进入统一产品。",
+  "industryInsight": "AI Coding 市场的竞争会继续从模型调用转向完整工程系统，独立工具面临平台并购与功能内置压力。",
+  "futureOutlook": "观察团队与产品整合、能力上线、企业迁移和原有客户/开源生态的处理。",
+  "businessValue": "AI Coding 创业公司需要证明独有数据、工作流或分发优势，单一功能更容易被平台吸收。",
+  "category": "investment",
+  "company": "OpenAI",
+  "keywords": [
+    "OpenAI",
+    "Ona",
+    "收购",
+    "AI Coding"
+  ],
+  "confidenceScore": 94,
+  "heatScore": 78,
+  "impactScore": 91,
+  "valueScore": 90,
+  "scoreFactors": {
+    "authority": 94,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 78,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2026-06-11T00:00:00.000Z",
+  "publishedAt": "2026-06-11T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "92157ab0-4315-4e68-aec2-1f313ca6588a",
+  "slug": "openai-and-hugging-face-partner-to-address-security-incident-during-model-evaluation-2026-07-22",
+  "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+  "factSummary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
+  "summary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "openai",
+    "hugging",
+    "face",
+    "partner",
+    "address",
+    "security",
+    "incident",
+    "during"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 34,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 2,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 72,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-21T07:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-22T14:31:36.981Z",
+  "updatedAt": "2026-07-22T14:31:37.010Z"
+},
+{
+  "id": "a40f240d-337a-4df6-bcfa-1465821e6f81",
+  "slug": "openai-appoints-dali-rajic-as-chief-revenue-officer-2026-08-14",
+  "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+  "factSummary": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
+  "summary": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "openai",
+    "appoints",
+    "dali",
+    "rajic",
+    "as",
+    "chief",
+    "revenue",
+    "officer"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 83,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-13T09:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-14T03:18:17.415Z",
+  "updatedAt": "2026-08-14T03:18:17.460Z"
+},
+{
+  "id": "fa765723-4c84-471a-a23b-e5272b86cce3",
+  "slug": "openai-codex-cloud-agent",
+  "title": "Codex 云端 Agent 发布：编码任务从辅助转向委派",
+  "factSummary": "OpenAI 发布 Codex 研究预览，可在隔离云环境中并行处理代码库任务。",
+  "summary": "开发者可以把修复、测试和代码理解任务交给后台 Agent，编码产品从同步对话进入异步任务队列。",
+  "technicalInsight": "隔离环境、仓库上下文、并行执行和可审查变更是可靠编码 Agent 的关键系统能力。",
+  "industryInsight": "GitHub、IDE、终端和云 Agent 开始争夺软件交付的控制面。",
+  "futureOutlook": "观察 PR 合并率、运行成本、安全边界和团队协作模式。",
+  "businessValue": "软件团队采用 Agent 时，需要同步建立权限、评审、CI 和产能度量，购买个人席位只是第一步。",
+  "category": "coding-agent",
+  "company": "OpenAI",
+  "keywords": [
+    "Codex",
+    "云端 Agent",
+    "异步编码",
+    "软件工程"
+  ],
+  "confidenceScore": 98,
+  "heatScore": 0,
+  "impactScore": 97,
+  "valueScore": 98,
+  "scoreFactors": {
+    "authority": 98,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2025-05-16T00:00:00.000Z",
+  "publishedAt": "2025-05-16T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "885ebdbc-84dd-49b9-ae62-3615970d7ba7",
+  "slug": "openai-deep-research",
+  "title": "Deep Research 发布：Agent 首次把复杂知识工作做成标准产品",
+  "factSummary": "OpenAI 在 ChatGPT 发布 Deep Research，可自主搜索、分析并综合大量在线来源。",
+  "summary": "长时研究任务成为可购买的消费与专业能力，Agent 的价值从即时回答转向替代数小时知识劳动。",
+  "technicalInsight": "浏览、检索、证据选择、长上下文推理和报告生成被组合成持续数十分钟的工作流。",
+  "industryInsight": "研究、咨询、投研和专业信息服务开始面对结果型 AI 产品的直接竞争。",
+  "futureOutlook": "观察引用准确性、付费使用量、垂直数据库接入和结果责任。",
+  "businessValue": "专业服务团队应把 AI 用于扩大研究覆盖，并把差异化转向私有数据与判断框架。",
+  "category": "agent-product",
+  "company": "OpenAI",
+  "keywords": [
+    "Deep Research",
+    "研究 Agent",
+    "知识工作",
+    "ChatGPT"
+  ],
+  "confidenceScore": 98,
+  "heatScore": 0,
+  "impactScore": 96,
+  "valueScore": 97,
+  "scoreFactors": {
+    "authority": 98,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2025-02-02T00:00:00.000Z",
+  "publishedAt": "2025-02-02T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "6ccaf3c6-8b9b-48b2-a764-e446de71fc6f",
+  "slug": "openai-deployment-simulation",
+  "title": "Deployment Simulation：OpenAI 用真实分布模拟在发布前预测模型风险",
+  "factSummary": "OpenAI 于 2026 年 6 月发布 Deployment Simulation 论文，使用去标识的历史对话为待发布模型重生成回答，并把模拟频率与发布后的真实风险频率比较。",
+  "summary": "传统安全评测偏向人工挑选的困难样本，难以估计风险在真实流量中的发生率。Deployment Simulation 把生产分布引入发布前验证，让模型风险评测从是否会失败扩展到实际多久失败一次。",
+  "technicalInsight": "研究在多代 GPT-5 Thinking 部署上重放隐私处理后的对话前缀，评估 20 类不良行为的方向与频率校准，并扩展到包含工具调用的 Agent 轨迹。官方披露约 130 万段去标识对话用于验证，同时明确无法测量低于约二十万分之一的罕见风险。",
+  "industryInsight": "前沿模型发布门禁正在从静态 benchmark 转向接近生产分布的连续仿真；拥有真实流量和完善隐私治理的平台会获得评测数据优势。",
+  "futureOutlook": "需要外部审计其隐私处理、样本代表性和 grader 偏差，并验证当产品形态或用户群变化时历史流量是否仍能预测新风险。",
+  "businessValue": "企业发布高风险 Agent 前应使用真实但去标识的历史任务做影子重放，比较新旧系统失败率，并为低频高损失风险保留专门压力测试。",
+  "category": "research",
+  "company": "OpenAI",
+  "keywords": [
+    "Deployment Simulation",
+    "模型安全",
+    "真实分布",
+    "Agent 评测",
+    "风险预测"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 95,
+  "valueScore": 95,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2026-06-16T00:00:00.000Z",
+  "publishedAt": "2026-06-16T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "36284da8-5c0f-4b27-a9b2-34732a52023b",
+  "slug": "openai-devday-assistants-api",
+  "title": "OpenAI DevDay：模型平台向 Assistants、工具与定制能力扩张",
+  "factSummary": "OpenAI 在 2023 年 11 月 DevDay 发布 GPT-4 Turbo、Assistants API、新工具和定制模型计划。",
+  "summary": "模型 API 从单次生成扩张为带线程、检索、代码执行和函数调用的应用运行时。",
+  "technicalInsight": "更长上下文、JSON mode、函数调用、持久线程和托管工具降低了构建 AI 应用的工程门槛。",
+  "industryInsight": "模型厂商开始吸收向量检索、Agent 编排和应用后端能力，平台与创业公司的边界重新划分。",
+  "futureOutlook": "观察平台抽象能否提高长任务可靠性，以及开发者如何保留数据和产品控制权。",
+  "businessValue": "团队应把平台便利与供应商锁定、成本结构、可观测性放在同一架构决策中。",
+  "category": "developer-platform",
+  "company": "OpenAI",
+  "keywords": [
+    "DevDay",
+    "Assistants API",
+    "GPT-4 Turbo",
+    "工具调用"
+  ],
+  "confidenceScore": 100,
+  "heatScore": 0,
+  "impactScore": 96,
+  "valueScore": 97,
+  "scoreFactors": {
+    "authority": 100,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2023-11-06T00:00:00.000Z",
+  "publishedAt": "2023-11-06T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "3728240c-7ae6-482d-8c2d-964d83e8baec",
+  "slug": "openai-extends-cyber-access-to-ukraine-for-civilian-defense-2026-09-23",
+  "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+  "factSummary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+  "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "openai",
+    "extends",
+    "cyber",
+    "access",
+    "ukraine",
+    "civilian",
+    "defense"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 36,
+  "impactScore": 55,
+  "valueScore": 62,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 2,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T13:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:23.422Z",
+  "updatedAt": "2026-09-23T17:13:23.467Z"
+},
+{
+  "id": "184b824e-d246-4c1d-aa6f-6312df00c138",
+  "slug": "openai-gabriel-measurement-tool",
+  "title": "GABRIEL：OpenAI 将非结构化材料的量化编码做成可审计研究工具",
+  "factSummary": "OpenAI Economic Research 于 2026 年 2 月发布 GABRIEL 论文与开源工具，把文本、图像和音频中的定性属性转成可重复的量化测量，并提供批处理、重试、检查点和审计轨迹。",
+  "summary": "大模型辅助研究长期停留在一次性标注脚本。GABRIEL 把提示、批处理、恢复、验证和记录组织成标准工具，使社会科学与行业研究可以把模型判断当作需要校准和审计的测量过程。",
+  "technicalInsight": "工具覆盖 rating、ranking、classification、extraction、deduplication 与 de-identification，并在论文中用多类任务验证 GPT 标注质量。官方仓库持续发布版本，说明研究成果已经从方法论转成可复用软件资产。",
+  "industryInsight": "咨询、市场研究、政策分析和知识管理团队可以更低成本处理大规模定性材料，但必须保留抽样复核、模型版本、原始依据与偏差评估。",
+  "futureOutlook": "重点观察跨语言和高风险领域的可靠性、不同模型版本的测量漂移，以及第三方能否复现论文中的准确率与偏差结论。",
+  "businessValue": "使用 LLM 做批量研究时，应把 GABRIEL 类审计轨迹、断点恢复和人工校准能力列入采购要求，避免不可复现的一次性分析。",
+  "category": "research",
+  "company": "OpenAI Economic Research",
+  "keywords": [
+    "GABRIEL",
+    "社会科学",
+    "量化测量",
+    "开源工具",
+    "审计"
+  ],
+  "confidenceScore": 98,
+  "heatScore": 0,
+  "impactScore": 87,
+  "valueScore": 91,
+  "scoreFactors": {
+    "authority": 98,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2026-02-13T00:00:00.000Z",
+  "publishedAt": "2026-02-13T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "04ed842a-9e5d-4e12-adbe-e0a345030332",
+  "slug": "openai-io-device-team-merger",
+  "title": "io 团队并入 OpenAI：模型公司开始向原生 AI 设备与交互入口扩张",
+  "factSummary": "OpenAI 与 Jony Ive 于 2025 年 5 月公布合作，并在 7 月更新确认 io Products 团队已正式并入 OpenAI。",
+  "summary": "前沿模型公司通过团队整合进入硬件与交互设计，竞争边界从 API 和软件产品扩展到新设备入口。",
+  "technicalInsight": "原生 AI 设备需要把模型、传感器、低延迟推理、隐私和持续交互共同设计，单纯增加语音入口并不足够。",
+  "industryInsight": "模型平台开始吸收产品设计与硬件能力，可能重构手机、可穿戴设备和个人 Agent 的分发关系。",
+  "futureOutlook": "观察首款产品形态、端云分工、供应链、隐私边界和真实任务频次。",
+  "businessValue": "硬件扩张增加了供应链与渠道风险，但也可能让模型公司拥有更稳定的用户入口和上下文。",
+  "category": "company-merger",
+  "company": "OpenAI / io",
+  "keywords": [
+    "OpenAI",
+    "io",
+    "Jony Ive",
+    "AI 硬件",
+    "公司整合"
+  ],
+  "confidenceScore": 98,
+  "heatScore": 0,
+  "impactScore": 94,
+  "valueScore": 93,
+  "scoreFactors": {
+    "authority": 98,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2025-05-21T00:00:00.000Z",
+  "publishedAt": "2025-05-21T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "1873aa04-ac99-4274-a8f5-4a0e2b4c130c",
+  "slug": "openai-joins-ports-pike-project-2026-08-17",
+  "title": "OpenAI joins PORTS-Pike project",
+  "factSummary": "OpenAI 加入 PORTS-Pike 项目，扩大社区投资并支持俄亥俄州南部数千个工作岗位。",
+  "summary": "OpenAI 宣布加入 PORTS-Pike 项目，该项目旨在扩大社区投资，并支持俄亥俄州南部的数千个工作岗位。",
+  "technicalInsight": "该事件未披露具体技术细节，但 OpenAI 的参与可能涉及 AI 基础设施或应用部署，需关注后续技术公告。",
+  "industryInsight": "OpenAI 通过区域项目投资社区，可能反映 AI 行业向地方经济渗透的趋势，但证据有限，需观察其他公司类似举措。",
+  "futureOutlook": "未来可关注 PORTS-Pike 项目是否带来具体就业数据或 AI 相关设施建设，以验证投资影响。",
+  "businessValue": "该合作可能增强 OpenAI 的公共形象和区域影响力，但商业回报尚不明确，需跟踪项目进展。",
+  "category": "community-investment",
+  "company": "OpenAI",
+  "keywords": [
+    "OpenAI",
+    "PORTS-Pike",
+    "community investment",
+    "Ohio jobs"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-17T05:00:00.000Z",
+  "publishedAt": "2026-08-17T13:14:17.023Z",
+  "createdAt": "2026-08-17T13:13:33.901Z",
+  "updatedAt": "2026-08-17T13:14:17.023Z"
+},
+{
+  "id": "540729f4-2603-44cd-affe-2544683b0a0d",
+  "slug": "openai-o1-test-time-reasoning",
+  "title": "OpenAI o1 预览：能力扩展从训练 Scaling 转向推理时计算",
+  "factSummary": "OpenAI 发布 o1-preview 与 o1-mini，模型会在回答前投入更多推理计算。",
+  "summary": "推理时计算成为新的能力杠杆，行业开始从即时生成转向可分配思考预算的问题求解。",
+  "technicalInsight": "强化学习和长链推理让数学、代码与科学问题的性能随推理预算增长。",
+  "industryInsight": "模型定价、延迟和能力不再是一条固定曲线，推理基础设施与任务路由的重要性上升。",
+  "futureOutlook": "观察可验证推理、错误恢复、长链成本和推理过程可控性。",
+  "businessValue": "高价值复杂任务可以接受更高延迟与成本，企业应按任务价值而非统一 token 单价选模。",
+  "category": "reasoning",
+  "company": "OpenAI",
+  "keywords": [
+    "o1",
+    "推理时计算",
+    "强化学习",
+    "reasoning"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 98,
+  "valueScore": 95,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2024-09-12T00:00:00.000Z",
+  "publishedAt": "2024-09-12T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "034a79ea-710b-4427-a223-4d73be2d5c59",
+  "slug": "openai-o3-o4-mini-tools",
+  "title": "o3 与 o4-mini 发布：推理模型开始主动调用全套工具",
+  "factSummary": "OpenAI 发布 o3 和 o4-mini，并让推理模型在 ChatGPT 中组合使用浏览、代码、文件和图像工具。",
+  "summary": "推理与行动合流，模型从在单一上下文中思考转向选择工具、验证结果并完成任务。",
+  "technicalInsight": "模型原生工具选择把规划、执行和检查纳入统一推理过程。",
+  "industryInsight": "Agent 能力逐渐内建进旗舰模型，纯编排层产品面临价值压缩。",
+  "futureOutlook": "观察工具选择准确性、错误恢复、长任务成本和安全控制。",
+  "businessValue": "应用公司的竞争力需要建立在专有数据、权限体系、评测和完整业务流程上。",
+  "category": "reasoning",
+  "company": "OpenAI",
+  "keywords": [
+    "o3",
+    "o4-mini",
+    "工具使用",
+    "Agent"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 97,
+  "valueScore": 96,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2025-04-16T00:00:00.000Z",
+  "publishedAt": "2025-04-16T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "4a6cb77e-f99d-4853-acd4-58fe79bb1a50",
+  "slug": "openai-operator-browser-agent",
+  "title": "Operator 发布：OpenAI 从对话产品进入浏览器任务执行",
+  "factSummary": "OpenAI 发布 Operator 研究预览，模型可以在浏览器中点击、输入并完成多步骤任务。",
+  "summary": "ChatGPT 的产品边界从回答问题扩展到代替用户执行，消费级 Agent 开始验证真实交易与服务流程。",
+  "technicalInsight": "Computer-Using Agent 已能连续完成视觉识别、推理和交互动作，但仍需要频繁的人类确认。",
+  "industryInsight": "浏览器成为 Agent 的通用执行层，电商、旅行和本地服务平台需要重新考虑机器用户。",
+  "futureOutlook": "观察支付/登录场景、反自动化策略、成功率和责任边界。",
+  "businessValue": "To C Agent 的核心指标应从使用时长转为完成任务数、节省时间和交易转化。",
+  "category": "agent-product",
+  "company": "OpenAI",
+  "keywords": [
+    "Operator",
+    "Browser Agent",
+    "CUA",
+    "To C"
+  ],
+  "confidenceScore": 98,
+  "heatScore": 0,
+  "impactScore": 95,
+  "valueScore": 94,
+  "scoreFactors": {
+    "authority": 98,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2025-01-23T00:00:00.000Z",
+  "publishedAt": "2025-01-23T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "f044cdec-7524-43e4-ac8d-610dafc3b5cc",
+  "slug": "openai-responses-agents-sdk",
+  "title": "Responses API 与 Agents SDK：OpenAI 建立 Agent 开发平台",
+  "factSummary": "OpenAI 发布 Responses API、内置 Web/File/Computer Use 工具和开源 Agents SDK。",
+  "summary": "Agent 从应用团队自组装的框架变成模型平台的标准产品层，工具、追踪和编排被纳入统一 API。",
+  "technicalInsight": "托管工具、handoff、tracing 和状态管理降低了多步 Agent 的工程门槛。",
+  "industryInsight": "模型 API 厂商开始向 Agent runtime 扩张，与开源框架和自动化平台正面竞争。",
+  "futureOutlook": "观察锁定成本、跨模型兼容、可观测性和企业权限治理。",
+  "businessValue": "To D 产品需要在开放性、行业组件或运行治理上建立差异化。",
+  "category": "developer-platform",
+  "company": "OpenAI",
+  "keywords": [
+    "Responses API",
+    "Agents SDK",
+    "工具调用",
+    "开发平台"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 95,
+  "valueScore": 97,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2025-03-11T00:00:00.000Z",
+  "publishedAt": "2025-03-11T00:00:00.000Z",
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
+},
+{
+  "id": "22cc77ce-26f0-423f-b63d-fd8562c5c1b5",
+  "slug": "openai-s-letter-to-governor-abbott-on-responsible-ai-infrastructure-in-texas-2026-08-11",
+  "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
+  "factSummary": "OpenAI sent Governor Greg Abbott a letter outlining its commitment to responsible AI infrastructure in Texas. The letter supports reliable, transparent growth that benefits Texans.",
+  "summary": "OpenAI sent Governor Greg Abbott a letter outlining its commitment to responsible AI infrastructure in Texas. The letter supports reliable, transparent growth that benefits Texans.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "openai",
+    "letter",
+    "governor",
+    "abbott",
+    "responsible",
+    "ai",
+    "infrastructure",
+    "texas"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T14:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:38.449Z",
+  "updatedAt": "2026-08-11T02:58:38.485Z"
+},
+{
   "id": "a5bfb177-13a2-4b91-bc17-c5a9a208be4e",
   "slug": "openai-to-acquire-ona-2026-07-12",
   "title": "OpenAI to acquire Ona",
@@ -250,8 +1746,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-16T17:52:04.000Z",
   "publishedAt": "2026-03-16T17:52:04.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "aa831a56-f866-401a-a0c2-e2fcb6aa120d",
@@ -272,20 +1768,20 @@
     "企业托管设置",
     "Agent"
   ],
-  "confidenceScore": 74,
-  "heatScore": 23,
+  "confidenceScore": 84,
+  "heatScore": 22,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 60,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 97,
+    "freshness": 86,
     "crossRegion": false
   },
   "status": "published",
@@ -294,7 +1790,7 @@
   "happenedAt": "2026-09-23T02:14:54.000Z",
   "publishedAt": "2026-09-23T05:19:32.559Z",
   "createdAt": "2026-09-23T05:18:42.949Z",
-  "updatedAt": "2026-09-23T05:19:32.559Z"
+  "updatedAt": "2026-09-23T17:13:23.144Z"
 },
 {
   "id": "14d09bca-1a2d-4e85-a07a-43c22abe4d09",
@@ -336,8 +1832,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-13T12:00:00.000Z",
   "publishedAt": "2024-06-13T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "7d8e4f41-ccc4-4eb3-bc3d-ecd2036b2b90",
@@ -696,8 +2192,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-29T12:00:00.000Z",
   "publishedAt": "2024-10-29T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "566fb569-499b-42a4-a2f5-1d94ebe943b2",
@@ -782,8 +2278,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-05T12:00:00.000Z",
   "publishedAt": "2025-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "10dfed32-7e8d-4ac1-9008-629a11b29033",
@@ -1358,8 +2854,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T06:02:41.000Z",
   "publishedAt": "2026-07-09T06:02:41.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "bb871ade-7949-47aa-97ab-c924defd71f8",
@@ -1942,8 +3438,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-08T12:00:00.000Z",
   "publishedAt": "2025-09-08T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "04ef5b54-240c-41af-ac4a-d7c5ec03e280",
@@ -2974,8 +4470,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-27T12:00:00.000Z",
   "publishedAt": "2022-11-27T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "9aa622fd-7db8-4b19-90d8-11a520e8550e",
@@ -3473,8 +4969,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-09T12:00:00.000Z",
   "publishedAt": "2024-05-09T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "1ed5ed44-1515-4c59-956e-8dea178d2f9a",
@@ -3698,8 +5194,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-14T00:00:00.000Z",
   "publishedAt": "2025-08-14T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "772a4315-4b17-4726-bf5e-04456d781b66",
@@ -4063,8 +5559,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-13T12:00:00.000Z",
   "publishedAt": "2024-09-13T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "07f8f535-732d-4781-889d-36908e4a8aa4",
@@ -4244,8 +5740,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-31T12:00:00.000Z",
   "publishedAt": "2024-10-31T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "61e11202-6f4e-4dba-8701-b98ae0e0be7e",
@@ -5516,8 +7012,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T09:28:06.000Z",
   "publishedAt": "2026-07-09T09:28:06.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "2d122fad-233c-490a-bc88-c79b6242fc89",
@@ -7849,8 +9345,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T12:00:00.000Z",
   "publishedAt": "2023-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "919573b4-8b7a-4148-a8ef-b6fb67fc3681",
@@ -8441,8 +9937,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-19T00:00:00.000Z",
   "publishedAt": "2024-09-19T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "006d1189-8941-42fd-a98b-3720645cc0a7",
@@ -8483,8 +9979,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-29T00:00:00.000Z",
   "publishedAt": "2025-04-29T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "a9290214-be63-4d6b-a99a-79738097db3f",
@@ -8524,8 +10020,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-03T00:00:00.000Z",
   "publishedAt": "2023-08-03T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "c9bce613-d160-46c4-a260-58b21cde26a0",
@@ -8567,8 +10063,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-24T12:00:00.000Z",
   "publishedAt": "2023-08-24T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "79ff590c-0dcd-4e1d-adb0-42e015b72f77",
@@ -8610,8 +10106,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-18T12:00:00.000Z",
   "publishedAt": "2024-09-18T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "709a4dc2-1599-4d38-a9c5-aef6e5fb04fa",
@@ -8653,8 +10149,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-14T12:00:00.000Z",
   "publishedAt": "2025-05-14T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "e7a5aff5-798a-45ab-a049-4c2752aa5bf2",
@@ -8696,8 +10192,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-26T12:00:00.000Z",
   "publishedAt": "2025-11-26T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "3ab54ff9-3037-46f4-b3f4-45082132d5c9",
@@ -9457,8 +10953,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T02:14:47.000Z",
   "publishedAt": "2026-04-02T02:14:47.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "e428c9f8-b1e1-44ea-a02a-2ca4e8777a9a",
@@ -10005,8 +11501,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-08T12:00:00.000Z",
   "publishedAt": "2025-05-08T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "27c19186-bcfd-45bc-a53e-3b13cbd24958",
@@ -10642,8 +12138,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-19T12:00:00.000Z",
   "publishedAt": "2024-11-19T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "7e00b275-1041-45e1-a2e5-2288a4027650",
@@ -10960,8 +12456,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "3303ae32-cdb3-424c-aba1-6ef95fcbfb93",
@@ -11140,8 +12636,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-20T12:00:00.000Z",
   "publishedAt": "2023-03-20T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "e2085c07-dd4d-4ed0-90c1-c902fb9e2837",
@@ -11500,8 +12996,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-03T12:00:00.000Z",
   "publishedAt": "2024-09-03T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "e8daa836-3ce4-4c60-833e-6e3fd8f06555",
@@ -12206,8 +13702,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T13:19:20.000Z",
   "publishedAt": "2026-01-20T13:19:20.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "06eea9d6-a1b2-46e2-86af-3da87baa1ba1",
@@ -13476,8 +14972,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-18T12:00:00.000Z",
   "publishedAt": "2023-12-18T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "5137c901-739b-4fd0-a77f-511031ed20d9",
@@ -13894,6 +15390,50 @@
   "updatedAt": "2026-09-16T15:45:04.978Z"
 },
 {
+  "id": "35f3d1ae-4c2b-48a2-aa5a-5d4f1276523e",
+  "slug": "ringg-s-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-2026-09-23",
+  "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+  "factSummary": "OpenAI 发布的案例显示，Ringg 使用 GPT-5.6 构建的 AI 智能体可解决最高 65% 的客户来电，覆盖语音、聊天、WhatsApp 和网页等多语言渠道，成本相比 GPT-4.1 降低 90%。",
+  "summary": "OpenAI 在官网案例中介绍 Ringg 的 AI 智能体：基于 GPT-5.6，支持多语言，覆盖语音、聊天、WhatsApp 与网页渠道，可解决最高 65% 的客户来电，且成本较 GPT-4.1 低 90%。",
+  "technicalInsight": "证据仅给出解决率与相对成本两个结果指标，未披露模型调用方式、评测口径或渠道间差异，因此无法判断 65% 是整体口径还是特定渠道口径；可验证的下一信号是 OpenAI 或 Ringg 公布分渠道解决率与成本测算方法。",
+  "industryInsight": "若该结果可复现，说明客服语音场景的智能体已具备较高自动化比例，同时单位任务成本大幅下降，可能推动更多企业把一线客服从人工转向智能体；但单一客户案例不足以代表行业整体水平。",
+  "futureOutlook": "后续可观察 Ringg 是否公开更多客户部署数据、是否扩展到新渠道或语言，以及 OpenAI 是否将 GPT-5.6 在客服场景的成本优势作为独立卖点持续披露。",
+  "businessValue": "对采购方而言，该案例提供了客服智能体在解决率与成本上的参考基准，可用于评估替代人工坐席的投入产出；但需自行验证自身业务场景下的实际解决率与总拥有成本。",
+  "category": "customer-service-agents",
+  "company": "Ringg",
+  "keywords": [
+    "Ringg",
+    "OpenAI",
+    "GPT-5.6",
+    "AI 客服",
+    "多语言智能体",
+    "成本下降"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T12:00:00.000Z",
+  "publishedAt": "2026-09-23T17:14:03.870Z",
+  "createdAt": "2026-09-23T17:13:22.242Z",
+  "updatedAt": "2026-09-23T17:14:03.870Z"
+},
+{
   "id": "e981807e-9496-4a6b-8d6d-073257597221",
   "slug": "ripple-pivot-search-active-parallel-decoding-for-diffusion-large-language-models-2026-08-13",
   "title": "Ripple-Pivot Search: Active Parallel Decoding for Diffusion Large Language Models",
@@ -14071,8 +15611,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-14T12:00:00.000Z",
   "publishedAt": "2023-09-14T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "dabac98a-88a4-4aa1-964a-18ca4b67bce6",
@@ -14296,8 +15836,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-19T12:00:00.000Z",
   "publishedAt": "2025-05-19T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "d2771579-73c3-42ca-9568-8a6236699b30",
@@ -15026,8 +16566,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-28T12:00:00.000Z",
   "publishedAt": "2023-07-28T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "2c4b6489-7297-4036-a280-8324008ae05c",
@@ -15069,8 +16609,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "ffcbff37-3611-4128-b3a7-4d6b250a9f97",
@@ -15676,9 +17216,9 @@
     "15"
   ],
   "confidenceScore": 84,
-  "heatScore": 21,
+  "heatScore": 20,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 55,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -15688,7 +17228,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 75,
+    "freshness": 58,
     "crossRegion": false
   },
   "status": "review",
@@ -15697,7 +17237,7 @@
   "happenedAt": "2026-09-21T13:32:56.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-21T18:18:08.092Z",
-  "updatedAt": "2026-09-22T17:05:45.657Z"
+  "updatedAt": "2026-09-23T17:13:23.733Z"
 },
 {
   "id": "8704c7aa-6a79-4ef3-971d-a9e6cc3dbd93",
@@ -16502,8 +18042,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-20T12:00:00.000Z",
   "publishedAt": "2025-11-20T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "330808de-1b6c-4d50-acc5-b5d2f12676b7",
@@ -16545,8 +18085,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "688fe7aa-3656-4b98-a097-7bf6998abe7e",
@@ -16818,8 +18358,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-18T12:00:00.000Z",
   "publishedAt": "2024-11-18T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "e4e22277-2fdc-4070-98c8-a80c85cde6d8",
@@ -17132,8 +18672,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-24T16:33:14.000Z",
   "publishedAt": "2026-05-24T16:33:14.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "18ed6b71-f76a-45ae-9471-77675d770065",
@@ -17265,8 +18805,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-31T12:00:00.000Z",
   "publishedAt": "2024-07-31T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "a967fe1e-cb01-4a76-a6bd-22ae332f0a3c",
@@ -17308,8 +18848,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-05T12:00:00.000Z",
   "publishedAt": "2024-03-05T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "4388f249-4f0e-4953-88e5-1eeba0e095d0",
@@ -17763,8 +19303,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -19173,8 +20713,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -19307,8 +20847,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -19716,8 +21256,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -20349,8 +21889,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -20846,8 +22386,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -21069,8 +22609,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -21204,8 +22744,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "ab3ace26-5eac-459c-a323-39b13f2698e8",
@@ -21749,8 +23289,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -21975,8 +23515,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -22246,8 +23786,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -22334,8 +23874,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -22466,8 +24006,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -23009,8 +24549,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -23371,8 +24911,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -24099,8 +25639,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -24188,8 +25728,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -24231,8 +25771,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -25007,8 +26547,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -25049,8 +26589,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -25312,8 +26852,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -26435,8 +27975,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -27522,8 +29062,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -27886,8 +29426,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -28158,8 +29698,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -28607,8 +30147,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -29381,8 +30921,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -30875,8 +32415,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -34337,8 +35877,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -34878,8 +36418,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -34967,8 +36507,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -35102,8 +36642,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -37700,8 +39240,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -38470,6 +40010,48 @@
   "updatedAt": "2026-08-17T02:14:06.494Z"
 },
 {
+  "id": "013b46ce-43e2-425e-80d7-269633607ceb",
+  "slug": "two-years-of-openai-academy-2026-09-23",
+  "title": "Two years of OpenAI Academy",
+  "factSummary": "OpenAI 发布文章《Two years of OpenAI Academy》，标记 OpenAI Academy 成立两周年，并表示将把 AI 技能带给更多社区。",
+  "summary": "OpenAI 通过官方博客回顾 OpenAI Academy 两周年，主题是 AI 技能向更多社区扩展。证据仅提供这一标题与摘要，未披露具体课程、覆盖人数、地区或合作方。",
+  "technicalInsight": "该事件不涉及模型能力或技术架构变化，属于 AI 技能普及与教育项目层面的动作；可验证的下一信号是 OpenAI 是否公布 Academy 的课程结构、参与规模或评估数据。",
+  "industryInsight": "头部模型公司正把教育项目作为生态与开发者/用户基础建设的一部分，但仅凭一条两周年公告无法判断其对行业格局的实质影响。",
+  "futureOutlook": "若后续出现参与人数、地区覆盖或与机构合作的披露，可进一步评估该项目的实际触达；否则该事件更接近品牌与社区沟通。",
+  "businessValue": "对 OpenAI 而言，Academy 可能服务于用户与开发者生态的长期培育，但当前证据不足以量化其商业回报或转化效果。",
+  "category": "ai-skills-education",
+  "company": "OpenAI Academy",
+  "keywords": [
+    "OpenAI Academy",
+    "AI 技能",
+    "社区教育",
+    "生态建设"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T16:00:00.000Z",
+  "publishedAt": "2026-09-23T17:14:03.868Z",
+  "createdAt": "2026-09-23T17:13:22.534Z",
+  "updatedAt": "2026-09-23T17:14:03.868Z"
+},
+{
   "id": "de7aa7e7-eb58-4bda-a20e-a48b88b1deb2",
   "slug": "type-iv-code-clone-detection-via-layer-wise-non-contrastive-representation-learning-2026-09-16",
   "title": "Type-IV Code Clone Detection via Layer-Wise Non-Contrastive Representation Learning",
@@ -38601,8 +40183,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -38872,8 +40454,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -41654,6 +43236,52 @@
   "updatedAt": "2026-09-19T05:13:11.836Z"
 },
 {
+  "id": "1f292e07-af38-4cfd-a650-8535c3fd9d3e",
+  "slug": "v0-30-1rc0-rocm-ci-add-mi355-dense-nvfp4-and-mori-kernel-mirrors-58281-2026-09-23",
+  "title": "v0.30.1rc0: [ROCm][CI] Add MI355 dense NVFP4 and MoRI kernel mirrors (#58281)",
+  "factSummary": "Signed-off-by: Andreas Karatzas akaratza@amd.com Co-authored-by: OpenAI Codex noreply@openai.com",
+  "summary": "Signed-off-by: Andreas Karatzas akaratza@amd.com Co-authored-by: OpenAI Codex noreply@openai.com",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v0",
+    "30",
+    "1rc0",
+    "rocm",
+    "ci",
+    "add",
+    "mi355",
+    "dense"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T08:06:15.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:22.179Z",
+  "updatedAt": "2026-09-23T17:13:22.227Z"
+},
+{
   "id": "450fde20-3eb2-4619-8a52-e6b7d6bc76f7",
   "slug": "v0-32-10-rc0-nn-speed-up-prefill-on-double-scale-nvfp4-models-2026-08-13",
   "title": "v0.32.10-rc0: nn: speed up prefill on double-scale nvfp4 models",
@@ -42351,6 +43979,49 @@
   "updatedAt": "2026-09-20T16:16:39.257Z"
 },
 {
+  "id": "645fb46f-b37e-47f7-ab28-4a521a0c84f4",
+  "slug": "v0-9-0-rc-1-2026-09-23",
+  "title": "v0.9.0-rc.1",
+  "factSummary": "Safetensors 发布 v0.9.0-rc.1，新增面向 pread 后端与 CUDA 设备的 prefetch loader，并支持 prefetch plan、从 Open::prefetch 返回 PrefetchLoader handle；发布说明称在 glm5.2 tp=8 B200 上大模型加载时间从超过 60 分钟降至 56 秒（约 60 倍），同时构建并上传 3.14t wheels，并包含 CI 与依赖锁定等改动。",
+  "summary": "Safetensors 的 v0.9.0-rc.1 版本引入 prefetch 加载机制，针对 pread 后端和 CUDA 设备优化大模型加载，发布说明给出的基准为 glm5.2 tp=8 B200 场景下加载时间由超过 60 分钟缩短至 56 秒。该版本还包含 3.14t wheels 构建上传以及多项 CI、依赖锁定和内存分配释放相关修复。",
+  "technicalInsight": "从发布说明看，prefetch 被实现为可返回句柄的加载器并支持 prefetch plan，说明其目标是把权重读取与后续计算/传输重叠，而非单纯提高磁盘吞吐。判断依据是发布说明中同时出现 prefetch loader、prefetch plan 与 PrefetchLoader handle 三项改动；可验证的下一信号是该 prefetch 路径在非 B200、非 tp=8 配置下的加载耗时数据，以及是否出现与预取相关的内存占用或分配释放问题报告。",
+  "industryInsight": "若该加载优化在更广泛硬件上可复现，会降低大模型冷启动与权重加载环节的时间成本，对依赖频繁加载大权重的推理与训练工具链有实际意义。但当前证据仅来自单一项目发布说明中的单一基准，尚不足以判断其对整体推理成本结构的影响；可验证的下一信号是第三方复现或该项目后续版本是否将 prefetch 设为默认路径。",
+  "futureOutlook": "该版本仍为 rc.1，后续需观察正式版是否保留 prefetch 默认行为、是否扩展到更多后端，以及社区是否报告加载时间与内存行为的独立测量结果。",
+  "businessValue": "对使用 safetensors 的推理与训练部署方而言，加载时间从分钟级降到秒级可减少模型切换、扩缩容和故障恢复的等待窗口，潜在价值集中在部署敏捷性与资源占用效率；但价值兑现取决于该优化在目标硬件与模型规模上的可复现性，建议以自身模型和硬件做对照测试后再纳入生产流程。",
+  "category": "model-loading-optimization",
+  "company": "safetensors",
+  "keywords": [
+    "safetensors",
+    "prefetch",
+    "CUDA",
+    "模型加载",
+    "开源发布"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T16:37:09.000Z",
+  "publishedAt": "2026-09-23T17:14:03.869Z",
+  "createdAt": "2026-09-23T17:13:22.359Z",
+  "updatedAt": "2026-09-23T17:14:03.869Z"
+},
+{
   "id": "76b47134-d080-4e99-9ecf-cb1403cbfa22",
   "slug": "v1-10-0-2026-08-06",
   "title": "v1.10.0",
@@ -42432,6 +44103,86 @@
   "publishedAt": "2026-08-13T03:20:26.514Z",
   "createdAt": "2026-08-13T03:19:42.853Z",
   "updatedAt": "2026-08-13T03:20:26.514Z"
+},
+{
+  "id": "d43f0acb-e9d3-41d3-95e9-0ae4f7e9ec87",
+  "slug": "v1-100-2-2026-09-23",
+  "title": "v1.100.2",
+  "factSummary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.100.2 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.100.2/cosign.pub \\ ghcr.io/berriai/litellm:v1.100.2 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(responses): backport mid-stream content_policy_violation fallback routing to stable/1.100.x by @devin-ai-integration [bot] in #41208 fix(bedrock): backport #41870 and the GPT-6 reasoning gate fix to stable/1.100.x for v1.100.2 by @devin-ai-integration [bot] in #42000 fix(anthropic): backport #42152 and #42288 to stable/1.100.x for v1.100.2 by @devin-ai-integration [bot] in #42532 feat(typesafe): backport #41607 to stable/1.100.x for v1.100.2 by @devin-ai-integration [bot] in #42597 Full Changelog : v1.100.1...v1.100.2",
+  "summary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.100.2 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.100.2/cosign.pub \\ ghcr.io/berriai/litellm:v1.100.2 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(responses): backport mid-stream content_policy_violation fallback routing to stable/1.100.x by @devin-ai-integration [bot] in #41208 fix(bedrock): backport #41870 and the GPT-6 reasoning gate fix to stable/1.100.x for v1.100.2 by @devin-ai-integration [bot] in #42000 fix(anthropic): backport #42152 and #42288 to stable/1.100.x for v1.100.2 by @devin-ai-integration [bot] in #42532 feat(typesafe): backport #41607 to stable/1.100.x for v1.100.2 by @devin-ai-integration [bot] in #42597 Full Changelog : v1.100.1...v1.100.2",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "100"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T06:12:15.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:24.213Z",
+  "updatedAt": "2026-09-23T17:13:24.256Z"
+},
+{
+  "id": "6d40bbdf-e4eb-41ef-af7c-5302d75d4862",
+  "slug": "v1-101-1-2026-09-23",
+  "title": "v1.101.1",
+  "factSummary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.101.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.101.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.101.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(license): backport #41684 to stable/1.101.x so a wildcard license grants auto_router by @devin-ai-integration [bot] in #41698 chore(release): bump stable/1.101.x to 1.101.1 by @devin-ai-integration [bot] in #41704 chore(release): backport #41870 to stable/1.101.x by @yuneng-berri in #42332 fix(anthropic): backport #42152 and #42288 to stable/1.101.x for v1.101.1 by @devin-ai-integration [bot] in #42533 feat(typesafe): backport #41607 to stable/1.101.x for v1.101.1 by @devin-ai-integration [bot] in #42596 Full Changelog : v1.101.0...v1.101.1",
+  "summary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.101.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.101.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.101.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(license): backport #41684 to stable/1.101.x so a wildcard license grants auto_router by @devin-ai-integration [bot] in #41698 chore(release): bump stable/1.101.x to 1.101.1 by @devin-ai-integration [bot] in #41704 chore(release): backport #41870 to stable/1.101.x by @yuneng-berri in #42332 fix(anthropic): backport #42152 and #42288 to stable/1.101.x for v1.101.1 by @devin-ai-integration [bot] in #42533 feat(typesafe): backport #41607 to stable/1.101.x for v1.101.1 by @devin-ai-integration [bot] in #42596 Full Changelog : v1.101.0...v1.101.1",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "101"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T06:12:25.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:24.161Z",
+  "updatedAt": "2026-09-23T17:13:24.205Z"
 },
 {
   "id": "c3c76b4e-2e75-4b0f-92ad-c29b8927baf1",
@@ -42516,6 +44267,46 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:13.618Z",
   "updatedAt": "2026-09-17T05:32:42.398Z"
+},
+{
+  "id": "1f1fd38e-4aab-4a14-ac6c-86f5edf285b9",
+  "slug": "v1-102-1-2026-09-23",
+  "title": "v1.102.1",
+  "factSummary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.102.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.102.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.102.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(anthropic): backport #42152 and #42288 to stable/1.102.x for v1.102.1 by @devin-ai-integration [bot] in #42538 feat(typesafe): backport the jev change set to stable/1.102.x for v1.102.1 by @devin-ai-integration [bot] in #42595 chore(release): backport #42388 and #41462 to stable/1.102.x by @devin-ai-integration [bot] in #42618 Full Changelog : v1.102.0...v1.102.1",
+  "summary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.102.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.102.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.102.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(anthropic): backport #42152 and #42288 to stable/1.102.x for v1.102.1 by @devin-ai-integration [bot] in #42538 feat(typesafe): backport the jev change set to stable/1.102.x for v1.102.1 by @devin-ai-integration [bot] in #42595 chore(release): backport #42388 and #41462 to stable/1.102.x by @devin-ai-integration [bot] in #42618 Full Changelog : v1.102.0...v1.102.1",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "102"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T06:12:28.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:24.104Z",
+  "updatedAt": "2026-09-23T17:13:24.152Z"
 },
 {
   "id": "68e13558-5482-41ac-a84e-052625dba82a",
@@ -43067,6 +44858,46 @@
   "publishedAt": null,
   "createdAt": "2026-08-11T02:58:42.721Z",
   "updatedAt": "2026-08-11T02:58:42.758Z"
+},
+{
+  "id": "58422e74-ee8a-405a-a02c-4d09c195d9bc",
+  "slug": "v1-3-0rc28-2026-09-23",
+  "title": "v1.3.0rc28",
+  "factSummary": "Highlights Known Issues Multi-node inference may fail during startup when a requested parallel mapping spans nodes or request payloads reference caller-local Python modules. Disaggregated serving may fail to start when an advertised hostname does not resolve to a bindable IPv4 address. Use a hostname that resolves to a local IPv4 interface. Qwen3.5-4B may lose accuracy with context pipeline parallelism and a different generation tensor-parallel layout. Overlapped TinyLlama disaggregated serving may return content associated with another prompt in the same request batch. Eight-rank asymmetric NIXL KV-cache transfers may fail intermittently, preventing disaggregated cache exchange. MiniMax-M3 MXFP8 inference with MSA and piecewise CUDA graphs may crash during executor initialization. Nemotron-3 Super FP8 inference may lose accuracy when using the C++ Mamba cache without attention data parallelism. Use the Python Mamba cache to avoid the affected path. DeepSeek-V4-Flash NVFP4 inference may intermittently crash with an illegal memory access while initializing the KV cache. Qwen3-30B-A3B skip-softmax attention may hang with 0.9 sparsity and FP8 KV cache. Qwen3-VL forced chunked prefill may intermittently terminate multimodal requests before generation. Two-rank tensor-parallel execution may intermittently abort while importing CUDA IPC memory handles. Model Support Extend Qwen3.8-Flash-Next with disaggregation, MegaMoE, and GVR index reuse #18921 , #19323 , #19138 Enable MiniMax-M3 Eagle3 speculation and MegaMoE CuTeDSL execution #18872 , #18605 Optimize Kimi-K3 attention-residual RMSNorm fusion and KDA cache alignment #19182 Enable Nemotron multimodal KVCM2 and Transformers 5.13 checkpoint loading #19140 , #19168 Expand Qwen-Image attention backends and Cosmos3 Edge Diffusers parity #18147 , #19097 API Remove deprecated TensorRT serve, evaluation, benchmark, and stress paths (BREAKING) #19022 , #19021 , #18850 Remove the deprecated Eagle choices configuration field (BR…",
+  "summary": "Highlights Known Issues Multi-node inference may fail during startup when a requested parallel mapping spans nodes or request payloads reference caller-local Python modules. Disaggregated serving may fail to start when an advertised hostname does not resolve to a bindable IPv4 address. Use a hostname that resolves to a local IPv4 interface. Qwen3.5-4B may lose accuracy with context pipeline parallelism and a different generation tensor-parallel layout. Overlapped TinyLlama disaggregated serving may return content associated with another prompt in the same request batch. Eight-rank asymmetric NIXL KV-cache transfers may fail intermittently, preventing disaggregated cache exchange. MiniMax-M3 MXFP8 inference with MSA and piecewise CUDA graphs may crash during executor initialization. Nemotron-3 Super FP8 inference may lose accuracy when using the C++ Mamba cache without attention data parallelism. Use the Python Mamba cache to avoid the affected path. DeepSeek-V4-Flash NVFP4 inference may intermittently crash with an illegal memory access while initializing the KV cache. Qwen3-30B-A3B skip-softmax attention may hang with 0.9 sparsity and FP8 KV cache. Qwen3-VL forced chunked prefill may intermittently terminate multimodal requests before generation. Two-rank tensor-parallel execution may intermittently abort while importing CUDA IPC memory handles. Model Support Extend Qwen3.8-Flash-Next with disaggregation, MegaMoE, and GVR index reuse #18921 , #19323 , #19138 Enable MiniMax-M3 Eagle3 speculation and MegaMoE CuTeDSL execution #18872 , #18605 Optimize Kimi-K3 attention-residual RMSNorm fusion and KDA cache alignment #19182 Enable Nemotron multimodal KVCM2 and Transformers 5.13 checkpoint loading #19140 , #19168 Expand Qwen-Image attention backends and Cosmos3 Edge Diffusers parity #18147 , #19097 API Remove deprecated TensorRT serve, evaluation, benchmark, and stress paths (BREAKING) #19022 , #19021 , #18850 Remove the deprecated Eagle choices configuration field (BR…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "0rc28"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T06:34:35.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:24.051Z",
+  "updatedAt": "2026-09-23T17:13:24.095Z"
 },
 {
   "id": "e47204d5-4c97-4346-b8f0-1cc44534a6ff",
@@ -44814,6 +46645,46 @@
   "publishedAt": null,
   "createdAt": "2026-08-14T03:18:11.271Z",
   "updatedAt": "2026-08-16T13:07:32.743Z"
+},
+{
+  "id": "ec5b78b0-60bc-486c-b7a5-067ac102125a",
+  "slug": "v1-99-3-2026-09-23",
+  "title": "v1.99.3",
+  "factSummary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.99.3 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.99.3/cosign.pub \\ ghcr.io/berriai/litellm:v1.99.3 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed chore(release): backport #41230 to stable/1.99.x and cut 1.99.2 by @yuneng-berri in #41323 fix(anthropic): backport #42152 and #42288 to stable/1.99.x for v1.99.2 by @devin-ai-integration [bot] in #42531 feat(typesafe): backport #41607 to stable/1.99.x for v1.99.2 by @devin-ai-integration [bot] in #42598 chore(release): bump stable/1.99.x to 1.99.3 by @devin-ai-integration [bot] in #42682 Full Changelog : v1.99.1...v1.99.3",
+  "summary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.99.3 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.99.3/cosign.pub \\ ghcr.io/berriai/litellm:v1.99.3 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed chore(release): backport #41230 to stable/1.99.x and cut 1.99.2 by @yuneng-berri in #41323 fix(anthropic): backport #42152 and #42288 to stable/1.99.x for v1.99.2 by @devin-ai-integration [bot] in #42531 feat(typesafe): backport #41607 to stable/1.99.x for v1.99.2 by @devin-ai-integration [bot] in #42598 chore(release): bump stable/1.99.x to 1.99.3 by @devin-ai-integration [bot] in #42682 Full Changelog : v1.99.1...v1.99.3",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "99"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 30,
+  "impactScore": 55,
+  "valueScore": 65,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T07:10:52.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:23.948Z",
+  "updatedAt": "2026-09-23T17:13:23.993Z"
 },
 {
   "id": "2bcedc68-4dc9-475d-abc5-390e2c86098e",
@@ -47661,20 +49532,20 @@
     "v3",
     "225"
   ],
-  "confidenceScore": 74,
-  "heatScore": 22,
+  "confidenceScore": 84,
+  "heatScore": 21,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 57,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 90,
+    "freshness": 70,
     "crossRegion": false
   },
   "status": "review",
@@ -47683,7 +49554,7 @@
   "happenedAt": "2026-09-22T06:36:00.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-22T17:05:45.874Z",
-  "updatedAt": "2026-09-22T17:05:45.912Z"
+  "updatedAt": "2026-09-23T17:13:23.361Z"
 },
 {
   "id": "13768a33-ca82-47ba-a58a-35b8ef0b23fb",
@@ -48734,6 +50605,86 @@
   "updatedAt": "2026-09-21T18:18:52.901Z"
 },
 {
+  "id": "50ef41c1-ed8a-4220-ab3c-f841f4d406f3",
+  "slug": "v4-42-0-2026-09-23",
+  "title": "v4.42.0",
+  "factSummary": "What's Changed refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17749 fix(web): trace page panels fill the window width by @nmtrang29 in #17714 refactor(web): reroute remaining feature deep imports through index.ts by @nkabardin in #17753 feat: trace messages internal preview by @marliessophie in #17648 fix(web): antialiased body text by @nmtrang29 in #17756 refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17760 fix(web): remove unused surveys.create tRPC route by @Steffen911 in #17768 chore: bump clickhouse test version to 26.9 by @Steffen911 in #17769 refactor(web): Migrate llm connections table to design-system components by @bezbac in #17732 feat(ai-gateway): accept Anthropic connections in the resolution contract by @hassiebp in #17754 chore(worker): extract OTEL event processing by @sumerman in #17736 fix(ui): clarify selected controls and suspend inactive menus by @nkabardin in #17739 refactor(web): reroute leftover long-tail feature deep imports through index.ts by @nkabardin in #17762 refactor(web): reroute leftover dual-use feature deep imports through server doors by @nkabardin in #17770 feat(trace): Simplify trace and observation actions by @bezbac in #17737 feat(evals): decision-model evaluators with TypeSafe Jev (experimental) by @hassiebp in #17733 fix(ui): keep nested dropdowns inside narrow viewports by @nkabardin in #17776 fix(ai-gateway): update container bases to Debian Trixie by @hassiebp in #17773 feat(annotations): unify score editing and review state by @nkabardin in #17740 feat(comments): refresh conversations and stabilize overlay state by @nkabardin in #17744 feat(normalize-io): use normalized parser in GA for single trace UI by @marliessophie in #17729 feat(review): embed comments and annotation beside traces and sessions by @nkabardin in #17745 feat(web): add regional demo redirect by @annabellscha in #15483 feat(datasets): unify item editors and preserve batc…",
+  "summary": "What's Changed refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17749 fix(web): trace page panels fill the window width by @nmtrang29 in #17714 refactor(web): reroute remaining feature deep imports through index.ts by @nkabardin in #17753 feat: trace messages internal preview by @marliessophie in #17648 fix(web): antialiased body text by @nmtrang29 in #17756 refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17760 fix(web): remove unused surveys.create tRPC route by @Steffen911 in #17768 chore: bump clickhouse test version to 26.9 by @Steffen911 in #17769 refactor(web): Migrate llm connections table to design-system components by @bezbac in #17732 feat(ai-gateway): accept Anthropic connections in the resolution contract by @hassiebp in #17754 chore(worker): extract OTEL event processing by @sumerman in #17736 fix(ui): clarify selected controls and suspend inactive menus by @nkabardin in #17739 refactor(web): reroute leftover long-tail feature deep imports through index.ts by @nkabardin in #17762 refactor(web): reroute leftover dual-use feature deep imports through server doors by @nkabardin in #17770 feat(trace): Simplify trace and observation actions by @bezbac in #17737 feat(evals): decision-model evaluators with TypeSafe Jev (experimental) by @hassiebp in #17733 fix(ui): keep nested dropdowns inside narrow viewports by @nkabardin in #17776 fix(ai-gateway): update container bases to Debian Trixie by @hassiebp in #17773 feat(annotations): unify score editing and review state by @nkabardin in #17740 feat(comments): refresh conversations and stabilize overlay state by @nkabardin in #17744 feat(normalize-io): use normalized parser in GA for single trace UI by @marliessophie in #17729 feat(review): embed comments and annotation beside traces and sessions by @nkabardin in #17745 feat(web): add regional demo redirect by @annabellscha in #15483 feat(datasets): unify item editors and preserve batc…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "42"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T07:19:33.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:23.891Z",
+  "updatedAt": "2026-09-23T17:13:23.940Z"
+},
+{
+  "id": "19356d36-f46d-4c4d-980d-85c182956658",
+  "slug": "v4-43-0-2026-09-23",
+  "title": "v4.43.0",
+  "factSummary": "What's Changed Features feat(members): filter project and organization members by role by @hassiebp in #17810 feat(scores): Allow creating scores from annotation sidebar by @bezbac in #17815 feat(feature-flags): introduce internal view mode and related components by @marliessophie in #17816 feat(evals): route TypeSafe decision-model connections through OpenRouter or Vercel AI Gateway by @hassiebp in #17798 Fixes fix(scim): scope Users/{id} reads and mutations to the caller's org by @Steffen911 in #17828 fix(web): Formatted / Raw toggle on the observation Attributes tab by @nmtrang29 in #17712 fix(web): type scale carries line-height, whole-pixel sizes by @nmtrang29 in #17658 fix(web): trace page title is the trace id by @nmtrang29 in #17710 fix(web): no usage badge on observations without usage by @nmtrang29 in #17708 fix(web): system message keeps one expand control by @nmtrang29 in #17623 fix(web): tree metrics heatmap update by @nmtrang29 in #17619 fix(web): one compact badge, primary and outline, sharper corners by @nmtrang29 in #17609 fix(normalized-io): langfuse plugin rendering by @marliessophie in #17820 fix(settings): Add small gap between nav items by @bezbac in #17814 fix(settings): Use badge for project role in invites table by @bezbac in #17825 perf(fts): decide the token prefilter at build time, not with an OR by @niklassemmler in #17724 Chores refactor(web): Migrate api key table to design-system components by @bezbac in #17791 refactor(web): Replace some legacy dropdowns with DropdownMenu by @bezbac in #17790 refactor(web): Migrate verified domains settings table to design system by @bezbac in #17823 chore(assistant): switch to opus 5.5 by @nimarb in #17819 Full Changelog : v4.42.0...v4.43.0",
+  "summary": "What's Changed Features feat(members): filter project and organization members by role by @hassiebp in #17810 feat(scores): Allow creating scores from annotation sidebar by @bezbac in #17815 feat(feature-flags): introduce internal view mode and related components by @marliessophie in #17816 feat(evals): route TypeSafe decision-model connections through OpenRouter or Vercel AI Gateway by @hassiebp in #17798 Fixes fix(scim): scope Users/{id} reads and mutations to the caller's org by @Steffen911 in #17828 fix(web): Formatted / Raw toggle on the observation Attributes tab by @nmtrang29 in #17712 fix(web): type scale carries line-height, whole-pixel sizes by @nmtrang29 in #17658 fix(web): trace page title is the trace id by @nmtrang29 in #17710 fix(web): no usage badge on observations without usage by @nmtrang29 in #17708 fix(web): system message keeps one expand control by @nmtrang29 in #17623 fix(web): tree metrics heatmap update by @nmtrang29 in #17619 fix(web): one compact badge, primary and outline, sharper corners by @nmtrang29 in #17609 fix(normalized-io): langfuse plugin rendering by @marliessophie in #17820 fix(settings): Add small gap between nav items by @bezbac in #17814 fix(settings): Use badge for project role in invites table by @bezbac in #17825 perf(fts): decide the token prefilter at build time, not with an OR by @niklassemmler in #17724 Chores refactor(web): Migrate api key table to design-system components by @bezbac in #17791 refactor(web): Replace some legacy dropdowns with DropdownMenu by @bezbac in #17790 refactor(web): Migrate verified domains settings table to design system by @bezbac in #17823 chore(assistant): switch to opus 5.5 by @nimarb in #17819 Full Changelog : v4.42.0...v4.43.0",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "43"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T13:06:20.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:23.369Z",
+  "updatedAt": "2026-09-23T17:13:23.413Z"
+},
+{
   "id": "a5b488ba-7f4b-4b4f-872c-2cf6f805a25b",
   "slug": "v4-spike-final-2026-08-10",
   "title": "v4-spike-final",
@@ -49146,6 +51097,46 @@
   "publishedAt": null,
   "createdAt": "2026-09-23T05:18:43.903Z",
   "updatedAt": "2026-09-23T05:18:43.949Z"
+},
+{
+  "id": "f9d6d07b-c3a0-4056-93f5-8b4b85febea2",
+  "slug": "v7-23-0-2026-09-23",
+  "title": "v7.23.0",
+  "factSummary": "7.23.0 (2026-09-23) Features api: add GCP external storage support ( #2794 ) ( 7cd0629 ) api: add GPT-Rosalind research model ( #2792 ) ( d0e6fcd ) Chores api: document exact Chat Completions seed bounds ( #2796 ) ( 13b844f )",
+  "summary": "7.23.0 (2026-09-23) Features api: add GCP external storage support ( #2794 ) ( 7cd0629 ) api: add GPT-Rosalind research model ( #2792 ) ( d0e6fcd ) Chores api: document exact Chat Completions seed bounds ( #2796 ) ( 13b844f )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v7",
+    "23"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T07:07:18.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T17:13:24.001Z",
+  "updatedAt": "2026-09-23T17:13:24.043Z"
 },
 {
   "id": "3b42405c-ae80-4d10-a351-fdf96fb03866",
@@ -50556,8 +52547,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -50828,8 +52819,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -51187,8 +53178,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -51230,8 +53221,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -51453,8 +53444,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -51680,8 +53671,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -51769,8 +53760,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -55020,8 +57011,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -55658,8 +57649,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -56192,8 +58183,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -56236,8 +58227,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -56640,8 +58631,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -56683,8 +58674,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -56726,8 +58717,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -56769,8 +58760,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-23T05:14:10.084Z",
-  "updatedAt": "2026-09-23T05:14:10.084Z"
+  "createdAt": "2026-09-23T17:08:52.258Z",
+  "updatedAt": "2026-09-23T17:08:52.258Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
