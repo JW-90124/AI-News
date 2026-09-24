@@ -719,9 +719,9 @@
     "release cadence"
   ],
   "confidenceScore": 84,
-  "heatScore": 22,
+  "heatScore": 21,
   "impactScore": 55,
-  "valueScore": 60,
+  "valueScore": 59,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -731,7 +731,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 88,
+    "freshness": 78,
     "crossRegion": false
   },
   "status": "published",
@@ -740,7 +740,7 @@
   "happenedAt": "2026-09-23T17:08:54.000Z",
   "publishedAt": "2026-09-23T17:14:03.870Z",
   "createdAt": "2026-09-23T17:13:22.306Z",
-  "updatedAt": "2026-09-24T05:33:34.973Z"
+  "updatedAt": "2026-09-24T17:20:53.207Z"
 },
 {
   "id": "b1b60404-bf7f-4e0c-93a5-fabf98c5a807",
@@ -4767,6 +4767,49 @@
   "updatedAt": "2026-07-22T14:31:34.475Z"
 },
 {
+  "id": "e8eac334-b8fc-425b-85c5-2b629fe61a38",
+  "slug": "accelerating-vision-language-models-with-lfm2-5-vl-dspark-2026-09-24",
+  "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+  "factSummary": "Hugging Face 博客发布了一篇题为 Accelerating vision-language models with LFM2.5-VL-DSpark 的文章，发布时间为 2026-09-24T14:08:57.000Z，来源为 Hugging Face。",
+  "summary": "Hugging Face 博客出现一篇关于加速视觉语言模型的文章，标题指向 LFM2.5-VL-DSpark。除标题、来源与发布时间外，证据未提供模型参数、加速幅度、评测结果或部署细节。",
+  "technicalInsight": "从标题可判断该工作聚焦视觉语言模型的推理或训练加速，但证据未披露具体方法（如蒸馏、量化、稀疏化或架构改动），因此无法确认技术路线。可验证的下一信号是博客正文是否给出与基线模型的延迟、吞吐或精度对比数据。",
+  "industryInsight": "视觉语言模型加速属于多模态落地的成本与效率环节，若该工作可复现，可能影响多模态推理的单位成本。但当前仅有标题级信息，尚不足以判断其对竞争格局的实际影响。",
+  "futureOutlook": "后续可关注该模型或方法是否在 Hugging Face 上开放权重与代码、是否被第三方评测复现，以及是否出现配套的推理框架集成。",
+  "businessValue": "若加速效果可验证，潜在价值在于降低多模态推理的算力开销，利好需要图像理解能力的应用场景；在缺少量化指标前，该价值仍属假设。",
+  "category": "vision-language-model-acceleration",
+  "company": "LFM2.5-VL-DSpark",
+  "keywords": [
+    "LFM2.5-VL-DSpark",
+    "vision-language model",
+    "model acceleration",
+    "Hugging Face",
+    "LiquidAI"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T14:08:57.000Z",
+  "publishedAt": "2026-09-24T17:21:39.673Z",
+  "createdAt": "2026-09-24T17:20:52.635Z",
+  "updatedAt": "2026-09-24T17:21:39.673Z"
+},
+{
   "id": "094df20c-0ac5-410a-a809-7f4cd7b5f687",
   "slug": "accuracy-and-order-sensitivity-diverge-under-label-free-strategies-2026-08-13",
   "title": "Accuracy and Order Sensitivity Diverge Under Label-Free Strategies",
@@ -5536,8 +5579,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-02T15:54:39.000Z",
   "publishedAt": "2026-06-02T15:54:39.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "1e91a3e0-bcf7-4df1-bb39-58488134beb5",
@@ -5809,6 +5852,50 @@
   "publishedAt": null,
   "createdAt": "2026-08-10T03:05:11.957Z",
   "updatedAt": "2026-08-10T03:05:11.993Z"
+},
+{
+  "id": "d30e8a6a-82e8-4b0a-b668-2c812a162066",
+  "slug": "aderant-builds-intelligent-ticket-triage-with-amazon-nova-2026-09-24",
+  "title": "Aderant builds intelligent ticket triage with Amazon Nova",
+  "factSummary": "Aderant 在 Amazon Bedrock 上使用 Amazon Nova Lite 构建了智能工单分诊系统，用于其云运营团队，自动化上下文收集、分类、路由和知识补充。",
+  "summary": "AWS Machine Learning Blog 发布案例，介绍 Aderant 基于 Amazon Nova Lite（通过 Amazon Bedrock）构建智能工单分诊系统，覆盖上下文收集、分类、路由与知识补充环节，服务对象为其云运营团队。",
+  "technicalInsight": "该案例显示，工单分诊这类流程化任务可通过托管模型服务实现多步骤自动化，但证据未披露准确率、延迟或人工介入比例，实际效果仍需验证。可观察的下一信号是 Aderant 或 AWS 是否公布分诊准确率、处理量或人工复核率等运行指标。",
+  "industryInsight": "企业服务软件厂商将内部运营流程接入托管大模型，是 AI 落地从通用助手转向具体工作流的信号之一；但单一案例不足以判断行业普遍采用程度。可观察的下一信号是同类厂商是否发布可比的工单自动化案例。",
+  "futureOutlook": "若该模式在云运营场景中稳定运行，工单分诊可能成为企业服务厂商的标准化 AI 应用模块；反之，若缺乏公开效果数据，其可复制性仍待观察。",
+  "businessValue": "对 Aderant 而言，该系统的潜在价值在于降低云运营团队的工单处理人工成本并缩短路由时间；对 AWS 而言，该案例可作为 Amazon Nova 与 Bedrock 在企业工作流场景的参考。具体收益需以公开指标为准。",
+  "category": "enterprise-workflow-automation",
+  "company": "Aderant",
+  "keywords": [
+    "Aderant",
+    "Amazon Nova Lite",
+    "Amazon Bedrock",
+    "ticket triage",
+    "cloud operations",
+    "workflow automation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T16:06:46.000Z",
+  "publishedAt": "2026-09-24T17:21:39.676Z",
+  "createdAt": "2026-09-24T17:20:52.519Z",
+  "updatedAt": "2026-09-24T17:21:39.676Z"
 },
 {
   "id": "a30d16cf-897a-4c03-945f-1507ec14ca51",
@@ -6473,8 +6560,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-06T00:50:33.000Z",
   "publishedAt": "2026-02-06T00:50:33.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "18b48c1a-2c9d-470d-a191-a67427f8b3f0",
@@ -6515,8 +6602,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-07T18:37:26.000Z",
   "publishedAt": "2026-01-07T18:37:26.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "3ab7bb31-8c17-420a-a7a8-9185bb597a17",
@@ -7324,8 +7411,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-05T08:24:16.000Z",
   "publishedAt": "2026-01-05T08:24:16.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f648bae5-77d7-45a5-b762-f47a4f116c25",
@@ -8136,8 +8223,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-30T12:14:15.000Z",
   "publishedAt": "2026-04-30T12:14:15.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "e9e105c0-f70b-43fa-a959-7d94f1b09dcc",
@@ -8224,8 +8311,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-20T12:00:00.000Z",
   "publishedAt": "2024-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "caa76a47-f43b-4842-9a10-e6cfe4379a8f",
@@ -8350,7 +8437,7 @@
     "platformBreadth": 1,
     "regionBreadth": 1,
     "velocity": 0,
-    "freshness": 11,
+    "freshness": 10,
     "crossRegion": false
   },
   "status": "review",
@@ -8359,7 +8446,7 @@
   "happenedAt": "2026-09-15T12:48:44.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:07.674Z",
-  "updatedAt": "2026-09-24T05:33:37.781Z"
+  "updatedAt": "2026-09-24T17:20:53.523Z"
 },
 {
   "id": "41a1d7dd-11c4-40c6-ae2d-c39d41bce7c1",
@@ -8442,8 +8529,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-05T12:00:00.000Z",
   "publishedAt": "2023-10-05T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "39478b1d-d856-40e5-a117-239d0a76734d",
@@ -8484,8 +8571,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-27T03:26:43.000Z",
   "publishedAt": "2026-05-27T03:26:43.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "581fee8b-24ad-4347-a6ec-f510ad629406",
@@ -8526,8 +8613,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T22:57:24.000Z",
   "publishedAt": "2026-06-16T22:57:24.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "35a6a9bc-5c34-46b5-a7f6-28b5435bb293",
@@ -8568,8 +8655,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-25T00:00:00.000Z",
   "publishedAt": "2026-03-25T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4ca87382-a13f-4c62-a351-3266ba438d0f",
@@ -8611,8 +8698,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-10T12:00:00.000Z",
   "publishedAt": "2025-04-10T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "91853b4a-4b39-4d55-b36c-b13b5e7672dc",
@@ -11839,8 +11926,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-20T12:00:00.000Z",
   "publishedAt": "2023-10-20T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "2eecce1a-13ec-4912-9054-72599c919a94",
@@ -12334,8 +12421,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-16T12:00:00.000Z",
   "publishedAt": "2025-06-16T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "a44cef97-a546-4836-a411-abda3a60f184",
@@ -12377,8 +12464,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "845a5f15-2bf3-440e-a91d-d78f94ec466f",
@@ -12420,8 +12507,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-25T00:00:00.000Z",
   "publishedAt": "2023-09-25T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b59438e8-9add-4ce3-a832-969e1fa088cd",
@@ -12463,8 +12550,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-22T00:00:00.000Z",
   "publishedAt": "2024-11-22T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "6697afbe-0ad7-4b6b-ba23-b9d1468f1d18",
@@ -14125,8 +14212,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-06T00:00:00.000Z",
   "publishedAt": "2026-07-06T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "00ee4bfe-3813-411f-ac47-a9035ec3b18a",
@@ -14168,8 +14255,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-05T00:00:00.000Z",
   "publishedAt": "2026-03-05T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "ea3a35b9-191a-4478-ab6f-071f0d5fe840",
@@ -14211,8 +14298,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T00:00:00.000Z",
   "publishedAt": "2023-05-23T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "265e0297-3bfe-41d0-a776-b4160e5fb171",
@@ -14254,8 +14341,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-03T00:00:00.000Z",
   "publishedAt": "2025-03-03T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "8956c17b-b714-42b5-a78d-cabc195db6b5",
@@ -14296,8 +14383,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-28T00:00:00.000Z",
   "publishedAt": "2026-05-28T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9df322f3-109a-4c61-bf8a-325e43fe4729",
@@ -14385,8 +14472,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-03T12:00:00.000Z",
   "publishedAt": "2022-11-03T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4d1ac05e-1639-4a72-822f-6956aa275517",
@@ -16825,8 +16912,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-16T12:00:00.000Z",
   "publishedAt": "2023-08-16T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "0210b32f-5796-41a0-8ed9-785fbd8d3480",
@@ -17367,8 +17454,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:25:44.000Z",
   "publishedAt": "2026-07-09T08:25:44.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "8d42d409-d762-4263-aedf-cb426832728c",
@@ -32002,6 +32089,318 @@
   "updatedAt": "2026-09-24T05:34:26.179Z"
 },
 {
+  "id": "305cd357-c25c-420a-907a-9a796d6ed4cf",
+  "slug": "b11153-2026-09-24",
+  "title": "b11153",
+  "factSummary": "hexagon: reject MUL_MAT_ID when src1 precision is F32 ( #29348 ) Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49757881 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "summary": "hexagon: reject MUL_MAT_ID when src1 precision is F32 ( #29348 ) Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49757881 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11153"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T06:17:43.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:53.271Z",
+  "updatedAt": "2026-09-24T17:20:53.316Z"
+},
+{
+  "id": "a7a40863-8db1-46e2-b3a0-365c1bda2a4a",
+  "slug": "b11154-2026-09-24",
+  "title": "b11154",
+  "factSummary": "test-save-load-state : print a per-model results table in --models mode ( #29316 ) test-save-load-state : print a per-model results table in --models mode in --models mode the output was very heavy: every model printed its token dumps, per-test headers and PASS lines. instead, silence all logging except the table itself (common_log_set_verbosity_thold(0) leaves only LOG / LOG_LEVEL_OUTPUT) and print one row per model with one column per test, colored PASS/FAIL/SKIP cells, row by row. run_save_load_tests_for_model returns a test_suite with a dynamic std::vector and continues past failures: tests 3-5 are SKIPped when the baseline (test 1) fails, model init failure skips all per-test token dumps, test headers and PASS lines are demoted to LOGV(LOG_LEVEL_INFO, ...) so they still show in single-model mode the table header/rows derive their columns from test_names; the model name is printed and flushed before the suite runs so the model currently in flight is always visible single-model output and exit codes are unchanged Assisted-by: pi:llama.cpp/Qwen3.8-27B test-save-load-state : print example usage on -h add a print_usage callback passed to common_params_parse, so -h/--help also shows example commands for the tool-specific --models option and the -lv verbosity level Assisted-by: pi:llama.cpp/Qwen3.8-27B test-save-load-state : remove comments ref: #29316 Assisted-by: pi:llama.cpp/Qwen3.8-27B Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49764361 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adr…",
+  "summary": "test-save-load-state : print a per-model results table in --models mode ( #29316 ) test-save-load-state : print a per-model results table in --models mode in --models mode the output was very heavy: every model printed its token dumps, per-test headers and PASS lines. instead, silence all logging except the table itself (common_log_set_verbosity_thold(0) leaves only LOG / LOG_LEVEL_OUTPUT) and print one row per model with one column per test, colored PASS/FAIL/SKIP cells, row by row. run_save_load_tests_for_model returns a test_suite with a dynamic std::vector and continues past failures: tests 3-5 are SKIPped when the baseline (test 1) fails, model init failure skips all per-test token dumps, test headers and PASS lines are demoted to LOGV(LOG_LEVEL_INFO, ...) so they still show in single-model mode the table header/rows derive their columns from test_names; the model name is printed and flushed before the suite runs so the model currently in flight is always visible single-model output and exit codes are unchanged Assisted-by: pi:llama.cpp/Qwen3.8-27B test-save-load-state : print example usage on -h add a print_usage callback passed to common_params_parse, so -h/--help also shows example commands for the tool-specific --models option and the -lv verbosity level Assisted-by: pi:llama.cpp/Qwen3.8-27B test-save-load-state : remove comments ref: #29316 Assisted-by: pi:llama.cpp/Qwen3.8-27B Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49764361 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adr…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11154"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T06:51:51.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:53.217Z",
+  "updatedAt": "2026-09-24T17:20:53.262Z"
+},
+{
+  "id": "287caeef-e1d8-49e0-a918-8f8a857ed237",
+  "slug": "b11155-2026-09-24",
+  "title": "b11155",
+  "factSummary": "server,common : fix the GCC 12 stringop-overread false positive (again) ( #29325 ) Signed-off-by: Adrien Gallouët angt@huggingface.co Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49775037 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "summary": "server,common : fix the GCC 12 stringop-overread false positive (again) ( #29325 ) Signed-off-by: Adrien Gallouët angt@huggingface.co Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49775037 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11155"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T07:42:22.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:53.161Z",
+  "updatedAt": "2026-09-24T17:20:53.207Z"
+},
+{
+  "id": "717e62ce-cd6a-4f13-a155-67e2fa80929f",
+  "slug": "b11156-2026-09-24",
+  "title": "b11156",
+  "factSummary": "model : add Ling 3.0 VL support ( #29151 ) model : fold Ling 3.0 VL into the BailingMoeV3 architecture Assisted-by: Scout model : keep shared NORM rope list intact when gating bailingmoe3 on mrope sections Co-authored-by: aetherbird aetherbird@users.noreply.github.com Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49780861 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "summary": "model : add Ling 3.0 VL support ( #29151 ) model : fold Ling 3.0 VL into the BailingMoeV3 architecture Assisted-by: Scout model : keep shared NORM rope list intact when gating bailingmoe3 on mrope sections Co-authored-by: aetherbird aetherbird@users.noreply.github.com Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49780861 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11156"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T08:12:16.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:53.106Z",
+  "updatedAt": "2026-09-24T17:20:53.152Z"
+},
+{
+  "id": "b6d47bb0-a41a-48ec-be89-eaa37f3e3bfd",
+  "slug": "b11157-2026-09-24",
+  "title": "b11157",
+  "factSummary": "cuda : add conv3d with implicit GEMM ( #29137 ) cuda : add conv3d with implicit GEMM cuda : refine conv3d implicit GEMM and handle empty kernels Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49789544 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "summary": "cuda : add conv3d with implicit GEMM ( #29137 ) cuda : add conv3d with implicit GEMM cuda : refine conv3d implicit GEMM and handle empty kernels Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49789544 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11157"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T08:49:01.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:52.996Z",
+  "updatedAt": "2026-09-24T17:20:53.041Z"
+},
+{
+  "id": "77530685-c082-4b30-a4f5-c5e24932211e",
+  "slug": "b11158-2026-09-24",
+  "title": "b11158",
+  "factSummary": "vulkan: tune KHR cooperative matrix support for Adreno GPUs ( #29328 ) Enable coopmat support for Vulkan backend Fixed the mul_mat_s Removed the debug statement Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49831613 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "summary": "vulkan: tune KHR cooperative matrix support for Adreno GPUs ( #29328 ) Enable coopmat support for Vulkan backend Fixed the mul_mat_s Removed the debug statement Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49831613 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11158"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 94,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T11:43:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:52.872Z",
+  "updatedAt": "2026-09-24T17:20:52.924Z"
+},
+{
+  "id": "17e372b0-c269-47ca-a21c-d215943f3e38",
+  "slug": "b11159-2026-09-24",
+  "title": "b11159",
+  "factSummary": "vulkan: handle misalignment in conv_2d and conv_3d ( #29365 ) vulkan: handle misalignment in conv_2d and conv_3d fix test-backend-ops print Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49846182 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "summary": "vulkan: handle misalignment in conv_2d and conv_3d ( #29365 ) vulkan: handle misalignment in conv_2d and conv_3d fix test-backend-ops print Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/49846182 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11159"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 95,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T12:40:34.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:52.809Z",
+  "updatedAt": "2026-09-24T17:20:52.852Z"
+},
+{
+  "id": "bc620ad9-fb70-40b8-a4ef-29683e245992",
+  "slug": "b11160-2026-09-24",
+  "title": "b11160",
+  "factSummary": "vulkan: int8 coopmat1 matmul implementation for AMD RDNA3 and RDNA4 ( #27952 ) vulkan: add int8 coopmat quantized matmul shader apply scales inline use scalar sums probe and directly access coopmat values instead of going through shmem add q8_0 support add BK_STEP to shader, default to 2 use larger workgroups double buffering preload scales coopmat load first, then wmma use float for scales add faster RDNA int->float conversion workgroup scheduling for cache proximity clean up use wave32 restructure for vgpr use skip computation for inactive tiles only force subgroup size 32 on AMD RDNA use BK_STEP 4 fix compilation move quant-specific prefetch function out of main file add q4_1, q5_0, q5_1 support restructure mmq cm1 functions enable mul_mat_id support fix segfault fix mul_mat_id bug support iq4_nl and mxfp4 remove elem row/col fast path, invalid for RDNA4 use shmem arrays for LUTs use 4-byte loads where possible add q3_k, q4_k, q5_k, q6_k and nvfp4 support fix l warptile improve performance improve performance improvements dedup b scales merge shmem arrays undo uint8_t, gate to RDNA3/4 add RDNA4 architecture, use for hardcoded coopmat elem thread access, set BK_STEP back to 4 improve offset application clean up fix iq4_nl and nvfp4 performance rdna4 tuning use BK_STEP 2 on MUL_MAT_ID adapt to upstream changes fix shmem support function, clean up comments fix warptile logic Co-authored-by: Piotr Wilkin (ilintar) piotr.wilkin@syndatis.com vulkan: add IQ4_XS support to the coopmat1 integer matmul shader ( #28440 ) Adds IQ4_XS to mul_mmq_cm1: dedicated block_a_load/block_a_to_shmem that expand both nibbles of each packed32 word through cm1_kvalues, LOAD_VEC_A 8 and an IQ4_XS-sized a_panel_bytes estimate for the L2-friendly scheduling. Assisted-by: OpenAI Codex Co-authored-by: Claude Opus 5 (1M context) noreply@anthropic.com avoid compiling f16 acc shader variants Co-authored-by: Piotr Wilkin (ilintar) piotr.wilkin@syndatis.com Co-authored-by: Claude Opus 5 (1M contex…",
+  "summary": "vulkan: int8 coopmat1 matmul implementation for AMD RDNA3 and RDNA4 ( #27952 ) vulkan: add int8 coopmat quantized matmul shader apply scales inline use scalar sums probe and directly access coopmat values instead of going through shmem add q8_0 support add BK_STEP to shader, default to 2 use larger workgroups double buffering preload scales coopmat load first, then wmma use float for scales add faster RDNA int->float conversion workgroup scheduling for cache proximity clean up use wave32 restructure for vgpr use skip computation for inactive tiles only force subgroup size 32 on AMD RDNA use BK_STEP 4 fix compilation move quant-specific prefetch function out of main file add q4_1, q5_0, q5_1 support restructure mmq cm1 functions enable mul_mat_id support fix segfault fix mul_mat_id bug support iq4_nl and mxfp4 remove elem row/col fast path, invalid for RDNA4 use shmem arrays for LUTs use 4-byte loads where possible add q3_k, q4_k, q5_k, q6_k and nvfp4 support fix l warptile improve performance improve performance improvements dedup b scales merge shmem arrays undo uint8_t, gate to RDNA3/4 add RDNA4 architecture, use for hardcoded coopmat elem thread access, set BK_STEP back to 4 improve offset application clean up fix iq4_nl and nvfp4 performance rdna4 tuning use BK_STEP 2 on MUL_MAT_ID adapt to upstream changes fix shmem support function, clean up comments fix warptile logic Co-authored-by: Piotr Wilkin (ilintar) piotr.wilkin@syndatis.com vulkan: add IQ4_XS support to the coopmat1 integer matmul shader ( #28440 ) Adds IQ4_XS to mul_mmq_cm1: dedicated block_a_load/block_a_to_shmem that expand both nibbles of each packed32 word through cm1_kvalues, LOAD_VEC_A 8 and an IQ4_XS-sized a_panel_bytes estimate for the L2-friendly scheduling. Assisted-by: OpenAI Codex Co-authored-by: Claude Opus 5 (1M context) noreply@anthropic.com avoid compiling f16 acc shader variants Co-authored-by: Piotr Wilkin (ilintar) piotr.wilkin@syndatis.com Co-authored-by: Claude Opus 5 (1M contex…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11160"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T13:53:59.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:52.690Z",
+  "updatedAt": "2026-09-24T17:20:52.734Z"
+},
+{
   "id": "2284f83c-8506-4e71-934f-e81c38461644",
   "slug": "b5130-2026-09-16",
   "title": "b5130",
@@ -32172,8 +32571,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-19T12:00:00.000Z",
   "publishedAt": "2023-09-19T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "374fb9de-c9af-43e5-a114-2ef1e490d0ed",
@@ -32215,8 +32614,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-12T00:00:00.000Z",
   "publishedAt": "2026-01-12T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "fb59ea1d-2e59-4042-be66-b116d3550e7d",
@@ -33608,8 +34007,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-20T09:25:30.000Z",
   "publishedAt": "2026-04-20T09:25:30.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "ab478788-9d81-4f65-8857-56a04cb72956",
@@ -34018,8 +34417,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-03T12:00:00.000Z",
   "publishedAt": "2025-12-03T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "67eab650-c207-4640-b89b-3063fcf77e8c",
@@ -35802,8 +36201,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-27T12:00:00.000Z",
   "publishedAt": "2024-03-27T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4ddbf48f-9b6e-4ab0-9e99-6e58b09cf56a",
@@ -35890,8 +36289,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T11:05:17.000Z",
   "publishedAt": "2026-07-09T11:05:17.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b0be7c58-d89a-4d4b-a69c-010d4c7a3228",
@@ -35933,8 +36332,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-30T12:00:00.000Z",
   "publishedAt": "2023-01-30T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "623d933e-c5b9-49ac-abb8-f20c599e431f",
@@ -35976,8 +36375,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-09T12:00:00.000Z",
   "publishedAt": "2022-11-09T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "2d3edde5-5129-4d79-a98a-a31781f9c19d",
@@ -36019,8 +36418,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-30T12:00:00.000Z",
   "publishedAt": "2023-03-30T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "3377d9f5-ffc0-434e-ad7c-7260f03dfcca",
@@ -36964,6 +37363,50 @@
   "publishedAt": null,
   "createdAt": "2026-07-30T03:51:13.450Z",
   "updatedAt": "2026-07-30T03:51:13.479Z"
+},
+{
+  "id": "8a3e76a9-44e4-4b67-88ce-bf9b14494df0",
+  "slug": "build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp-2026-09-24",
+  "title": "Build a multi-account AI agent with AgentCore Gateway and MCP",
+  "factSummary": "AWS Machine Learning Blog 发布了一篇题为《Build a multi-account AI agent with AgentCore Gateway and MCP》的文章。文章描述了一种多账户架构：每个团队的数据保留在各自的 AWS 账户中，同时让 AI agent 能够统一跨账户查询。中央平台账户使用 Amazon Bedrock AgentCore Gateway 和 MCP 运行 agent，业务线账户将数据以 MCP server 形式暴露，并提供安全的跨账户访问与细粒度授权。",
+  "summary": "AWS 博客介绍了一种基于 Amazon Bedrock AgentCore Gateway 与 MCP 的多账户 AI agent 架构：平台账户集中运行 agent，各业务线账户以 MCP server 暴露数据，通过跨账户访问与细粒度授权实现统一查询，同时保持数据分账户隔离。",
+  "technicalInsight": "该方案把 MCP 作为跨账户数据暴露的接口层，把 AgentCore Gateway 作为集中式 agent 入口，架构上以账户边界替代数据集中化。判断依据是证据中明确提到的 MCP server、跨账户访问与细粒度授权三要素；但证据未给出延迟、吞吐、授权模型细节或部署代码，因此其工程可行性尚不可从输入验证。可验证下一信号：AWS 是否发布该架构的参考实现、CDK/Terraform 模板或授权策略示例。",
+  "industryInsight": "这反映出企业级 agent 落地的一个方向：不把数据搬到 agent 侧，而是让 agent 通过标准协议跨账户访问数据，以适配企业既有的账户隔离与权限治理。判断基于证据中平台账户与业务线账户的分工描述；证据未提供采用方、客户案例或性能数据，因此不能推断市场采用程度。可验证下一信号：是否有企业公开披露采用该模式，或 AWS 是否将其纳入正式产品文档而非博客示例。",
+  "futureOutlook": "若该模式被产品化，跨账户 MCP 授权与审计可能成为 agent 平台的标准能力。此为推断而非事实。可验证下一信号：AgentCore Gateway 是否新增多账户或跨账户授权的正式功能说明，以及 MCP 生态是否出现对应的授权规范。",
+  "businessValue": "对企业而言，该架构的潜在价值在于让 agent 在不合并数据的前提下跨团队查询，降低数据集中带来的合规与治理成本。该判断基于证据中数据保留在各自账户的描述；证据未提供成本、效率或合规收益的量化数据。可验证下一信号：AWS 是否发布该架构的成本或治理对比数据，或客户是否公开其落地效果。",
+  "category": "multi-account-agent-architecture",
+  "company": "Amazon Bedrock AgentCore Gateway",
+  "keywords": [
+    "AgentCore Gateway",
+    "MCP",
+    "multi-account",
+    "Amazon Bedrock",
+    "cross-account access",
+    "fine-grained authorization"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T16:12:47.000Z",
+  "publishedAt": "2026-09-24T17:21:39.677Z",
+  "createdAt": "2026-09-24T17:20:52.464Z",
+  "updatedAt": "2026-09-24T17:21:39.677Z"
 },
 {
   "id": "fa54f9f9-df33-4e8b-9acb-12a60fdd2895",
@@ -38909,8 +39352,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-01T12:00:00.000Z",
   "publishedAt": "2025-01-01T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "03912337-bcdb-4ccb-88d8-5a4aaa0e7cca",
@@ -40359,8 +40802,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T02:51:43.000Z",
   "publishedAt": "2026-07-09T02:51:43.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "51ee6c44-6d0c-4dd5-ae00-7bfb24ad5444",
@@ -40494,8 +40937,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-04T12:00:00.000Z",
   "publishedAt": "2025-08-04T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "bab7b813-ee69-43dd-a0d8-05f6d56b7b6e",
@@ -40856,8 +41299,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-17T00:00:00.000Z",
   "publishedAt": "2025-07-17T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "832bb1fe-6f21-433f-a3ea-8fc0e9e6958c",
@@ -40943,8 +41386,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-23T00:00:00.000Z",
   "publishedAt": "2023-03-23T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b541966a-9efa-4886-a5b0-d4cbff6aa87d",
@@ -40985,8 +41428,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-30T00:00:00.000Z",
   "publishedAt": "2022-11-30T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "0a349513-d302-4d91-a3fe-8e9ec582cbbb",
@@ -41026,8 +41469,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-01T00:00:00.000Z",
   "publishedAt": "2023-03-01T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "caa7d11b-3098-442d-afdd-ab830a08d440",
@@ -41252,8 +41695,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-13T00:00:00.000Z",
   "publishedAt": "2023-07-13T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "6ae40cb8-e1c1-4ab4-b709-6580f57db0cb",
@@ -41747,8 +42190,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-11T00:00:00.000Z",
   "publishedAt": "2023-07-11T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "c38063ad-13b8-47b3-a64d-56b1b909511e",
@@ -41789,8 +42232,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-24T00:00:00.000Z",
   "publishedAt": "2025-02-24T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "dd96da4a-eda4-41b0-a8d0-c46f6f07a5e5",
@@ -41831,8 +42274,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-22T00:00:00.000Z",
   "publishedAt": "2025-05-22T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "6babbba4-c95a-4718-abcf-3d0b0f064cbb",
@@ -41873,8 +42316,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-22T00:00:00.000Z",
   "publishedAt": "2024-10-22T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "11e8097c-d4f1-4dad-a02d-80170b858d13",
@@ -41915,8 +42358,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-22T00:00:00.000Z",
   "publishedAt": "2026-01-22T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "bcea1aa5-1d45-4d48-b27f-8e83bf110249",
@@ -42003,8 +42446,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-09T17:00:00.000Z",
   "publishedAt": "2026-06-09T17:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "51e6d67d-ddef-4ae7-af7f-aa17df6b8845",
@@ -42090,8 +42533,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-16T00:00:00.000Z",
   "publishedAt": "2026-04-16T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "d1836bf6-bf45-443b-b713-38e9e2dfdc0d",
@@ -42502,9 +42945,9 @@
     "hook 注入"
   ],
   "confidenceScore": 91,
-  "heatScore": 31,
+  "heatScore": 27,
   "impactScore": 55,
-  "valueScore": 66,
+  "valueScore": 59,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 40,
@@ -42514,7 +42957,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 98,
+    "freshness": 53,
     "crossRegion": false
   },
   "status": "published",
@@ -42523,7 +42966,7 @@
   "happenedAt": "2026-09-22T03:50:22.000Z",
   "publishedAt": "2026-09-22T05:30:58.063Z",
   "createdAt": "2026-09-22T05:30:08.522Z",
-  "updatedAt": "2026-09-22T05:30:58.063Z"
+  "updatedAt": "2026-09-24T17:20:53.319Z"
 },
 {
   "id": "fc4f7798-2784-4a86-8727-4ec7b4773c9d",
@@ -43549,8 +43992,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T00:00:00.000Z",
   "publishedAt": "2025-10-06T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "09bc6ad2-7c43-4910-8d84-fe775fc5bfae",
@@ -43776,8 +44219,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-20T00:00:00.000Z",
   "publishedAt": "2026-05-20T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9d33c665-099e-42d4-9ac3-19e1cdf0a630",
@@ -44367,8 +44810,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:32:31.000Z",
   "publishedAt": "2026-07-09T08:32:31.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "062bb10e-9318-441d-9ae9-25818a4ff4b1",
@@ -44736,6 +45179,52 @@
   "publishedAt": null,
   "createdAt": "2026-09-17T05:32:39.654Z",
   "updatedAt": "2026-09-17T05:32:39.688Z"
+},
+{
+  "id": "7428b4bf-7698-494c-9b2d-8930be8f1a6c",
+  "slug": "compressing-streaming-neural-audio-encoders-via-latent-space-distillation-2026-09-24",
+  "title": "Compressing Streaming Neural Audio Encoders via Latent-Space Distillation",
+  "factSummary": "System-wide Dictation on Apple devices runs entirely on-device, and the speech it transcribes reaches the foundation model through a tokenizer: an encoder that maps short windows of waveform onto the representation the language model reads. Because that model is sparsely activated under Instruction-Following Pruning, only a small subset of its experts occupies DRAM at any time, so the always-on tokenizer competes for the same memory, and its parameter count bears directly on power and latency. In this work we study how to compress such a tokenizer by distillation, taking as the supervision...",
+  "summary": "System-wide Dictation on Apple devices runs entirely on-device, and the speech it transcribes reaches the foundation model through a tokenizer: an encoder that maps short windows of waveform onto the representation the language model reads. Because that model is sparsely activated under Instruction-Following Pruning, only a small subset of its experts occupies DRAM at any time, so the always-on tokenizer competes for the same memory, and its parameter count bears directly on power and latency. In this work we study how to compress such a tokenizer by distillation, taking as the supervision...",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "compressing",
+    "streaming",
+    "neural",
+    "audio",
+    "encoders",
+    "via",
+    "latent",
+    "space"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 83,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T00:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:52.290Z",
+  "updatedAt": "2026-09-24T17:20:52.339Z"
 },
 {
   "id": "de2ab76b-18f4-4f07-b899-6b8960464b2c",
@@ -45547,8 +46036,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-17T12:00:00.000Z",
   "publishedAt": "2023-08-17T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "eda60406-9727-4404-80b1-73ddf0006434",
@@ -46001,8 +46490,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "3d5ae51d-5fb5-4064-ba88-c807438ec6ca",
@@ -46537,8 +47026,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-10T12:00:00.000Z",
   "publishedAt": "2023-02-10T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "00026850-aa85-43ae-b31b-5f30717f228d",
@@ -47390,6 +47879,50 @@
   "publishedAt": null,
   "createdAt": "2026-09-24T05:33:39.352Z",
   "updatedAt": "2026-09-24T05:33:39.401Z"
+},
+{
+  "id": "768dd314-05e0-44f2-8d6f-2a0c819ba21a",
+  "slug": "coreweave-mission-control-agent-brings-operational-intelligence-to-ai-workloads-2026-09-24",
+  "title": "CoreWeave Mission Control Agent Brings Operational Intelligence to AI Workloads",
+  "factSummary": "CoreWeave 发布 Mission Control，将前沿规模运维经验引入 AI 运营；其中 MCP 已正式可用（generally available），Agent 处于控制台预览（console preview）阶段。",
+  "summary": "CoreWeave 在官方博客宣布 Mission Control，定位为面向 AI 工作负载的运营智能；MCP 已正式可用，Agent 以控制台预览形式提供。",
+  "technicalInsight": "从证据看，该产品把运维能力拆为两层：已 GA 的 MCP 与预览中的 Agent，暗示 CoreWeave 试图以协议层加代理层组合承载 AI 工作负载的运营任务；但证据未披露具体能力、指标或集成范围，实际自动化程度仍需验证。可验证下一信号：官方文档或更新日志是否给出 MCP 的接口规范与 Agent 的可用功能清单。",
+  "industryInsight": "AI 基础设施厂商正从提供算力转向提供运营层工具，CoreWeave 此举可能加剧云与 GPU 云在运维体验上的竞争；但仅凭一篇博客无法判断其相对同类产品的差异。可验证下一信号：是否出现客户案例、定价或与第三方监控/编排工具的集成公告。",
+  "futureOutlook": "若 MCP 与 Agent 按预览节奏推进，CoreWeave 可能将运营智能作为差异化卖点；反之若长期停留在预览，则更接近营销性发布。可验证下一信号：Agent 从 console preview 转为 GA 的时间点及配套文档。",
+  "businessValue": "对使用 CoreWeave 的 AI 团队，运营智能若落地可降低大规模工作负载的运维负担，并可能增强平台粘性；但证据未提供效率或成本数据，商业价值目前属推断。可验证下一信号：官方是否公布采用数据、SLA 变化或与运营指标挂钩的案例。",
+  "category": "ai-infrastructure-operations",
+  "company": "CoreWeave Mission Control",
+  "keywords": [
+    "CoreWeave",
+    "Mission Control",
+    "MCP",
+    "Agent",
+    "AI 工作负载",
+    "运营智能"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T15:43:24.000Z",
+  "publishedAt": "2026-09-24T17:21:39.676Z",
+  "createdAt": "2026-09-24T17:20:52.576Z",
+  "updatedAt": "2026-09-24T17:21:39.676Z"
 },
 {
   "id": "dc671e96-cf2f-48a0-8ba2-95c204adbbb3",
@@ -48303,8 +48836,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-16T12:00:00.000Z",
   "publishedAt": "2025-08-16T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "84b3d6ff-7b09-43e2-b145-22338710009a",
@@ -49108,8 +49641,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-11T03:59:07.000Z",
   "publishedAt": "2026-06-11T03:59:07.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "de2db8d2-eee3-4521-ac59-854b96728927",
@@ -49514,8 +50047,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-29T12:00:00.000Z",
   "publishedAt": "2023-09-29T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "023ea585-909b-46a1-8d8f-224b227b8264",
@@ -50236,8 +50769,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-22T10:20:03.000Z",
   "publishedAt": "2026-04-22T10:20:03.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "e7318a89-3503-4061-b347-3d2ab2fe2dae",
@@ -50968,8 +51501,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T19:46:42.000Z",
   "publishedAt": "2026-05-21T19:46:42.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9e0f0679-fad3-45f7-a504-972c805f9ac8",
@@ -51010,8 +51543,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-20T00:00:00.000Z",
   "publishedAt": "2025-01-20T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f1a8acca-31c4-4a90-ab2f-de98aa5e8f35",
@@ -51053,8 +51586,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-02T12:00:00.000Z",
   "publishedAt": "2025-12-02T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "21f4c505-332c-4c6e-ad8c-953e35619366",
@@ -51095,8 +51628,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T00:00:00.000Z",
   "publishedAt": "2024-12-26T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "045f272b-1acb-4dcb-8a71-d78edff6db95",
@@ -51230,8 +51763,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-08T12:00:00.000Z",
   "publishedAt": "2024-03-08T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f6f02a7b-6fae-4cde-ac72-b42b13d979b9",
@@ -51273,8 +51806,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-13T12:00:00.000Z",
   "publishedAt": "2024-12-13T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "fe10fafa-7745-44c9-833f-1a46724d22ce",
@@ -51539,8 +52072,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-17T00:33:32.000Z",
   "publishedAt": "2026-04-17T00:33:32.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "2b33eb84-c57a-40b9-8e9d-5cbd920ca0ca",
@@ -52038,8 +52571,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "73fb3151-5fee-47e0-af99-5d7d1b871013",
@@ -52127,8 +52660,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-02T12:00:00.000Z",
   "publishedAt": "2024-10-02T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "1a9f83dd-7d76-4ebf-8bbf-56b2cce0f3a2",
@@ -52311,6 +52844,52 @@
   "publishedAt": "2026-09-21T05:37:14.700Z",
   "createdAt": "2026-09-21T05:36:22.413Z",
   "updatedAt": "2026-09-21T05:37:14.700Z"
+},
+{
+  "id": "cadc6728-c28f-4ef0-9300-76685cb94322",
+  "slug": "designing-agent-first-platforms-what-changes-when-agents-do-the-work-2026-09-24",
+  "title": "Designing agent-first platforms: What changes when agents do the work",
+  "factSummary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appeared first on Microsoft Azure Blog .",
+  "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appeared first on Microsoft Azure Blog .",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "designing",
+    "agent",
+    "first",
+    "platforms",
+    "what",
+    "changes",
+    "when",
+    "agents"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 76,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T15:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:53.415Z",
+  "updatedAt": "2026-09-24T17:20:53.460Z"
 },
 {
   "id": "0b5e3d62-35e5-4678-93ff-2652ee2214bf",
@@ -52667,6 +53246,47 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:11.044Z",
   "updatedAt": "2026-09-19T05:12:29.793Z"
+},
+{
+  "id": "8637e98a-84b8-4091-946f-231cf3ff5952",
+  "slug": "desktop-v0-0-35-2026-09-24",
+  "title": "Desktop v0.0.35",
+  "factSummary": "Cline Desktop now runs on Linux. Each release ships x64 .deb and .rpm packages alongside the macOS and Windows builds. Open folder... uses the native GTK picker, and updates download in the background and install when you choose Restart now , so you are never hit with a surprise password prompt. There is no AppImage for now Plugin slash commands now work in the desktop app. Commands a plugin registers, like /goal , used to be sent to the model as plain text; they now run the plugin's handler, show its reply, and start a turn only when the command asks for one. Enabled plugin commands appear in the slash menu, skills and workflows in that menu now come from the conversation's own workspace (including worktrees), and a broken plugin no longer makes every slash prompt fail Settings has a new Diagnostics row. Export... writes a single text file to your Downloads folder with the app version, OS, settings, recent sidecar and hub logs, and the manifests of the sessions you pick. API keys, credential-shaped values, your prompts, and your home directory path are stripped, so the file is safe to attach to a GitHub issue Voice input works again with provider-backed transcription, and it streams live. OpenAI, Vercel AI Gateway, and ElevenLabs transcribe as you speak; when the network drops mid-recording, the app falls back to the browser's recognizer and retries the provider next time. The model picker labels which voice models are realtime and which transcribe recordings Your reasoning effort choice is now remembered per provider. Reopening a session reset the thinking picker to Low, and that Low was sent with your next message; switching providers now applies the effort you last picked for that provider Model lists for LiteLLM, Baseten, Hicap, Poolside, Ollama, and LM Studio now show the actual error when your endpoint can't be reached, instead of an empty list or a placeholder model. The app also trusts your operating system's certificate store, so endpoints signed by a cor…",
+  "summary": "Cline Desktop now runs on Linux. Each release ships x64 .deb and .rpm packages alongside the macOS and Windows builds. Open folder... uses the native GTK picker, and updates download in the background and install when you choose Restart now , so you are never hit with a surprise password prompt. There is no AppImage for now Plugin slash commands now work in the desktop app. Commands a plugin registers, like /goal , used to be sent to the model as plain text; they now run the plugin's handler, show its reply, and start a turn only when the command asks for one. Enabled plugin commands appear in the slash menu, skills and workflows in that menu now come from the conversation's own workspace (including worktrees), and a broken plugin no longer makes every slash prompt fail Settings has a new Diagnostics row. Export... writes a single text file to your Downloads folder with the app version, OS, settings, recent sidecar and hub logs, and the manifests of the sessions you pick. API keys, credential-shaped values, your prompts, and your home directory path are stripped, so the file is safe to attach to a GitHub issue Voice input works again with provider-backed transcription, and it streams live. OpenAI, Vercel AI Gateway, and ElevenLabs transcribe as you speak; when the network drops mid-recording, the app falls back to the browser's recognizer and retries the provider next time. The model picker labels which voice models are realtime and which transcribe recordings Your reasoning effort choice is now remembered per provider. Reopening a session reset the thinking picker to Low, and that Low was sent with your next message; switching providers now applies the effort you last picked for that provider Model lists for LiteLLM, Baseten, Hicap, Poolside, Ollama, and LM Studio now show the actual error when your endpoint can't be reached, instead of an empty list or a placeholder model. The app also trusts your operating system's certificate store, so endpoints signed by a cor…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "desktop",
+    "v0",
+    "35"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T08:34:33.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T17:20:53.050Z",
+  "updatedAt": "2026-09-24T17:20:53.095Z"
 },
 {
   "id": "e8bfeddd-e770-47f1-af9d-81344fa3b345",
@@ -55020,8 +55640,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-03T12:00:00.000Z",
   "publishedAt": "2024-12-03T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9bbe19b9-9942-4b2d-8e86-0cf4974e834c",
@@ -55428,8 +56048,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-14T12:00:00.000Z",
   "publishedAt": "2023-04-14T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "dd038fde-eb2b-4aa0-aa0c-4be22028e95f",
@@ -55471,8 +56091,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-29T12:00:00.000Z",
   "publishedAt": "2023-05-29T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4ef951a3-0605-4713-a617-2acbe2f49b25",
@@ -56328,8 +56948,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-26T12:00:00.000Z",
   "publishedAt": "2023-06-26T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "cfb212b4-ec40-4a9b-b7c7-608066080441",
@@ -57964,8 +58584,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-10T12:00:00.000Z",
   "publishedAt": "2023-01-10T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "79d8677d-f6a7-4ad1-bcd4-91081615ba07",
@@ -58099,8 +58719,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-18T12:00:00.000Z",
   "publishedAt": "2025-07-18T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "5c5d12a7-43ef-4b5a-82ad-d86e735df83e",
@@ -60200,8 +60820,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-28T12:00:00.000Z",
   "publishedAt": "2025-08-28T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "fea70116-c8d0-4a4d-a742-0944f9f21498",
@@ -61883,8 +62503,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T00:00:00.000Z",
   "publishedAt": "2025-06-30T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "ec54d6ff-f681-45dc-afdc-8339729b75d2",
@@ -62155,8 +62775,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T00:00:00.000Z",
   "publishedAt": "2024-08-01T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "95e4c302-743b-4b46-a62a-8c684fc28588",
@@ -64882,8 +65502,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-30T12:00:00.000Z",
   "publishedAt": "2023-01-30T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f7f57402-0265-4d1c-a553-763768838854",
@@ -65246,8 +65866,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-28T12:00:00.000Z",
   "publishedAt": "2023-11-28T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "6bfbf2d2-6d8e-45bb-9825-fabbd676249d",
@@ -66478,8 +67098,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-12T12:00:00.000Z",
   "publishedAt": "2024-06-12T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "84b920c3-e9f6-4e55-a6e2-625e935fb313",
@@ -68259,8 +68879,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-10T12:00:00.000Z",
   "publishedAt": "2023-11-10T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "15369fdc-ab68-47db-85c2-379b9ac94a85",
@@ -70360,8 +70980,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-07T12:00:00.000Z",
   "publishedAt": "2024-11-07T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "cbc80403-7e51-4a73-8943-bd072d0718bc",
@@ -70861,8 +71481,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-16T12:00:00.000Z",
   "publishedAt": "2022-11-16T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4afd3c18-fdc1-4435-8b55-b893dc0f7aec",
@@ -71315,8 +71935,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-06T00:00:00.000Z",
   "publishedAt": "2023-12-06T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9a3e110e-fafb-4be5-b74b-541e67cec23c",
@@ -71399,8 +72019,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-25T00:00:00.000Z",
   "publishedAt": "2025-03-25T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "efde5ec2-6528-4a1a-ae90-cd4c7611f28f",
@@ -71441,8 +72061,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-11T00:00:00.000Z",
   "publishedAt": "2024-12-11T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b6375882-e125-49e6-9f4d-5d0414ab45b9",
@@ -71620,8 +72240,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-24T16:30:01.000Z",
   "publishedAt": "2026-06-24T16:30:01.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "8cdb9f6b-1d7a-4c65-a92d-5fb80509c5fc",
@@ -71662,8 +72282,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-15T22:50:12.000Z",
   "publishedAt": "2026-05-15T22:50:12.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "46e63991-566b-4972-ad91-a049b923c848",
@@ -71927,8 +72547,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-19T12:00:00.000Z",
   "publishedAt": "2023-12-19T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "6ee45d01-59e6-4364-ada2-18e73c244e82",
@@ -71969,8 +72589,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:50:57.000Z",
   "publishedAt": "2026-05-17T19:50:57.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f2ae67c4-1fa7-4343-a4de-ddbc5b94ba4b",
@@ -72012,8 +72632,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-25T12:00:00.000Z",
   "publishedAt": "2025-03-25T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "e462afdc-4b8d-480b-afb3-f788c0d2b0b6",
@@ -72099,8 +72719,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-13T15:52:13.000Z",
   "publishedAt": "2026-04-13T15:52:13.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "879d2132-ad69-4144-af0e-5a2264e6a2e2",
@@ -72187,8 +72807,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-09T14:10:19.000Z",
   "publishedAt": "2026-06-09T14:10:19.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "49c16a9d-c7af-4eb9-a967-ea7a08ec9b09",
@@ -72229,8 +72849,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T16:00:49.000Z",
   "publishedAt": "2026-04-02T16:00:49.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "dbb709b7-e3d9-47ea-860d-2e16bcaa5bcb",
@@ -72318,8 +72938,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-28T12:00:00.000Z",
   "publishedAt": "2023-11-28T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b27d4900-a206-4aca-be9f-78c98cb56f41",
@@ -72634,8 +73254,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-07T12:00:00.000Z",
   "publishedAt": "2023-04-07T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "70684eec-cdf9-459d-820b-6270ec1aed3b",
@@ -72723,8 +73343,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-11T12:00:00.000Z",
   "publishedAt": "2025-02-11T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "7b325f0a-0221-4333-9ab8-4f4afc79d4d0",
@@ -74285,8 +74905,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-14T00:00:00.000Z",
   "publishedAt": "2025-04-14T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "5cd05654-1893-49bb-ad32-b99ea1c4294c",
@@ -74329,8 +74949,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-28T00:00:00.000Z",
   "publishedAt": "2025-07-28T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4d5503ab-6e90-415e-a1be-471762cad398",
@@ -74373,8 +74993,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-30T00:00:00.000Z",
   "publishedAt": "2025-09-30T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "cefc2c52-fd83-4ae1-a3cd-a4b633af9e60",
@@ -74417,8 +75037,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-08T00:00:00.000Z",
   "publishedAt": "2025-12-08T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "51d0159e-03e0-46a0-abc2-8e814b021821",
@@ -74461,8 +75081,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-22T00:00:00.000Z",
   "publishedAt": "2025-12-22T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "3775a9da-e7ca-4bf4-a367-f6c75255b6a8",
@@ -74505,8 +75125,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-07T00:00:00.000Z",
   "publishedAt": "2026-04-07T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "688304eb-2b05-4c16-a400-42a45b696da3",
@@ -74549,8 +75169,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "e0d942a6-f37a-4277-a95a-a45c5a381e3e",
@@ -74593,8 +75213,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-12T00:00:00.000Z",
   "publishedAt": "2026-02-12T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "2f9c9ec7-0f69-4d28-9a77-c97a1280e8ac",
@@ -74774,8 +75394,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-20T12:00:00.000Z",
   "publishedAt": "2023-09-20T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "0e3e1d81-95d0-4e68-a46b-59e80f7f79df",
@@ -74816,8 +75436,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-09T00:00:00.000Z",
   "publishedAt": "2025-04-09T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4fd7dddd-71c4-46e8-a007-df128c2d5495",
@@ -74859,8 +75479,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-21T12:00:00.000Z",
   "publishedAt": "2025-08-21T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "ad6e6b75-6a74-46a9-ae5f-29ecc45bdc95",
@@ -74901,8 +75521,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:43:45.000Z",
   "publishedAt": "2026-05-17T19:43:45.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "8a844569-7392-4bd3-8368-17b9792e3beb",
@@ -75205,8 +75825,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b6021647-489f-4a6e-aef3-95615c2f0661",
@@ -75247,8 +75867,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-20T19:30:00.000Z",
   "publishedAt": "2026-05-20T19:30:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9aac5367-87dd-4bed-aa29-336431094e4d",
@@ -75290,8 +75910,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-21T00:00:00.000Z",
   "publishedAt": "2026-04-21T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "25fe69a5-a0ca-427c-ae25-656de0da5ae3",
@@ -75333,8 +75953,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-17T12:00:00.000Z",
   "publishedAt": "2025-09-17T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "83bc008f-9083-4013-a6af-daf1252c1faa",
@@ -75374,8 +75994,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-14T00:00:00.000Z",
   "publishedAt": "2023-03-14T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "005d08ee-310d-4c16-accb-e9dea26546b2",
@@ -75458,8 +76078,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-23T00:00:00.000Z",
   "publishedAt": "2026-04-23T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "104d8a19-a1ab-450f-ad20-a6f79104903b",
@@ -75500,8 +76120,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:00:00.000Z",
   "publishedAt": "2026-07-09T08:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "fa87aed3-c07c-4f95-aff3-332417a74348",
@@ -75542,8 +76162,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T10:00:00.000Z",
   "publishedAt": "2026-07-09T10:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "79126618-11b2-4298-aa1f-5217f4907cd2",
@@ -75584,8 +76204,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-07T00:00:00.000Z",
   "publishedAt": "2025-08-07T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "c07211a1-477a-4a95-b2b2-ffe238030b57",
@@ -75671,8 +76291,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T08:00:00.000Z",
   "publishedAt": "2026-07-08T08:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b3ea7a0c-3b31-408b-a008-3821cfb50263",
@@ -76171,8 +76791,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-24T12:00:00.000Z",
   "publishedAt": "2022-12-24T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "0b121f2f-6731-45b9-a5c5-b4255a70ab88",
@@ -76579,8 +77199,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-17T00:00:00.000Z",
   "publishedAt": "2024-03-17T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "ca5cc455-54ea-4f7e-a118-641368d6740c",
@@ -76623,8 +77243,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-12T00:00:00.000Z",
   "publishedAt": "2024-12-12T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "2bc6b3e5-1703-4bec-aba6-1937ab390f06",
@@ -76667,8 +77287,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-19T00:00:00.000Z",
   "publishedAt": "2025-02-19T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4eca2546-7819-4bb7-a03e-2485b3a5d6e2",
@@ -76711,8 +77331,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-19T00:00:00.000Z",
   "publishedAt": "2025-11-19T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "6ac01b5a-3320-4564-a760-bf9eae72cbd0",
@@ -76755,8 +77375,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-10T00:00:00.000Z",
   "publishedAt": "2026-03-10T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "6954baba-333f-48d3-aab7-c2c04a458ff9",
@@ -76799,8 +77419,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-17T00:00:00.000Z",
   "publishedAt": "2026-06-17T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "633cde19-e03c-4d26-aeab-366622054490",
@@ -76843,8 +77463,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T00:00:00.000Z",
   "publishedAt": "2026-07-08T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "654b6dc6-38e3-4ef5-8019-3d7bf42ea544",
@@ -76975,8 +77595,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T00:00:00.000Z",
   "publishedAt": "2025-07-09T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "2f9a1562-2e8d-4dc3-a6e1-dc7dc20b7590",
@@ -77019,8 +77639,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-25T00:00:00.000Z",
   "publishedAt": "2026-05-25T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "12e89b08-cd8f-42a1-a03c-54be36252310",
@@ -77474,8 +78094,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-07T12:00:00.000Z",
   "publishedAt": "2024-10-07T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f695da29-0bee-4ff1-9ec7-f1521ef6aaa8",
@@ -77838,8 +78458,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-28T12:00:00.000Z",
   "publishedAt": "2022-12-28T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "592f62dd-f3d6-4b80-a1b4-8206fabbbbcc",
@@ -79104,8 +79724,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-23T12:00:00.000Z",
   "publishedAt": "2024-06-23T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "c2403129-3e51-4c2f-8bae-ec818fc7ea0c",
@@ -79790,8 +80410,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "ac6e09c3-5429-42e7-9a23-27865e580dfb",
@@ -82925,8 +83545,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-30T12:00:00.000Z",
   "publishedAt": "2023-03-30T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "c886e1a5-d2af-4d4a-9b24-21c339d31e34",
@@ -83290,8 +83910,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-01T00:00:00.000Z",
   "publishedAt": "2025-09-01T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "7ee9255e-7aa3-4f15-ae95-d77c41a89ea8",
@@ -83333,8 +83953,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-21T12:00:00.000Z",
   "publishedAt": "2025-01-21T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "40505a10-0ce8-420b-b35d-b7bb585c6b8d",
@@ -84147,8 +84767,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-15T00:00:00.000Z",
   "publishedAt": "2025-01-15T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "fbdb6ecc-4f30-4fc9-82a3-934616c9cbab",
@@ -84782,8 +85402,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-10T12:00:00.000Z",
   "publishedAt": "2024-01-10T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "27b4fc91-c6ea-43d7-b578-fc013b1a65a2",
@@ -85320,8 +85940,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T12:00:00.000Z",
   "publishedAt": "2023-11-06T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f0c5a10a-c2f6-4b23-bf64-68d23eb913be",
@@ -86982,7 +87602,7 @@
   "confidenceScore": 100,
   "heatScore": 61,
   "impactScore": 55,
-  "valueScore": 64,
+  "valueScore": 63,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 100,
@@ -86992,7 +87612,7 @@
     "platformBreadth": 2,
     "regionBreadth": 1,
     "velocity": 0,
-    "freshness": 12,
+    "freshness": 11,
     "crossRegion": false
   },
   "status": "review",
@@ -87001,7 +87621,7 @@
   "happenedAt": "2026-09-15T17:05:57.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:04.225Z",
-  "updatedAt": "2026-09-24T05:33:35.714Z"
+  "updatedAt": "2026-09-24T17:20:53.815Z"
 },
 {
   "id": "39dfa06b-32ce-40dd-8a0d-c5acd2974c36",
@@ -89040,8 +89660,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-09T12:00:00.000Z",
   "publishedAt": "2023-06-09T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "0c686d19-dc1a-4280-bd2f-1edb1980677e",
@@ -89497,8 +90117,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-22T12:00:00.000Z",
   "publishedAt": "2025-01-22T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "1a7413bb-14fa-427c-ad1d-51dbbd8286d8",
@@ -89540,8 +90160,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-30T00:00:00.000Z",
   "publishedAt": "2026-01-30T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "469466ea-6f7d-4e74-88c8-a5cb1d3f1406",
@@ -89627,8 +90247,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-11T00:00:00.000Z",
   "publishedAt": "2025-07-11T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "c2cf301b-d0a8-4339-89bf-978357139894",
@@ -90264,8 +90884,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-04T12:00:00.000Z",
   "publishedAt": "2025-11-04T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f1897980-ae90-49fb-a3c1-5bfa5f1cde26",
@@ -91238,9 +91858,9 @@
     "openai"
   ],
   "confidenceScore": 84,
-  "heatScore": 20,
+  "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 56,
+  "valueScore": 54,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -91250,7 +91870,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 61,
+    "freshness": 48,
     "crossRegion": false
   },
   "status": "review",
@@ -91259,7 +91879,7 @@
   "happenedAt": "2026-09-21T18:32:46.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-22T05:30:09.549Z",
-  "updatedAt": "2026-09-23T17:13:23.135Z"
+  "updatedAt": "2026-09-24T17:20:52.928Z"
 },
 {
   "id": "0264229f-7593-4ce3-8e06-f33213120847",
@@ -94606,8 +95226,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T10:00:00.000Z",
   "publishedAt": "2026-07-08T10:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "73e6758d-5ac4-4c36-8cfb-45d471c2d747",
@@ -94827,8 +95447,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-18T00:00:00.000Z",
   "publishedAt": "2023-07-18T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "d1c48811-386a-411e-a37b-32df885227d5",
@@ -94869,8 +95489,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-23T00:00:00.000Z",
   "publishedAt": "2024-07-23T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "97de3ebd-b095-4916-a8c2-c27e94ebe521",
@@ -94911,8 +95531,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-05T00:00:00.000Z",
   "publishedAt": "2025-04-05T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "7c2b69d6-6d26-45ac-abb6-7c21944327fb",
@@ -94954,8 +95574,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-27T12:00:00.000Z",
   "publishedAt": "2023-02-27T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "63cd8faa-4bab-445b-a60a-c28ff9795be6",
@@ -94997,8 +95617,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "d519b78b-4492-487c-aa1e-9a52284cc7f7",
@@ -95040,8 +95660,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-10T12:00:00.000Z",
   "publishedAt": "2024-07-10T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "8576327f-66a5-4e5b-a18f-64ca34709617",
@@ -95083,8 +95703,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "156ceb72-a16e-423b-b10c-7d3438ae2fff",
@@ -95172,8 +95792,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-15T12:00:00.000Z",
   "publishedAt": "2024-11-15T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "82bf9352-8935-4704-a7aa-43c4ae426ec1",
@@ -95397,8 +96017,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-06T12:00:00.000Z",
   "publishedAt": "2024-09-06T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b5c7f0fc-0bbe-4525-b442-dda349c24952",
@@ -95485,8 +96105,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T12:00:00.000Z",
   "publishedAt": "2025-03-31T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "bd12221f-eecb-4b98-9d29-14a0c066bbcf",
@@ -95620,8 +96240,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "a381c3cb-435e-4fef-89c8-55c180d02231",
@@ -95980,8 +96600,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-14T12:00:00.000Z",
   "publishedAt": "2024-03-14T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "8749c671-67c4-47e3-af56-efef74dd62f0",
@@ -96249,8 +96869,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-02T12:00:00.000Z",
   "publishedAt": "2024-04-02T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "d59c7ee5-bff7-48a8-9570-a4a219f9659c",
@@ -98348,8 +98968,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-27T12:00:00.000Z",
   "publishedAt": "2025-06-27T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "0fc4b033-ce78-4cdd-9d96-be4af8b7b195",
@@ -98521,8 +99141,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-01T12:00:00.000Z",
   "publishedAt": "2023-12-01T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "f831f6d4-d69e-4477-af38-eb13981a41b6",
@@ -98564,8 +99184,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "e892ea18-5032-413e-8c87-65e2539058db",
@@ -99474,8 +100094,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-06T12:00:00.000Z",
   "publishedAt": "2025-03-06T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9bf9dbbf-7caf-4381-bf3a-b7080371803a",
@@ -99605,8 +100225,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-14T12:00:00.000Z",
   "publishedAt": "2024-08-14T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "3d81347a-8126-4661-a154-f676e4a0ecfb",
@@ -99648,8 +100268,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-08T12:00:00.000Z",
   "publishedAt": "2024-05-08T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "e84193c3-ba8d-4d13-99d3-cbcea9a7869d",
@@ -100375,8 +100995,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T12:00:00.000Z",
   "publishedAt": "2024-12-26T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "99708c8f-b6ab-4ad0-a299-770ddc1a4df0",
@@ -100418,8 +101038,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-26T12:00:00.000Z",
   "publishedAt": "2025-05-26T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "88fcfba9-21c7-4cb0-8b69-a826c1f06484",
@@ -100599,8 +101219,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-04T12:00:00.000Z",
   "publishedAt": "2025-04-04T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "efb8a190-6be2-41ed-ac6a-3e47423f3bd0",
@@ -100642,8 +101262,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "60b321e2-a5ef-48ce-90b8-143a7db03c92",
@@ -100731,8 +101351,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-28T12:00:00.000Z",
   "publishedAt": "2025-04-28T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4d29de56-f386-4067-b1fc-9a6159e2aa4e",
@@ -101043,8 +101663,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-09T03:26:10.000Z",
   "publishedAt": "2026-01-09T03:26:10.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "cac6b05d-0b45-4260-8b40-f910b7e9f3d7",
@@ -101131,8 +101751,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-18T09:49:14.000Z",
   "publishedAt": "2026-02-18T09:49:14.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "b75b6b51-66fb-4ee3-b98e-51e262f74045",
@@ -101310,8 +101930,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-30T05:33:50.000Z",
   "publishedAt": "2026-03-30T05:33:50.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "528e3c24-d5bd-42f4-8ab2-aed860ebed65",
@@ -101671,8 +102291,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-16T00:00:00.000Z",
   "publishedAt": "2023-03-16T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "1b06628f-218d-4a7a-a23e-82e7497bb0aa",
@@ -101714,8 +102334,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T00:00:00.000Z",
   "publishedAt": "2026-01-20T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "9a090b14-9bda-4a27-aa85-55dbf759eebf",
@@ -101757,8 +102377,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T00:00:00.000Z",
   "publishedAt": "2024-04-15T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "c0bd254c-3f3f-4cc7-aef7-09175bf3df8c",
@@ -101800,8 +102420,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-23T00:00:00.000Z",
   "publishedAt": "2023-01-23T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "31ed947f-94ba-46fc-8435-28639e085b22",
@@ -102665,8 +103285,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "806f16f2-f1f3-4326-ac31-e16618de3252",
@@ -102709,8 +103329,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "bc1a0adb-6dc1-420a-bc91-a1a8db2788df",
@@ -102797,8 +103417,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-16T00:00:00.000Z",
   "publishedAt": "2025-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "15ce9c20-2703-4e1a-af63-1da28ccfe398",
@@ -102840,8 +103460,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "4591124e-5f6f-4233-a37f-15a4b69f89c1",
@@ -103431,8 +104051,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-10T12:00:00.000Z",
   "publishedAt": "2023-10-10T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "d77aac24-e9e1-46a2-acb8-2b7f10d85f67",
@@ -103472,8 +104092,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-27T00:00:00.000Z",
   "publishedAt": "2023-09-27T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "2b989f44-ca47-400b-ac7c-731642ddf156",
@@ -103515,8 +104135,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-23T00:00:00.000Z",
   "publishedAt": "2026-06-23T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "901cf287-0ee3-4fdd-8b8c-71d609dbf23c",
@@ -103970,6 +104590,50 @@
   "updatedAt": "2026-09-17T05:32:46.745Z"
 },
 {
+  "id": "53014862-31fd-4e69-9029-14d389e93175",
+  "slug": "mlperf-training-introduces-its-first-llm-post-training-benchmark-2026-09-24",
+  "title": "MLPerf Training Introduces Its First LLM Post-Training Benchmark",
+  "factSummary": "MLPerf Training v6.1 新增了一个 agentic reinforcement-learning 工作负载，用于衡量系统多快能教会一个 397-billion-parameter 语言模型修复真实软件项目。该基准是 MLPerf Training 的首个 LLM post-training 基准。",
+  "summary": "MLCommons 发布 MLPerf Training v6.1，首次引入 LLM post-training 基准，具体为一个 agentic reinforcement-learning 工作负载，衡量系统训练 397-billion-parameter 语言模型修复真实软件项目的速度。",
+  "technicalInsight": "该基准把评测对象从预训练吞吐扩展到 post-training 与 agentic 强化学习环节，意味着评测维度开始覆盖模型在真实软件任务上的学习效率；但证据未披露任务集规模、奖励设计或基线分数，因此尚不能判断其区分度。可验证下一信号：MLCommons 是否公布各提交系统的具体分数与任务细节。",
+  "industryInsight": "若 post-training 与 agentic 能力成为独立评测项，硬件与系统厂商的竞争焦点可能从单纯预训练算力转向后训练与强化学习流水线效率；目前仅有一份官方公告，尚不足以确认行业评测重心的实际迁移。可验证下一信号：是否有主要芯片或云厂商在下一轮提交中针对该工作负载做专门优化。",
+  "futureOutlook": "该工作负载可能推动后续版本增加更多 post-training 与 agentic 场景；需观察 MLPerf 是否将其纳入常规轮次并公开可比结果。",
+  "businessValue": "对采购训练系统的企业而言，该基准提供了评估 post-training 与 agentic 强化学习效率的潜在参考维度；在分数与任务细节公开前，其采购决策价值有限。",
+  "category": "ai-benchmark",
+  "company": "MLPerf Training",
+  "keywords": [
+    "MLPerf Training",
+    "LLM post-training",
+    "agentic reinforcement learning",
+    "397-billion-parameter",
+    "software repair",
+    "MLCommons"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T14:50:00.000Z",
+  "publishedAt": "2026-09-24T17:21:39.675Z",
+  "createdAt": "2026-09-24T17:20:52.155Z",
+  "updatedAt": "2026-09-24T17:21:39.675Z"
+},
+{
   "id": "61e8de38-00bf-486e-a5e8-78a743eff839",
   "slug": "mm-issueloc-a-controlled-benchmark-for-evaluating-visual-evidence-in-multimodal-repository-2026-07-17",
   "title": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
@@ -104189,8 +104853,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-03T12:00:00.000Z",
   "publishedAt": "2024-06-03T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "a0dc6ff2-12ae-469e-b769-43493976a5ba",
@@ -104458,8 +105122,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-25T00:00:00.000Z",
   "publishedAt": "2024-11-25T00:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "fc38de93-799b-4178-b2c9-dd13f5addbce",
@@ -105278,8 +105942,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-18T12:00:00.000Z",
   "publishedAt": "2024-12-18T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "87e78380-fbd4-4b0d-9679-80ca7775819c",
@@ -106235,8 +106899,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-14T12:00:00.000Z",
   "publishedAt": "2023-07-14T12:00:00.000Z",
-  "createdAt": "2026-09-24T05:29:00.842Z",
-  "updatedAt": "2026-09-24T05:29:00.842Z"
+  "createdAt": "2026-09-24T17:16:20.944Z",
+  "updatedAt": "2026-09-24T17:16:20.944Z"
 },
 {
   "id": "809c5a0e-18f3-43cd-a451-3cec66d24843",
@@ -106649,593 +107313,5 @@
   "publishedAt": null,
   "createdAt": "2026-08-10T03:05:18.110Z",
   "updatedAt": "2026-08-10T03:05:18.148Z"
-},
-{
-  "id": "a49192b7-34a2-46b1-b71a-369315af9f98",
-  "slug": "multiglobeqa-a-multilingual-and-globally-diverse-benchmark-for-geospatial-reasoning-2026-08-05",
-  "title": "MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning",
-  "factSummary": "Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.",
-  "summary": "Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multiglobeqa",
-    "multilingual",
-    "globally",
-    "diverse",
-    "benchmark",
-    "geospatial",
-    "reasoning"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 89,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-04T16:18:52.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-05T03:54:34.449Z",
-  "updatedAt": "2026-08-05T03:54:34.480Z"
-},
-{
-  "id": "b197f53d-4636-47ff-85b9-56d82b7666de",
-  "slug": "multimodal-assessment-of-pancreatic-cancer-resectability-using-deep-learning-2026-07-16",
-  "title": "Multimodal Assessment of Pancreatic Cancer Resectability Using Deep Learning",
-  "factSummary": "Accurate determination of pancreatic ductal adenocarcinoma (PDAC) resectability relies on evaluating how the tumor interacts with major peripancreatic vessels on CT imaging, yet expert assessment often shows substantial variability. We introduce a fully automated multimodal deep learning framework that jointly analyzes 3D contrast enhanced CT and structured clinical information to classify patients into the three National Comprehensive Cancer Network (NCCN) resectability categories (upfront resectable, borderline resectable, locally advanced). The approach uses a Swin-UNETR backbone to obtain anatomy aware image representations through auxiliary segmentation of pancreas, tumor, and vascular structures. These features are fused with a compact clinical embedding derived from 17 routinely collected variables and processed by a lightweight classification head. Model training is guided by a dynamic multitask objective that adapts the balance between segmentation and classification based on current tumor Dice performance, promoting feature representations that remain both anatomically informed and discriminative.",
-  "summary": "Accurate determination of pancreatic ductal adenocarcinoma (PDAC) resectability relies on evaluating how the tumor interacts with major peripancreatic vessels on CT imaging, yet expert assessment often shows substantial variability. We introduce a fully automated multimodal deep learning framework that jointly analyzes 3D contrast enhanced CT and structured clinical information to classify patients into the three National Comprehensive Cancer Network (NCCN) resectability categories (upfront resectable, borderline resectable, locally advanced). The approach uses a Swin-UNETR backbone to obtain anatomy aware image representations through auxiliary segmentation of pancreas, tumor, and vascular structures. These features are fused with a compact clinical embedding derived from 17 routinely collected variables and processed by a lightweight classification head. Model training is guided by a dynamic multitask objective that adapts the balance between segmentation and classification based on current tumor Dice performance, promoting feature representations that remain both anatomically informed and discriminative.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multimodal",
-    "assessment",
-    "pancreatic",
-    "cancer",
-    "resectability",
-    "using",
-    "deep",
-    "learning"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 56,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 77,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-15T13:32:44.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-16T14:30:21.150Z",
-  "updatedAt": "2026-07-16T14:30:21.172Z"
-},
-{
-  "id": "7563c079-417b-490c-8640-a484aacfec92",
-  "slug": "multimodal-code-switching-interleaving-visual-objects-into-language-for-explicit-object-le-2026-08-12",
-  "title": "MultiModal Code-Switching: Interleaving Visual Objects into Language for Explicit Object-Level Alignment",
-  "factSummary": "Existing Multimodal Large Language Models (MLLMs) predominantly rely on image-text pairs for modality alignment pretraining, mapping global image representations to long textual descriptions. However, this image-level alignment suffers from referential ambiguity: models struggle to infer the correspondences between multiple visual objects and textual entities from the global representation, leading to data inefficiency and suboptimal semantic grounding. To address this, we propose MultiModal Code-Switching (MMCS), a novel pretraining paradigm that provides explicit object-level supervision. Inspired by the linguistic phenomenon of code-switching, MMCS interleaves vision and language by replacing textual entities with their corresponding visual objects, enforcing local vision-language grounding. We further develop a scalable data synthesis pipeline to generate a pretraining dataset of 773K samples with accurate object-entity correspondences. Experiments show that MMCS is highly data-efficient: with only 50K samples, it matches or surpasses models trained on 600K image-text pairs. Furthermore, MMCS consistently improves visual grounding and perception capabilities across varying model scales.",
-  "summary": "Existing Multimodal Large Language Models (MLLMs) predominantly rely on image-text pairs for modality alignment pretraining, mapping global image representations to long textual descriptions. However, this image-level alignment suffers from referential ambiguity: models struggle to infer the correspondences between multiple visual objects and textual entities from the global representation, leading to data inefficiency and suboptimal semantic grounding. To address this, we propose MultiModal Code-Switching (MMCS), a novel pretraining paradigm that provides explicit object-level supervision. Inspired by the linguistic phenomenon of code-switching, MMCS interleaves vision and language by replacing textual entities with their corresponding visual objects, enforcing local vision-language grounding. We further develop a scalable data synthesis pipeline to generate a pretraining dataset of 773K samples with accurate object-entity correspondences. Experiments show that MMCS is highly data-efficient: with only 50K samples, it matches or surpasses models trained on 600K image-text pairs. Furthermore, MMCS consistently improves visual grounding and perception capabilities across varying model scales.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multimodal",
-    "code",
-    "switching",
-    "interleaving",
-    "visual",
-    "objects",
-    "into",
-    "language"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 90,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-11T17:28:52.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-12T03:17:39.157Z",
-  "updatedAt": "2026-08-12T03:17:39.198Z"
-},
-{
-  "id": "a4e708c6-f7a8-4e27-a17b-81f96cbc3d2b",
-  "slug": "multimodal-cultural-heritage-architectural-style-classification-for-residential-buildings--2026-09-16",
-  "title": "Multimodal Cultural Heritage Architectural Style Classification for Residential Buildings in the UAE Based on CLIP Embeddings and SVM",
-  "factSummary": "The analysis and classification of cultural heritage architectural styles remain challenging due to the complexity of visual images of buildings, which are highly relied on in traditional CNN-based classification approaches in comparison to textual descriptions, and the relative lack of non-western region-specific datasets. This paper addresses this gap by proposing a multimodal machine learning framework to analyze and classify Emirati residential architecture using OpenAI's CLIP model. We integrate visual features from images and textual features from expert descriptions into a unified 512-dimensional embedding, followed by dimensionality reduction with UMAP for visualization and unsupervised clustering using K-Means. Cluster labels, which are derived from manual analysis of the K-Means clusters, are used to train an SVM classifier for automated architectural style classification. Our approach achieves a classification accuracy of 98% across eight identified style clusters, higher than every other study in the literature, demonstrating the effectiveness of combining visual and textual modalities. Overall, this paper highlights the potential of using multimodal AI to support architectural heritage analysis, offering scalable and interpretable tools for exploring regional architectural identities.",
-  "summary": "The analysis and classification of cultural heritage architectural styles remain challenging due to the complexity of visual images of buildings, which are highly relied on in traditional CNN-based classification approaches in comparison to textual descriptions, and the relative lack of non-western region-specific datasets. This paper addresses this gap by proposing a multimodal machine learning framework to analyze and classify Emirati residential architecture using OpenAI's CLIP model. We integrate visual features from images and textual features from expert descriptions into a unified 512-dimensional embedding, followed by dimensionality reduction with UMAP for visualization and unsupervised clustering using K-Means. Cluster labels, which are derived from manual analysis of the K-Means clusters, are used to train an SVM classifier for automated architectural style classification. Our approach achieves a classification accuracy of 98% across eight identified style clusters, higher than every other study in the literature, demonstrating the effectiveness of combining visual and textual modalities. Overall, this paper highlights the potential of using multimodal AI to support architectural heritage analysis, offering scalable and interpretable tools for exploring regional architectural identities.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multimodal",
-    "cultural",
-    "heritage",
-    "architectural",
-    "style",
-    "classification",
-    "residential",
-    "buildings"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 55,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 76,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-15T13:41:36.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-16T15:45:09.043Z",
-  "updatedAt": "2026-09-16T15:45:09.069Z"
-},
-{
-  "id": "447affad-b834-4bf6-b012-8c5c74ecb983",
-  "slug": "multimodal-model-diffing-for-feature-discovery-and-control-2026-08-11",
-  "title": "Multimodal Model Diffing for Feature Discovery and Control",
-  "factSummary": "Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing framework that trains multimodal SAEs and turns them into feature-level interfaces for discovering and controlling multimodal behavior. MMDiff supports three uses: (i) feature isolation, by diffing a base-LM SAE against its multimodal-adapted counterpart to identify features altered by multimodal training; (ii) task-specific feature detection, via per-token contrastive firing analysis that isolates causal features; and (iii) feature-level control, by causally removing or steering the discovered feature directions. We train multimodal SAEs for three MLLM families, LLaVA-MORE, PaliGemma 2, and InternVL3.5, and evaluate on visual-spatial understanding, multimodal safety, and OCR. MMDiff discovers sparse, causally specific features whose removal selectively degrades target behaviors by an average of 12% on spatial tasks and 17% on OCR, and reduces attack success rate by 24% on multimodal safety attacks, with no impact on VQA performance. Steering these features improves spatial and OCR accuracy by +3.6% and +1.8% on average over a standard single-layer steering baseline. These results show that multimodal SAEs can serve not only as interpretability tools, but as mechanisms for auditing, steering, and controlling MLLMs behavior toward safer and more capable generations.",
-  "summary": "Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing framework that trains multimodal SAEs and turns them into feature-level interfaces for discovering and controlling multimodal behavior. MMDiff supports three uses: (i) feature isolation, by diffing a base-LM SAE against its multimodal-adapted counterpart to identify features altered by multimodal training; (ii) task-specific feature detection, via per-token contrastive firing analysis that isolates causal features; and (iii) feature-level control, by causally removing or steering the discovered feature directions. We train multimodal SAEs for three MLLM families, LLaVA-MORE, PaliGemma 2, and InternVL3.5, and evaluate on visual-spatial understanding, multimodal safety, and OCR. MMDiff discovers sparse, causally specific features whose removal selectively degrades target behaviors by an average of 12% on spatial tasks and 17% on OCR, and reduces attack success rate by 24% on multimodal safety attacks, with no impact on VQA performance. Steering these features improves spatial and OCR accuracy by +3.6% and +1.8% on average over a standard single-layer steering baseline. These results show that multimodal SAEs can serve not only as interpretability tools, but as mechanisms for auditing, steering, and controlling MLLMs behavior toward safer and more capable generations.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multimodal",
-    "model",
-    "diffing",
-    "feature",
-    "discovery",
-    "control"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 56,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 81,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-10T17:59:30.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-11T13:50:15.269Z",
-  "updatedAt": "2026-08-11T13:50:15.312Z"
-},
-{
-  "id": "9c71e6db-9262-40ba-9a4d-a9e3ea79d4dd",
-  "slug": "multimodal-pretraining-for-generalizable-eeg-representation-learning-2026-07-24",
-  "title": "Multimodal Pretraining for Generalizable EEG Representation Learning",
-  "factSummary": "Electroencephalography (EEG) models used for epilepsy are often limited to specific datasets and tasks. This limited approach can make it challenging to apply these models across different datasets or in various situations. However, recent studies in foundation models and self-supervised learning suggest that an adaptable EEG backbone could support a range of EEG related tasks. In this study, we have developed a multimodal EEG foundation model that combines a raw signal encoder based on the Mamba architecture, a Vision Transformer (ViT)-style encoder for time-frequency data, and a lightweight encoder for text, all within a shared embedding space. The pretraining process relies on several innovative techniques, such as masked modeling, cross-view contrastive alignment, and temporal consistency losses. These methods are designed to create rich, seizure-relevant representations without requiring labeled data. To assess the efficacy and generalization of our pretrained model, we fine-tuned it on the canonical CHB-MIT seizure detection benchmark and additional seizure detection datasets, and conducted extensive experiments comparing different model variants. On the standard CHB-MIT split, our best single model achieved an AUROC of 0.874, and an ensemble variant reached 0.878 AUROC, representing state-of-the-art performance on this benchmark. In addition to standard train-test splits, we evaluated performance under a leave-one-subject-out (LOSO) protocol, which is rarely reported in prior EEG seizure modeling work and highlights the difficulty of patient-independent seizure detection, with a mean LOSO balanced accuracy of 0.558 across 19 subjects. Across datasets and evaluation settings, our multimodal foundation model enabled robust seizure detection and straightforward adaptation to new seizure detection scenarios, while also supporting interpretable seizure localization.",
-  "summary": "Electroencephalography (EEG) models used for epilepsy are often limited to specific datasets and tasks. This limited approach can make it challenging to apply these models across different datasets or in various situations. However, recent studies in foundation models and self-supervised learning suggest that an adaptable EEG backbone could support a range of EEG related tasks. In this study, we have developed a multimodal EEG foundation model that combines a raw signal encoder based on the Mamba architecture, a Vision Transformer (ViT)-style encoder for time-frequency data, and a lightweight encoder for text, all within a shared embedding space. The pretraining process relies on several innovative techniques, such as masked modeling, cross-view contrastive alignment, and temporal consistency losses. These methods are designed to create rich, seizure-relevant representations without requiring labeled data. To assess the efficacy and generalization of our pretrained model, we fine-tuned it on the canonical CHB-MIT seizure detection benchmark and additional seizure detection datasets, and conducted extensive experiments comparing different model variants. On the standard CHB-MIT split, our best single model achieved an AUROC of 0.874, and an ensemble variant reached 0.878 AUROC, representing state-of-the-art performance on this benchmark. In addition to standard train-test splits, we evaluated performance under a leave-one-subject-out (LOSO) protocol, which is rarely reported in prior EEG seizure modeling work and highlights the difficulty of patient-independent seizure detection, with a mean LOSO balanced accuracy of 0.558 across 19 subjects. Across datasets and evaluation settings, our multimodal foundation model enabled robust seizure detection and straightforward adaptation to new seizure detection scenarios, while also supporting interpretable seizure localization.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multimodal",
-    "pretraining",
-    "generalizable",
-    "eeg",
-    "representation",
-    "learning"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 87,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-23T14:47:00.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-24T04:02:43.129Z",
-  "updatedAt": "2026-07-24T04:02:43.160Z"
-},
-{
-  "id": "182dcd9a-afb5-479a-b884-839363b86d36",
-  "slug": "multimodal-reward-hacking-in-reinforcement-learning-2026-07-13",
-  "title": "Multimodal Reward Hacking in Reinforcement Learning",
-  "factSummary": "Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when visual evidence is evaluated by text-only or weakly grounded rewards. We study reward hacking in MLLM RL across safety VQA, chart VQA, and stress-test settings, varying reward design, data ambiguity, model scale (2B-32B), and RL algorithm (GRPO, RLOO, DAPO). We introduce Newly Rewarded Failure Rate (NRFR), which measures failures among samples whose proxy reward improves over the SFT baseline. Outcome-only rewards cause severe hacking, reaching 48.1% Reward Hacking Rate (RHR), while NRFR exceeding RHR shows that RL creates new failures rather than merely inheriting them. Scaling reduces but does not eliminate hacking: even the 32B model retains a 54.9% worse rate under outcome-only rewards, whereas answer-aware rewards improve the oracle trend at every scale. Robustness is also algorithm- and scale-dependent: GRPO is consistently most resistant, RLOO remains vulnerable, and DAPO improves substantially from 2B to 8B. Visual-evidence rewards help only with reliable verification: keyword-based checks increase hacking, while VLM-as-judge semantic verification reduces it. Overall, multimodal reward hacking is a systematic result of optimizing imperfect rewards, and robust alignment requires rewards and verifiers that remain reliable under optimization pressure.",
-  "summary": "Reinforcement learning (RL) is increasingly used to align multimodal large language models (MLLMs), but higher rewards do not always imply better task performance. This risk is amplified when visual evidence is evaluated by text-only or weakly grounded rewards. We study reward hacking in MLLM RL across safety VQA, chart VQA, and stress-test settings, varying reward design, data ambiguity, model scale (2B-32B), and RL algorithm (GRPO, RLOO, DAPO). We introduce Newly Rewarded Failure Rate (NRFR), which measures failures among samples whose proxy reward improves over the SFT baseline. Outcome-only rewards cause severe hacking, reaching 48.1% Reward Hacking Rate (RHR), while NRFR exceeding RHR shows that RL creates new failures rather than merely inheriting them. Scaling reduces but does not eliminate hacking: even the 32B model retains a 54.9% worse rate under outcome-only rewards, whereas answer-aware rewards improve the oracle trend at every scale. Robustness is also algorithm- and scale-dependent: GRPO is consistently most resistant, RLOO remains vulnerable, and DAPO improves substantially from 2B to 8B. Visual-evidence rewards help only with reliable verification: keyword-based checks increase hacking, while VLM-as-judge semantic verification reduces it. Overall, multimodal reward hacking is a systematic result of optimizing imperfect rewards, and robust alignment requires rewards and verifiers that remain reliable under optimization pressure.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multimodal",
-    "reward",
-    "hacking",
-    "reinforcement",
-    "learning"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 19,
-  "impactScore": 55,
-  "valueScore": 52,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 54,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-10T15:06:48.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-13T02:12:41.421Z",
-  "updatedAt": "2026-07-13T02:12:41.421Z"
-},
-{
-  "id": "926f9e21-b82a-4a18-ad5d-809001931804",
-  "slug": "multipathformer-towards-a-foundation-model-for-multipath-wireless-propagation-2026-08-06",
-  "title": "MultiPathFormer: Towards a Foundation Model for Multipath Wireless Propagation",
-  "factSummary": "Recent advances in machine learning have enabled training of wireless foundation models, which aim to support tasks such as channel estimation, beam prediction, and localization based on wireless signals. Existing wireless foundation models typically pretrain on channel tensors using masked reconstruction over subcarriers, antennas, or time but ignore the physical characteristics of wireless propagation. In this work, we propose to instead use multipath propagation as the fundamental pretraining object. We present MultiPathFormer, an autoregressive foundation model that represents each transmitter-receiver link as an ordered sequence of continuous-valued path tokens and pretrains with next-path prediction. We introduce an Environmental RAG (retrieval-augmented generation) mechanism and a first-path codebook on top of the transformer backbone, leveraging environment knowledge to improve path statistics estimation like delay and power by up to 59%. MultiPathFormer pretrained on 27 environments transfers to unseen users and, after scenario-specific fine-tuning, outperforms training the corresponding models from scratch in new environments. Across downstream tasks, it outperforms SOTA channel-based foundation models, achieving 5.57 m mean localization error, 0.914 top-3 beam accuracy, 0.994 line-of-sight classification accuracy, and 0.561 channel estimation NMSE. These results show that path-level pretraining can learn reusable representations of wireless propagation.",
-  "summary": "Recent advances in machine learning have enabled training of wireless foundation models, which aim to support tasks such as channel estimation, beam prediction, and localization based on wireless signals. Existing wireless foundation models typically pretrain on channel tensors using masked reconstruction over subcarriers, antennas, or time but ignore the physical characteristics of wireless propagation. In this work, we propose to instead use multipath propagation as the fundamental pretraining object. We present MultiPathFormer, an autoregressive foundation model that represents each transmitter-receiver link as an ordered sequence of continuous-valued path tokens and pretrains with next-path prediction. We introduce an Environmental RAG (retrieval-augmented generation) mechanism and a first-path codebook on top of the transformer backbone, leveraging environment knowledge to improve path statistics estimation like delay and power by up to 59%. MultiPathFormer pretrained on 27 environments transfers to unseen users and, after scenario-specific fine-tuning, outperforms training the corresponding models from scratch in new environments. Across downstream tasks, it outperforms SOTA channel-based foundation models, achieving 5.57 m mean localization error, 0.914 top-3 beam accuracy, 0.994 line-of-sight classification accuracy, and 0.561 channel estimation NMSE. These results show that path-level pretraining can learn reusable representations of wireless propagation.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "multipathformer",
-    "towards",
-    "foundation",
-    "model",
-    "multipath",
-    "wireless",
-    "propagation"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 90,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-05T17:20:16.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-06T03:59:08.820Z",
-  "updatedAt": "2026-08-06T03:59:08.850Z"
-},
-{
-  "id": "4e8af3b5-bd2a-40f2-a772-9622153aba82",
-  "slug": "mumins-metadata-conditioned-uncertainty-aware-medical-image-next-state-synthesis-2026-09-16",
-  "title": "MUMINS: Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis",
-  "factSummary": "Forecasting anatomical changes such as tumor growth and neurodegeneration is a challenging generative vision task. Morphological evolution is subtle relative to static anatomy, highly patient-specific, and inherently stochastic. Existing methods struggle with several issues: deterministic networks ignore biological stochasticity, while standard diffusion models require computationally prohibitive multi-pass sampling to quantify uncertainty. We propose MUMINS (Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis), an efficient diffusion framework that jointly diffuses a baseline scan and its follow-up residual, summed to synthesize the follow-up scan, while concurrently predicting a spatial uncertainty map, in a single reverse diffusion process. Conditioned on the time interval and relevant metadata, it preserves fine-grained anatomy by dynamically re-injecting the baseline as a soft anchor at every denoising step, and a negative-log-likelihood head learns the uncertainty map to explicitly flag error-prone regions. Designed without organ-specific heuristics, the same architecture is reused across anatomies via separate, dataset-specific retraining. Extensive evaluations demonstrate that dataset-specific retraining of MUMINS matches or outperforms dedicated, domain-specific state-of-the-art methods on lung CT (PNG) and brain MRI (OASIS-3). Project page: https://github.com/aolivtous/MUMINS.",
-  "summary": "Forecasting anatomical changes such as tumor growth and neurodegeneration is a challenging generative vision task. Morphological evolution is subtle relative to static anatomy, highly patient-specific, and inherently stochastic. Existing methods struggle with several issues: deterministic networks ignore biological stochasticity, while standard diffusion models require computationally prohibitive multi-pass sampling to quantify uncertainty. We propose MUMINS (Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis), an efficient diffusion framework that jointly diffuses a baseline scan and its follow-up residual, summed to synthesize the follow-up scan, while concurrently predicting a spatial uncertainty map, in a single reverse diffusion process. Conditioned on the time interval and relevant metadata, it preserves fine-grained anatomy by dynamically re-injecting the baseline as a soft anchor at every denoising step, and a negative-log-likelihood head learns the uncertainty map to explicitly flag error-prone regions. Designed without organ-specific heuristics, the same architecture is reused across anatomies via separate, dataset-specific retraining. Extensive evaluations demonstrate that dataset-specific retraining of MUMINS matches or outperforms dedicated, domain-specific state-of-the-art methods on lung CT (PNG) and brain MRI (OASIS-3). Project page: https://github.com/aolivtous/MUMINS.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "Meta",
-  "keywords": [
-    "mumins",
-    "metadata",
-    "conditioned",
-    "uncertainty",
-    "aware",
-    "medical",
-    "image",
-    "next"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 55,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 76,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-15T13:32:37.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-16T15:45:09.162Z",
-  "updatedAt": "2026-09-16T15:45:09.188Z"
-},
-{
-  "id": "08327fbb-1278-4ab7-a046-443a8eb260b6",
-  "slug": "muon-can-outperform-dedicated-continual-learning-methods-2026-09-22",
-  "title": "Muon Can Outperform Dedicated Continual Learning Methods",
-  "factSummary": "Continual learning with Low-Rank Adapters (LoRA) typically mitigates forgetting by penalizing the overlap between a new update and the accumulated past weights, which discourages certain update directions without controlling how an update distributes its energy over the ones that remain. We ask whether that restriction has to be task-aware, or whether a generic one supplied by the optimizer is enough. We train a plain incremental LoRA (IncLoRA) with Muon, which orthogonalizes each update, and compare it against O-LoRA and ELLA over five seeds and three task orders on the Standard CL Benchmark and three seeds on TRACE. IncLoRA+Muon reaches the accuracy band of the dedicated methods on Standard CL and improves on every AdamW configuration on TRACE. One update-constraining mechanism is enough, whether it comes from the loss or from the optimizer; on Standard CL a second one does not help, and for the most restrictive method it costs 8.4 points of accuracy and the plasticity to fit each task. What separates the two optimizers is not the size of the update, which under Muon is 0.91 to 2.06 times that under AdamW, but how it is distributed. AdamW confines it to between 1.4 and 1.8 effective singular directions, Muon spreads it over 7.0, and the two do not overlap in any tracked run. Part of the advantage usually attributed to dedicated CL methods may therefore be explained by the geometry of the optimizer's updates.",
-  "summary": "Continual learning with Low-Rank Adapters (LoRA) typically mitigates forgetting by penalizing the overlap between a new update and the accumulated past weights, which discourages certain update directions without controlling how an update distributes its energy over the ones that remain. We ask whether that restriction has to be task-aware, or whether a generic one supplied by the optimizer is enough. We train a plain incremental LoRA (IncLoRA) with Muon, which orthogonalizes each update, and compare it against O-LoRA and ELLA over five seeds and three task orders on the Standard CL Benchmark and three seeds on TRACE. IncLoRA+Muon reaches the accuracy band of the dedicated methods on Standard CL and improves on every AdamW configuration on TRACE. One update-constraining mechanism is enough, whether it comes from the loss or from the optimizer; on Standard CL a second one does not help, and for the most restrictive method it costs 8.4 points of accuracy and the plasticity to fit each task. What separates the two optimizers is not the size of the update, which under Muon is 0.91 to 2.06 times that under AdamW, but how it is distributed. AdamW confines it to between 1.4 and 1.8 effective singular directions, Muon spreads it over 7.0, and the two do not overlap in any tracked run. Part of the advantage usually attributed to dedicated CL methods may therefore be explained by the geometry of the optimizer's updates.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "muon",
-    "can",
-    "outperform",
-    "dedicated",
-    "continual",
-    "learning",
-    "methods"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 86,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-21T14:39:58.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-22T05:30:08.197Z",
-  "updatedAt": "2026-09-22T05:30:08.237Z"
-},
-{
-  "id": "72352238-78ed-4f23-a44a-aadf5c5f98e1",
-  "slug": "muse-a-full-text-cross-domain-knowledge-base-of-scientific-problems-solutions-and-rational-2026-08-12",
-  "title": "MUSE: A Full-Text Cross-Domain Knowledge Base of Scientific Problems, Solutions, and Rationales",
-  "factSummary": "Scientific papers contain fine-grained records of problem solving: authors mention technical obstacles and methods that were used to address them, often along with reasoning on why those methods were chosen. We introduce MUSE (Mining Underlying Scientific Explanations), a full-text, multi-domain resource of scientific Problem-Solution-Rationale (P-S-R) triplets. We curate 579 expert-annotated full-text paragraphs, with a rich annotation schema covering salient problem, solution, and rationale spans, solves and rationale_of links and conceptual coreference. A modular extraction pipeline scales this annotation to build a high-quality knowledge base of 37K source-grounded P-S-R triplets. We evaluate the extraction components and include a preliminary experiment training a rationale-supervised LLM for scientific problem solving. Interestingly, we find that rationale supervision improves performance on complex, multi-constraint problems but can harm performance on simpler ones.",
-  "summary": "Scientific papers contain fine-grained records of problem solving: authors mention technical obstacles and methods that were used to address them, often along with reasoning on why those methods were chosen. We introduce MUSE (Mining Underlying Scientific Explanations), a full-text, multi-domain resource of scientific Problem-Solution-Rationale (P-S-R) triplets. We curate 579 expert-annotated full-text paragraphs, with a rich annotation schema covering salient problem, solution, and rationale spans, solves and rationale_of links and conceptual coreference. A modular extraction pipeline scales this annotation to build a high-quality knowledge base of 37K source-grounded P-S-R triplets. We evaluate the extraction components and include a preliminary experiment training a rationale-supervised LLM for scientific problem solving. Interestingly, we find that rationale supervision improves performance on complex, multi-constraint problems but can harm performance on simpler ones.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "muse",
-    "full",
-    "text",
-    "cross",
-    "domain",
-    "knowledge",
-    "base",
-    "scientific"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 88,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-11T14:31:37.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-12T03:17:40.588Z",
-  "updatedAt": "2026-08-12T03:17:40.625Z"
-},
-{
-  "id": "18533dfc-7c87-4d98-9eb0-a964860a0312",
-  "slug": "muse-benchmarking-large-vision-language-models-on-multi-modal-understanding-in-situated-ed-2026-09-17",
-  "title": "MUSE: Benchmarking Large Vision-Language Models on Multi-Modal Understanding in Situated Education",
-  "factSummary": "Large vision-language models have achieved remarkable progress in multi-modal understanding, yet their capabilities in educational settings remain insufficiently evaluated. In AI-assisted language learning, models must interpret artistic imagery, understand its semantic, affective, and cultural content, and reason about visual context to support meaningful interaction. However, existing benchmarks primarily focus on real-world images or domain-specific educational reasoning, providing limited coverage of artistic educational content. To address this gap, we introduce MUSE, a benchmark for evaluating large vision-language models on artistic image understanding in situated educational applications. MUSE decouples image annotation from question generation, enabling diverse tasks with controllable difficulty while reducing annotation effort. It comprises twelve tasks spanning visual perception, semantic and affective interpretation, culture understanding, and compositional reasoning, together with diverse artistic images deliberately curated to center Singaporean and Southeast Asian multicultural contexts alongside Western art traditions, covering multiple themes and difficulty levels. Evaluation of open-source and proprietary models reveals substantial disparities across capability dimensions, particularly in affective interpretation and compositional reasoning. Our analysis further identifies common failure modes and key challenges for developing trustworthy multi-modal models for education. We hope MUSE will serve as a standardized benchmark for advancing multi-modal understanding in situated educational applications.",
-  "summary": "Large vision-language models have achieved remarkable progress in multi-modal understanding, yet their capabilities in educational settings remain insufficiently evaluated. In AI-assisted language learning, models must interpret artistic imagery, understand its semantic, affective, and cultural content, and reason about visual context to support meaningful interaction. However, existing benchmarks primarily focus on real-world images or domain-specific educational reasoning, providing limited coverage of artistic educational content. To address this gap, we introduce MUSE, a benchmark for evaluating large vision-language models on artistic image understanding in situated educational applications. MUSE decouples image annotation from question generation, enabling diverse tasks with controllable difficulty while reducing annotation effort. It comprises twelve tasks spanning visual perception, semantic and affective interpretation, culture understanding, and compositional reasoning, together with diverse artistic images deliberately curated to center Singaporean and Southeast Asian multicultural contexts alongside Western art traditions, covering multiple themes and difficulty levels. Evaluation of open-source and proprietary models reveals substantial disparities across capability dimensions, particularly in affective interpretation and compositional reasoning. Our analysis further identifies common failure modes and key challenges for developing trustworthy multi-modal models for education. We hope MUSE will serve as a standardized benchmark for advancing multi-modal understanding in situated educational applications.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "muse",
-    "benchmarking",
-    "large",
-    "vision",
-    "language",
-    "models",
-    "multi",
-    "modal"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 88,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-16T17:26:10.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-17T05:32:40.376Z",
-  "updatedAt": "2026-09-17T05:32:40.410Z"
-},
-{
-  "id": "628d830f-73f1-4ab4-a864-522130c96bb9",
-  "slug": "musecritic-learning-multi-aspect-song-rewards-through-natural-language-aesthetic-critiques-2026-08-13",
-  "title": "MuseCritic: Learning Multi-Aspect Song Rewards through Natural-Language Aesthetic Critiques",
-  "factSummary": "Long-form song generation models continue to improve in duration, structural integrity, and acoustic complexity, making reliable aesthetic rewards increasingly important for aligning these models with human preferences. However, reward models for complete songs remain limited, and existing evaluators typically predict scores in a single forward pass without providing readable explanations. We introduce MUSECRITIC, a semi-scalar reward model that generates a natural-language critique covering five aesthetic dimensions and uses it as an intermediate representation to predict continuous reward scores. MUSECRITIC follows a two-stage training pipeline: a teacher model first provides high-quality critiques for supervised fine-tuning, after which the fine-tuned model generates its own critiques for reward learning, mitigating distribution shift between training and inference. On an in-domain test set of 200 SongEval songs, MUSECRITIC reduces macro-averaged mean squared error from 0.2875 to 0.2316 and improves macro-averaged LCC, SRCC, and Kendall's tau to 0.9068, 0.8838, and 0.7178, respectively. On the out-of-domain Music Arena benchmark with 733 preference pairs, it achieves the highest accuracy of 71.35%. Moreover, using MUSECRITIC with GRPO improves Muse-0.6B on all nine aesthetic metrics from SongEval and Audiobox Aesthetics. These results demonstrate that critique-conditioned reward modeling reduces scoring error and provides an effective optimization signal for song generation. The project repository is available at https://github.com/WuqnEl/MuseCritic.",
-  "summary": "Long-form song generation models continue to improve in duration, structural integrity, and acoustic complexity, making reliable aesthetic rewards increasingly important for aligning these models with human preferences. However, reward models for complete songs remain limited, and existing evaluators typically predict scores in a single forward pass without providing readable explanations. We introduce MUSECRITIC, a semi-scalar reward model that generates a natural-language critique covering five aesthetic dimensions and uses it as an intermediate representation to predict continuous reward scores. MUSECRITIC follows a two-stage training pipeline: a teacher model first provides high-quality critiques for supervised fine-tuning, after which the fine-tuned model generates its own critiques for reward learning, mitigating distribution shift between training and inference. On an in-domain test set of 200 SongEval songs, MUSECRITIC reduces macro-averaged mean squared error from 0.2875 to 0.2316 and improves macro-averaged LCC, SRCC, and Kendall's tau to 0.9068, 0.8838, and 0.7178, respectively. On the out-of-domain Music Arena benchmark with 733 preference pairs, it achieves the highest accuracy of 71.35%. Moreover, using MUSECRITIC with GRPO improves Muse-0.6B on all nine aesthetic metrics from SongEval and Audiobox Aesthetics. These results demonstrate that critique-conditioned reward modeling reduces scoring error and provides an effective optimization signal for song generation. The project repository is available at https://github.com/WuqnEl/MuseCritic.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "musecritic",
-    "learning",
-    "multi",
-    "aspect",
-    "song",
-    "rewards",
-    "through",
-    "natural"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 82,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-12T07:49:17.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-13T03:19:46.722Z",
-  "updatedAt": "2026-08-13T03:19:46.765Z"
 }
 ]
