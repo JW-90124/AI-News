@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "72cddec6-3159-4364-943b-2cff7992f460",
+  "id": "cc4ad3a0-3b5a-4382-ad2e-ca0e33ee8cd2",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
-  "rawWeightedScore": 65,
+  "rawWeightedScore": 66,
   "evidenceCoverage": 72,
   "dimensions": [
     {
@@ -58,19 +58,19 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 64,
-      "rawScore": 64,
+      "score": 65,
+      "rawScore": 65,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 19350,
+      "sampleSize": 19615,
       "sampleTarget": 100,
-      "summary": "19350 条信号中 13705 条来自 primary/research/policy，4895 条证据进入事件。",
+      "summary": "19615 条信号中 13931 条来自 primary/research/policy，5034 条证据进入事件。",
       "evidence": {
-        "signals": 19350,
-        "direct": 19350,
-        "primary": 13705,
-        "linkedEvidence": 4895,
+        "signals": 19615,
+        "direct": 19615,
+        "primary": 13931,
+        "linkedEvidence": 5034,
         "linkedSourceCount": 165,
         "aggregatorDebt": 0
       },
@@ -109,15 +109,15 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 720,
+      "sampleSize": 728,
       "sampleTarget": 30,
-      "summary": "720 个公开事件仅 41 个拥有多源证据，695 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "728 个公开事件仅 41 个拥有多源证据，703 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 720,
-        "primaryEvidence": 712,
+        "published": 728,
+        "primaryEvidence": 720,
         "multiSource": 41,
-        "readyPublished": 695,
-        "averageEvidence": 1.44,
+        "readyPublished": 703,
+        "averageEvidence": 1.45,
         "averageSelfReportedConfidence": 84
       },
       "penalties": [],
@@ -135,9 +135,9 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 720,
+        "published": 728,
         "fieldCompleteness": 100,
-        "readyPublished": 695,
+        "readyPublished": 703,
         "multiSource": 41,
         "outcomeFeedback": 0
       },
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 267,
       "sampleTarget": 100,
-      "summary": "128/267 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 134 个。",
+      "summary": "128/267 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 142 个。",
       "evidence": {
         "healthy": 267,
         "freshHealthy": 128,
         "active": 137,
         "activeWithRecentSuccess": 134,
-        "published": 720,
-        "recentPublished": 134
+        "published": 728,
+        "recentPublished": 142
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 416,
         "restrictedEnabled": 0,
-        "readyEvents": 695,
-        "totalEvents": 3937,
+        "readyEvents": 703,
+        "totalEvents": 4058,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -682,9 +682,9 @@
       "evidence": "capability map links status, maturity, release and implementation evidence"
     }
   ],
-  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 65, evidence coverage 72%, final score 61",
-  "startedAt": "2026-09-24T17:21:56.091Z",
-  "finishedAt": "2026-09-24T17:21:56.360Z",
+  "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
+  "startedAt": "2026-09-25T05:32:15.017Z",
+  "finishedAt": "2026-09-25T05:32:15.280Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -743,7 +743,7 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 64,
+      "score": 65,
       "status": "measured",
       "weightedGap": 2,
       "penalties": [],
@@ -751,15 +751,13 @@
     }
   ],
   "comparison": {
-    "passed": false,
+    "passed": true,
     "baselineScore": 61,
     "currentScore": 61,
     "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
-    "regressions": [
-      "dimension primary-source-provenance regressed from 65 to 64"
-    ]
+    "regressions": []
   }
 }
