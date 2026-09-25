@@ -1,5 +1,413 @@
 [
 {
+  "id": "15ce9c20-2703-4e1a-af63-1da28ccfe398",
+  "slug": "minimax-m2-5-production-agent",
+  "title": "MiniMax M2.5 开源：编码与办公 Agent 转向生产效率竞争",
+  "factSummary": "MiniMax 于 2026 年 2 月发布并开放 MiniMax-M2.5，面向编程、工具调用、搜索和办公任务。",
+  "summary": "MiniMax 在 M1 推理路线之后继续强化生产力 Agent，将竞争口径从模型答题能力转向任务分解、执行速度和完整交付。",
+  "technicalInsight": "官方仓库提供模型权重、部署说明和 Agent 评测，强调相较前代在复杂软件工程任务中的执行速度提升。",
+  "industryInsight": "国产模型厂商越来越直接进入编码和办公工作流，模型价格优势必须与任务成功率和交付速度一起验证。",
+  "futureOutlook": "观察独立 SWE 评测、工具失败分布、API SLA、海外开发者采用和修改版 MIT 许可边界。",
+  "businessValue": "企业应按一次被接受的代码或文档结果计算成本，并保留模型切换与输出审查机制。",
+  "category": "coding-agent",
+  "company": "MiniMax / 稀宇科技",
+  "keywords": [
+    "MiniMax",
+    "稀宇科技",
+    "MiniMax-M2.5",
+    "编码 Agent",
+    "办公 Agent"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 92,
+  "valueScore": 94,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2026-02-13T00:00:00.000Z",
+  "publishedAt": "2026-02-13T00:00:00.000Z",
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
+},
+{
+  "id": "4591124e-5f6f-4233-a37f-15a4b69f89c1",
+  "slug": "minimax-optimal-online-contract-design-with-unrestricted-bounded-contracts-2026-09-18",
+  "title": "Minimax-Optimal Online Contract Design with Unrestricted Bounded Contracts",
+  "factSummary": "We study repeated contract design when a principal observes outcomes but not the actions that generate them. The principal may use any bounded outcome-contingent payment vector, and the agent's best response can make expected profit discontinuous in those payments. For every fixed number $m\\ge2$ of outcomes, the minimax regret over $T$ rounds is of order $T^{m/(m+1)}$, up to logarithmic factors. The upper bound allows arbitrary action spaces and agent heterogeneity, without smoothness or monotone-surplus assumptions. Its key is an effective-dimension reduction that the benchmark can be normalized even when fixed tie-breaking is not shift invariant, after which revealed preference yields a monotone response map in payment-difference coordinates. A learning policy built on a Lipschitz parametrization of this map attains the rate using only observed outcome categories. The lower-bound construction accounts for how incentive losses accumulate across outcome dimensions. It shows that each additional contractible outcome creates a precise and unavoidable increase in the worst-case cost of learning.",
+  "summary": "We study repeated contract design when a principal observes outcomes but not the actions that generate them. The principal may use any bounded outcome-contingent payment vector, and the agent's best response can make expected profit discontinuous in those payments. For every fixed number $m\\ge2$ of outcomes, the minimax regret over $T$ rounds is of order $T^{m/(m+1)}$, up to logarithmic factors. The upper bound allows arbitrary action spaces and agent heterogeneity, without smoothness or monotone-surplus assumptions. Its key is an effective-dimension reduction that the benchmark can be normalized even when fixed tie-breaking is not shift invariant, after which revealed preference yields a monotone response map in payment-difference coordinates. A learning policy built on a Lipschitz parametrization of this map attains the rate using only observed outcome categories. The lower-bound construction accounts for how incentive losses accumulate across outcome dimensions. It shows that each additional contractible outcome creates a precise and unavoidable increase in the worst-case cost of learning.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "MiniMax",
+  "keywords": [
+    "minimax",
+    "optimal",
+    "online",
+    "contract",
+    "design",
+    "unrestricted",
+    "bounded",
+    "contracts"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T13:17:56.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:13.663Z",
+  "updatedAt": "2026-09-18T05:20:13.702Z"
+},
+{
+  "id": "7e9020ba-c0b4-43b1-a823-c3f6c0ba45bd",
+  "slug": "minimizing-targeted-activations-input-only-suppression-of-evaluation-awareness-latents-in--2026-07-29",
+  "title": "Minimizing Targeted Activations: Input-Only Suppression of Evaluation-Awareness Latents in Large Language Models",
+  "factSummary": "Activation steering controls model behavior by editing internal activations at inference time. We study its input-side dual: optimizing a fluent prompt so that a chosen internal latent is driven toward zero, with no inference-time model access. Our target is an \"evaluation-awareness\" latent-linearly readable and steerable in recent work-whose control would threaten the validity of safety evaluations if models behave differently when they detect being tested. Adapting Fluent Dreaming / EPO with a negated feature term (GCG-style token optimization plus a self-cross-entropy fluency regularizer, swept over a fluency weight), we suppress the latent under five target constructions-a CAA direction, a subspace norm, an SAE feature, a single MLP neuron, and a behavioral logit-on Llama-3.2-3B and Llama-3.1-8B. The latent is robustly suppressible ($z\\approx-7$), and a causally-validated Llama Scope SAE feature can be fully and selectively turned off. But our controls tell a cautionary story about the CAA direction: a placebo random direction is suppressed just as hard and shifts behavior just as far, and when we hold a real eval passage in context and optimize only a prefix, suppressing the eval-direction fails to reduce-and slightly increases-the model's behavioral eval judgment. Activation-readability, in short, is not behavioral controllability. We further find that a single MLP neuron is eval-correlated but not causal at both scales, and that scanning the real Pile yields a natural-text baseline competitive with the optimizer for the internal direction. A positive control validates our erasure detector, bounding an erasure-vs-rotation question earlier left open.",
+  "summary": "Activation steering controls model behavior by editing internal activations at inference time. We study its input-side dual: optimizing a fluent prompt so that a chosen internal latent is driven toward zero, with no inference-time model access. Our target is an \"evaluation-awareness\" latent-linearly readable and steerable in recent work-whose control would threaten the validity of safety evaluations if models behave differently when they detect being tested. Adapting Fluent Dreaming / EPO with a negated feature term (GCG-style token optimization plus a self-cross-entropy fluency regularizer, swept over a fluency weight), we suppress the latent under five target constructions-a CAA direction, a subspace norm, an SAE feature, a single MLP neuron, and a behavioral logit-on Llama-3.2-3B and Llama-3.1-8B. The latent is robustly suppressible ($z\\approx-7$), and a causally-validated Llama Scope SAE feature can be fully and selectively turned off. But our controls tell a cautionary story about the CAA direction: a placebo random direction is suppressed just as hard and shifts behavior just as far, and when we hold a real eval passage in context and optimize only a prefix, suppressing the eval-direction fails to reduce-and slightly increases-the model's behavioral eval judgment. Activation-readability, in short, is not behavioral controllability. We further find that a single MLP neuron is eval-correlated but not causal at both scales, and that scanning the real Pile yields a natural-text baseline competitive with the optimizer for the internal direction. A positive control validates our erasure detector, bounding an erasure-vs-rotation question earlier left open.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "minimizing",
+    "targeted",
+    "activations",
+    "input",
+    "only",
+    "suppression",
+    "evaluation",
+    "awareness"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T16:01:48.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-29T04:00:10.830Z",
+  "updatedAt": "2026-07-29T04:00:10.855Z"
+},
+{
+  "id": "681ac06d-d44b-47bb-8ed8-dbe4691fc671",
+  "slug": "minimum-time-trajectories-for-a-car-like-mobile-robot-moving-with-rigid-wheels-under-non-s-2026-09-22",
+  "title": "Minimum Time Trajectories for a Car-Like Mobile Robot Moving with Rigid Wheels Under Non-Sliding Constraints",
+  "factSummary": "This paper studies the minimum time trajectoriesvof a car-like mobile robot navigating in an obstacle free environment. The robot, with forward and backward speeds, is controlled by bounded front-wheels acceleration and limited front-wheels steering rate. The paper extends previous results which solved this problem for the kinematic car-like robot. However, the kinematic model assumes pure rolling at the wheels ground contacts. This assumption requires non-sliding constraints for the front and rear wheels that can only be handled by the robot dynamics. This paper formulates the non-sliding constraints based on the robot dynamics then augments the kinematic model time-optimal path primitives with three new path primitives associated with the non-sliding constraints. The three non-sliding path primitives together with the kinematic model twelve path primitives form the car-like robot time optimal trajectories. Approximate analytic solutions for the non-sliding path primitives are also provided. Examples study the time-optimal path primitives along representative maneuvers, illustrating how the non-sliding constraints influence the time optimal trajectories of the car-like robot.",
+  "summary": "This paper studies the minimum time trajectoriesvof a car-like mobile robot navigating in an obstacle free environment. The robot, with forward and backward speeds, is controlled by bounded front-wheels acceleration and limited front-wheels steering rate. The paper extends previous results which solved this problem for the kinematic car-like robot. However, the kinematic model assumes pure rolling at the wheels ground contacts. This assumption requires non-sliding constraints for the front and rear wheels that can only be handled by the robot dynamics. This paper formulates the non-sliding constraints based on the robot dynamics then augments the kinematic model time-optimal path primitives with three new path primitives associated with the non-sliding constraints. The three non-sliding path primitives together with the kinematic model twelve path primitives form the car-like robot time optimal trajectories. Approximate analytic solutions for the non-sliding path primitives are also provided. Examples study the time-optimal path primitives along representative maneuvers, illustrating how the non-sliding constraints influence the time optimal trajectories of the car-like robot.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "minimum",
+    "time",
+    "trajectories",
+    "car",
+    "like",
+    "mobile",
+    "robot",
+    "moving"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-21T16:16:17.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T05:30:06.901Z",
+  "updatedAt": "2026-09-22T05:30:06.942Z"
+},
+{
+  "id": "f9aa404f-9615-4b95-a2e5-0628ce94c962",
+  "slug": "mint-a-universal-zero-shot-predictor-for-transaction-data-2026-08-17",
+  "title": "MINT: A Universal Zero-Shot Predictor for Transaction Data",
+  "factSummary": "Banks analyse sequential financial transaction data to perform many tasks, including fraud prevention, credit risk assessment and offer personalization. To improve the predictive accuracy of these tasks, Payments Foundation Models encode transaction sequence data as rich contextual embeddings, which can then be provided to task-specific models as features. However, these Foundation Models are not designed for flexible zero-shot reasoning across novel downstream prediction tasks, limiting their adaptability and utility. Existing LLM-based approaches to zero-shot prediction often fail to fully exploit the predictive signal within transaction data, while relying on costly text serialization or task-specific architectures that scale poorly. To address these limitations, we present the Multimodal Instruction Network for Transactions (MINT), a framework that connects a pretrained transaction sequence encoder to a decoder-only LLM through lightweight embedding injection, transaction-language alignment, and instruction tuning. We find that MINT achieves state-of-the-art predictive question-answering performance in both in-distribution and out-of-distribution questions, while substantially reducing input tokens, latency, and memory consumption compared to text-serialization baselines. Through comprehensive analyses of representations, alignment strategies, training data, and history length, we establish that compact transaction embeddings are a superior approach to transaction representation than text serialization for multimodal reasoning and zero-shot prediction tasks.",
+  "summary": "Banks analyse sequential financial transaction data to perform many tasks, including fraud prevention, credit risk assessment and offer personalization. To improve the predictive accuracy of these tasks, Payments Foundation Models encode transaction sequence data as rich contextual embeddings, which can then be provided to task-specific models as features. However, these Foundation Models are not designed for flexible zero-shot reasoning across novel downstream prediction tasks, limiting their adaptability and utility. Existing LLM-based approaches to zero-shot prediction often fail to fully exploit the predictive signal within transaction data, while relying on costly text serialization or task-specific architectures that scale poorly. To address these limitations, we present the Multimodal Instruction Network for Transactions (MINT), a framework that connects a pretrained transaction sequence encoder to a decoder-only LLM through lightweight embedding injection, transaction-language alignment, and instruction tuning. We find that MINT achieves state-of-the-art predictive question-answering performance in both in-distribution and out-of-distribution questions, while substantially reducing input tokens, latency, and memory consumption compared to text-serialization baselines. Through comprehensive analyses of representations, alignment strategies, training data, and history length, we establish that compact transaction embeddings are a superior approach to transaction representation than text serialization for multimodal reasoning and zero-shot prediction tasks.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "mint",
+    "universal",
+    "zero",
+    "shot",
+    "predictor",
+    "transaction",
+    "data"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-14T11:17:01.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-17T02:14:09.734Z",
+  "updatedAt": "2026-08-17T02:14:09.777Z"
+},
+{
+  "id": "368c3480-dce3-47f7-a56a-7b90e3ded098",
+  "slug": "mira-medical-image-reflection-for-agentic-diagnosis-2026-08-12",
+  "title": "MIRA: Medical Image Reflection for Agentic Diagnosis",
+  "factSummary": "Medical visual agents can use tools to inspect images and retrieve external knowledge, but indiscriminate tool use may introduce noisy or misleading evidence. Reliable diagnosis therefore requires not only acquiring additional observations, but also verifying whether tool actions are necessary and whether the resulting evidence supports the current hypothesis. We introduce MIRA (Medical Image Reflection for Agentic Diagnosis), a medical visual diagnostic framework for autonomous evidence search and reflective verification. MIRA dynamically invokes image-processing operations, including zooming, grounding, pointing, rotation, and measurement, as well as web search, while evaluating the relevance and consistency of the acquired evidence. We develop MIRA through a two-stage training strategy. First, a tool-augmented Monte Carlo Tree Search data engine explores diverse diagnostic hypotheses and jointly verifies visual grounding accuracy and semantic consistency to construct supervised fine-tuning trajectories. Second, reinforcement learning further improves decision-making through online reflective principle evolution: failure cases are distilled into candidate principles, and only principles that improve held-out rollout rewards are retained. Across nine medical visual reasoning benchmarks, MIRA achieves an average score of 64.73, improving its Qwen3-VL-8B backbone by 7.44 points. It also increases useful tool-use judgments from 56.2% to 73.8% and reduces harmful judgments from 8.9% to 1.6%. Qualitative analyses show that MIRA can re-examine evidence, correct premature conclusions, and adapt its tool-use strategy. Project page: https://MIRA-VL.github.io/",
+  "summary": "Medical visual agents can use tools to inspect images and retrieve external knowledge, but indiscriminate tool use may introduce noisy or misleading evidence. Reliable diagnosis therefore requires not only acquiring additional observations, but also verifying whether tool actions are necessary and whether the resulting evidence supports the current hypothesis. We introduce MIRA (Medical Image Reflection for Agentic Diagnosis), a medical visual diagnostic framework for autonomous evidence search and reflective verification. MIRA dynamically invokes image-processing operations, including zooming, grounding, pointing, rotation, and measurement, as well as web search, while evaluating the relevance and consistency of the acquired evidence. We develop MIRA through a two-stage training strategy. First, a tool-augmented Monte Carlo Tree Search data engine explores diverse diagnostic hypotheses and jointly verifies visual grounding accuracy and semantic consistency to construct supervised fine-tuning trajectories. Second, reinforcement learning further improves decision-making through online reflective principle evolution: failure cases are distilled into candidate principles, and only principles that improve held-out rollout rewards are retained. Across nine medical visual reasoning benchmarks, MIRA achieves an average score of 64.73, improving its Qwen3-VL-8B backbone by 7.44 points. It also increases useful tool-use judgments from 56.2% to 73.8% and reduces harmful judgments from 8.9% to 1.6%. Qualitative analyses show that MIRA can re-examine evidence, correct premature conclusions, and adapt its tool-use strategy. Project page: https://MIRA-VL.github.io/",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "mira",
+    "medical",
+    "image",
+    "reflection",
+    "agentic",
+    "diagnosis"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T11:57:27.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:45.485Z",
+  "updatedAt": "2026-08-12T03:17:45.526Z"
+},
+{
+  "id": "7a55d290-6874-4483-ad03-3e3a00bd8357",
+  "slug": "mira-real-time-full-duplex-human-robot-interaction-for-embodied-companions-2026-09-22",
+  "title": "MIRA: Real-Time Full-Duplex Human-Robot Interaction for Embodied Companions",
+  "factSummary": "Real-time embodied companion interaction requires a robot to infer user intent from streaming speech, generate timely responses, and execute expressive, interruptible motions. Existing systems typically decouple dialogue orchestration from gesture synthesis, relying on offline motion generation from complete audio. This separation leaves open how a deployed robot can dynamically synchronize response content, prosodic timing, and physical safety under incremental inputs and uncertain turn boundaries. We present MIRA, a unified framework for full-duplex embodied companion interaction. Given streaming user speech, dialogue history, and vocal affect, MIRA predicts both the response text and an explicit embodiment cue. Discrete social behaviors (\\eg listening, greeting) are mapped to validated robot trajectories, while open-ended speaking is paired with streaming, co-speech motion. This generative motion is governed by a predict-more-than-commit sliding window that provides temporal look-ahead for motion continuity while limiting physical commitment to a short, cancellable prefix. Crucially, we design CORTEX, a dual-timescale interaction policy that manages low-latency streaming and deliberative turn decisions, backed by a robot-side execution layer that enforces physical safety constraints at the control rate. We deploy MIRA on an Astribot S1 humanoid robot. Quantitative evaluations demonstrate competitive audio-motion alignment relative to state-of-the-art motion-generation baselines, while real-robot deployment measurements characterize streaming responsiveness and interruption handling.",
+  "summary": "Real-time embodied companion interaction requires a robot to infer user intent from streaming speech, generate timely responses, and execute expressive, interruptible motions. Existing systems typically decouple dialogue orchestration from gesture synthesis, relying on offline motion generation from complete audio. This separation leaves open how a deployed robot can dynamically synchronize response content, prosodic timing, and physical safety under incremental inputs and uncertain turn boundaries. We present MIRA, a unified framework for full-duplex embodied companion interaction. Given streaming user speech, dialogue history, and vocal affect, MIRA predicts both the response text and an explicit embodiment cue. Discrete social behaviors (\\eg listening, greeting) are mapped to validated robot trajectories, while open-ended speaking is paired with streaming, co-speech motion. This generative motion is governed by a predict-more-than-commit sliding window that provides temporal look-ahead for motion continuity while limiting physical commitment to a short, cancellable prefix. Crucially, we design CORTEX, a dual-timescale interaction policy that manages low-latency streaming and deliberative turn decisions, backed by a robot-side execution layer that enforces physical safety constraints at the control rate. We deploy MIRA on an Astribot S1 humanoid robot. Quantitative evaluations demonstrate competitive audio-motion alignment relative to state-of-the-art motion-generation baselines, while real-robot deployment measurements characterize streaming responsiveness and interruption handling.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "mira",
+    "real",
+    "time",
+    "full",
+    "duplex",
+    "human",
+    "robot",
+    "interaction"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-21T13:14:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T05:30:12.311Z",
+  "updatedAt": "2026-09-22T05:30:12.351Z"
+},
+{
+  "id": "875a6a84-8433-4343-8d8a-917af71e8ba1",
+  "slug": "mirage-multi-perspective-creative-language-model-reasoning-with-reinforcement-learning-gui-2026-09-21",
+  "title": "MIRAGE: Multi-Perspective Creative Language Model Reasoning with Reinforcement Learning Guidance",
+  "factSummary": "Recent advances in Large Language Models (LLMs) have revolutionized artificial intelligence and how human interact with AIs. Despite impressive advancements, LLMs struggle with complex mathematical, scientific, and logical tasks. Inspired by human cognitive flexibility - our ability to dynamically switch mental perspectives - we propose MIRAGE (Multi-perspective Inference-time Reasoning via Agent-Guided Exploration), a novel inference-time creative thinking framework. MIRAGE includes a Selector that prioritizes effective conceptual perspectives (e.g., algebraic, probabilistic) and a Reasoner that sequentially solves tasks until a confident solution emerges, otherwise aggregating multiple perspectives. Tested on GSM8K, MATH500, MMLU-Pro, and Game-of-24 benchmarks, MIRAGE consistently outperforms methods like Chain-of-Thought and diverse prompting ensembles, significantly boosting accuracy with minimal inference overhead, providing a scalable solution for practical applications.",
+  "summary": "Recent advances in Large Language Models (LLMs) have revolutionized artificial intelligence and how human interact with AIs. Despite impressive advancements, LLMs struggle with complex mathematical, scientific, and logical tasks. Inspired by human cognitive flexibility - our ability to dynamically switch mental perspectives - we propose MIRAGE (Multi-perspective Inference-time Reasoning via Agent-Guided Exploration), a novel inference-time creative thinking framework. MIRAGE includes a Selector that prioritizes effective conceptual perspectives (e.g., algebraic, probabilistic) and a Reasoner that sequentially solves tasks until a confident solution emerges, otherwise aggregating multiple perspectives. Tested on GSM8K, MATH500, MMLU-Pro, and Game-of-24 benchmarks, MIRAGE consistently outperforms methods like Chain-of-Thought and diverse prompting ensembles, significantly boosting accuracy with minimal inference overhead, providing a scalable solution for practical applications.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "mirage",
+    "multi",
+    "perspective",
+    "creative",
+    "language",
+    "model",
+    "reasoning",
+    "reinforcement"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 49,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T09:44:13.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-21T05:36:27.194Z",
+  "updatedAt": "2026-09-21T05:36:27.234Z"
+},
+{
+  "id": "68b682dc-047e-4cc7-9936-a911acaccfa9",
+  "slug": "mirror-learning-from-the-other-view-for-multi-modal-reasoning-2026-07-24",
+  "title": "MIRROR: Learning from the Other View for Multi-Modal Reasoning",
+  "factSummary": "Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We show that these views often elicit different behaviors: a model may solve a problem from text but fail on the corresponding diagram, or succeed visually while failing textually. This inconsistency suggests that different views expose complementary reasoning paths and failure modes that standard multimodal post-training does not fully exploit. To study and exploit this phenomenon, we construct ODA-Data, a high-quality paired multimodal geometry dataset with text-dominant, image-dominant, and combined image+text views of the same problems, together with splits for training and evaluating modality-dependent reasoning behaviors. We then develop Modality-Informed Reciprocal Reasoning Optimization (MIRROR), a reinforcement learning approach for improving multimodal reasoning via self supervision. For each problem, MIRROR evaluates the model under all views, selects the best-performing view as a teacher, and trains other views with a reverse-KL objective towards the teacher. Across reasoning benchmarks that evaluate on geometry problems, MIRROR improves over standard RL and yields more accurate and consistent behavior across modalities",
+  "summary": "Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We show that these views often elicit different behaviors: a model may solve a problem from text but fail on the corresponding diagram, or succeed visually while failing textually. This inconsistency suggests that different views expose complementary reasoning paths and failure modes that standard multimodal post-training does not fully exploit. To study and exploit this phenomenon, we construct ODA-Data, a high-quality paired multimodal geometry dataset with text-dominant, image-dominant, and combined image+text views of the same problems, together with splits for training and evaluating modality-dependent reasoning behaviors. We then develop Modality-Informed Reciprocal Reasoning Optimization (MIRROR), a reinforcement learning approach for improving multimodal reasoning via self supervision. For each problem, MIRROR evaluates the model under all views, selects the best-performing view as a teacher, and trains other views with a reverse-KL objective towards the teacher. Across reasoning benchmarks that evaluate on geometry problems, MIRROR improves over standard RL and yields more accurate and consistent behavior across modalities",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "mirror",
+    "learning",
+    "from",
+    "other",
+    "view",
+    "multi",
+    "modal",
+    "reasoning"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-23T17:35:56.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-24T04:02:42.545Z",
+  "updatedAt": "2026-07-24T04:02:42.578Z"
+},
+{
   "id": "64e346f3-d915-4eb0-8f8c-9c0ffd0f8439",
   "slug": "mirrorcraft-paired-evaluation-under-hidden-rule-changes-in-minecraft-2026-08-03",
   "title": "MirrorCraft: Paired Evaluation under Hidden Rule Changes in Minecraft",
@@ -222,8 +630,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-10T12:00:00.000Z",
   "publishedAt": "2023-10-10T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "d77aac24-e9e1-46a2-acb8-2b7f10d85f67",
@@ -263,8 +671,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-27T00:00:00.000Z",
   "publishedAt": "2023-09-27T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "2b989f44-ca47-400b-ac7c-731642ddf156",
@@ -306,8 +714,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-23T00:00:00.000Z",
   "publishedAt": "2026-06-23T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "901cf287-0ee3-4fdd-8b8c-71d609dbf23c",
@@ -1024,8 +1432,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-03T12:00:00.000Z",
   "publishedAt": "2024-06-03T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "a0dc6ff2-12ae-469e-b769-43493976a5ba",
@@ -1293,8 +1701,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-25T00:00:00.000Z",
   "publishedAt": "2024-11-25T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "fc38de93-799b-4178-b2c9-dd13f5addbce",
@@ -2113,8 +2521,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-18T12:00:00.000Z",
   "publishedAt": "2024-12-18T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "87e78380-fbd4-4b0d-9679-80ca7775819c",
@@ -3116,8 +3524,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-14T12:00:00.000Z",
   "publishedAt": "2023-07-14T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "809c5a0e-18f3-43cd-a451-3cec66d24843",
@@ -3571,6 +3979,51 @@
   "publishedAt": null,
   "createdAt": "2026-08-10T03:05:18.110Z",
   "updatedAt": "2026-08-10T03:05:18.148Z"
+},
+{
+  "id": "f7c92646-8efb-4678-8a2c-c08128618cb4",
+  "slug": "multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo-2026-09-25",
+  "title": "Multi-Region training with Amazon SageMaker HyperPod and Qumulo",
+  "factSummary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run, where a remote cluster matched a co-located cluster's throughput after a brief NeuralCache warmup.",
+  "summary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run, where a remote cluster matched a co-located cluster's throughput after a brief NeuralCache warmup.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "multi",
+    "region",
+    "training",
+    "amazon",
+    "sagemaker",
+    "hyperpod",
+    "qumulo"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T15:49:44.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T17:21:21.759Z",
+  "updatedAt": "2026-09-25T17:21:21.793Z"
 },
 {
   "id": "105174b6-656a-477c-8c30-f01cb5dedad4",
@@ -4564,6 +5017,50 @@
   "updatedAt": "2026-08-13T03:19:41.433Z"
 },
 {
+  "id": "7be3003d-a25e-41dd-9185-1bd9625e0648",
+  "slug": "narrateai-production-ready-llm-quality-assurance-on-amazon-bedrock-2026-09-25",
+  "title": "NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
+  "factSummary": "AWS Machine Learning Blog 发布文章，介绍 NarrateAI 在 Amazon Bedrock 上实现生产级 LLM 质量保障。文章详述五种技术：自适应流水线编排、跨账户多模型故障转移、实时流式评估、复合评估与数据准确性验证，并称在实时流式响应下达到约 99% 的数值准确率。",
+  "summary": "NarrateAI 在 Amazon Bedrock 上提供生产级 LLM 质量保障，通过自适应流水线编排、跨账户多模型故障转移、实时流式评估、复合评估和数据准确性验证五种技术，在实时流式响应场景下达到约 99% 的数值准确率。",
+  "technicalInsight": "文章将质量保障拆解为编排、容错、流式评估、复合评估与数据准确性五个环节，说明生产级 LLM 评估正从离线批处理转向与推理同步的在线流程；但约 99% 数值准确率的具体口径、测试集与基线未在证据中给出，需谨慎解读。可验证下一信号：是否公开评估数据集、指标定义或与基线方法的对比结果。",
+  "industryInsight": "该案例表明云厂商正把 LLM 质量保障作为 Bedrock 上的可落地能力输出，评估与容错可能成为企业采用生成式 AI 的采购关注点；但证据仅来自单一厂商博客，尚不能推断行业整体格局变化。可验证下一信号：其他云平台或独立厂商是否推出同类生产级评估方案。",
+  "futureOutlook": "若流式评估与多模型故障转移被更多企业采纳，LLM 质量保障可能从项目内自建转向平台化服务；这取决于准确率指标能否被第三方复现。可验证下一信号：后续是否出现独立基准测试或客户案例披露。",
+  "businessValue": "对企业而言，该方案指向降低 LLM 上线后的质量与可用性风险，可能减少自建评估流水线的工程投入；但证据未提供成本、延迟或客户收益数据，商业价值仍需实际部署验证。可验证下一信号：是否公布定价、延迟开销或客户采用数据。",
+  "category": "llm-quality-assurance",
+  "company": "NarrateAI",
+  "keywords": [
+    "NarrateAI",
+    "Amazon Bedrock",
+    "LLM 质量保障",
+    "流式评估",
+    "多模型故障转移",
+    "复合评估"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T16:15:22.000Z",
+  "publishedAt": "2026-09-25T17:22:05.145Z",
+  "createdAt": "2026-09-25T17:21:21.677Z",
+  "updatedAt": "2026-09-25T17:22:05.145Z"
+},
+{
   "id": "5b2f3cfe-e825-4fba-aee5-9cda7fafdd90",
   "slug": "nas-driven-hardware-accelerator-exploration-for-edge-ai-and-quantization-effects-on-the-pa-2026-08-14",
   "title": "NAS-Driven Hardware Accelerator Exploration for Edge AI and Quantization Effects on the Pareto Space",
@@ -4649,8 +5146,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-16T12:00:00.000Z",
   "publishedAt": "2025-12-16T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "dae0bff1-d475-449a-947e-5b206bcd28a2",
@@ -5131,8 +5628,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-09T12:00:00.000Z",
   "publishedAt": "2025-10-09T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "bc172b74-36da-4f1c-a6f5-906f5ee5b31d",
@@ -5450,8 +5947,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-01T12:00:00.000Z",
   "publishedAt": "2025-12-01T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "bf720145-a1fa-4a58-b121-b40a83eb1132",
@@ -6749,8 +7246,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T12:00:00.000Z",
   "publishedAt": "2024-04-15T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "dc84823a-a0a9-42b7-9ccf-0528e9efab48",
@@ -7386,8 +7883,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-18T00:00:00.000Z",
   "publishedAt": "2025-03-18T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "768c90d0-892e-4f4f-9f3d-e8a2cc41e6c4",
@@ -9326,8 +9823,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-27T12:00:00.000Z",
   "publishedAt": "2025-01-27T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "00688150-d8d1-4f6f-b3fb-f456a950f56f",
@@ -9461,8 +9958,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-13T12:00:00.000Z",
   "publishedAt": "2023-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "dfc385cd-2c0d-4211-a5c1-2f8f30939ba9",
@@ -9550,8 +10047,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T00:00:00.000Z",
   "publishedAt": "2025-03-31T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "3286f57a-1d16-455b-a624-ba5ea35fcefd",
@@ -9593,8 +10090,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-02T00:00:00.000Z",
   "publishedAt": "2024-10-02T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "aa5bf8ec-dc26-44a0-b441-ecc74aed86d7",
@@ -9681,8 +10178,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-11T00:00:00.000Z",
   "publishedAt": "2026-06-11T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "92157ab0-4315-4e68-aec2-1f313ca6588a",
@@ -9815,8 +10312,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-16T00:00:00.000Z",
   "publishedAt": "2025-05-16T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "885ebdbc-84dd-49b9-ae62-3615970d7ba7",
@@ -9857,8 +10354,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-02T00:00:00.000Z",
   "publishedAt": "2025-02-02T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "6ccaf3c6-8b9b-48b2-a764-e446de71fc6f",
@@ -9900,8 +10397,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "36284da8-5c0f-4b27-a9b2-34732a52023b",
@@ -9942,8 +10439,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T00:00:00.000Z",
   "publishedAt": "2023-11-06T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "3728240c-7ae6-482d-8c2d-964d83e8baec",
@@ -10030,8 +10527,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "04ed842a-9e5d-4e12-adbe-e0a345030332",
@@ -10073,8 +10570,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-21T00:00:00.000Z",
   "publishedAt": "2025-05-21T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "1873aa04-ac99-4274-a8f5-4a0e2b4c130c",
@@ -10157,8 +10654,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-12T00:00:00.000Z",
   "publishedAt": "2024-09-12T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "034a79ea-710b-4427-a223-4d73be2d5c59",
@@ -10199,8 +10696,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-16T00:00:00.000Z",
   "publishedAt": "2025-04-16T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "4a6cb77e-f99d-4853-acd4-58fe79bb1a50",
@@ -10241,8 +10738,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-23T00:00:00.000Z",
   "publishedAt": "2025-01-23T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "f044cdec-7524-43e4-ac8d-610dafc3b5cc",
@@ -10283,8 +10780,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-11T00:00:00.000Z",
   "publishedAt": "2025-03-11T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "22cc77ce-26f0-423f-b63d-fd8562c5c1b5",
@@ -10583,8 +11080,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-16T17:52:04.000Z",
   "publishedAt": "2026-03-16T17:52:04.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "aa831a56-f866-401a-a0c2-e2fcb6aa120d",
@@ -10669,8 +11166,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-13T12:00:00.000Z",
   "publishedAt": "2024-06-13T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "7d8e4f41-ccc4-4eb3-bc3d-ecd2036b2b90",
@@ -11029,8 +11526,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-29T12:00:00.000Z",
   "publishedAt": "2024-10-29T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "566fb569-499b-42a4-a2f5-1d94ebe943b2",
@@ -11161,8 +11658,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-05T12:00:00.000Z",
   "publishedAt": "2025-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "10dfed32-7e8d-4ac1-9008-629a11b29033",
@@ -11737,8 +12234,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T06:02:41.000Z",
   "publishedAt": "2026-07-09T06:02:41.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "bb871ade-7949-47aa-97ab-c924defd71f8",
@@ -12367,8 +12864,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-08T12:00:00.000Z",
   "publishedAt": "2025-09-08T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "04ef5b54-240c-41af-ac4a-d7c5ec03e280",
@@ -13444,8 +13941,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-27T12:00:00.000Z",
   "publishedAt": "2022-11-27T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "9aa622fd-7db8-4b19-90d8-11a520e8550e",
@@ -14034,8 +14531,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-09T12:00:00.000Z",
   "publishedAt": "2024-05-09T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "1ed5ed44-1515-4c59-956e-8dea178d2f9a",
@@ -14259,8 +14756,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-14T00:00:00.000Z",
   "publishedAt": "2025-08-14T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "772a4315-4b17-4726-bf5e-04456d781b66",
@@ -14624,8 +15121,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-13T12:00:00.000Z",
   "publishedAt": "2024-09-13T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "07f8f535-732d-4781-889d-36908e4a8aa4",
@@ -14805,8 +15302,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-31T12:00:00.000Z",
   "publishedAt": "2024-10-31T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "61e11202-6f4e-4dba-8701-b98ae0e0be7e",
@@ -16214,8 +16711,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T09:28:06.000Z",
   "publishedAt": "2026-07-09T09:28:06.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "2d122fad-233c-490a-bc88-c79b6242fc89",
@@ -17309,6 +17806,50 @@
   "publishedAt": null,
   "createdAt": "2026-07-23T04:04:15.793Z",
   "updatedAt": "2026-07-23T04:04:15.821Z"
+},
+{
+  "id": "49b67601-4a3e-472c-af34-d5491a6f5769",
+  "slug": "proaction-boosts-sales-60-and-saves-75-hours-with-codex-2026-09-25",
+  "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+  "factSummary": "OpenAI 发布案例称，Proaction 使用 Codex、GPT-Live-1 和 GPT-6 Astra 构建、运营并销售现代车队管理，销售提升 60%，节省 75 小时以上。",
+  "summary": "OpenAI 官网案例页面显示，Proaction 借助 Codex、GPT-Live-1 与 GPT-6 Astra 加快现代车队管理的构建、运营与销售，并给出销售提升 60%、节省 75 小时以上的结果。",
+  "technicalInsight": "证据仅说明 Proaction 使用了 Codex、GPT-Live-1 和 GPT-6 Astra 三项工具，未披露具体调用方式、集成深度或任务类型，因此无法判断技术路径的可复制性。可验证的下一信号是 OpenAI 或 Proaction 是否公开具体工作流、模型分工与部署细节。",
+  "industryInsight": "该案例属于企业级 AI 工具在垂直行业（车队管理）的落地叙事，但证据只有单一厂商来源，缺少第三方审计或客户独立披露，销售与工时数字应视为厂商自述。可验证的下一信号是 Proaction 或独立渠道是否给出可核对的业务指标与客户名单。",
+  "futureOutlook": "若此类案例持续出现并附带可核验指标，可能强化企业采购中对 AI 编码与运营工具的采用意愿；反之，若长期只有厂商单方口径，行业参考价值有限。可验证的下一信号是后续是否出现同类垂直行业案例及可对比的量化结果。",
+  "businessValue": "对潜在企业客户而言，该案例提供了 AI 工具在销售与运营环节的收益叙事，但缺乏成本、实施周期与基线数据，难以直接用于 ROI 测算。可验证的下一信号是是否披露定价、部署成本与对照基线。",
+  "category": "enterprise-ai-case-study",
+  "company": "Proaction",
+  "keywords": [
+    "Codex",
+    "GPT-Live-1",
+    "GPT-6 Astra",
+    "Proaction",
+    "车队管理",
+    "销售提升"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T19:00:00.000Z",
+  "publishedAt": "2026-09-25T17:22:05.148Z",
+  "createdAt": "2026-09-25T17:21:21.430Z",
+  "updatedAt": "2026-09-25T17:22:05.148Z"
 },
 {
   "id": "0d7e6cc1-890b-4c35-8892-f766e39bf561",
@@ -18823,8 +19364,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T12:00:00.000Z",
   "publishedAt": "2023-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "919573b4-8b7a-4148-a8ef-b6fb67fc3681",
@@ -19460,8 +20001,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-19T00:00:00.000Z",
   "publishedAt": "2024-09-19T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "006d1189-8941-42fd-a98b-3720645cc0a7",
@@ -19502,8 +20043,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-29T00:00:00.000Z",
   "publishedAt": "2025-04-29T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "a9290214-be63-4d6b-a99a-79738097db3f",
@@ -19543,8 +20084,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-03T00:00:00.000Z",
   "publishedAt": "2023-08-03T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "c9bce613-d160-46c4-a260-58b21cde26a0",
@@ -19586,8 +20127,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-24T12:00:00.000Z",
   "publishedAt": "2023-08-24T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "79ff590c-0dcd-4e1d-adb0-42e015b72f77",
@@ -19629,8 +20170,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-18T12:00:00.000Z",
   "publishedAt": "2024-09-18T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "709a4dc2-1599-4d38-a9c5-aef6e5fb04fa",
@@ -19672,8 +20213,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-14T12:00:00.000Z",
   "publishedAt": "2025-05-14T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "e7a5aff5-798a-45ab-a049-4c2752aa5bf2",
@@ -19715,8 +20256,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-26T12:00:00.000Z",
   "publishedAt": "2025-11-26T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "6b2ed600-9f86-4c04-8732-31b1fbe7982e",
@@ -20658,8 +21199,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T02:14:47.000Z",
   "publishedAt": "2026-04-02T02:14:47.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "e428c9f8-b1e1-44ea-a02a-2ca4e8777a9a",
@@ -21206,8 +21747,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-08T12:00:00.000Z",
   "publishedAt": "2025-05-08T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "27c19186-bcfd-45bc-a53e-3b13cbd24958",
@@ -21843,8 +22384,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-19T12:00:00.000Z",
   "publishedAt": "2024-11-19T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "7e00b275-1041-45e1-a2e5-2288a4027650",
@@ -22207,8 +22748,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "3303ae32-cdb3-424c-aba1-6ef95fcbfb93",
@@ -22387,8 +22928,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-20T12:00:00.000Z",
   "publishedAt": "2023-03-20T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "e2085c07-dd4d-4ed0-90c1-c902fb9e2837",
@@ -22793,8 +23334,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-03T12:00:00.000Z",
   "publishedAt": "2024-09-03T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "e8daa836-3ce4-4c60-833e-6e3fd8f06555",
@@ -23545,8 +24086,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T13:19:20.000Z",
   "publishedAt": "2026-01-20T13:19:20.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "06eea9d6-a1b2-46e2-86af-3da87baa1ba1",
@@ -24953,8 +25494,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-18T12:00:00.000Z",
   "publishedAt": "2023-12-18T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "5137c901-739b-4fd0-a77f-511031ed20d9",
@@ -25730,8 +26271,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-14T12:00:00.000Z",
   "publishedAt": "2023-09-14T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "004c25a5-d737-4ccc-a08e-81a4f12ee069",
@@ -26047,8 +26588,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-19T12:00:00.000Z",
   "publishedAt": "2025-05-19T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "4874a0ae-9064-4ed2-8f98-29d23fc89f05",
@@ -26958,8 +27499,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-28T12:00:00.000Z",
   "publishedAt": "2023-07-28T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "2c4b6489-7297-4036-a280-8324008ae05c",
@@ -27001,8 +27542,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "ffcbff37-3611-4128-b3a7-4d6b250a9f97",
@@ -27630,6 +28171,49 @@
   "publishedAt": null,
   "createdAt": "2026-09-21T18:18:08.092Z",
   "updatedAt": "2026-09-23T17:13:23.733Z"
+},
+{
+  "id": "81e426bc-bc2c-40cf-80e8-beb25c9a88aa",
+  "slug": "rust-v0-158-0-alpha-15-2026-09-25",
+  "title": "rust-v0.158.0-alpha.15",
+  "factSummary": "OpenAI Codex 发布了 rust-v0.158.0-alpha.15 版本，发布说明仅为“Release 0.158.0-alpha.15”。",
+  "summary": "OpenAI Codex 仓库出现 rust-v0.158.0-alpha.15 发布标签，属于该项目的预发布版本更新。",
+  "technicalInsight": "该版本号带有 alpha 标识，表明仍处于预发布阶段；但证据未提供任何变更日志或功能说明，无法判断具体技术改动。可验证的下一信号是后续是否出现对应的稳定版标签或更详细的 release notes。",
+  "industryInsight": "这仅是一次常规的版本迭代信号，不足以推断 Codex 产品路线或竞争格局变化。可观察的下一信号是该仓库后续发布节奏与版本说明的详细程度是否变化。",
+  "futureOutlook": "若后续版本开始附带实质性变更说明，可能意味着 Codex 进入更密集的功能迭代期；当前证据不支持更强判断。",
+  "businessValue": "对开发者而言，该发布提示可关注 Codex 工具链的版本更新；但由于缺少变更内容，暂无法评估对工作流或成本的实际影响。",
+  "category": "developer-tools-release",
+  "company": "OpenAI Codex",
+  "keywords": [
+    "OpenAI Codex",
+    "rust",
+    "release",
+    "alpha",
+    "developer tools"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T16:24:55.000Z",
+  "publishedAt": "2026-09-25T17:22:05.147Z",
+  "createdAt": "2026-09-25T17:21:21.595Z",
+  "updatedAt": "2026-09-25T17:22:05.147Z"
 },
 {
   "id": "8704c7aa-6a79-4ef3-971d-a9e6cc3dbd93",
@@ -28480,8 +29064,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-20T12:00:00.000Z",
   "publishedAt": "2025-11-20T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "34034d81-561b-48a1-af53-d91969e812f6",
@@ -28569,8 +29153,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "688fe7aa-3656-4b98-a097-7bf6998abe7e",
@@ -28888,8 +29472,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-18T12:00:00.000Z",
   "publishedAt": "2024-11-18T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "e4e22277-2fdc-4070-98c8-a80c85cde6d8",
@@ -29202,8 +29786,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-24T16:33:14.000Z",
   "publishedAt": "2026-05-24T16:33:14.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "336af561-1a95-49db-ba76-26eb5365a47f",
@@ -29381,8 +29965,54 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-31T12:00:00.000Z",
   "publishedAt": "2024-07-31T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
+},
+{
+  "id": "dc3384c0-4d0e-4903-8595-6b4404e8efd9",
+  "slug": "scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughp-2026-09-25",
+  "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
+  "factSummary": "AWS Machine Learning Blog 发布文章，介绍在 Amazon EKS 上使用 Elastic Fabric Adapter (EFA) 与 DeepEP 扩展 Mixture-of-Experts (MoE) 强化学习。文章给出的架构结合 Amazon EKS、EFA 与 Amazon S3，并称在大规模 RLHF 与 GRPO 训练中，聚合的强化学习 rollout 吞吐量提升了 40%。",
+  "summary": "AWS 发布一篇技术文章，描述在 Amazon EKS 上结合 EFA 与 DeepEP 扩展 MoE 强化学习的架构，并报告大规模 RLHF 与 GRPO 训练的聚合 rollout 吞吐量提升 40%。",
+  "technicalInsight": "该方案把 MoE 强化学习的扩展问题落在网络与存储层：EFA 负责节点间通信，DeepEP 面向专家并行的通信优化，S3 承担数据供给。判断依据是文章将吞吐提升归因于这三者的组合，但证据未给出基线配置、集群规模或对比方法，因此 40% 应视为该架构下的报告值而非通用结论。可验证下一信号：是否公布基准细节（模型规模、节点数、基线版本）或第三方复现。",
+  "industryInsight": "这反映云厂商正把强化学习后训练的基础设施作为差异化卖点，将托管 Kubernetes、专用网络与开源通信库打包成可复用的训练栈。判断依据是文章以架构教程形式发布而非产品发布，说明其目标是吸引自建 RL 训练管线的团队。可验证下一信号：AWS 是否将该架构产品化（托管服务、参考实现仓库或与 SageMaker 的整合）。",
+  "futureOutlook": "若此类优化被持续公开并复现，MoE 强化学习的单位算力吞吐可能成为云平台竞争的常规指标。可验证下一信号：后续是否出现同类厂商的对比数据，或 DeepEP 在 EKS 之外的部署案例。",
+  "businessValue": "对使用 EKS 的团队，该架构提供了在既有云资源上提升 RL 训练吞吐的参考路径，可能降低大规模 RLHF/GRPO 的算力成本。价值实现取决于实际负载是否匹配文章假设，需以自身基准测试验证。",
+  "category": "ml-training-infrastructure",
+  "company": "DeepEP",
+  "keywords": [
+    "MoE",
+    "reinforcement learning",
+    "Amazon EKS",
+    "EFA",
+    "DeepEP",
+    "RLHF",
+    "GRPO",
+    "throughput"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T16:29:50.000Z",
+  "publishedAt": "2026-09-25T17:22:05.147Z",
+  "createdAt": "2026-09-25T17:21:21.554Z",
+  "updatedAt": "2026-09-25T17:22:05.147Z"
 },
 {
   "id": "a967fe1e-cb01-4a76-a6bd-22ae332f0a3c",
@@ -29424,8 +30054,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-05T12:00:00.000Z",
   "publishedAt": "2024-03-05T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "4388f249-4f0e-4953-88e5-1eeba0e095d0",
@@ -29879,8 +30509,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -31423,8 +32053,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -31603,8 +32233,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -32012,8 +32642,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -32645,8 +33275,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -33277,8 +33907,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -33500,8 +34130,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -33635,8 +34265,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "b654d0dd-c746-45ef-aa75-0c3fb34e7c2d",
@@ -34315,8 +34945,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -34541,8 +35171,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -34812,8 +35442,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -34900,8 +35530,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -35078,8 +35708,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -35666,8 +36296,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -36028,8 +36658,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -36802,8 +37432,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -36891,8 +37521,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -36934,8 +37564,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -37754,8 +38384,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -37796,8 +38426,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -38059,8 +38689,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -39406,8 +40036,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -40585,8 +41215,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -40995,8 +41625,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -41267,8 +41897,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -41716,8 +42346,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -42534,8 +43164,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -44164,8 +44794,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -47762,8 +48392,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -48349,8 +48979,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -48438,8 +49068,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -48573,8 +49203,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -51441,8 +52071,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -52476,8 +53106,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -52747,8 +53377,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "0f741489-3e9e-407b-b44b-a5ea9b46debf",
@@ -53917,6 +54547,49 @@
   "publishedAt": "2026-09-21T05:37:14.702Z",
   "createdAt": "2026-09-19T05:12:29.968Z",
   "updatedAt": "2026-09-21T05:37:14.702Z"
+},
+{
+  "id": "0e5c8545-2022-42af-837e-c879025bb56e",
+  "slug": "updates-to-github-copilot-for-slack-and-microsoft-teams-2026-09-25",
+  "title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
+  "factSummary": "GitHub 发布更新，改进 GitHub Copilot 在 Slack 和 Microsoft Teams 中的使用体验，官方描述为提供更多上下文、更多控制，以及从对话到 GitHub 工作更清晰的路径；并提到在 Slack 中分享文件等场景。",
+  "summary": "GitHub 官方博客更新日志显示，GitHub Copilot 在 Slack 与 Microsoft Teams 中的集成获得更新，官方表述强调更多上下文、更多控制，以及从对话到 GitHub 工作更清晰的路径，并提及在 Slack 中分享文件等使用场景。",
+  "technicalInsight": "从官方措辞看，此次更新聚焦于把聊天工具中的对话上下文与 GitHub 工作流衔接，并增强控制能力；但证据未给出具体功能清单、模型或接口细节，因此无法判断技术实现方式。可验证的下一信号是官方更新日志或文档中是否列出具体命令、权限范围与上下文来源。",
+  "industryInsight": "该更新表明协作聊天工具正被作为开发者工作流的入口之一，Copilot 的触达从 IDE 向团队沟通场景延伸；但证据仅覆盖 GitHub 官方公告，尚不能推断采用率或竞争格局变化。可验证的下一信号是 GitHub 是否公布相关使用数据或企业客户案例。",
+  "futureOutlook": "若后续更新继续强化对话到代码仓库的衔接，聊天工具可能成为 Copilot 的常态化入口；这属于推断。可验证的下一信号是 GitHub 更新日志中是否出现更多与 Slack、Teams 相关的功能迭代或权限管理说明。",
+  "businessValue": "对企业而言，潜在价值在于减少在沟通工具与 GitHub 之间切换的成本，但证据未提供效率或收入数据，价值仍待验证。可验证的下一信号是官方是否发布企业部署指南、定价或采用指标。",
+  "category": "developer-collaboration-integration",
+  "company": "GitHub Copilot",
+  "keywords": [
+    "GitHub Copilot",
+    "Slack",
+    "Microsoft Teams",
+    "开发者工作流",
+    "协作集成"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T16:33:42.000Z",
+  "publishedAt": "2026-09-25T17:22:05.148Z",
+  "createdAt": "2026-09-25T17:21:21.512Z",
+  "updatedAt": "2026-09-25T17:22:05.148Z"
 },
 {
   "id": "0b5f4520-2469-4479-ba3c-bdec80bfa3e7",
@@ -56637,20 +57310,20 @@
     "v1",
     "100"
   ],
-  "confidenceScore": 74,
-  "heatScore": 22,
+  "confidenceScore": 84,
+  "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 55,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 89,
+    "freshness": 54,
     "crossRegion": false
   },
   "status": "review",
@@ -56659,7 +57332,7 @@
   "happenedAt": "2026-09-23T06:12:15.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-23T17:13:24.213Z",
-  "updatedAt": "2026-09-23T17:13:24.256Z"
+  "updatedAt": "2026-09-25T17:21:22.180Z"
 },
 {
   "id": "6d40bbdf-e4eb-41ef-af7c-5302d75d4862",
@@ -56885,20 +57558,20 @@
     "供应链安全",
     "开源发布"
   ],
-  "confidenceScore": 74,
-  "heatScore": 23,
+  "confidenceScore": 84,
+  "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 54,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 98,
+    "freshness": 52,
     "crossRegion": false
   },
   "status": "published",
@@ -56907,7 +57580,7 @@
   "happenedAt": "2026-09-23T03:24:12.000Z",
   "publishedAt": "2026-09-23T05:19:32.561Z",
   "createdAt": "2026-09-23T05:18:42.784Z",
-  "updatedAt": "2026-09-23T05:19:32.561Z"
+  "updatedAt": "2026-09-25T17:21:22.177Z"
 },
 {
   "id": "6aadda9d-e251-41ab-8fc6-62d8fa573b32",
@@ -57032,6 +57705,46 @@
   "publishedAt": "2026-08-13T03:20:26.514Z",
   "createdAt": "2026-08-13T03:19:42.749Z",
   "updatedAt": "2026-08-17T02:14:11.934Z"
+},
+{
+  "id": "d31c1f61-a027-4ba6-80ff-2c675e955654",
+  "slug": "v1-14-0-2026-09-25",
+  "title": "v1.14.0",
+  "factSummary": "Features trl.losses is gone: DPO, KTO and GRPO stream their own log-probs Warning from trl.losses import FusedLinearDPOLoss (or FusedLinearKTOLoss , FusedLinearGRPOLoss , FusedLinearJSDLoss ) no longer works. The module introduced in v1.13 has been removed. v1.13 vendored Liger's chunked_loss into trl.losses as a holding action, not a destination ( #7063 ). The problem it was holding: those classes reimplement each trainer's loss math, so TRL carried two copies of every formula, and copies drift. That drift is where the bugs were. GRPO's grad_norm differed from the default path, KTO ignored the reference model under PEFT, KTO class weights and DPO label_smoothing were silently dropped. Worst of all, under plain DDP the fused path ran the loss on the unwrapped model, so DistributedDataParallel 's reducer was never armed and gradients were never all-reduced: every rank silently kept its own. The fix is to stop reimplementing. All DPO, KTO and GRPO need from the fused path is per-token log-probs of the selected tokens, and TRL already had _ChunkedLogProbFunction for exactly that: it streams the vocabulary with an online logsumexp and recomputes in the backward pass. Each trainer now runs backbone -> _ChunkedLogProbFunction -> its own existing loss code , unchanged. One implementation of each loss, and the memory win is kept, because full logits are still never materialized. Thirteen restrictions existed only because the loss had been rewritten in a form that could not express those options. Most are gone: DPO with use_liger_kernel=True now accepts mixed loss types, f-divergences and precomputed reference log-probs, and GRPO gains entropy and off-policy masking. Still refused: use_weighting , compute_metrics , a PEFT adapter on lm_head , prompt-learning PEFT, and the MoE auxiliary loss. Single H100, Qwen3-0.6B, bs=4 , seq 512: config median step peak v1.13 fused, inline ref 0.2243 s 7.05 GB v1.14 chunked, inline ref 0.2457 s (+9.5%) 7.05 GB v1.14 chunked, precompute_re…",
+  "summary": "Features trl.losses is gone: DPO, KTO and GRPO stream their own log-probs Warning from trl.losses import FusedLinearDPOLoss (or FusedLinearKTOLoss , FusedLinearGRPOLoss , FusedLinearJSDLoss ) no longer works. The module introduced in v1.13 has been removed. v1.13 vendored Liger's chunked_loss into trl.losses as a holding action, not a destination ( #7063 ). The problem it was holding: those classes reimplement each trainer's loss math, so TRL carried two copies of every formula, and copies drift. That drift is where the bugs were. GRPO's grad_norm differed from the default path, KTO ignored the reference model under PEFT, KTO class weights and DPO label_smoothing were silently dropped. Worst of all, under plain DDP the fused path ran the loss on the unwrapped model, so DistributedDataParallel 's reducer was never armed and gradients were never all-reduced: every rank silently kept its own. The fix is to stop reimplementing. All DPO, KTO and GRPO need from the fused path is per-token log-probs of the selected tokens, and TRL already had _ChunkedLogProbFunction for exactly that: it streams the vocabulary with an online logsumexp and recomputes in the backward pass. Each trainer now runs backbone -> _ChunkedLogProbFunction -> its own existing loss code , unchanged. One implementation of each loss, and the memory win is kept, because full logits are still never materialized. Thirteen restrictions existed only because the loss had been rewritten in a form that could not express those options. Most are gone: DPO with use_liger_kernel=True now accepts mixed loss types, f-divergences and precomputed reference log-probs, and GRPO gains entropy and off-policy masking. Still refused: use_weighting , compute_metrics , a PEFT adapter on lm_head , prompt-learning PEFT, and the MoE auxiliary loss. Single H100, Qwen3-0.6B, bs=4 , seq 512: config median step peak v1.13 fused, inline ref 0.2243 s 7.05 GB v1.14 chunked, inline ref 0.2457 s (+9.5%) 7.05 GB v1.14 chunked, precompute_re…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "14"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T06:40:07.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T17:21:22.139Z",
+  "updatedAt": "2026-09-25T17:21:22.174Z"
 },
 {
   "id": "d90a32e7-305a-4d10-a48a-e6682bd03bc6",
@@ -57196,6 +57909,46 @@
   "publishedAt": null,
   "createdAt": "2026-09-24T05:33:35.384Z",
   "updatedAt": "2026-09-24T05:33:35.430Z"
+},
+{
+  "id": "8a4aab50-8855-4b89-989f-06be41ede940",
+  "slug": "v1-24-0-2026-09-25",
+  "title": "v1.24.0",
+  "factSummary": "1.24.0 (2026-09-25) What's Changed Features feat: toggle all workspace folders from the Conversations header by @kuldeepsinh19 in #17409 feat: scope OpenAI subscription caches by backend by @uczltw6 in #16699 feat(home): reframe splash copy around day-to-day engineering work by @errmakov in #17545 feat(conversation): open shared automation conversations read-only on cloud by @hieptl in #17683 Bug Fixes fix: cap conversation Skills/Hooks/Tools dialogs at 90vw by @gokay-ai in #17586 fix(automation): accept single-start stepped cron fields in the schedule validator by @Harsh23Kashyap in #17274 fix(canvas): call agent-server runtime directly instead of /api/cloud-proxy (405 on verification confirm compact-context) by @juanmichelini in #17511 fix: render ACP tool-call content blocks in chat cards by @Chocolatine75 in #17407 fix: recover stale organization selections by @ak684 in #17671 fix: warn when saved LLM profiles reference unavailable models by @ak684 in #17675 fix(agent-canvas): replace dead Tailwind classes with theme tokens on device verify page by @Harsh23Kashyap in #17603 fix(agent-canvas): replace dead Tailwind classes with theme tokens in MCP surfaces by @Harsh23Kashyap in #17604 fix(settings): key the settings cache on the backend that answered by @L4XB in #17430 fix(ci): keep a section whose first line opens a fenced block by @marmar9615-cloud in #16814 fix: preserve newer failed messages when history reloads by @ak684 in #17647 fix(mcp): keep OAuth credentials on cloud saves and skip consent when tokens still work by @hieptl in #17677 Documentation docs: correct outdated cloud-proxy Rule 2 in AGENTS.md by @juanmichelini in #17663 docs: align README Node.js version with engines.node >=24 by @tsumon in #17410 Maintenance chore(deps): bump downshift from 9.3.2 to 9.4.0 by @dependabot [bot] in #16653 chore(deps): bump uuid from 14.0.0 to 14.0.1 by @dependabot [bot] in #16652 chore(deps-dev): bump the eslint group across 1 directory with 4 updates by @dependa…",
+  "summary": "1.24.0 (2026-09-25) What's Changed Features feat: toggle all workspace folders from the Conversations header by @kuldeepsinh19 in #17409 feat: scope OpenAI subscription caches by backend by @uczltw6 in #16699 feat(home): reframe splash copy around day-to-day engineering work by @errmakov in #17545 feat(conversation): open shared automation conversations read-only on cloud by @hieptl in #17683 Bug Fixes fix: cap conversation Skills/Hooks/Tools dialogs at 90vw by @gokay-ai in #17586 fix(automation): accept single-start stepped cron fields in the schedule validator by @Harsh23Kashyap in #17274 fix(canvas): call agent-server runtime directly instead of /api/cloud-proxy (405 on verification confirm compact-context) by @juanmichelini in #17511 fix: render ACP tool-call content blocks in chat cards by @Chocolatine75 in #17407 fix: recover stale organization selections by @ak684 in #17671 fix: warn when saved LLM profiles reference unavailable models by @ak684 in #17675 fix(agent-canvas): replace dead Tailwind classes with theme tokens on device verify page by @Harsh23Kashyap in #17603 fix(agent-canvas): replace dead Tailwind classes with theme tokens in MCP surfaces by @Harsh23Kashyap in #17604 fix(settings): key the settings cache on the backend that answered by @L4XB in #17430 fix(ci): keep a section whose first line opens a fenced block by @marmar9615-cloud in #16814 fix: preserve newer failed messages when history reloads by @ak684 in #17647 fix(mcp): keep OAuth credentials on cloud saves and skip consent when tokens still work by @hieptl in #17677 Documentation docs: correct outdated cloud-proxy Rule 2 in AGENTS.md by @juanmichelini in #17663 docs: align README Node.js version with engines.node >=24 by @tsumon in #17410 Maintenance chore(deps): bump downshift from 9.3.2 to 9.4.0 by @dependabot [bot] in #16653 chore(deps): bump uuid from 14.0.0 to 14.0.1 by @dependabot [bot] in #16652 chore(deps-dev): bump the eslint group across 1 directory with 4 updates by @dependa…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "24"
+  ],
+  "confidenceScore": 98,
+  "heatScore": 39,
+  "impactScore": 55,
+  "valueScore": 70,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 60,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 3,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T15:18:31.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T17:21:21.838Z",
+  "updatedAt": "2026-09-25T17:21:21.871Z"
 },
 {
   "id": "a0fd5704-3244-4b09-b89e-25ea334fe015",
@@ -58045,6 +58798,52 @@
   "publishedAt": null,
   "createdAt": "2026-09-22T17:05:45.383Z",
   "updatedAt": "2026-09-22T17:05:45.423Z"
+},
+{
+  "id": "d23ea27a-ae40-4ed9-bf53-868707a2f659",
+  "slug": "v1-39-7-raft-boot-time-race-async-replication-and-batch-delete-fixes-2026-09-25",
+  "title": "v1.39.7 - RAFT boot-time race, async replication and batch delete Fixes",
+  "factSummary": "Breaking Changes none New Features none Fixes async replication: retry a panicking hashtree init attempt and gate hashbeat on readiness by @jeroiraz in #13202 fix(reindex): index writes that land in a semantic migration's swap window by @etiennedi in #13001 backport: try to safe cast array values by @DanielJanicek in #13223 fix(raft): guard the bootstrap candidates map against concurrent notifies by @jeroiraz in #12533 fix: publish the raft node atomically to close a boot-time data race by @jeroiraz in #12623 fix(raft): load the atomic raft node at the FSM barrier call sites by @jeroiraz in #13225 fix(stream): soft memory backpressure for BatchStream by @tsmith023 in #13028 test(grpc): fix TestBatchObjectsSemaphore deadlock by @byronvoorbach in #13228 backport: drop the experimental search flag, harden the family for default-on ( #13067 ) by @g-despot in #13233 Speed up the wait-group linter from ~100s to under a second by @dirkkul in #13236 Delete dead AddLinksAtLevel by @dirkkul in #13239 test(replication): split async replication acceptance tests into two CI groups by @antas-marcin in #13234 Summarize storage lookup timings in every slow-query log line by @dirkkul in #13124 perf(roaringsetrange): build compaction nodes into one reused buffer by @aliszka in #13154 test(replication): reduce replica-slow acceptance test suite time by @antas-marcin in #13245 test(acceptance): start the shared server only for suites that use it and reuse it for single-node tests by @antas-marcin in #13244 Expose the batch-delete cap in the gRPC BatchDeleteReply by @byronvoorbach in #13103 Cap the filtered batch delete resolve at QUERY_MAXIMUM_RESULTS by @byronvoorbach in #13104 Resolve filter and batch-delete doc ids in parallel by @byronvoorbach in #13106 refactor(test): start the shared acceptance server by default and skip it only for own-cluster suites by @antas-marcin in #13251 async replication: drain on a reuse-safe latch instead of a shared WaitGroup by @jeroiraz in #13201 de…",
+  "summary": "Breaking Changes none New Features none Fixes async replication: retry a panicking hashtree init attempt and gate hashbeat on readiness by @jeroiraz in #13202 fix(reindex): index writes that land in a semantic migration's swap window by @etiennedi in #13001 backport: try to safe cast array values by @DanielJanicek in #13223 fix(raft): guard the bootstrap candidates map against concurrent notifies by @jeroiraz in #12533 fix: publish the raft node atomically to close a boot-time data race by @jeroiraz in #12623 fix(raft): load the atomic raft node at the FSM barrier call sites by @jeroiraz in #13225 fix(stream): soft memory backpressure for BatchStream by @tsmith023 in #13028 test(grpc): fix TestBatchObjectsSemaphore deadlock by @byronvoorbach in #13228 backport: drop the experimental search flag, harden the family for default-on ( #13067 ) by @g-despot in #13233 Speed up the wait-group linter from ~100s to under a second by @dirkkul in #13236 Delete dead AddLinksAtLevel by @dirkkul in #13239 test(replication): split async replication acceptance tests into two CI groups by @antas-marcin in #13234 Summarize storage lookup timings in every slow-query log line by @dirkkul in #13124 perf(roaringsetrange): build compaction nodes into one reused buffer by @aliszka in #13154 test(replication): reduce replica-slow acceptance test suite time by @antas-marcin in #13245 test(acceptance): start the shared server only for suites that use it and reuse it for single-node tests by @antas-marcin in #13244 Expose the batch-delete cap in the gRPC BatchDeleteReply by @byronvoorbach in #13103 Cap the filtered batch delete resolve at QUERY_MAXIMUM_RESULTS by @byronvoorbach in #13104 Resolve filter and batch-delete doc ids in parallel by @byronvoorbach in #13106 refactor(test): start the shared acceptance server by default and skip it only for own-cluster suites by @antas-marcin in #13251 async replication: drain on a reuse-safe latch instead of a shared WaitGroup by @jeroiraz in #13201 de…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "39",
+    "raft",
+    "boot",
+    "time",
+    "race",
+    "async",
+    "replication"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T13:38:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T17:21:22.000Z",
+  "updatedAt": "2026-09-25T17:21:22.035Z"
 },
 {
   "id": "f5711c1b-d569-4c8d-a053-af98ab6eff82",
@@ -59204,6 +60003,46 @@
   "updatedAt": "2026-08-16T13:07:32.743Z"
 },
 {
+  "id": "8313d849-bd19-4ef1-aad0-f3c17213c923",
+  "slug": "v1-98-1-2026-09-25",
+  "title": "v1.98.1",
+  "factSummary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.98.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.98.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.98.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(bedrock): backport #41870 , the GPT-6 reasoning gate fix, and the Python 3.13 image pin to stable/1.98.x for v1.98.1 by @devin-ai-integration [bot] in #42002 chore(release): backport #39631 , #39729 , #40639 to stable/1.98.x by @yuneng-berri in #43130 Full Changelog : v1.98.0...v1.98.1",
+  "summary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.98.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.98.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.98.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed fix(bedrock): backport #41870 , the GPT-6 reasoning gate fix, and the Python 3.13 image pin to stable/1.98.x for v1.98.1 by @devin-ai-integration [bot] in #42002 chore(release): backport #39631 , #39729 , #40639 to stable/1.98.x by @yuneng-berri in #43130 Full Changelog : v1.98.0...v1.98.1",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "98"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T06:20:07.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T17:21:22.191Z",
+  "updatedAt": "2026-09-25T17:21:22.223Z"
+},
+{
   "id": "ec5b78b0-60bc-486c-b7a5-067ac102125a",
   "slug": "v1-99-3-2026-09-23",
   "title": "v1.99.3",
@@ -59220,9 +60059,9 @@
     "99"
   ],
   "confidenceScore": 91,
-  "heatScore": 30,
+  "heatScore": 27,
   "impactScore": 55,
-  "valueScore": 65,
+  "valueScore": 59,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 40,
@@ -59232,7 +60071,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 90,
+    "freshness": 55,
     "crossRegion": false
   },
   "status": "review",
@@ -59241,7 +60080,7 @@
   "happenedAt": "2026-09-23T07:10:52.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-23T17:13:23.948Z",
-  "updatedAt": "2026-09-23T17:13:23.993Z"
+  "updatedAt": "2026-09-25T17:21:22.182Z"
 },
 {
   "id": "2bcedc68-4dc9-475d-abc5-390e2c86098e",
@@ -63458,9 +64297,9 @@
     "45"
   ],
   "confidenceScore": 84,
-  "heatScore": 22,
+  "heatScore": 21,
   "impactScore": 55,
-  "valueScore": 60,
+  "valueScore": 58,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -63470,7 +64309,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 84,
+    "freshness": 74,
     "crossRegion": false
   },
   "status": "review",
@@ -63479,7 +64318,47 @@
   "happenedAt": "2026-09-24T12:53:12.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-24T17:20:52.755Z",
-  "updatedAt": "2026-09-25T05:31:13.768Z"
+  "updatedAt": "2026-09-25T17:21:22.129Z"
+},
+{
+  "id": "4a65c47c-2199-476d-8d0f-2c506a5bdbdb",
+  "slug": "v4-46-0-2026-09-25",
+  "title": "v4.46.0",
+  "factSummary": "What's Changed Features feat(experiments): streamline side-by-side comparison by @marliessophie in #17929 feat(web): Add formatted json to the dataset item by @nmtrang29 in #17932 feat(skills): basic skill management by @tobi12345 in #17803 feat(web): add 100-row page size option to tracing tables by @nkabardin in #17919 #17926 Fixes fix(web): header metrics as plain text on trace, observation and session headers by @nmtrang29 in #17757 fix(billing): accept string event-bus timestamps on the CHB webhook by @Steffen911 in fix(web): session header drops the per-detail hide controls by @nmtrang29 in #17764 fix(web): remove the pulsing dot on the trace panel toggle by @nmtrang29 in #17930 fix(assistant): Respect data-retention settings by @bezbac in #17850 fix(web): hovered and selected items keep the text colour by @nmtrang29 in #17936 fix(web): tooltips open after 300ms by @nmtrang29 in #17946 fix(web): Chart improvements by @bezbac in #17900 fix(web): remove the trace playback feature by @nmtrang29 in #17927 fix(web): breadcrumbs use thin muted slashes and smaller dropdown chevrons by @nmtrang29 in #17934 Chores refactor(web): Migrate web callout settings table to design system by @bezbac in #17933 refactor(web): Migrate gateway api keys table to design system by @bezbac in #17922 perf(datasets): route v3 dataset-run-items reads to the read replica by @niklassemmler in #17923 chore(deps): bump base64 from 0.22.1 to 0.23.1 in /ai-gateway in the rust-dependencies group by @dependabot [bot] in #17911 Full Changelog : v4.45.4...v4.46.0",
+  "summary": "What's Changed Features feat(experiments): streamline side-by-side comparison by @marliessophie in #17929 feat(web): Add formatted json to the dataset item by @nmtrang29 in #17932 feat(skills): basic skill management by @tobi12345 in #17803 feat(web): add 100-row page size option to tracing tables by @nkabardin in #17919 #17926 Fixes fix(web): header metrics as plain text on trace, observation and session headers by @nmtrang29 in #17757 fix(billing): accept string event-bus timestamps on the CHB webhook by @Steffen911 in fix(web): session header drops the per-detail hide controls by @nmtrang29 in #17764 fix(web): remove the pulsing dot on the trace panel toggle by @nmtrang29 in #17930 fix(assistant): Respect data-retention settings by @bezbac in #17850 fix(web): hovered and selected items keep the text colour by @nmtrang29 in #17936 fix(web): tooltips open after 300ms by @nmtrang29 in #17946 fix(web): Chart improvements by @bezbac in #17900 fix(web): remove the trace playback feature by @nmtrang29 in #17927 fix(web): breadcrumbs use thin muted slashes and smaller dropdown chevrons by @nmtrang29 in #17934 Chores refactor(web): Migrate web callout settings table to design system by @bezbac in #17933 refactor(web): Migrate gateway api keys table to design system by @bezbac in #17922 perf(datasets): route v3 dataset-run-items reads to the read replica by @niklassemmler in #17923 chore(deps): bump base64 from 0.22.1 to 0.23.1 in /ai-gateway in the rust-dependencies group by @dependabot [bot] in #17911 Full Changelog : v4.45.4...v4.46.0",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "46"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T14:20:07.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T17:21:21.919Z",
+  "updatedAt": "2026-09-25T17:21:21.952Z"
 },
 {
   "id": "a5b488ba-7f4b-4b4f-872c-2cf6f805a25b",
@@ -65390,8 +66269,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -65662,8 +66541,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "65d9ca28-1f53-4201-9ecf-d4052025dcad",
@@ -66067,8 +66946,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -66110,8 +66989,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -66333,8 +67212,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -66560,8 +67439,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -66695,8 +67574,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -70266,8 +71145,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -70904,8 +71783,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -71484,8 +72363,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -71528,8 +72407,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -71932,8 +72811,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -71975,8 +72854,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -72018,8 +72897,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -72061,8 +72940,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-25T05:26:39.617Z",
-  "updatedAt": "2026-09-25T05:26:39.617Z"
+  "createdAt": "2026-09-25T17:16:54.940Z",
+  "updatedAt": "2026-09-25T17:16:54.940Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
