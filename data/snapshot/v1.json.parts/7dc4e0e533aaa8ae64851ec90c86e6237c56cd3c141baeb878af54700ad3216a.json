@@ -789,17 +789,20 @@
   "id": "651a3ac8-6259-434b-98fb-5121dc068d8b",
   "slug": "0-159-0-alpha-3-2026-09-26",
   "title": "0.159.0-alpha.3",
-  "factSummary": "Release 0.159.0-alpha.3",
-  "summary": "Release 0.159.0-alpha.3",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "open-source",
-  "company": "industry",
+  "factSummary": "OpenAI Codex 在 2026-09-25 连续发布三个 Rust 版本标签：0.159.0-alpha.1（18:58:25 UTC）、0.159.0-alpha.2（20:30:24 UTC）、0.159.0-alpha.3（21:52:51 UTC）。三条证据均为 GitHub Releases 页面，标题与摘要仅给出发布版本号，未包含变更日志、功能说明或性能数据。",
+  "summary": "OpenAI Codex 仓库在约三小时内先后发布 0.159.0 的三个 alpha 版本，属于同一版本线的快速迭代。证据仅能确认版本号与发布时间，无法确认具体改动内容。",
+  "technicalInsight": "同一 minor 版本在数小时内连续推出三个 alpha，通常对应发布流水线中的快速修复或增量构建，而非功能里程碑；但证据未提供 diff 或 changelog，无法判断改动性质。可验证下一信号：后续 release 页面是否附带变更说明，或是否出现 0.159.0 的 beta/stable 标签。",
+  "industryInsight": "编码 Agent 工具链的发布节奏趋于高频，alpha 标签的密集推送反映开发侧持续集成与灰度发布实践；但仅凭版本号无法推断其相对竞品的实际能力或采用情况。可验证下一信号：官方仓库是否发布对应版本的 release notes 或迁移说明。",
+  "futureOutlook": "若该版本线继续以小时级频率推进，可能很快进入 beta 或稳定阶段；若长期停留在 alpha，则更可能是内部构建外溢。可验证下一信号：0.159.0 是否出现非 alpha 标签，以及相邻版本号（如 0.160.0）的发布时间间隔。",
+  "businessValue": "对开发者而言，高频 alpha 意味着可更早试用但稳定性风险较高，适合在非生产环境验证；对采购方而言，alpha 版本不宜作为选型依据。可验证下一信号：稳定版发布说明中是否列出面向企业或团队的功能与兼容性承诺。",
+  "category": "dev-tooling-release",
+  "company": "OpenAI Codex",
   "keywords": [
-    "159",
-    "alpha"
+    "OpenAI Codex",
+    "Rust",
+    "alpha release",
+    "版本迭代",
+    "开发者工具"
   ],
   "confidenceScore": 84,
   "heatScore": 22,
@@ -817,13 +820,13 @@
     "freshness": 92,
     "crossRegion": false
   },
-  "status": "review",
+  "status": "published",
   "featured": 0,
   "manualOverride": 0,
   "happenedAt": "2026-09-25T21:52:51.000Z",
-  "publishedAt": null,
+  "publishedAt": "2026-09-26T16:33:27.670Z",
   "createdAt": "2026-09-26T05:37:16.422Z",
-  "updatedAt": "2026-09-26T05:37:16.912Z"
+  "updatedAt": "2026-09-26T16:33:27.670Z"
 },
 {
   "id": "b1b60404-bf7f-4e0c-93a5-fabf98c5a807",
@@ -5982,8 +5985,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-02T15:54:39.000Z",
   "publishedAt": "2026-06-02T15:54:39.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "3029b044-d30a-47f9-a3b8-ee27f693f3b4",
@@ -7147,8 +7150,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-06T00:50:33.000Z",
   "publishedAt": "2026-02-06T00:50:33.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "18b48c1a-2c9d-470d-a191-a67427f8b3f0",
@@ -7189,8 +7192,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-07T18:37:26.000Z",
   "publishedAt": "2026-01-07T18:37:26.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "3ab7bb31-8c17-420a-a7a8-9185bb597a17",
@@ -8084,8 +8087,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-05T08:24:16.000Z",
   "publishedAt": "2026-01-05T08:24:16.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f648bae5-77d7-45a5-b762-f47a4f116c25",
@@ -8942,8 +8945,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-30T12:14:15.000Z",
   "publishedAt": "2026-04-30T12:14:15.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "e9e105c0-f70b-43fa-a959-7d94f1b09dcc",
@@ -9030,8 +9033,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-20T12:00:00.000Z",
   "publishedAt": "2024-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "caa76a47-f43b-4842-9a10-e6cfe4379a8f",
@@ -9144,9 +9147,9 @@
     "analysis"
   ],
   "confidenceScore": 100,
-  "heatScore": 54,
+  "heatScore": 53,
   "impactScore": 55,
-  "valueScore": 62,
+  "valueScore": 61,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 100,
@@ -9156,7 +9159,7 @@
     "platformBreadth": 1,
     "regionBreadth": 1,
     "velocity": 0,
-    "freshness": 10,
+    "freshness": 6,
     "crossRegion": false
   },
   "status": "review",
@@ -9165,7 +9168,7 @@
   "happenedAt": "2026-09-15T12:48:44.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:07.674Z",
-  "updatedAt": "2026-09-24T17:20:53.523Z"
+  "updatedAt": "2026-09-26T16:32:46.441Z"
 },
 {
   "id": "41a1d7dd-11c4-40c6-ae2d-c39d41bce7c1",
@@ -9248,8 +9251,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-05T12:00:00.000Z",
   "publishedAt": "2023-10-05T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "39478b1d-d856-40e5-a117-239d0a76734d",
@@ -9290,8 +9293,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-27T03:26:43.000Z",
   "publishedAt": "2026-05-27T03:26:43.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "581fee8b-24ad-4347-a6ec-f510ad629406",
@@ -9332,8 +9335,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T22:57:24.000Z",
   "publishedAt": "2026-06-16T22:57:24.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "35a6a9bc-5c34-46b5-a7f6-28b5435bb293",
@@ -9374,8 +9377,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-25T00:00:00.000Z",
   "publishedAt": "2026-03-25T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4ca87382-a13f-4c62-a351-3266ba438d0f",
@@ -9417,8 +9420,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-10T12:00:00.000Z",
   "publishedAt": "2025-04-10T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "91853b4a-4b39-4d55-b36c-b13b5e7672dc",
@@ -12817,8 +12820,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-20T12:00:00.000Z",
   "publishedAt": "2023-10-20T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "2eecce1a-13ec-4912-9054-72599c919a94",
@@ -13358,8 +13361,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-16T12:00:00.000Z",
   "publishedAt": "2025-06-16T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "a44cef97-a546-4836-a411-abda3a60f184",
@@ -13401,8 +13404,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "845a5f15-2bf3-440e-a91d-d78f94ec466f",
@@ -13444,8 +13447,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-25T00:00:00.000Z",
   "publishedAt": "2023-09-25T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b59438e8-9add-4ce3-a832-969e1fa088cd",
@@ -13487,8 +13490,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-22T00:00:00.000Z",
   "publishedAt": "2024-11-22T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6697afbe-0ad7-4b6b-ba23-b9d1468f1d18",
@@ -15194,8 +15197,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-06T00:00:00.000Z",
   "publishedAt": "2026-07-06T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "00ee4bfe-3813-411f-ac47-a9035ec3b18a",
@@ -15237,8 +15240,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-05T00:00:00.000Z",
   "publishedAt": "2026-03-05T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "ea3a35b9-191a-4478-ab6f-071f0d5fe840",
@@ -15280,8 +15283,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T00:00:00.000Z",
   "publishedAt": "2023-05-23T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "265e0297-3bfe-41d0-a776-b4160e5fb171",
@@ -15323,8 +15326,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-03T00:00:00.000Z",
   "publishedAt": "2025-03-03T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8956c17b-b714-42b5-a78d-cabc195db6b5",
@@ -15365,8 +15368,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-28T00:00:00.000Z",
   "publishedAt": "2026-05-28T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9df322f3-109a-4c61-bf8a-325e43fe4729",
@@ -15454,8 +15457,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-03T12:00:00.000Z",
   "publishedAt": "2022-11-03T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4d1ac05e-1639-4a72-822f-6956aa275517",
@@ -17894,8 +17897,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-16T12:00:00.000Z",
   "publishedAt": "2023-08-16T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0210b32f-5796-41a0-8ed9-785fbd8d3480",
@@ -18482,8 +18485,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:25:44.000Z",
   "publishedAt": "2026-07-09T08:25:44.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8d42d409-d762-4263-aedf-cb426832728c",
@@ -34366,16 +34369,20 @@
   "id": "6f98e860-1513-4f34-a723-fc7909acde59",
   "slug": "b11192-2026-09-26",
   "title": "b11192",
-  "factSummary": "vendor : update cpp-httplib to 0.58.0 ( #29407 ) Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/50337762 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
-  "summary": "vendor : update cpp-httplib to 0.58.0 ( #29407 ) Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/50337762 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "open-source",
-  "company": "industry",
+  "factSummary": "llama.cpp 发布版本 b11192，更新 cpp-httplib 至 0.58.0，并列出多平台构建产物，包括 macOS/iOS、Linux、Android、Windows 与 openEuler 的 CPU、Vulkan、CUDA 12/13、ROCm 10.0、OpenVINO、SYCL 等后端。",
+  "summary": "llama.cpp 发布 b11192，主要变更为将 cpp-httplib 更新至 0.58.0，同时提供覆盖 macOS、iOS、Linux、Android、Windows 和 openEuler 的多后端构建产物。",
+  "technicalInsight": "证据仅显示依赖库版本更新与构建矩阵，未提供性能或功能变化数据；可验证的下一信号是后续版本说明中是否出现与 cpp-httplib 0.58.0 相关的行为变更或问题修复。",
+  "industryInsight": "该发布体现 llama.cpp 持续维护跨平台、多硬件后端的开源推理分发，但证据不足以判断其对行业格局的影响。",
+  "futureOutlook": "若后续版本继续扩大后端与平台覆盖，可能强化本地推理的硬件兼容性；需观察后续 release 是否新增后端或平台。",
+  "businessValue": "对依赖 llama.cpp 的开发者而言，多平台构建产物可降低部署适配成本；具体收益需结合自身目标平台验证。",
+  "category": "open-source-release",
+  "company": "llama.cpp",
   "keywords": [
-    "b11192"
+    "llama.cpp",
+    "cpp-httplib",
+    "release",
+    "build-matrix",
+    "inference"
   ],
   "confidenceScore": 74,
   "heatScore": 23,
@@ -34393,13 +34400,13 @@
     "freshness": 95,
     "crossRegion": false
   },
-  "status": "review",
+  "status": "published",
   "featured": 0,
   "manualOverride": 0,
   "happenedAt": "2026-09-26T00:28:41.000Z",
-  "publishedAt": null,
+  "publishedAt": "2026-09-26T16:33:27.671Z",
   "createdAt": "2026-09-26T05:37:16.305Z",
-  "updatedAt": "2026-09-26T05:37:16.353Z"
+  "updatedAt": "2026-09-26T16:33:27.671Z"
 },
 {
   "id": "141c2de8-bba7-4870-b6fa-4a9609e88f8f",
@@ -34443,6 +34450,176 @@
   "publishedAt": "2026-09-26T05:38:00.792Z",
   "createdAt": "2026-09-26T05:37:15.996Z",
   "updatedAt": "2026-09-26T05:38:00.792Z"
+},
+{
+  "id": "6e0242d6-80ac-4d27-a194-c37e9d0b9b9f",
+  "slug": "b11194-2026-09-26",
+  "title": "b11194",
+  "factSummary": "llama.cpp 发布 b11194 版本，标题为 opencl: add A8 Q8_0 non-MoE dp4a binary kernel (#29439)。该版本附带多平台构建与证明链接，覆盖 macOS/iOS、Linux、Android、Windows 与 openEuler 等目标。",
+  "summary": "llama.cpp 的 b11194 发布说明显示，本次变更在 OpenCL 后端新增了 A8 Q8_0 非 MoE 的 dp4a 二值化内核（PR #29439）。发布页同时列出 macOS/iOS、Linux、Android、Windows、openEuler 等多平台构建状态，其中 macOS Apple Silicon（arm64, KleidiAI enabled）与 openEuler 标注为 DISABLED。",
+  "technicalInsight": "从标题与发布说明看，这是一次针对 OpenCL 后端的量化内核补充，限定在 A8 Q8_0 且非 MoE 场景，并采用 dp4a 指令路径。可验证的下一信号是该内核在 OpenCL 目标（如 Windows arm64 OpenCL Adreno、Android Adreno GPU）上的实际构建与基准数据是否出现。",
+  "industryInsight": "该变更属于 llama.cpp 在异构硬件上扩展低精度推理路径的常规迭代，反映开源推理栈持续覆盖移动与边缘 GPU/NPU 平台的趋势。判断依据仅为发布说明中的平台清单，尚不足以推断市场份额或竞争格局变化。",
+  "futureOutlook": "后续可观察该内核是否扩展到 MoE 模型、是否进入默认启用路径，以及发布页中 DISABLED 平台是否恢复构建。",
+  "businessValue": "对依赖 llama.cpp 在 OpenCL 设备上部署量化模型的开发者，此类内核可能影响端侧推理的可用性与性能，但当前证据未提供性能或成本数字，价值需以实测基准确认。",
+  "category": "opencl-quantized-kernel",
+  "company": "llama.cpp",
+  "keywords": [
+    "llama.cpp",
+    "OpenCL",
+    "Q8_0",
+    "dp4a",
+    "quantization",
+    "kernel"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-26T07:43:42.000Z",
+  "publishedAt": "2026-09-26T16:33:27.672Z",
+  "createdAt": "2026-09-26T16:32:46.385Z",
+  "updatedAt": "2026-09-26T16:33:27.672Z"
+},
+{
+  "id": "8ea2258b-2e40-4564-8dc9-e858f288b752",
+  "slug": "b11195-2026-09-26",
+  "title": "b11195",
+  "factSummary": "llama.cpp 发布 b11195 版本，为 k-quants 引入 tiled mul_mat。每个 mul_mat_one_chunk 将量化数据解包为最大 256x256 的 int8 分块，每种量化类型对应一个例程，微内核先计算 16x16 分块，再将 256x256 的 float 结果写入主内存。测试与基准位于 tests/test-tiled-mulmat.cpp。报告称大型矩阵乘法获得 3-6 倍加速，在 4096x64 * 64x4096 处达到盈亏平衡，GEMV 性能为 80%（净损失）。误差率很小，最大约 1e-04，RMSE 约 1e-05。该版本还包含 ARM/Windows 构建修复、MSVC 下 ggml-cpu.h 可见性问题、iqp 与 tiled 在 Q5_K、IQ4_XS 上的统一基准、AVX2 内核修复、asan 内存泄漏修复，以及 CODEOWNERS 更新。",
+  "summary": "llama.cpp 的 b11195 版本为 k-quants 加入 tiled mul_mat 实现，通过 int8 分块解包与 16x16 微内核提升大型矩阵乘法性能，同时附带多项跨平台构建与内存修复。",
+  "technicalInsight": "该实现将量化解包与计算按 256x256 分块组织，并以 16x16 微内核计算，属于面向缓存与内存带宽的优化路径。证据显示收益集中在大型矩阵乘法，GEMV 反而净损失，说明其适用边界明确。可验证下一信号：后续版本是否将 tiled 路径扩展到更多量化类型或 GEMV 场景，以及 tests/test-tiled-mulmat.cpp 的基准是否被纳入默认 CI。",
+  "industryInsight": "这是开源推理运行时在 CPU 侧持续优化量化矩阵乘法的动作，反映本地与边缘推理对 k-quants 性能的依赖。证据未涉及商业采用或竞争格局，因此不宜外推。可验证下一信号：其他推理框架是否跟进类似分块微内核策略，或该补丁是否被下游发行版与工具链采纳。",
+  "futureOutlook": "若 tiled 路径在更多量化类型与硬件后端上稳定，可能改善 CPU 端大模型推理的吞吐；但 GEMV 净损失意味着短序列或单 token 场景未必受益。可验证下一信号：后续 release note 是否报告 GEMV 回归修复，或基准覆盖范围是否扩大。",
+  "businessValue": "对依赖 llama.cpp 进行本地或 CPU 推理的开发者与产品而言，大型矩阵乘法加速可能降低长上下文或批量推理的时延成本。证据未提供成本或收入数据，价值判断限于性能层面。可验证下一信号：下游项目是否在发布说明中引用该版本并给出实测吞吐变化。",
+  "category": "open-source-inference-runtime",
+  "company": "llama.cpp",
+  "keywords": [
+    "llama.cpp",
+    "ggml",
+    "k-quants",
+    "tiled mul_mat",
+    "CPU inference",
+    "quantization"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-26T08:29:43.000Z",
+  "publishedAt": "2026-09-26T16:33:27.672Z",
+  "createdAt": "2026-09-26T16:32:46.329Z",
+  "updatedAt": "2026-09-26T16:33:27.672Z"
+},
+{
+  "id": "3f847251-17df-4546-9996-e4d07137bbcf",
+  "slug": "b11199-2026-09-26",
+  "title": "b11199",
+  "factSummary": "llama.cpp 发布 b11199 版本，标题为 jinja : fix compile error ( #29468 )。该版本附带多平台构建产物与证明链接，覆盖 macOS/iOS、Linux、Android、Windows 与 openEuler 等平台，并列出 CUDA、ROCm、Vulkan、OpenVINO、SYCL、OpenCL 等后端配置。",
+  "summary": "llama.cpp 发布 b11199，修复 jinja 相关编译错误（#29468），并同步提供跨平台构建产物与 attestations 链接。",
+  "technicalInsight": "从证据看，本次变更属于编译错误修复，而非能力或架构变化；其可验证的下一信号是 #29468 的合并记录与后续版本是否不再出现同类 jinja 编译失败。",
+  "industryInsight": "证据仅显示 llama.cpp 持续维护多平台、多后端构建矩阵，未提供采用率、性能或生态份额数据，因此不足以判断行业格局变化。",
+  "futureOutlook": "若后续版本继续以修复类提交为主，说明项目处于稳定性维护阶段；可观察下一版本是否引入新后端或新平台支持作为方向变化信号。",
+  "businessValue": "对依赖 llama.cpp 的开发者而言，编译错误修复可降低特定平台构建失败风险；具体收益需以对应平台构建通过情况验证。",
+  "category": "open-source-build-fix",
+  "company": "llama.cpp",
+  "keywords": [
+    "llama.cpp",
+    "jinja",
+    "compile error",
+    "b11199",
+    "cross-platform build"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-26T10:03:39.000Z",
+  "publishedAt": "2026-09-26T16:33:27.672Z",
+  "createdAt": "2026-09-26T16:32:46.274Z",
+  "updatedAt": "2026-09-26T16:33:27.672Z"
+},
+{
+  "id": "5b1b2c43-02f8-4740-adee-893cd3854e61",
+  "slug": "b11200-2026-09-26",
+  "title": "b11200",
+  "factSummary": "jinja : implement sameas test ( #29448 ) implement sameas test add tests Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/50397675 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "summary": "jinja : implement sameas test ( #29448 ) implement sameas test add tests Website: https://llama.app Attestations: https://github.com/ggml-org/llama.cpp/attestations/50397675 macOS/iOS: macOS Apple Silicon (arm64) macOS Apple Silicon (arm64, KleidiAI enabled) DISABLED macOS Intel (x64) iOS XCFramework Linux: Ubuntu x64 (CPU) Ubuntu arm64 (CPU) Ubuntu s390x (CPU) Ubuntu x64 (Vulkan) Ubuntu arm64 (Vulkan) Ubuntu x64 (CUDA 12) - CUDA 12.8 libraries Ubuntu x64 (CUDA 13) - CUDA 13.4 libraries Ubuntu arm64 (CUDA 13) - CUDA 13.4 libraries Ubuntu x64 (ROCm 10.0) Ubuntu x64 (OpenVINO) Ubuntu x64 (SYCL FP32) Ubuntu x64 (SYCL FP16) Linux arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Android: Android arm64 (CPU) Android arm64 (Snapdragon: CPU, Adreno GPU, Hexagon NPU) - setup guide Windows: Windows x64 (CPU) Windows arm64 (CPU) Windows arm64 (OpenCL Adreno) Windows x64 (CUDA 12) - CUDA 12.4 DLLs Windows x64 (CUDA 13) - CUDA 13.4 DLLs Windows arm64 (CUDA 13) - CUDA 13.4 DLLs Windows x64 (Vulkan) Windows x64 (OpenVINO) Windows x64 (SYCL) Windows x64 (ROCm 10.0) openEuler: DISABLED openEuler x86 (310p) openEuler x86 (910b, ACL Graph) openEuler aarch64 (310p) openEuler aarch64 (910b, ACL Graph) UI: UI",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "b11200"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 94,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-26T10:27:14.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-26T16:32:46.213Z",
+  "updatedAt": "2026-09-26T16:32:46.263Z"
 },
 {
   "id": "2284f83c-8506-4e71-934f-e81c38461644",
@@ -34615,8 +34792,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-19T12:00:00.000Z",
   "publishedAt": "2023-09-19T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "374fb9de-c9af-43e5-a114-2ef1e490d0ed",
@@ -34658,8 +34835,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-12T00:00:00.000Z",
   "publishedAt": "2026-01-12T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "fb59ea1d-2e59-4042-be66-b116d3550e7d",
@@ -36097,8 +36274,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-20T09:25:30.000Z",
   "publishedAt": "2026-04-20T09:25:30.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "ab478788-9d81-4f65-8857-56a04cb72956",
@@ -36599,8 +36776,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-03T12:00:00.000Z",
   "publishedAt": "2025-12-03T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "67eab650-c207-4640-b89b-3063fcf77e8c",
@@ -38473,8 +38650,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-27T12:00:00.000Z",
   "publishedAt": "2024-03-27T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4ddbf48f-9b6e-4ab0-9e99-6e58b09cf56a",
@@ -38561,8 +38738,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T11:05:17.000Z",
   "publishedAt": "2026-07-09T11:05:17.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b0be7c58-d89a-4d4b-a69c-010d4c7a3228",
@@ -38604,8 +38781,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-30T12:00:00.000Z",
   "publishedAt": "2023-01-30T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "623d933e-c5b9-49ac-abb8-f20c599e431f",
@@ -38647,8 +38824,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-09T12:00:00.000Z",
   "publishedAt": "2022-11-09T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "2d3edde5-5129-4d79-a98a-a31781f9c19d",
@@ -38690,8 +38867,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-30T12:00:00.000Z",
   "publishedAt": "2023-03-30T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f58e3aa2-f4b6-4e64-ad2b-60ee4b7fd3a6",
@@ -41714,8 +41891,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-01T12:00:00.000Z",
   "publishedAt": "2025-01-01T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "03912337-bcdb-4ccb-88d8-5a4aaa0e7cca",
@@ -43210,8 +43387,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T02:51:43.000Z",
   "publishedAt": "2026-07-09T02:51:43.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "51ee6c44-6d0c-4dd5-ae00-7bfb24ad5444",
@@ -43345,8 +43522,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-04T12:00:00.000Z",
   "publishedAt": "2025-08-04T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "bab7b813-ee69-43dd-a0d8-05f6d56b7b6e",
@@ -43707,8 +43884,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-17T00:00:00.000Z",
   "publishedAt": "2025-07-17T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "832bb1fe-6f21-433f-a3ea-8fc0e9e6958c",
@@ -43794,8 +43971,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-23T00:00:00.000Z",
   "publishedAt": "2023-03-23T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b541966a-9efa-4886-a5b0-d4cbff6aa87d",
@@ -43836,8 +44013,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-30T00:00:00.000Z",
   "publishedAt": "2022-11-30T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0a349513-d302-4d91-a3fe-8e9ec582cbbb",
@@ -43877,8 +44054,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-01T00:00:00.000Z",
   "publishedAt": "2023-03-01T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "caa7d11b-3098-442d-afdd-ab830a08d440",
@@ -44103,8 +44280,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-13T00:00:00.000Z",
   "publishedAt": "2023-07-13T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6ae40cb8-e1c1-4ab4-b709-6580f57db0cb",
@@ -44644,8 +44821,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-11T00:00:00.000Z",
   "publishedAt": "2023-07-11T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "c38063ad-13b8-47b3-a64d-56b1b909511e",
@@ -44686,8 +44863,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-24T00:00:00.000Z",
   "publishedAt": "2025-02-24T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "dd96da4a-eda4-41b0-a8d0-c46f6f07a5e5",
@@ -44728,8 +44905,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-22T00:00:00.000Z",
   "publishedAt": "2025-05-22T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6babbba4-c95a-4718-abcf-3d0b0f064cbb",
@@ -44770,8 +44947,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-22T00:00:00.000Z",
   "publishedAt": "2024-10-22T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "11e8097c-d4f1-4dad-a02d-80170b858d13",
@@ -44812,8 +44989,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-22T00:00:00.000Z",
   "publishedAt": "2026-01-22T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "bcea1aa5-1d45-4d48-b27f-8e83bf110249",
@@ -44900,8 +45077,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-09T17:00:00.000Z",
   "publishedAt": "2026-06-09T17:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "51e6d67d-ddef-4ae7-af7f-aa17df6b8845",
@@ -44987,8 +45164,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-16T00:00:00.000Z",
   "publishedAt": "2026-04-16T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "d1836bf6-bf45-443b-b713-38e9e2dfdc0d",
@@ -46492,8 +46669,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T00:00:00.000Z",
   "publishedAt": "2025-10-06T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b91ad6f0-a447-4885-a0b3-9a8268e343b0",
@@ -46764,8 +46941,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-20T00:00:00.000Z",
   "publishedAt": "2026-05-20T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9d33c665-099e-42d4-9ac3-19e1cdf0a630",
@@ -47355,8 +47532,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:32:31.000Z",
   "publishedAt": "2026-07-09T08:32:31.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "062bb10e-9318-441d-9ae9-25818a4ff4b1",
@@ -48581,8 +48758,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-17T12:00:00.000Z",
   "publishedAt": "2023-08-17T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "eda60406-9727-4404-80b1-73ddf0006434",
@@ -49035,8 +49212,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "3d5ae51d-5fb5-4064-ba88-c807438ec6ca",
@@ -49617,8 +49794,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-10T12:00:00.000Z",
   "publishedAt": "2023-02-10T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "00026850-aa85-43ae-b31b-5f30717f228d",
@@ -51473,8 +51650,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-16T12:00:00.000Z",
   "publishedAt": "2025-08-16T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "84b3d6ff-7b09-43e2-b145-22338710009a",
@@ -52278,8 +52455,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-11T03:59:07.000Z",
   "publishedAt": "2026-06-11T03:59:07.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "de2db8d2-eee3-4521-ac59-854b96728927",
@@ -52684,8 +52861,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-29T12:00:00.000Z",
   "publishedAt": "2023-09-29T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "023ea585-909b-46a1-8d8f-224b227b8264",
@@ -53406,8 +53583,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-22T10:20:03.000Z",
   "publishedAt": "2026-04-22T10:20:03.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6e2ed197-ffe6-4b74-b2fb-5b9be9f7c3d2",
@@ -54184,8 +54361,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T19:46:42.000Z",
   "publishedAt": "2026-05-21T19:46:42.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9e0f0679-fad3-45f7-a504-972c805f9ac8",
@@ -54226,8 +54403,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-20T00:00:00.000Z",
   "publishedAt": "2025-01-20T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f1a8acca-31c4-4a90-ab2f-de98aa5e8f35",
@@ -54269,8 +54446,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-02T12:00:00.000Z",
   "publishedAt": "2025-12-02T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "21f4c505-332c-4c6e-ad8c-953e35619366",
@@ -54311,8 +54488,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T00:00:00.000Z",
   "publishedAt": "2024-12-26T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "045f272b-1acb-4dcb-8a71-d78edff6db95",
@@ -54446,8 +54623,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-08T12:00:00.000Z",
   "publishedAt": "2024-03-08T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f6f02a7b-6fae-4cde-ac72-b42b13d979b9",
@@ -54489,8 +54666,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-13T12:00:00.000Z",
   "publishedAt": "2024-12-13T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "85aab376-7eb5-4425-a2a9-d4431b6ca904",
@@ -54799,8 +54976,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-17T00:33:32.000Z",
   "publishedAt": "2026-04-17T00:33:32.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "2b33eb84-c57a-40b9-8e9d-5cbd920ca0ca",
@@ -55390,8 +55567,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "73fb3151-5fee-47e0-af99-5d7d1b871013",
@@ -55479,8 +55656,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-02T12:00:00.000Z",
   "publishedAt": "2024-10-02T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "1a9f83dd-7d76-4ebf-8bbf-56b2cce0f3a2",
@@ -58459,8 +58636,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-03T12:00:00.000Z",
   "publishedAt": "2024-12-03T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9bbe19b9-9942-4b2d-8e86-0cf4974e834c",
@@ -58867,8 +59044,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-14T12:00:00.000Z",
   "publishedAt": "2023-04-14T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "dd038fde-eb2b-4aa0-aa0c-4be22028e95f",
@@ -58910,8 +59087,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-29T12:00:00.000Z",
   "publishedAt": "2023-05-29T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4ef951a3-0605-4713-a617-2acbe2f49b25",
@@ -59813,8 +59990,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-26T12:00:00.000Z",
   "publishedAt": "2023-06-26T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "cfb212b4-ec40-4a9b-b7c7-608066080441",
@@ -61495,8 +61672,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-10T12:00:00.000Z",
   "publishedAt": "2023-01-10T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "79d8677d-f6a7-4ad1-bcd4-91081615ba07",
@@ -61630,8 +61807,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-18T12:00:00.000Z",
   "publishedAt": "2025-07-18T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "5c5d12a7-43ef-4b5a-82ad-d86e735df83e",
@@ -63776,8 +63953,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-28T12:00:00.000Z",
   "publishedAt": "2025-08-28T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "fea70116-c8d0-4a4d-a742-0944f9f21498",
@@ -65595,8 +65772,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T00:00:00.000Z",
   "publishedAt": "2025-06-30T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "034ff123-be70-4a81-b09a-017c60f9e7db",
@@ -65913,8 +66090,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T00:00:00.000Z",
   "publishedAt": "2024-08-01T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "95e4c302-743b-4b46-a62a-8c684fc28588",
@@ -68686,8 +68863,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-30T12:00:00.000Z",
   "publishedAt": "2023-01-30T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f7f57402-0265-4d1c-a553-763768838854",
@@ -69050,8 +69227,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-28T12:00:00.000Z",
   "publishedAt": "2023-11-28T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6bfbf2d2-6d8e-45bb-9825-fabbd676249d",
@@ -70328,8 +70505,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-12T12:00:00.000Z",
   "publishedAt": "2024-06-12T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "84b920c3-e9f6-4e55-a6e2-625e935fb313",
@@ -72155,8 +72332,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-10T12:00:00.000Z",
   "publishedAt": "2023-11-10T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "15369fdc-ab68-47db-85c2-379b9ac94a85",
@@ -74394,8 +74571,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-07T12:00:00.000Z",
   "publishedAt": "2024-11-07T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "cbc80403-7e51-4a73-8943-bd072d0718bc",
@@ -74895,8 +75072,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-16T12:00:00.000Z",
   "publishedAt": "2022-11-16T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4afd3c18-fdc1-4435-8b55-b893dc0f7aec",
@@ -75349,8 +75526,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-06T00:00:00.000Z",
   "publishedAt": "2023-12-06T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9a3e110e-fafb-4be5-b74b-541e67cec23c",
@@ -75433,8 +75610,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-25T00:00:00.000Z",
   "publishedAt": "2025-03-25T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "efde5ec2-6528-4a1a-ae90-cd4c7611f28f",
@@ -75475,8 +75652,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-11T00:00:00.000Z",
   "publishedAt": "2024-12-11T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b6375882-e125-49e6-9f4d-5d0414ab45b9",
@@ -75654,8 +75831,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-24T16:30:01.000Z",
   "publishedAt": "2026-06-24T16:30:01.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8cdb9f6b-1d7a-4c65-a92d-5fb80509c5fc",
@@ -75696,8 +75873,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-15T22:50:12.000Z",
   "publishedAt": "2026-05-15T22:50:12.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "46e63991-566b-4972-ad91-a049b923c848",
@@ -75961,8 +76138,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-19T12:00:00.000Z",
   "publishedAt": "2023-12-19T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6ee45d01-59e6-4364-ada2-18e73c244e82",
@@ -76003,8 +76180,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:50:57.000Z",
   "publishedAt": "2026-05-17T19:50:57.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f2ae67c4-1fa7-4343-a4de-ddbc5b94ba4b",
@@ -76046,8 +76223,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-25T12:00:00.000Z",
   "publishedAt": "2025-03-25T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "e462afdc-4b8d-480b-afb3-f788c0d2b0b6",
@@ -76133,8 +76310,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-13T15:52:13.000Z",
   "publishedAt": "2026-04-13T15:52:13.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "879d2132-ad69-4144-af0e-5a2264e6a2e2",
@@ -76221,8 +76398,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-09T14:10:19.000Z",
   "publishedAt": "2026-06-09T14:10:19.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "49c16a9d-c7af-4eb9-a967-ea7a08ec9b09",
@@ -76263,8 +76440,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T16:00:49.000Z",
   "publishedAt": "2026-04-02T16:00:49.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "dbb709b7-e3d9-47ea-860d-2e16bcaa5bcb",
@@ -76352,8 +76529,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-28T12:00:00.000Z",
   "publishedAt": "2023-11-28T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b27d4900-a206-4aca-be9f-78c98cb56f41",
@@ -76668,8 +76845,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-07T12:00:00.000Z",
   "publishedAt": "2023-04-07T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "70684eec-cdf9-459d-820b-6270ec1aed3b",
@@ -76757,8 +76934,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-11T12:00:00.000Z",
   "publishedAt": "2025-02-11T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "7b325f0a-0221-4333-9ab8-4f4afc79d4d0",
@@ -77481,18 +77658,22 @@
   "id": "fcdb7b98-bd2e-4363-8aa1-e57a81fd856d",
   "slug": "gfx950-tutorial-v2-2-2026-09-26",
   "title": "gfx950-tutorial-v2.2",
-  "factSummary": "Upstream triton main at 01c5d2a ([AMD][gfx950][Gluon] Add cd_regclass to mfma and mfma_scaled, #11792 ) plus two upstream PRs that are in review. No fork-only feature is carried any more. [LLVM] Always set the target machine when arch is specified ( #10849 at d61065b ). Replaces the LLVM_PASS_PLUGIN_KEEP_TARGET_MACHINE env: the out-of-tree LLIR-scheduler plugin keeps target-aware cost models without an opt-in. [AMD] Enable amdgpu-use-amdgpu-trackers only when waves_per_eu > 1 ( #11663 ). DROPPED from v2.1: TRITON_FORCE_MFMA_AGPR (the tutorial kernels now pass cd_regclass=\"a\" per MFMA) and gl.warp_predicate (fmha_v4 uses gl.map_elementwise). LLVM: upstream now builds AMDGCN in a separate libtriton_amd_codegen.so. Core LLVM b010a18d (unchanged, so the LLIR-scheduler plugin ABI holds); AMD codegen LLVM ce3529423, which includes the computePSetLimit fix (llvm#216372). Pinned before #11916 , which moves the AMD codegen to triton-lang/llvm-project@ d26ff26e ; that snapshot regresses gfx950 register pressure (GCNSchedStage::checkScheduling records a rejected schedule's pressure). Re-pin once it is fixed. The v2.0 warp-pipeline barrier commit stays dropped.",
-  "summary": "Upstream triton main at 01c5d2a ([AMD][gfx950][Gluon] Add cd_regclass to mfma and mfma_scaled, #11792 ) plus two upstream PRs that are in review. No fork-only feature is carried any more. [LLVM] Always set the target machine when arch is specified ( #10849 at d61065b ). Replaces the LLVM_PASS_PLUGIN_KEEP_TARGET_MACHINE env: the out-of-tree LLIR-scheduler plugin keeps target-aware cost models without an opt-in. [AMD] Enable amdgpu-use-amdgpu-trackers only when waves_per_eu > 1 ( #11663 ). DROPPED from v2.1: TRITON_FORCE_MFMA_AGPR (the tutorial kernels now pass cd_regclass=\"a\" per MFMA) and gl.warp_predicate (fmha_v4 uses gl.map_elementwise). LLVM: upstream now builds AMDGCN in a separate libtriton_amd_codegen.so. Core LLVM b010a18d (unchanged, so the LLIR-scheduler plugin ABI holds); AMD codegen LLVM ce3529423, which includes the computePSetLimit fix (llvm#216372). Pinned before #11916 , which moves the AMD codegen to triton-lang/llvm-project@ d26ff26e ; that snapshot regresses gfx950 register pressure (GCNSchedStage::checkScheduling records a rejected schedule's pressure). Re-pin once it is fixed. The v2.0 warp-pipeline barrier commit stays dropped.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "open-source",
-  "company": "industry",
+  "factSummary": "Triton 发布 gfx950-tutorial-v2.2，基于上游 triton main 提交 01c5d2a（[AMD][gfx950][Gluon] Add cd_regclass to mfma and mfma_scaled, #11792），并包含两个处于 review 状态的上游 PR。该版本不再携带任何 fork-only 特性。其中一项为 [LLVM] Always set the target machine when arch is specified（#10849，提交 d61065b），替代了 LLVM_PASS_PLUGIN_KEEP_TARGET_MACHIN…。",
+  "summary": "Triton 发布 gfx950-tutorial-v2.2，基于上游 triton main 提交 01c5d2a，并纳入两个处于 review 状态的上游 PR；该版本不再保留 fork-only 特性。证据同时提到一项 LLVM 改动（#10849，d61065b）用于在指定 arch 时始终设置 target machine。",
+  "technicalInsight": "从证据看，该版本的方向是减少对 fork 专属补丁的依赖，把 AMD gfx950/Gluon 相关改动（如 mfma 与 mfma_scaled 的 cd_regclass）以及 LLVM target machine 设置推向上游。这属于判断：若两个 review 中的 PR 被合并，后续版本可能进一步与上游 triton main 对齐；可验证的下一信号是这两个 PR 的合并状态及后续 release 是否仍声明无 fork-only 特性。",
+  "industryInsight": "证据仅显示 Triton 侧围绕 AMD gfx950 的编译器适配与上游化动作，未提供采用率、性能或商业数据。可判断为开源编译器生态中硬件后端适配持续向上游收敛的一个信号，但不足以推断更广泛的产业格局变化。",
+  "futureOutlook": "可观察的下一信号包括：上述两个上游 PR 是否被合并、gfx950 相关教程版本是否继续发布，以及后续 release notes 是否仍强调不携带 fork-only 特性。",
+  "businessValue": "对使用 Triton 编译栈并面向 AMD gfx950 的开发者而言，减少 fork-only 特性可能降低维护与升级成本；但证据未给出性能、成本或采用数据，该价值为推断，需以后续版本说明与 PR 合并情况验证。",
+  "category": "compiler-backend",
+  "company": "Triton",
   "keywords": [
+    "Triton",
     "gfx950",
-    "tutorial",
-    "v2"
+    "Gluon",
+    "mfma",
+    "LLVM",
+    "AMD",
+    "upstream"
   ],
   "confidenceScore": 74,
   "heatScore": 23,
@@ -77510,13 +77691,13 @@
     "freshness": 100,
     "crossRegion": false
   },
-  "status": "review",
+  "status": "published",
   "featured": 0,
   "manualOverride": 0,
   "happenedAt": "2026-09-26T05:15:03.000Z",
-  "publishedAt": null,
+  "publishedAt": "2026-09-26T16:33:27.671Z",
   "createdAt": "2026-09-26T05:37:15.931Z",
-  "updatedAt": "2026-09-26T05:37:15.981Z"
+  "updatedAt": "2026-09-26T16:33:27.671Z"
 },
 {
   "id": "fb42c9be-eab6-4d15-805b-93bcea426b12",
@@ -78451,8 +78632,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-14T00:00:00.000Z",
   "publishedAt": "2025-04-14T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "5cd05654-1893-49bb-ad32-b99ea1c4294c",
@@ -78495,8 +78676,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-28T00:00:00.000Z",
   "publishedAt": "2025-07-28T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4d5503ab-6e90-415e-a1be-471762cad398",
@@ -78539,8 +78720,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-30T00:00:00.000Z",
   "publishedAt": "2025-09-30T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "cefc2c52-fd83-4ae1-a3cd-a4b633af9e60",
@@ -78583,8 +78764,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-08T00:00:00.000Z",
   "publishedAt": "2025-12-08T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "51d0159e-03e0-46a0-abc2-8e814b021821",
@@ -78627,8 +78808,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-22T00:00:00.000Z",
   "publishedAt": "2025-12-22T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "3775a9da-e7ca-4bf4-a367-f6c75255b6a8",
@@ -78671,8 +78852,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-07T00:00:00.000Z",
   "publishedAt": "2026-04-07T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "688304eb-2b05-4c16-a400-42a45b696da3",
@@ -78715,8 +78896,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "e0d942a6-f37a-4277-a95a-a45c5a381e3e",
@@ -78759,8 +78940,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-12T00:00:00.000Z",
   "publishedAt": "2026-02-12T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "2f9c9ec7-0f69-4d28-9a77-c97a1280e8ac",
@@ -78940,8 +79121,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-20T12:00:00.000Z",
   "publishedAt": "2023-09-20T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0e3e1d81-95d0-4e68-a46b-59e80f7f79df",
@@ -78982,8 +79163,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-09T00:00:00.000Z",
   "publishedAt": "2025-04-09T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4fd7dddd-71c4-46e8-a007-df128c2d5495",
@@ -79025,8 +79206,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-21T12:00:00.000Z",
   "publishedAt": "2025-08-21T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "ad6e6b75-6a74-46a9-ae5f-29ecc45bdc95",
@@ -79067,8 +79248,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:43:45.000Z",
   "publishedAt": "2026-05-17T19:43:45.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8a844569-7392-4bd3-8368-17b9792e3beb",
@@ -79371,8 +79552,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b6021647-489f-4a6e-aef3-95615c2f0661",
@@ -79413,8 +79594,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-20T19:30:00.000Z",
   "publishedAt": "2026-05-20T19:30:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9aac5367-87dd-4bed-aa29-336431094e4d",
@@ -79456,8 +79637,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-21T00:00:00.000Z",
   "publishedAt": "2026-04-21T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "25fe69a5-a0ca-427c-ae25-656de0da5ae3",
@@ -79499,8 +79680,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-17T12:00:00.000Z",
   "publishedAt": "2025-09-17T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "83bc008f-9083-4013-a6af-daf1252c1faa",
@@ -79540,8 +79721,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-14T00:00:00.000Z",
   "publishedAt": "2023-03-14T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "005d08ee-310d-4c16-accb-e9dea26546b2",
@@ -79624,8 +79805,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-23T00:00:00.000Z",
   "publishedAt": "2026-04-23T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "104d8a19-a1ab-450f-ad20-a6f79104903b",
@@ -79666,8 +79847,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:00:00.000Z",
   "publishedAt": "2026-07-09T08:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "fa87aed3-c07c-4f95-aff3-332417a74348",
@@ -79708,8 +79889,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T10:00:00.000Z",
   "publishedAt": "2026-07-09T10:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "79126618-11b2-4298-aa1f-5217f4907cd2",
@@ -79750,8 +79931,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-07T00:00:00.000Z",
   "publishedAt": "2025-08-07T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "c07211a1-477a-4a95-b2b2-ffe238030b57",
@@ -79883,8 +80064,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T08:00:00.000Z",
   "publishedAt": "2026-07-08T08:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b3ea7a0c-3b31-408b-a008-3821cfb50263",
@@ -80429,8 +80610,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-24T12:00:00.000Z",
   "publishedAt": "2022-12-24T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0b121f2f-6731-45b9-a5c5-b4255a70ab88",
@@ -80883,8 +81064,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-17T00:00:00.000Z",
   "publishedAt": "2024-03-17T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "ca5cc455-54ea-4f7e-a118-641368d6740c",
@@ -80927,8 +81108,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-12T00:00:00.000Z",
   "publishedAt": "2024-12-12T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "2bc6b3e5-1703-4bec-aba6-1937ab390f06",
@@ -80971,8 +81152,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-19T00:00:00.000Z",
   "publishedAt": "2025-02-19T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4eca2546-7819-4bb7-a03e-2485b3a5d6e2",
@@ -81015,8 +81196,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-19T00:00:00.000Z",
   "publishedAt": "2025-11-19T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6ac01b5a-3320-4564-a760-bf9eae72cbd0",
@@ -81059,8 +81240,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-10T00:00:00.000Z",
   "publishedAt": "2026-03-10T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6954baba-333f-48d3-aab7-c2c04a458ff9",
@@ -81103,8 +81284,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-17T00:00:00.000Z",
   "publishedAt": "2026-06-17T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "633cde19-e03c-4d26-aeab-366622054490",
@@ -81147,8 +81328,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T00:00:00.000Z",
   "publishedAt": "2026-07-08T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "654b6dc6-38e3-4ef5-8019-3d7bf42ea544",
@@ -81279,8 +81460,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T00:00:00.000Z",
   "publishedAt": "2025-07-09T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "2f9a1562-2e8d-4dc3-a6e1-dc7dc20b7590",
@@ -81323,8 +81504,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-25T00:00:00.000Z",
   "publishedAt": "2026-05-25T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "12e89b08-cd8f-42a1-a03c-54be36252310",
@@ -81778,8 +81959,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-07T12:00:00.000Z",
   "publishedAt": "2024-10-07T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f695da29-0bee-4ff1-9ec7-f1521ef6aaa8",
@@ -82142,8 +82323,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-28T12:00:00.000Z",
   "publishedAt": "2022-12-28T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "592f62dd-f3d6-4b80-a1b4-8206fabbbbcc",
@@ -83408,8 +83589,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-23T12:00:00.000Z",
   "publishedAt": "2024-06-23T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "c2403129-3e51-4c2f-8bae-ec818fc7ea0c",
@@ -84140,8 +84321,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "ac6e09c3-5429-42e7-9a23-27865e580dfb",
@@ -87413,8 +87594,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-30T12:00:00.000Z",
   "publishedAt": "2023-03-30T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "c886e1a5-d2af-4d4a-9b24-21c339d31e34",
@@ -87778,8 +87959,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-01T00:00:00.000Z",
   "publishedAt": "2025-09-01T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "7ee9255e-7aa3-4f15-ae95-d77c41a89ea8",
@@ -87821,8 +88002,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-21T12:00:00.000Z",
   "publishedAt": "2025-01-21T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "40505a10-0ce8-420b-b35d-b7bb585c6b8d",
@@ -88635,8 +88816,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-15T00:00:00.000Z",
   "publishedAt": "2025-01-15T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "fbdb6ecc-4f30-4fc9-82a3-934616c9cbab",
@@ -89316,8 +89497,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-10T12:00:00.000Z",
   "publishedAt": "2024-01-10T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "27b4fc91-c6ea-43d7-b578-fc013b1a65a2",
@@ -89854,8 +90035,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T12:00:00.000Z",
   "publishedAt": "2023-11-06T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f0c5a10a-c2f6-4b23-bf64-68d23eb913be",
@@ -93755,8 +93936,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-09T12:00:00.000Z",
   "publishedAt": "2023-06-09T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0c686d19-dc1a-4280-bd2f-1edb1980677e",
@@ -94258,8 +94439,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-22T12:00:00.000Z",
   "publishedAt": "2025-01-22T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "1a7413bb-14fa-427c-ad1d-51dbbd8286d8",
@@ -94301,8 +94482,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-30T00:00:00.000Z",
   "publishedAt": "2026-01-30T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "469466ea-6f7d-4e74-88c8-a5cb1d3f1406",
@@ -94388,8 +94569,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-11T00:00:00.000Z",
   "publishedAt": "2025-07-11T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "c2cf301b-d0a8-4339-89bf-978357139894",
@@ -95025,8 +95206,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-04T12:00:00.000Z",
   "publishedAt": "2025-11-04T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f1897980-ae90-49fb-a3c1-5bfa5f1cde26",
@@ -99546,8 +99727,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T10:00:00.000Z",
   "publishedAt": "2026-07-08T10:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "73e6758d-5ac4-4c36-8cfb-45d471c2d747",
@@ -99767,8 +99948,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-18T00:00:00.000Z",
   "publishedAt": "2023-07-18T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "d1c48811-386a-411e-a37b-32df885227d5",
@@ -99809,8 +99990,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-23T00:00:00.000Z",
   "publishedAt": "2024-07-23T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "97de3ebd-b095-4916-a8c2-c27e94ebe521",
@@ -99851,8 +100032,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-05T00:00:00.000Z",
   "publishedAt": "2025-04-05T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "7c2b69d6-6d26-45ac-abb6-7c21944327fb",
@@ -99894,8 +100075,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-27T12:00:00.000Z",
   "publishedAt": "2023-02-27T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "63cd8faa-4bab-445b-a60a-c28ff9795be6",
@@ -99937,8 +100118,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "d519b78b-4492-487c-aa1e-9a52284cc7f7",
@@ -99980,8 +100161,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-10T12:00:00.000Z",
   "publishedAt": "2024-07-10T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8576327f-66a5-4e5b-a18f-64ca34709617",
@@ -100023,8 +100204,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "156ceb72-a16e-423b-b10c-7d3438ae2fff",
@@ -100158,8 +100339,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-15T12:00:00.000Z",
   "publishedAt": "2024-11-15T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "82bf9352-8935-4704-a7aa-43c4ae426ec1",
@@ -100383,8 +100564,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-06T12:00:00.000Z",
   "publishedAt": "2024-09-06T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b5c7f0fc-0bbe-4525-b442-dda349c24952",
@@ -100471,8 +100652,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T12:00:00.000Z",
   "publishedAt": "2025-03-31T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "bd12221f-eecb-4b98-9d29-14a0c066bbcf",
@@ -100606,8 +100787,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "a381c3cb-435e-4fef-89c8-55c180d02231",
@@ -100966,8 +101147,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-14T12:00:00.000Z",
   "publishedAt": "2024-03-14T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8749c671-67c4-47e3-af56-efef74dd62f0",
@@ -101235,8 +101416,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-02T12:00:00.000Z",
   "publishedAt": "2024-04-02T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "d59c7ee5-bff7-48a8-9570-a4a219f9659c",
@@ -103426,8 +103607,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-27T12:00:00.000Z",
   "publishedAt": "2025-06-27T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0fc4b033-ce78-4cdd-9d96-be4af8b7b195",
@@ -103599,8 +103780,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-01T12:00:00.000Z",
   "publishedAt": "2023-12-01T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f831f6d4-d69e-4477-af38-eb13981a41b6",
@@ -103642,8 +103823,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "e892ea18-5032-413e-8c87-65e2539058db",
@@ -104598,8 +104779,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-06T12:00:00.000Z",
   "publishedAt": "2025-03-06T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9bf9dbbf-7caf-4381-bf3a-b7080371803a",
@@ -104729,8 +104910,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-14T12:00:00.000Z",
   "publishedAt": "2024-08-14T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "3d81347a-8126-4661-a154-f676e4a0ecfb",
@@ -104772,8 +104953,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-08T12:00:00.000Z",
   "publishedAt": "2024-05-08T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "e84193c3-ba8d-4d13-99d3-cbcea9a7869d",
@@ -105499,8 +105680,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T12:00:00.000Z",
   "publishedAt": "2024-12-26T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "99708c8f-b6ab-4ad0-a299-770ddc1a4df0",
@@ -105542,8 +105723,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-26T12:00:00.000Z",
   "publishedAt": "2025-05-26T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "88fcfba9-21c7-4cb0-8b69-a826c1f06484",
@@ -105723,8 +105904,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-04T12:00:00.000Z",
   "publishedAt": "2025-04-04T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "efb8a190-6be2-41ed-ac6a-3e47423f3bd0",
@@ -105766,8 +105947,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "60b321e2-a5ef-48ce-90b8-143a7db03c92",
@@ -105855,8 +106036,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-28T12:00:00.000Z",
   "publishedAt": "2025-04-28T12:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4d29de56-f386-4067-b1fc-9a6159e2aa4e",
@@ -106167,8 +106348,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-09T03:26:10.000Z",
   "publishedAt": "2026-01-09T03:26:10.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "cac6b05d-0b45-4260-8b40-f910b7e9f3d7",
@@ -106255,8 +106436,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-18T09:49:14.000Z",
   "publishedAt": "2026-02-18T09:49:14.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b75b6b51-66fb-4ee3-b98e-51e262f74045",
@@ -106434,8 +106615,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-30T05:33:50.000Z",
   "publishedAt": "2026-03-30T05:33:50.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "528e3c24-d5bd-42f4-8ab2-aed860ebed65",
@@ -106795,8 +106976,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-16T00:00:00.000Z",
   "publishedAt": "2023-03-16T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "1b06628f-218d-4a7a-a23e-82e7497bb0aa",
@@ -106838,229 +107019,7 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T00:00:00.000Z",
   "publishedAt": "2026-01-20T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
-},
-{
-  "id": "9a090b14-9bda-4a27-aa85-55dbf759eebf",
-  "slug": "microsoft-g42-1-5b-investment",
-  "title": "Microsoft 投资 G42 15 亿美元：主权 AI 与云联盟扩展到中东市场",
-  "factSummary": "Microsoft 于 2024 年 4 月宣布向 G42 投资 15 亿美元取得少数股权，并与 G42 支持设立 10 亿美元开发者基金。",
-  "summary": "全球 AI 资本开始把云基础设施、主权数据要求、区域市场和人才生态打包为战略投资。",
-  "technicalInsight": "G42 的数据平台和关键工作负载将迁移到 Azure，合作同时受安全、合规和政府间保证协议约束。",
-  "industryInsight": "前沿云平台通过本地伙伴进入受监管市场，区域 AI 公司则用资本与云能力扩大交付半径。",
-  "futureOutlook": "观察主权云项目、区域模型采用、数据边界和开发者基金是否形成可持续需求。",
-  "businessValue": "出海团队需要把本地资本、合规和云伙伴视为同一市场进入结构，不能只复制产品销售模式。",
-  "category": "strategic-investment",
-  "company": "Microsoft / G42",
-  "keywords": [
-    "Microsoft",
-    "G42",
-    "战略投资",
-    "主权 AI",
-    "中东"
-  ],
-  "confidenceScore": 99,
-  "heatScore": 0,
-  "impactScore": 92,
-  "valueScore": 91,
-  "scoreFactors": {
-    "authority": 99,
-    "corroboration": 80,
-    "primaryEvidence": 100,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 1,
-    "velocity": 0,
-    "freshness": 70,
-    "crossRegion": false
-  },
-  "status": "published",
-  "featured": 0,
-  "manualOverride": 1,
-  "happenedAt": "2024-04-15T00:00:00.000Z",
-  "publishedAt": "2024-04-15T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
-},
-{
-  "id": "c0bd254c-3f3f-4cc7-aef7-09175bf3df8c",
-  "slug": "microsoft-openai-multibillion-partnership",
-  "title": "Microsoft 扩大对 OpenAI 的多年投资：模型、算力与云分发形成深度绑定",
-  "factSummary": "Microsoft 于 2023 年 1 月宣布与 OpenAI 进入第三阶段合作，并进行一笔多年、数十亿美元规模的投资。",
-  "summary": "前沿模型融资不再只是股权交易，而是同时绑定超级计算建设、Azure 独家云服务和产品分发。",
-  "technicalInsight": "资本直接转化为训练集群、云容量和模型部署基础设施，使算力供给成为模型迭代速度的一部分。",
-  "industryInsight": "模型公司与超大规模云厂商形成联盟，资本、计算资源和企业渠道开始由同一合作关系提供。",
-  "futureOutlook": "观察独家云关系、知识产权许可、收入分成和新增算力承诺如何随双方规模变化。",
-  "businessValue": "投资人评估模型公司时需要把融资额与云承诺、分发权和商业条款一起建模，而不是只看估值。",
-  "category": "strategic-investment",
-  "company": "Microsoft / OpenAI",
-  "keywords": [
-    "Microsoft",
-    "OpenAI",
-    "战略投资",
-    "Azure",
-    "云绑定"
-  ],
-  "confidenceScore": 99,
-  "heatScore": 0,
-  "impactScore": 98,
-  "valueScore": 98,
-  "scoreFactors": {
-    "authority": 99,
-    "corroboration": 80,
-    "primaryEvidence": 100,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 1,
-    "velocity": 0,
-    "freshness": 70,
-    "crossRegion": false
-  },
-  "status": "published",
-  "featured": 1,
-  "manualOverride": 1,
-  "happenedAt": "2023-01-23T00:00:00.000Z",
-  "publishedAt": "2023-01-23T00:00:00.000Z",
-  "createdAt": "2026-09-26T05:32:44.478Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
-},
-{
-  "id": "31ed947f-94ba-46fc-8435-28639e085b22",
-  "slug": "migrate-your-prompts-to-new-models-and-optimize-them-on-amazon-bedrock-2026-07-31",
-  "title": "Migrate your prompts to new models and optimize them on Amazon Bedrock",
-  "factSummary": "Amazon Bedrock Advanced Prompt Optimization optimizes your prompts for up to 5 models at once and compares original versus optimized performance across quality, latency, and cost. Migrate to a new model or improve your current one in minutes instead of weeks.",
-  "summary": "Amazon Bedrock Advanced Prompt Optimization optimizes your prompts for up to 5 models at once and compares original versus optimized performance across quality, latency, and cost. Migrate to a new model or improve your current one in minutes instead of weeks.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "migrate",
-    "your",
-    "prompts",
-    "new",
-    "models",
-    "optimize",
-    "them",
-    "amazon"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 88,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-30T15:58:32.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-31T04:18:35.219Z",
-  "updatedAt": "2026-07-31T04:18:35.243Z"
-},
-{
-  "id": "e7bf5e75-518e-471f-a18e-87fb45768302",
-  "slug": "migrating-from-closed-to-open-source-models-together-2026-09-17",
-  "title": "Migrating from closed to open source models, Together",
-  "factSummary": "Moving from closed to open source models can take weeks, not years. A five-stage playbook: discover, evaluate, adapt, decide, and production.",
-  "summary": "Moving from closed to open source models can take weeks, not years. A five-stage playbook: discover, evaluate, adapt, decide, and production.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "migrating",
-    "from",
-    "closed",
-    "open",
-    "source",
-    "models",
-    "together"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 55,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 74,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-16T00:00:00.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-17T05:32:44.417Z",
-  "updatedAt": "2026-09-17T05:32:44.450Z"
-},
-{
-  "id": "73139c10-6b8b-44f1-8a4f-25bb5658199c",
-  "slug": "migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime-2026-09-18",
-  "title": "Migrating multi-model AI agents to Amazon Bedrock AgentCore runtime",
-  "factSummary": "AWS Machine Learning Blog 发布文章，介绍将多模型医疗 AI agent 从自管理的 Amazon ECS with AWS Fargate 迁移到 Amazon Bedrock AgentCore runtime。文章称迁移保留了 triple-model orchestration 与 vector-enhanced knowledge retrieval，并减少基础设施管理；该框架无关模式适用于医疗、金融服务与制造业。",
-  "summary": "AWS 发布迁移指南，说明如何把多模型医疗 AI agent 从自管理 Amazon ECS with AWS Fargate 迁移到 Amazon Bedrock AgentCore runtime，在保留 triple-model orchestration 和 vector-enhanced knowledge retrieval 的同时减少基础设施管理，并称该框架无关模式可跨医疗、金融服务和制造业复用。",
-  "technicalInsight": "证据只说明迁移保留了多模型编排与向量增强检索，未给出延迟、成本或可靠性对比数据，因此无法判断 AgentCore runtime 相对自管理 ECS/Fargate 的实际技术收益。可验证的下一信号是 AWS 是否公布该迁移的基准测试、运行时限制或与框架无关性的具体适配清单。",
-  "industryInsight": "这体现云厂商正把 agent 运行时作为托管层推向企业市场，并以医疗等受监管行业作为示例场景；但证据仅为单篇博客，尚不足以证明企业采用规模或竞争格局变化。可观察的下一信号是其他云厂商是否推出对标的托管 agent runtime，以及是否出现第三方客户案例。",
-  "futureOutlook": "若托管 agent runtime 能稳定承载多模型编排与向量检索，企业自建 agent 基础设施的动机可能下降；反之，若缺少成本与合规细节，迁移仍会停留在试点。下一信号是 AWS 是否补充定价、SLA 与合规认证信息。",
-  "businessValue": "对已在 ECS/Fargate 上自管理多模型 agent 的企业，该模式提供了一条减少运维负担的迁移路径，医疗、金融与制造等有行业 agent 需求的团队可评估其适用性；但证据未提供成本节省或性能提升数据，商业价值仍需以实际迁移结果验证。",
-  "category": "agent-runtime-migration",
-  "company": "Amazon Bedrock AgentCore",
-  "keywords": [
-    "Amazon Bedrock AgentCore",
-    "多模型 agent",
-    "Amazon ECS",
-    "AWS Fargate",
-    "向量检索",
-    "医疗 AI",
-    "托管运行时"
-  ],
-  "confidenceScore": 84,
-  "heatScore": 19,
-  "impactScore": 55,
-  "valueScore": 53,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 100,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 46,
-    "crossRegion": false
-  },
-  "status": "published",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-18T15:38:53.000Z",
-  "publishedAt": "2026-09-18T16:34:06.272Z",
-  "createdAt": "2026-09-18T16:33:25.971Z",
-  "updatedAt": "2026-09-21T18:18:07.630Z"
+  "createdAt": "2026-09-26T16:28:19.989Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 }
 ]

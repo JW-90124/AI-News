@@ -1,5 +1,1048 @@
 [
 {
+  "id": "6caef4b2-f660-4a04-88f8-28014cf1f276",
+  "sourceSlug": "llamacpp",
+  "externalId": "tag:github.com,2008:Repository/612354784/b11070",
+  "canonicalUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11070",
+  "urlHash": "d3082f6b9d813d268386317f347c0998a89e0517f2a4f0860e75ba72c679c462",
+  "title": "b11070",
+  "summary": "hexagon: overhaul of buffer and DMA handling to support 64bit mappings + improvements ( #29197 ) hex-dma64: enable support extended buffer mappings and 64bit dma hex-dma64: expand binary ops to support more DMA scenarios hex-dma64: add binary-ops.h hex-dma64: add --hex-dma64 to run.py and fix minor issues hex-dma64: u…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-09-21T10:53:04.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "80f1f0c0287d637b9bfe13134f9d36af6911b7f0a66dced3d7ec6fac3f2191e2",
+  "createdAt": "2026-09-21T18:14:03.001Z",
+  "updatedAt": "2026-09-21T18:14:03.001Z"
+},
+{
+  "id": "592a67d3-6a29-4b48-b50a-c739ba6aefd4",
+  "sourceSlug": "together-ai",
+  "externalId": "https://www.together.ai/blog/consistency-diffusion-language-models",
+  "canonicalUrl": "https://www.together.ai/blog/consistency-diffusion-language-models",
+  "urlHash": "d3130e9a464bcf54257c5f17f552507704356f319bca834f89c10757e148580b",
+  "title": "Consistency diffusion language models: Up to 14x faster inference without sacrificing quality",
+  "summary": "Standard diffusion language models can&#39;t use KV caching and need too many refinement steps to be practical. CDLM fixes both with a post-training recipe that enables exact block-wise KV caching and trajectory-consistent step reduction — delivering up to 14.5x latency improvements",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-02-19T00:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "c4ebf5a1e2d3e75cb88eea112e7e93350d2157dfc3bba75f21810730d3d521e2",
+  "createdAt": "2026-07-12T05:58:00.700Z",
+  "updatedAt": "2026-07-28T14:44:01.472Z"
+},
+{
+  "id": "704c7f63-ff60-494f-a8fe-e0e97d584f38",
+  "sourceSlug": "mineru-releases",
+  "externalId": "tag:github.com,2008:Repository/765083837/mineru-4.0.0-released",
+  "canonicalUrl": "https://github.com/opendatalab/MinerU/releases/tag/mineru-4.0.0-released",
+  "urlHash": "d31426f72c0c388894e4df22cdbf954fa56bf7f99c15b2deffb9786b827fe5cf",
+  "title": "mineru-4.0.0-released",
+  "summary": "What's Changed 2026/09/16 4.0.0 Released MinerU 4.0 is a major release that rebuilds the project around tiered parsing quality , native multi-format document parsing , a local document library for agent reading , and unified SDK / API / service tools . The main updates include: Four parsing tiers The 3.x pipeline / vl…",
+  "author": "myhloli",
+  "language": "zh-CN",
+  "publishedAt": "2026-09-16T12:41:01.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "1a0c0c9012f39b7841e6f6b20e283ea8b6655b9b99aaf05dc7e0e8ba99bda3e9",
+  "createdAt": "2026-09-16T15:42:40.151Z",
+  "updatedAt": "2026-09-24T05:31:06.177Z"
+},
+{
+  "id": "819b1eb7-7096-4bb6-b847-d6826f6ea79e",
+  "sourceSlug": "together-ai",
+  "externalId": "https://www.together.ai/blog/serving-deepseek-v4-why-million-token-context-is-an-inference-systems-problem",
+  "canonicalUrl": "https://www.together.ai/blog/serving-deepseek-v4-why-million-token-context-is-an-inference-systems-problem",
+  "urlHash": "d3159581f34760ba6b05c02a63f07ed88464dba237f11aab6cf9644b3c5df173",
+  "title": "Serving DeepSeek-V4: why million-token context is an inference systems problem",
+  "summary": "DeepSeek-V4 makes million-token context a serving-systems problem. Together AI explores the inference work behind V4 on NVIDIA HGX B200, including compressed KV layouts, prefix caching, kernel maturity, and endpoint profiles for long-context workloads.",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-05-11T00:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "07e6a3514601b5e058f53568540857c213f612e4cea43a333db28fda22091628",
+  "createdAt": "2026-07-12T05:58:00.677Z",
+  "updatedAt": "2026-09-26T16:30:28.558Z"
+},
+{
+  "id": "627be633-3b6b-4b04-acad-bbfaae8a32de",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2608.07110v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.07110v1",
+  "urlHash": "d318f6c72ebf6cff28f1473227362db204721652ee73ca03431d085484747c4d",
+  "title": "Modular TTT: Rethinking Test-Time Training as Composable Modules",
+  "summary": "Test-time training (TTT) views sequence modeling as an online learning problem in which fast weights are updated by an internal learning rule. Despite the growing number of TTT variants, existing approaches typically hard-code each variant separately, which makes it difficult to design new TTT methods and to isolate t…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-07T11:11:43.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "583f7defb64518d42718dd23c64e67e3a588bc057dd22f5e6839b7ed9fb53823",
+  "createdAt": "2026-08-10T03:00:56.471Z",
+  "updatedAt": "2026-08-10T13:48:02.333Z"
+},
+{
+  "id": "ac00a4f3-e423-4bf9-8ef3-d195bca1840d",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=48900319",
+  "canonicalUrl": "https://sleuth-io.github.io/sx/2026/07/10/your-dropbox-is-now-a-skill-server.html",
+  "urlHash": "d318fad847fb89c7b5c47fa4dab3a1fad9477ceb126316ef9a959ecd04d91971",
+  "title": "Show HN: Sx 2.0 – Share AI skills with your team through a Dropbox folder",
+  "summary": "Hi all, author here. SX started as a CLI to let developers share skills across AI clients without having to rely on git for storage. This allowed sharing at the Repo/Team/Org and Personal level. However, the more we spoke to users the more we realized that non-technical users were actually using skills more and more b…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-13T23:26:52.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "37a99bfb22399cc18a62c0e1a7337c6074069b60a63ea024504c03dc5752a6a1",
+  "createdAt": "2026-07-14T02:55:47.703Z",
+  "updatedAt": "2026-07-14T05:30:11.373Z"
+},
+{
+  "id": "01d0289b-8107-4891-a1ab-3c71b8e8902d",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "baichuan-2-open-large-scale-language-models",
+  "canonicalUrl": "https://arxiv.org/abs/2309.10305",
+  "urlHash": "d31a7698e3fbc9bab40c3f83a48c2701d9d8b2d70ae057ce3d81c0b3a624fac2",
+  "title": "Baichuan 2: Open Large-scale Language Models：百川2开源大语言模型，中英文能力领先",
+  "summary": "百川智能发布Baichuan 2系列大语言模型,包含7B和13B参数规模,从零训练于2.6万亿tokens。在MMLU、CMMLU、GSM8K、HumanEval等公开基准上匹配或超越同尺寸开源模型,并在医疗、法律等垂直领域表现优异。所有预训练模型检查点将开源。",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2023-09-19T12:00:00.000Z",
+  "category": "research",
+  "tags": [
+    "大语言模型",
+    "开源",
+    "多语言",
+    "中文",
+    "垂直领域"
+  ],
+  "metrics": {
+    "independentSources": 1,
+    "platforms": [
+      "official"
+    ],
+    "regions": [
+      "US"
+    ]
+  },
+  "contentHash": "691c88244ea9d15c713c0166be55d72b02032a3f132b9ae2063778a1fe7d3f4d",
+  "createdAt": "2026-09-26T16:28:20.288Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
+},
+{
+  "id": "99931b4e-4b11-43f8-91c2-0873a69b340e",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2608.02347v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.02347v1",
+  "urlHash": "d31fe9e3a2c0c003480c5855ddf0d7860f753bb6739b9b257f5279ebd395e1ca",
+  "title": "Mamba with Hierarchical Memory: Solving Representation Bottleneck in Long Sequence Modeling",
+  "summary": "Recurrent linear attention models (RLAs) such as Mamba offer efficient linear-time sequence modeling as an alternative to Transformers, yet their fixed-capacity recurrent states limit long-sequence modeling. Drawing inspiration from hierarchical human memory, we propose Hierarchical Memory Mamba (HMM) to address this.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-03T14:59:54.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "505d7a8e5f3df50d7f2032c6fca4b9c2e7c25d1f1d2616ccaf06ea5379955c6d",
+  "createdAt": "2026-08-04T03:55:10.481Z",
+  "updatedAt": "2026-08-04T14:42:19.767Z"
+},
+{
+  "id": "9c1406f4-3c1d-48ac-bfc3-6a011db4dfc1",
+  "sourceSlug": "ros-discourse",
+  "externalId": "discourse.openrobotics.org-topic-56235",
+  "canonicalUrl": "https://discourse.openrobotics.org/t/update-on-bagel-bag-exploration-whats-new/56235",
+  "urlHash": "d32294b1ec07c780441ce2e9f713a183fb5ad66f13b5abaf95bde4379e642017",
+  "title": "Update on BAGEL (BAG ExpLoration): What&#39;s New",
+  "summary": "Hi again, Following up on my earlier post about BAGEL, a browser-based ROS bag viewer/editor with no native dependencies and no ROS install. Since v1.0 it’s grown from a viewer into something closer to a full robotics debugging tool. Quick links for anyone new here: Link: https://bagel-ros2.vercel.app Source: GitHub -…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-06T23:59:45.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "f72ce5eb4ad987702cf1e78b9472c05f582396373ab65bee3a0ef8b18732b7ca",
+  "createdAt": "2026-07-13T13:08:13.121Z",
+  "updatedAt": "2026-07-13T17:01:40.125Z"
+},
+{
+  "id": "e83e3a7a-7237-4d11-aa28-e4e3207b0260",
+  "sourceSlug": "opencompass",
+  "externalId": "tag:github.com,2008:Repository/654124617/0.3.8",
+  "canonicalUrl": "https://github.com/open-compass/opencompass/releases/tag/0.3.8",
+  "urlHash": "d32ad2d4e86db7ebb11fee5b39af1a05cd864dd84f94158c4394c1f15e8d3b6c",
+  "title": "0.3.8",
+  "summary": "The OpenCompass team is thrilled to announce the release of OpenCompass v0.3.8! 🎉 Added Features: -🆕 DLC runner Lark report functionality has been introduced to improve reporting mechanisms. ( #1735 ) -🆕 Chinese SimpleQA configuration has been added to extend language support. ( #1697 ) -🆕 Addition of OC academic.…",
+  "author": "MaiziXiao",
+  "language": "zh-CN",
+  "publishedAt": "2024-12-17T11:57:21.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "767e1187bab3969cae6a7a6b3c7684cded9376ae464de11771d190a697b85837",
+  "createdAt": "2026-07-12T05:56:37.695Z",
+  "updatedAt": "2026-07-23T03:59:53.775Z"
+},
+{
+  "id": "8b094290-51b9-4ae5-9b47-b3e25f49f448",
+  "sourceSlug": "pytorch-core-releases",
+  "externalId": "tag:github.com,2008:Repository/65600975/trunk/6031e8d9ef3bcb07a881c3aa3c5204968e756547",
+  "canonicalUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F6031e8d9ef3bcb07a881c3aa3c5204968e756547",
+  "urlHash": "d32f01016cb2c39a3fb08a6fae44d6d3ad648a35e550c5408b69c1c7d6a9c7cc",
+  "title": "trunk/6031e8d9ef3bcb07a881c3aa3c5204968e756547",
+  "summary": "[aot_autograd] Pin the \"example_value\" dynamic-shape read against a r...",
+  "author": "bobrenjc93",
+  "language": "en",
+  "publishedAt": "2026-09-22T05:24:29.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "d0645f340f438429007afcc4febf48ff528b2b0b2841be63595b84256fdcdc37",
+  "createdAt": "2026-09-22T05:29:07.141Z",
+  "updatedAt": "2026-09-22T05:29:07.141Z"
+},
+{
+  "id": "0bb4e72c-804b-497c-b9a3-394a90650977",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49077815",
+  "canonicalUrl": "https://gamevibe.us/106-zombie-survival-training",
+  "urlHash": "d32fa445d7a0393d616d735f6a48c971127586eafb1056f55619489ede51bce8",
+  "title": "Show HN: Building a new game everyday with AI. Day #106 Zombie Survival Training",
+  "summary": "I'm using AI (mostly Claude) to create/publish a new video game every day This is day 106, and my first stab at the zombie/survival genre. Most of the games I build with just a few prompts, but this one I used almost an entire 5-hour window on the $20/month pro subscription (in about an hour) with Opus 5 to get right.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-28T00:49:18.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "e5621cafceb5a6cf0924132acce2855f5bb168c4d4500354faab9a5769520d67",
+  "createdAt": "2026-07-28T03:54:27.637Z",
+  "updatedAt": "2026-07-28T03:54:27.637Z"
+},
+{
+  "id": "f608acca-cb37-455c-86e5-0f8dd6426b4c",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=48991866",
+  "canonicalUrl": "https://pinpoint.maferland.com/",
+  "urlHash": "d33056e26e673c9fb17da6234107ba819d46c3681c94ab2511ffae33f1dae184",
+  "title": "Show HN: Pinpoint – Visual feedback for AI coding agents",
+  "summary": "I built Pinpoint because I was tired of typing out feedback on the visual work my AI agent did. I want my agent to be autonomous, so having it ask for feedback through a UI felt genuinely better. Dropping a contextual comment on each screenshot is much closer to how you'd give feedback on a design in Figma. It also do…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-21T13:12:10.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "71647be230041d484ad97a0650bb398464302ca21ea3efe0af9b54d667197624",
+  "createdAt": "2026-07-21T14:28:37.606Z",
+  "updatedAt": "2026-07-21T14:28:37.606Z"
+},
+{
+  "id": "81088c27-1d77-4a13-978c-cd4654962e9a",
+  "sourceSlug": "safetensors-releases",
+  "externalId": "tag:github.com,2008:Repository/540033828/v0.9.0-rc.1",
+  "canonicalUrl": "https://github.com/safetensors/safetensors/releases/tag/v0.9.0-rc.1",
+  "urlHash": "d33667e8f8e9e7962834083968bd4a362693a17b246774878b681cf0c031708c",
+  "title": "v0.9.0-rc.1",
+  "summary": "New features Fast ⚡ prefetch loader for the pread backend and CUDA devices. Load times for big models in the order of ~60x faster (benchmarked on glm5.2 tp=8 B200, went from >60mins to 56s). 3.14t wheels! What's Changed fix(release): move crates.io to trusted publisher OIDC by @McPatate in #784 feat: move cargo audit…",
+  "author": "McPatate",
+  "language": "en",
+  "publishedAt": "2026-09-23T16:37:09.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "ed19165b410113c1f357fa75d6c7b9e530062c69d6863efd610f331fece42a70",
+  "createdAt": "2026-09-23T17:11:04.124Z",
+  "updatedAt": "2026-09-26T16:30:34.018Z"
+},
+{
+  "id": "8c397867-fc82-46a9-8986-c1133de33c2b",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://thelampmagazine.com/blog/how-to-write-english-prose",
+  "canonicalUrl": "https://thelampmagazine.com/blog/how-to-write-english-prose",
+  "urlHash": "d3404bbf062bcf285272783e88d07491b89cbc9d8f1e32c0445ccaf8ad231330",
+  "title": "How to Write English Prose",
+  "summary": "Comments",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-26T17:29:35.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "66bb234ee9853ff4d41f5ea505ff4e76989b0e5446a2e68d48e2d52b91531dc9",
+  "createdAt": "2026-07-27T04:29:19.046Z",
+  "updatedAt": "2026-07-27T04:29:19.046Z"
+},
+{
+  "id": "c8184416-6756-4a39-a6cc-0ad19e69969c",
+  "sourceSlug": "the-verge-ai",
+  "externalId": "https://www.theverge.com/?p=998457",
+  "canonicalUrl": "https://www.theverge.com/tech/998457/meta-connect-2026-live-blog-mark-zuckerberg-keynote",
+  "urlHash": "d3441858b1eb9b419c78db4daf41c14b773dd121c8fa9a30ecff15218fc2175a",
+  "title": "Meta Connect 2026 live blog: On the ground at Mark Zuckerberg’s next big product launch",
+  "summary": "It's time once again for Meta's annual September product launch event, and The Verge is on the ground in Menlo Park to cover the show live. Meta says that today's keynote by Mark Zuckerberg will be about how \"Meta is building a future for everyone\" - something he wrote at length about in a recent [&#8230;]",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-23T22:30:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "3f9bad21700fe0e114ef8ae1ea4cd610996686b22b6b8b7ab68cb6bc764a6c7c",
+  "createdAt": "2026-09-24T05:31:16.980Z",
+  "updatedAt": "2026-09-24T05:31:16.980Z"
+},
+{
+  "id": "2ec64c47-36b0-4b62-8a53-202daf346738",
+  "sourceSlug": "pytorch-core-releases",
+  "externalId": "tag:github.com,2008:Repository/65600975/trunk/688f44f2596fd7a693042d06380b0785eb3f879c",
+  "canonicalUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F688f44f2596fd7a693042d06380b0785eb3f879c",
+  "urlHash": "d344d6c1c016c507c6cb2296c3f4467a53b0ebe3d4553312a62d40d25046ebba",
+  "title": "trunk/688f44f2596fd7a693042d06380b0785eb3f879c: Modernize Claude workflow models (#190960)",
+  "summary": "Bumps the verisons, tested in CI forge we can add the fable check if once we let this run a few rounds and check in on price and re-asses aferwords Use Sonnet 5 for issue triage and distributed triage, and use Fable 5 for comment-triggered Claude interactions. Test Plan: ruby -ryaml -e 'ARGV.each { |path| YAML.load_fi…",
+  "author": "drisspg",
+  "language": "en",
+  "publishedAt": "2026-07-24T06:16:30.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "544f08513497766359033ebac87aece1fc0d40d2dec456ca512110f0c98b070e",
+  "createdAt": "2026-07-24T14:19:24.870Z",
+  "updatedAt": "2026-07-24T14:19:24.870Z"
+},
+{
+  "id": "6d0e4119-cdb4-42c5-81c7-fe5101b0cbc3",
+  "sourceSlug": "ithome-ai",
+  "externalId": "https://www.ithome.com/0/975/622.htm",
+  "canonicalUrl": "https://www.ithome.com/0/975/622.htm",
+  "urlHash": "d34545e8903942f99408bc426ee7ddef190fcaac164ac53e278ad29e04fa8b9a",
+  "title": "知情人士回应“腾讯考虑入股 Manus”：预计股权变更完成后，腾讯方面仍只是持有少数股份的外部股东",
+  "summary": "IT之家 7 月 11 日消息,近期有消息称,腾讯正考虑入股 AI 初创公司 Manus,计划成为该公司的最大股东。腾讯正与真格基金、红杉资本和 Manus 管理层磋商,计划按 20 亿美元收购这家 AI 公司。 据财闻今晚报道,接近交易的知情人士表示, 此次 股权变动 是在 监管主导之下 , 社会资本共同补齐此前 Meta 的投资,以便让 Meta 退出 。 预计股权变更完成后, 腾讯 方面仍只是持有 少数股份的外部股东 。 2025 年 3 月,蝴蝶效应公司推出 Manus,曾在市场一夜爆火。然而,当年 6 月,Manus 企业总部迁至新加坡,大幅裁减国内团队,彻底停止中国境内服务与运营。作为一家依靠中国工程师和基础设施环境发…",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2026-07-11T14:58:37.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "web",
+      "rss"
+    ]
+  },
+  "contentHash": "3e0b457a19123752fa3010b19d9b363decba68b5bc5f7aaf8db4903703890347",
+  "createdAt": "2026-07-12T00:08:53.813Z",
+  "updatedAt": "2026-07-12T00:08:53.813Z"
+},
+{
+  "id": "117f456b-135d-4dbc-9e1e-02f986ba3dc9",
+  "sourceSlug": "mastra-releases",
+  "externalId": "tag:github.com,2008:Repository/839037098/@mastra/playground-ui@43.0.0",
+  "canonicalUrl": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra%2Fplayground-ui%4043.0.0",
+  "urlHash": "d345e366f381bc627e21edf01153a77707042b3318c47c7f637546d67d9b513f",
+  "title": "@mastra/playground-ui@43.0.0",
+  "summary": "@mastra/playground-ui@43.0.0",
+  "author": "dane-ai-mastra[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-27T16:35:04.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "433f71660801dcc296454a144351a71e22731c7fa901beac2631f30b455155ef",
+  "createdAt": "2026-07-28T03:55:18.179Z",
+  "updatedAt": "2026-07-28T03:55:18.179Z"
+},
+{
+  "id": "96dbd13c-95c0-4e4e-b87e-2b311068d5ca",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2607.13899v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.13899v1",
+  "urlHash": "d34930dfacceb498610e584f7c3433200e2f816a70a4793ea1b4101f71090547",
+  "title": "AIMO Interpretability Challenge",
+  "summary": "We propose the AIMO Interpretability Challenge, a competition on distinguishing robust from spurious reasoning in frontier mathematical language models based on the models' internal mechanisms. The challenge is motivated by a central limitation of standard reasoning benchmarks: strong final-answer accuracy does not re…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-15T14:41:28.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "63c2b7196550b96741f870e1dc23a65cd4e730cab856fba513a512e50c6df7d4",
+  "createdAt": "2026-07-16T14:26:24.510Z",
+  "updatedAt": "2026-07-16T14:26:24.510Z"
+},
+{
+  "id": "a1e08abf-d8bd-46f7-a77c-72b4ecd5646b",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2609.19134v1",
+  "canonicalUrl": "https://arxiv.org/abs/2609.19134v1",
+  "urlHash": "d3497a5fb456be2e53380a78d6b0a34e99f9b9ae6d60546d1a53366d3261d74b",
+  "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments",
+  "summary": "Scientific code repositories encode decades of human knowledge in executable models, methods, and tools. Yet fragmented toolchains, implicit domain conventions, and specialized correctness criteria make this knowledge difficult to convert into reliable learning experience-a challenge we call the scientific experience.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-16T17:55:47.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "dad6c26f4b54daf8b1fc907b013cdbc697726049ba44fc4d8cbfc40b3ee1ac3c",
+  "createdAt": "2026-09-17T05:28:33.224Z",
+  "updatedAt": "2026-09-17T17:04:59.448Z"
+},
+{
+  "id": "b7046a45-4233-4d7e-86f2-c907235b013a",
+  "sourceSlug": "openhands",
+  "externalId": "tag:github.com,2008:Repository/771302083/v1.17.0",
+  "canonicalUrl": "https://github.com/OpenHands/OpenHands/releases/tag/v1.17.0",
+  "urlHash": "d34bc2ddf95b773602e04fc3c6aa3e872c46567beed42d25920c684d37488122",
+  "title": "v1.17.0",
+  "summary": "1.17.0 (2026-09-09) What's Changed Features feat: show manifest-declared value statements on dashboard cards and rows by @hieptl in #16921 feat: Make automation run UI task-outcome aware by @malhotra5 in #16937 feat: enable LLM provider connections on cloud by @juanmichelini in #16757 feat: allow editing a custom cron…",
+  "author": "openhands-release-bot[bot]",
+  "language": "en",
+  "publishedAt": "2026-09-09T19:31:50.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "bfe59f19823842104788baabdcf5ffd5ed16cee2dd9d5169f3eb3b1bc14c3321",
+  "createdAt": "2026-09-16T15:41:01.180Z",
+  "updatedAt": "2026-09-25T17:17:22.816Z"
+},
+{
+  "id": "68d0b8a3-88f5-4a12-8072-98e27b324215",
+  "sourceSlug": "mastra-releases",
+  "externalId": "tag:github.com,2008:Repository/839037098/@mastra/voice-openai-realtime@0.13.5",
+  "canonicalUrl": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra%2Fvoice-openai-realtime%400.13.5",
+  "urlHash": "d34c229e751b6d03b0f6ab620275ae192d7440eab63c465ab359547d07f843e7",
+  "title": "@mastra/voice-openai-realtime@0.13.5",
+  "summary": "@mastra/voice-openai-realtime@0.13.5",
+  "author": "dane-ai-mastra[bot]",
+  "language": "en",
+  "publishedAt": "2026-08-05T20:40:28.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "b729f0e22de91eee7451bb1ad2df931d324bc343350b20cef81033d9571cb81f",
+  "createdAt": "2026-08-06T03:57:24.710Z",
+  "updatedAt": "2026-08-06T03:57:24.710Z"
+},
+{
+  "id": "1d212fcb-c598-4537-8d91-b6ad3c95577d",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49021494",
+  "canonicalUrl": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html",
+  "urlHash": "d34d98898d199498bdbad6de6eb1fa9f92cc4c0d20278a9ee62d0b3b0b315a82",
+  "title": "Tesla falls 10%, Alphabet sinks 5% as AI spending concerns spook investors",
+  "summary": "Article URL: https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html Comments URL: https://news.ycombinator.com/item?id=49021494 Points: 4 # Comments: 0",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-23T13:44:42.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "19a58d21f2b27021367f12be28c8a0e187cb81dff79c33ae904a3d1f6cdfd069",
+  "createdAt": "2026-07-23T14:38:00.213Z",
+  "updatedAt": "2026-07-23T14:38:00.213Z"
+},
+{
+  "id": "dc191bce-cefa-434e-a831-8395c2a41d6f",
+  "sourceSlug": "ultralytics-releases",
+  "externalId": "tag:github.com,2008:Repository/535360445/v8.4.110",
+  "canonicalUrl": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.110",
+  "urlHash": "d34e38d2cc54580bcc353e0c3762ee9322531435bed19c31d2016e781f35ce73",
+  "title": "v8.4.110 - Expand RKNN export support to all tasks (#25490)",
+  "summary": "🌟 Summary 🚀 Version 8.4.110 expands RKNN export to every supported YOLO task and improves GPU-friendly tensor image plotting, making Rockchip deployment more versatile and visualization more efficient. 📊 Key Changes Expanded RKNN export support by @glenn-jocher : RKNN models can now be exported for: Object detectio…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-29T02:16:15.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "ab68fa77f57de7a4477aae1702843923bf2f24968112070c2cef227a5b24d8d7",
+  "createdAt": "2026-07-29T04:00:04.398Z",
+  "updatedAt": "2026-08-12T03:17:38.418Z"
+},
+{
+  "id": "2e3cc7af-6a9c-45b9-a5d3-9bdd035c481d",
+  "sourceSlug": "phoenix-releases",
+  "externalId": "tag:github.com,2008:Repository/564072810/arize-phoenix-v19.20.0",
+  "canonicalUrl": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v19.20.0",
+  "urlHash": "d34f813969126da00b66c2f826b619aefb4f1cc6f7ed38bbed7c666f045d06c4",
+  "title": "arize-phoenix: v19.20.0",
+  "summary": "19.20.0 (2026-08-10) Features add copy actions to session turns ( #14811 ) ( b9999ae ) server: add dataset split create/update/delete REST endpoints ( #14046 ) ( b4d9b19 ) Bug Fixes app: unblock project navigation during loader fetches ( #14967 ) ( e11b1c3 ) deps: update arize-phoenix-otel to 0.17.0 ( f413867 )",
+  "author": "mikeldking",
+  "language": "en",
+  "publishedAt": "2026-08-10T16:47:18.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "4bac390494901628df6c17e7ad9c33fe9644edc80e8613825732bc9dd1e7edbb",
+  "createdAt": "2026-08-11T02:54:34.565Z",
+  "updatedAt": "2026-08-15T02:05:03.547Z"
+},
+{
+  "id": "c966022d-f067-458f-9262-08996cd302b3",
+  "sourceSlug": "deepeval-releases",
+  "externalId": "tag:github.com,2008:Repository/676829188/python-v4.0.7",
+  "canonicalUrl": "https://github.com/confident-ai/deepeval/releases/tag/python-v4.0.7",
+  "urlHash": "d351d039e875202a77645884b6890ef4544a2eef769e4e4e0960eead490d434f",
+  "title": "python-v4.0.7: Merge pull request #2860 from A-Vamshi/typescript-sdk",
+  "summary": "fix: update deepeval/typescript from deepeval.ts",
+  "author": "kritinv",
+  "language": "en",
+  "publishedAt": "2026-07-07T14:19:58.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "18f554548577df6b07b4ac3d2bf2b840148d414772029ee75820ca69831f5101",
+  "createdAt": "2026-07-13T15:36:57.484Z",
+  "updatedAt": "2026-07-16T14:29:00.469Z"
+},
+{
+  "id": "9a9797ec-fc2b-4973-9324-b6ec868365a1",
+  "sourceSlug": "infoq-cn-ai",
+  "externalId": "https://www.infoq.cn/article/VtCxtKByjAU54iVaSt6T?utm_source=rss&utm_medium=article",
+  "canonicalUrl": "https://www.infoq.cn/article/VtCxtKByjAU54iVaSt6T",
+  "urlHash": "d3567e49bb0c57f8ba0d5adace1f0a57907f1bcd31ec9ff919b05dbc351bc7a7",
+  "title": "OpenTelemetry晋升为CNCF的最高成熟度项目",
+  "summary": "点击查看原文>",
+  "author": null,
+  "language": "zh-CN",
+  "publishedAt": "2026-07-28T15:28:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "d433ad41f6cc052d7dbe6db1c43f847acfd67aac8a06c3e7c21dee09794f11d4",
+  "createdAt": "2026-07-28T14:44:04.376Z",
+  "updatedAt": "2026-07-29T03:57:41.769Z"
+},
+{
+  "id": "f2a6e471-1ff0-4af4-9db4-1b84539ca5fd",
+  "sourceSlug": "openai-java-releases",
+  "externalId": "tag:github.com,2008:Repository/881501535/v4.68.0",
+  "canonicalUrl": "https://github.com/openai/openai-java/releases/tag/v4.68.0",
+  "urlHash": "d356925f6077d4af0be4561a4613ae97451f25583797975a9fe2a87417ee7dd9",
+  "title": "v4.68.0",
+  "summary": "4.68.0 (2026-09-22) Features api: add GPT-6 Sol and Luna model identifiers ( #1060 ) ( 234b977 ) Bug Fixes preserve streams through multipart upload unions ( #1059 ) ( e3eb1d4 )",
+  "author": "openai-sdks[bot]",
+  "language": "en",
+  "publishedAt": "2026-09-22T19:39:53.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "ac921ddde60e719e0a7f0f2b1123cffd45635f963795e8678de3e82b1005b92f",
+  "createdAt": "2026-09-23T05:16:41.195Z",
+  "updatedAt": "2026-09-25T17:19:21.012Z"
+},
+{
+  "id": "e512443a-0b69-4a1b-b656-e8c7f2a600e1",
+  "sourceSlug": "executorch-releases",
+  "externalId": "tag:github.com,2008:Repository/463628495/ciflow/trunk/21478",
+  "canonicalUrl": "https://github.com/pytorch/executorch/releases/tag/ciflow%2Ftrunk%2F21478",
+  "urlHash": "d3575579530387b04587e1513ab595e03aaab319e41c28954f01ce94b581972d",
+  "title": "ciflow/trunk/21478: Update",
+  "summary": "[ghstack-poisoned]",
+  "author": "shoumikhin",
+  "language": "en",
+  "publishedAt": "2026-07-30T01:43:23.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "659d09d5e393a70ea0e07a91f8d38bb1f2164dd78ed555cf86fc9e9ce862a794",
+  "createdAt": "2026-07-30T03:50:23.447Z",
+  "updatedAt": "2026-07-31T14:42:53.961Z"
+},
+{
+  "id": "68bdb085-df30-46dc-b5b7-def51ed6e507",
+  "sourceSlug": "arxiv-ro",
+  "externalId": "http://arxiv.org/abs/2607.13444v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.13444v1",
+  "urlHash": "d35ab746915bb8a80ec98162f8d6442d3dc20f9c4d4d54d058c9e420fb6da0ca",
+  "title": "Stress-Sharing: A Bio-Inspired Approach to Decentralized Fault Repair in Modular Spacecraft",
+  "summary": "Structural damage in modular spacecraft can disrupt mechanical and communication connectivity, reducing system capability. Existing approaches rely on redundancy or preplanned reconfiguration and do not enable autonomous repair under local information and physical constraints. We model the spacecraft as a lattice-cons…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-15T05:02:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "e285cfd3fb508d580b1f1e4bc790d7ea1e24fd7c1fafe08f5cf2afc8d2eece83",
+  "createdAt": "2026-07-16T14:26:25.031Z",
+  "updatedAt": "2026-07-16T14:26:25.031Z"
+},
+{
+  "id": "0e91a5c2-9d5f-41e5-b50a-ba8dad67a771",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2608.07285v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.07285v1",
+  "urlHash": "d35ca1b57c07ff59d0666eae72466ea2c8ac8fa55f08f85a235e3392c44cfc52",
+  "title": "How Much AI Is in This Track? Quantifying the Proportion of AI-Generated Stems in Hybrid Music Mixtures",
+  "summary": "AI-generated music is increasingly used at the stem level, with producers integrating synthetic drums, basslines, or vocals alongside human-performed instruments. However, current AI music detection systems are binary, treating tracks as either fully AI or fully human. In this paper, we reformulate AI music detection.…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-07T14:46:06.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "5189b29b16cb9114ffd481fa0791a1b968e2a2d5665818f0cecac1d798ff1ed9",
+  "createdAt": "2026-08-10T03:00:56.414Z",
+  "updatedAt": "2026-08-10T13:48:02.213Z"
+},
+{
+  "id": "01060278-9339-41f6-a1b4-57c547fe3fa8",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2609.24516v1",
+  "canonicalUrl": "https://arxiv.org/abs/2609.24516v1",
+  "urlHash": "d35ff1aa1f631e1001b9afc96f032a0950253116784105c841dad8a023256996",
+  "title": "LLJ Cards: Best practices for the Use of LLMs as Judges",
+  "summary": "In recent years, large language models (LLMs) have emerged as a popular alternative for evaluation. Often referred to as LLMs as judges (LLJs), these systems have been widely adopted by researchers and practitioners across a broad range of measurement tasks, driven by their strong performance, scalability, and cost-ef…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-21T12:54:07.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "7d16338d1cf2aa16f96a832d260cbcb72193517c4e586f4028a7e4aa22938917",
+  "createdAt": "2026-09-22T05:25:58.548Z",
+  "updatedAt": "2026-09-22T17:01:38.269Z"
+},
+{
+  "id": "6ec9dc4e-8d31-4e92-a4aa-77a9ccd70509",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49306820",
+  "canonicalUrl": "https://news.ycombinator.com/item?id=49306820",
+  "urlHash": "d361a49ac31e559681f888b06dc89b60ad29f034d3e1701c121f6c85ed75c71e",
+  "title": "Thank you to the people building these AI tools",
+  "summary": "This stuff has impacted my work and the well-being of my family in a positive way. It is easy to take these tools for granted due to the fear surrounding them and the sheer volume of activity in the space. It's hard to keep up and it's a wild ride. I appreciate that I get to have a high-level, well-versed thinking par…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-15T01:47:24.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "2b1e1b199d31acb723e8212e54b24b051f5491ab7e28c34fea09a73bd0e415d9",
+  "createdAt": "2026-08-15T02:06:32.004Z",
+  "updatedAt": "2026-08-15T02:06:32.004Z"
+},
+{
+  "id": "bbe1db3e-e848-429e-9b3d-55b2ceefdcf1",
+  "sourceSlug": "arxiv-ai",
+  "externalId": "http://arxiv.org/abs/2607.29320v1",
+  "canonicalUrl": "https://arxiv.org/abs/2607.29320v1",
+  "urlHash": "d361e804361cd8618b7e943199f1b72cfe9b30c060b23cc927ca0d697595c1cb",
+  "title": "MAGA: Multi-Platform Self-Fusion of GUI Agents via Structured Action Distillation",
+  "summary": "Graphical user interface (GUI) agents based on large language models are increasingly deployed across mobile, web, and desktop environments. However, existing agents are typically domain-specific, limiting the deployment and user experience. This motivates the consolidation of specialized models into a single cross-en…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-31T11:51:04.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "4eef2b56f73cd9186327c62d27845dda8711eed2194ccb3b1e39e6ab95fc4373",
+  "createdAt": "2026-08-03T04:21:19.779Z",
+  "updatedAt": "2026-08-03T15:21:01.470Z"
+},
+{
+  "id": "54d71037-d741-4087-81b1-0b01efd39650",
+  "sourceSlug": "weaviate-blog-feed",
+  "externalId": "https://weaviate.io/blog/building-foundry-ai-creative-workflows",
+  "canonicalUrl": "https://weaviate.io/blog/building-foundry-ai-creative-workflows",
+  "urlHash": "d36a283c5db05b73560e0f4a693edf6e4c31e3833820018de8ac5eede087f1b0",
+  "title": "Building Foundry: AI isn’t replacing creativity, it’s removing friction",
+  "summary": "Why AI won’t replace creatives, and how it can remove friction from messy workflows, lost files, and creative processes.",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-30T00:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "c19f00917b9a52d6bc7ed84b54743b190c72abff7cdebd65384e0840f1e10854",
+  "createdAt": "2026-07-31T04:18:28.358Z",
+  "updatedAt": "2026-09-26T16:32:40.919Z"
+},
+{
+  "id": "d9f187db-35d1-4d98-af91-cd5faabb89bd",
+  "sourceSlug": "ycombinator-blog-feed",
+  "externalId": "6972caac78b87300015a28a7",
+  "canonicalUrl": "https://www.ycombinator.com/blog/congratulations-to-equipmentshare",
+  "urlHash": "d36cfa09642133fae8e47e97ff9e145dd68b5ed9324e5e49bdc33f9d4b945c41",
+  "title": "Congratulations to EquipmentShare on Going Public",
+  "summary": "Today, EquipmentShare (YC W15) goes public. From Missouri to 373 locations nationwide, they've built the operating system construction has been missing—built by contractors, for contractors. Congrats to Jabbok, Willy, and the EquipmentShare team on a huge milestone.",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-01-23T15:59:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "dd8789b5fc6f7b5c5b19cc60adbed942ef3caa45941c66a3f887d11c8ad96fb4",
+  "createdAt": "2026-07-13T15:38:37.930Z",
+  "updatedAt": "2026-09-16T17:08:49.437Z"
+},
+{
+  "id": "41d8949c-590d-4292-83c1-f7572c4b0ecb",
+  "sourceSlug": "reddit-localllama",
+  "externalId": "t3_1uuc4dc",
+  "canonicalUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1uuc4dc/current_state_of_voicetovoice_models",
+  "urlHash": "d36ee82bf61dd0caab58af91f28089d0b9d7583c87e409ea02f8744acc7826f8",
+  "title": "Current state of Voice-To-Voice models",
+  "summary": "Hi, Has there been any improvement to Voice models (like RVC) in the last two years, or has nothing changed? Thanks! &#32; submitted by &#32; /u/Iwishlife [link] &#32; [comments]",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-07-12T10:48:34.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "6ae963d7a0a79dc7d3f4f95e1eba35b24fa62e459c93d30fe9c6ac88c92b019f",
+  "createdAt": "2026-07-12T12:36:30.344Z",
+  "updatedAt": "2026-07-12T12:36:30.344Z"
+},
+{
+  "id": "0eaabae1-489a-4d06-b29b-ffe96642ec48",
+  "sourceSlug": "arxiv-lg",
+  "externalId": "http://arxiv.org/abs/2608.11917v1",
+  "canonicalUrl": "https://arxiv.org/abs/2608.11917v1",
+  "urlHash": "d374e4fa0f62c43b3607fc8e14a879eadad12e8d0dfeee1c5d078ae20d1bbcaa",
+  "title": "A Factor Graph Approach to Scalable Multi-Output Gaussian Process Regression",
+  "summary": "Multi-output Gaussian process regression scales cubically in the number of observations times outputs, and dense kernel-matrix methods need bespoke handling whenever different outputs are observed at different inputs. We express multi-output Gaussian process regression as a Forney-style factor graph in which a nearest…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-12T10:52:13.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "eed766c167e86125e1ca01ac355e7cf83a35556e27104976e8b671b2c4b77f61",
+  "createdAt": "2026-08-13T03:15:24.881Z",
+  "updatedAt": "2026-08-13T13:51:17.518Z"
+},
+{
+  "id": "0899e54a-27a2-42bc-9c10-0dc1f7e76117",
+  "sourceSlug": "llamacpp",
+  "externalId": "tag:github.com,2008:Repository/612354784/b10171",
+  "canonicalUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10171",
+  "urlHash": "d3786eb088f7cfbae1fe59fff4113e0b861011e8db8da34fd34c16a453452089",
+  "title": "b10171",
+  "summary": "opencl: skip the Adreno KQ/KQV image kernels for multi-stream batches ( #26189 ) The Adreno KQ/KQV image1d kernels (ggml_cl_mul_mat_kq_kqv_adreno) ignore dim 3 entirely: the sub-buffer covers only nb02*ne02 bytes and the kernel receives no ne03/ne13/nb03/nb13 arguments. With the unified KV cache, multi-sequence batche…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-07-28T18:55:40.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "0ba100870405d4ce7310532612147a0723ed09bfa509b1354aca2c31b21933fc",
+  "createdAt": "2026-07-29T03:55:51.850Z",
+  "updatedAt": "2026-07-29T14:33:59.897Z"
+},
+{
+  "id": "0973e05b-faa7-48ef-9239-845fd25fd7d1",
+  "sourceSlug": "arxiv-cl",
+  "externalId": "http://arxiv.org/abs/2609.24554v1",
+  "canonicalUrl": "https://arxiv.org/abs/2609.24554v1",
+  "urlHash": "d379d060437fd9d30e364fcf4cc0d8baa172ff5316103658ff59029ad731c52a",
+  "title": "Toward a Unified Mathematics of Concepts",
+  "summary": "Concepts are commonly defined as abstract, compact representations of knowledge and treated as basic units of intelligent behavior. Yet, cognition, psychology, and AI lack a shared mathematical language for them. Modern systems represent concepts as vectors, distributions, symbols, graphs, and other structures, but th…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-21T13:19:13.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "2da6fb15ea87dbad955010bcb55f338aa04abd60bca8d264d06b3a1f1b74abb0",
+  "createdAt": "2026-09-22T05:25:58.546Z",
+  "updatedAt": "2026-09-22T17:01:38.267Z"
+},
+{
+  "id": "7ae95118-5b01-4ec0-829a-8722760d7ed7",
+  "sourceSlug": "cncf-blog-feed",
+  "externalId": "https://www.cncf.io/?p=172631",
+  "canonicalUrl": "https://www.cncf.io/blog/2026/08/12/advancing-ai-model-interoperability-with-docker-and-modelpack",
+  "urlHash": "d37a045133dd825a00e9bea1f87a9de370a11a7c6cf0280f0c85b0dc2a6932bd",
+  "title": "Advancing AI model interoperability with Docker and ModelPack",
+  "summary": "The rise in the number of tools available for creating and running AI content has lowered the barrier of entry and offered the flexibility of choice when choosing the appropriate solution for a given use case....",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-08-12T11:00:00.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "fcac51db3c533390c0b45dd8b6da779803bdbe836c3caf2bfefb7ed7aaf21f85",
+  "createdAt": "2026-08-12T13:55:46.703Z",
+  "updatedAt": "2026-08-17T13:13:30.129Z"
+},
+{
+  "id": "aa3bab93-4cef-405c-a6e8-e737e8a3716a",
+  "sourceSlug": "marktechpost",
+  "externalId": "https://www.marktechpost.com/?p=82487",
+  "canonicalUrl": "https://www.marktechpost.com/2026/09/23/a-coding-guide-to-typesafe-ai-jev",
+  "urlHash": "d37cef503b4dbc472404771ff2c8631155d0b3fadd747fa6c4179c63889793c3",
+  "title": "A Coding Guide to TypeSafe AI Jev: Typed Decisions, Calibrated Confidence, and Speculative Fan-Out with a System One Model",
+  "summary": "This tutorial provides a complete coding guide to TypeSafe AI's Jev, a System One model designed for non-text, structured judgments. It covers installing the official Python SDK, using primitive question types (Choice, Score, Noul), implementing speculative fan-out, confidence-gated routing, and building async product…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-24T00:53:09.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "1603cb7236d61355876613b5eed34b92510924e21e4cebee7a0c316fe7b922d6",
+  "createdAt": "2026-09-24T05:31:18.104Z",
+  "updatedAt": "2026-09-26T16:30:33.705Z"
+},
+{
+  "id": "fa22a29b-3845-44a5-94de-b347c266c79e",
+  "sourceSlug": "pytorch-core-releases",
+  "externalId": "tag:github.com,2008:Repository/65600975/viable/strict/1786614189",
+  "canonicalUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1786614189",
+  "urlHash": "d37cf47394ef6632d560d7a42928122033a35f631836f0716241b12fbe13edf6",
+  "title": "viable/strict/1786614189: [vllm hash update] update the pinned vllm hash (#193245)",
+  "summary": "This PR is auto-generated nightly by this action . Update the pinned vllm hash. Pull Request resolved: #193245 Approved by: https://github.com/pytorchbot",
+  "author": "pytorchupdatebot",
+  "language": "en",
+  "publishedAt": "2026-08-13T05:08:06.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "4ce45eb7c08a2943b0422402d464950b202a4033a47fbd18a757b7cebf2c7fab",
+  "createdAt": "2026-08-13T13:54:42.224Z",
+  "updatedAt": "2026-08-13T13:54:42.224Z"
+},
+{
   "id": "35303a63-477a-48c8-867c-5405fee30312",
   "sourceSlug": "semantic-kernel-releases",
   "externalId": "tag:github.com,2008:Repository/607289185/python-1.42.0",
@@ -52,7 +1095,7 @@
   "updatedAt": "2026-07-30T14:38:38.782Z"
 },
 {
-  "id": "7079e43e-1729-4db6-ae28-3afe7666a5f9",
+  "id": "cd0281a9-0e85-42e2-80ae-d7423e0ae47a",
   "sourceSlug": "arxiv-ai",
   "externalId": "blind-spots-bench-vision-language",
   "canonicalUrl": "https://arxiv.org/abs/2607.08317",
@@ -79,8 +1122,8 @@
     ]
   },
   "contentHash": "2c18ff23fd06afab476c4061fe5bd6df141d89d7572a6903ca722cb605012404",
-  "createdAt": "2026-09-26T05:32:44.677Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.156Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "adf9c0d7-ec71-47a8-a82b-c2de4c6ec625",
@@ -124,7 +1167,7 @@
   },
   "contentHash": "56b1474e78980f8b7349e7c034b4e86dda0ef725e393a5a5f74609824df877dd",
   "createdAt": "2026-09-25T05:27:03.381Z",
-  "updatedAt": "2026-09-26T05:33:08.781Z"
+  "updatedAt": "2026-09-26T16:28:40.167Z"
 },
 {
   "id": "d4bf41aa-fd3d-44ca-8ff7-6d70fa3b8ba9",
@@ -304,7 +1347,7 @@
   },
   "contentHash": "16e5ebb7156103a3b4c3d5f26b55f1cec181c76008f7838e6f7c2ca0b42e5e7c",
   "createdAt": "2026-09-25T05:27:03.217Z",
-  "updatedAt": "2026-09-26T05:33:08.668Z"
+  "updatedAt": "2026-09-26T16:28:39.992Z"
 },
 {
   "id": "56a8a713-c985-4840-a971-dcbf6502a7eb",
@@ -374,7 +1417,7 @@
   },
   "contentHash": "84cbf9b388eaffc0ffd1958f9ec66fcc5520253f0107515d49ae7f4a4c39b68b",
   "createdAt": "2026-07-13T14:27:03.466Z",
-  "updatedAt": "2026-09-26T05:34:57.712Z"
+  "updatedAt": "2026-09-26T16:30:29.056Z"
 },
 {
   "id": "05fe6050-ee93-4884-933b-df3102f0cd39",
@@ -418,7 +1461,7 @@
   },
   "contentHash": "18e5ac3a27897d89706ce39abe8f0410d37ad36c983e42f4c70b16a8bf33caee",
   "createdAt": "2026-09-25T05:28:52.831Z",
-  "updatedAt": "2026-09-26T05:34:58.371Z"
+  "updatedAt": "2026-09-26T16:30:30.138Z"
 },
 {
   "id": "67253b4b-db5a-47fe-8945-bf784e2d8824",
@@ -1007,7 +2050,7 @@
   },
   "contentHash": "e16c3d3b39cf80f65350971e43dc5f4cf13686cbe8c525c29c263325adbbb955",
   "createdAt": "2026-09-22T05:26:05.266Z",
-  "updatedAt": "2026-09-26T05:33:15.625Z"
+  "updatedAt": "2026-09-26T16:28:47.018Z"
 },
 {
   "id": "21b5615b-dd52-414d-9a0b-2d09cab4021a",
@@ -1099,7 +2142,7 @@
   },
   "contentHash": "2198bee2dd4f0c1a2c6f2256c791606d5d1ae0a69cccb4eaefa56ffd6b1bec88",
   "createdAt": "2026-09-22T17:05:40.199Z",
-  "updatedAt": "2026-09-26T05:37:02.685Z"
+  "updatedAt": "2026-09-26T16:32:41.703Z"
 },
 {
   "id": "6cdcefd5-7d0b-4f32-81d9-cd7eee76d6a6",
@@ -1235,7 +2278,7 @@
   },
   "contentHash": "79233d3b85d8267b541d84ebfe03a0e57c5a731a6e5e4cc62a67e04990008d28",
   "createdAt": "2026-09-25T17:19:11.201Z",
-  "updatedAt": "2026-09-26T05:35:02.383Z"
+  "updatedAt": "2026-09-26T16:30:34.302Z"
 },
 {
   "id": "cce3d41b-4d23-44bf-9acf-45b2f0dd1a8b",
@@ -1693,7 +2736,7 @@
   },
   "contentHash": "b334a95d480db22dbe3c46b5996b76434738bae3039f643ff35aa5ec419763d3",
   "createdAt": "2026-07-13T15:38:20.073Z",
-  "updatedAt": "2026-09-26T05:37:09.589Z"
+  "updatedAt": "2026-09-26T16:32:40.923Z"
 },
 {
   "id": "bcc40de3-37de-4d7f-b1ea-e3e884ecd844",
@@ -1972,7 +3015,7 @@
   "updatedAt": "2026-08-15T02:05:03.717Z"
 },
 {
-  "id": "c3381d83-d412-4320-9112-c7fae3c6e244",
+  "id": "510fad65-2041-4015-8d71-968a622276e0",
   "sourceSlug": "robbyant",
   "externalId": "lingbot-vla-2-cross-embodiment",
   "canonicalUrl": "https://github.com/Robbyant/lingbot-vla-v2",
@@ -2000,8 +3043,8 @@
     ]
   },
   "contentHash": "b5122c6caaed192651bbd031ed37626266930d31d75020e1b6c994426ad8330c",
-  "createdAt": "2026-09-26T05:32:45.101Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.524Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b2e57eab-e45b-4650-9cea-bd1af8f9f4b5",
@@ -2115,7 +3158,7 @@
   },
   "contentHash": "a286062d250bfd72d005cf58f87374b678664a00d3d42b9e282b65c286dcc2f4",
   "createdAt": "2026-09-16T15:40:54.030Z",
-  "updatedAt": "2026-09-26T05:33:10.607Z"
+  "updatedAt": "2026-09-26T16:28:42.183Z"
 },
 {
   "id": "f511a9c1-ca6e-4c36-acdf-7758aea781d2",
@@ -2786,7 +3829,7 @@
   },
   "contentHash": "ea344d9ff5ec31c152e4fb6ec0d36ac93cc74f6eff32bdc8b47a28d1ffc13312",
   "createdAt": "2026-09-25T17:19:07.062Z",
-  "updatedAt": "2026-09-26T05:35:05.986Z"
+  "updatedAt": "2026-09-26T16:30:34.453Z"
 },
 {
   "id": "2524f430-141a-4afe-b77b-d3125e994ade",
@@ -3055,7 +4098,7 @@
   },
   "contentHash": "60e6c09ce8f1e5c537abb6d47dc001bfc56c0edcf50d82996414309a036c09e4",
   "createdAt": "2026-07-24T04:00:11.266Z",
-  "updatedAt": "2026-09-26T05:34:58.106Z"
+  "updatedAt": "2026-09-26T16:30:29.673Z"
 },
 {
   "id": "57f57e80-1d1c-4a0d-9a99-2fbabb441563",
@@ -3209,7 +4252,7 @@
   },
   "contentHash": "046e83b3538b2a4fd9412c18b4adbb5cbe8ddeb4002be5e8d58bed57ac2c3ba8",
   "createdAt": "2026-09-25T05:27:03.383Z",
-  "updatedAt": "2026-09-26T05:33:08.783Z"
+  "updatedAt": "2026-09-26T16:28:40.169Z"
 },
 {
   "id": "3880b9a1-94ff-4563-a8bc-32c0cb284ae5",
@@ -3706,7 +4749,7 @@
   "updatedAt": "2026-08-09T13:18:05.763Z"
 },
 {
-  "id": "d12a271f-1314-46a3-8c17-e0186adedb33",
+  "id": "00135ce2-44fc-4c89-bd0f-8719f7f0a654",
   "sourceSlug": "arxiv-ai",
   "externalId": "direct-preference-optimization",
   "canonicalUrl": "https://arxiv.org/abs/2305.18290",
@@ -3734,8 +4777,8 @@
     ]
   },
   "contentHash": "4df476f1c17416bb44578b83433aaa8debfb3ca6f80052da8637ab405f9aa171",
-  "createdAt": "2026-09-26T05:32:44.815Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.273Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "89dc1f1d-78ec-4e45-b235-b7b5b103eae5",
@@ -4113,7 +5156,7 @@
   },
   "contentHash": "453560b7d0dcf444d9b12e696e6b8525a66b1a775b21e11540fea400bb01aa3e",
   "createdAt": "2026-09-16T15:40:51.561Z",
-  "updatedAt": "2026-09-26T05:33:08.460Z"
+  "updatedAt": "2026-09-26T16:28:39.346Z"
 },
 {
   "id": "db2b0668-3875-4718-bc6c-8d036e67a0f5",
@@ -4348,9 +5391,9 @@
       "rss"
     ]
   },
-  "contentHash": "455cd22a503b01b8beec9b1eaf7cd8bc381e2e6ad8905c9b6e2a9664478982a6",
+  "contentHash": "a67d972d1e835109ed05424688917c75fd349696b1c6370af15d3d5aff3453e1",
   "createdAt": "2026-07-13T02:12:33.089Z",
-  "updatedAt": "2026-09-22T05:27:47.247Z"
+  "updatedAt": "2026-09-26T16:30:28.882Z"
 },
 {
   "id": "3fae4992-03c1-48a1-ad81-1faf3bf9df13",
@@ -4604,7 +5647,7 @@
   },
   "contentHash": "5e82993b407d8c25dac718f35453908f6ef22e6fc8924f34875e102678813155",
   "createdAt": "2026-09-25T05:27:03.400Z",
-  "updatedAt": "2026-09-26T05:33:08.798Z"
+  "updatedAt": "2026-09-26T16:28:40.235Z"
 },
 {
   "id": "a6e60226-c162-4d7f-9301-0bfdeb9dc719",
@@ -5032,7 +6075,7 @@
   },
   "contentHash": "c3aa2b4639eb20fb3bf4a78d8b33daf29169ad3fcceda36dbda50e64277f4a25",
   "createdAt": "2026-07-13T15:37:21.840Z",
-  "updatedAt": "2026-09-26T05:36:29.147Z"
+  "updatedAt": "2026-09-26T16:32:02.057Z"
 },
 {
   "id": "de04420f-b401-4c0d-8efe-490c040a5b3d",
@@ -5174,7 +6217,7 @@
       "github"
     ]
   },
-  "contentHash": "4603f4aad2d53b42e9a11951cc8ea4d7f223aea7df92a6c961f2fd65a5ead2e1",
+  "contentHash": "e45377390a71f14d6a8afff63543e95ce119f18fc7c158360ee5520152d767f2",
   "createdAt": "2026-09-16T15:44:32.742Z",
   "updatedAt": "2026-09-26T05:36:47.276Z"
 },
@@ -5246,7 +6289,7 @@
   },
   "contentHash": "7e10d8ec15ec44f76d345579b2c9cc3bf2d7c0e08bc216a1126d30cf767e0aec",
   "createdAt": "2026-07-11T16:30:01.195Z",
-  "updatedAt": "2026-09-26T05:33:08.481Z"
+  "updatedAt": "2026-09-26T16:28:39.435Z"
 },
 {
   "id": "12b8af6c-e309-4f59-8447-fd80bba5b2c1",
@@ -6088,7 +7131,7 @@
   },
   "contentHash": "21c0c6d301d02a532d10a6b50f535f2887eabf14e3904e5438c6e3c6a9a8bd9d",
   "createdAt": "2026-07-13T15:38:17.739Z",
-  "updatedAt": "2026-09-26T05:37:08.830Z"
+  "updatedAt": "2026-09-26T16:32:39.735Z"
 },
 {
   "id": "977847f4-3397-4314-91f5-ca14f9970519",
@@ -6438,7 +7481,7 @@
   },
   "contentHash": "06e1f9efab5c4f3e4d6f67d110ca4a4d284bfa46f99835c553478d1cb0f5c4df",
   "createdAt": "2026-09-25T05:27:03.203Z",
-  "updatedAt": "2026-09-26T05:33:08.655Z"
+  "updatedAt": "2026-09-26T16:28:39.985Z"
 },
 {
   "id": "1f0550ff-988d-4fe6-a479-871428d2a136",
@@ -7008,7 +8051,7 @@
   "canonicalUrl": "https://github.com/xorbitsai/inference/releases/tag/v2.11.0",
   "urlHash": "d7694e34604a22960e27f287dd67b705aa3c639c51fdf39ac2f175a95f0a030c",
   "title": "v2.11.0",
-  "summary": "What's new in 2.11.0 (2026-06-19) These are the changes in inference v2.11.0. New features feat: new UI part 3 by @maoyuehui in #5011 feat: add MiniCPM5-1B model support by @xiaoyesoso in #5010 feat(ui): add change password for local users in user management by @m199369309 in #5014 feat: add jina-embeddings-v5 series…",
+  "summary": "What's new in 2.11.0 (2026-06-19) These are the changes in inference v2.11.0. New features feat: new UI part 3 by @maoyuehui in #5011 feat: add MiniCPM5-1B model support by @xiaoyesoso in #5010 feat(ui): add change password for local users in user management by @m199369309 in #5014 feat: add jina-embeddings-v5 series.…",
   "author": "XprobeBot",
   "language": "zh-CN",
   "publishedAt": "2026-06-19T10:54:57.000Z",
@@ -7023,7 +8066,7 @@
       "github"
     ]
   },
-  "contentHash": "2c8b315b03b3fd4eb58cb8b12b7dac1c5949aa4c50799b9ae28099133c061624",
+  "contentHash": "6c7e3c2e2ea88c9413cfd4dd78350d0fa3a6035c896e6a01f83721f9bdaacb24",
   "createdAt": "2026-07-13T15:37:56.064Z",
   "updatedAt": "2026-09-26T05:36:47.282Z"
 },
@@ -7398,7 +8441,7 @@
   },
   "contentHash": "e43182fbeec9c666faace8eaa0757be8f25b52ac4ee861f5787eb4ff45d0577c",
   "createdAt": "2026-07-12T00:23:57.232Z",
-  "updatedAt": "2026-09-26T05:33:08.926Z"
+  "updatedAt": "2026-09-26T16:28:39.723Z"
 },
 {
   "id": "b6c98b2d-c358-44f9-887a-54724ebe6765",
@@ -7490,7 +8533,7 @@
   },
   "contentHash": "9e32bcbcc8ba983c01370300dd30cd1515ee10d9629c6baaf1df93f3609be9f0",
   "createdAt": "2026-09-25T05:27:03.199Z",
-  "updatedAt": "2026-09-26T05:33:08.651Z"
+  "updatedAt": "2026-09-26T16:28:39.982Z"
 },
 {
   "id": "f8f7ce51-2f70-41bf-867f-559a15115bed",
@@ -7514,7 +8557,7 @@
       "github"
     ]
   },
-  "contentHash": "7170d02c0d8459fef64f29c0149c3d188c83365711846a182e2c66c656b507ce",
+  "contentHash": "a97a64b43cfef065f419215f5a2b377f8815b8170beaf1826f2aee84ed7f4e5e",
   "createdAt": "2026-09-16T15:43:08.200Z",
   "updatedAt": "2026-09-26T05:35:20.785Z"
 },
@@ -8107,7 +9150,7 @@
   },
   "contentHash": "d37876ce59ae4cba097736e22b9cc8970c15863a4f4af8835afe3633df7217a1",
   "createdAt": "2026-07-13T15:38:29.947Z",
-  "updatedAt": "2026-09-26T05:37:11.168Z"
+  "updatedAt": "2026-09-26T16:32:42.667Z"
 },
 {
   "id": "e02f5192-f0fe-4716-9ea6-834b8bad1706",
@@ -8515,10 +9558,10 @@
   },
   "contentHash": "4c854d6ed6e8696d6133d6af560db7fc7935c0f6d47f783306376db1bcb75698",
   "createdAt": "2026-09-16T15:42:40.520Z",
-  "updatedAt": "2026-09-26T05:34:57.260Z"
+  "updatedAt": "2026-09-26T16:30:28.510Z"
 },
 {
-  "id": "0f6108c9-6af9-4dcb-af51-ad1c021dd647",
+  "id": "fc28ef50-8575-4091-8042-f4a5b346cc7c",
   "sourceSlug": "arxiv-ai",
   "externalId": "spreadsheet-agent-multiformat-reasoning",
   "canonicalUrl": "https://arxiv.org/abs/2604.12282",
@@ -8545,8 +9588,8 @@
     ]
   },
   "contentHash": "7ec484141f800d5b05a10429615f226fe80a58edc4b1ff920194cabb86ade9c7",
-  "createdAt": "2026-09-26T05:32:45.030Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.441Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "fc8c49f8-5afc-4aaf-9303-ef95fa6dab41",
@@ -8726,7 +9769,7 @@
   },
   "contentHash": "830b191af81873eefa0a583b7dddf723ceb1a70a41a04345370405174ced2b5c",
   "createdAt": "2026-08-14T03:13:52.799Z",
-  "updatedAt": "2026-09-26T05:33:08.466Z"
+  "updatedAt": "2026-09-26T16:28:39.351Z"
 },
 {
   "id": "2278632a-84a1-48bf-b9fa-9056177c40c3",
@@ -8893,7 +9936,7 @@
   },
   "contentHash": "966ec308fc37da63f08c3250c2077f6015ded69825ff16bceb760485662c0855",
   "createdAt": "2026-09-16T15:44:56.166Z",
-  "updatedAt": "2026-09-26T05:37:02.686Z"
+  "updatedAt": "2026-09-26T16:32:41.704Z"
 },
 {
   "id": "8c4f176c-d742-408b-aa25-c3958618d6d7",
@@ -9357,7 +10400,7 @@
   },
   "contentHash": "d2051f1ebf58b4d7634a860aec2a906541cf00a458f6a015d414df55812a9f41",
   "createdAt": "2026-09-25T05:27:03.215Z",
-  "updatedAt": "2026-09-26T05:33:08.665Z"
+  "updatedAt": "2026-09-26T16:28:39.991Z"
 },
 {
   "id": "4ad796af-3298-4536-903b-93dc80c54dc2",
@@ -10241,7 +11284,7 @@
   },
   "contentHash": "faa97ad94abb5e5c6ec29f7f869c21f3120f8e45d4616e2c185ab90ed9f6c983",
   "createdAt": "2026-09-25T05:27:03.412Z",
-  "updatedAt": "2026-09-26T05:33:08.821Z"
+  "updatedAt": "2026-09-26T16:28:40.242Z"
 },
 {
   "id": "d173f5dd-7751-49cf-8540-e9da3fa6d122",
@@ -10443,7 +11486,7 @@
   },
   "contentHash": "9994acd60686bd9754aa9c1c49c080096c239bc79b32f94101d2ff53ae626ce4",
   "createdAt": "2026-09-16T15:40:52.570Z",
-  "updatedAt": "2026-09-26T05:33:09.141Z"
+  "updatedAt": "2026-09-26T16:28:40.637Z"
 },
 {
   "id": "13075f13-eb29-4f79-8d6b-7b2b7989305f",
@@ -10597,7 +11640,7 @@
   },
   "contentHash": "e2279d02e7747fb04a2d37b1311203994dfaf77dd5399487465d4ca073a330c9",
   "createdAt": "2026-09-16T15:40:51.730Z",
-  "updatedAt": "2026-09-26T05:33:08.315Z"
+  "updatedAt": "2026-09-26T16:28:39.237Z"
 },
 {
   "id": "1d7a35b2-d275-4c0c-8c76-01f671bcbfe1",
@@ -10641,7 +11684,7 @@
   },
   "contentHash": "a283c9bc462d5d5886a70c90fdc6f53910542f15eefe3e3849c28cb67e51559a",
   "createdAt": "2026-09-25T05:27:03.396Z",
-  "updatedAt": "2026-09-26T05:33:08.795Z"
+  "updatedAt": "2026-09-26T16:28:40.232Z"
 },
 {
   "id": "ee4fbf4f-4207-4fa5-a506-17bff194ddfd",
@@ -11458,7 +12501,7 @@
   "updatedAt": "2026-09-21T05:34:05.800Z"
 },
 {
-  "id": "04d08980-dcfe-4820-99de-c92017c864cb",
+  "id": "5df65209-5c95-4283-bed5-e4ca00cbefcb",
   "sourceSlug": "arxiv-ai",
   "externalId": "ai-research-agents-narrow-exploration",
   "canonicalUrl": "https://arxiv.org/abs/2605.27905",
@@ -11485,8 +12528,8 @@
     ]
   },
   "contentHash": "232248b6b3e202e4045fef5a6ec3f98b9098fb39f9853e20164e5931b0cef79f",
-  "createdAt": "2026-09-26T05:32:45.043Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.451Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "d93298aa-b717-4c25-8f17-d4fa52d48441",
@@ -11530,7 +12573,7 @@
   },
   "contentHash": "ff4c1da57f51fce641685deb985a9a8ab82afbc69faeb926c3699d1d4b6f06ea",
   "createdAt": "2026-07-24T04:00:10.574Z",
-  "updatedAt": "2026-09-26T05:34:57.267Z"
+  "updatedAt": "2026-09-26T16:30:28.515Z"
 },
 {
   "id": "31636088-ea62-4cb9-ac3d-a124f2d80643",
@@ -11552,7 +12595,7 @@
   },
   "contentHash": "b0ccd52be694b7aa4a6265e91cc7305f2f70316e2e0079a4ee8d1d0f97e8ef1b",
   "createdAt": "2026-07-12T00:23:57.207Z",
-  "updatedAt": "2026-09-26T05:33:08.920Z"
+  "updatedAt": "2026-09-26T16:28:39.719Z"
 },
 {
   "id": "c4078b3c-d7c7-465f-a199-975331764948",
@@ -11913,7 +12956,7 @@
   "updatedAt": "2026-07-13T17:01:40.856Z"
 },
 {
-  "id": "af130cac-934c-4fae-96fd-8fa1d48dcee1",
+  "id": "1c603643-0b51-4d2c-9bcc-e59c4ecc43ad",
   "sourceSlug": "arxiv-ai",
   "externalId": "dailyreport-search-agent-benchmark",
   "canonicalUrl": "https://arxiv.org/abs/2606.12871",
@@ -11940,8 +12983,8 @@
     ]
   },
   "contentHash": "eb7abb1bbce921960b456e3ea56f343beeb3619096f3ff6819ae197f85acfc1d",
-  "createdAt": "2026-09-26T05:32:45.047Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.454Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f0abc868-aeb7-4b04-83a5-f6cc428e376b",
@@ -12033,7 +13076,7 @@
   },
   "contentHash": "7eb8245e991130adc4018b13662b6d6021ee9b8b9cbf3854a02b444dace2ad87",
   "createdAt": "2026-08-05T03:53:19.440Z",
-  "updatedAt": "2026-09-26T05:36:09.008Z"
+  "updatedAt": "2026-09-26T16:31:41.980Z"
 },
 {
   "id": "4f2fde23-ed2a-4d44-ac70-6069b9fdcbaa",
@@ -12079,7 +13122,7 @@
       "github"
     ]
   },
-  "contentHash": "49806f0c6b875bf190ef2a549c302556f8b43e1e5b636b8d48c90847b49b685d",
+  "contentHash": "74f7eb530cb3351b500071df65407215cceed1ccda76e1f36288c4fafb5123b2",
   "createdAt": "2026-09-23T05:14:41.040Z",
   "updatedAt": "2026-09-26T05:33:16.188Z"
 },
@@ -12375,7 +13418,7 @@
   },
   "contentHash": "65acb66f9e75e54a4d4ae3d38ea460cb69fab299c55135af69982b715d5fdf79",
   "createdAt": "2026-07-13T14:27:03.463Z",
-  "updatedAt": "2026-09-26T05:34:57.707Z"
+  "updatedAt": "2026-09-26T16:30:29.052Z"
 },
 {
   "id": "4bd54364-6b05-4ade-b84a-98cba1ae12b5",
@@ -12710,7 +13753,7 @@
   "updatedAt": "2026-09-23T05:16:09.909Z"
 },
 {
-  "id": "7f0922a1-125a-4252-a9ba-0b3ef80c69b1",
+  "id": "9bfc69b4-818f-42d6-820d-21713e5517c0",
   "sourceSlug": "arxiv-ai",
   "externalId": "blip-2-bootstrapping-vision-language-pretraining",
   "canonicalUrl": "https://arxiv.org/abs/2301.12597",
@@ -12738,8 +13781,8 @@
     ]
   },
   "contentHash": "d826ba85c01b3c261241300cbe8e192f6aa61922737fd1d275bd13dea58b2735",
-  "createdAt": "2026-09-26T05:32:44.783Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.236Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "a91147bd-0fc4-423c-9525-ea3eb89557cb",
@@ -12837,7 +13880,7 @@
       "github"
     ]
   },
-  "contentHash": "3f6a67f25fea5d77a5ff89660aac671d6f793710b291c0fbe4d0426006eb50e1",
+  "contentHash": "96fc7cdd53a6baccbe1732c0c6e40df05665acf56cb0e062445d3538daa684b9",
   "createdAt": "2026-09-24T17:16:51.784Z",
   "updatedAt": "2026-09-26T05:33:15.174Z"
 },
@@ -12859,9 +13902,9 @@
       "rss"
     ]
   },
-  "contentHash": "0c528d7b7a47d2cebe77b508f24779546f9e4c07636d5eae9ff5a36ba4b18c86",
+  "contentHash": "338769be4b228f8eac0690c88fcb67aa5b59bb513d4866bb133ffffda82fa932",
   "createdAt": "2026-07-13T02:12:33.097Z",
-  "updatedAt": "2026-09-22T05:27:47.272Z"
+  "updatedAt": "2026-09-26T16:30:28.894Z"
 },
 {
   "id": "2e1e2f36-77d6-4478-b330-8f6acfdfa84b",
@@ -13003,7 +14046,7 @@
       "rss"
     ]
   },
-  "contentHash": "803a6b20a3fa7c6bc19a4ead1287056f0cd808c43508211d30705086ead80bef",
+  "contentHash": "3b7dd587d6b8e8d8681464d1aff7da9fb99f970a62ed68f8fcf0ad7165ef0ff4",
   "createdAt": "2026-09-25T05:28:56.807Z",
   "updatedAt": "2026-09-26T05:35:02.402Z"
 },
@@ -13229,7 +14272,7 @@
   },
   "contentHash": "4f8590efbcea21cc729bf2261eed6b7e28c2bb8d7cfb87ba4e82a08c5690e083",
   "createdAt": "2026-07-13T14:25:35.631Z",
-  "updatedAt": "2026-09-26T05:34:18.643Z"
+  "updatedAt": "2026-09-26T16:29:53.640Z"
 },
 {
   "id": "506b8d4a-9a80-463b-975a-475de0f298de",
@@ -13597,7 +14640,7 @@
   },
   "contentHash": "0f96361b988bff1816f1bb1b81fa90f529459b32df5d7377bb951473e10e6a19",
   "createdAt": "2026-07-13T02:12:33.092Z",
-  "updatedAt": "2026-09-22T05:27:47.254Z"
+  "updatedAt": "2026-09-26T16:30:28.888Z"
 },
 {
   "id": "9f12a5c9-0927-48a6-be8e-3e212a6fcb92",
@@ -14656,7 +15699,7 @@
   "updatedAt": "2026-08-04T14:42:20.421Z"
 },
 {
-  "id": "f3b58472-b965-4ff1-aefe-3ca55317791a",
+  "id": "9d8bc444-da5c-43ba-b673-46737b53bf2d",
   "sourceSlug": "arxiv-ai",
   "externalId": "sparks-of-agi-gpt4",
   "canonicalUrl": "https://arxiv.org/abs/2303.12712",
@@ -14684,8 +15727,8 @@
     ]
   },
   "contentHash": "94296e420930c94d68a04a90dbe6dcae59c786ae5305cb9ccfbe65cec745d67d",
-  "createdAt": "2026-09-26T05:32:44.797Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.246Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "95a9047c-16e7-4266-9d2b-28b30cd26e3b",
@@ -15035,7 +16078,7 @@
   },
   "contentHash": "730c268e1046daed1a8177ea0588321cb964cbdc414322e783eb18e33cb81f53",
   "createdAt": "2026-09-26T05:34:58.925Z",
-  "updatedAt": "2026-09-26T05:34:58.925Z"
+  "updatedAt": "2026-09-26T16:30:30.377Z"
 },
 {
   "id": "178520bd-6566-4f4d-b0cb-b8de9350d7a2",
@@ -15079,7 +16122,7 @@
   },
   "contentHash": "57c81333e30c5fc92eb9c4caf848e0e16260c10a8731080fd0f6974cdf1c785c",
   "createdAt": "2026-09-25T05:27:03.382Z",
-  "updatedAt": "2026-09-26T05:33:08.783Z"
+  "updatedAt": "2026-09-26T16:28:40.168Z"
 },
 {
   "id": "866f829d-f256-4fa6-bb4b-bbe95121f9b1",
@@ -15103,7 +16146,7 @@
       "github"
     ]
   },
-  "contentHash": "d0612b08be72eeb70f084e5e1b292876f1717c6f6c7d3abc940bd2b1326ca8db",
+  "contentHash": "4ca400dc8ca7d0cb9f591deccaba2f027ca263d1ca97888925cf269a4dd46356",
   "createdAt": "2026-09-16T15:43:08.204Z",
   "updatedAt": "2026-09-26T05:35:20.789Z"
 },
@@ -15333,7 +16376,7 @@
   },
   "contentHash": "d16b9e5b255f5a30a9c307b0b5324a46edeb03c7ffe64bcba1c01b6ffae090b1",
   "createdAt": "2026-09-26T05:34:58.922Z",
-  "updatedAt": "2026-09-26T05:34:58.922Z"
+  "updatedAt": "2026-09-26T16:30:30.379Z"
 },
 {
   "id": "68d5a0f1-c7e0-4bb1-90ea-7c339837caaf",
@@ -15746,7 +16789,7 @@
   },
   "contentHash": "f092ef2ac9ee79c6f4d6b0b369da60b893fe61ebaf3c01187ae6bc7d002fa7be",
   "createdAt": "2026-07-12T05:56:33.180Z",
-  "updatedAt": "2026-09-26T05:33:09.224Z"
+  "updatedAt": "2026-09-26T16:28:40.953Z"
 },
 {
   "id": "61295842-db88-4504-9141-31b1bac20077",
@@ -15770,7 +16813,7 @@
       "github"
     ]
   },
-  "contentHash": "dc1f9940878e653993bdb0c7e7cdd617f4da25379f396c8ef34b0acafecb95b6",
+  "contentHash": "276a5724e19d4ee1017b831c0d7cb54269a0c197c06d31f79b59ba246fba4851",
   "createdAt": "2026-09-16T15:43:10.385Z",
   "updatedAt": "2026-09-25T17:19:25.121Z"
 },
@@ -15942,7 +16985,7 @@
   },
   "contentHash": "d47dff73a8c2c6062b6ad49b5e5bf722ed3373b7ed0735f32e95bd2daa727905",
   "createdAt": "2026-07-22T14:28:16.139Z",
-  "updatedAt": "2026-09-26T05:34:07.028Z"
+  "updatedAt": "2026-09-26T16:29:42.040Z"
 },
 {
   "id": "74740f5c-094f-4936-8f38-0a03f06f4882",
@@ -16724,7 +17767,7 @@
   },
   "contentHash": "8cc2e284b74921838e4b31832267b718fb41b7b61b58780cc37b613ed5bf40ad",
   "createdAt": "2026-07-13T15:38:16.855Z",
-  "updatedAt": "2026-09-26T05:37:07.820Z"
+  "updatedAt": "2026-09-26T16:32:38.531Z"
 },
 {
   "id": "53ac309d-2395-4283-97b1-5191733a7c98",
@@ -17140,7 +18183,7 @@
   },
   "contentHash": "ee078abe05beef150e89fc495fc57809af5ebbca9b703b86dccf309c0c8904fc",
   "createdAt": "2026-07-13T14:27:03.459Z",
-  "updatedAt": "2026-09-26T05:34:57.699Z"
+  "updatedAt": "2026-09-26T16:30:29.046Z"
 },
 {
   "id": "019e26d1-cdf3-4409-ab10-4ac2ba25b516",
@@ -17437,7 +18480,7 @@
   "updatedAt": "2026-07-28T14:42:13.835Z"
 },
 {
-  "id": "a3c5556c-9848-4f55-a598-8a60cd886cc7",
+  "id": "c60d4898-b2c5-45aa-8862-775db706afcb",
   "sourceSlug": "meta-ai",
   "externalId": "llama-2-open-model-release",
   "canonicalUrl": "https://about.fb.com/news/2023/07/llama-2",
@@ -17463,8 +18506,8 @@
     ]
   },
   "contentHash": "8945921aefa8f0fe87d13b40f56d0cb2606a846fde39e4c9f50ddef92f3532ef",
-  "createdAt": "2026-09-26T05:32:44.611Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.105Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "c2b8450a-79dd-47e2-bda0-a32d2125cfa9",
@@ -17721,7 +18764,7 @@
   "updatedAt": "2026-08-13T13:51:17.584Z"
 },
 {
-  "id": "b7d4c012-6540-40f5-a022-480af5a70e32",
+  "id": "04ca945e-226d-4e98-a9a7-824d8085bea5",
   "sourceSlug": "arxiv-ai",
   "externalId": "rt-2-vision-language-action-models-transfer-web-knowledge-to-robotic-control",
   "canonicalUrl": "https://arxiv.org/abs/2307.15818",
@@ -17749,8 +18792,8 @@
     ]
   },
   "contentHash": "8c12695e1da082d32a75d5deebe8571bbcabdfb1eced306590d8979f55295db7",
-  "createdAt": "2026-09-26T05:32:44.826Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.279Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "34427c35-6787-48c7-9322-2a2e30fc2fb9",
@@ -17779,7 +18822,7 @@
   "updatedAt": "2026-08-12T13:54:49.080Z"
 },
 {
-  "id": "c31bee5b-674c-44fc-8868-07891f7458ab",
+  "id": "32e6a6ec-263d-43f2-899b-13990a9902da",
   "sourceSlug": "arxiv-ai",
   "externalId": "sdxl-improving-latent-diffusion-models-for-high-resolution-image-synthesis",
   "canonicalUrl": "https://arxiv.org/abs/2307.01952",
@@ -17807,8 +18850,8 @@
     ]
   },
   "contentHash": "28943a05e2fa654c2b75949d3658719be93818934d396282a516823a4227b475",
-  "createdAt": "2026-09-26T05:32:44.825Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.278Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "6a64ae78-cccf-40e3-9f60-cb9cd9a084e6",
@@ -17830,7 +18873,7 @@
   },
   "contentHash": "83d1d13dce87791d750dd58a46fe16edafd9b1b3359c592198cb47c169b422af",
   "createdAt": "2026-09-25T05:27:03.407Z",
-  "updatedAt": "2026-09-26T05:33:08.817Z"
+  "updatedAt": "2026-09-26T16:28:40.239Z"
 },
 {
   "id": "0214daa9-22e2-43d8-bee3-28f570380a57",
@@ -18172,7 +19215,7 @@
   },
   "contentHash": "23491b66039f8e9f36efddeba0f4ed1e88e36642dd6199363c147ee18b15197f",
   "createdAt": "2026-07-29T14:38:15.305Z",
-  "updatedAt": "2026-09-26T05:37:11.162Z"
+  "updatedAt": "2026-09-26T16:32:42.663Z"
 },
 {
   "id": "3e6aa695-0dd5-4f9f-b218-364b6cd9ee09",
@@ -18268,7 +19311,7 @@
   },
   "contentHash": "d92fe564f50e2ac7f35da9f8e0ec9844802c4f142e74468818ffbf89c8273f0f",
   "createdAt": "2026-07-12T05:59:31.223Z",
-  "updatedAt": "2026-09-26T05:34:07.029Z"
+  "updatedAt": "2026-09-26T16:29:42.041Z"
 },
 {
   "id": "bee52981-7100-4ab9-821e-b381746cb418",
@@ -18460,7 +19503,7 @@
   },
   "contentHash": "f35b4510b80b4c4c0bd2ab50aa5be6519a84b1fa302b79291bd88802d85f903b",
   "createdAt": "2026-07-13T15:38:19.365Z",
-  "updatedAt": "2026-09-26T05:37:02.692Z"
+  "updatedAt": "2026-09-26T16:32:41.709Z"
 },
 {
   "id": "5dea0f0a-885d-4fe8-a8c2-7450dfe0f910",
@@ -18548,7 +19591,7 @@
   },
   "contentHash": "938461c524cd8ffffaf225890cac64dec68559021fcdac6df449c690f1c56e48",
   "createdAt": "2026-07-11T16:30:01.203Z",
-  "updatedAt": "2026-09-26T05:33:08.501Z"
+  "updatedAt": "2026-09-26T16:28:39.439Z"
 },
 {
   "id": "a92661a8-eb38-4cc8-a193-c2a49b4a346f",
@@ -19760,7 +20803,7 @@
   },
   "contentHash": "d7e6735446a4c3bd48cd5c1c6e790a09bbb67afd02b112b6cfb84e4c700f00cf",
   "createdAt": "2026-07-12T00:23:57.224Z",
-  "updatedAt": "2026-09-26T05:33:08.924Z"
+  "updatedAt": "2026-09-26T16:28:39.721Z"
 },
 {
   "id": "92036d0c-7bd2-406c-b023-4ddbc5c906eb",
@@ -19995,7 +21038,7 @@
   },
   "contentHash": "c3d1c372116ad34f651ab216680a649e5e81ed82c735903325fc351a8071584f",
   "createdAt": "2026-07-13T14:27:03.459Z",
-  "updatedAt": "2026-09-26T05:34:57.699Z"
+  "updatedAt": "2026-09-26T16:30:29.045Z"
 },
 {
   "id": "ae46a0fb-17a2-425f-a18f-7519c80b3fbd",
@@ -20017,7 +21060,7 @@
   },
   "contentHash": "30128431cd5667b314637ccb04513b8e268ec70872ec01324f6aa41e568a0f42",
   "createdAt": "2026-09-16T15:42:43.434Z",
-  "updatedAt": "2026-09-26T05:37:19.978Z"
+  "updatedAt": "2026-09-26T16:32:49.242Z"
 },
 {
   "id": "60216c9a-1352-44a0-9ee3-d7e55c74ecab",
@@ -20195,7 +21238,7 @@
       "github"
     ]
   },
-  "contentHash": "e2aa57528c46666aaead0c7b849663581ab14c64651446bca246a34427f9b464",
+  "contentHash": "cd707f0051d79d038d998c3be9e991582721ff4cd9e905d90fca4016a41ea3df",
   "createdAt": "2026-09-16T15:41:36.346Z",
   "updatedAt": "2026-09-25T17:17:59.216Z"
 },
@@ -20219,7 +21262,7 @@
   },
   "contentHash": "2d6cc99a256b9f8d6a182c4be179649a6c780700382fa9a117628adb6d5b4fff",
   "createdAt": "2026-09-25T17:19:09.278Z",
-  "updatedAt": "2026-09-26T05:35:02.396Z"
+  "updatedAt": "2026-09-26T16:30:33.125Z"
 },
 {
   "id": "a98eb710-f707-4e9a-a211-5d0f330a4d9e",
@@ -20383,7 +21426,7 @@
       "github"
     ]
   },
-  "contentHash": "45fadc51faf0947cdff809da616627c04a46be7a766e28e10063c01dd449cc54",
+  "contentHash": "8b32c6bd383c34e897a3c6690f6819a8c7a12763814539e27a6aa443b5fa76a5",
   "createdAt": "2026-07-12T05:59:18.051Z",
   "updatedAt": "2026-09-26T05:33:54.854Z"
 },
@@ -20477,7 +21520,7 @@
   },
   "contentHash": "a689add4e0ae7dd3280658ee687ed7dbb46ba8be32675387bb187b75d8780d7b",
   "createdAt": "2026-09-25T05:27:03.357Z",
-  "updatedAt": "2026-09-26T05:33:08.868Z"
+  "updatedAt": "2026-09-26T16:28:40.076Z"
 },
 {
   "id": "5d701eec-0789-42ca-9ff9-b7b44221a54e",
@@ -20680,6 +21723,32 @@
   "contentHash": "92b4647b37c3a5f01f5753e0cb43087785b5ff9e8f223e8d3fa9373e43340207",
   "createdAt": "2026-08-12T03:13:23.733Z",
   "updatedAt": "2026-08-13T13:51:17.593Z"
+},
+{
+  "id": "d1832f74-b85e-4d80-bdde-ab3a899acb13",
+  "sourceSlug": "lmcache-releases",
+  "externalId": "tag:github.com,2008:Repository/807305060/v0.5.6rc1-musa",
+  "canonicalUrl": "https://github.com/LMCache/LMCache/releases/tag/v0.5.6rc1-musa",
+  "urlHash": "df091f29af2b5dd483efb7c1b75c7973f4f758fbfca512f858712fdab7b6e02e",
+  "title": "Release v0.5.6rc1 · Moore Threads MUSA",
+  "summary": "MUSA-compatible wheel for LMCache v0.5.6rc1. Built and smoke-tested in the validated TorchMUSA/MUSA SDK image. TorchMUSA, musa_aiter, and the MUSA userspace runtime stay in the host image and are not installed from PyPI. Install inside the matching MUSA runtime image: VERSION=v0.5.6rc1 pip install lmcache==0.5.6rc1+mu…",
+  "author": "github-actions[bot]",
+  "language": "en",
+  "publishedAt": "2026-09-26T09:13:16.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "91081ba4f2b9c2542dd2f08da5b7a0206d9f6df91c9a24ee8d59a1583dbe304f",
+  "createdAt": "2026-09-26T16:31:57.695Z",
+  "updatedAt": "2026-09-26T16:31:57.695Z"
 },
 {
   "id": "d8c485e1-73bd-48e5-be69-29cc38f3dfbc",
@@ -21008,7 +22077,7 @@
   "updatedAt": "2026-09-23T05:16:22.965Z"
 },
 {
-  "id": "204cb45d-5cc0-4046-82cd-8e4a93c2ee95",
+  "id": "2f794540-7c88-437e-b217-64412eb0f4dd",
   "sourceSlug": "arxiv-ai",
   "externalId": "llava-next-interleave",
   "canonicalUrl": "https://arxiv.org/abs/2407.07895",
@@ -21036,8 +22105,8 @@
     ]
   },
   "contentHash": "95b465fcd84d348554cc8bea69367fcac05c7549259015dad2da250b353eafca",
-  "createdAt": "2026-09-26T05:32:44.913Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.355Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0a805577-3be6-4de1-bcde-549969b09643",
@@ -21623,7 +22692,7 @@
   },
   "contentHash": "f6ec1fec008908d656b383644b015d38846df94a1b39047fc3ef5ad3d0708d8a",
   "createdAt": "2026-08-10T13:48:02.884Z",
-  "updatedAt": "2026-09-26T05:33:09.147Z"
+  "updatedAt": "2026-09-26T16:28:40.641Z"
 },
 {
   "id": "99c77715-5770-4b43-84bd-77c0e5cf01ee",
@@ -21947,7 +23016,7 @@
   },
   "contentHash": "e3394a8a9eff105c7f46407dea8c72087961c00032e90475db68df24a5572361",
   "createdAt": "2026-09-16T15:40:51.710Z",
-  "updatedAt": "2026-09-26T05:33:08.303Z"
+  "updatedAt": "2026-09-26T16:28:39.221Z"
 },
 {
   "id": "95c1083a-5dc3-49c2-9f0b-8d4d096f3cf7",
@@ -21994,7 +23063,7 @@
   "updatedAt": "2026-09-20T16:12:32.499Z"
 },
 {
-  "id": "c9bae241-9137-4b76-8cac-5d675a982e46",
+  "id": "dbc19a4a-de24-46ab-9e7e-30e7bfaa0d19",
   "sourceSlug": "openai",
   "externalId": "gpt-5-5-real-work",
   "canonicalUrl": "https://openai.com/index/introducing-gpt-5-5",
@@ -22021,8 +23090,8 @@
     ]
   },
   "contentHash": "fb97f7e087e0ba78cf3ce46d8ad776983d35afeb8102ed9409abb50bc95f85d3",
-  "createdAt": "2026-09-26T05:32:44.669Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.151Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "01b30edb-c8a1-4590-a6f3-6664cb88dafe",
@@ -22332,7 +23401,7 @@
   },
   "contentHash": "713c7c27eae1862caaa314944f5dd6bc9232f3f942b84f5156467e42b62dbab3",
   "createdAt": "2026-07-13T15:38:17.741Z",
-  "updatedAt": "2026-09-26T05:37:08.832Z"
+  "updatedAt": "2026-09-26T16:32:39.737Z"
 },
 {
   "id": "c7e442d2-16ce-468a-b7f4-c48b29da7bd4",
@@ -22734,6 +23803,32 @@
   "updatedAt": "2026-08-17T13:11:09.001Z"
 },
 {
+  "id": "841da7fc-ca90-407d-95e6-506d03de6d52",
+  "sourceSlug": "pytorch-core-releases",
+  "externalId": "tag:github.com,2008:Repository/65600975/viable/strict/1790407673",
+  "canonicalUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1790407673",
+  "urlHash": "e05fc1571580dbe9c73ff0c55d2f1bf8988bb237bea65546f829387b64013d62",
+  "title": "viable/strict/1790407673",
+  "summary": "[rel-land] allow horizontal fusion of copies from dynamic inputs into...",
+  "author": "laithsakka",
+  "language": "en",
+  "publishedAt": "2026-09-26T03:07:26.000Z",
+  "category": "open-source",
+  "tags": [
+    "release",
+    "github",
+    "open-source"
+  ],
+  "metrics": {
+    "platforms": [
+      "github"
+    ]
+  },
+  "contentHash": "617064dc22661589890d092487b56a14f792ab3840cb8dd06c1d25c0b7374f5e",
+  "createdAt": "2026-09-26T16:31:52.615Z",
+  "updatedAt": "2026-09-26T16:31:52.615Z"
+},
+{
   "id": "b68e10c3-75b4-4592-9841-ef4eb93d3827",
   "sourceSlug": "arxiv-cl",
   "externalId": "http://arxiv.org/abs/2607.19932v1",
@@ -22909,9 +24004,9 @@
       "rss"
     ]
   },
-  "contentHash": "d5eb7e38b5a759cb42d57ac7a29c077b61050d833b3b6bc95950f107f22d379f",
+  "contentHash": "111a0ccbc9fa61d7d7ffda026e9c3883222bb2426a28759522b8d36fe21d5cdd",
   "createdAt": "2026-07-12T05:58:10.962Z",
-  "updatedAt": "2026-09-25T17:19:02.180Z"
+  "updatedAt": "2026-09-26T16:30:26.847Z"
 },
 {
   "id": "1e4aa3ff-1dfd-4b14-bbd1-ba20d25bae83",
@@ -23003,7 +24098,7 @@
   },
   "contentHash": "d5a035380c4ac533b307a2e622430b4ae12b40dc487e00aa58a525a573c27a08",
   "createdAt": "2026-07-16T14:28:34.893Z",
-  "updatedAt": "2026-09-26T05:35:35.369Z"
+  "updatedAt": "2026-09-26T16:31:12.236Z"
 },
 {
   "id": "d98a60e2-2956-4df0-b7c9-572da64ab5a9",
@@ -23069,7 +24164,7 @@
   },
   "contentHash": "f882ca021291308206fc99a05b4c7939f852f6b51e02f19b09e436f152897e22",
   "createdAt": "2026-07-22T14:27:13.562Z",
-  "updatedAt": "2026-09-26T05:33:08.471Z"
+  "updatedAt": "2026-09-26T16:28:39.355Z"
 },
 {
   "id": "28daca21-d3e2-4ed1-b75f-6a2cc2768edc",
@@ -23248,7 +24343,7 @@
   "updatedAt": "2026-09-17T17:04:59.940Z"
 },
 {
-  "id": "c3cf4b81-18a7-4725-bac3-d970f0d94f52",
+  "id": "4dffff25-5c91-413a-8b30-8f1acee4dc13",
   "sourceSlug": "openai",
   "externalId": "openai-deep-research",
   "canonicalUrl": "https://openai.com/index/introducing-deep-research",
@@ -23275,8 +24370,8 @@
     ]
   },
   "contentHash": "d62c0bed3c7ab4d9c156a9041899d816542ed097101e992429968c452df443f3",
-  "createdAt": "2026-09-26T05:32:44.637Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.122Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "afcdf04b-e983-4b39-bfc9-a8b15fe2717d",
@@ -23412,7 +24507,7 @@
   },
   "contentHash": "7bc40ee576b89b9263d22ebd68268a04447cbb307d29582f4fcf6edacf19c15d",
   "createdAt": "2026-07-12T05:56:33.195Z",
-  "updatedAt": "2026-09-26T05:33:09.237Z"
+  "updatedAt": "2026-09-26T16:28:40.962Z"
 },
 {
   "id": "69f0bab2-a89d-487e-9ead-681a145e3ab1",
@@ -23551,7 +24646,7 @@
   "updatedAt": "2026-07-29T14:35:49.916Z"
 },
 {
-  "id": "39570ed0-7b3e-4176-a753-f06e658b731d",
+  "id": "bde91b37-418c-42b3-9353-3fae75bf92f7",
   "sourceSlug": "xai",
   "externalId": "grok-2-search-citations-free-rollout",
   "canonicalUrl": "https://x.ai/news/grok-1212",
@@ -23580,8 +24675,8 @@
     ]
   },
   "contentHash": "92a0107717577dfcf6b0d692e80b5b8ebe83a32f5b7d5e982e92c06afe61d77a",
-  "createdAt": "2026-09-26T05:32:44.684Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.160Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f8ea9929-f618-478d-b506-4d8ceb3f70d5",
@@ -24107,7 +25202,7 @@
   },
   "contentHash": "037b252a969057e54251f90acb83740cb4571ba0d3c92633081c17bddf8baa67",
   "createdAt": "2026-07-13T14:27:03.464Z",
-  "updatedAt": "2026-09-26T05:34:57.709Z"
+  "updatedAt": "2026-09-26T16:30:29.054Z"
 },
 {
   "id": "ad7a631b-2300-4623-82c2-c5ab45291452",
@@ -24277,7 +25372,7 @@
   },
   "contentHash": "8038745f142b2b97bd09bccc72f3442bb54011064c836f66967748815ea47be4",
   "createdAt": "2026-07-12T05:57:32.521Z",
-  "updatedAt": "2026-09-25T17:17:20.794Z"
+  "updatedAt": "2026-09-26T16:28:45.679Z"
 },
 {
   "id": "259890f9-5f55-459c-9c87-ae23067f39a9",
@@ -24442,7 +25537,7 @@
   "updatedAt": "2026-07-12T05:59:26.234Z"
 },
 {
-  "id": "8275f7bd-871e-4236-826b-63d09a4e90a0",
+  "id": "7e0ef071-577e-40e8-96ec-e909c92dbf60",
   "sourceSlug": "arxiv-ai",
   "externalId": "medsam2",
   "canonicalUrl": "https://arxiv.org/abs/2504.03600",
@@ -24470,8 +25565,8 @@
     ]
   },
   "contentHash": "289eb5da5e635ea741c2fb35c64d0bd5e1718e966f624e617ef8cadd57022112",
-  "createdAt": "2026-09-26T05:32:44.969Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.393Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "cec6ec31-f461-4b16-ba26-365d9c058cc4",
@@ -24909,7 +26004,7 @@
   },
   "contentHash": "a10816dbe4e5a6ff8ee9bb7d9b5a06df1f7ebbaff6ecf48407c5aabc6aef22f7",
   "createdAt": "2026-07-15T14:18:14.891Z",
-  "updatedAt": "2026-09-26T05:37:20.018Z"
+  "updatedAt": "2026-09-26T16:32:49.274Z"
 },
 {
   "id": "253164cc-6ac4-4f19-be4b-aff1aabb1926",
@@ -25030,7 +26125,7 @@
   "updatedAt": "2026-08-12T03:15:13.794Z"
 },
 {
-  "id": "53d9e1c5-3fe8-42d9-ae6e-ec3fbbf7f7fc",
+  "id": "170ef8cc-8824-46ab-a247-0d2a82f789d2",
   "sourceSlug": "openai",
   "externalId": "openai-devday-assistants-api",
   "canonicalUrl": "https://openai.com/index/new-models-and-developer-products-announced-at-devday",
@@ -25057,8 +26152,8 @@
     ]
   },
   "contentHash": "60f25b3d4b8cfeddb105f47e359d78a4c5693c35fc74478a15e1b3cec1e5031e",
-  "createdAt": "2026-09-26T05:32:44.617Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.109Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "bcf07614-c92f-409b-bf02-1496a5a95e31",
@@ -25176,7 +26271,7 @@
   },
   "contentHash": "f024d177f5436e11153af502e0eaf38115b15cd69254d6204ffb753df2e59729",
   "createdAt": "2026-07-13T02:12:33.098Z",
-  "updatedAt": "2026-09-22T05:27:47.274Z"
+  "updatedAt": "2026-09-26T16:30:28.897Z"
 },
 {
   "id": "c3b59a95-477b-438c-b5d6-cb25f0011ba2",
@@ -25371,7 +26466,7 @@
   "updatedAt": "2026-07-30T14:35:29.720Z"
 },
 {
-  "id": "b58e59d5-f362-4ef8-b137-c0645b66836f",
+  "id": "164e4faa-91ed-4a48-9635-8953fa949293",
   "sourceSlug": "openai",
   "externalId": "gpt-5-6-agent-platform-shift",
   "canonicalUrl": "https://openai.com/index/gpt-5-6",
@@ -25398,8 +26493,8 @@
     ]
   },
   "contentHash": "78bca6d77db6c1df790536a6528d8dc177c2b24c7bb5de30ea0031da4b98cac9",
-  "createdAt": "2026-09-26T05:32:45.095Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.480Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "ac6a98f3-e2e0-44d3-860b-02f4e25f405a",
@@ -25635,7 +26730,7 @@
   },
   "contentHash": "ea5d730d39463380d0053d46ef9db578f56c0d950577c0c26c59346b8dae8e0b",
   "createdAt": "2026-09-16T15:42:43.438Z",
-  "updatedAt": "2026-09-26T05:37:19.984Z"
+  "updatedAt": "2026-09-26T16:32:49.246Z"
 },
 {
   "id": "face8f1c-f525-496d-a343-7a04a55a5016",
@@ -25659,7 +26754,7 @@
       "github"
     ]
   },
-  "contentHash": "cc9d90f40b5f89c31bbaa0695b2c5f7f9badd389c87bf84d46919a16c7d2b30d",
+  "contentHash": "e236c010f69334a4378f9bc60705fbfe0e1fe15b0b269b86f0ffe61ec3650899",
   "createdAt": "2026-09-26T05:36:17.937Z",
   "updatedAt": "2026-09-26T05:36:17.937Z"
 },
@@ -26295,7 +27390,7 @@
   },
   "contentHash": "ea5f5ee1de5a6945b70cdfbd9be94c75f658c8a27cb07ed70184a7857ff7eb9f",
   "createdAt": "2026-09-25T17:19:07.331Z",
-  "updatedAt": "2026-09-26T05:34:58.933Z"
+  "updatedAt": "2026-09-26T16:30:30.375Z"
 },
 {
   "id": "46166ff9-3a3e-4d56-8982-10e121a4ccb1",
@@ -26641,7 +27736,7 @@
   },
   "contentHash": "25aa99bb76adda205c78b08234e3c2c95652971deb4a65a72d90e40bcfce1da0",
   "createdAt": "2026-07-13T14:27:03.465Z",
-  "updatedAt": "2026-09-26T05:34:57.711Z"
+  "updatedAt": "2026-09-26T16:30:29.055Z"
 },
 {
   "id": "dded4c59-0f9b-49d6-a6ab-7d50ce09ef97",
@@ -26780,7 +27875,7 @@
   "updatedAt": "2026-08-07T13:43:50.248Z"
 },
 {
-  "id": "a88f33b5-050d-49da-9750-bc94b8df4ef6",
+  "id": "0453eb0d-ea4a-45d5-9a93-1c5438861b44",
   "sourceSlug": "anthropic",
   "externalId": "model-context-protocol",
   "canonicalUrl": "https://www.anthropic.com/news/model-context-protocol",
@@ -26807,8 +27902,8 @@
     ]
   },
   "contentHash": "db6e7ee534b377f8e55d68e0c21cad3af209374a231e88e9c79c78f1fad4921e",
-  "createdAt": "2026-09-26T05:32:44.628Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.116Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "9b595f36-fa52-427e-bfca-d469bcf27024",
@@ -26830,7 +27925,7 @@
   },
   "contentHash": "2757e4158b53a00889d9a5fe39d4b27438ba582db79a6dc99f438e9f39ea69d8",
   "createdAt": "2026-09-25T05:27:03.350Z",
-  "updatedAt": "2026-09-26T05:33:08.861Z"
+  "updatedAt": "2026-09-26T16:28:40.071Z"
 },
 {
   "id": "e9a9f03f-786b-45c9-9c80-f16e53362584",
@@ -27058,7 +28153,7 @@
   },
   "contentHash": "80b27b89ae85d0f8f9930aa594456e6cd3cc1a930ba2fabf99811ba9d126e20e",
   "createdAt": "2026-09-25T17:19:07.339Z",
-  "updatedAt": "2026-09-26T05:34:58.920Z"
+  "updatedAt": "2026-09-26T16:30:30.426Z"
 },
 {
   "id": "bc265b2d-c24f-4ee3-9045-486fca95c37b",
@@ -27416,7 +28511,7 @@
   },
   "contentHash": "ff64cd97c79fb6b9a4aebeeccb114c6bda5bd37a45e4eccb623141c62f057226",
   "createdAt": "2026-09-25T05:27:03.341Z",
-  "updatedAt": "2026-09-26T05:33:08.852Z"
+  "updatedAt": "2026-09-26T16:28:40.064Z"
 },
 {
   "id": "93e74b72-088f-4be4-97e4-e69452c6a57c",
@@ -27490,7 +28585,7 @@
   },
   "contentHash": "dec1ebe2c87a7de7466ac13639f59a63c4375e47fdd3d6d97ad0bd46e508e027",
   "createdAt": "2026-07-12T05:56:33.185Z",
-  "updatedAt": "2026-09-26T05:33:09.228Z"
+  "updatedAt": "2026-09-26T16:28:40.956Z"
 },
 {
   "id": "b57ac73a-20d5-4372-ac61-649e98f7816b",
@@ -28345,7 +29440,7 @@
   },
   "contentHash": "20fe75e373a49c05e773f62488a9164dbfd0efcacfe5323fa58e5d83e8df858f",
   "createdAt": "2026-09-16T15:42:46.636Z",
-  "updatedAt": "2026-09-26T05:35:00.818Z"
+  "updatedAt": "2026-09-26T16:30:32.266Z"
 },
 {
   "id": "73f3b894-f013-4a66-bdc3-ba03639dc6c2",
@@ -28365,9 +29460,9 @@
       "rss"
     ]
   },
-  "contentHash": "4bb769b9c768d23d95c2de7cdabd376c33a8d7fab469008bec6216e68d0aa2ee",
+  "contentHash": "e97b94036eb83c024986960ee8caaeb2396fcbde2beda27bd49fcc0252fe034e",
   "createdAt": "2026-07-12T05:58:10.953Z",
-  "updatedAt": "2026-09-25T17:19:02.174Z"
+  "updatedAt": "2026-09-26T16:30:26.840Z"
 },
 {
   "id": "ba312ccf-94a9-4518-8c37-f1f3543b1d3a",
@@ -28511,7 +29606,7 @@
   },
   "contentHash": "8799f808fe73360123b83a6cc84455ef1e23b73b7136b1e9a4ff3c3f695c53b6",
   "createdAt": "2026-07-30T03:48:38.119Z",
-  "updatedAt": "2026-09-26T05:34:57.266Z"
+  "updatedAt": "2026-09-26T16:30:28.514Z"
 },
 {
   "id": "ff26137d-d9d7-4aba-8e9d-430fde94cdb1",
@@ -28743,7 +29838,7 @@
   },
   "contentHash": "a6d7e7101202b24004cb3cd8321d9ef5999f75c3dd7c81853c0bc898ea7e0fcf",
   "createdAt": "2026-09-16T15:40:52.187Z",
-  "updatedAt": "2026-09-26T05:33:09.213Z"
+  "updatedAt": "2026-09-26T16:28:40.891Z"
 },
 {
   "id": "ed84a7ea-58ae-41a9-8ef7-3804dc1cae39",
@@ -28787,7 +29882,7 @@
   },
   "contentHash": "b932c7ca647065eab4f9bb13607343d50e08c9074583f71d2cfe86a96bfd537a",
   "createdAt": "2026-09-16T15:40:52.567Z",
-  "updatedAt": "2026-09-26T05:33:09.140Z"
+  "updatedAt": "2026-09-26T16:28:40.636Z"
 },
 {
   "id": "ebe37055-9ff2-417d-8dd9-39b1e7396c9e",
@@ -28835,10 +29930,10 @@
   },
   "contentHash": "39bca76485be003fd76a26b303063d085b79de3df9998bf98c26762720b367a6",
   "createdAt": "2026-09-16T15:42:41.180Z",
-  "updatedAt": "2026-09-26T05:34:58.308Z"
+  "updatedAt": "2026-09-26T16:30:29.941Z"
 },
 {
-  "id": "4815894c-444e-4c10-af91-b550ab706c5e",
+  "id": "3bd2964f-1fd6-478e-b417-60747862a070",
   "sourceSlug": "arxiv-ai",
   "externalId": "gsm-symbolic-llm-reasoning-limitations",
   "canonicalUrl": "https://arxiv.org/abs/2410.05229",
@@ -28866,8 +29961,8 @@
     ]
   },
   "contentHash": "50395b38bd19dab8e61d0a0630420f1f3fd934c2beb4b243e9e30068ef8d8756",
-  "createdAt": "2026-09-26T05:32:44.927Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.363Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "a0c1e3c0-7cab-4946-b477-cb759181b017",
@@ -29777,7 +30872,7 @@
   },
   "contentHash": "c1d988d467aa91bba8572a1fa7f284b7f7e815c93940ae5af47b4a40168c8d82",
   "createdAt": "2026-09-25T05:27:03.406Z",
-  "updatedAt": "2026-09-26T05:33:08.815Z"
+  "updatedAt": "2026-09-26T16:28:40.238Z"
 },
 {
   "id": "f42f7ebd-58c2-4645-84c1-9a74b5d53715",
@@ -30101,7 +31196,7 @@
   "updatedAt": "2026-09-18T16:31:07.634Z"
 },
 {
-  "id": "8af2f565-beb8-4147-9c79-45456800ccd1",
+  "id": "973a41c4-7018-4556-a794-26694cce62cc",
   "sourceSlug": "deepmind",
   "externalId": "gemma-4-open-model-efficiency",
   "canonicalUrl": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models",
@@ -30128,8 +31223,8 @@
     ]
   },
   "contentHash": "953d7eae847a5b4f8df503c12754d6d9a20f85f83c5dd3b9faad821758c7bc37",
-  "createdAt": "2026-09-26T05:32:45.063Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.463Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "35e0d980-02dc-4c58-ac78-d3339e058576",
@@ -30686,7 +31781,7 @@
   },
   "contentHash": "5b42ec47cf7f5c5254b2079cf8783c5db81a683afec235213449852cce50c786",
   "createdAt": "2026-09-26T05:35:02.379Z",
-  "updatedAt": "2026-09-26T05:35:02.379Z"
+  "updatedAt": "2026-09-26T16:30:34.300Z"
 },
 {
   "id": "2b460bf4-53ff-480f-850f-0183a4a42de9",
@@ -30765,7 +31860,7 @@
   "canonicalUrl": "https://github.com/xorbitsai/inference/releases/tag/v2.12.0",
   "urlHash": "e4dbcfb8c29a9ce161a95bc83a1a971099fe45bc825e86fed63227b37fed3352",
   "title": "v2.12.0",
-  "summary": "What's new in 2.12.0 (2026-07-04) These are the changes in inference v2.12.0. New features feat: gate model remote-code execution behind a config switch by @qxyuan853 in #5027 FEAT: [UI] add API key management and user management pages by @yiboyasss in #5065 FEAT: [UI] ability panel add(Embed、Rerank) by @maoyuehui in…",
+  "summary": "What's new in 2.12.0 (2026-07-04) These are the changes in inference v2.12.0. New features feat: gate model remote-code execution behind a config switch by @qxyuan853 in #5027 FEAT: [UI] add API key management and user management pages by @yiboyasss in #5065 FEAT: [UI] ability panel add(Embed、Rerank) by @maoyuehui in.…",
   "author": "XprobeBot",
   "language": "zh-CN",
   "publishedAt": "2026-07-04T11:45:38.000Z",
@@ -30780,7 +31875,7 @@
       "github"
     ]
   },
-  "contentHash": "cacaff8d0938dd0abfdda11459d6ea9b7e1e38977055ef113ff3ebe907a058f8",
+  "contentHash": "2bebc2b286efd75333c051e6a4b8ce8a54f9fb0c2e2a76f328030b4860d0272d",
   "createdAt": "2026-07-13T15:37:56.063Z",
   "updatedAt": "2026-09-26T05:36:47.281Z"
 },
@@ -31065,7 +32160,7 @@
   "updatedAt": "2026-08-06T14:38:09.027Z"
 },
 {
-  "id": "78d570b4-8ad4-4338-a484-b2e8f321d07b",
+  "id": "dccf44c3-9907-4ce4-b335-cc612f047fe9",
   "sourceSlug": "arxiv-ai",
   "externalId": "self-instruct-alignment",
   "canonicalUrl": "https://arxiv.org/abs/2212.10560",
@@ -31093,8 +32188,8 @@
     ]
   },
   "contentHash": "34f6b66fd320eb2d13fe572942a16a5216393fcec7702a7c2c4269f37bdbbb69",
-  "createdAt": "2026-09-26T05:32:44.779Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.234Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "d91dc461-05a4-40d8-9da0-ebeb7d5a34c5",
@@ -31303,7 +32398,7 @@
   "updatedAt": "2026-08-05T14:36:33.110Z"
 },
 {
-  "id": "4ff40091-0009-46cb-92ec-f4d26eb70a0e",
+  "id": "18129994-e5d3-4f31-b9f7-d769d287608f",
   "sourceSlug": "openai",
   "externalId": "chatgpt-whisper-apis",
   "canonicalUrl": "https://openai.com/index/introducing-chatgpt-and-whisper-apis",
@@ -31329,8 +32424,8 @@
     ]
   },
   "contentHash": "b8cbf8ddfefb1dc3b31300ca6cc7b6150de1b4476da4cf0f60054d3339126a41",
-  "createdAt": "2026-09-26T05:32:44.594Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.093Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "80af5390-d1ad-4dd0-852c-140f5359b447",
@@ -31374,7 +32469,7 @@
   },
   "contentHash": "8f8308e79d2d2d527ace5629ed45142b614dd4314d1c1cd17da7a0441b46e848",
   "createdAt": "2026-09-25T05:27:03.410Z",
-  "updatedAt": "2026-09-26T05:33:08.819Z"
+  "updatedAt": "2026-09-26T16:28:40.241Z"
 },
 {
   "id": "7ac61b95-7e44-4c81-aecb-de1fbefc92e1",
@@ -32170,7 +33265,7 @@
   },
   "contentHash": "04e086e25b939ff1154f01624d60cfbe6b4994a839300f4e0ac01754c94ccc5d",
   "createdAt": "2026-09-25T05:27:03.187Z",
-  "updatedAt": "2026-09-26T05:33:08.722Z"
+  "updatedAt": "2026-09-26T16:28:39.976Z"
 },
 {
   "id": "2616150e-e6d9-4ae0-9471-6d34acc24566",
@@ -32192,7 +33287,7 @@
   },
   "contentHash": "ea1e096d1669a74897ca8449c17a61ef2441a99bcb740425d715a5f440f98ac6",
   "createdAt": "2026-07-16T14:30:15.491Z",
-  "updatedAt": "2026-09-26T05:37:11.165Z"
+  "updatedAt": "2026-09-26T16:32:42.664Z"
 },
 {
   "id": "f9a066a7-ab4e-4dd1-a8f6-5da341d4aec2",
@@ -32596,7 +33691,7 @@
   "updatedAt": "2026-07-14T12:47:50.166Z"
 },
 {
-  "id": "5a17e9af-1c68-48cb-9ea1-a22f8863a19b",
+  "id": "672e8528-0fc1-4545-a7c6-5bc0dffe647e",
   "sourceSlug": "arxiv-ai",
   "externalId": "rt-detr-real-time-detection",
   "canonicalUrl": "https://arxiv.org/abs/2304.08069",
@@ -32624,8 +33719,8 @@
     ]
   },
   "contentHash": "fc07c903199469b10495d7d8fa5a4480d847194a172860c92920aacd5c1c71b1",
-  "createdAt": "2026-09-26T05:32:44.811Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.270Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8ca6cf7d-9abd-46c6-ac6f-4c07fdc3479d",
@@ -32845,7 +33940,7 @@
   "updatedAt": "2026-08-12T13:53:23.607Z"
 },
 {
-  "id": "da280cf2-cbc6-4212-a24d-bf36483b99b8",
+  "id": "b2686bfe-ed6d-4da1-b137-e551eae5645f",
   "sourceSlug": "arxiv-ai",
   "externalId": "scaling-inference-compute-sampling",
   "canonicalUrl": "https://arxiv.org/abs/2407.21787",
@@ -32873,8 +33968,8 @@
     ]
   },
   "contentHash": "e98f9bac39be7eae5134a4fb9cf47d2c38ed203237a87e241f9071399469ed87",
-  "createdAt": "2026-09-26T05:32:44.912Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.354Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "ff8a26ed-e988-4dcc-af61-fc1c2122e00b",
@@ -33035,7 +34130,7 @@
   "updatedAt": "2026-07-14T12:46:28.858Z"
 },
 {
-  "id": "ea574d00-4d96-40b5-80df-d128ca7d5436",
+  "id": "a2ba04e5-44c1-4ca8-aff5-12e761d874a7",
   "sourceSlug": "arxiv-ai",
   "externalId": "llm-idea-generation",
   "canonicalUrl": "https://arxiv.org/abs/2409.04109",
@@ -33063,8 +34158,8 @@
     ]
   },
   "contentHash": "dab79462a2b2edddf91e17315194994f910d7a37fe36692d95134231fda34816",
-  "createdAt": "2026-09-26T05:32:44.922Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.360Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "878c735b-2637-4390-bd3d-311034cd757c",
@@ -33257,7 +34352,7 @@
   },
   "contentHash": "edbc06bea62a6da661f6e95b4b8f8b6d1c7cd1b0c5c9903623c3eb294fcb0419",
   "createdAt": "2026-09-16T15:40:51.725Z",
-  "updatedAt": "2026-09-26T05:33:08.311Z"
+  "updatedAt": "2026-09-26T16:28:39.234Z"
 },
 {
   "id": "075c0c25-e5a2-42d6-b52a-478cd7cc0962",
@@ -33669,7 +34764,7 @@
   },
   "contentHash": "ca1fba9bc8e36c3da34c9cb1fa79dc2bc74b83bdd156da4934e7f81b879f6da1",
   "createdAt": "2026-07-13T14:27:03.457Z",
-  "updatedAt": "2026-09-26T05:34:57.696Z"
+  "updatedAt": "2026-09-26T16:30:29.044Z"
 },
 {
   "id": "188ff15e-fdfb-4554-afac-cef6d071d7a8",
@@ -33692,6 +34787,28 @@
   "contentHash": "750f91b197abf66fa077271364cc0c6cea809030dbb91acd708741cc80c7befd",
   "createdAt": "2026-07-20T04:28:58.342Z",
   "updatedAt": "2026-07-20T04:28:58.342Z"
+},
+{
+  "id": "971f475f-2b44-43b8-a3be-5204afcb5c6e",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49856677",
+  "canonicalUrl": "https://www.theguardian.com/technology/2026/sep/26/oxford-university-bodleian-library-open-ai-chat-gpt",
+  "urlHash": "e69b7d8e1942b6274a026d7996ac44e003f06a827e1b4b939aa63046fc4e28f2",
+  "title": "Oxford University lets OpenAI train its AI models on Bodleian Library",
+  "summary": "Article URL: https://www.theguardian.com/technology/2026/sep/26/oxford-university-bodleian-library-open-ai-chat-gpt Comments URL: https://news.ycombinator.com/item?id=49856677 Points: 3 # Comments: 2",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-26T14:04:55.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "bf9665fde3367a07c4eb925f66830beac1fe1ae68b2b1865e7035fcb9dedc4e6",
+  "createdAt": "2026-09-26T16:30:30.550Z",
+  "updatedAt": "2026-09-26T16:30:30.550Z"
 },
 {
   "id": "d8e7e685-c29e-4590-8c6b-6500129c3c1b",
@@ -33759,9 +34876,9 @@
       "rss"
     ]
   },
-  "contentHash": "a571b81d97da404fa590acb8defa5534d3cd4b92d8818e75dfbb04322dd3de00",
+  "contentHash": "c69cf5738106fc03afbe237405a33e428bd83dd413c5a911f8e87cecc15cabfd",
   "createdAt": "2026-07-13T02:12:33.092Z",
-  "updatedAt": "2026-09-22T05:27:47.252Z"
+  "updatedAt": "2026-09-26T16:30:28.887Z"
 },
 {
   "id": "00c0c3e1-0ee9-4625-9a40-e5435a993054",
@@ -33877,7 +34994,7 @@
       "github"
     ]
   },
-  "contentHash": "b55d7e0d63bdf86d48d373dbd4532a9c12c1a2a1d64813ee6e7288f249aaf48a",
+  "contentHash": "204c4409f7acfb0cdfbfe5a28bb511179247ed0616427b39722bb13096851774",
   "createdAt": "2026-09-16T15:43:08.202Z",
   "updatedAt": "2026-09-26T05:35:20.786Z"
 },
@@ -33971,7 +35088,7 @@
   },
   "contentHash": "bae9024c6f92f2d8ef594dd78c83f49be43098398e1505db2e267897509eedea",
   "createdAt": "2026-07-13T15:38:29.947Z",
-  "updatedAt": "2026-09-26T05:37:11.167Z"
+  "updatedAt": "2026-09-26T16:32:42.666Z"
 },
 {
   "id": "8d728ef6-fc97-479c-8473-da49ddba6ef9",
@@ -34037,7 +35154,7 @@
   },
   "contentHash": "df7685df74a564a0be1b513fa74ce16ec4861da1ac7c4ce7ec8998f4a5128e33",
   "createdAt": "2026-07-23T04:01:43.667Z",
-  "updatedAt": "2026-09-26T05:37:19.990Z"
+  "updatedAt": "2026-09-26T16:32:49.252Z"
 },
 {
   "id": "8b437735-edf1-4981-9c7c-efab4efdb18c",
@@ -34153,7 +35270,7 @@
       "github"
     ]
   },
-  "contentHash": "c516e2eb0125b2f93376b04b746d21a98137b2001ee69e23cf5cd7df56ca485e",
+  "contentHash": "aa48ae770b1fe21ead4ba142def4e8389218e56ee883b5776ec4f2e9cf66f176",
   "createdAt": "2026-09-26T05:36:17.941Z",
   "updatedAt": "2026-09-26T05:36:17.941Z"
 },
@@ -34317,7 +35434,7 @@
   },
   "contentHash": "9d30539c374b59bd243e6a33d91f38fcdaeea9deb36d820f40f0a7bd7b48506a",
   "createdAt": "2026-09-25T05:27:03.318Z",
-  "updatedAt": "2026-09-26T05:33:08.836Z"
+  "updatedAt": "2026-09-26T16:28:40.055Z"
 },
 {
   "id": "7710cf71-c2c0-4ca9-ba67-3daa07889977",
@@ -34387,7 +35504,7 @@
   },
   "contentHash": "4a65acc294e98d58fe79a431ff497cd183696714e106bf7e8f76fccf679be69a",
   "createdAt": "2026-07-13T15:38:20.073Z",
-  "updatedAt": "2026-09-26T05:37:09.590Z"
+  "updatedAt": "2026-09-26T16:32:40.924Z"
 },
 {
   "id": "f82e66d1-9d47-4124-aef0-0bf351571d4e",
@@ -34457,7 +35574,7 @@
   },
   "contentHash": "f518f2222f2828102d96f8da9f197c0cfd26f2a87cd6c417b4919011926d6205",
   "createdAt": "2026-09-18T05:17:48.565Z",
-  "updatedAt": "2026-09-26T05:34:57.054Z"
+  "updatedAt": "2026-09-26T16:30:27.762Z"
 },
 {
   "id": "5d54b5a0-9792-41ac-949e-17529a4ca5d0",
@@ -34601,7 +35718,7 @@
   },
   "contentHash": "b14a60d15e51f734203e767c590752890e055454ff6a868343792425fa4ea802",
   "createdAt": "2026-07-16T14:26:26.313Z",
-  "updatedAt": "2026-09-26T05:33:10.610Z"
+  "updatedAt": "2026-09-26T16:28:42.185Z"
 },
 {
   "id": "11acd3cb-a90f-4645-8513-fba1283bda59",
@@ -34645,7 +35762,7 @@
   },
   "contentHash": "ffee09114c78c915ae82203410d0b1a30e0afa9708f2313391aa7f1f2699cf90",
   "createdAt": "2026-09-24T05:31:12.290Z",
-  "updatedAt": "2026-09-26T05:34:57.254Z"
+  "updatedAt": "2026-09-26T16:30:28.507Z"
 },
 {
   "id": "1d28a942-20da-423f-ad27-d8868f1323b6",
@@ -34790,7 +35907,7 @@
   "canonicalUrl": "https://github.com/modelcontextprotocol/registry/releases/tag/v1.8.0",
   "urlHash": "e72220de4fe5549313fd36a16ed9a0e7c1ebb19575eefdccefeb2e1c11f356c1",
   "title": "v1.8.0",
-  "summary": "What's Changed deploy: update prod to v1.7.9 by @rdimitrov in #1282 build(deps): bump github.com/pulumi/pulumi/sdk/v3 from 3.237.0 to 3.238.0 in /deploy by @dependabot [bot] in #1283 chore(deps): reduce dependabot frequency from daily to weekly by @rdimitrov in #1284 build(deps): bump github.com/go-git/go-git/v5 from…",
+  "summary": "What's Changed deploy: update prod to v1.7.9 by @rdimitrov in #1282 build(deps): bump github.com/pulumi/pulumi/sdk/v3 from 3.237.0 to 3.238.0 in /deploy by @dependabot [bot] in #1283 chore(deps): reduce dependabot frequency from daily to weekly by @rdimitrov in #1284 build(deps): bump github.com/go-git/go-git/v5 from.…",
   "author": "rdimitrov",
   "language": "en",
   "publishedAt": "2026-07-13T08:48:25.000Z",
@@ -34805,7 +35922,7 @@
       "github"
     ]
   },
-  "contentHash": "8cf0926e16b30fa0f9fccc006f2f96a3e21a1cd97f61be9c3e16b7ff5f5791e1",
+  "contentHash": "184c397c26ab4f007eb8275d44b3892bca446c19dc504b2f0607fab9bd64dd0e",
   "createdAt": "2026-07-13T15:37:05.871Z",
   "updatedAt": "2026-09-26T05:35:58.987Z"
 },
@@ -35016,7 +36133,7 @@
   "updatedAt": "2026-07-20T14:37:19.625Z"
 },
 {
-  "id": "0eed0d71-4039-4844-9954-1faded7861d5",
+  "id": "1752e212-d75f-4644-836a-3595c6df7be1",
   "sourceSlug": "arxiv-ai",
   "externalId": "search-more-think-less-agentic-search",
   "canonicalUrl": "https://arxiv.org/abs/2602.22675",
@@ -35043,8 +36160,8 @@
     ]
   },
   "contentHash": "3a246ad086949aeccc2e9aab416eb3d914fe89babe1c5c5146233980c1b1051b",
-  "createdAt": "2026-09-26T05:32:45.057Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.460Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "0dc553bb-9594-4ec5-b0ed-49c57312fd42",
@@ -35110,7 +36227,7 @@
   },
   "contentHash": "ec34ccb6243b8418a2a80b19872d4fec28d2bd0be72196d82ba4e008db9d7449",
   "createdAt": "2026-07-12T05:58:10.949Z",
-  "updatedAt": "2026-09-25T17:19:02.172Z"
+  "updatedAt": "2026-09-26T16:30:26.838Z"
 },
 {
   "id": "8fc53fa2-d72d-49cc-ae5e-7f7f2d8ecca1",
@@ -35371,7 +36488,7 @@
   },
   "contentHash": "28b214425ce6d31441aeaa42d77be888ac5616ee39b3f9b0558d3f56001baeef",
   "createdAt": "2026-09-19T05:10:11.964Z",
-  "updatedAt": "2026-09-26T05:34:58.105Z"
+  "updatedAt": "2026-09-26T16:30:29.671Z"
 },
 {
   "id": "6cd181e6-4428-43a1-aacb-d5a6a16b7de6",
@@ -35393,7 +36510,7 @@
   },
   "contentHash": "aecffc3f71d76ad9497b9bb61a67159400deae53083ccc04512a91e2588ff597",
   "createdAt": "2026-09-25T05:27:03.332Z",
-  "updatedAt": "2026-09-26T05:33:08.850Z"
+  "updatedAt": "2026-09-26T16:28:40.063Z"
 },
 {
   "id": "325367c1-60fc-492f-8725-2c4aff33382f",
@@ -35558,7 +36675,7 @@
       "rss"
     ]
   },
-  "contentHash": "5dc7fe1c5a7ea248a6d71b604ec7e99c88d439f4e596226a8617c2ebb8345332",
+  "contentHash": "b7cfaf0f6f05e4aee715e1020a94b538d401a0aa388c68f459c0779e66ad1982",
   "createdAt": "2026-09-16T15:42:40.414Z",
   "updatedAt": "2026-09-26T05:34:57.346Z"
 },
@@ -35584,7 +36701,7 @@
       "github"
     ]
   },
-  "contentHash": "c234efad69576a7138b520ea94d0988c0b35c4933c5489343a84d3a62f81f9a8",
+  "contentHash": "7c76741dff01cecb49d7b05d1980f1fc822c9bf9795a8177a07889ca97f8700b",
   "createdAt": "2026-09-23T05:14:41.038Z",
   "updatedAt": "2026-09-26T05:33:16.187Z"
 },
@@ -36172,7 +37289,29 @@
   },
   "contentHash": "615badbfd4729d280843cd93466ddcfbc1dab4a97c3b973a0034961ea62ff7ec",
   "createdAt": "2026-09-25T17:19:06.433Z",
-  "updatedAt": "2026-09-26T05:34:58.368Z"
+  "updatedAt": "2026-09-26T16:30:30.136Z"
+},
+{
+  "id": "8f70afc3-f213-4e7d-8e0c-9bf1a8748cf3",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49857290",
+  "canonicalUrl": "https://www.netherite.uz/",
+  "urlHash": "e815d8312e62639e624213bb0305e2f2067793dda777d741c72e3c68b5372b94",
+  "title": "Show HN: I made HACKER AI for your vibecoded app",
+  "summary": "Netherite is your own Security Specialist. It reviews your codebase, find vulnerabilities, flaws, and other security issues before writing professional report. Also gives you fix prompt. Free to try! Comments URL: https://news.ycombinator.com/item?id=49857290 Points: 1 # Comments: 0",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-26T15:07:21.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "2657a808d8533f6b7972e21d4f55ade6af64d368a7cd410551385aa089bb227f",
+  "createdAt": "2026-09-26T16:30:30.547Z",
+  "updatedAt": "2026-09-26T16:30:30.547Z"
 },
 {
   "id": "62dcee0b-1ece-48c8-a2db-e046a0c3d659",
@@ -36401,6 +37540,28 @@
   "contentHash": "b89168df5c3c99b388d2fa0f11a03a94f50eb51bae31a492db46cd644b1897d3",
   "createdAt": "2026-07-13T16:32:36.515Z",
   "updatedAt": "2026-07-13T16:32:36.515Z"
+},
+{
+  "id": "20abc51f-8d9c-48e5-839d-b3cbe789c330",
+  "sourceSlug": "ros-discourse",
+  "externalId": "discourse.openrobotics.org-topic-58414",
+  "canonicalUrl": "https://discourse.openrobotics.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414",
+  "urlHash": "e83df20caa9721d2c9e81e10ec0e29b7e9c5d95d70b5eeffdba08ef0b30e55ac",
+  "title": "Shared_buffer_backend: shared-memory rosidl::Buffer for ROS 2 processes",
+  "summary": "shared_buffer_backend: shared-memory rosidl::Buffer for ROS 2 processes I would like to share shared_buffer_backend , an experimental CPU shared-memory backend for rosidl::Buffer . This follows my earlier discussion about a CPU shared-memory backend , and was previously called memfd . The goal is to make large, variab…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-26T15:23:09.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "11f6f17df1aa45e7b9c114e140d3cb4d6828fbc395dcda37771593d29bbed3cc",
+  "createdAt": "2026-09-26T16:30:27.745Z",
+  "updatedAt": "2026-09-26T16:30:27.745Z"
 },
 {
   "id": "57b60942-f60e-48cf-949c-f72218055ec5",
@@ -37414,7 +38575,7 @@
   },
   "contentHash": "3251d06c15a7c339f84b258b0cce2dbfa2a1d09b2114d01e1153e3014250c182",
   "createdAt": "2026-07-12T05:56:33.192Z",
-  "updatedAt": "2026-09-26T05:33:09.234Z"
+  "updatedAt": "2026-09-26T16:28:40.960Z"
 },
 {
   "id": "41edccca-725b-4373-bf01-140436c26f75",
@@ -37480,7 +38641,7 @@
   },
   "contentHash": "cd1b610ea14a862e532970134648ef6e181dd233b2b39788ecc545038bb21462",
   "createdAt": "2026-09-25T05:27:03.405Z",
-  "updatedAt": "2026-09-26T05:33:08.814Z"
+  "updatedAt": "2026-09-26T16:28:40.237Z"
 },
 {
   "id": "98cd440c-10b5-451d-ac87-c7b95ead19a2",
@@ -37620,7 +38781,7 @@
   },
   "contentHash": "6339ab8064f8f5ac6215a950ec633bff86dd0b67bdaa0fba41ff0c03351bef96",
   "createdAt": "2026-09-16T15:45:04.074Z",
-  "updatedAt": "2026-09-26T05:37:12.652Z"
+  "updatedAt": "2026-09-26T16:32:43.738Z"
 },
 {
   "id": "e2490206-0672-4b57-8d1e-01ee728bd091",
@@ -37891,7 +39052,7 @@
       "github"
     ]
   },
-  "contentHash": "962adfc9938454fcffac0eb059a6a02c0e172393c20c89ea6ff4533848c83473",
+  "contentHash": "37d301412a34db3c2262c4985fe4d7972b4321781c284fbfe26b02a608b01da4",
   "createdAt": "2026-07-13T15:37:05.873Z",
   "updatedAt": "2026-09-26T05:35:58.989Z"
 },
@@ -37915,7 +39076,7 @@
   },
   "contentHash": "de155bd16df9a67c9b896b37b7b5a2c629f1f3e8ac43204390f43aace87fcbe1",
   "createdAt": "2026-07-12T05:56:33.172Z",
-  "updatedAt": "2026-09-26T05:33:09.216Z"
+  "updatedAt": "2026-09-26T16:28:40.894Z"
 },
 {
   "id": "ffe8dbc2-8265-4f18-8deb-c517ea44d6b4",
@@ -38028,7 +39189,7 @@
   "updatedAt": "2026-07-26T14:02:31.597Z"
 },
 {
-  "id": "68e12ec4-ff68-431b-9a43-ecb1b6a57d58",
+  "id": "913d68ba-3b7b-40bc-a81e-8e8580efcd8c",
   "sourceSlug": "openai",
   "externalId": "swe-bench-pro-signal-noise",
   "canonicalUrl": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
@@ -38055,8 +39216,8 @@
     ]
   },
   "contentHash": "af7320ea269cdab56e2c6e2aa94826bcce495267dfd699933fdd997af84f471f",
-  "createdAt": "2026-09-26T05:32:45.100Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.524Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "cd9289f6-9cd2-4570-b2f6-dcec5cc1dbad",
@@ -38196,7 +39357,7 @@
   },
   "contentHash": "5417dd0e04b8d8c3190416e7825f0695dca69875006dd941531b6c7ac951cd9b",
   "createdAt": "2026-07-30T03:46:50.013Z",
-  "updatedAt": "2026-09-26T05:33:08.919Z"
+  "updatedAt": "2026-09-26T16:28:39.718Z"
 },
 {
   "id": "aa5c54f2-96f6-4cf8-a82b-a3671ab7b34e",
@@ -38762,7 +39923,7 @@
   },
   "contentHash": "3e3a53a8a52e0ee5dfb9e8f9108db727d88ffd77cef0859874579b8622520ee3",
   "createdAt": "2026-09-26T05:33:16.439Z",
-  "updatedAt": "2026-09-26T05:33:16.439Z"
+  "updatedAt": "2026-09-26T16:28:48.696Z"
 },
 {
   "id": "12fe41a6-296e-4462-9745-83411ae6b2ec",
@@ -39106,7 +40267,7 @@
       "github"
     ]
   },
-  "contentHash": "95d4aa3854b5db9919182de689b8167f0d28b215cf8802d5b10fdc8581a6a6ee",
+  "contentHash": "27d6c6103570618b2f8aec8b2561c798ba183f52b66041c4821bca51b1d992d9",
   "createdAt": "2026-08-07T03:43:33.219Z",
   "updatedAt": "2026-09-25T17:20:23.987Z"
 },
@@ -39294,7 +40455,7 @@
       "rss"
     ]
   },
-  "contentHash": "0285b888eea413a2ae0708d254c7055b5f49ac21c83fd65d52405f180837f066",
+  "contentHash": "6d7facee756b17b332436e1b62c850ce06757f5895310f4af769a08554aa7e40",
   "createdAt": "2026-09-17T17:06:47.406Z",
   "updatedAt": "2026-09-26T05:34:57.058Z"
 },
@@ -39318,7 +40479,7 @@
   },
   "contentHash": "77e0e6f0d1a848ed9a7eb0a92332a392ba82dbdf2255d10bf7d7cddee8ef424d",
   "createdAt": "2026-07-15T14:18:14.873Z",
-  "updatedAt": "2026-09-26T05:37:20.007Z"
+  "updatedAt": "2026-09-26T16:32:49.263Z"
 },
 {
   "id": "19f60b22-1ecf-4c71-86d8-256f436388de",
@@ -39362,7 +40523,7 @@
   },
   "contentHash": "b3f56a9ea8b177cb2eae51335e8409de5ec3cbd0a8096a56da657dae0cdc213f",
   "createdAt": "2026-09-22T17:01:38.711Z",
-  "updatedAt": "2026-09-26T05:33:09.113Z"
+  "updatedAt": "2026-09-26T16:28:40.625Z"
 },
 {
   "id": "cc8c453b-5bae-412f-b318-9bea1f1855fb",
@@ -39384,7 +40545,7 @@
   },
   "contentHash": "c0614d9252204022ca570bf66acc3123e3d28ded1f5c9bd5bd4a5803c339b46f",
   "createdAt": "2026-07-12T00:08:48.015Z",
-  "updatedAt": "2026-09-26T05:34:57.986Z"
+  "updatedAt": "2026-09-26T16:30:29.315Z"
 },
 {
   "id": "e08a0018-1e5c-4ffb-8641-a61b6c449288",
@@ -39409,7 +40570,7 @@
   "updatedAt": "2026-09-23T17:09:15.439Z"
 },
 {
-  "id": "2f1ba46a-698e-4431-9bcc-96eb4e046378",
+  "id": "e8e33e1c-146d-42e3-a880-902b20cdc93e",
   "sourceSlug": "google-ai",
   "externalId": "google-io-2026-ai-platform-bundle",
   "canonicalUrl": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements",
@@ -39436,8 +40597,8 @@
     ]
   },
   "contentHash": "0bc71c9f9f9b7b53d78bbe7f22a3f2d8c77b31317c679abc992e12946a7c18f2",
-  "createdAt": "2026-09-26T05:32:45.074Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.470Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8d86ad87-1c00-4aab-b866-51b3a783ee41",
@@ -39593,7 +40754,7 @@
       "github"
     ]
   },
-  "contentHash": "d24453b354a3cdc7c276562ce59c84ffbf597098c393c6b85d45423cdc739a9f",
+  "contentHash": "3fa3936e5535bbf2f3dda8dad5ab928f524681ba97f898f0c4bada6107223fe9",
   "createdAt": "2026-09-17T05:31:07.412Z",
   "updatedAt": "2026-09-26T05:35:37.000Z"
 },
@@ -40195,7 +41356,7 @@
   },
   "contentHash": "0dedf300843143f3f268f8d0695ec4842ac0f3742eeb69a024c65451acf106e1",
   "createdAt": "2026-07-12T05:58:36.941Z",
-  "updatedAt": "2026-09-26T05:33:33.472Z"
+  "updatedAt": "2026-09-26T16:28:56.760Z"
 },
 {
   "id": "ac0f2eb8-7aaa-4d01-9861-4801c95890b7",
@@ -40357,7 +41518,7 @@
   },
   "contentHash": "c910d3e85605fd02f038e684816827c602763244b6281fd29615b1934164b391",
   "createdAt": "2026-07-13T15:38:29.951Z",
-  "updatedAt": "2026-09-26T05:37:11.170Z"
+  "updatedAt": "2026-09-26T16:32:42.669Z"
 },
 {
   "id": "b854f050-6439-4a7b-84f7-c6fcb4ccfe54",
@@ -40689,7 +41850,7 @@
   },
   "contentHash": "930352be6c639b86c6cd352fff2584c4402700e84aca5a9ea6b15673053571a6",
   "createdAt": "2026-09-16T15:40:52.568Z",
-  "updatedAt": "2026-09-26T05:33:09.140Z"
+  "updatedAt": "2026-09-26T16:28:40.636Z"
 },
 {
   "id": "05a7ee4c-a51e-48bf-b53a-48df4a1a41cf",
@@ -40987,7 +42148,7 @@
   },
   "contentHash": "1036c0e1281e6d45b710d4dbe10f76f6d9a5a470bdc0a577120cbda705757a84",
   "createdAt": "2026-07-12T05:59:31.225Z",
-  "updatedAt": "2026-09-26T05:34:07.047Z"
+  "updatedAt": "2026-09-26T16:29:42.043Z"
 },
 {
   "id": "eb2bb848-27cc-4213-8f4f-f99d1b56a240",
@@ -41743,7 +42904,7 @@
   },
   "contentHash": "ffd2b0568152ac9044e7979cc7dfa39f87177f79ffa4837c5f046604abe8ced2",
   "createdAt": "2026-09-16T15:42:41.179Z",
-  "updatedAt": "2026-09-26T05:34:58.308Z"
+  "updatedAt": "2026-09-26T16:30:29.940Z"
 },
 {
   "id": "ceec31e0-e6fc-4e8e-ad33-e24e771c3b87",
@@ -42250,7 +43411,7 @@
   },
   "contentHash": "9f2bc77785258e2817a2bad7a2af4a46b2878e3356404627c55dde34c4e41f90",
   "createdAt": "2026-07-31T04:14:12.894Z",
-  "updatedAt": "2026-09-26T05:33:08.919Z"
+  "updatedAt": "2026-09-26T16:28:39.718Z"
 },
 {
   "id": "00d4f691-2179-4d76-81f3-d53f2611247e",
@@ -42320,7 +43481,7 @@
   },
   "contentHash": "cc8e2fbd796fab8612c32b08151659ec4cbd05cb1061894c0d5460dc45691091",
   "createdAt": "2026-09-25T05:27:03.218Z",
-  "updatedAt": "2026-09-26T05:33:08.668Z"
+  "updatedAt": "2026-09-26T16:28:39.993Z"
 },
 {
   "id": "3681d494-6503-40dc-9450-bbaf4843a4cd",
@@ -42369,7 +43530,7 @@
   },
   "contentHash": "ce3192d32c681ea985b4417b2550364bfe8afcdc48bdace317ce7e32eea248bc",
   "createdAt": "2026-07-13T15:38:16.874Z",
-  "updatedAt": "2026-09-26T05:37:07.825Z"
+  "updatedAt": "2026-09-26T16:32:38.535Z"
 },
 {
   "id": "0f764c46-c531-474b-89c8-bf49280a4597",
@@ -42413,7 +43574,7 @@
   },
   "contentHash": "3371aac41240d7aa0ebf5fc1b0b877868a9fe1e7560b5eccde0832d6c6c2e6d8",
   "createdAt": "2026-08-07T03:40:26.222Z",
-  "updatedAt": "2026-09-26T05:33:08.468Z"
+  "updatedAt": "2026-09-26T16:28:39.352Z"
 },
 {
   "id": "0f7d5e88-e175-44c7-a19b-7502fe7f7345",
@@ -42550,7 +43711,7 @@
   },
   "contentHash": "f70d5bfa45a6af67da6cb1b54a9eee4cd70ac9f048f699a60a029326ad8d17c2",
   "createdAt": "2026-09-25T05:27:03.314Z",
-  "updatedAt": "2026-09-26T05:33:08.833Z"
+  "updatedAt": "2026-09-26T16:28:40.052Z"
 },
 {
   "id": "eae55914-e10c-4ab1-8d23-4c8c4576775b",
@@ -42624,7 +43785,7 @@
   },
   "contentHash": "e97dadf0922cde37d472773584c0682de4216ce1a2fde380f1ecb9de4ff88a60",
   "createdAt": "2026-07-13T15:38:22.240Z",
-  "updatedAt": "2026-09-26T05:37:11.020Z"
+  "updatedAt": "2026-09-26T16:32:36.079Z"
 },
 {
   "id": "b839fdd0-4e3b-4580-934b-e74d8885b122",
@@ -42782,7 +43943,7 @@
   },
   "contentHash": "47a0a83f9537593f6c4eb132fc876ccf00c426b0c92fa0f98e569d5513f2d43f",
   "createdAt": "2026-07-13T15:38:17.741Z",
-  "updatedAt": "2026-09-26T05:37:08.833Z"
+  "updatedAt": "2026-09-26T16:32:39.738Z"
 },
 {
   "id": "a41bf807-41e6-48dc-aa5c-13a74b2803a9",
@@ -42918,7 +44079,7 @@
   },
   "contentHash": "dd4bd99501912ee247ad97214350855ad7264f46c6fb739eea9884e74d0e72d8",
   "createdAt": "2026-09-16T15:42:40.776Z",
-  "updatedAt": "2026-09-26T05:34:57.982Z"
+  "updatedAt": "2026-09-26T16:30:29.310Z"
 },
 {
   "id": "33f74a07-8ffa-424b-9045-a0b205029a2b",
@@ -43278,7 +44439,7 @@
   },
   "contentHash": "9422a85a9bb411f1ccc1911156e79090690a0d9803c562ceabe67c2d53e46dc4",
   "createdAt": "2026-09-25T17:17:14.735Z",
-  "updatedAt": "2026-09-26T05:33:08.912Z"
+  "updatedAt": "2026-09-26T16:28:39.711Z"
 },
 {
   "id": "7bc0e7c8-5753-4a15-a5b2-b6acb2d0408e",
@@ -43469,7 +44630,7 @@
   "updatedAt": "2026-09-18T16:31:08.585Z"
 },
 {
-  "id": "95e77cae-d57e-4659-b624-bffd1fbabc88",
+  "id": "180c5856-39e7-4267-a6b0-c319bfd7f4ff",
   "sourceSlug": "arxiv-ai",
   "externalId": "autogen-framework-for-llm-agent-applications",
   "canonicalUrl": "https://arxiv.org/abs/2308.08155",
@@ -43497,8 +44658,8 @@
     ]
   },
   "contentHash": "23726e981a3b2e8fc73e52307ab2be727178329bb7f345372052ddf845a50817",
-  "createdAt": "2026-09-26T05:32:44.834Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.284Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "a2e37e3a-7bb2-4922-a56e-adc1cc8eb1e6",
@@ -43549,7 +44710,7 @@
   "updatedAt": "2026-09-20T16:15:46.580Z"
 },
 {
-  "id": "4a10f114-8ecb-4fd6-8708-6c6b0fd73246",
+  "id": "9cd3a7f3-b64c-43a8-832b-3fb0efdbbb4e",
   "sourceSlug": "arxiv-ai",
   "externalId": "read-more-think-more-web-agents",
   "canonicalUrl": "https://arxiv.org/abs/2604.01535",
@@ -43576,8 +44737,8 @@
     ]
   },
   "contentHash": "3414a90e696b55f5ea058f1c71b8edfa023c3b3c0bfa8d52c78b7329aebcb379",
-  "createdAt": "2026-09-26T05:32:45.033Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.443Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "8f93f454-332e-426b-9754-e83a1b421053",
@@ -43644,6 +44805,28 @@
   "contentHash": "7ec1c1a7d99ee44d1e6b3583da54f04d6e5ae9066c997af38f9bd4c959cf35a7",
   "createdAt": "2026-08-09T02:54:16.313Z",
   "updatedAt": "2026-08-09T02:54:16.313Z"
+},
+{
+  "id": "c4d5b33a-8660-4381-bc4e-fa25274ac99d",
+  "sourceSlug": "product-hunt-ai",
+  "externalId": "tag:www.producthunt.com,2005:Post/1256549",
+  "canonicalUrl": "https://www.producthunt.com/products/omninotch",
+  "urlHash": "ec925f6c5bcf92d8f2e44539002d4e14ce2c0033729f0b49a0f7c480eb3a3b7d",
+  "title": "OmniNotch",
+  "summary": "The notch that does it all! Discussion | Link",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-20T20:50:25.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "3c807b9eb37d6f19d67983e55ba83854497cdf9c68ae797c6ac3182268738cbd",
+  "createdAt": "2026-09-26T16:30:30.380Z",
+  "updatedAt": "2026-09-26T16:30:30.380Z"
 },
 {
   "id": "02ce4deb-3e19-4251-9ff6-d5dcb7561519",
@@ -43713,7 +44896,7 @@
   },
   "contentHash": "dcf067517d8a2ffa03a18411171a2c12656c1d67efd3896608d2d6ca77aea09a",
   "createdAt": "2026-08-15T02:06:30.235Z",
-  "updatedAt": "2026-09-26T05:34:58.081Z"
+  "updatedAt": "2026-09-26T16:30:29.554Z"
 },
 {
   "id": "66785232-6313-4af9-9b88-b98a62a4fe48",
@@ -43735,7 +44918,7 @@
   },
   "contentHash": "7b94ae563b8a3c79b0a8db1a4f893c7eb0a185cb38b1f0e1b4d324a679cdc12c",
   "createdAt": "2026-09-24T17:18:37.240Z",
-  "updatedAt": "2026-09-26T05:35:00.197Z"
+  "updatedAt": "2026-09-26T16:30:32.068Z"
 },
 {
   "id": "428b3902-035c-4baf-a35b-a285b9e1a94d",
@@ -44295,7 +45478,7 @@
   },
   "contentHash": "208099714b1be0fe81f8d32fb01b86d9efeb1630bbee625ec45822adc74af02c",
   "createdAt": "2026-09-20T05:31:00.562Z",
-  "updatedAt": "2026-09-26T05:37:08.989Z"
+  "updatedAt": "2026-09-26T16:32:40.160Z"
 },
 {
   "id": "8c1745f6-7207-49e5-8a37-0f0bd9dd0207",
@@ -44889,7 +46072,7 @@
   "updatedAt": "2026-07-12T00:08:53.796Z"
 },
 {
-  "id": "ff9af7cd-8ca9-45b9-aeca-7f331c4eb25f",
+  "id": "02079af6-1432-4a48-a20f-3009cf41910b",
   "sourceSlug": "anthropic",
   "externalId": "claude-constitution-2026",
   "canonicalUrl": "https://www.anthropic.com/news/claude-new-constitution",
@@ -44916,8 +46099,8 @@
     ]
   },
   "contentHash": "4c967665ccbdaa987b8a67d1d420c197ad92e3e313d3264a20d60a7e652f2b7a",
-  "createdAt": "2026-09-26T05:32:44.666Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.149Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "54151921-d27e-44db-ab74-bc82d143347c",
@@ -44965,7 +46148,7 @@
   },
   "contentHash": "78ec9359f7ca20582ae3d2ad7899ea3ab9e255dac0ce6361a51d2ddb22c4692a",
   "createdAt": "2026-07-12T05:57:18.836Z",
-  "updatedAt": "2026-09-26T05:33:11.725Z"
+  "updatedAt": "2026-09-26T16:28:43.442Z"
 },
 {
   "id": "6b3fdf91-ac65-4599-9334-fdf58d92f3c9",
@@ -45525,7 +46708,7 @@
   "updatedAt": "2026-08-11T02:54:20.338Z"
 },
 {
-  "id": "c163cebd-18db-405d-aa84-6755ae5c44c1",
+  "id": "0e46b5c2-9b1f-4259-a297-176dfe740411",
   "sourceSlug": "google-research",
   "externalId": "google-reasoningbank-agent-memory",
   "canonicalUrl": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience",
@@ -45553,8 +46736,8 @@
     ]
   },
   "contentHash": "5080150bfd668d73586cb7ca0ea2c6e3dbd3ee637af0ace4ccd443c75b93271e",
-  "createdAt": "2026-09-26T05:32:44.766Z",
-  "updatedAt": "2026-09-26T05:37:20.012Z"
+  "createdAt": "2026-09-26T16:28:20.226Z",
+  "updatedAt": "2026-09-26T16:32:49.270Z"
 },
 {
   "id": "8f6afda7-8520-4322-b030-f7b80cff0f95",
@@ -45690,7 +46873,7 @@
   },
   "contentHash": "67d0e9a0c8d8df67655a05ff79756cacad5c426a6612fe0555b376a1c7d42c38",
   "createdAt": "2026-07-15T14:18:14.889Z",
-  "updatedAt": "2026-09-26T05:37:20.016Z"
+  "updatedAt": "2026-09-26T16:32:49.273Z"
 },
 {
   "id": "6610145a-6913-4d69-b992-361935088f25",
@@ -45760,7 +46943,7 @@
   },
   "contentHash": "26111b29458917884efb051e8a93aa5280362356f15f3d135e13d241ca269ff6",
   "createdAt": "2026-09-25T05:27:03.214Z",
-  "updatedAt": "2026-09-26T05:33:08.665Z"
+  "updatedAt": "2026-09-26T16:28:39.990Z"
 },
 {
   "id": "b34849a1-bc2b-4310-b086-94009e1ead2e",
@@ -46012,7 +47195,7 @@
       "github"
     ]
   },
-  "contentHash": "1b838584e420bf4cd677ce95637855e04bfd8dce9afa0efe03beafb88b486ade",
+  "contentHash": "e94f69253dac431c35fc87579aa51fc078fae4f8887dd4d98140ed587cb595ac",
   "createdAt": "2026-07-20T04:30:47.402Z",
   "updatedAt": "2026-09-26T05:36:47.280Z"
 },
@@ -46215,7 +47398,7 @@
   "canonicalUrl": "https://github.com/browserbase/stagehand/releases/tag/stagehand-python%404.2.0a0.dev1538",
   "urlHash": "ee174ab7fb55a502981f68caf243f0695fc2fd63495a3af7e32b5fc60e12f651",
   "title": "stagehand-python@4.2.0a0.dev1538: [chore]: separate docs previews from production publishing (#3042)",
-  "summary": "why SDK changes must include documentation, but merging those docs into main should not publish unreleased APIs to the public site what changed Add Mintlify previews for docs PRs targeting main and a persistent preview updated by docs pushes to main . Report the URL and wait for deployment success. Run docs reference…",
+  "summary": "why SDK changes must include documentation, but merging those docs into main should not publish unreleased APIs to the public site what changed Add Mintlify previews for docs PRs targeting main and a persistent preview updated by docs pushes to main . Report the URL and wait for deployment success. Run docs reference.…",
   "author": "seanmcguire12",
   "language": "en",
   "publishedAt": "2026-09-25T20:46:39.000Z",
@@ -46230,7 +47413,7 @@
       "github"
     ]
   },
-  "contentHash": "b0d4965b4508cb6ae90b928438755c9622124ac2f847a9f22cf57a8153d8b123",
+  "contentHash": "c3a3acdf6269068654e8c3ccf0868a06ddda5eae4aba9f14dde262227aef5be5",
   "createdAt": "2026-09-26T05:33:16.183Z",
   "updatedAt": "2026-09-26T05:33:16.183Z"
 },
@@ -46729,7 +47912,7 @@
       "rss"
     ]
   },
-  "contentHash": "2022675085c8a7935c9a5793941d37a8efb0b24f2902c5f6209dcdc1f4d1f9b6",
+  "contentHash": "e3f38e356b0118c30a36f62e468a025e1d5cb61c6d88dda400e8a7de50daad6c",
   "createdAt": "2026-09-16T15:42:40.417Z",
   "updatedAt": "2026-09-26T05:34:57.348Z"
 },
@@ -46871,7 +48054,7 @@
   },
   "contentHash": "db79faa880c8258d0e97be7ca22d87c03bbe30130ae809cbb9e7be0fc5f5311f",
   "createdAt": "2026-09-20T16:14:26.912Z",
-  "updatedAt": "2026-09-26T05:35:00.815Z"
+  "updatedAt": "2026-09-26T16:30:32.264Z"
 },
 {
   "id": "21f954aa-8aab-463c-927e-0e85dfe53ca9",
@@ -47018,7 +48201,7 @@
   "updatedAt": "2026-07-24T04:14:56.602Z"
 },
 {
-  "id": "ad9a0408-b2e6-49fe-a7ef-2daa362439b3",
+  "id": "b21e98a7-45b8-4a1c-bab0-83147666900d",
   "sourceSlug": "google-research",
   "externalId": "google-era-empirical-research-assistance",
   "canonicalUrl": "https://research.google/blog/empirical-research-assistance-era-from-nature-publication-to-catalyzing-computational-discovery",
@@ -47046,8 +48229,8 @@
     ]
   },
   "contentHash": "4e57fc486d5074bf03c93e1cc284a79bbc1a2761faf61c47976f59339d87e4b9",
-  "createdAt": "2026-09-26T05:32:44.767Z",
-  "updatedAt": "2026-09-26T05:37:20.009Z"
+  "createdAt": "2026-09-26T16:28:20.227Z",
+  "updatedAt": "2026-09-26T16:32:49.267Z"
 },
 {
   "id": "ea8f085f-f107-4a54-8d80-6d51ab927d2d",
@@ -47448,7 +48631,7 @@
       "github"
     ]
   },
-  "contentHash": "99f3de6fd406d295a537c5265bc4b2b0c82a48fb9c5cd2260da51027b48f4d03",
+  "contentHash": "89a0edc7277b648eaea189cd50f7606aebc345da994f3dc995d37b9061346c5e",
   "createdAt": "2026-09-22T05:28:34.653Z",
   "updatedAt": "2026-09-26T05:35:36.999Z"
 },
@@ -48021,7 +49204,7 @@
   },
   "contentHash": "2948d4db4cba63392692e712af4db9020e1dabaae5d4138ce83e65f2e9e87c33",
   "createdAt": "2026-07-12T05:58:52.023Z",
-  "updatedAt": "2026-09-26T05:33:32.496Z"
+  "updatedAt": "2026-09-26T16:29:11.224Z"
 },
 {
   "id": "b19c1b2f-5686-4bb9-9355-3e0ab94bade8",
@@ -48085,9 +49268,9 @@
       "rss"
     ]
   },
-  "contentHash": "35f9a47df20a77260eef7f73043dbbad0cf9fa385081a488aa1e2d3ab0602194",
+  "contentHash": "f331f3e5d09ec57077b33beecf3ec8818c806bf3140e8e4c710a75b46359d24d",
   "createdAt": "2026-07-13T02:12:33.098Z",
-  "updatedAt": "2026-09-22T05:27:47.274Z"
+  "updatedAt": "2026-09-26T16:30:28.898Z"
 },
 {
   "id": "7c67c55e-7a3f-4ac4-811d-83fabf366c28",
@@ -48345,7 +49528,7 @@
   },
   "contentHash": "ae7a8df13066320c9c0805a8fd5cff4719e18fe778cbb77524fde5a3a2023903",
   "createdAt": "2026-07-12T05:58:00.676Z",
-  "updatedAt": "2026-09-26T05:34:57.276Z"
+  "updatedAt": "2026-09-26T16:30:28.558Z"
 },
 {
   "id": "e2008891-9559-43c6-9435-6bfa9fc57209",
@@ -48727,7 +49910,7 @@
       "github"
     ]
   },
-  "contentHash": "bfa71c7569b23baf825af4aec9cc8c0d7694cc5927554ca1775eecb507bde05a",
+  "contentHash": "abdef2ed54c4a116791636890f727926ed4c63ee90b3e25ce6bba2191eb79610",
   "createdAt": "2026-09-24T17:16:51.782Z",
   "updatedAt": "2026-09-26T05:33:15.173Z"
 },
@@ -48843,7 +50026,7 @@
   },
   "contentHash": "b601f95ae4d4216ee86a909a60b60260ddb190dd1403f006faf13039dff198ec",
   "createdAt": "2026-07-13T14:25:12.814Z",
-  "updatedAt": "2026-09-26T05:33:18.069Z"
+  "updatedAt": "2026-09-26T16:28:50.585Z"
 },
 {
   "id": "6680be25-c0bf-425a-b3d9-0aa75bc9f7e4",
@@ -48941,7 +50124,7 @@
       "github"
     ]
   },
-  "contentHash": "f044c2c643a120463e8639fe3097cebc9c476416bf6ca77ce48c12dca21dc6f0",
+  "contentHash": "69d79e595b446bbcef1a4c136bdba3ab7a07c638aa6170eaba6b6d2a81019c93",
   "createdAt": "2026-09-20T05:31:05.920Z",
   "updatedAt": "2026-09-25T17:21:21.188Z"
 },
@@ -49423,7 +50606,7 @@
   "updatedAt": "2026-09-18T05:17:54.440Z"
 },
 {
-  "id": "74926481-8cf0-4e92-9e98-3f8337f82547",
+  "id": "17493034-d792-4344-9c9e-0ee67f6dba6d",
   "sourceSlug": "arxiv-ai",
   "externalId": "generative-agents-simulacra",
   "canonicalUrl": "https://arxiv.org/abs/2304.03442",
@@ -49451,8 +50634,8 @@
     ]
   },
   "contentHash": "e7360996eaa3e00750e1be57508f5f28bd071e536d3975aa699ef847f76b0819",
-  "createdAt": "2026-09-26T05:32:44.810Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.269Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "db46c21f-f7cd-4881-8a5d-1ee0f84be8de",
@@ -49660,7 +50843,7 @@
   },
   "contentHash": "55da16c529786a8ea8b2d76e73bbbba277bbb4a9d96aca14549b8380977a88b3",
   "createdAt": "2026-07-12T05:56:33.193Z",
-  "updatedAt": "2026-09-26T05:33:09.235Z"
+  "updatedAt": "2026-09-26T16:28:40.960Z"
 },
 {
   "id": "e19c7e5e-1c83-4cd7-a239-3d1fc88ca09c",
@@ -50370,7 +51553,7 @@
   "updatedAt": "2026-09-16T15:41:01.383Z"
 },
 {
-  "id": "313261ec-c1f8-469d-9128-26dcd4ed8b88",
+  "id": "5841723a-69cd-4508-bd37-e75dd67f7443",
   "sourceSlug": "openai",
   "externalId": "openai-operator-browser-agent",
   "canonicalUrl": "https://openai.com/index/introducing-operator",
@@ -50397,8 +51580,8 @@
     ]
   },
   "contentHash": "2ff8dbf1293bdbf4bfdee12131aab2d352eeafc9cff34de10d79d5651c46b505",
-  "createdAt": "2026-09-26T05:32:44.636Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.121Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "7774816d-2ace-438e-875a-c093da44af87",
@@ -50586,7 +51769,7 @@
   },
   "contentHash": "51f569571b787d7d2b7cf88c843be0e17dd87e4db1fd81ddc8aab62c95222f80",
   "createdAt": "2026-07-13T15:38:17.743Z",
-  "updatedAt": "2026-09-26T05:37:08.835Z"
+  "updatedAt": "2026-09-26T16:32:39.739Z"
 },
 {
   "id": "df1dc8c3-1a15-40e3-9ea3-e89b0ce8f2c3",
@@ -50840,7 +52023,7 @@
   },
   "contentHash": "e7febc5ceba02e1d2df5474f78957d70767de34c0735c0f2f0d4cf6b4b3e2517",
   "createdAt": "2026-07-12T05:58:52.018Z",
-  "updatedAt": "2026-09-26T05:33:32.492Z"
+  "updatedAt": "2026-09-26T16:29:11.220Z"
 },
 {
   "id": "ee50fdff-f51a-4265-8b1b-4a646868cc3e",
@@ -51024,7 +52207,7 @@
   },
   "contentHash": "3566e910720cdc6bb230d6b1907f573af185c3a4a725fcb7d9e2dba87f5f889b",
   "createdAt": "2026-09-19T15:58:05.849Z",
-  "updatedAt": "2026-09-26T05:34:58.076Z"
+  "updatedAt": "2026-09-26T16:30:29.551Z"
 },
 {
   "id": "ef8a7a49-0ef7-40ef-9020-4a054742b0bc",
@@ -51326,7 +52509,7 @@
   },
   "contentHash": "d82bbd9cc4c81e7417f3a84d26dd86516d42863726574583d4cd7c67a8f119b3",
   "createdAt": "2026-09-16T15:40:51.566Z",
-  "updatedAt": "2026-09-26T05:33:08.464Z"
+  "updatedAt": "2026-09-26T16:28:39.349Z"
 },
 {
   "id": "43e3c81e-c8ca-40d4-b46b-9362fb375431",
@@ -51760,7 +52943,7 @@
   },
   "contentHash": "d96342fa5049d4c3215ea08196b82341d485a328487a65949a352e15a225e91c",
   "createdAt": "2026-08-02T14:02:07.740Z",
-  "updatedAt": "2026-09-26T05:34:58.085Z"
+  "updatedAt": "2026-09-26T16:30:29.600Z"
 },
 {
   "id": "90f6d39a-feb7-4ec2-b40b-7b7d311bbbd4",
@@ -51804,7 +52987,7 @@
   },
   "contentHash": "1b63324c2a4039907a816b1438043d69c3e0f13096668b5c1e180144206d6c4f",
   "createdAt": "2026-09-24T05:31:11.675Z",
-  "updatedAt": "2026-09-26T05:34:57.040Z"
+  "updatedAt": "2026-09-26T16:30:27.750Z"
 },
 {
   "id": "4d6db27b-081e-48ce-9e8e-6b61097287e1",
@@ -52052,7 +53235,7 @@
   },
   "contentHash": "35de9d9b568e49094b020f6641ed11763b5c945b3388e9ab6140377a32d5c738",
   "createdAt": "2026-09-25T05:27:03.354Z",
-  "updatedAt": "2026-09-26T05:33:08.865Z"
+  "updatedAt": "2026-09-26T16:28:40.075Z"
 },
 {
   "id": "2519eaa9-dbae-4f01-83ad-1d5cf2ea359d",
@@ -52352,7 +53535,7 @@
   },
   "contentHash": "383c2dbe9c732791c08e2175807b81a9f10730c5f520015371b491f7cf04b188",
   "createdAt": "2026-09-25T17:19:03.291Z",
-  "updatedAt": "2026-09-26T05:34:57.036Z"
+  "updatedAt": "2026-09-26T16:30:27.746Z"
 },
 {
   "id": "9629c4f5-cb0e-441c-81d3-2320529d35a3",
@@ -52423,7 +53606,7 @@
   },
   "contentHash": "9a281f2784e325d7c48eae09c74ad9a696d0150a03734f25128335bf416378d1",
   "createdAt": "2026-07-12T05:58:36.938Z",
-  "updatedAt": "2026-09-26T05:33:33.469Z"
+  "updatedAt": "2026-09-26T16:28:56.757Z"
 },
 {
   "id": "3966e72b-482a-493d-8e9e-75dae7f45af0",
@@ -52698,7 +53881,7 @@
   "updatedAt": "2026-09-17T17:04:58.947Z"
 },
 {
-  "id": "36a3a2a0-7a12-40f3-9be0-0c345883f3fc",
+  "id": "11c27db5-abbb-46f3-92db-bdfc04401bfc",
   "sourceSlug": "deepseek",
   "externalId": "deepseek-v3-efficient-frontier",
   "canonicalUrl": "https://github.com/deepseek-ai/DeepSeek-V3",
@@ -52725,8 +53908,8 @@
     ]
   },
   "contentHash": "526c73745ff2ede153d4c619096ead4e53bcb04b8165c6c8009e28b6d6bf4312",
-  "createdAt": "2026-09-26T05:32:44.632Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.118Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "4d8c7033-55b2-45df-a9a6-0e8688da1410",
@@ -53106,7 +54289,7 @@
   },
   "contentHash": "7ebb5aaed7da741f13cefceb037ac474a105d28bbf40af0646af2d1db647029b",
   "createdAt": "2026-09-16T15:40:52.560Z",
-  "updatedAt": "2026-09-26T05:33:09.138Z"
+  "updatedAt": "2026-09-26T16:28:40.634Z"
 },
 {
   "id": "99bc1f91-3df3-47ee-b8d6-5062123a05ee",
@@ -53839,7 +55022,7 @@
   },
   "contentHash": "eeb38d89a97e521d961302a5b2492b54c4bb72e23cb1287b99dfa8ea36a8da25",
   "createdAt": "2026-09-25T05:27:03.349Z",
-  "updatedAt": "2026-09-26T05:33:08.859Z"
+  "updatedAt": "2026-09-26T16:28:40.070Z"
 },
 {
   "id": "c8743926-76b3-421d-9349-f2a4272e850d",
@@ -54292,7 +55475,7 @@
   },
   "contentHash": "248891bd117d98e83423bb988a8bb937f65a10d15d998dd31a0181bd590f4316",
   "createdAt": "2026-09-25T05:27:03.191Z",
-  "updatedAt": "2026-09-26T05:33:08.644Z"
+  "updatedAt": "2026-09-26T16:28:39.978Z"
 },
 {
   "id": "a8065760-572a-4acb-b8d2-6e8b93fb3dfb",
@@ -54456,7 +55639,7 @@
       "github"
     ]
   },
-  "contentHash": "d57d189098b018d5065128bb7e3ab921e0f1bc13bd53986686fddc449ef2b5df",
+  "contentHash": "8764fc17daa70396cfce15e70672fb202444be13077af17005b311661e03901d",
   "createdAt": "2026-09-24T05:31:48.153Z",
   "updatedAt": "2026-09-26T05:35:32.728Z"
 },
@@ -54572,7 +55755,7 @@
   },
   "contentHash": "f37cfd9843ad0e612698f4f8cfaf39ba7fb4bc72f0f0543cb09cd32a4483d7e9",
   "createdAt": "2026-07-12T00:08:48.021Z",
-  "updatedAt": "2026-09-26T05:34:57.990Z"
+  "updatedAt": "2026-09-26T16:30:29.318Z"
 },
 {
   "id": "0d7523a2-5a5f-49d0-9415-754dd17ff22a",
@@ -55048,7 +56231,7 @@
   },
   "contentHash": "d2909abb174ae5a5c3c9b859b2a6c2b6560913f1934f65f70a0e6c46a3009544",
   "createdAt": "2026-09-25T05:27:03.215Z",
-  "updatedAt": "2026-09-26T05:33:08.666Z"
+  "updatedAt": "2026-09-26T16:28:39.991Z"
 },
 {
   "id": "62a347d2-8bd3-4e93-a032-ab28d976e2d0",
@@ -55240,7 +56423,7 @@
   },
   "contentHash": "0ea662f55f1b55598893859646e626da509f4ef31c51058333b41308f14b2ae2",
   "createdAt": "2026-07-12T05:57:55.678Z",
-  "updatedAt": "2026-09-26T05:33:15.728Z"
+  "updatedAt": "2026-09-26T16:28:47.972Z"
 },
 {
   "id": "936a2412-1df6-4bcd-88de-a568b3f40e42",
@@ -55288,7 +56471,7 @@
   },
   "contentHash": "1d3b7ae5f6763cfe4247ba662c039aba45ce58c2a2788c541c16748e0c788d50",
   "createdAt": "2026-07-11T16:30:01.213Z",
-  "updatedAt": "2026-09-26T05:33:08.505Z"
+  "updatedAt": "2026-09-26T16:28:39.443Z"
 },
 {
   "id": "09e68312-46cd-41d7-8d89-ea7958ad1074",
@@ -55398,7 +56581,7 @@
   },
   "contentHash": "d097a22c1b195b956cb2c5746f4a147892c96ec7f63ede3f190d5325285afce7",
   "createdAt": "2026-09-24T05:29:23.719Z",
-  "updatedAt": "2026-09-26T05:33:08.199Z"
+  "updatedAt": "2026-09-26T16:28:39.004Z"
 },
 {
   "id": "64319633-cc95-4a2c-9e9f-5c81fded7ec3",
@@ -55608,7 +56791,7 @@
   },
   "contentHash": "34986065805c733ecfe17dc58bd7c28b5ecc749321176c0616b34d94b5f8b587",
   "createdAt": "2026-07-12T05:59:31.226Z",
-  "updatedAt": "2026-09-26T05:34:07.048Z"
+  "updatedAt": "2026-09-26T16:29:42.044Z"
 },
 {
   "id": "fda326e7-5f92-4175-a5f5-042fbeb61300",
@@ -55617,7 +56800,7 @@
   "canonicalUrl": "https://www.openrobotics.org/blog/2025/12/8/new-build-farm-backer-program-amp-infra-team-swagnbsp",
   "urlHash": "f31961c46856258843ae85845b40a04282c41e4bfb656928c7d053c72fed7c5c",
   "title": "New Build Farm Backer Program & Infra Team Swag&nbsp;",
-  "summary": "Ever wonder how sudo apt install just works for ROS? That’s the magic of the OSRF Build Farm! This beast serves over half a billion packages a year, saving us all from the headache of compiling from source. But maintaining this critical utility takes massive server power and a dedicated team of engineers. To keep the.…",
+  "summary": "Ever wonder how sudo apt install just works for ROS? That’s the magic of the OSRF Build Farm! This beast serves over half a billion packages a year, saving us all from the headache of compiling from source. But maintaining this critical utility takes massive server power and a dedicated team of engineers. To keep the…",
   "author": null,
   "language": "en",
   "publishedAt": "2025-12-10T17:13:25.000Z",
@@ -55628,9 +56811,9 @@
       "rss"
     ]
   },
-  "contentHash": "b70e47c17d963586f0360d41340643183f048b1b81ab92df30bae349cb967f9c",
+  "contentHash": "301bddb745fed5902dabeff02fe04ba56253c8cd1c64c597c15a19970e7d6c6b",
   "createdAt": "2026-07-12T05:58:10.950Z",
-  "updatedAt": "2026-09-25T17:19:02.173Z"
+  "updatedAt": "2026-09-26T16:30:26.838Z"
 },
 {
   "id": "b284a53f-0217-4738-a3fd-97ab0508dba3",
@@ -56110,7 +57293,7 @@
   },
   "contentHash": "407b23a2e9884d919e2fe127c58f23fdab0cc51a8aa8eb5e1f4637561fa37b35",
   "createdAt": "2026-09-24T17:18:34.665Z",
-  "updatedAt": "2026-09-26T05:35:06.007Z"
+  "updatedAt": "2026-09-26T16:30:34.480Z"
 },
 {
   "id": "0938905f-5022-4776-ad28-10e57b7c941b",
@@ -56132,7 +57315,7 @@
   },
   "contentHash": "2e16bcaf32060715c6e3e6a0c5a6677ebde0f6de435ff6fd1bc7078761cfefac",
   "createdAt": "2026-09-25T05:27:03.390Z",
-  "updatedAt": "2026-09-26T05:33:08.789Z"
+  "updatedAt": "2026-09-26T16:28:40.173Z"
 },
 {
   "id": "36db0048-4990-4b43-b797-49e2e2ee2028",
@@ -56154,7 +57337,7 @@
   },
   "contentHash": "9a9ee5203f8aa2942ccab50ec77e5cbf3f37aa62ccc2c2607fcc28f0ab9b6c32",
   "createdAt": "2026-09-25T05:27:03.244Z",
-  "updatedAt": "2026-09-26T05:33:08.777Z"
+  "updatedAt": "2026-09-26T16:28:40.163Z"
 },
 {
   "id": "817513e9-8d6c-4c1a-a049-02a2f5da75c8",
@@ -56372,7 +57555,7 @@
   },
   "contentHash": "1cc16dcc5da4399d380c35bbe28cb849c0fa442045d38f6bec22d4974b93a158",
   "createdAt": "2026-07-12T05:56:33.173Z",
-  "updatedAt": "2026-09-26T05:33:09.217Z"
+  "updatedAt": "2026-09-26T16:28:40.895Z"
 },
 {
   "id": "76dc6203-4f5b-42eb-bdcc-5c05ba724bf2",
@@ -56444,7 +57627,7 @@
       "github"
     ]
   },
-  "contentHash": "486bb9fe7e74b4c9f9fe7d17eac195b92107fee1a78c6b4657c350c2a921bf09",
+  "contentHash": "f5c01071f0475b334b112031bdf84842539d72690674ac34b4b076d956607b79",
   "createdAt": "2026-09-24T17:16:51.788Z",
   "updatedAt": "2026-09-26T05:33:15.176Z"
 },
@@ -56677,7 +57860,7 @@
   },
   "contentHash": "97b7b0826beda9a5e837ed2ce8c9157404f4531900e4f49d127a3b8573043221",
   "createdAt": "2026-09-17T05:28:32.709Z",
-  "updatedAt": "2026-09-26T05:33:08.219Z"
+  "updatedAt": "2026-09-26T16:28:39.022Z"
 },
 {
   "id": "b54c0afd-7df7-4be8-bf4c-f70e628d597d",
@@ -56747,7 +57930,7 @@
   },
   "contentHash": "f8cf3e3de4ca37e48753bcf76e7d0b7169c90aafcf5b43ac64c5482010226385",
   "createdAt": "2026-09-16T15:40:52.093Z",
-  "updatedAt": "2026-09-26T05:33:08.915Z"
+  "updatedAt": "2026-09-26T16:28:39.714Z"
 },
 {
   "id": "355d3705-c35c-458f-a79a-caf68ec174d2",
@@ -56965,7 +58148,7 @@
   },
   "contentHash": "040e7f07a0d4898fe51c1fba444e04f6fb7e16ad815139c8921ca0ebc34d3d78",
   "createdAt": "2026-09-16T15:40:55.685Z",
-  "updatedAt": "2026-09-26T05:33:11.722Z"
+  "updatedAt": "2026-09-26T16:28:43.440Z"
 },
 {
   "id": "c824d402-63e5-47fd-8721-01dbba8fe0d4",
@@ -57943,7 +59126,7 @@
   },
   "contentHash": "0ef5085defa7e4903cc5fc860c995cb5720f14896cff6e097eaadf06a506ce70",
   "createdAt": "2026-07-16T14:26:25.072Z",
-  "updatedAt": "2026-09-26T05:33:09.152Z"
+  "updatedAt": "2026-09-26T16:28:40.645Z"
 },
 {
   "id": "7995a8bd-0544-42e5-8dd3-41ea43044aed",
@@ -58087,7 +59270,7 @@
   },
   "contentHash": "b1840c6ce13cc68f30a7e1d62df22630473e601bfe56d53ea5b998a6c986c517",
   "createdAt": "2026-09-25T05:27:03.403Z",
-  "updatedAt": "2026-09-26T05:33:08.801Z"
+  "updatedAt": "2026-09-26T16:28:40.236Z"
 },
 {
   "id": "35376eb9-1ad4-4ef8-a9fe-c1edf48d779d",
@@ -58293,7 +59476,7 @@
   },
   "contentHash": "01a6df3f0576e60cb585ae46baa8d25a8b853c0ed05f30249a486fc5c69cd0eb",
   "createdAt": "2026-07-13T15:38:17.740Z",
-  "updatedAt": "2026-09-26T05:37:08.832Z"
+  "updatedAt": "2026-09-26T16:32:39.737Z"
 },
 {
   "id": "0551910f-e4e5-4f4d-9b96-254acf2cf99e",
@@ -58387,7 +59570,7 @@
       "github"
     ]
   },
-  "contentHash": "a3a39bbaf1547cfda255eb1254c6a8595791864c096a8aa6e6818abc489ca52c",
+  "contentHash": "b04a56f35e7bbe0f26696d99b3c9f47a2b18c0e94b9f72772a2614f4463db3a3",
   "createdAt": "2026-07-12T05:59:18.054Z",
   "updatedAt": "2026-09-26T05:33:54.857Z"
 },
@@ -58946,7 +60129,7 @@
   },
   "contentHash": "8cf3c1cdb1a6813e0586e66dfe0f209afc31859a834bc40894f7b800100d1077",
   "createdAt": "2026-09-17T05:28:39.969Z",
-  "updatedAt": "2026-09-26T05:33:15.626Z"
+  "updatedAt": "2026-09-26T16:28:47.019Z"
 },
 {
   "id": "adf8d7d3-a85b-4e0f-8595-fb742a2e3147",
@@ -59314,7 +60497,7 @@
   },
   "contentHash": "883f44569b33dfa7e2862183c36ec84646b4f317573c2324fef3f2fff71be310",
   "createdAt": "2026-09-16T15:42:40.525Z",
-  "updatedAt": "2026-09-26T05:34:57.264Z"
+  "updatedAt": "2026-09-26T16:30:28.513Z"
 },
 {
   "id": "0ae539aa-39ce-4527-84ad-2b354a9f4b8d",
@@ -59656,7 +60839,7 @@
   },
   "contentHash": "9c98e78223df29a26e76ddb74910d5512b83974b235a04e75221b0dcdddfdc72",
   "createdAt": "2026-07-12T05:56:33.183Z",
-  "updatedAt": "2026-09-26T05:33:09.227Z"
+  "updatedAt": "2026-09-26T16:28:40.955Z"
 },
 {
   "id": "558a8a2d-0459-4b64-8402-390603096b76",
@@ -59744,7 +60927,7 @@
   },
   "contentHash": "afc0db09aa2ae61678e5f32d374612678ebb8577193e8f793b7ffb228b596c53",
   "createdAt": "2026-09-16T15:40:52.095Z",
-  "updatedAt": "2026-09-26T05:33:08.916Z"
+  "updatedAt": "2026-09-26T16:28:39.715Z"
 },
 {
   "id": "5a2d3aff-1e91-45f3-86f0-ecbd872e5b90",
@@ -59861,7 +61044,7 @@
   "updatedAt": "2026-08-03T15:22:49.093Z"
 },
 {
-  "id": "ce1fdbc0-af00-4e45-b26a-aec919bae29e",
+  "id": "08ba9128-a9b2-4f71-844b-222865704ca4",
   "sourceSlug": "arxiv-ai",
   "externalId": "simplefold-protein-folding",
   "canonicalUrl": "https://arxiv.org/abs/2509.18480",
@@ -59889,8 +61072,8 @@
     ]
   },
   "contentHash": "03a30e95a822bbf24def9d87181b7ac1c837d18f18113fd9b27f93d2752cad59",
-  "createdAt": "2026-09-26T05:32:45.002Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.424Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "5818a0c8-b47f-4e97-9f20-ca778ae0c810",
@@ -60803,9 +61986,9 @@
       "github"
     ]
   },
-  "contentHash": "9a759dc0d82e8c7ff8a165923e8e0848cf0fa7b1413a8a91fc954c71584189e1",
+  "contentHash": "c406316b7ab509b8c5f9ec6cb40ad71e780025e770007dad18fc2e92a81134a6",
   "createdAt": "2026-07-13T15:38:07.564Z",
-  "updatedAt": "2026-09-25T17:20:44.986Z"
+  "updatedAt": "2026-09-26T16:32:09.917Z"
 },
 {
   "id": "91de0836-bcc9-432e-96d3-a082ac2ce88c",
@@ -61103,7 +62286,7 @@
   },
   "contentHash": "6ccc72b10430bd99c1673bc05a38f845deeb51264a50e1da97164a1137542a26",
   "createdAt": "2026-09-23T17:09:15.342Z",
-  "updatedAt": "2026-09-26T05:33:08.526Z"
+  "updatedAt": "2026-09-26T16:28:39.575Z"
 },
 {
   "id": "a18ef373-e1ee-4da9-933e-50170ffa26b1",
@@ -61191,7 +62374,7 @@
   },
   "contentHash": "8f1d314c9f421193720a12b6014bf98a5730401d9f3296253d22643c278a1445",
   "createdAt": "2026-09-16T15:42:40.523Z",
-  "updatedAt": "2026-09-26T05:34:57.263Z"
+  "updatedAt": "2026-09-26T16:30:28.512Z"
 },
 {
   "id": "91b66e54-43f1-44e8-a8c5-891131095e65",
@@ -61213,7 +62396,7 @@
   },
   "contentHash": "6037e3d2726fd78af8f4368f2e5c9485fb0638cc2bc76c8252461530240aa3ad",
   "createdAt": "2026-09-18T16:31:07.788Z",
-  "updatedAt": "2026-09-26T05:34:57.256Z"
+  "updatedAt": "2026-09-26T16:30:28.508Z"
 },
 {
   "id": "ac2d3388-9e53-4966-b905-a0e08685d89b",
@@ -61279,7 +62462,7 @@
   },
   "contentHash": "993001d54f85a224e442492d18bea2dd01f13e4deaee02b5dfa4765653c4d53f",
   "createdAt": "2026-09-16T15:44:59.261Z",
-  "updatedAt": "2026-09-26T05:37:09.582Z"
+  "updatedAt": "2026-09-26T16:32:40.916Z"
 },
 {
   "id": "553a53f1-43a2-4e0e-a860-789c59f433a9",
@@ -61825,7 +63008,7 @@
   },
   "contentHash": "8caf756b733f067940cc5956cd37379dcaf66520892e53cb913e46c61252920f",
   "createdAt": "2026-07-12T00:23:57.234Z",
-  "updatedAt": "2026-09-26T05:33:08.927Z"
+  "updatedAt": "2026-09-26T16:28:39.724Z"
 },
 {
   "id": "dfec5d2a-627b-4fe7-9415-24b2bfa839f9",
@@ -61891,7 +63074,7 @@
   },
   "contentHash": "f580be1d90daa24a61cbb536a2cdde1a360e5369e89188c9060699dfd46a2ca6",
   "createdAt": "2026-09-25T05:27:03.402Z",
-  "updatedAt": "2026-09-26T05:33:08.800Z"
+  "updatedAt": "2026-09-26T16:28:40.236Z"
 },
 {
   "id": "5cfd56e9-dae1-4c37-b73b-9252959f2c33",
@@ -61982,7 +63165,7 @@
   "updatedAt": "2026-07-23T04:01:43.264Z"
 },
 {
-  "id": "2a470faf-bf89-451b-9baa-b4677122c3f0",
+  "id": "aaea1d72-628b-48ef-b2ed-cd02219df95e",
   "sourceSlug": "arxiv-ai",
   "externalId": "compete-then-collaborate-multi-agent",
   "canonicalUrl": "https://arxiv.org/abs/2607.08255",
@@ -62009,8 +63192,8 @@
     ]
   },
   "contentHash": "2c4dac752ca2340b03632aed8f08be7be291538b3aac962a9be6959563e16930",
-  "createdAt": "2026-09-26T05:32:44.675Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.154Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "aa8c699c-77dd-49f1-a2b8-dc2dbce764f3",
@@ -62513,7 +63696,7 @@
   "updatedAt": "2026-08-08T02:46:58.730Z"
 },
 {
-  "id": "3dddf1ac-8344-4374-9294-46f054ac5f10",
+  "id": "5020fe14-91da-4df1-ae1a-154955c09cbf",
   "sourceSlug": "worldlabs",
   "externalId": "world-model-functional-taxonomy",
   "canonicalUrl": "https://www.worldlabs.ai/blog",
@@ -62540,8 +63723,8 @@
     ]
   },
   "contentHash": "1efabc58f04d86efa550c21927155e551585f9e1bfc821dfbbd3bb036283f9e4",
-  "createdAt": "2026-09-26T05:32:45.103Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.525Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "88de9765-c73b-4285-93ff-8df8254d99b0",
@@ -62585,7 +63768,7 @@
   },
   "contentHash": "8772a832a2c65fbe529658d27393c0fe5216c1d7047c3bd82d8b94a7239e8e75",
   "createdAt": "2026-09-16T15:42:46.657Z",
-  "updatedAt": "2026-09-26T05:35:00.839Z"
+  "updatedAt": "2026-09-26T16:30:32.271Z"
 },
 {
   "id": "a842fbce-68bb-49d0-a98c-9a9ea21e251c",
@@ -62655,7 +63838,7 @@
   },
   "contentHash": "1fbe0f35ce1ac88016017ccdad2876efd2c959e0c607a2639e6e3cc765cd2dd8",
   "createdAt": "2026-09-17T17:06:47.404Z",
-  "updatedAt": "2026-09-26T05:34:57.055Z"
+  "updatedAt": "2026-09-26T16:30:27.762Z"
 },
 {
   "id": "be74fb70-ff7c-4821-8e76-c8c3a5cdc80a",
@@ -63288,7 +64471,7 @@
       "github"
     ]
   },
-  "contentHash": "33cb099fb819e4ad110b57e9f8d5abd969b8f5a8a8f299e33a396b9e8fafb2f5",
+  "contentHash": "c8aba38f787769aeface61b711990fc3beeb3516be7ab2a11baaa7070a525e32",
   "createdAt": "2026-09-26T05:33:13.958Z",
   "updatedAt": "2026-09-26T05:33:13.958Z"
 },
@@ -63504,7 +64687,7 @@
   },
   "contentHash": "d5dab8ae7de50c3994e775e0bd797b7fe79abdc64500e0c41de16b18e6fd4171",
   "createdAt": "2026-09-16T15:44:58.560Z",
-  "updatedAt": "2026-09-26T05:37:11.014Z"
+  "updatedAt": "2026-09-26T16:32:36.076Z"
 },
 {
   "id": "1ef5de44-0ce1-453a-897c-bb4c851fa2de",
@@ -63618,7 +64801,7 @@
   },
   "contentHash": "40abd9e4ba91602c650cde91aec0dd418180271ba477356df501cf6f7572f88f",
   "createdAt": "2026-09-22T05:27:46.926Z",
-  "updatedAt": "2026-09-26T05:34:57.255Z"
+  "updatedAt": "2026-09-26T16:30:28.508Z"
 },
 {
   "id": "d6f0f168-582f-477d-b178-652eb77a55d5",
@@ -64250,7 +65433,7 @@
   },
   "contentHash": "de28032cb3791958eec6d1f89bc1685a42b0c75c01a4125112a0db19c603c04c",
   "createdAt": "2026-07-13T14:27:03.456Z",
-  "updatedAt": "2026-09-26T05:34:57.695Z"
+  "updatedAt": "2026-09-26T16:30:29.043Z"
 },
 {
   "id": "f3e8819e-974d-41c2-b9b0-164635d1bcd3",
@@ -64423,7 +65606,7 @@
   "updatedAt": "2026-07-31T04:15:57.219Z"
 },
 {
-  "id": "b05ac549-3f11-4009-b79f-da4cd0407ebe",
+  "id": "806e3c97-85df-4c8e-8b82-f7da865c8deb",
   "sourceSlug": "arxiv-ai",
   "externalId": "llm-agents-self-report-simulation",
   "canonicalUrl": "https://arxiv.org/abs/2411.10109",
@@ -64451,8 +65634,8 @@
     ]
   },
   "contentHash": "4ba053fa6bb3e677cc58ec03a56c60bf80cdc3e534e5b27c3056389eb2380fb7",
-  "createdAt": "2026-09-26T05:32:44.933Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.366Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "732367fe-4c8a-47f7-9b6d-3aaeb9885b03",
@@ -64667,9 +65850,9 @@
       "rss"
     ]
   },
-  "contentHash": "5dcc01889efd4f4ff27cc728b968279c37b71ba999401ae7e13757fb0359d93b",
+  "contentHash": "8a78857d0342e5a0c33752c4631a12861654559d26ffabc7f63bfa17b1934d30",
   "createdAt": "2026-07-13T02:12:33.097Z",
-  "updatedAt": "2026-09-22T05:27:47.272Z"
+  "updatedAt": "2026-09-26T16:30:28.895Z"
 },
 {
   "id": "c3826b10-c06a-47d9-8921-46e879c78701",
@@ -64857,7 +66040,7 @@
   },
   "contentHash": "739c7895e8d554c0ebe4dacaf035f26c685893f101cb728f5988fe47232d9a36",
   "createdAt": "2026-07-13T15:38:20.072Z",
-  "updatedAt": "2026-09-26T05:37:09.588Z"
+  "updatedAt": "2026-09-26T16:32:40.922Z"
 },
 {
   "id": "ab7782e8-e6ab-4925-937f-61aa9ea7ec07",
@@ -65532,7 +66715,7 @@
   },
   "contentHash": "b8d453e5413e3d3e231a7ef0ca574aff765ea97f5cfbbf6cda82eb26cc36fe35",
   "createdAt": "2026-07-13T14:27:03.460Z",
-  "updatedAt": "2026-09-26T05:34:57.701Z"
+  "updatedAt": "2026-09-26T16:30:29.047Z"
 },
 {
   "id": "f2cea91c-d39c-43b3-89b3-8d4f02e98b20",
@@ -65650,7 +66833,7 @@
   },
   "contentHash": "3c7af2b5e566ba20e7eeee67e97bac0e7fdd6043c672b3b1032b54ece6c77fb3",
   "createdAt": "2026-07-13T15:38:17.739Z",
-  "updatedAt": "2026-09-26T05:37:08.831Z"
+  "updatedAt": "2026-09-26T16:32:39.736Z"
 },
 {
   "id": "acdd1f50-768d-4e64-bc4f-6ea135c7b6be",
@@ -65844,7 +67027,7 @@
       "github"
     ]
   },
-  "contentHash": "b6e020d24b0926f4af133864fe2b469a91a837da011c594f0febeb1cc66ea4c5",
+  "contentHash": "3113a2cd5a29f8100d2e9c06b02c86ea27dee8ada5feba73ccbc7309d7955e3d",
   "createdAt": "2026-08-15T13:05:24.506Z",
   "updatedAt": "2026-09-26T05:36:47.278Z"
 },
@@ -66430,6 +67613,28 @@
   "updatedAt": "2026-07-26T04:20:57.833Z"
 },
 {
+  "id": "33e735ed-1e76-48c0-8a29-6085b45eb2c2",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49857463",
+  "canonicalUrl": "https://andrej.sh/posts/ai-wont-take-your-career",
+  "urlHash": "f8f06de9604c80899b3de375b8614a4e608f296cbccda5f57c7d8b5ba9d6b9fb",
+  "title": "AI won't take your career",
+  "summary": "Article URL: https://andrej.sh/posts/ai-wont-take-your-career Comments URL: https://news.ycombinator.com/item?id=49857463 Points: 2 # Comments: 0",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-26T15:26:35.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "de1867f2b2a8683225da5a403a4761b46732c5fae69bdd484cf0e78e9e37010e",
+  "createdAt": "2026-09-26T16:30:30.545Z",
+  "updatedAt": "2026-09-26T16:30:30.545Z"
+},
+{
   "id": "3df6d729-547f-49d7-8e77-8f25d874061b",
   "sourceSlug": "braintrust-sdk-releases",
   "externalId": "tag:github.com,2008:Repository/667566997/braintrust@3.13.0",
@@ -66596,7 +67801,7 @@
   },
   "contentHash": "9b7bdc274307b7a99ba8fb12b96390fd451950463962e6f4e85e8dbece37a9c7",
   "createdAt": "2026-09-23T05:14:32.368Z",
-  "updatedAt": "2026-09-26T05:33:08.206Z"
+  "updatedAt": "2026-09-26T16:28:39.010Z"
 },
 {
   "id": "55136381-6d76-4637-8328-305fe9799e7c",
@@ -66622,10 +67827,10 @@
   },
   "contentHash": "89649cc46d3b4adff7676ac848a5780a739c574cda1e0ff54d2364f3581a3d23",
   "createdAt": "2026-09-16T15:43:28.825Z",
-  "updatedAt": "2026-09-26T05:35:35.367Z"
+  "updatedAt": "2026-09-26T16:31:12.234Z"
 },
 {
-  "id": "e163e301-0e8b-4f92-a581-d67f7d66d37d",
+  "id": "1ef232b3-d1fd-4c87-bb8d-2c86f93287f4",
   "sourceSlug": "arxiv-ai",
   "externalId": "agentic-memory-unified-management",
   "canonicalUrl": "https://arxiv.org/abs/2601.01885",
@@ -66652,8 +67857,8 @@
     ]
   },
   "contentHash": "97a568eb025d3845700f007864f87a7348a262f722fd922f3fd6b1117169a93e",
-  "createdAt": "2026-09-26T05:32:45.024Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.438Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "a0d2f41e-3a4c-4b57-91f8-1e6b1469210c",
@@ -66878,7 +68083,7 @@
   },
   "contentHash": "3f6c088939de88fce31ca5bd2af1807975d6af64bdc4ccc4e0a1796df550c6c3",
   "createdAt": "2026-07-13T14:27:03.461Z",
-  "updatedAt": "2026-09-26T05:34:57.704Z"
+  "updatedAt": "2026-09-26T16:30:29.050Z"
 },
 {
   "id": "96be8a74-20b0-4885-af81-db0fb2d96d98",
@@ -67535,7 +68740,7 @@
   },
   "contentHash": "c6c874e77d85006a86e1786e6ff259676be1474c1c40ec2e3312d5fe83960f11",
   "createdAt": "2026-09-24T17:18:37.244Z",
-  "updatedAt": "2026-09-26T05:35:00.199Z"
+  "updatedAt": "2026-09-26T16:30:32.070Z"
 },
 {
   "id": "15852f45-e0f6-43db-b3ba-61504510ad73",
@@ -67579,7 +68784,7 @@
   },
   "contentHash": "870bdc6639e608f5044e81923f6fc0fd79e224cb8327ecae52720d9c5ccdbc69",
   "createdAt": "2026-07-21T14:31:05.498Z",
-  "updatedAt": "2026-09-26T05:37:11.164Z"
+  "updatedAt": "2026-09-26T16:32:42.664Z"
 },
 {
   "id": "079d2af7-5e80-49fe-965d-876641bad52f",
@@ -67723,7 +68928,7 @@
   },
   "contentHash": "10bfe6f3d115550826fbe077e3cd7b71b2f80143e7b841d834f47467b6f0440b",
   "createdAt": "2026-09-16T15:42:43.439Z",
-  "updatedAt": "2026-09-26T05:37:19.985Z"
+  "updatedAt": "2026-09-26T16:32:49.247Z"
 },
 {
   "id": "7187eaba-b029-4e88-9f9b-e2ce2e4ba90b",
@@ -68549,7 +69754,7 @@
   },
   "contentHash": "b80bf8b61f9191b94d3baa467af55dca1756af782c2b790cca2bc6c7719b2e64",
   "createdAt": "2026-07-12T05:58:06.782Z",
-  "updatedAt": "2026-09-26T05:34:59.762Z"
+  "updatedAt": "2026-09-26T16:30:30.824Z"
 },
 {
   "id": "05880f84-7e1b-4e35-93c7-ac601aaac6fc",
@@ -68689,7 +69894,7 @@
   },
   "contentHash": "b2111f075f5664aa381c81e20e25264818dd25c17efd222ed39ee2826b6fc808",
   "createdAt": "2026-07-13T15:38:17.742Z",
-  "updatedAt": "2026-09-26T05:37:08.834Z"
+  "updatedAt": "2026-09-26T16:32:39.738Z"
 },
 {
   "id": "47ad8d68-c5e6-4384-9a7c-50eb15deebe9",
@@ -68917,7 +70122,7 @@
   },
   "contentHash": "dcfd4e369d3c4050c52f4e6dfb665080e1036ce16f24d33389b72302c266b22f",
   "createdAt": "2026-09-25T05:27:03.351Z",
-  "updatedAt": "2026-09-26T05:33:08.862Z"
+  "updatedAt": "2026-09-26T16:28:40.072Z"
 },
 {
   "id": "d8de74b5-3654-4848-b5cd-98fbde8c0b78",
@@ -69428,7 +70633,7 @@
   "updatedAt": "2026-08-04T14:42:19.742Z"
 },
 {
-  "id": "38a23be1-d5a9-438c-85f9-eb749c914b77",
+  "id": "a19e8ba8-ae4f-4638-93f6-1e301b39d36a",
   "sourceSlug": "arxiv-ai",
   "externalId": "falcon-series-open-language-models",
   "canonicalUrl": "https://arxiv.org/abs/2311.16867",
@@ -69456,8 +70661,8 @@
     ]
   },
   "contentHash": "08d105bcb6c9eef0c9fe6d5908a872d4466d618ecca1f4f13a669ae62454f5dc",
-  "createdAt": "2026-09-26T05:32:44.856Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.308Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "f44ff92a-f1dd-494e-b958-8d6f18ebb722",
@@ -69501,7 +70706,7 @@
   },
   "contentHash": "a0a628c783d563ac29ff5ed062279da37a6d9b926c531aa896501f4c4ea19260",
   "createdAt": "2026-09-25T05:27:03.328Z",
-  "updatedAt": "2026-09-26T05:33:08.846Z"
+  "updatedAt": "2026-09-26T16:28:40.061Z"
 },
 {
   "id": "308f4993-8979-42dc-8188-51733def81bd",
@@ -70312,7 +71517,29 @@
   },
   "contentHash": "f7d180971f9efb015ba80d5f1872dc3b835ecb9f037880f788cb8ebe3c4e0a47",
   "createdAt": "2026-09-19T15:58:06.082Z",
-  "updatedAt": "2026-09-26T05:34:58.305Z"
+  "updatedAt": "2026-09-26T16:30:29.937Z"
+},
+{
+  "id": "c56e9f27-b2a5-4f30-baba-ab300df141b6",
+  "sourceSlug": "hackernews-ai",
+  "externalId": "https://news.ycombinator.com/item?id=49856147",
+  "canonicalUrl": "https://www.unite.ai/meta-expands-private-processing-confidential-computing-to-ai-glasses",
+  "urlHash": "fb11d1942771a58a6141c86fdd4063255083b0f92393ffab498b641090498373",
+  "title": "Meta Expands Private Processing Confidential Computing to AI Glasses",
+  "summary": "Article URL: https://www.unite.ai/meta-expands-private-processing-confidential-computing-to-ai-glasses/ Comments URL: https://news.ycombinator.com/item?id=49856147 Points: 1 # Comments: 0",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-26T13:05:25.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "89d953319d26daef572f7d7de38476d58b66caa87ec25c2ff63a9655fc4d9c02",
+  "createdAt": "2026-09-26T16:30:30.556Z",
+  "updatedAt": "2026-09-26T16:30:30.556Z"
 },
 {
   "id": "667a8e51-b6c4-44cf-9e02-04757c1ea16a",
@@ -70736,7 +71963,7 @@
   },
   "contentHash": "b4f565a511292e69d10986e4961d11aea5bd4bf71648f6efdb5af77703ad2f34",
   "createdAt": "2026-07-12T06:00:08.482Z",
-  "updatedAt": "2026-09-26T05:34:55.196Z"
+  "updatedAt": "2026-09-26T16:30:34.022Z"
 },
 {
   "id": "4d9df212-7e21-4058-a54e-fc2ec1f44a2c",
@@ -72164,7 +73391,7 @@
   },
   "contentHash": "bbfbd3cf8c6efcfb36ddbddac2f051872c4145d2e7b399bf59a717693dbbf3fa",
   "createdAt": "2026-09-16T15:43:52.410Z",
-  "updatedAt": "2026-09-26T05:36:09.005Z"
+  "updatedAt": "2026-09-26T16:31:41.977Z"
 },
 {
   "id": "41c185af-b1ad-4339-b8c2-dc5e5900e1ba",
@@ -72230,7 +73457,7 @@
   },
   "contentHash": "fbf8e7472223cd82b9c61aa3854b5ce718f9597eacd247da3671f499dc1407ab",
   "createdAt": "2026-07-13T14:27:03.453Z",
-  "updatedAt": "2026-09-26T05:34:57.676Z"
+  "updatedAt": "2026-09-26T16:30:29.040Z"
 },
 {
   "id": "20541344-1327-4853-9ad5-b6d8b586333d",
@@ -72373,7 +73600,7 @@
   "updatedAt": "2026-08-16T13:06:40.882Z"
 },
 {
-  "id": "bdcd61f3-0424-4a8d-9036-2ba1a03f8808",
+  "id": "e00bd5a2-6da8-4e41-8fcc-f36b8e9c0b45",
   "sourceSlug": "openai",
   "externalId": "openai-io-device-team-merger",
   "canonicalUrl": "https://openai.com/sam-and-jony",
@@ -72401,8 +73628,8 @@
     ]
   },
   "contentHash": "70f8bd8d46fed2567651508ddba04646719c2a8e6df4a6e6b4cf83987e1b878d",
-  "createdAt": "2026-09-26T05:32:44.760Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.222Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "20ddc507-6930-45f0-b632-53d1ceeb6c84",
@@ -72586,7 +73813,7 @@
   },
   "contentHash": "b9bb56f7410926b2bcbcf574a528208dfa9580e1c146e9f17c0ada77fea15457",
   "createdAt": "2026-07-12T06:00:08.484Z",
-  "updatedAt": "2026-09-26T05:34:55.197Z"
+  "updatedAt": "2026-09-26T16:30:34.023Z"
 },
 {
   "id": "2578d59c-b783-41a0-9c6a-6241b4074322",
@@ -72801,7 +74028,7 @@
   },
   "contentHash": "856adf9246ea8381bf13e8dab070bd1bc00d330a9adca04ade3f97340f75f9e0",
   "createdAt": "2026-07-12T05:57:18.841Z",
-  "updatedAt": "2026-09-26T05:33:11.728Z"
+  "updatedAt": "2026-09-26T16:28:43.445Z"
 },
 {
   "id": "69e9fa2f-ed0a-476b-86ab-7cecbad98bf4",
@@ -73202,7 +74429,7 @@
   "updatedAt": "2026-09-22T05:26:03.855Z"
 },
 {
-  "id": "efd1939d-4ff4-46f8-bc1a-ef0826f6b9dd",
+  "id": "fefcaf97-85ef-42b4-8230-c5ad837db3b9",
   "sourceSlug": "arxiv-ai",
   "externalId": "ai-sandboxes-assurance-framework",
   "canonicalUrl": "https://arxiv.org/abs/2606.18532",
@@ -73229,8 +74456,8 @@
     ]
   },
   "contentHash": "f0b458ed670ae2910f2427a486fe94511a5d13367e23cc72069d2841cce2c90e",
-  "createdAt": "2026-09-26T05:32:45.049Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.455Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "b225e4c8-29b0-4222-a976-1dee94f7146b",
@@ -73257,6 +74484,28 @@
   "contentHash": "e48ad08123f619568e5fb527aee4ee487018604ea64bad6c3273b114678d0b0f",
   "createdAt": "2026-07-24T14:15:56.421Z",
   "updatedAt": "2026-07-28T14:42:20.295Z"
+},
+{
+  "id": "3fe15fd5-51f8-4838-a196-12de9617a6f0",
+  "sourceSlug": "the-decoder",
+  "externalId": "https://the-decoder.com/?p=40688",
+  "canonicalUrl": "https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness",
+  "urlHash": "fcd48acf9292eaa2072f0505e8553077780f03358caaeaf08a9ee259cba1fa72",
+  "title": "Nvidia&#039;s SoL-Pi system cuts coding agent token usage nearly in half by optimizing the harness",
+  "summary": "SoL-Pi cuts coding agents' token usage by up to 49 percent with little change in performance by optimizing the control layer between the model and its environment. A research agent tested 152 approaches across more than 3,000 runs to develop the system, though the gains were smaller on other benchmarks. The article Nv…",
+  "author": null,
+  "language": "en",
+  "publishedAt": "2026-09-26T10:30:32.000Z",
+  "category": "industry",
+  "tags": [],
+  "metrics": {
+    "platforms": [
+      "rss"
+    ]
+  },
+  "contentHash": "b1eb7319454273bcb3164f7c1646a8af82d3341f90cd5dba3f27b60fa372f689",
+  "createdAt": "2026-09-26T16:30:34.297Z",
+  "updatedAt": "2026-09-26T16:30:34.297Z"
 },
 {
   "id": "dc34dc7d-41dd-4376-b1a3-2ab20259274d",
@@ -73642,7 +74891,7 @@
   "updatedAt": "2026-07-13T16:27:46.762Z"
 },
 {
-  "id": "a853b89c-ebb4-446a-8899-89836e333ba9",
+  "id": "b58fdb68-6b46-42d1-bdf2-25d83e31bb33",
   "sourceSlug": "openai",
   "externalId": "openai-o1-test-time-reasoning",
   "canonicalUrl": "https://openai.com/index/introducing-openai-o1-preview",
@@ -73669,8 +74918,8 @@
     ]
   },
   "contentHash": "2cd7e7465a20eb51e4667c2b847571ba4554d89c0d050597d63d233a1ade6e4f",
-  "createdAt": "2026-09-26T05:32:44.623Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.113Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "dd3544a4-2902-42b2-9880-ec49c9a5bb2c",
@@ -73877,7 +75126,7 @@
   },
   "contentHash": "7ef8569d21b02e7d1d8b2a40cdd5bd898371dd3c74aa2272d996c21f10d27b09",
   "createdAt": "2026-09-16T15:40:51.718Z",
-  "updatedAt": "2026-09-26T05:33:08.307Z"
+  "updatedAt": "2026-09-26T16:28:39.226Z"
 },
 {
   "id": "b5fb30e9-778b-4c4d-ab8c-07cc7663c709",
@@ -74134,7 +75383,7 @@
   "updatedAt": "2026-07-30T14:37:12.233Z"
 },
 {
-  "id": "18a8fb4a-bce6-4cb5-a02f-eeb9c44dc566",
+  "id": "65fd7234-6081-4a8c-9a8f-c511911bfd56",
   "sourceSlug": "arxiv-ai",
   "externalId": "better-embodied-reasoning-vla",
   "canonicalUrl": "https://arxiv.org/abs/2604.18000",
@@ -74161,8 +75410,8 @@
     ]
   },
   "contentHash": "82667c5f8172a4464499300a45b83d1b70bdce3023bf44b9f3e525eceab2e0e4",
-  "createdAt": "2026-09-26T05:32:45.036Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.445Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "5f3d042d-226d-42db-a29d-a7f7d41a54cc",
@@ -74301,7 +75550,7 @@
   },
   "contentHash": "aa5017b2858c07129236bb2ae090e2828f6e474a061c1a76a8f4bd13526da2a7",
   "createdAt": "2026-08-12T13:53:24.845Z",
-  "updatedAt": "2026-09-26T05:34:58.082Z"
+  "updatedAt": "2026-09-26T16:30:29.598Z"
 },
 {
   "id": "593a224e-8663-40f1-a84d-6848082f4bcb",
@@ -74578,7 +75827,7 @@
   },
   "contentHash": "8b3bb71a6dd4fa03f524328f349f84de56dd27b89a237c85342476d9e0b837f9",
   "createdAt": "2026-07-13T14:27:03.456Z",
-  "updatedAt": "2026-09-26T05:34:57.694Z"
+  "updatedAt": "2026-09-26T16:30:29.042Z"
 },
 {
   "id": "e4d81b98-2a75-49b7-8b85-7488d4fad8e1",
@@ -75078,7 +76327,7 @@
   },
   "contentHash": "c97a701ffc77666513510507b120c848292d0dd81e72f06454e772514b0fb890",
   "createdAt": "2026-07-12T05:58:06.781Z",
-  "updatedAt": "2026-09-26T05:34:59.761Z"
+  "updatedAt": "2026-09-26T16:30:30.822Z"
 },
 {
   "id": "fb6ff4a1-d091-48eb-987e-02a7b2ec1db0",
@@ -75686,7 +76935,7 @@
   },
   "contentHash": "6f2513563c7f622ce907405c0c6ada57907feed4ec88d22a0b16841b2d826dcd",
   "createdAt": "2026-07-15T14:18:14.853Z",
-  "updatedAt": "2026-09-26T05:37:19.992Z"
+  "updatedAt": "2026-09-26T16:32:49.253Z"
 },
 {
   "id": "6e4eadeb-b429-4ed4-86a1-a00dd4eceab7",
@@ -76274,7 +77523,7 @@
   },
   "contentHash": "58cacba4291c3095b4472103144d6a7026022a9f7d72fbde17d6ed87805625a7",
   "createdAt": "2026-08-15T13:03:37.025Z",
-  "updatedAt": "2026-09-26T05:34:57.983Z"
+  "updatedAt": "2026-09-26T16:30:29.311Z"
 },
 {
   "id": "6fe0f0c0-1eb9-4529-919c-34e2cfa8d43d",
@@ -76486,12 +77735,12 @@
       "github"
     ]
   },
-  "contentHash": "cadddaa537edeb16e6b4f67f241eb5fabee7e68695cb5db60979cbbce774a273",
+  "contentHash": "b4ae20e455172a85de60ff696cecdba10d97ef274407df7bb65c56d64ea88e95",
   "createdAt": "2026-09-24T05:29:34.652Z",
   "updatedAt": "2026-09-26T05:33:16.186Z"
 },
 {
-  "id": "9f593b17-9239-4db5-87ea-59ffecdc1872",
+  "id": "8ed1ed3b-9758-4278-a1f9-1b4db21afd2a",
   "sourceSlug": "arxiv-ai",
   "externalId": "refinedweb-dataset-for-falcon-llm",
   "canonicalUrl": "https://arxiv.org/abs/2306.01116",
@@ -76519,8 +77768,8 @@
     ]
   },
   "contentHash": "b7c8bdf139becf3c45f1fac32d1ecd83f9bd62a0270dac6cf85b0519e05f1036",
-  "createdAt": "2026-09-26T05:32:44.823Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.277Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "3060322b-06c2-48b5-be85-fa40f92d42b6",
@@ -76774,7 +78023,7 @@
   },
   "contentHash": "79ecabe099c4208aa9c610a5c7941b20f1d93f799185ad610bf6267062d82edd",
   "createdAt": "2026-09-16T15:40:51.716Z",
-  "updatedAt": "2026-09-26T05:33:08.306Z"
+  "updatedAt": "2026-09-26T16:28:39.225Z"
 },
 {
   "id": "2bc9e8c2-3703-420a-a19f-47cd88bfbf74",
@@ -76888,7 +78137,7 @@
   },
   "contentHash": "7f3b6b6e05dd98f8404109419d7dcc6d94656a9274654d87123445d7e1105df6",
   "createdAt": "2026-07-12T00:08:48.290Z",
-  "updatedAt": "2026-09-26T05:34:58.115Z"
+  "updatedAt": "2026-09-26T16:30:29.679Z"
 },
 {
   "id": "6998cb71-9b02-4155-946a-3a23e9e249f7",
@@ -77927,7 +79176,7 @@
   "canonicalUrl": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.50.0",
   "urlHash": "ff94713669a843bf340987655384ed0610ff42da7d72a55d7433e8cdfc057289",
   "title": "v2.50.0 (2026-09-24)",
-  "summary": "What's Changed ⚠️ Compatibility Notes Ask a DecisionModel which route to take by name, with one label per route by @DouweM in #8733 Make ModelSelectionContext.messages end with the request being routed, and add ModelSelectionContext.prompt by @DouweM in #8737 Replace the decision model's tool-call lean with an opt-in…",
+  "summary": "What's Changed ⚠️ Compatibility Notes Ask a DecisionModel which route to take by name, with one label per route by @DouweM in #8733 Make ModelSelectionContext.messages end with the request being routed, and add ModelSelectionContext.prompt by @DouweM in #8737 Replace the decision model's tool-call lean with an opt-in.…",
   "author": "DouweM",
   "language": "en",
   "publishedAt": "2026-09-25T04:47:15.000Z",
@@ -77942,7 +79191,7 @@
       "github"
     ]
   },
-  "contentHash": "095f2be734915d6e2d593c8122b6c3ae1cddbb13e83c388aa8012eb793a25cbe",
+  "contentHash": "dfc537b79badf490fc1ae9a7c67a9812ad301a80b3fb814352c4659c3aa41c4d",
   "createdAt": "2026-09-25T05:29:23.546Z",
   "updatedAt": "2026-09-26T05:35:27.005Z"
 },
@@ -78153,7 +79402,7 @@
   "updatedAt": "2026-08-05T14:38:21.735Z"
 },
 {
-  "id": "994e07f5-806e-4c27-b756-7f907b266fd0",
+  "id": "ca839d8f-8a4e-44ec-ad8f-2474084b4aac",
   "sourceSlug": "arxiv-ai",
   "externalId": "minicpm-small-language-models-scalable-training",
   "canonicalUrl": "https://arxiv.org/abs/2404.06395",
@@ -78181,8 +79430,8 @@
     ]
   },
   "contentHash": "3f52aaf80f60388be77c3eff4ceebc7e866b940251a0eccdd34ed131f42b0b7a",
-  "createdAt": "2026-09-26T05:32:44.890Z",
-  "updatedAt": "2026-09-26T05:32:44.478Z"
+  "createdAt": "2026-09-26T16:28:20.330Z",
+  "updatedAt": "2026-09-26T16:28:19.989Z"
 },
 {
   "id": "13d903c1-b32f-4eae-a023-481bc379004c",
@@ -78746,7 +79995,7 @@
   },
   "contentHash": "c7991656944dafc88f09bcf358f0c001fe4e2c0bff9cd47c450eeffcbb754e49",
   "createdAt": "2026-09-16T15:40:52.551Z",
-  "updatedAt": "2026-09-26T05:33:09.132Z"
+  "updatedAt": "2026-09-26T16:28:40.629Z"
 },
 {
   "id": "bbd85ca7-b596-47c0-b065-5096ffdba057",
