@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "ecf7630d-989a-44cb-b744-30f21b2df763",
+  "id": "c712c3d0-a221-404c-aa75-4aa10951ab8a",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -17,9 +17,9 @@
       "status": "measured",
       "sampleSize": 137,
       "sampleTarget": 100,
-      "summary": "416 个目录源中 269 个单轮健康、77 个处于隔离观察，只有 137 个既 active 且健康；E2/E3 不等同生产覆盖。",
+      "summary": "417 个目录源中 269 个单轮健康、77 个处于隔离观察，只有 137 个既 active 且健康；E2/E3 不等同生产覆盖。",
       "evidence": {
-        "catalog": 416,
+        "catalog": 417,
         "checked": 414,
         "healthy": 269,
         "degraded": 24,
@@ -58,19 +58,19 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 64,
-      "rawScore": 64,
+      "score": 65,
+      "rawScore": 65,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 20028,
+      "sampleSize": 20266,
       "sampleTarget": 100,
-      "summary": "20028 条信号中 14109 条来自 primary/research/policy，5145 条证据进入事件。",
+      "summary": "20266 条信号中 14315 条来自 primary/research/policy，5286 条证据进入事件。",
       "evidence": {
-        "signals": 20028,
-        "direct": 20028,
-        "primary": 14109,
-        "linkedEvidence": 5145,
+        "signals": 20266,
+        "direct": 20266,
+        "primary": 14315,
+        "linkedEvidence": 5286,
         "linkedSourceCount": 165,
         "aggregatorDebt": 0
       },
@@ -109,14 +109,14 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 764,
+      "sampleSize": 772,
       "sampleTarget": 30,
-      "summary": "764 个公开事件仅 41 个拥有多源证据，739 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "772 个公开事件仅 42 个拥有多源证据，747 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 764,
-        "primaryEvidence": 756,
-        "multiSource": 41,
-        "readyPublished": 739,
+        "published": 772,
+        "primaryEvidence": 764,
+        "multiSource": 42,
+        "readyPublished": 747,
         "averageEvidence": 1.45,
         "averageSelfReportedConfidence": 83
       },
@@ -135,10 +135,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 764,
+        "published": 772,
         "fieldCompleteness": 100,
-        "readyPublished": 739,
-        "multiSource": 41,
+        "readyPublished": 747,
+        "multiSource": 42,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 269,
       "sampleTarget": 100,
-      "summary": "137/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 178 个。",
+      "summary": "137/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 186 个。",
       "evidence": {
         "healthy": 269,
         "freshHealthy": 137,
         "active": 137,
         "activeWithRecentSuccess": 134,
-        "published": 764,
-        "recentPublished": 178
+        "published": 772,
+        "recentPublished": 186
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -222,15 +222,15 @@
       "weight": 8,
       "status": "insufficient_data",
       "sampleSize": 414,
-      "sampleTarget": 416,
+      "sampleTarget": 417,
       "summary": "字段存在只证明策略已声明，不证明策略有效；当前缺少策略版本回放、发布回滚演练和审计抽检。",
       "evidence": {
-        "sources": 416,
+        "sources": 417,
         "checked": 414,
-        "licenseDeclared": 416,
+        "licenseDeclared": 417,
         "restrictedEnabled": 0,
-        "readyEvents": 739,
-        "totalEvents": 4130,
+        "readyEvents": 747,
+        "totalEvents": 4264,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-09-27T17:07:18.286Z",
-  "finishedAt": "2026-09-27T17:07:18.564Z",
+  "startedAt": "2026-09-28T06:01:40.478Z",
+  "finishedAt": "2026-09-28T06:01:40.758Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -743,7 +743,7 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 64,
+      "score": 65,
       "status": "measured",
       "weightedGap": 2,
       "penalties": [],
