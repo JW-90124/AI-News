@@ -1,5 +1,828 @@
 [
 {
+  "id": "dcfaff5e-859d-425b-a5c9-dc17f6153650",
+  "slug": "looping-is-not-reliability-state-bound-evidence-and-typed-revision-contracts-for-agentic-c-2026-07-28",
+  "title": "Looping Is Not Reliability: State-Bound Evidence and Typed Revision Contracts for Agentic Code Repair",
+  "factSummary": "Generate--test--revise loops are common in coding agents, but repetition alone provides no reliability guarantee. We study the gap between finding a correct patch and retaining, verifying, and submitting it. A sealed five-seed study over 30 HumanEval repairs produces 900 three-revision trajectories. Under forced revision, current correctness with current traces falls from 0.820 after one revision to 0.673 after two, although ever-correct rises to 0.847. Two common-state studies use 2,430 branches from identical frozen programs to remove post-treatment risk-set bias. In a prespecified 14B replication, stale traces harm 34/135 correct starts versus 4/135 with current traces, a 22.2-point increase (task-cluster 95\\% CI $[8.9,37.0]$, exact Holm $p=0.0337$). A prospective 540-rollout policy eliminates observed correct-start harm but reduces wrong-start repair and fails its joint criterion. Repository experiments over 24 bugs and four coder stacks expose floor effects and component heterogeneity without Holm-significant effects. We therefore separate admission, preservation, grounded certification, competence, and liveness. We derive an evidence-bound typed loop contract and instantiate its mechanically enforceable subset in a reference implementation that binds verifier evidence to exact code states, preserves verified checkpoints, and emits auditable admission receipts. The implementation is an executable specification and conformance artifact, not evidence of improved repair competence or calibrated verifier dependence.",
+  "summary": "Generate--test--revise loops are common in coding agents, but repetition alone provides no reliability guarantee. We study the gap between finding a correct patch and retaining, verifying, and submitting it. A sealed five-seed study over 30 HumanEval repairs produces 900 three-revision trajectories. Under forced revision, current correctness with current traces falls from 0.820 after one revision to 0.673 after two, although ever-correct rises to 0.847. Two common-state studies use 2,430 branches from identical frozen programs to remove post-treatment risk-set bias. In a prespecified 14B replication, stale traces harm 34/135 correct starts versus 4/135 with current traces, a 22.2-point increase (task-cluster 95\\% CI $[8.9,37.0]$, exact Holm $p=0.0337$). A prospective 540-rollout policy eliminates observed correct-start harm but reduces wrong-start repair and fails its joint criterion. Repository experiments over 24 bugs and four coder stacks expose floor effects and component heterogeneity without Holm-significant effects. We therefore separate admission, preservation, grounded certification, competence, and liveness. We derive an evidence-bound typed loop contract and instantiate its mechanically enforceable subset in a reference implementation that binds verifier evidence to exact code states, preserves verified checkpoints, and emits auditable admission receipts. The implementation is an executable specification and conformance artifact, not evidence of improved repair competence or calibrated verifier dependence.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "looping",
+    "is",
+    "not",
+    "reliability",
+    "state",
+    "bound",
+    "evidence",
+    "typed"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-27T16:05:23.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-28T03:56:55.055Z",
+  "updatedAt": "2026-07-28T03:56:55.095Z"
+},
+{
+  "id": "56737325-48da-4f8a-9772-a9d4c249e0c6",
+  "slug": "loopspec-pipelined-self-speculative-decoding-for-looped-transformers-2026-09-16",
+  "title": "LoopSpec: Pipelined Self-Speculative Decoding for Looped Transformers",
+  "factSummary": "Looped Transformers achieve strong performance with compact parameter sizes by repeatedly applying a shared stack of Transformer blocks across recurrent depths. However, they incur higher decoding latency than standard Transformer models of comparable parameter size because shared weights are accessed at every recurrent depth. To improve decoding efficiency, self-speculative decoding is particularly well suited to Looped Transformers, as their intermediate recurrent states can directly provide draft predictions without an auxiliary draft model. We therefore propose LoopSpec, a training-free self-speculative decoding framework tailored for Looped Transformers. LoopSpec extracts draft tokens from early recurrent states and operates in a pipelined manner, overlapping draft generation of future tokens with target verification of the current token. To improve draft accuracy without excessive compute overhead, we introduce a selective second proposal from deeper recurrent depth while ensuring lossless decoding under both greedy and sampling regimes. Furthermore, we derive the optimal proposal depths in closed form and show the prediction matches measurement. Across reasoning and coding benchmarks, LoopSpec achieves up to 6.83$\\times$ inference speedup across diverse Looped Transformers.",
+  "summary": "Looped Transformers achieve strong performance with compact parameter sizes by repeatedly applying a shared stack of Transformer blocks across recurrent depths. However, they incur higher decoding latency than standard Transformer models of comparable parameter size because shared weights are accessed at every recurrent depth. To improve decoding efficiency, self-speculative decoding is particularly well suited to Looped Transformers, as their intermediate recurrent states can directly provide draft predictions without an auxiliary draft model. We therefore propose LoopSpec, a training-free self-speculative decoding framework tailored for Looped Transformers. LoopSpec extracts draft tokens from early recurrent states and operates in a pipelined manner, overlapping draft generation of future tokens with target verification of the current token. To improve draft accuracy without excessive compute overhead, we introduce a selective second proposal from deeper recurrent depth while ensuring lossless decoding under both greedy and sampling regimes. Furthermore, we derive the optimal proposal depths in closed form and show the prediction matches measurement. Across reasoning and coding benchmarks, LoopSpec achieves up to 6.83$\\times$ inference speedup across diverse Looped Transformers.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "loopspec",
+    "pipelined",
+    "self",
+    "speculative",
+    "decoding",
+    "looped",
+    "transformers"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 76,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T13:43:31.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:09.016Z",
+  "updatedAt": "2026-09-16T15:45:09.040Z"
+},
+{
+  "id": "22735266-f259-4605-a111-c23999deb215",
+  "slug": "lora-based-adaptation-alone-is-not-enough-understanding-the-limits-of-foundation-models-fo-2026-08-11",
+  "title": "LoRA-based Adaptation Alone Is Not Enough: Understanding the Limits of Foundation Models for Face Presentation Attack Detection",
+  "factSummary": "Face presentation attack detection (PAD) aims to reliably detect a wide range of presentation attacks. While PAD methods achieve strong performance within individual datasets, their performance degrades under cross-dataset evaluation. Variations in sensors or lighting conditions can reduce the effectiveness of detectors from near-perfect to nearly random. Foundation models (FMs) have emerged as a promising alternative because typical PAD datasets, such as the MCIO benchmarks (MSU-MFSD, CASIA-FASD, Replay-Attack, and OULU-NPU), are small relative to the scale used for web-based pretraining. However, existing PAD systems primarily focus on CLIP-based foundation models, while overlooking other FMs with different architectures and training procedures. This study addresses this question by systematically evaluating 32 FMs. Zero-shot prompting achieves performance near chance across model families and scales. The vision encoders, when low-rankadapted (LoRA) with fewer than 1% trainable weights, achieve below 2% intra-dataset ACER in most cases, while cross-dataset ACER is substantially higher. LoRA primarily refines the decision boundary within a dataset, suggesting that pretrained representations and the adaptation dataset play a larger role in cross-dataset generalization than the evaluated lightweight adaptation strategy.",
+  "summary": "Face presentation attack detection (PAD) aims to reliably detect a wide range of presentation attacks. While PAD methods achieve strong performance within individual datasets, their performance degrades under cross-dataset evaluation. Variations in sensors or lighting conditions can reduce the effectiveness of detectors from near-perfect to nearly random. Foundation models (FMs) have emerged as a promising alternative because typical PAD datasets, such as the MCIO benchmarks (MSU-MFSD, CASIA-FASD, Replay-Attack, and OULU-NPU), are small relative to the scale used for web-based pretraining. However, existing PAD systems primarily focus on CLIP-based foundation models, while overlooking other FMs with different architectures and training procedures. This study addresses this question by systematically evaluating 32 FMs. Zero-shot prompting achieves performance near chance across model families and scales. The vision encoders, when low-rankadapted (LoRA) with fewer than 1% trainable weights, achieve below 2% intra-dataset ACER in most cases, while cross-dataset ACER is substantially higher. LoRA primarily refines the decision boundary within a dataset, suggesting that pretrained representations and the adaptation dataset play a larger role in cross-dataset generalization than the evaluated lightweight adaptation strategy.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lora",
+    "based",
+    "adaptation",
+    "alone",
+    "is",
+    "not",
+    "enough",
+    "understanding"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T14:13:23.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:35.707Z",
+  "updatedAt": "2026-08-11T02:58:35.743Z"
+},
+{
+  "id": "523a7f25-ef93-43e9-8e22-532916fe1cad",
+  "slug": "lora-based-cascaded-multimodal-fusion-for-action-recognition-in-medical-training-environme-2026-07-14",
+  "title": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
+  "factSummary": "arXiv 论文（2607.11839v1）提出一种基于级联低秩适配（LoRA）的多模态融合框架，用于医疗培训环境中的动作识别。该框架将参数高效的模态特定适配与顺序融合相结合，先整合关联更紧密的模态，再引入其他异质模态，无需重新训练先前学习的组件。在 NurViD 和 Nurse Training 两个数据集上的初步结果显示，该级联融合策略优于单模态模型，并与先前报告的特定数据集基线性能相当。",
+  "summary": "arXiv 论文（2607.11839v1）提出一种基于级联 LoRA 的多模态融合框架，用于医疗培训环境中的动作识别。该框架通过参数高效的模态特定适配和顺序融合，先整合关联更紧密的模态，再引入其他异质模态，无需重新训练先前学习的组件。在 NurViD 和 Nurse Training 数据集上的初步结果显示，该策略优于单模态模型，并与先前报告的基线性能相当。",
+  "technicalInsight": "级联 LoRA 融合通过逐步整合模态，避免了固定融合结构的限制，支持不同模态集的数据集的可扩展适配。初步结果优于单模态模型，但与先前基线相比仅达到竞争性性能，未明确超越。下一可验证信号：在更大规模或更多样化的医疗培训数据集上报告与最先进方法的比较结果。",
+  "industryInsight": "该工作针对医疗培训环境中的动作识别，这是一个垂直应用场景。级联 LoRA 融合的参数高效特性可能降低多模态模型在资源受限的医疗部署中的门槛。下一可验证信号：是否有医疗设备或培训平台集成该框架进行实际部署。",
+  "futureOutlook": "级联 LoRA 融合为多模态学习提供了一种可扩展的范式，但当前仅在两个数据集上验证，且性能仅为竞争性。未来需在更多模态组合和更大规模数据集上验证其泛化能力。下一可验证信号：论文是否被后续工作引用或扩展，或作者是否发布代码和预训练模型。",
+  "businessValue": "该框架的参数高效特性可能降低医疗培训场景中多模态 AI 系统的计算和存储成本，但当前仅为研究阶段，无商业部署证据。下一可验证信号：是否有初创公司或医疗机构采用该技术进行产品开发。",
+  "category": "research-paper",
+  "company": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
+  "keywords": [
+    "LoRA",
+    "cascaded fusion",
+    "multimodal",
+    "action recognition",
+    "medical training"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-13T17:27:58.000Z",
+  "publishedAt": "2026-07-14T02:59:04.738Z",
+  "createdAt": "2026-07-14T02:58:19.105Z",
+  "updatedAt": "2026-07-14T02:59:04.738Z"
+},
+{
+  "id": "1adce789-e15b-4398-99a9-1603f529fd50",
+  "slug": "lora-generating-hypernetworks-for-efficient-on-device-llm-generative-personalization-2026-09-22",
+  "title": "LoRA-generating hypernetworks for efficient on-device LLM generative personalization",
+  "factSummary": "On-device large language models (`LLMs'), e.g. running on mobile phones, are ripe for improvement via personalization. The limited compute resources of mobile devices impose limits on model scale and thus model quality, making any realizable quality gains highly impactful. At the same time, their personal nature (i.e., the close coupling to a particular user) means that a given on-device LLM tends to be used in similar, predictable patterns over the course of time. This paper presents a novel method for personalizing on-device LLMs. It trains a hypernetwork to map a user's context tokens to a low-rank adaptation (`LoRA') well-suited to that user. Once the trained common artifacts are deployed to users' devices, each user uses the hypernetwork to synthesize (entirely on device) a personalized LoRA. This approach blends the benefits while avoiding the drawbacks of two existing approaches to LLM customization: in-context learning (`ICL') and parameter-efficient fine-tuning (`PEFT'). Like ICL (and unlike PEFT), the on-device phase of our approach is computationally feasible, requiring only forward passes through neural networks. Like PEFT (and unlike ICL), our approach modifies the `target' base LLM via weights (the LoRA), avoiding negative consequences (e.g. increased latency) associated with extending the input sequence. Our approach is particularly well-suited to the mobile device regime. Apart from the on-device compute and latency benefits mentioned, it also requires minimal additional storage, as internally its architecture partly leverages the same LLM weights as belong to the target LLM to be personalized. We demonstrate the benefits of LoRA-generating hypernetworks on several representative personalization datasets, comparing against baselines like ICL and PEFT. Of note, our personalization experiments focus on more challenging and less studied long-form text generation tasks.",
+  "summary": "On-device large language models (`LLMs'), e.g. running on mobile phones, are ripe for improvement via personalization. The limited compute resources of mobile devices impose limits on model scale and thus model quality, making any realizable quality gains highly impactful. At the same time, their personal nature (i.e., the close coupling to a particular user) means that a given on-device LLM tends to be used in similar, predictable patterns over the course of time. This paper presents a novel method for personalizing on-device LLMs. It trains a hypernetwork to map a user's context tokens to a low-rank adaptation (`LoRA') well-suited to that user. Once the trained common artifacts are deployed to users' devices, each user uses the hypernetwork to synthesize (entirely on device) a personalized LoRA. This approach blends the benefits while avoiding the drawbacks of two existing approaches to LLM customization: in-context learning (`ICL') and parameter-efficient fine-tuning (`PEFT'). Like ICL (and unlike PEFT), the on-device phase of our approach is computationally feasible, requiring only forward passes through neural networks. Like PEFT (and unlike ICL), our approach modifies the `target' base LLM via weights (the LoRA), avoiding negative consequences (e.g. increased latency) associated with extending the input sequence. Our approach is particularly well-suited to the mobile device regime. Apart from the on-device compute and latency benefits mentioned, it also requires minimal additional storage, as internally its architecture partly leverages the same LLM weights as belong to the target LLM to be personalized. We demonstrate the benefits of LoRA-generating hypernetworks on several representative personalization datasets, comparing against baselines like ICL and PEFT. Of note, our personalization experiments focus on more challenging and less studied long-form text generation tasks.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lora",
+    "generating",
+    "hypernetworks",
+    "efficient",
+    "device",
+    "llm",
+    "generative",
+    "personalization"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-21T17:55:48.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T05:30:05.566Z",
+  "updatedAt": "2026-09-22T05:30:05.606Z"
+},
+{
+  "id": "8a89c119-76b0-426f-bc39-bcbac0200d37",
+  "slug": "lorascan-detecting-backdoor-prompts-in-low-rank-adapters-for-large-language-models-via-dow-2026-08-10",
+  "title": "LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models via Down-Projection Activation Spikes",
+  "factSummary": "Low-rank adaptation (LoRA) enables efficient specialization and distribution of large language models through compact adapters. However, untrusted adapters introduce a supply-chain threat: a backdoored adapter can cause a model to generate harmful content, malicious code, political propaganda, or covert advertisements when an input contains a hidden trigger. Adapter-agnostic defenses merge the adapter with the base model, which dilutes backdoor signals and reduces detection performance. Existing adapter-aware methods do not address how to safely use a potentially backdoored adapter. Instead, they either train a defensive adapter to repair a backdoored base model, addressing the inverse problem rather than securing the adapter itself, or rely on a classifier that flags the entire adapter as suspicious and requires separate mitigation. These methods overlook the distinct latent-space signatures produced by trigger-bearing inputs in backdoored adapters. We introduce LoRAScan, the first adapter-aware defense that detects and rejects trigger-bearing inputs at inference time without modifying adapter parameters. Our key observation is that a small subset of LoRA insertion sites, approximately 5%, remains stable across clean inputs but exhibits highly concentrated spikes in LoRA down-projection activations when a trigger is present. LoRAScan identifies these low-variance insertion sites before model deployment and monitors them during inference. Across standard LLM backdoor benchmarks, LoRAScan rejects approximately 98.49 of malicious inputs with a small error rate on clean inputs, outperforming existing defenses across diverse evaluation settings.",
+  "summary": "Low-rank adaptation (LoRA) enables efficient specialization and distribution of large language models through compact adapters. However, untrusted adapters introduce a supply-chain threat: a backdoored adapter can cause a model to generate harmful content, malicious code, political propaganda, or covert advertisements when an input contains a hidden trigger. Adapter-agnostic defenses merge the adapter with the base model, which dilutes backdoor signals and reduces detection performance. Existing adapter-aware methods do not address how to safely use a potentially backdoored adapter. Instead, they either train a defensive adapter to repair a backdoored base model, addressing the inverse problem rather than securing the adapter itself, or rely on a classifier that flags the entire adapter as suspicious and requires separate mitigation. These methods overlook the distinct latent-space signatures produced by trigger-bearing inputs in backdoored adapters. We introduce LoRAScan, the first adapter-aware defense that detects and rejects trigger-bearing inputs at inference time without modifying adapter parameters. Our key observation is that a small subset of LoRA insertion sites, approximately 5%, remains stable across clean inputs but exhibits highly concentrated spikes in LoRA down-projection activations when a trigger is present. LoRAScan identifies these low-variance insertion sites before model deployment and monitors them during inference. Across standard LLM backdoor benchmarks, LoRAScan rejects approximately 98.49 of malicious inputs with a small error rate on clean inputs, outperforming existing defenses across diverse evaluation settings.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lorascan",
+    "detecting",
+    "backdoor",
+    "prompts",
+    "low",
+    "rank",
+    "adapters",
+    "large"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 48,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-07T04:36:24.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-10T03:05:18.061Z",
+  "updatedAt": "2026-08-10T03:05:18.102Z"
+},
+{
+  "id": "7a7b2aac-5256-488b-a0e5-11fcfc83aa38",
+  "slug": "losa-near-lossless-sparse-attention-for-training-free-video-diffusion-acceleration-2026-08-13",
+  "title": "LoSA: Near-Lossless Sparse Attention for Training-Free Video Diffusion Acceleration",
+  "factSummary": "Video diffusion transformers are costly to sample: every denoising step applies self-attention over a long 3D token sequence, a quadratic cost that dominates as resolution and duration grow. Sparse attention reduces this cost without retraining, but existing methods pursue aggressive sparsity, where further speedup costs disproportionately more attention fidelity. We target the opposite end of this trade-off: fix near-lossless fidelity by construction, and remove as much computation as this constraint permits. Two observations make this regime practical: roughly 40% of block interactions can be removed while retaining 99% of the attention mass, and the high-mass support remains stable across denoising steps. We propose LoSA, a training-free sparse-attention method that fixes a retained-mass threshold of 99% rather than a sparsity ratio: it measures exact block attention masses at one early dense step, keeps, for each head and query block, the smallest key/value block set meeting the threshold, and reuses the frozen block indices for all remaining steps. On Wan2.1-1.3B, LoSA alone gives a $1.36\\times$ speedup with a 0.06-point VBench Overall drop. The benefit is largest under composition: combined with feature caching, LoSA reaches a $3.2\\times$ speedup on HunyuanVideo at a 0.02-point drop, versus 0.32 points for the strongest sparse baseline at comparable speed. Across three video diffusion transformers and speedups up to $3.2\\times$, LoSA consistently achieves the best training-free speed-quality trade-off.",
+  "summary": "Video diffusion transformers are costly to sample: every denoising step applies self-attention over a long 3D token sequence, a quadratic cost that dominates as resolution and duration grow. Sparse attention reduces this cost without retraining, but existing methods pursue aggressive sparsity, where further speedup costs disproportionately more attention fidelity. We target the opposite end of this trade-off: fix near-lossless fidelity by construction, and remove as much computation as this constraint permits. Two observations make this regime practical: roughly 40% of block interactions can be removed while retaining 99% of the attention mass, and the high-mass support remains stable across denoising steps. We propose LoSA, a training-free sparse-attention method that fixes a retained-mass threshold of 99% rather than a sparsity ratio: it measures exact block attention masses at one early dense step, keeps, for each head and query block, the smallest key/value block set meeting the threshold, and reuses the frozen block indices for all remaining steps. On Wan2.1-1.3B, LoSA alone gives a $1.36\\times$ speedup with a 0.06-point VBench Overall drop. The benefit is largest under composition: combined with feature caching, LoSA reaches a $3.2\\times$ speedup on HunyuanVideo at a 0.02-point drop, versus 0.32 points for the strongest sparse baseline at comparable speed. Across three video diffusion transformers and speedups up to $3.2\\times$, LoSA consistently achieves the best training-free speed-quality trade-off.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "losa",
+    "near",
+    "lossless",
+    "sparse",
+    "attention",
+    "training",
+    "free",
+    "video"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T13:13:56.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:41.650Z",
+  "updatedAt": "2026-08-13T03:19:41.691Z"
+},
+{
+  "id": "b9b302f4-7906-4e02-ac99-37c8ac94cb8b",
+  "slug": "loss-invariance-determines-what-concept-layers-encode-volume-grounding-in-echocardiography-2026-07-29",
+  "title": "Loss Invariance Determines What Concept Layers Encode: Volume Grounding in Echocardiography",
+  "factSummary": "Objective: Concept bottleneck models route prediction through interpretable intermediate variables, and their validity is normally judged by how accurately those variables are predicted. We ask whether that judgement is sufficient, using left ventricular volumes as the concepts underlying ejection fraction estimation from echocardiographic video. Methods: A video transformer encoder was trained on a publicly available echocardiography dataset. End-systolic and end-diastolic volumes formed a concept layer from which ejection fraction was computed analytically, with no residual path to the output. We compared training under an ejection fraction objective alone against training with additional supervision of the volumes in millilitres, and evaluated both on 1276 held-out studies. Results: The concept bottleneck did not increase ejection fraction error relative to direct regression, at 6.89 against 7.13 mean absolute error. Without volume supervision, however, the spread of predicted volumes collapsed to 0.1 millilitres against reference spreads of 35.7 and 45.7 millilitres, while correlation was partly preserved. We show that this follows from an invariance property of the objective: ejection fraction is a ratio and is unchanged when both volumes are rescaled, so the loss determines the concept layer only up to scale. Supervision in absolute units reduced volume error from 89.8 to 25.8 millilitres at a cost of 0.4 in ejection fraction error. Conclusion: Concept accuracy alone can conceal a concept layer that carries no physical scale. Significance: Interpretable intermediate variables in clinical models should be validated against the invariance structure of the training objective, not only against prediction accuracy.",
+  "summary": "Objective: Concept bottleneck models route prediction through interpretable intermediate variables, and their validity is normally judged by how accurately those variables are predicted. We ask whether that judgement is sufficient, using left ventricular volumes as the concepts underlying ejection fraction estimation from echocardiographic video. Methods: A video transformer encoder was trained on a publicly available echocardiography dataset. End-systolic and end-diastolic volumes formed a concept layer from which ejection fraction was computed analytically, with no residual path to the output. We compared training under an ejection fraction objective alone against training with additional supervision of the volumes in millilitres, and evaluated both on 1276 held-out studies. Results: The concept bottleneck did not increase ejection fraction error relative to direct regression, at 6.89 against 7.13 mean absolute error. Without volume supervision, however, the spread of predicted volumes collapsed to 0.1 millilitres against reference spreads of 35.7 and 45.7 millilitres, while correlation was partly preserved. We show that this follows from an invariance property of the objective: ejection fraction is a ratio and is unchanged when both volumes are rescaled, so the loss determines the concept layer only up to scale. Supervision in absolute units reduced volume error from 89.8 to 25.8 millilitres at a cost of 0.4 in ejection fraction error. Conclusion: Concept accuracy alone can conceal a concept layer that carries no physical scale. Significance: Interpretable intermediate variables in clinical models should be validated against the invariance structure of the training objective, not only against prediction accuracy.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "loss",
+    "invariance",
+    "determines",
+    "what",
+    "concept",
+    "layers",
+    "encode",
+    "volume"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T14:11:10.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-29T04:00:13.698Z",
+  "updatedAt": "2026-07-29T04:00:13.729Z"
+},
+{
+  "id": "33516195-1dac-448e-9fe7-6379c4d2d441",
+  "slug": "lotusim-energy-a-maritime-simulator-for-human-drone-interaction-in-autonomous-offshore-ope-2026-09-16",
+  "title": "LOTUSim-Energy: A Maritime Simulator for Human-Drone Interaction in Autonomous Offshore Operation \\&amp; Maintenance",
+  "factSummary": "Offshore maintenance requires operations in the air, the surface, and the subsea domain and include human supervision. This paper presents LOTUSim-Energy, a real-time maritime simulator designed for multi-domain human--drone interaction for offshore operation and maintenance. The plat- form unifies heterogeneous unmanned vehicles (Unmanned Aerial Vehicles: UAVs, Unmanned Surface Vehicles: USVs, Autonomous Underwater Vehicles: AUVs, Remotely Operated Vehicles: ROVs) within a distributed architecture coupling environment forcing (wind, waves, currents) and provides immersive user interfaces for supervision (desktop and virtual reality). A structured offshore task library enables repeatable evaluation of autonomy stacks under realistic metocean disturbances. The simulator supports realistic physics, energy-aware battery modeling, and fault-detection pipelines as modular validation tools. System-level performance is demonstrated on a multi-domain inspection scenario for monopile and transition piece structure, where we evaluate the reliability of integrated waypoint-follower plugin and Automatic Identification System (AIS)-referenced trajectory tracking under real-time energy monitoring. By combining unified environmental physics, heterogeneous vehicle simulation, and immersive supervision, LOTUSim-Energy provides an integration testbed for prototyping and rehearsing offshore human--robot collaboration workflows, as a step toward de-risking sea deployment.",
+  "summary": "Offshore maintenance requires operations in the air, the surface, and the subsea domain and include human supervision. This paper presents LOTUSim-Energy, a real-time maritime simulator designed for multi-domain human--drone interaction for offshore operation and maintenance. The plat- form unifies heterogeneous unmanned vehicles (Unmanned Aerial Vehicles: UAVs, Unmanned Surface Vehicles: USVs, Autonomous Underwater Vehicles: AUVs, Remotely Operated Vehicles: ROVs) within a distributed architecture coupling environment forcing (wind, waves, currents) and provides immersive user interfaces for supervision (desktop and virtual reality). A structured offshore task library enables repeatable evaluation of autonomy stacks under realistic metocean disturbances. The simulator supports realistic physics, energy-aware battery modeling, and fault-detection pipelines as modular validation tools. System-level performance is demonstrated on a multi-domain inspection scenario for monopile and transition piece structure, where we evaluate the reliability of integrated waypoint-follower plugin and Automatic Identification System (AIS)-referenced trajectory tracking under real-time energy monitoring. By combining unified environmental physics, heterogeneous vehicle simulation, and immersive supervision, LOTUSim-Energy provides an integration testbed for prototyping and rehearsing offshore human--robot collaboration workflows, as a step toward de-risking sea deployment.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lotusim",
+    "energy",
+    "maritime",
+    "simulator",
+    "human",
+    "drone",
+    "interaction",
+    "autonomous"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 76,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T12:49:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:09.392Z",
+  "updatedAt": "2026-09-16T15:45:09.417Z"
+},
+{
+  "id": "7189663b-46c0-479a-83be-4d51fe4b39db",
+  "slug": "low-cost-assays-for-measuring-model-behavior-across-vendors-and-releases-2026-09-25",
+  "title": "Low-Cost Assays for Measuring Model Behavior Across Vendors and Releases",
+  "factSummary": "Language models advise people, keep them company, and write software while they sleep. Measuring what they do is hard: behavior has to be sampled repeatedly across models, prompts and releases, most of it lives in unstructured text that has to be coded before it can be counted, and the result has to be legible and rigorous enough to meaningfully compare models and vendors. To address these constraints, we present a simple, cheap, scalable, and replicable model for studying model behavior. Each study is a frozen, public stimulus run identically on a cross-vendor panel, at a few dollars per model or less. Each reads its transcripts one of three ways, chosen by how much interpretation the behavior needs: exact match on a clamped reply, a codebook applied by LLM judges whose agreement with a human coder is reported per code, and an instrumented environment that records what an agent did independently of what it said. Run across four years of model releases from both frontier and open-source labs, these instruments find four things. Convergence: asked to pick a word, 27 of 44 models answer serendipity at least once in four tries. Resistance: a trailing \"right?\" moves endorsement by up to 32 points, and the sign flips from sycophantic to resistant as generations advance, keyed to the tag's surface form. House: whether a model holds a position under pressure tracks its generation, and how it holds tracks the lab that built it. Account: told to do something the documentation in their repository contradicts, some coding agents never went along silently and others always did, and the same model can change with the harness it runs in. Re-run on every release, batteries like these track how behavior is changing across vendors and over time.",
+  "summary": "Language models advise people, keep them company, and write software while they sleep. Measuring what they do is hard: behavior has to be sampled repeatedly across models, prompts and releases, most of it lives in unstructured text that has to be coded before it can be counted, and the result has to be legible and rigorous enough to meaningfully compare models and vendors. To address these constraints, we present a simple, cheap, scalable, and replicable model for studying model behavior. Each study is a frozen, public stimulus run identically on a cross-vendor panel, at a few dollars per model or less. Each reads its transcripts one of three ways, chosen by how much interpretation the behavior needs: exact match on a clamped reply, a codebook applied by LLM judges whose agreement with a human coder is reported per code, and an instrumented environment that records what an agent did independently of what it said. Run across four years of model releases from both frontier and open-source labs, these instruments find four things. Convergence: asked to pick a word, 27 of 44 models answer serendipity at least once in four tries. Resistance: a trailing \"right?\" moves endorsement by up to 32 points, and the sign flips from sycophantic to resistant as generations advance, keyed to the tag's surface form. House: whether a model holds a position under pressure tracks its generation, and how it holds tracks the lab that built it. Account: told to do something the documentation in their repository contradicts, some coding agents never went along silently and others always did, and the same model can change with the harness it runs in. Re-run on every release, batteries like these track how behavior is changing across vendors and over time.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "low",
+    "cost",
+    "assays",
+    "measuring",
+    "model",
+    "behavior",
+    "across",
+    "vendors"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T15:51:17.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T05:31:09.828Z",
+  "updatedAt": "2026-09-25T05:31:09.876Z"
+},
+{
+  "id": "e59e4bc5-624d-40bc-ac32-3a630d1acb9a",
+  "slug": "low-precision-flash-attention-4-end-to-end-block-scaled-attention-for-blackwell-2026-09-17",
+  "title": "Low Precision Flash Attention 4: End-to-End Block-Scaled Attention for Blackwell",
+  "factSummary": "TL;DR We extend FlashAttention-4 [1] with MXFP8 forward and backward, reaching 2.85 PF/s forward and 2 PF/s backward on LLM shapes. On our internal shapes, FA4 MX8 reaches 2.54 PF/s...",
+  "summary": "TL;DR We extend FlashAttention-4 [1] with MXFP8 forward and backward, reaching 2.85 PF/s forward and 2 PF/s backward on LLM shapes. On our internal shapes, FA4 MX8 reaches 2.54 PF/s...",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "low",
+    "precision",
+    "flash",
+    "attention",
+    "end",
+    "block",
+    "scaled",
+    "blackwell"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-16T18:55:21.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T05:32:42.593Z",
+  "updatedAt": "2026-09-17T05:32:42.625Z"
+},
+{
+  "id": "9058e749-259d-42a6-82d1-ce5d4bb5527b",
+  "slug": "lp-nas-linear-programming-based-neural-architecture-search-2026-08-17",
+  "title": "LP-NAS: Linear Programming-based Neural Architecture Search",
+  "factSummary": "Neural Architecture Search (NAS) aims to automate neural network architecture design, reducing reliance on human expertise. Among the various NAS methods, differentiable NAS has gained prominence due to its efficiency and accuracy compared to conventional NAS approaches. Since differentiable NAS relaxes the architecture search space into a continuous domain, it is possible to apply principles from continuous optimization to NAS. In this paper, we propose Linear Programming-based NAS (LP-NAS), a mathematical programming-based framework for differentiable NAS that is applicable to a wide range of continuous search spaces. LP-NAS formulates a linear program (LP) using the validation-loss gradient and the training-loss Hessian to compute an architecture update direction that improves generalization while preserving the optimality of the model parameters. By following this LP-derived descent direction, LP-NAS efficiently navigates the architecture search space, leading to faster and more effective architecture optimization. We introduce two computationally efficient variants of LP-NAS, namely S-LP-NAS and R-LP-NAS. Applying LP-NAS to the Differentiable Architecture Search (DARTS) search space results in two algorithmic variants, S-LP-DARTS and R-LP-DARTS. Both variants achieve faster convergence and significantly higher validation performance during the early search iterations than the standard DARTS algorithm. Extensive experiments on CIFAR-10 and CIFAR-100 show that LP-DARTS outperforms standard DARTS in both the architecture search and evaluation phases. Additionally, we compare our approach with several DARTS variants (P-DARTS, PC-DARTS, and STO-DARTS) on the CIFAR-10 dataset and demonstrate its effectiveness. Furthermore, we validate the transferability of the discovered architectures through experiments on the ImageNet dataset.",
+  "summary": "Neural Architecture Search (NAS) aims to automate neural network architecture design, reducing reliance on human expertise. Among the various NAS methods, differentiable NAS has gained prominence due to its efficiency and accuracy compared to conventional NAS approaches. Since differentiable NAS relaxes the architecture search space into a continuous domain, it is possible to apply principles from continuous optimization to NAS. In this paper, we propose Linear Programming-based NAS (LP-NAS), a mathematical programming-based framework for differentiable NAS that is applicable to a wide range of continuous search spaces. LP-NAS formulates a linear program (LP) using the validation-loss gradient and the training-loss Hessian to compute an architecture update direction that improves generalization while preserving the optimality of the model parameters. By following this LP-derived descent direction, LP-NAS efficiently navigates the architecture search space, leading to faster and more effective architecture optimization. We introduce two computationally efficient variants of LP-NAS, namely S-LP-NAS and R-LP-NAS. Applying LP-NAS to the Differentiable Architecture Search (DARTS) search space results in two algorithmic variants, S-LP-DARTS and R-LP-DARTS. Both variants achieve faster convergence and significantly higher validation performance during the early search iterations than the standard DARTS algorithm. Extensive experiments on CIFAR-10 and CIFAR-100 show that LP-DARTS outperforms standard DARTS in both the architecture search and evaluation phases. Additionally, we compare our approach with several DARTS variants (P-DARTS, PC-DARTS, and STO-DARTS) on the CIFAR-10 dataset and demonstrate its effectiveness. Furthermore, we validate the transferability of the discovered architectures through experiments on the ImageNet dataset.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lp",
+    "nas",
+    "linear",
+    "programming",
+    "based",
+    "neural",
+    "architecture",
+    "search"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 55,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-14T16:53:11.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-17T02:14:06.560Z",
+  "updatedAt": "2026-08-17T02:14:06.602Z"
+},
+{
+  "id": "84151cc9-4bde-486b-9608-1985fe9e3ee0",
+  "slug": "lqcdmaster-agentic-scientific-computing-for-lattice-quantum-chromodynamics-research-2026-07-17",
+  "title": "LQCDMaster: Agentic Scientific Computing for Lattice Quantum Chromodynamics Research",
+  "factSummary": "Lattice quantum chromodynamics (LQCD) provides a first-principles framework for computing hadronic observables, but its practical use remains limited by the substantial expertise required to turn research motivation into reliable computing workflows. Here we present \\textsc{LQCDMaster}, a tool-augmented, skill-guided and domain-specialized scientific computing agent that converts natural-language LQCD research tasks into executable PyQUDA computing workflows, including measurement scripts, job-submission artifacts, execution logs and numerical outputs. The system combines agentic planning, expert-annotated LQCD skills and a deterministic Wick-contraction tool to constrain the algebraically fragile components of code generation. We evaluate \\textsc{LQCDMaster} on a benchmark at the forefront of scientific research, comprising 70 LQCD computing tasks, with observables covering local and nonlocal two-point functions, Wilson loops, meson and baryon three-point functions. The generated workflows exactly reproduce expert-written implementations in 63 of 70 tasks at machine precision, with three additional discrepancies attributable to convention mismatches. Across representative observables, the agent reduces implementation time from hours to minutes while preserving end-to-end numerical validation. Further, we present a typical case of \\textsc{LQCDMaster}-driven exploration: a lattice computation of light-cone distribution amplitudes with diagonal Wilson-line, a quantity accessible with standard methods but never before computed, and computation of the spectrum of proton, deuteron, triton, hyperon, hyperdeuteron and hypertriton. This work pioneers the paradigm of agentic scientific computing by automating the end-to-end scientific computing workflows in lattice QCD research, lowering its barrier and facilitating the exploration and verification of non-standard scientific ideas.",
+  "summary": "Lattice quantum chromodynamics (LQCD) provides a first-principles framework for computing hadronic observables, but its practical use remains limited by the substantial expertise required to turn research motivation into reliable computing workflows. Here we present \\textsc{LQCDMaster}, a tool-augmented, skill-guided and domain-specialized scientific computing agent that converts natural-language LQCD research tasks into executable PyQUDA computing workflows, including measurement scripts, job-submission artifacts, execution logs and numerical outputs. The system combines agentic planning, expert-annotated LQCD skills and a deterministic Wick-contraction tool to constrain the algebraically fragile components of code generation. We evaluate \\textsc{LQCDMaster} on a benchmark at the forefront of scientific research, comprising 70 LQCD computing tasks, with observables covering local and nonlocal two-point functions, Wilson loops, meson and baryon three-point functions. The generated workflows exactly reproduce expert-written implementations in 63 of 70 tasks at machine precision, with three additional discrepancies attributable to convention mismatches. Across representative observables, the agent reduces implementation time from hours to minutes while preserving end-to-end numerical validation. Further, we present a typical case of \\textsc{LQCDMaster}-driven exploration: a lattice computation of light-cone distribution amplitudes with diagonal Wilson-line, a quantity accessible with standard methods but never before computed, and computation of the spectrum of proton, deuteron, triton, hyperon, hyperdeuteron and hypertriton. This work pioneers the paradigm of agentic scientific computing by automating the end-to-end scientific computing workflows in lattice QCD research, lowering its barrier and facilitating the exploration and verification of non-standard scientific ideas.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lqcdmaster",
+    "agentic",
+    "scientific",
+    "computing",
+    "lattice",
+    "quantum",
+    "chromodynamics",
+    "research"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-16T13:50:27.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-17T14:09:54.047Z",
+  "updatedAt": "2026-07-17T14:09:54.069Z"
+},
+{
+  "id": "01ac30fa-fb6b-47b0-90cf-a7fe1d4b6277",
+  "slug": "lsead-a-privacy-preserving-llm-based-speech-analysis-framework-for-early-alzheimer-s-disea-2026-08-10",
+  "title": "LSEAD: A Privacy-Preserving LLM-Based Speech Analysis Framework for Early Alzheimer's Disease Screening",
+  "factSummary": "Early diagnosis of Alzheimer's disease (AD) is critical for enabling timely interventions that may slow disease progression and improve patient outcomes. There is a growing need for AD detection methods that are non-invasive and cost-effective, especially in real-world clinical settings with diverse patient populations and recording conditions. Speech-based screening addresses these needs by using natural speech collected without specialized equipment. Recent advances in large language models (LLMs) have improved speech analysis by providing rich linguistic representations and strong generalization. In this study, we propose LSEAD, a speech-based AD detection framework using pretrained open-source LLMs. Speech recordings are automatically transcribed, and text embeddings are extracted using locally deployed LLMs. Principal component analysis (PCA) is applied to reduce dimensionality before classification. Because the framework relies only on speech transcripts and locally deployed models, it supports privacy-preserving AD risk assessment without external data exchange. We evaluate LSEAD on the ADReSS20 and ADReSSo2021 benchmark datasets. Experimental results show that LLM-based embeddings generalize well across datasets and improve AD classification accuracy by up to 5 percent over existing methods, especially for early-stage detection. These results demonstrate that LSEAD provides a practical, secure, and scalable approach for early AD screening.",
+  "summary": "Early diagnosis of Alzheimer's disease (AD) is critical for enabling timely interventions that may slow disease progression and improve patient outcomes. There is a growing need for AD detection methods that are non-invasive and cost-effective, especially in real-world clinical settings with diverse patient populations and recording conditions. Speech-based screening addresses these needs by using natural speech collected without specialized equipment. Recent advances in large language models (LLMs) have improved speech analysis by providing rich linguistic representations and strong generalization. In this study, we propose LSEAD, a speech-based AD detection framework using pretrained open-source LLMs. Speech recordings are automatically transcribed, and text embeddings are extracted using locally deployed LLMs. Principal component analysis (PCA) is applied to reduce dimensionality before classification. Because the framework relies only on speech transcripts and locally deployed models, it supports privacy-preserving AD risk assessment without external data exchange. We evaluate LSEAD on the ADReSS20 and ADReSSo2021 benchmark datasets. Experimental results show that LLM-based embeddings generalize well across datasets and improve AD classification accuracy by up to 5 percent over existing methods, especially for early-stage detection. These results demonstrate that LSEAD provides a practical, secure, and scalable approach for early AD screening.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lsead",
+    "privacy",
+    "preserving",
+    "llm",
+    "based",
+    "speech",
+    "analysis",
+    "framework"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 54,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-07T16:21:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-10T03:05:12.130Z",
+  "updatedAt": "2026-08-10T03:05:12.167Z"
+},
+{
+  "id": "402f4084-cf49-4268-9d0c-145b040379c9",
+  "slug": "lsrep-a-longitudinal-state-replay-protocol-for-evaluating-conversational-memory-with-ice-v-2026-09-16",
+  "title": "LSREP: A Longitudinal State-Replay Protocol for Evaluating Conversational Memory, with ICE v2 as an Audited Local-First Architecture",
+  "factSummary": "Conversational memory changes during use, so endpoint question answering alone cannot establish how a persistent state accumulates, ages, or incorporates revisions. We introduce LSREP, a Longitudinal State-Replay Evaluation Protocol combining ordered replay, explicit lifecycle schedules, repeated probes, evolving reference answers, and mechanism-fidelity checks. Its architectural case study is ICE v2, a local-first memory middleware with typed stores, retrieval fusion, and dynamic context budgets. The private, single-user instantiation contains 1,985 turns, 219 distinct probes, and 1,211 probe-checkpoint observations across 52 checkpoints. On three ordinary-density datasets, ICE v2 has a near-zero mean quality difference from vector-RAG while selecting 32% fewer fragments but using 6.6% more estimated prompt tokens. A fourth, dense dataset exposes catastrophic failures of the unbudgeted baseline. The fidelity audit limits attribution: procedural retrieval is defective, several mechanisms are unexercised, and graph utility is not established. In a complementary matched public diagnostic, ICE v2 loses decisively to pure vector-RAG on LongMemEval: 50.8% versus 72.8% in the evidence-only oracle and 43.0% versus 69.5% in full-S. Paired differences are -22.0 points (95% CI [-26.6, -17.4]) and -26.5 ([-31.3, -21.8]). Conservative abstention accompanies severe multi-session and temporal failures. ICE uses less context in this diagnostic, establishing a quality-cost trade-off rather than superior efficiency. Together, replay, fidelity auditing, and public endpoint testing expose distinct failure modes that neither architectural descriptions nor aggregate scores identify alone.",
+  "summary": "Conversational memory changes during use, so endpoint question answering alone cannot establish how a persistent state accumulates, ages, or incorporates revisions. We introduce LSREP, a Longitudinal State-Replay Evaluation Protocol combining ordered replay, explicit lifecycle schedules, repeated probes, evolving reference answers, and mechanism-fidelity checks. Its architectural case study is ICE v2, a local-first memory middleware with typed stores, retrieval fusion, and dynamic context budgets. The private, single-user instantiation contains 1,985 turns, 219 distinct probes, and 1,211 probe-checkpoint observations across 52 checkpoints. On three ordinary-density datasets, ICE v2 has a near-zero mean quality difference from vector-RAG while selecting 32% fewer fragments but using 6.6% more estimated prompt tokens. A fourth, dense dataset exposes catastrophic failures of the unbudgeted baseline. The fidelity audit limits attribution: procedural retrieval is defective, several mechanisms are unexercised, and graph utility is not established. In a complementary matched public diagnostic, ICE v2 loses decisively to pure vector-RAG on LongMemEval: 50.8% versus 72.8% in the evidence-only oracle and 43.0% versus 69.5% in full-S. Paired differences are -22.0 points (95% CI [-26.6, -17.4]) and -26.5 ([-31.3, -21.8]). Conservative abstention accompanies severe multi-session and temporal failures. ICE uses less context in this diagnostic, establishing a quality-cost trade-off rather than superior efficiency. Together, replay, fidelity auditing, and public endpoint testing expose distinct failure modes that neither architectural descriptions nor aggregate scores identify alone.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lsrep",
+    "longitudinal",
+    "state",
+    "replay",
+    "protocol",
+    "evaluating",
+    "conversational",
+    "memory"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 71,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T06:59:56.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:12.699Z",
+  "updatedAt": "2026-09-16T15:45:12.733Z"
+},
+{
+  "id": "688fa419-7843-40b9-ab47-0213f60dcd6d",
+  "slug": "lucid-learning-under-confounding-for-inference-and-discovery-in-time-series-2026-09-28",
+  "title": "LUCID: Learning Under Confounding for Inference and Discovery in Time Series",
+  "factSummary": "Unobserved common causes are pervasive in real-world time series and can induce spurious associations that causal discovery methods mistake for direct edges. We propose LUCID (Learning Under Confounding for Inference and Discovery, a regime-adaptive deconfounding layer that first estimates the confounding regime from data using a Marčenko--Pastur spectral router, then applies a deconfounding strategy matched to that regime. When the spectrum indicates pervasive factor confounding, LUCID attenuates factor-dominated variation and recovers contemporaneous (lag-$0$) structure from the resulting innovations, with edge selection calibrated against a data-driven edge-free null. Rather than being tied to a particular discovery algorithm, it can wrap existing discovery engines; we demonstrate consistent improvements across three such methods. On a diverse synthetic out-of-distribution benchmark spanning changes in confounder strength and sparsity, loading density, lag structure, volatility dynamics, edge heterogeneity, persistence, intermittency, and tail behavior, LUCID achieves the best family-weighted directed, lag-resolved graph $F_1$ ($0.60$), improving over the strongest baseline by $0.19$ absolute ($\\approx\\!46\\%$ relative). Its advantage widens relative to looser lag-collapsed scoring, and remains robust under intermittent and heavy-tailed confounding. Code reproducing the method, the benchmark generators, and every reported experiment is available at https://github.com/bloomberg/causal-ts.",
+  "summary": "Unobserved common causes are pervasive in real-world time series and can induce spurious associations that causal discovery methods mistake for direct edges. We propose LUCID (Learning Under Confounding for Inference and Discovery, a regime-adaptive deconfounding layer that first estimates the confounding regime from data using a Marčenko--Pastur spectral router, then applies a deconfounding strategy matched to that regime. When the spectrum indicates pervasive factor confounding, LUCID attenuates factor-dominated variation and recovers contemporaneous (lag-$0$) structure from the resulting innovations, with edge selection calibrated against a data-driven edge-free null. Rather than being tied to a particular discovery algorithm, it can wrap existing discovery engines; we demonstrate consistent improvements across three such methods. On a diverse synthetic out-of-distribution benchmark spanning changes in confounder strength and sparsity, loading density, lag structure, volatility dynamics, edge heterogeneity, persistence, intermittency, and tail behavior, LUCID achieves the best family-weighted directed, lag-resolved graph $F_1$ ($0.60$), improving over the strongest baseline by $0.19$ absolute ($\\approx\\!46\\%$ relative). Its advantage widens relative to looser lag-collapsed scoring, and remains robust under intermittent and heavy-tailed confounding. Code reproducing the method, the benchmark generators, and every reported experiment is available at https://github.com/bloomberg/causal-ts.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lucid",
+    "learning",
+    "under",
+    "confounding",
+    "inference",
+    "discovery",
+    "time",
+    "series"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T14:21:21.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T05:59:55.687Z",
+  "updatedAt": "2026-09-28T05:59:55.735Z"
+},
+{
+  "id": "0c9318ee-ed4f-482d-88f6-c13987960338",
+  "slug": "lunadrive-a-delay-compensated-high-voltage-gan-fet-based-motor-driver-for-dynamic-robots-w-2026-09-21",
+  "title": "LunaDrive: A Delay-Compensated High-Voltage GaN FET-Based Motor Driver for Dynamic Robots with Flat BLDC Motors",
+  "factSummary": "The performance improvement of high-power flat BLDC motors has accelerated the development of dynamic robots. However, many commercially available servo motors assume operating voltages of 48 V or lower, which limits the maximum rotational speed. Dynamic robots require rapid energy generation, so this voltage constraint restricts motion performance. Therefore, driving motors beyond the rated voltage is desirable to increase the instantaneous maximum speed. On the other hand, semiconductor devices used in motor drivers have a trade-off between voltage rating and current capacity. Conventional drivers using Si MOSFETs have difficulty achieving both high-voltage and high-current operation. Although GaN FETs are promising, compact drivers that can be mounted on the rear side of flat BLDC motors remain limited. In this study, a motor driver for high-power flat BLDC motors using GaN FETs is developed. The effect of delay compensation in the high-speed region beyond the rated operating range is also investigated. In the experiments, under 96 V operation, a continuous current of 30 A was achieved with a heat sink attached. A peak current of 80 A and a maximum electrical frequency of 3110 Hz were confirmed. A high-speed load lifting experiment driven by a LiPo battery 24S (100 V) was also conducted, demonstrating applicability to dynamic robot operation.",
+  "summary": "The performance improvement of high-power flat BLDC motors has accelerated the development of dynamic robots. However, many commercially available servo motors assume operating voltages of 48 V or lower, which limits the maximum rotational speed. Dynamic robots require rapid energy generation, so this voltage constraint restricts motion performance. Therefore, driving motors beyond the rated voltage is desirable to increase the instantaneous maximum speed. On the other hand, semiconductor devices used in motor drivers have a trade-off between voltage rating and current capacity. Conventional drivers using Si MOSFETs have difficulty achieving both high-voltage and high-current operation. Although GaN FETs are promising, compact drivers that can be mounted on the rear side of flat BLDC motors remain limited. In this study, a motor driver for high-power flat BLDC motors using GaN FETs is developed. The effect of delay compensation in the high-speed region beyond the rated operating range is also investigated. In the experiments, under 96 V operation, a continuous current of 30 A was achieved with a heat sink attached. A peak current of 80 A and a maximum electrical frequency of 3110 Hz were confirmed. A high-speed load lifting experiment driven by a LiPo battery 24S (100 V) was also conducted, demonstrating applicability to dynamic robot operation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lunadrive",
+    "delay",
+    "compensated",
+    "high",
+    "voltage",
+    "gan",
+    "fet",
+    "based"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T14:23:14.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-21T05:36:24.662Z",
+  "updatedAt": "2026-09-21T05:36:24.703Z"
+},
+{
+  "id": "7b7ed2c6-0f46-459b-8bf4-4dd5881fb45a",
+  "slug": "lvsum-a-benchmark-for-timestamp-aware-long-video-summarization-2026-07-21",
+  "title": "LVSum: A Benchmark for Timestamp-Aware Long Video Summarization",
+  "factSummary": "Long video summarization presents significant challenges for multimodal large language models (MLLMs), particularly in maintaining temporal fidelity over extended durations and producing summaries that are both semantically and temporally grounded. We introduce LVSum, a human-annotated benchmark for evaluating long-form video summarization with fine-grained temporal alignment. LVSum comprises 72 diverse videos spanning 13 domains with an average duration of 16 minutes, each annotated with up to 10 human-generated summaries containing temporal references. We conduct a comprehensive evaluation...",
+  "summary": "Long video summarization presents significant challenges for multimodal large language models (MLLMs), particularly in maintaining temporal fidelity over extended durations and producing summaries that are both semantically and temporally grounded. We introduce LVSum, a human-annotated benchmark for evaluating long-form video summarization with fine-grained temporal alignment. LVSum comprises 72 diverse videos spanning 13 domains with an average duration of 16 minutes, each annotated with up to 10 human-generated summaries containing temporal references. We conduct a comprehensive evaluation...",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "lvsum",
+    "benchmark",
+    "timestamp",
+    "aware",
+    "long",
+    "video",
+    "summarization"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 20,
+  "impactScore": 55,
+  "valueScore": 54,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 67,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-20T00:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-21T14:31:11.830Z",
+  "updatedAt": "2026-07-21T14:31:11.858Z"
+},
+{
   "id": "4786db25-f416-4db8-b212-d7d1e1a4077f",
   "slug": "lycheememory-v2-efficient-long-term-memory-for-llm-agents-via-semantic-segment-level-conso-2026-08-14",
   "title": "LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation",
@@ -906,8 +1729,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-27T12:00:00.000Z",
   "publishedAt": "2025-06-27T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "0fc4b033-ce78-4cdd-9d96-be4af8b7b195",
@@ -1079,8 +1902,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-01T12:00:00.000Z",
   "publishedAt": "2023-12-01T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "f831f6d4-d69e-4477-af38-eb13981a41b6",
@@ -1122,8 +1945,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e892ea18-5032-413e-8c87-65e2539058db",
@@ -2078,8 +2901,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-06T12:00:00.000Z",
   "publishedAt": "2025-03-06T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9bf9dbbf-7caf-4381-bf3a-b7080371803a",
@@ -2209,8 +3032,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-14T12:00:00.000Z",
   "publishedAt": "2024-08-14T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "3d81347a-8126-4661-a154-f676e4a0ecfb",
@@ -2252,8 +3075,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-08T12:00:00.000Z",
   "publishedAt": "2024-05-08T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e84193c3-ba8d-4d13-99d3-cbcea9a7869d",
@@ -2979,8 +3802,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T12:00:00.000Z",
   "publishedAt": "2024-12-26T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "99708c8f-b6ab-4ad0-a299-770ddc1a4df0",
@@ -3022,8 +3845,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-26T12:00:00.000Z",
   "publishedAt": "2025-05-26T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "88fcfba9-21c7-4cb0-8b69-a826c1f06484",
@@ -3203,8 +4026,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-04T12:00:00.000Z",
   "publishedAt": "2025-04-04T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "efb8a190-6be2-41ed-ac6a-3e47423f3bd0",
@@ -3246,8 +4069,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "60b321e2-a5ef-48ce-90b8-143a7db03c92",
@@ -3335,8 +4158,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-28T12:00:00.000Z",
   "publishedAt": "2025-04-28T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "4d29de56-f386-4067-b1fc-9a6159e2aa4e",
@@ -3647,8 +4470,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-09T03:26:10.000Z",
   "publishedAt": "2026-01-09T03:26:10.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "cac6b05d-0b45-4260-8b40-f910b7e9f3d7",
@@ -3735,8 +4558,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-18T09:49:14.000Z",
   "publishedAt": "2026-02-18T09:49:14.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "b75b6b51-66fb-4ee3-b98e-51e262f74045",
@@ -3914,8 +4737,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-30T05:33:50.000Z",
   "publishedAt": "2026-03-30T05:33:50.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "528e3c24-d5bd-42f4-8ab2-aed860ebed65",
@@ -4321,8 +5144,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-16T00:00:00.000Z",
   "publishedAt": "2023-03-16T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "1b06628f-218d-4a7a-a23e-82e7497bb0aa",
@@ -4364,8 +5187,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T00:00:00.000Z",
   "publishedAt": "2026-01-20T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9a090b14-9bda-4a27-aa85-55dbf759eebf",
@@ -4407,8 +5230,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T00:00:00.000Z",
   "publishedAt": "2024-04-15T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "c0bd254c-3f3f-4cc7-aef7-09175bf3df8c",
@@ -4450,8 +5273,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-23T00:00:00.000Z",
   "publishedAt": "2023-01-23T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "31ed947f-94ba-46fc-8435-28639e085b22",
@@ -5294,20 +6117,20 @@
     "docvortex",
     "开源工具链"
   ],
-  "confidenceScore": 74,
-  "heatScore": 22,
+  "confidenceScore": 84,
+  "heatScore": 21,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 59,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 90,
+    "freshness": 78,
     "crossRegion": false
   },
   "status": "published",
@@ -5316,7 +6139,7 @@
   "happenedAt": "2026-09-27T20:09:42.000Z",
   "publishedAt": "2026-09-28T06:01:23.600Z",
   "createdAt": "2026-09-28T05:59:58.326Z",
-  "updatedAt": "2026-09-28T06:01:23.600Z"
+  "updatedAt": "2026-09-28T19:47:16.342Z"
 },
 {
   "id": "8138c635-e6d2-4d54-8983-39ebba97c150",
@@ -5404,8 +6227,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "806f16f2-f1f3-4326-ac31-e16618de3252",
@@ -5448,8 +6271,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "bc1a0adb-6dc1-420a-bc91-a1a8db2788df",
@@ -5536,8 +6359,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-16T00:00:00.000Z",
   "publishedAt": "2025-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "15ce9c20-2703-4e1a-af63-1da28ccfe398",
@@ -5579,8 +6402,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "4591124e-5f6f-4233-a37f-15a4b69f89c1",
@@ -6170,8 +6993,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-10T12:00:00.000Z",
   "publishedAt": "2023-10-10T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "d77aac24-e9e1-46a2-acb8-2b7f10d85f67",
@@ -6211,8 +7034,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-27T00:00:00.000Z",
   "publishedAt": "2023-09-27T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "2b989f44-ca47-400b-ac7c-731642ddf156",
@@ -6254,8 +7077,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-23T00:00:00.000Z",
   "publishedAt": "2026-06-23T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "901cf287-0ee3-4fdd-8b8c-71d609dbf23c",
@@ -6972,8 +7795,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-03T12:00:00.000Z",
   "publishedAt": "2024-06-03T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "a0dc6ff2-12ae-469e-b769-43493976a5ba",
@@ -7241,8 +8064,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-25T00:00:00.000Z",
   "publishedAt": "2024-11-25T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "fc38de93-799b-4178-b2c9-dd13f5addbce",
@@ -7371,6 +8194,50 @@
   "updatedAt": "2026-09-23T17:13:22.970Z"
 },
 {
+  "id": "aeae0d18-3c31-4061-9dce-4d26d6b61ffc",
+  "slug": "modelcontextprotocol-client-2-2-0-2026-09-28",
+  "title": "@modelcontextprotocol/client@2.2.0",
+  "factSummary": "@modelcontextprotocol/client 发布 2.2.0 版本。该版本将不带 expectedIssuer 构造 ClientCredentialsProvider、PrivateKeyJwtProvider、StaticPrivateKeyJwtProvider 或 CrossAppAccessProvider 的用法标记为弃用：构造函数会输出一次 console.warn，该调用签名被标记 @deprecated，行为其余不变。fetchToken() 在发送任何内容之前，当 provider 的客户端信息绑定到与调用时不同的授权服务器时抛出 AuthorizationServerMismatchError。AuthorizationServerMismatchError 的消息不再假定授权码回调，字段不变。OAuthTokensSchema 与 OAuthClientInformationSchema 接受可选的 issuer 标记，auth() 在每次保存时覆盖它。补丁变更包括：在已关闭连接上发送通知不再额外产生短暂的未处理 promise rejection（在 Cloudflare Workers 上表现为 unhandledrejection），以及一项类型检查修复。",
+  "summary": "MCP TypeScript SDK 的 @modelcontextprotocol/client 发布 2.2.0，主要围绕 OAuth 凭据与授权服务器绑定关系做调整：不带 expectedIssuer 的 provider 构造被弃用并输出一次 console.warn，fetchToken() 在客户端信息绑定到不同授权服务器时提前抛出 AuthorizationServerMismatchError，schema 增加可选 issuer 标记。同时修复了关闭连接上发送通知导致的未处理 promise rejection 与类型检查问题。",
+  "technicalInsight": "该版本把授权服务器身份校验前移到 fetchToken() 发送请求之前，并以可选 issuer 标记在存储层保留绑定信息，属于对 OAuth 客户端凭据误用场景的防御性收紧；弃用而非移除旧构造签名，说明兼容性仍被保留。可验证下一信号：后续版本是否将 expectedIssuer 变为必填，或移除被标记 @deprecated 的构造签名。",
+  "industryInsight": "MCP 客户端在认证层引入授权服务器匹配校验，反映 Agent 工具链对凭据跨服务器误用的关注上升；但本次仅为 SDK 小版本变更，尚不足以判断行业层面的采用或标准化走向。可验证下一信号：其他 MCP SDK 语言实现是否跟进相同的 issuer 校验语义。",
+  "futureOutlook": "若该模式被其他实现采纳，MCP 生态的 OAuth 客户端配置可能逐步要求显式声明授权服务器；反之若长期停留在弃用告警阶段，则影响限于使用新签名的开发者。可验证下一信号：官方文档或迁移指南是否给出 expectedIssuer 的必填时间表。",
+  "businessValue": "对使用该 SDK 的开发者，提前抛出的 AuthorizationServerMismatchError 可减少凭据发往错误授权服务器的风险，并降低 Cloudflare Workers 等环境下未处理 rejection 带来的运维噪音。可验证下一信号：依赖该 SDK 的项目在升级后是否报告因 issuer 校验导致的配置失败。",
+  "category": "developer-sdk-release",
+  "company": "@modelcontextprotocol/client",
+  "keywords": [
+    "MCP",
+    "TypeScript SDK",
+    "OAuth",
+    "AuthorizationServerMismatchError",
+    "expectedIssuer",
+    "deprecation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T19:07:46.000Z",
+  "publishedAt": "2026-09-28T19:48:06.081Z",
+  "createdAt": "2026-09-28T19:47:15.218Z",
+  "updatedAt": "2026-09-28T19:48:06.081Z"
+},
+{
   "id": "d34f3e3c-3a12-45c2-b0e6-e372c97a37d9",
   "slug": "modelcontextprotocol-codemod-2-0-0-2026-07-28",
   "title": "@modelcontextprotocol/codemod@2.0.0",
@@ -7451,6 +8318,51 @@
   "updatedAt": "2026-09-23T17:13:22.851Z"
 },
 {
+  "id": "157bfa02-a62e-4fe9-b83b-9f6afd2df666",
+  "slug": "modelcontextprotocol-codemod-2-2-0-2026-09-28",
+  "title": "@modelcontextprotocol/codemod@2.2.0",
+  "factSummary": "@modelcontextprotocol/codemod 发布 2.2.0 补丁版本。变更说明指出，v1-to-v2 codemod 现在把重写后的 import 写在原第一个 v1 import 所在位置，而不是文件顶部，从而保留其上方的 license header、// @ts-nocheck、/// 或 'use client' / 'use server' / 'use strict' 指令。已知缺口：当 codemod 后续步骤替换或删除该 import（例如文件中唯一的 SDK import 是 ErrorCode 或 StreamableHTTPError）时，新 import 仍可能落在 header 上方或内部，且 /** */ header 可能被删除。已用 codemod 2.1.0 或更早版本迁移的文件不会被修复，需检查这些文件顶部。",
+  "summary": "MCP TypeScript SDK 的 codemod 发布 2.2.0 补丁，修正 v1-to-v2 迁移时重写 import 的写入位置，使其落在原第一个 v1 import 处而非文件顶部，以保留 license header、@ts-nocheck、三斜线指令和 'use client' / 'use server' / 'use strict' 指令。变更说明同时列出已知缺口：后续步骤替换或删除 import 时新 import 仍可能破坏 header，且 2.1.0 及更早版本迁移过的文件不会被自动修复。",
+  "technicalInsight": "该补丁针对代码迁移工具中常见的文本位置处理问题：import 重写从固定插入文件顶部改为锚定原 import 位置，属于对源码头部语义（指令与 license）的保护。但变更说明自述的缺口表明，当 import 在后续步骤被替换或删除时锚点失效，说明当前实现仍依赖单步位置假设，而非统一的头部保留策略。可验证下一信号：后续版本是否在替换/删除路径上同样保留 header，以及是否提供对 2.1.0 及更早迁移文件的修复或检测手段。",
+  "industryInsight": "这属于开发者工具链的维护性更新，反映 MCP 生态在推进 v1 到 v2 迁移时对既有代码兼容与自动化改造质量的关注。此类补丁本身不改变协议能力或产品格局，但影响采用方的迁移成本与代码审查负担。可验证下一信号：MCP TypeScript SDK 是否发布迁移指南或检测工具，以及社区是否报告因 header 被破坏导致的构建或 lint 问题。",
+  "futureOutlook": "若后续版本补齐替换/删除路径的 header 保留并处理历史迁移文件，迁移体验将趋于稳定；若缺口长期存在，采用方可能需要在迁移后人工检查文件顶部。可验证下一信号：codemod 后续 release notes 是否提及该已知缺口的修复，或是否新增针对旧版本迁移结果的检查命令。",
+  "businessValue": "对使用 MCP TypeScript SDK 的团队而言，该补丁降低迁移过程中破坏 license header 与 'use client' / 'use server' 等指令的风险，减少人工修复与代码审查成本；但已知缺口与历史文件不修复意味着升级后仍需抽查文件顶部，短期收益有限。可验证下一信号：团队在升级到 2.2.0 后是否仍需手工修正 import 位置，以及该问题是否影响其迁移排期。",
+  "category": "developer-tooling-release",
+  "company": "@modelcontextprotocol/codemod",
+  "keywords": [
+    "MCP",
+    "codemod",
+    "TypeScript SDK",
+    "v1-to-v2 migration",
+    "import rewrite",
+    "license header",
+    "use client"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T19:07:49.000Z",
+  "publishedAt": "2026-09-28T19:48:06.081Z",
+  "createdAt": "2026-09-28T19:47:15.159Z",
+  "updatedAt": "2026-09-28T19:48:06.081Z"
+},
+{
   "id": "4fdd76de-998d-4d2d-bb5d-6605f57edded",
   "slug": "modelcontextprotocol-core-2-0-0-2026-07-28",
   "title": "@modelcontextprotocol/core@2.0.0",
@@ -7529,6 +8441,50 @@
   "publishedAt": null,
   "createdAt": "2026-09-23T17:13:22.867Z",
   "updatedAt": "2026-09-23T17:13:22.914Z"
+},
+{
+  "id": "748ef673-679d-49de-bb18-2b5f80257661",
+  "slug": "modelcontextprotocol-core-2-2-0-2026-09-28",
+  "title": "@modelcontextprotocol/core@2.2.0",
+  "factSummary": "MCP TypeScript SDK 发布 @modelcontextprotocol/core@2.2.0。该版本将不带 expectedIssuer 构造 ClientCredentialsProvider、PrivateKeyJwtProvider、StaticPrivateKeyJwtProvider 或 CrossAppAccessProvider 的调用签名标记为 @deprecated，构造时会输出一次 console.warn，行为其余不变。fetchToken() 在发送任何内容前，若 provider 的客户端信息绑定到与调用时不同的授权服务器，会抛出 AuthorizationServerMismatchError。AuthorizationServerMismatchError 的消息不再假定授权码回调，字段未变。OAuthTokensSchema 与 OAuthClientInformationSchema 接受可选的 issuer 标记，auth() 在每次保存时覆盖该标记。",
+  "summary": "@modelcontextprotocol/core@2.2.0 是一次围绕 OAuth 授权服务器绑定的小版本更新：要求调用方在构造凭证 provider 时传入注册所用的授权服务器 issuer，并在 fetchToken() 中提前校验绑定一致性，不一致时抛出 AuthorizationServerMismatchError；同时让 OAuthTokensSchema 与 OAuthClientInformationSchema 保留可选 issuer 标记。",
+  "technicalInsight": "该变更把授权服务器身份校验前移到 token 获取之前，属于防御性设计，可减少凭证被用于错误授权服务器的情形；但证据未说明该错误在既有集成中的触发频率，也未给出迁移示例。可验证下一信号：后续版本是否移除已弃用的无 issuer 构造签名，或补充迁移文档与测试用例。",
+  "industryInsight": "MCP 生态的 SDK 正在把 OAuth 授权服务器绑定纳入默认校验，反映 Agent 工具连接层对凭证边界与多服务器场景的规范化需求；证据仅覆盖 TypeScript SDK 的一个小版本，尚不足以判断其他语言 SDK 或整体生态的跟进节奏。可验证下一信号：其他 MCP SDK 是否发布同类 issuer 校验变更。",
+  "futureOutlook": "若该模式被沿用，MCP 客户端在跨授权服务器复用凭证时的失败将更早暴露，降低误用风险；但弃用签名仍保留，实际迁移取决于开发者是否传入 issuer。可验证下一信号：官方发布说明或仓库中是否出现移除弃用签名的计划。",
+  "businessValue": "对使用 MCP TypeScript SDK 的开发者而言，该版本以较小改动提升凭证与授权服务器绑定的一致性，有助于减少多服务器环境下的配置错误；其价值取决于团队是否采用 OAuth 多授权服务器架构，证据未提供采用规模或性能数据。",
+  "category": "developer-sdk-release",
+  "company": "@modelcontextprotocol/core",
+  "keywords": [
+    "MCP",
+    "TypeScript SDK",
+    "OAuth",
+    "授权服务器",
+    "凭证绑定",
+    "弃用"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T19:07:52.000Z",
+  "publishedAt": "2026-09-28T19:48:06.082Z",
+  "createdAt": "2026-09-28T19:47:15.100Z",
+  "updatedAt": "2026-09-28T19:48:06.082Z"
 },
 {
   "id": "a439c769-edfc-44be-b2ba-f329c0bdf080",
@@ -7852,6 +8808,50 @@
   "updatedAt": "2026-09-23T17:13:22.798Z"
 },
 {
+  "id": "be4c9495-853c-46be-9fe2-b8c333eb315d",
+  "slug": "modelcontextprotocol-server-2-2-0-2026-09-28",
+  "title": "@modelcontextprotocol/server@2.2.0",
+  "factSummary": "MCP TypeScript SDK 发布 @modelcontextprotocol/server@2.2.0 补丁版本，包含三项修复：在已关闭连接上发送通知不再额外产生短暂未处理的 promise rejection（在 Cloudflare Workers 上表现为 unhandledrejection）；修复 createMcpHandler 在工厂对多个请求返回同一 server 实例时的栈溢出，仍要求每请求返回新实例；当未采纳任何请求的通知类型时，createMcpHandler 会在确认后立即结束 subscriptions/listen 流，客户端收到确认后收到 resultType: \"complete\" 结果，采纳至少一种类型的流不受影响。同时更新依赖 @modelcontextprotocol/core@2.2.0。同日 @modelcontextprotocol/server-legacy@2.2.0 也仅更新该依赖。",
+  "summary": "MCP TypeScript SDK 的 server 包发布 2.2.0 补丁，修复关闭连接通知的未处理 rejection、createMcpHandler 复用同一 server 实例导致的栈溢出，以及无匹配通知类型时 subscriptions/listen 流的空挂问题，并同步升级 core 依赖至 2.2.0。",
+  "technicalInsight": "这些改动集中在连接生命周期与流式订阅的边界处理，属于稳定性修补而非能力扩展；createMcpHandler 仍要求每请求返回新实例，说明该约束未被解除。可验证下一信号：后续版本是否放宽实例复用要求，或是否出现针对 subscriptions/listen 语义的文档与测试更新。",
+  "industryInsight": "补丁同时覆盖 server 与 server-legacy 两个包并统一 core 版本，显示该 SDK 在维护多版本兼容路径；Cloudflare Workers 被明确提及，暗示边缘运行时是实际使用场景之一。可验证下一信号：发布说明或仓库中是否出现更多针对边缘运行时的修复与兼容声明。",
+  "futureOutlook": "若此类边界修复持续以补丁形式发布，SDK 的可靠性将逐步提升，但不会改变其接口契约。可验证下一信号：下一个版本号是否仍为补丁级，以及是否出现涉及 API 变更的发布说明。",
+  "businessValue": "对使用该 SDK 的开发者而言，减少未处理 rejection 与栈溢出可降低生产环境中的偶发故障与排查成本，尤其影响部署在 Cloudflare Workers 上的服务。可验证下一信号：依赖该 SDK 的项目是否在升级后报告相关错误率下降。",
+  "category": "developer-sdk-release",
+  "company": "@modelcontextprotocol/server",
+  "keywords": [
+    "MCP",
+    "TypeScript SDK",
+    "createMcpHandler",
+    "subscriptions/listen",
+    "Cloudflare Workers",
+    "patch release"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 62,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T19:07:55.000Z",
+  "publishedAt": "2026-09-28T19:48:06.082Z",
+  "createdAt": "2026-09-28T19:47:15.040Z",
+  "updatedAt": "2026-09-28T19:48:06.082Z"
+},
+{
   "id": "3e95312f-bb1a-4fc9-a1cb-a15b209e03da",
   "slug": "modelcontextprotocol-server-legacy-2-0-0-2026-07-28",
   "title": "@modelcontextprotocol/server-legacy@2.0.0",
@@ -8107,8 +9107,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-18T12:00:00.000Z",
   "publishedAt": "2024-12-18T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "87e78380-fbd4-4b0d-9679-80ca7775819c",
@@ -9156,8 +10156,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-14T12:00:00.000Z",
   "publishedAt": "2023-07-14T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "809c5a0e-18f3-43cd-a451-3cec66d24843",
@@ -10869,8 +11869,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-16T12:00:00.000Z",
   "publishedAt": "2025-12-16T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "dae0bff1-d475-449a-947e-5b206bcd28a2",
@@ -11397,8 +12397,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-09T12:00:00.000Z",
   "publishedAt": "2025-10-09T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "bc172b74-36da-4f1c-a6f5-906f5ee5b31d",
@@ -11716,8 +12716,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-01T12:00:00.000Z",
   "publishedAt": "2025-12-01T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "bf720145-a1fa-4a58-b121-b40a83eb1132",
@@ -12303,6 +13303,52 @@
   "publishedAt": null,
   "createdAt": "2026-08-05T03:54:37.946Z",
   "updatedAt": "2026-08-05T03:54:37.980Z"
+},
+{
+  "id": "83a51e50-da39-4660-b03c-c55200523605",
+  "slug": "next-js-applications-powered-by-vite-introducing-vinext-1-0-2026-09-28",
+  "title": "Next.js applications, powered by Vite: introducing Vinext 1.0",
+  "factSummary": "Vinext 1.0 graduates from an AI experiment to a production-ready framework, letting developers run Next.js apps on Vite. This release brings advanced cache warming, broader compatibility, and an automated testing pipeline.",
+  "summary": "Vinext 1.0 graduates from an AI experiment to a production-ready framework, letting developers run Next.js apps on Vite. This release brings advanced cache warming, broader compatibility, and an automated testing pipeline.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "next",
+    "js",
+    "applications",
+    "powered",
+    "by",
+    "vite",
+    "introducing",
+    "vinext"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 95,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T14:51:57.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:14.908Z",
+  "updatedAt": "2026-09-28T19:47:14.961Z"
 },
 {
   "id": "df10f49c-8afd-4361-afd3-257411474832",
@@ -13107,8 +14153,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T12:00:00.000Z",
   "publishedAt": "2024-04-15T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "dc84823a-a0a9-42b7-9ccf-0528e9efab48",
@@ -13790,8 +14836,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-18T00:00:00.000Z",
   "publishedAt": "2025-03-18T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "768c90d0-892e-4f4f-9f3d-e8a2cc41e6c4",
@@ -15730,8 +16776,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-27T12:00:00.000Z",
   "publishedAt": "2025-01-27T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "00688150-d8d1-4f6f-b3fb-f456a950f56f",
@@ -15907,8 +16953,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-13T12:00:00.000Z",
   "publishedAt": "2023-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "dfc385cd-2c0d-4211-a5c1-2f8f30939ba9",
@@ -15996,8 +17042,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T00:00:00.000Z",
   "publishedAt": "2025-03-31T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "3286f57a-1d16-455b-a624-ba5ea35fcefd",
@@ -16039,8 +17085,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-02T00:00:00.000Z",
   "publishedAt": "2024-10-02T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "aa5bf8ec-dc26-44a0-b441-ecc74aed86d7",
@@ -16127,8 +17173,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-11T00:00:00.000Z",
   "publishedAt": "2026-06-11T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "92157ab0-4315-4e68-aec2-1f313ca6588a",
@@ -16261,8 +17307,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-16T00:00:00.000Z",
   "publishedAt": "2025-05-16T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "885ebdbc-84dd-49b9-ae62-3615970d7ba7",
@@ -16303,8 +17349,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-02T00:00:00.000Z",
   "publishedAt": "2025-02-02T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "6ccaf3c6-8b9b-48b2-a764-e446de71fc6f",
@@ -16346,8 +17392,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "36284da8-5c0f-4b27-a9b2-34732a52023b",
@@ -16388,8 +17434,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T00:00:00.000Z",
   "publishedAt": "2023-11-06T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "3728240c-7ae6-482d-8c2d-964d83e8baec",
@@ -16476,8 +17522,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "04ed842a-9e5d-4e12-adbe-e0a345030332",
@@ -16519,8 +17565,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-21T00:00:00.000Z",
   "publishedAt": "2025-05-21T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "1873aa04-ac99-4274-a8f5-4a0e2b4c130c",
@@ -16603,8 +17649,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-12T00:00:00.000Z",
   "publishedAt": "2024-09-12T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "034a79ea-710b-4427-a223-4d73be2d5c59",
@@ -16645,8 +17691,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-16T00:00:00.000Z",
   "publishedAt": "2025-04-16T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "4a6cb77e-f99d-4853-acd4-58fe79bb1a50",
@@ -16687,8 +17733,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-23T00:00:00.000Z",
   "publishedAt": "2025-01-23T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "f044cdec-7524-43e4-ac8d-610dafc3b5cc",
@@ -16729,8 +17775,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-11T00:00:00.000Z",
   "publishedAt": "2025-03-11T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "22cc77ce-26f0-423f-b63d-fd8562c5c1b5",
@@ -17029,8 +18075,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-16T17:52:04.000Z",
   "publishedAt": "2026-03-16T17:52:04.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "aa831a56-f866-401a-a0c2-e2fcb6aa120d",
@@ -17115,8 +18161,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-13T12:00:00.000Z",
   "publishedAt": "2024-06-13T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "7d8e4f41-ccc4-4eb3-bc3d-ecd2036b2b90",
@@ -17475,8 +18521,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-29T12:00:00.000Z",
   "publishedAt": "2024-10-29T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "566fb569-499b-42a4-a2f5-1d94ebe943b2",
@@ -17607,8 +18653,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-05T12:00:00.000Z",
   "publishedAt": "2025-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "10dfed32-7e8d-4ac1-9008-629a11b29033",
@@ -18183,8 +19229,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T06:02:41.000Z",
   "publishedAt": "2026-07-09T06:02:41.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "bb871ade-7949-47aa-97ab-c924defd71f8",
@@ -18813,8 +19859,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-08T12:00:00.000Z",
   "publishedAt": "2025-09-08T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "04ef5b54-240c-41af-ac4a-d7c5ec03e280",
@@ -19890,8 +20936,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-27T12:00:00.000Z",
   "publishedAt": "2022-11-27T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9aa622fd-7db8-4b19-90d8-11a520e8550e",
@@ -20480,8 +21526,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-09T12:00:00.000Z",
   "publishedAt": "2024-05-09T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "1ed5ed44-1515-4c59-956e-8dea178d2f9a",
@@ -20705,8 +21751,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-14T00:00:00.000Z",
   "publishedAt": "2025-08-14T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "772a4315-4b17-4726-bf5e-04456d781b66",
@@ -21161,8 +22207,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-13T12:00:00.000Z",
   "publishedAt": "2024-09-13T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "07f8f535-732d-4781-889d-36908e4a8aa4",
@@ -21342,8 +22388,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-31T12:00:00.000Z",
   "publishedAt": "2024-10-31T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e7dc157a-d75e-4f62-884a-459cda5851d9",
@@ -22843,8 +23889,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T09:28:06.000Z",
   "publishedAt": "2026-07-09T09:28:06.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "2d122fad-233c-490a-bc88-c79b6242fc89",
@@ -25723,8 +26769,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T12:00:00.000Z",
   "publishedAt": "2023-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "919573b4-8b7a-4148-a8ef-b6fb67fc3681",
@@ -26451,8 +27497,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-19T00:00:00.000Z",
   "publishedAt": "2024-09-19T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "006d1189-8941-42fd-a98b-3720645cc0a7",
@@ -26493,8 +27539,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-29T00:00:00.000Z",
   "publishedAt": "2025-04-29T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "a9290214-be63-4d6b-a99a-79738097db3f",
@@ -26534,8 +27580,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-03T00:00:00.000Z",
   "publishedAt": "2023-08-03T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "c9bce613-d160-46c4-a260-58b21cde26a0",
@@ -26577,8 +27623,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-24T12:00:00.000Z",
   "publishedAt": "2023-08-24T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "79ff590c-0dcd-4e1d-adb0-42e015b72f77",
@@ -26620,8 +27666,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-18T12:00:00.000Z",
   "publishedAt": "2024-09-18T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "709a4dc2-1599-4d38-a9c5-aef6e5fb04fa",
@@ -26663,8 +27709,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-14T12:00:00.000Z",
   "publishedAt": "2025-05-14T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e7a5aff5-798a-45ab-a049-4c2752aa5bf2",
@@ -26706,8 +27752,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-26T12:00:00.000Z",
   "publishedAt": "2025-11-26T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "6b2ed600-9f86-4c04-8732-31b1fbe7982e",
@@ -27649,8 +28695,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T02:14:47.000Z",
   "publishedAt": "2026-04-02T02:14:47.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e428c9f8-b1e1-44ea-a02a-2ca4e8777a9a",
@@ -28197,8 +29243,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-08T12:00:00.000Z",
   "publishedAt": "2025-05-08T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "27c19186-bcfd-45bc-a53e-3b13cbd24958",
@@ -28834,8 +29880,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-19T12:00:00.000Z",
   "publishedAt": "2024-11-19T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "7e00b275-1041-45e1-a2e5-2288a4027650",
@@ -29198,8 +30244,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "3303ae32-cdb3-424c-aba1-6ef95fcbfb93",
@@ -29378,8 +30424,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-20T12:00:00.000Z",
   "publishedAt": "2023-03-20T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e2085c07-dd4d-4ed0-90c1-c902fb9e2837",
@@ -29784,8 +30830,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-03T12:00:00.000Z",
   "publishedAt": "2024-09-03T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e8daa836-3ce4-4c60-833e-6e3fd8f06555",
@@ -30536,8 +31582,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T13:19:20.000Z",
   "publishedAt": "2026-01-20T13:19:20.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "06eea9d6-a1b2-46e2-86af-3da87baa1ba1",
@@ -32127,8 +33173,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-18T12:00:00.000Z",
   "publishedAt": "2023-12-18T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "5137c901-739b-4fd0-a77f-511031ed20d9",
@@ -32904,8 +33950,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-14T12:00:00.000Z",
   "publishedAt": "2023-09-14T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "004c25a5-d737-4ccc-a08e-81a4f12ee069",
@@ -33221,8 +34267,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-19T12:00:00.000Z",
   "publishedAt": "2025-05-19T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "4874a0ae-9064-4ed2-8f98-29d23fc89f05",
@@ -34132,8 +35178,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-28T12:00:00.000Z",
   "publishedAt": "2023-07-28T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "2c4b6489-7297-4036-a280-8324008ae05c",
@@ -34175,8 +35221,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "ffcbff37-3611-4128-b3a7-4d6b250a9f97",
@@ -34873,7 +35919,7 @@
   "confidenceScore": 84,
   "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 54,
+  "valueScore": 53,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -34883,7 +35929,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 53,
+    "freshness": 46,
     "crossRegion": false
   },
   "status": "published",
@@ -34892,7 +35938,7 @@
   "happenedAt": "2026-09-25T16:24:55.000Z",
   "publishedAt": "2026-09-25T17:22:05.147Z",
   "createdAt": "2026-09-25T17:21:21.595Z",
-  "updatedAt": "2026-09-28T05:59:58.375Z"
+  "updatedAt": "2026-09-28T19:47:15.339Z"
 },
 {
   "id": "8704c7aa-6a79-4ef3-971d-a9e6cc3dbd93",
@@ -35743,8 +36789,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-20T12:00:00.000Z",
   "publishedAt": "2025-11-20T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "34034d81-561b-48a1-af53-d91969e812f6",
@@ -35832,8 +36878,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "688fe7aa-3656-4b98-a097-7bf6998abe7e",
@@ -36197,8 +37243,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-18T12:00:00.000Z",
   "publishedAt": "2024-11-18T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "e4e22277-2fdc-4070-98c8-a80c85cde6d8",
@@ -36603,8 +37649,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-24T16:33:14.000Z",
   "publishedAt": "2026-05-24T16:33:14.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "336af561-1a95-49db-ba76-26eb5365a47f",
@@ -36826,8 +37872,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-31T12:00:00.000Z",
   "publishedAt": "2024-07-31T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "dc3384c0-4d0e-4903-8595-6b4404e8efd9",
@@ -36915,8 +37961,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-05T12:00:00.000Z",
   "publishedAt": "2024-03-05T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "4388f249-4f0e-4953-88e5-1eeba0e095d0",
@@ -37370,8 +38416,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -38914,8 +39960,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -39094,8 +40140,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -39549,8 +40595,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -40228,8 +41274,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -40906,8 +41952,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -41129,8 +42175,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -41264,8 +42310,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "b654d0dd-c746-45ef-aa75-0c3fb34e7c2d",
@@ -41990,8 +43036,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -42216,8 +43262,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -42487,8 +43533,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -42575,8 +43621,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -42753,8 +43799,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -43341,8 +44387,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -43703,8 +44749,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -44566,8 +45612,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -44655,8 +45701,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -44698,8 +45744,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -45518,8 +46564,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -45560,8 +46606,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -45823,8 +46869,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9f1a894b-a1e4-4310-9d53-4b2033134e42",
@@ -46864,6 +47910,94 @@
   "updatedAt": "2026-09-28T06:01:23.601Z"
 },
 {
+  "id": "3a00ff0b-d260-4088-9e40-2c5a6c3b049b",
+  "slug": "stagehand-python-4-2-0a0-dev1544-2026-09-28",
+  "title": "stagehand-python@4.2.0a0.dev1544",
+  "factSummary": "[chore]: use absolute gh URLs for readme links ( #3066 )",
+  "summary": "[chore]: use absolute gh URLs for readme links ( #3066 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "stagehand",
+    "python",
+    "0a0",
+    "dev1544"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T06:18:37.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:17.201Z",
+  "updatedAt": "2026-09-28T19:47:17.250Z"
+},
+{
+  "id": "1af7fb7b-43b7-414c-b3f8-74323e21dde7",
+  "slug": "stagehand-python-4-2-0a0-dev1545-docs-reorganize-integrations-and-add-stripe-webmcp-guide--2026-09-28",
+  "title": "stagehand-python@4.2.0a0.dev1545: docs: reorganize integrations and add Stripe WebMCP guide (#3011)",
+  "factSummary": "Summary Make the integrations overview a general directory for connecting Stagehand to agents, frameworks, and application workflows. Organize the overview and sidebar into Agent Frameworks, CLI Agents, and Automations. Add dedicated overviews for Agent Frameworks and CLI Agents. Cover framework connections separately from MCP adapter setup for coding agents, with Pi documented as a native extension. Update navigation and security links, and replace the removed MCP best-practices entry with the CLI Agents guide. Add Stripe under Automations, documenting the Checkout sample from stripe-samples/webmcp#5 , its setup, WebMCP flow, and final Pay click. Pin the Stripe sample commit while the upstream PR is open and explain its spending limit and result-handling limitations. Validation mint validate mint broken-links --check-anchors --check-redirects --check-snippets mint a11y --skip-contrast Formatting check for docs.json and git diff --check All passed using Node.js 24. Checkout was not executed; the Stripe guide was verified against the upstream sample source. Co-authored-by: cubic-dev-ai[bot] Co-authored-by: Cursor cursoragent@cursor.com",
+  "summary": "Summary Make the integrations overview a general directory for connecting Stagehand to agents, frameworks, and application workflows. Organize the overview and sidebar into Agent Frameworks, CLI Agents, and Automations. Add dedicated overviews for Agent Frameworks and CLI Agents. Cover framework connections separately from MCP adapter setup for coding agents, with Pi documented as a native extension. Update navigation and security links, and replace the removed MCP best-practices entry with the CLI Agents guide. Add Stripe under Automations, documenting the Checkout sample from stripe-samples/webmcp#5 , its setup, WebMCP flow, and final Pay click. Pin the Stripe sample commit while the upstream PR is open and explain its spending limit and result-handling limitations. Validation mint validate mint broken-links --check-anchors --check-redirects --check-snippets mint a11y --skip-contrast Formatting check for docs.json and git diff --check All passed using Node.js 24. Checkout was not executed; the Stripe guide was verified against the upstream sample source. Co-authored-by: cubic-dev-ai[bot] Co-authored-by: Cursor cursoragent@cursor.com",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "stagehand",
+    "python",
+    "0a0",
+    "dev1545",
+    "docs",
+    "reorganize",
+    "integrations",
+    "add"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T16:48:39.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:14.844Z",
+  "updatedAt": "2026-09-28T19:47:14.895Z"
+},
+{
   "id": "52cf0fc3-5d1a-429d-8c10-1bb68f15cf02",
   "slug": "stagehand-server-v3-v3-7-4-2026-07-22",
   "title": "stagehand/server-v3 v3.7.4",
@@ -47492,8 +48626,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "b0136b1a-ca12-4338-adb7-adb53bc21ddd",
@@ -48714,8 +49848,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -49124,8 +50258,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -49396,8 +50530,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
@@ -49845,8 +50979,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -50709,8 +51843,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9b5fea45-1f9f-4430-9e62-9e9dc909cb12",
@@ -52339,8 +53473,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "2036b89c-cdf0-4787-87be-21c6f9c5a4a6",
@@ -53822,6 +54956,52 @@
   "updatedAt": "2026-07-12T01:05:26.577Z"
 },
 {
+  "id": "f0ab0f23-b6b0-408a-b57c-8939cecb18f7",
+  "slug": "the-lenfest-institute-grows-landmark-program-with-expanded-openai-support-2026-09-28",
+  "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+  "factSummary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+  "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "lenfest",
+    "institute",
+    "grows",
+    "landmark",
+    "program",
+    "expanded",
+    "openai",
+    "support"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T07:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:17.140Z",
+  "updatedAt": "2026-09-28T19:47:17.190Z"
+},
+{
   "id": "68021265-b085-47c5-a51a-3dd9be562ae0",
   "slug": "the-low-frequency-trap-video-language-models-fail-at-simple-event-bookkeeping-2026-08-07",
   "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
@@ -54583,6 +55763,48 @@
   "publishedAt": null,
   "createdAt": "2026-09-28T05:59:55.258Z",
   "updatedAt": "2026-09-28T05:59:55.307Z"
+},
+{
+  "id": "9643fe27-00ab-4d6b-9ab2-5c0f3ae48f61",
+  "slug": "the-road-to-the-agentic-browser-a-kitesurf-update-2026-09-28",
+  "title": "The road to the agentic browser: A Kitesurf update",
+  "factSummary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites faster.",
+  "summary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites faster.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "road",
+    "agentic",
+    "browser",
+    "kitesurf"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T13:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:16.541Z",
+  "updatedAt": "2026-09-28T19:47:16.591Z"
 },
 {
   "id": "bacd721a-4e67-4d7d-a9f7-6890938c3f0b",
@@ -55983,8 +57205,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -56570,8 +57792,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -56659,8 +57881,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -56840,8 +58062,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -59983,8 +61205,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -61018,8 +62240,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -61289,8 +62511,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -63581,6 +64803,86 @@
   "updatedAt": "2026-09-23T05:18:43.774Z"
 },
 {
+  "id": "2fdbaea2-2705-42f7-91da-ce26ada6c7f1",
+  "slug": "v0-17-0-2026-09-28",
+  "title": "v0.17.0",
+  "factSummary": "Version 0.17.0 makes repeated prompts faster, adds new vision and audio models, and brings more ways to tune the Engine for different GPUs. Highlights Faster repeated prompts with prefix caching - The dynamic Engine can now reuse matching prompt prefixes across requests. Prefix caching is enabled automatically for supported paged KV-cache layouts. Runtime profiles for different GPUs - A single model package can select Engine settings and model variants based on available GPU memory. New capability APIs also make it easier for applications to discover Engine limits. New LFM2 models - Added support for LFM2-VL and LFM2.5-VL vision models, LFM2-MoE, and LFM2-Audio and LFM2.5-Audio with speech input and output. Moonshine streaming speech recognition - Added Moonshine small and tiny streaming ASR models, designed for fast transcription with low CPU use. Faster DFlash decoding - DFlash now supports CUDA graph capture, prepacked weights, optional projection fusion, sampled speculative decoding, and direct Qwen 3.8 package export. Lower GPU memory pressure - Embedding lookups can be offloaded to CPU while keeping CUDA graph capture enabled for decoding. Less work during generation - Paged decoders can compute logits only for the token rows needed for generation and speculative verification. Safer conversation editing - Engine requests can rewind to the start of an earlier turn and continue from there without creating a new request. A better Model Builder configuration - The new structured configuration organizes target, drafter, speculative decoding, runtime, and search settings in one validated format. More Engine flexibility - Added configurable paged block sizes, improved speculative draft controls, and APIs for maximum request length. Reliability improvements - Includes fixes for WebGPU graph capture, decoder pipeline KV-cache shapes, paged prefill settings, legacy execution providers, and prefill logits.",
+  "summary": "Version 0.17.0 makes repeated prompts faster, adds new vision and audio models, and brings more ways to tune the Engine for different GPUs. Highlights Faster repeated prompts with prefix caching - The dynamic Engine can now reuse matching prompt prefixes across requests. Prefix caching is enabled automatically for supported paged KV-cache layouts. Runtime profiles for different GPUs - A single model package can select Engine settings and model variants based on available GPU memory. New capability APIs also make it easier for applications to discover Engine limits. New LFM2 models - Added support for LFM2-VL and LFM2.5-VL vision models, LFM2-MoE, and LFM2-Audio and LFM2.5-Audio with speech input and output. Moonshine streaming speech recognition - Added Moonshine small and tiny streaming ASR models, designed for fast transcription with low CPU use. Faster DFlash decoding - DFlash now supports CUDA graph capture, prepacked weights, optional projection fusion, sampled speculative decoding, and direct Qwen 3.8 package export. Lower GPU memory pressure - Embedding lookups can be offloaded to CPU while keeping CUDA graph capture enabled for decoding. Less work during generation - Paged decoders can compute logits only for the token rows needed for generation and speculative verification. Safer conversation editing - Engine requests can rewind to the start of an earlier turn and continue from there without creating a new request. A better Model Builder configuration - The new structured configuration organizes target, drafter, speculative decoding, runtime, and search settings in one validated format. More Engine flexibility - Added configurable paged block sizes, improved speculative draft controls, and APIs for maximum request length. Reliability improvements - Includes fixes for WebGPU graph capture, decoder pipeline KV-cache shapes, paged prefill settings, legacy execution providers, and prefill logits.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v0",
+    "17"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T06:15:36.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:17.261Z",
+  "updatedAt": "2026-09-28T19:47:17.310Z"
+},
+{
+  "id": "4d318da7-5fe3-4c63-a465-8a62433a5245",
+  "slug": "v0-18-0-2026-09-28",
+  "title": "v0.18.0",
+  "factSummary": "What's Changed 🚀 Features [Feat]: Support output input logprobs by @RunningLeon in #4793 Expand SM90 quantized GEMMs and unify TurboMind linear execution by @lzhangzz in #4943 [ascend] support glm52 by @wanfengcxz in #4928 Support dflash for qwen3.5 by @RunningLeon in #4789 Move shared expert into the MoE FFN layer; shard dense FFN node-locally in MoE models by @lzhangzz in #4973 💥 Improvements fix: shard MLA attention under hybrid DP and TP by @CUHKSZzxy in #4908 refactor(serving): share chat serving runner by @lvhan028 in #4876 feat(pytorch): prototype TurboMind W4A16 backend for AWQ linear by @qescccczmr in #4897 refactor(pytorch): redesign CacheEngine around plans and allocations by @grimoire in #4862 fix: reject multimodal requests for text models by @CUHKSZzxy in #4926 refactor(pytorch): replace backend operator builders with typed build specs by @grimoire in #4890 Migrate TurboMind to C++20 by @lzhangzz in #4946 feat(pytorch): add piecewise CUDA graph prefill by @grimoire in #4895 feat: add XTuner TileLang sparse MLA backend by @CUHKSZzxy in #4904 feat: add request-only cache usage metric by @grimoire in #4940 refactor: stream tool parameters incrementally by @lvhan028 in #4802 feat: support checkpoint-engine weight updates by @lvhan028 in #4913 feat: add symmetric-memory LM-head all-gather by @qescccczmr in #4915 Refactor PyTorch scheduler ownership and API boundaries by @grimoire in #4921 feat(gpt-oss): combine xgrammar structural_tag grammar with Harmony parser by @windreamer in #4907 Decouple GEMM workspace from Linear handle by @lzhangzz in #4978 feat(kv_connector): mooncake store support mtp by @caikun-pjlab in #4948 fix(pytorch): avoid health RPC scheduling delay by @lvhan028 in #4966 refactor: remove legacy OpenAI API client by @lvhan028 in #4993 🐞 Bug fixes fix: fall back to model generation config by @CUHKSZzxy in #4929 fix: initialize MLA KV-B after online FP8 quantization by @CUHKSZzxy in #4925 fix tool_choice='required' by @lvhan028 in #4909…",
+  "summary": "What's Changed 🚀 Features [Feat]: Support output input logprobs by @RunningLeon in #4793 Expand SM90 quantized GEMMs and unify TurboMind linear execution by @lzhangzz in #4943 [ascend] support glm52 by @wanfengcxz in #4928 Support dflash for qwen3.5 by @RunningLeon in #4789 Move shared expert into the MoE FFN layer; shard dense FFN node-locally in MoE models by @lzhangzz in #4973 💥 Improvements fix: shard MLA attention under hybrid DP and TP by @CUHKSZzxy in #4908 refactor(serving): share chat serving runner by @lvhan028 in #4876 feat(pytorch): prototype TurboMind W4A16 backend for AWQ linear by @qescccczmr in #4897 refactor(pytorch): redesign CacheEngine around plans and allocations by @grimoire in #4862 fix: reject multimodal requests for text models by @CUHKSZzxy in #4926 refactor(pytorch): replace backend operator builders with typed build specs by @grimoire in #4890 Migrate TurboMind to C++20 by @lzhangzz in #4946 feat(pytorch): add piecewise CUDA graph prefill by @grimoire in #4895 feat: add XTuner TileLang sparse MLA backend by @CUHKSZzxy in #4904 feat: add request-only cache usage metric by @grimoire in #4940 refactor: stream tool parameters incrementally by @lvhan028 in #4802 feat: support checkpoint-engine weight updates by @lvhan028 in #4913 feat: add symmetric-memory LM-head all-gather by @qescccczmr in #4915 Refactor PyTorch scheduler ownership and API boundaries by @grimoire in #4921 feat(gpt-oss): combine xgrammar structural_tag grammar with Harmony parser by @windreamer in #4907 Decouple GEMM workspace from Linear handle by @lzhangzz in #4978 feat(kv_connector): mooncake store support mtp by @caikun-pjlab in #4948 fix(pytorch): avoid health RPC scheduling delay by @lvhan028 in #4966 refactor: remove legacy OpenAI API client by @lvhan028 in #4993 🐞 Bug fixes fix: fall back to model generation config by @CUHKSZzxy in #4929 fix: initialize MLA KV-B after online FP8 quantization by @CUHKSZzxy in #4925 fix tool_choice='required' by @lvhan028 in #4909…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v0",
+    "18"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T07:04:58.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:17.082Z",
+  "updatedAt": "2026-09-28T19:47:17.129Z"
+},
+{
   "id": "55ffdab0-55f2-4eaa-bb0e-72ceeec28664",
   "slug": "v0-19-3-patch-release-2026-07-23",
   "title": "v0.19.3 Patch Release",
@@ -65744,20 +67046,20 @@
     "reasoning effort",
     "proxy"
   ],
-  "confidenceScore": 91,
-  "heatScore": 31,
+  "confidenceScore": 98,
+  "heatScore": 38,
   "impactScore": 55,
-  "valueScore": 67,
+  "valueScore": 68,
   "scoreFactors": {
     "authority": 92,
-    "corroboration": 40,
+    "corroboration": 60,
     "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 2,
+    "independentSources": 3,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 100,
+    "freshness": 86,
     "crossRegion": false
   },
   "status": "published",
@@ -65766,7 +67068,7 @@
   "happenedAt": "2026-09-28T05:43:48.000Z",
   "publishedAt": "2026-09-28T06:01:23.602Z",
   "createdAt": "2026-09-28T05:59:58.026Z",
-  "updatedAt": "2026-09-28T06:01:23.602Z"
+  "updatedAt": "2026-09-28T19:47:15.814Z"
 },
 {
   "id": "68e13558-5482-41ac-a84e-052625dba82a",
@@ -65851,6 +67153,47 @@
   "publishedAt": "2026-09-23T05:19:32.561Z",
   "createdAt": "2026-09-23T05:18:42.784Z",
   "updatedAt": "2026-09-25T17:21:22.177Z"
+},
+{
+  "id": "6f2300da-a50e-458d-929a-7b39ae4daec6",
+  "slug": "v1-104-0-rc-1-2026-09-28",
+  "title": "v1.104.0-rc.1",
+  "factSummary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.104.0-rc.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.104.0-rc.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.104.0-rc.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed test(e2e): cover Azure code_interpreter container files by native id with a service-account key by @devin-ai-integration [bot] in #43122 fix(router): await budget redis pipeline before sync reads (internal copy of #32618 ) by @devin-ai-integration [bot] in #43125 chore(cost-map): add openai cached image input prices from the pricing page by @berriai-litellm-provider-info-sync[bot] in #43143 feat(langfuse)!: migrate the sdk callback to langfuse v4 by @yucheng-berri in #36741 fix(key_management): count team unified access group MCP servers when validating key MCP grants by @devin-ai-integration [bot] in #41231 fix(ui): group cost optimization cache leakage by model group by @devin-ai-integration [bot] in #43008 fix(presidio): mask streamed /v1/messages output when the first upstream read is a keepalive, a data-less ping, or a split utf8 character by @devin-ai-integration [bot] in #43023 test: backport stale and state-leaking test fixes to rc/1.104.0 ( #43266 ) by @yuneng-berri in #4…",
+  "summary": "Verify Docker Image Signature All LiteLLM Docker images are signed with cosign . Every release is signed with the same key introduced in commit 0112e53 . Verify using the pinned commit hash (recommended): A commit hash is cryptographically immutable, so this is the strongest way to ensure you are using the original signing key: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/0112e53046018d726492c814b3644b7d376029d0/cosign.pub \\ ghcr.io/berriai/litellm:v1.104.0-rc.1 Verify using the release tag (convenience): Tags are protected in this repository and resolve to the same key. This option is easier to read but relies on tag protection rules: cosign verify \\ --key https://raw.githubusercontent.com/BerriAI/litellm/v1.104.0-rc.1/cosign.pub \\ ghcr.io/berriai/litellm:v1.104.0-rc.1 Expected output: The following checks were performed on each of these signatures: - The cosign claims were validated - The signatures were verified against the specified public key What's Changed test(e2e): cover Azure code_interpreter container files by native id with a service-account key by @devin-ai-integration [bot] in #43122 fix(router): await budget redis pipeline before sync reads (internal copy of #32618 ) by @devin-ai-integration [bot] in #43125 chore(cost-map): add openai cached image input prices from the pricing page by @berriai-litellm-provider-info-sync[bot] in #43143 feat(langfuse)!: migrate the sdk callback to langfuse v4 by @yucheng-berri in #36741 fix(key_management): count team unified access group MCP servers when validating key MCP grants by @devin-ai-integration [bot] in #41231 fix(ui): group cost optimization cache leakage by model group by @devin-ai-integration [bot] in #43008 fix(presidio): mask streamed /v1/messages output when the first upstream read is a keepalive, a data-less ping, or a split utf8 character by @devin-ai-integration [bot] in #43023 test: backport stale and state-leaking test fixes to rc/1.104.0 ( #43266 ) by @yuneng-berri in #4…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "104",
+    "rc"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T08:01:07.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:17.024Z",
+  "updatedAt": "2026-09-28T19:47:17.072Z"
 },
 {
   "id": "6aadda9d-e251-41ab-8fc6-62d8fa573b32",
@@ -69815,6 +71158,46 @@
   "updatedAt": "2026-09-26T16:33:27.668Z"
 },
 {
+  "id": "5b12efe4-534b-4e98-8223-88db2d43b704",
+  "slug": "v2-1-284-2026-09-28",
+  "title": "v2.1.284",
+  "factSummary": "What's changed Added Claude Sonnet 5.5 ( claude-sonnet-5-5 ), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads Added a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones Added dollar amounts to the Claude apps gateway spend limit in /usage and the status line (for example \"$271.40 / $500.00 spent this month\") when the gateway runs this version or later; the status line's rate_limits.spend_limit also gains used_usd , limit_usd and period Added effortSlider:decreaseEffort , increaseEffort and toggleUltracode keybinding actions, so the /effort slider's arrow and Tab keys can be rebound in keybindings.json Added /rate-limit-options to /help and the command menu for claude.ai subscribers, so the usage-limit notices that mention it point to a command you can find Added /mcp reconnect all in the interactive terminal to retry every MCP server that failed to connect or needs authentication at once Added Claude apps gateway startup warnings when a managed policy's availableModels is empty, or leaves out the model Claude Code starts on without setting model or enforceAvailableModels Added auth: { google: {} } for Claude apps gateway telemetry.forward_to destinations, so telemetry can be exported straight to Google Cloud's OTLP endpoint using the gateway's Google Cloud credentials Added certificate client authentication ( private_key_jwt ) between the Claude apps gateway and its identity provider, for identity providers that issue certificate credentials instead of client secrets Fixed a damaged response stream showing raw errors such as \"JSON Parse error\" or \"undefined is not an object\", or writing the word \"undefined\" into an answer, instead of being retried or reported as an interrupted response Fixed an overloaded or server error arriving right after a thinking block ending the turn with an err…",
+  "summary": "What's changed Added Claude Sonnet 5.5 ( claude-sonnet-5-5 ), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads Added a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones Added dollar amounts to the Claude apps gateway spend limit in /usage and the status line (for example \"$271.40 / $500.00 spent this month\") when the gateway runs this version or later; the status line's rate_limits.spend_limit also gains used_usd , limit_usd and period Added effortSlider:decreaseEffort , increaseEffort and toggleUltracode keybinding actions, so the /effort slider's arrow and Tab keys can be rebound in keybindings.json Added /rate-limit-options to /help and the command menu for claude.ai subscribers, so the usage-limit notices that mention it point to a command you can find Added /mcp reconnect all in the interactive terminal to retry every MCP server that failed to connect or needs authentication at once Added Claude apps gateway startup warnings when a managed policy's availableModels is empty, or leaves out the model Claude Code starts on without setting model or enforceAvailableModels Added auth: { google: {} } for Claude apps gateway telemetry.forward_to destinations, so telemetry can be exported straight to Google Cloud's OTLP endpoint using the gateway's Google Cloud credentials Added certificate client authentication ( private_key_jwt ) between the Claude apps gateway and its identity provider, for identity providers that issue certificate credentials instead of client secrets Fixed a damaged response stream showing raw errors such as \"JSON Parse error\" or \"undefined is not an object\", or writing the word \"undefined\" into an answer, instead of being retried or reported as an interrupted response Fixed an overloaded or server error arriving right after a thinking block ending the turn with an err…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v2",
+    "284"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 66,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T18:02:03.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:15.832Z",
+  "updatedAt": "2026-09-28T19:47:15.881Z"
+},
+{
   "id": "430ae318-aec4-4a59-98f6-28d9bb260a2f",
   "slug": "v2-13-0-2026-07-22",
   "title": "v2.13.0",
@@ -71060,6 +72443,46 @@
   "publishedAt": null,
   "createdAt": "2026-09-23T05:18:43.166Z",
   "updatedAt": "2026-09-24T05:33:34.919Z"
+},
+{
+  "id": "429eecbc-6ccc-4d1f-aff4-610db063a975",
+  "slug": "v3-20-0-2026-09-28",
+  "title": "v3.20.0",
+  "factSummary": "3.20.0 (2026-09-28) Features api: add Agents credential and session options ( #3967 ) ( bb68198 ) api: add Cyber access programs to Responses ( #3956 ) ( 09c5b6f ) responses: opt in to incremental WebSocket text and tool snapshots ( #3973 ) ( d0207b4 ) responses: preserve detailed WebSocket accumulator snapshots ( #3981 ) ( a380cf2 ) Bug Fixes client: retry unmapped TLS transport errors ( #3982 ) ( 0d35a26 ) live: avoid hangs at fractional transcript grouping deadlines ( #3970 ) ( 4ef4129 ) live: keep query parameters out of WebSocket endpoint paths ( #3972 ) ( f9c458b ) live: preserve caller queues and prevent uncertain WebSocket replay ( #3980 ) ( 80e9686 ) realtime: preserve base URL queries in WebSocket upgrades ( #3971 ) ( f7bd4a7 ) realtime: retain configured queues without replaying attempted sends ( #3978 ) ( a52805c ) Chores api: clarify documented API error responses ( #3965 ) ( 384fee3 ) api: document batch error responses ( #3961 ) ( 6e4a79c ) api: document files and uploads error responses ( #3960 ) ( a9d727f ) api: document fine-tuning and model errors ( #3964 ) ( 5d4003c ) api: document Responses not-found errors ( #3959 ) ( 63099e7 ) api: document stored chat completion errors ( #3963 ) ( a73fe0c )",
+  "summary": "3.20.0 (2026-09-28) Features api: add Agents credential and session options ( #3967 ) ( bb68198 ) api: add Cyber access programs to Responses ( #3956 ) ( 09c5b6f ) responses: opt in to incremental WebSocket text and tool snapshots ( #3973 ) ( d0207b4 ) responses: preserve detailed WebSocket accumulator snapshots ( #3981 ) ( a380cf2 ) Bug Fixes client: retry unmapped TLS transport errors ( #3982 ) ( 0d35a26 ) live: avoid hangs at fractional transcript grouping deadlines ( #3970 ) ( 4ef4129 ) live: keep query parameters out of WebSocket endpoint paths ( #3972 ) ( f9c458b ) live: preserve caller queues and prevent uncertain WebSocket replay ( #3980 ) ( 80e9686 ) realtime: preserve base URL queries in WebSocket upgrades ( #3971 ) ( f7bd4a7 ) realtime: retain configured queues without replaying attempted sends ( #3978 ) ( a52805c ) Chores api: clarify documented API error responses ( #3965 ) ( 384fee3 ) api: document batch error responses ( #3961 ) ( 6e4a79c ) api: document files and uploads error responses ( #3960 ) ( a9d727f ) api: document fine-tuning and model errors ( #3964 ) ( 5d4003c ) api: document Responses not-found errors ( #3959 ) ( 63099e7 ) api: document stored chat completion errors ( #3963 ) ( a73fe0c )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v3",
+    "20"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 66,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T16:04:13.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:16.230Z",
+  "updatedAt": "2026-09-28T19:47:16.282Z"
 },
 {
   "id": "fcdcbe8d-082a-4f97-af4f-3f3dbeeba76d",
@@ -74045,6 +75468,48 @@
   "updatedAt": "2026-09-18T16:33:25.952Z"
 },
 {
+  "id": "2f678fd1-206e-4224-a785-4bd15134b44e",
+  "slug": "vertex-sdk-v0-20-0-2026-09-28",
+  "title": "vertex-sdk: v0.20.0",
+  "factSummary": "0.20.0 (2026-09-28) Full Changelog: vertex-sdk-v0.19.11...vertex-sdk-v0.20.0 Features api: add claude-sonnet-5-5 ( 4e77366 )",
+  "summary": "0.20.0 (2026-09-28) Full Changelog: vertex-sdk-v0.19.11...vertex-sdk-v0.20.0 Features api: add claude-sonnet-5-5 ( 4e77366 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "vertex",
+    "sdk",
+    "v0",
+    "20"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T18:04:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:15.764Z",
+  "updatedAt": "2026-09-28T19:47:15.813Z"
+},
+{
   "id": "56ad8cab-5fb1-433a-b99e-162b07f19d58",
   "slug": "vexaiot-autonomous-iot-vulnerability-exploitation-using-ai-agents-2026-07-13",
   "title": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
@@ -74582,8 +76047,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -74900,8 +76365,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "2e60b549-f0a2-4ea4-947f-b03dcea1d6bf",
@@ -75351,8 +76816,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -75394,8 +76859,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -75617,8 +77082,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -75844,8 +77309,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "30d1ec74-3b0c-472f-b394-b8fff344cad8",
@@ -75940,6 +77405,48 @@
   "updatedAt": "2026-09-24T05:33:31.542Z"
 },
 {
+  "id": "0ce9aa3e-6c0f-4003-b3a2-8bf4771205bb",
+  "slug": "watch-the-winning-trailer-from-the-future-vision-xprize-the-gifted-2026-09-28",
+  "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+  "factSummary": "Google AI 博客发布了一篇题为《Watch the winning trailer from the Future Vision XPRIZE, The Gifted.》的文章，内容为观看 Future Vision XPRIZE 获奖预告片《The Gifted》。",
+  "summary": "Google AI 博客发布文章，展示 Future Vision XPRIZE 的获奖预告片《The Gifted》。",
+  "technicalInsight": "证据仅表明该预告片获奖，未披露其使用的技术方法、模型或制作流程，因此无法判断技术路线；可验证的下一信号是官方是否发布该作品的制作技术说明或所用 AI 工具清单。",
+  "industryInsight": "该事件显示 XPRIZE 与 Google 在 AI 相关创意竞赛上的曝光合作，但证据未提供参赛规模、评审标准或商业转化信息，尚不足以推断行业格局变化；可关注后续是否公布获奖团队、赞助方与赛事规模数据。",
+  "futureOutlook": "若后续出现获奖作品的完整发布、团队访谈或赛事下一届公告，可作为判断该赛事是否形成持续影响力的信号；当前不宜对影响范围作预测。",
+  "businessValue": "对 Google 而言，此类赛事内容可作为品牌与 AI 创意生态的展示窗口，但证据未包含分发数据、用户规模或商业条款，商业价值暂无法量化。",
+  "category": "ai-film-competition",
+  "company": "The Gifted",
+  "keywords": [
+    "Future Vision XPRIZE",
+    "The Gifted",
+    "Google AI",
+    "获奖预告片"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T19:00:00.000Z",
+  "publishedAt": "2026-09-28T19:48:06.080Z",
+  "createdAt": "2026-09-28T19:47:15.288Z",
+  "updatedAt": "2026-09-28T19:48:06.080Z"
+},
+{
   "id": "bd356efc-9250-4ee4-a9de-0faffd588993",
   "slug": "watermark-for-large-language-models",
   "title": "A Watermark for Large Language Models：软prompt绿名单水印，可检测LLM输出且不影响文本质量",
@@ -75979,8 +77486,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -79641,8 +81148,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -80325,8 +81832,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -80905,8 +82412,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -80949,8 +82456,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -81353,8 +82860,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -81396,8 +82903,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -81439,8 +82946,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -81482,8 +82989,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-09-28T05:55:22.285Z",
-  "updatedAt": "2026-09-28T05:55:22.285Z"
+  "createdAt": "2026-09-28T19:42:45.475Z",
+  "updatedAt": "2026-09-28T19:42:45.475Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
