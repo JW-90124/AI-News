@@ -255,9 +255,7 @@ function footerSubscriptions(github: GithubData, locale: Locale): string {
 }
 
 function footerContacts(locale: Locale): string {
-  const contacts = [
-    { name: "GitHub", iconName: "github", href: "https://github.com/JW-90124" },
-  ];
+  const contacts = [{ name: "GitHub", iconName: "github", href: "https://github.com/JW-90124" }];
   return `<nav class="footer-contacts" aria-label="${escapeHtml(t("footer.contacts", locale))}"><span>${escapeHtml(t("footer.contacts", locale))}</span>${contacts
     .map(
       (contact) =>
