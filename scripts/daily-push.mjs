@@ -3,13 +3,14 @@
  * Daily digest pusher.
  *
  * Reads dist/data/timeline.json (produced by `npm run export`), selects the
- * most impactful events from the last DIGEST_WINDOW_HOURS, then:
- *   1. Sends a WeCom (企业微信) news-card message to the self-built app so the
- *      digest lands in the owner's personal WeChat via the WeChat plugin.
- *   2. Writes a WeChat Official Account (公众号) ready HTML draft plus a plain
+ * most impactful events from the last DIGEST_WINDOW_HOURS (falling back to
+ * unsent events from the last DIGEST_RECAP_DAYS), then:
+ *   1. Writes a WeChat Official Account (公众号) ready HTML draft plus a plain
  *      markdown copy under digests/.
+ *   2. Optionally sends a WeCom (企业微信) news-card message, only when
+ *      DIGEST_WECOM_PUSH=true.
  *
- * WeCom delivery (skipped with a warning when neither is configured):
+ * WeCom delivery (requires DIGEST_WECOM_PUSH=true plus one of):
  *   WECOM_WEBHOOK_URL — group robot webhook (preferred; no trusted-IP setup)
  *   WECOM_CORP_ID + WECOM_APP_SECRET + WECOM_AGENT_ID — self-built app API
  *     (requires a trusted IP / verified domain, impractical on GitHub Actions)
@@ -18,6 +19,7 @@
  *   DIGEST_DIR (default digests)
  *   DIGEST_WINDOW_HOURS (default 26)
  *   DIGEST_MAX_EVENTS (default 8)
+ *   DIGEST_RECAP_DAYS (default 7)
  *   WECOM_TO_USER (default @all)
  */
 
@@ -28,6 +30,8 @@ const TIMELINE_PATH = process.env.TIMELINE_PATH ?? "dist/data/timeline.json";
 const DIGEST_DIR = process.env.DIGEST_DIR ?? "digests";
 const WINDOW_HOURS = Number(process.env.DIGEST_WINDOW_HOURS ?? 26);
 const MAX_EVENTS = Number(process.env.DIGEST_MAX_EVENTS ?? 8);
+const RECAP_DAYS = Number(process.env.DIGEST_RECAP_DAYS ?? 7);
+const RECAP_MAX_EVENTS = 5;
 
 const trackNames = {
   "tech-evolution": "模型能力与研究",
@@ -58,22 +62,20 @@ async function loadSentState() {
 }
 
 function pickEvents(timeline, sent) {
-  const cutoff = Date.now() - WINDOW_HOURS * 3600 * 1000;
-  const fresh = timeline.events.filter(
-    (e) => Date.parse(e.publishedAt ?? e.happenedAt) >= cutoff && !(e.slug in sent),
-  );
-  const pool =
-    fresh.length > 0
-      ? fresh
-      : [...timeline.events]
-          .sort(
-            (a, b) =>
-              Date.parse(b.publishedAt ?? b.happenedAt) - Date.parse(a.publishedAt ?? a.happenedAt),
-          )
-          .slice(0, 5);
+  const unsentSince = (hours) => {
+    const cutoff = Date.now() - hours * 3600 * 1000;
+    return timeline.events.filter(
+      (e) => Date.parse(e.publishedAt ?? e.happenedAt) >= cutoff && !(e.slug in sent),
+    );
+  };
+  const fresh = unsentSince(WINDOW_HOURS);
+  // Recap only high-impact events not already covered, so stale data never
+  // produces the same digest day after day; an empty recap is acceptable.
+  const pool = fresh.length > 0 ? fresh : unsentSince(RECAP_DAYS * 24);
+  const limit = fresh.length > 0 ? MAX_EVENTS : RECAP_MAX_EVENTS;
   return {
     isFresh: fresh.length > 0,
-    events: pool.sort((a, b) => (b.impactScore ?? 0) - (a.impactScore ?? 0)).slice(0, MAX_EVENTS),
+    events: pool.sort((a, b) => (b.impactScore ?? 0) - (a.impactScore ?? 0)).slice(0, limit),
   };
 }
 
@@ -170,7 +172,9 @@ function escapeHtml(text) {
 function renderMpDraft({ events, isFresh }, dateStr, siteUrl) {
   const intro = isFresh
     ? `今天从 400+ 官方信源中筛出 ${events.length} 条通过证据门控的行业事件。`
-    : "今天没有新事件通过质量门控，以下为近期重点回顾。";
+    : events.length > 0
+      ? "今天没有新事件通过质量门控，以下为近期重点回顾。"
+      : "今天没有新事件通过质量门控，近期重点也已在往期日报中覆盖。";
 
   const sections = events
     .map((e, i) => {
@@ -210,7 +214,14 @@ ${sections}
 
 function renderMarkdown({ events, isFresh }, dateStr, siteUrl) {
   const lines = [`# AI 日报 · ${dateStr}`, ""];
-  lines.push(isFresh ? `今日 ${events.length} 条重点事件。` : "今日无新事件，以下为近期回顾。", "");
+  lines.push(
+    isFresh
+      ? `今日 ${events.length} 条重点事件。`
+      : events.length > 0
+        ? "今日无新事件，以下为近期回顾。"
+        : "今日无新事件，近期重点已在往期日报中覆盖。",
+    "",
+  );
   for (const [i, e] of events.entries()) {
     lines.push(`## ${i + 1}. ${e.title}`, "");
     if (e.factSummary) lines.push(`- **事实**：${e.factSummary}`);
@@ -247,10 +258,14 @@ await writeFile(
 );
 console.log(`Digest written to ${DIGEST_DIR}/${dateStr}.{html,md}`);
 
-const pushed = await sendWecomDigest(picked, timeline.siteUrl, dateStr);
-console.log(pushed ? "WeCom push sent." : "WeCom push skipped.");
+if (process.env.DIGEST_WECOM_PUSH === "true") {
+  const pushed = await sendWecomDigest(picked, timeline.siteUrl, dateStr);
+  console.log(pushed ? "WeCom push sent." : "WeCom push skipped.");
+} else {
+  console.log("WeCom push disabled (set DIGEST_WECOM_PUSH=true to enable).");
+}
 
-if (picked.isFresh) {
+if (picked.events.length > 0) {
   const now = new Date().toISOString();
   for (const e of picked.events) sent[e.slug] = now;
   await writeFile(STATE_PATH, `${JSON.stringify(sent, null, 2)}\n`, "utf8");

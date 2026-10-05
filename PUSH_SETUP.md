@@ -1,5 +1,10 @@
 # 每日 AI 日报推送 · 配置指南
 
+> **当前状态：企业微信推送已关闭。** 工作流 `Daily digest` 仍每天运行，只生成并提交
+> `digests/日期.html` / `digests/日期.md`，直接在 GitHub 上查看即可。
+> 如需恢复推送：在 `daily-push.yml` 的 "Build digest drafts" 步骤 env 中加回
+> `DIGEST_WECOM_PUSH: "true"` 和 `WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}`。
+
 本 fork 在 agent-pulse 原有流水线之上增加了两个文件：
 
 - `scripts/daily-push.mjs` — 读取每日导出的事件数据，生成日报并推送

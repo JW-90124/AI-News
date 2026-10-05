@@ -104,6 +104,8 @@ jobs:
       - name: Audit research impact before publication
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          # Coverage gaps surface as a warning; they must not freeze the daily refresh.
+          RESEARCH_COVERAGE_GATE: warn
         run: npm run --silent research:impact -- --skip-seed
 
       - name: Enrich evidence-ready review Events with DeepSeek

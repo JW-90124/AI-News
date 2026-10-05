@@ -1,4 +1,4 @@
-name: Daily WeChat digest push
+name: Daily digest
 
 on:
   # Chain directly off the data refresh so the digest always uses fresh data
@@ -31,7 +31,7 @@ jobs:
         with:
           ref: main
 
-      - name: Decide whether to publish today's digest
+      - name: Decide whether to build today's digest
         id: decide
         shell: bash
         run: |
@@ -82,12 +82,7 @@ jobs:
       - name: Export public content
         run: npm run export -- --skip-seed
 
-      - name: Build digest and push to WeCom
-        env:
-          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
-          WECOM_CORP_ID: ${{ secrets.WECOM_CORP_ID }}
-          WECOM_APP_SECRET: ${{ secrets.WECOM_APP_SECRET }}
-          WECOM_AGENT_ID: ${{ secrets.WECOM_AGENT_ID }}
+      - name: Build digest drafts (WeCom push disabled)
         run: node scripts/daily-push.mjs
 
       - name: Commit digest drafts
@@ -101,6 +96,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(digest): daily WeChat digest draft"
+          git commit -m "chore(digest): daily digest draft"
           git pull --rebase origin main
           git push origin HEAD:main

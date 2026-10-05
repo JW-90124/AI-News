@@ -4,6 +4,9 @@ import type { PublicEvent } from "../domain/types.js";
 export const RESEARCH_IMPACT_POLICY_VERSION = "2026-07-14.v2";
 export const RESEARCH_MONTH_LIMIT = 10;
 export const RESEARCH_REPORT_MAX_AGE_DAYS = 14;
+// Citation-based routes need at least 120 days of paper age, so months younger
+// than this cannot qualify without a manual override and are not gated yet.
+export const RESEARCH_COVERAGE_MATURITY_DAYS = 120;
 
 export type ResearchImpactRoute =
   | "established-field-impact"
@@ -240,8 +243,10 @@ export function researchCoverageForCompletedMonths(
   assessments: ResearchImpactAssessment[],
   referenceAt = new Date().toISOString(),
   lookbackMonths = 6,
+  maturityDays = RESEARCH_COVERAGE_MATURITY_DAYS,
 ): ResearchCoverage {
-  const reference = new Date(referenceAt);
+  // Anchor the window to the latest month whose citations have had time to mature.
+  const reference = new Date(Date.parse(referenceAt) - maturityDays * 86_400_000);
   if (!Number.isFinite(reference.getTime())) {
     return { completedMonths: [], maxConsecutiveEmptyMonths: 0 };
   }

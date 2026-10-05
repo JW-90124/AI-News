@@ -54,7 +54,14 @@ jobs:
         run: |
           set -euo pipefail
           latest_success="$(gh run list --workflow source-audit.yml --status success --limit 1 --json updatedAt --jq '.[0].updatedAt // empty')"
-          issue_json="$(gh issue view 4 --json state,updatedAt,body)"
+          # Resolve the summary issue by label + marker; issue numbers differ between forks.
+          issue_number="$(gh issue list --state all --label "source:health" --limit 100 --json number,body \
+            --jq '[.[] | select(.body | contains("agent-pulse-source-health-summary:v1"))][0].number // empty')"
+          if [[ -z "$issue_number" ]]; then
+            echo "::error title=Source health issue missing::No issue labelled source:health carries the summary marker"
+            exit 1
+          fi
+          issue_json="$(gh issue view "$issue_number" --json state,updatedAt,body)"
           issue_state="$(jq -r '.state' <<< "$issue_json")"
           issue_updated="$(jq -r '.updatedAt' <<< "$issue_json")"
           issue_body="$(jq -r '.body' <<< "$issue_json")"

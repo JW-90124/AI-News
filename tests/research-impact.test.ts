@@ -121,19 +121,57 @@ describe("research impact gate", () => {
       qualified: true,
     }));
 
-    expect(researchCoverageForCompletedMonths(events, assessments, "2026-07-14T00:00:00Z")).toEqual(
-      {
-        completedMonths: [
-          { month: "2026-01", qualified: 1 },
-          { month: "2026-02", qualified: 0 },
-          { month: "2026-03", qualified: 0 },
-          { month: "2026-04", qualified: 1 },
-          { month: "2026-05", qualified: 0 },
-          { month: "2026-06", qualified: 0 },
-        ],
-        maxConsecutiveEmptyMonths: 2,
-      },
+    expect(
+      researchCoverageForCompletedMonths(events, assessments, "2026-07-14T00:00:00Z", 6, 0),
+    ).toEqual({
+      completedMonths: [
+        { month: "2026-01", qualified: 1 },
+        { month: "2026-02", qualified: 0 },
+        { month: "2026-03", qualified: 0 },
+        { month: "2026-04", qualified: 1 },
+        { month: "2026-05", qualified: 0 },
+        { month: "2026-06", qualified: 0 },
+      ],
+      maxConsecutiveEmptyMonths: 2,
+    });
+  });
+
+  it("only gates months old enough for citation-based qualification", () => {
+    const events = [
+      event("june", "June Agent Research", "2606.00001", "2026-06-10T00:00:00Z"),
+      event("july", "July Agent Research", "2607.00001", "2026-07-10T00:00:00Z"),
+    ];
+    const assessments = events.map((item) => ({
+      ...assessResearchImpact(
+        item,
+        work(item.title, 0, 0, item.happenedAt.slice(0, 10)),
+        "2026-10-05T00:00:00Z",
+      ),
+      qualified: true,
+    }));
+
+    // August and September are still too young for citations, so they are not counted.
+    const coverage = researchCoverageForCompletedMonths(
+      events,
+      assessments,
+      "2026-10-05T00:00:00Z",
     );
+    expect(coverage.completedMonths.map((item) => item.month)).toEqual([
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+    ]);
+
+    const later = researchCoverageForCompletedMonths(events, assessments, "2027-01-29T00:00:00Z");
+    expect(later.completedMonths.slice(-3)).toEqual([
+      { month: "2026-07", qualified: 1 },
+      { month: "2026-08", qualified: 0 },
+      { month: "2026-09", qualified: 0 },
+    ]);
+    expect(later.maxConsecutiveEmptyMonths).toBe(2);
   });
 });
 

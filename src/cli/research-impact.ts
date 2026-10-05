@@ -91,8 +91,13 @@ try {
     })}\n`,
   );
   if (coverage.maxConsecutiveEmptyMonths >= 2) {
-    throw new Error(
-      `Research coverage gap: ${coverage.maxConsecutiveEmptyMonths} consecutive completed months have no qualified research`,
+    const gap = `Research coverage gap: ${coverage.maxConsecutiveEmptyMonths} consecutive completed months have no qualified research`;
+    // RESEARCH_COVERAGE_GATE=warn keeps the gap visible without blocking publication.
+    if (process.env.RESEARCH_COVERAGE_GATE?.trim().toLowerCase() !== "warn") throw new Error(gap);
+    process.stderr.write(
+      process.env.GITHUB_ACTIONS === "true"
+        ? `::warning title=Research coverage gap::${gap}\n`
+        : `[research-impact] ${gap}\n`,
     );
   }
 } finally {
