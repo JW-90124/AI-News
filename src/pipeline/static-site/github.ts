@@ -13,7 +13,7 @@ export function githubDataFromEnvironment(version: string, now = new Date()): Gi
   const fresh = fetchedAt !== null && now.getTime() - fetchedAt.getTime() <= MAX_AGE_MS;
 
   return {
-    repositoryUrl: process.env.GITHUB_REPOSITORY_URL || "https://github.com/barretlee/agent-pulse",
+    repositoryUrl: process.env.GITHUB_REPOSITORY_URL || "https://github.com/JW-90124/AI-News",
     stars: fresh ? nullableNumber(process.env.GITHUB_STARS) : null,
     forks: fresh ? nullableNumber(process.env.GITHUB_FORKS) : null,
     openIssues: fresh ? nullableNumber(process.env.GITHUB_OPEN_ISSUES) : null,

@@ -256,10 +256,7 @@ function footerSubscriptions(github: GithubData, locale: Locale): string {
 
 function footerContacts(locale: Locale): string {
   const contacts = [
-    { name: "X", iconName: "x-social", href: "https://x.com/Barret_China" },
-    { name: "Weibo", iconName: "weibo", href: "https://www.weibo.com/u/1812166904" },
-    { name: "GitHub", iconName: "github", href: "https://github.com/barretlee" },
-    { name: "Email", iconName: "mail", href: "mailto:barret.china@gmail.com" },
+    { name: "GitHub", iconName: "github", href: "https://github.com/JW-90124" },
   ];
   return `<nav class="footer-contacts" aria-label="${escapeHtml(t("footer.contacts", locale))}"><span>${escapeHtml(t("footer.contacts", locale))}</span>${contacts
     .map(

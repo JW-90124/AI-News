@@ -267,8 +267,8 @@ describe("SQLite application", () => {
     expect(llms).toContain("published Events");
     expect(llms).toContain("not as verified facts");
     expect(llms).toContain("analysis or hypotheses");
-    expect(llms).toContain("https://barretlee.github.io/agent-pulse/data/timeline.json");
-    expect(llms).toContain("https://barretlee.github.io/agent-pulse/data/signals.json");
+    expect(llms).toContain("https://jw-90124.github.io/AI-News/data/timeline.json");
+    expect(llms).toContain("https://jw-90124.github.io/AI-News/data/signals.json");
     expect(llms).toContain(`${result.events} published events`);
     expect(llms).toContain(`${result.sources} catalogued sources`);
     expect(llms).toContain(`${result.signals} source observations`);
@@ -306,7 +306,7 @@ describe("SQLite application", () => {
     expect(home).toContain("供 AI 阅读");
     expect(home).toContain("事实边界、证据与公开数据入口");
     expect(home).toContain("<code>llms.txt</code>");
-    expect(home).toContain('href="mailto:barret.china@gmail.com"');
+    expect(home).toContain('href="https://github.com/JW-90124"');
     expect(home).toContain('class="footer-snapshot"');
     expect(home).toContain("/commits/main/");
     expect(home).toContain('class="shell footer-meta"');
@@ -647,7 +647,7 @@ describe("SQLite application", () => {
     expect(vendorEventPage).toContain("原始证据");
     const github = JSON.parse(await readFile(join(config.distDir, "data/github.json"), "utf8"));
     expect(github).toMatchObject({
-      repositoryUrl: "https://github.com/barretlee/agent-pulse",
+      repositoryUrl: "https://github.com/JW-90124/AI-News",
       stars: null,
       latestRelease: "v0.11.1",
     });

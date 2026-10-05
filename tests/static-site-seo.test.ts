@@ -26,7 +26,7 @@ describe("static site SEO serialization", () => {
       body: "<article><h1>Test</h1></article>",
       siteUrl: "https://example.com/agent-pulse/",
       github: {
-        repositoryUrl: "https://github.com/barretlee/agent-pulse",
+        repositoryUrl: "https://github.com/JW-90124/AI-News",
         stars: 1,
         forks: 0,
         openIssues: 0,
