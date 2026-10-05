@@ -346,12 +346,21 @@ jobs:
           report_date="$(TZ=Asia/Shanghai date +%F)"
           report_week="$(TZ=Asia/Shanghai date +%G-W%V)"
           weekday="$(TZ=Asia/Shanghai date +%u)"
-          hour="$(TZ=Asia/Shanghai date +%H)"
+          hour="$(TZ=Asia/Shanghai date +%-H)"
+          sunday_window=false
+          if [[ "$weekday" == "7" && "$hour" -ge 20 ]]; then
+            sunday_window=true
+          elif [[ "$weekday" == "1" && "$hour" -lt 12 ]]; then
+            # The 20:17 Sunday cron is often queued past midnight; report on the week that just ended.
+            sunday_window=true
+            report_date="$(TZ=Asia/Shanghai date -d yesterday +%F)"
+            report_week="$(TZ=Asia/Shanghai date -d yesterday +%G-W%V)"
+          fi
           publish_weekly=false
           weekly_status=not_requested
           weekly_attempted=false
           weekly_error=""
-          if [[ "$PUBLISH_WEEKLY" == "true" || ( "$weekday" == "7" && "$hour" -ge 20 ) ]]; then
+          if [[ "$PUBLISH_WEEKLY" == "true" || "$sunday_window" == "true" ]]; then
             weekly_attempted=true
             set +e
             npm run --silent weekly:issue -- \
