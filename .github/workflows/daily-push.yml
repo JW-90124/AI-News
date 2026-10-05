@@ -7,8 +7,8 @@ on:
     workflows: ["Refresh intelligence data"]
     types: [completed]
   schedule:
-    # Fallback at 12:23 Asia/Shanghai in case the morning refresh was dropped
-    # entirely; the gate below skips it when today's digest already exists.
+    # Fallback at 12:23 Asia/Shanghai in case no refresh succeeded yet today;
+    # the gate below skips it when today's digest already exists.
     - cron: "23 4 * * *"
   workflow_dispatch:
 
@@ -37,7 +37,6 @@ jobs:
         run: |
           set -euo pipefail
           today="$(TZ=Asia/Shanghai date +%F)"
-          hour="$(TZ=Asia/Shanghai date +%-H)"
           event="${{ github.event_name }}"
           conclusion="${{ github.event.workflow_run.conclusion || 'n/a' }}"
           go=false
@@ -45,12 +44,12 @@ jobs:
             go=true
           elif [[ -f "digests/$today.md" ]]; then
             echo "Digest for $today already exists; skipping."
-          elif [[ "$event" == "workflow_run" && "$conclusion" == "success" && "$hour" -ge 5 && "$hour" -lt 17 ]]; then
+          elif [[ "$event" == "workflow_run" && "$conclusion" == "success" ]]; then
             go=true
           elif [[ "$event" == "schedule" ]]; then
             go=true
           fi
-          echo "event=$event conclusion=$conclusion hour=$hour go=$go"
+          echo "event=$event conclusion=$conclusion go=$go"
           echo "go=$go" >> "$GITHUB_OUTPUT"
 
   push-digest:
