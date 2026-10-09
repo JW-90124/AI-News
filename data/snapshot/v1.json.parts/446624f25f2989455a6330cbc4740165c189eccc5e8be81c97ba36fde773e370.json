@@ -1,5 +1,548 @@
 [
 {
+  "id": "758cabaa-fbc5-4d08-88fd-d8bd6931bc3d",
+  "slug": "swe-touch-benchmarking-coding-agents-when-users-touch-the-code-2026-08-04",
+  "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
+  "factSummary": "Real-world software development requires coding agents to operate in shared workspaces where users may inspect and modify code during an ongoing task, yet existing repository-level benchmarks typically evaluate agents working alone or restrict user participation to messages. This leads us to ask: how do coding agents understand and respond to code changes in a shared workspace? We introduce SWE-Touch, a framework that stress-tests this setting through validated Counter-Edits: plausible edits to task-relevant code that conflict with task completion. SWE-Touch mines task-critical regions from multiple repair trajectories, uses a separate User Patch Generator to construct the edits, and injects them with contextual user messages when agents reach the relevant code. We evaluate nine coding models on SWE-bench Verified, with additional experiments on longer-horizon tasks from SWE-Bench Pro and DeepSWE. Counter-Edit lowers average resolve rate by 7.7 percentage points on SWE-bench Verified, with degradation also persisting on both longer-horizon benchmarks. Trajectory analysis links these failures to limited awareness of the evolving workspace: agents may retain conflicting code or replace it without sufficiently re-inspecting the repository and validating the revised code with targeted tests. These findings show that strong autonomous performance does not yet ensure the state awareness and adaptive behavior needed for shared-workspace collaboration, and point to detecting workspace changes, reconciling conflicting edits with the task, and verifying the affected behavior as key capabilities for future optimization.",
+  "summary": "Real-world software development requires coding agents to operate in shared workspaces where users may inspect and modify code during an ongoing task, yet existing repository-level benchmarks typically evaluate agents working alone or restrict user participation to messages. This leads us to ask: how do coding agents understand and respond to code changes in a shared workspace? We introduce SWE-Touch, a framework that stress-tests this setting through validated Counter-Edits: plausible edits to task-relevant code that conflict with task completion. SWE-Touch mines task-critical regions from multiple repair trajectories, uses a separate User Patch Generator to construct the edits, and injects them with contextual user messages when agents reach the relevant code. We evaluate nine coding models on SWE-bench Verified, with additional experiments on longer-horizon tasks from SWE-Bench Pro and DeepSWE. Counter-Edit lowers average resolve rate by 7.7 percentage points on SWE-bench Verified, with degradation also persisting on both longer-horizon benchmarks. Trajectory analysis links these failures to limited awareness of the evolving workspace: agents may retain conflicting code or replace it without sufficiently re-inspecting the repository and validating the revised code with targeted tests. These findings show that strong autonomous performance does not yet ensure the state awareness and adaptive behavior needed for shared-workspace collaboration, and point to detecting workspace changes, reconciling conflicting edits with the task, and verifying the affected behavior as key capabilities for future optimization.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "swe",
+    "touch",
+    "benchmarking",
+    "coding",
+    "agents",
+    "when",
+    "users",
+    "code"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-03T17:03:19.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-04T03:59:27.136Z",
+  "updatedAt": "2026-08-04T03:59:27.175Z"
+},
+{
+  "id": "5c3a78ad-68aa-49d8-a736-7c9f17aa762e",
+  "slug": "sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-patt-2026-10-05",
+  "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
+  "factSummary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference architecture and a deployable AWS CDK sample, using lease compliance as the running example.",
+  "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference architecture and a deployable AWS CDK sample, using lease compliance as the running example.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sweep",
+    "thousands",
+    "leases",
+    "compliance",
+    "using",
+    "amazon",
+    "quick",
+    "adjudicated"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 50,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-02T15:48:26.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-05T09:34:07.119Z",
+  "updatedAt": "2026-10-05T09:34:07.166Z"
+},
+{
+  "id": "23991975-87f0-4819-b51d-97ea58d72c3b",
+  "slug": "swim-vision-language-grounded-soft-whole-body-interactive-manipulation-2026-09-16",
+  "title": "SWIM: Vision-Language-Grounded Soft Whole-Body Interactive Manipulation",
+  "factSummary": "Soft and continuum robots enable manipulation through distributed body deformation and contact, yet translating language and visual context into executable whole-body actuation remains a fundamental challenge. We present SWIM, a framework that maps an initial RGB observation and a language instruction to a complete actuation-command sequence. Its vision-language-action (VLA) policy, SWIM-VLA, combines a diffusion action head with Visual Soft Proprioception (VSP) through a shared representation of RGB observations, language instructions, and tendon states. The diffusion head models conditional distributions of expert command chunks, while VSP supervises ordered body-anchor predictions using simulation ground truth, encouraging the representation to retain body geometry when learning from limited demonstrations. Embodied mechanical intelligence supports physical execution of command sequences generated through iterative virtual rollout from evolving simulated observations, with intrinsic compliance providing local contact adaptation without online policy queries. We evaluate SWIM on packing, reaching, and grasping on a planar tendon-driven soft robot, with grasping targets anchored. In simulation, SWIM-VLA achieves success rates of 100\\%, 96\\%, and 88\\%, respectively, outperforming an adapted OpenVLA-OFT baseline and controlled ablations. On hardware, SWIM achieves success rates of 100\\%, 80\\%, and 75\\%, compared with 75\\%, 40\\%, and 25\\% for direct online deployment of the same policy checkpoint.",
+  "summary": "Soft and continuum robots enable manipulation through distributed body deformation and contact, yet translating language and visual context into executable whole-body actuation remains a fundamental challenge. We present SWIM, a framework that maps an initial RGB observation and a language instruction to a complete actuation-command sequence. Its vision-language-action (VLA) policy, SWIM-VLA, combines a diffusion action head with Visual Soft Proprioception (VSP) through a shared representation of RGB observations, language instructions, and tendon states. The diffusion head models conditional distributions of expert command chunks, while VSP supervises ordered body-anchor predictions using simulation ground truth, encouraging the representation to retain body geometry when learning from limited demonstrations. Embodied mechanical intelligence supports physical execution of command sequences generated through iterative virtual rollout from evolving simulated observations, with intrinsic compliance providing local contact adaptation without online policy queries. We evaluate SWIM on packing, reaching, and grasping on a planar tendon-driven soft robot, with grasping targets anchored. In simulation, SWIM-VLA achieves success rates of 100\\%, 96\\%, and 88\\%, respectively, outperforming an adapted OpenVLA-OFT baseline and controlled ablations. On hardware, SWIM achieves success rates of 100\\%, 80\\%, and 75\\%, compared with 75\\%, 40\\%, and 25\\% for direct online deployment of the same policy checkpoint.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "swim",
+    "vision",
+    "language",
+    "grounded",
+    "soft",
+    "whole",
+    "body",
+    "interactive"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 75,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T11:41:36.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:09.786Z",
+  "updatedAt": "2026-09-16T15:45:09.810Z"
+},
+{
+  "id": "114ea9d7-f3d2-4f74-9cc7-87103fc8ee5a",
+  "slug": "symbal-detecting-systematic-misalignments-in-model-generated-captions-2026-07-17",
+  "title": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
+  "factSummary": "Multimodal large language models (MLLMs) often introduce errors when generating image captions, resulting in misaligned image-text pairs. Our work focuses on a class of captioning errors that we refer to as systematic misalignments, where a recurring error in MLLM-generated captions is closely associated with the presence of a specific visual feature in the paired image. Given a vision-language dataset with MLLM-generated captions, our aim in this work is to detect such errors, a task we refer to as systematic misalignment detection. As our first key contribution, we present Symbal, which utilizes a structured, dual-stage setup with off-the-shelf foundation models to identify systematic misalignments and summarize results in natural language. As our second key contribution, we introduce SymbalBench, a benchmark designed to evaluate automated methods on our proposed task. SymbalBench consists of 1.7 million image-text pairs from two domains (natural and medical images), organized into 420 vision-language datasets with annotated systematic misalignments. Symbal exhibits strong performance on this benchmark, correctly identifying systematic misalignments in 63.8% of datasets, a nearly 4x improvement over the closest baseline. We supplement our evaluations on SymbalBench with real-world evaluations, showing that (1) Symbal can accurately surface systematic misalignments in captions generated by four MLLMs and (2) Symbal is a powerful tool for auditing off-the-shelf image-caption datasets. Ultimately, our novel task, method, and benchmark can aid users with auditing MLLM-generated captions and identifying critical errors, without requiring access to the underlying MLLM. Code is available at https://github.com/Stanford-AIMI/Symbal.",
+  "summary": "Multimodal large language models (MLLMs) often introduce errors when generating image captions, resulting in misaligned image-text pairs. Our work focuses on a class of captioning errors that we refer to as systematic misalignments, where a recurring error in MLLM-generated captions is closely associated with the presence of a specific visual feature in the paired image. Given a vision-language dataset with MLLM-generated captions, our aim in this work is to detect such errors, a task we refer to as systematic misalignment detection. As our first key contribution, we present Symbal, which utilizes a structured, dual-stage setup with off-the-shelf foundation models to identify systematic misalignments and summarize results in natural language. As our second key contribution, we introduce SymbalBench, a benchmark designed to evaluate automated methods on our proposed task. SymbalBench consists of 1.7 million image-text pairs from two domains (natural and medical images), organized into 420 vision-language datasets with annotated systematic misalignments. Symbal exhibits strong performance on this benchmark, correctly identifying systematic misalignments in 63.8% of datasets, a nearly 4x improvement over the closest baseline. We supplement our evaluations on SymbalBench with real-world evaluations, showing that (1) Symbal can accurately surface systematic misalignments in captions generated by four MLLMs and (2) Symbal is a powerful tool for auditing off-the-shelf image-caption datasets. Ultimately, our novel task, method, and benchmark can aid users with auditing MLLM-generated captions and identifying critical errors, without requiring access to the underlying MLLM. Code is available at https://github.com/Stanford-AIMI/Symbal.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "symbal",
+    "detecting",
+    "systematic",
+    "misalignments",
+    "model",
+    "generated",
+    "captions"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 80,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-16T17:18:37.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-17T14:09:52.328Z",
+  "updatedAt": "2026-07-17T14:09:52.346Z"
+},
+{
+  "id": "7702e76e-a78e-4008-a8a6-e3d8f593c03e",
+  "slug": "symbolic-discovery-of-optimization-algorithms-lion",
+  "title": "Symbolic Discovery of Optimization Algorithms (Lion)：符号搜索发现高效优化器Lion，训练成本大幅降低",
+  "factSummary": "2023年2月，Google提出Lion优化器，通过符号程序搜索自动发现。Lion仅跟踪动量，使用符号函数更新参数，内存效率高于Adam。在ImageNet上ViT准确率提升2%，JFT预训练计算量节省5倍；扩散模型训练计算量节省2.3倍。已部署于Google搜索广告CTR模型。",
+  "summary": "Lion通过程序搜索自动发现，而非人工设计，证明了算法自动发现的可行性。其简单性（仅需动量）和高效性（内存更少、计算更快）使其成为Adam的有力替代。在多个任务上超越Adam，尤其在大批量训练场景下优势明显，有望成为深度学习训练的新默认优化器。",
+  "technicalInsight": "Lion的更新规则为：θ_t = θ_{t-1} - lr * sign(β1 * m_{t-1} + (1-β1) * g_t)，其中m_t = β2 * m_{t-1} + (1-β2) * g_t。与Adam相比，Lion去除了二阶矩估计和偏差校正，仅维护一阶动量，且更新幅度由符号函数决定（每个参数更新幅度相同）。搜索方法：使用进化算法在代理任务（如小型CNN训练）上搜索更新规则，再迁移到大规模任务。评估覆盖图像分类（ViT、ResNet）、视觉语言对比学习（CLIP）、扩散模型、语言模型（BERT、GPT）等。关键发现：Lion性能增益随批量大小增加而增大；需要比Adam更小的学习率（约1/10）。边界：在部分小批量任务上提升不显著；符号更新可能导致参数更新方向过于激进。",
+  "industryInsight": "Lion降低了深度学习训练的计算和内存成本，尤其利好大规模模型训练。对于云服务商，这意味着更低的训练成本和更高的资源利用率。对于AI公司，采用Lion可缩短模型迭代周期，降低硬件投入。其自动发现方法也为其他算法（如学习率调度、数据增强）的自动设计提供了范例。",
+  "futureOutlook": "关注Lion在更大规模模型（如LLM）上的验证，以及其变体（如结合自适应学习率）的探索。需观察社区采用率以及TensorFlow/PyTorch等框架的原生支持。自动算法发现方法可能扩展到其他领域。",
+  "businessValue": "AI训练平台可集成Lion作为默认优化器，降低用户训练成本。企业可评估在自有模型训练中替换Adam为Lion，预期节省20-50%训练时间。建议在视觉模型和扩散模型上优先试用。",
+  "category": "research",
+  "company": "Google Lion",
+  "keywords": [
+    "优化器",
+    "Lion",
+    "符号搜索",
+    "训练效率",
+    "自动发现"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 91,
+  "valueScore": 90,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2023-02-13T12:00:00.000Z",
+  "publishedAt": "2023-02-13T12:00:00.000Z",
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
+},
+{
+  "id": "91608363-e3f3-4742-a966-24f06c329e7c",
+  "slug": "symmetry-and-ai-assisted-discovery-of-magic-state-factories-2026-10-06",
+  "title": "Symmetry and AI-assisted discovery of magic-state factories",
+  "factSummary": "Magic-state distillation is a major resource cost in fault-tolerant quantum computing. The cost of a magic-state factory depends strongly on its failure rate, which grows with the number of input magic states. Although symmetry-restricted methods have recently made distance two searches tractable, distance three and above have remained elusive at moderate input counts. We develop symmetry- and AI-assisted methods to search this regime. We present a unified binary-matrix formulation encompassing both triorthogonal-code and direct circuit searches. We show that distance at least three is equivalent to nonzero, pairwise distinct syndromes, separating the choice of syndromes from the search for compatible output gates. We restrict the syndrome search using group symmetry and language-model agents, followed by deterministic solving and independent verification. Our searches yield 699 factory classes, including 564 new ones. These include factories for pure-T states and factories with entangled outputs comprising combinations of T, CS, and CCZ magic states. The pure-T factories [[63, 11, 3]] and [[850, 128, 6]] achieve the lowest overhead exponents we know among protocols with at most 100 and 1000 inputs, respectively, with $γ= 1.589$ and $γ= 1.057$. Our [[1715, 287, 6]] factory, with $γ= 0.998$, is the smallest known pure-T factory with $γ< 1$. We also provide a context directory of search briefs and campaign notes with which readers can train their own agents and tailor the search to their requirements. With these results, we begin constructing an active, open-source repository of magic-state distillation protocols for the quantum community, supplemented by our methods and data, for the practical fault-tolerant quantum computing regime.",
+  "summary": "Magic-state distillation is a major resource cost in fault-tolerant quantum computing. The cost of a magic-state factory depends strongly on its failure rate, which grows with the number of input magic states. Although symmetry-restricted methods have recently made distance two searches tractable, distance three and above have remained elusive at moderate input counts. We develop symmetry- and AI-assisted methods to search this regime. We present a unified binary-matrix formulation encompassing both triorthogonal-code and direct circuit searches. We show that distance at least three is equivalent to nonzero, pairwise distinct syndromes, separating the choice of syndromes from the search for compatible output gates. We restrict the syndrome search using group symmetry and language-model agents, followed by deterministic solving and independent verification. Our searches yield 699 factory classes, including 564 new ones. These include factories for pure-T states and factories with entangled outputs comprising combinations of T, CS, and CCZ magic states. The pure-T factories [[63, 11, 3]] and [[850, 128, 6]] achieve the lowest overhead exponents we know among protocols with at most 100 and 1000 inputs, respectively, with $γ= 1.589$ and $γ= 1.057$. Our [[1715, 287, 6]] factory, with $γ= 0.998$, is the smallest known pure-T factory with $γ< 1$. We also provide a context directory of search briefs and campaign notes with which readers can train their own agents and tailor the search to their requirements. With these results, we begin constructing an active, open-source repository of magic-state distillation protocols for the quantum community, supplemented by our methods and data, for the practical fault-tolerant quantum computing regime.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "symmetry",
+    "ai",
+    "assisted",
+    "discovery",
+    "magic",
+    "state",
+    "factories"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 76,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-05T15:36:37.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-06T18:31:09.758Z",
+  "updatedAt": "2026-10-06T18:31:09.807Z"
+},
+{
+  "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
+  "slug": "symmgrid-super-scaling-on-robot-learning-with-parallelized-symmetries-and-egocentric-exoce-2026-07-30",
+  "title": "SymmGrid: Super-Scaling On-Robot Learning with Parallelized Symmetries and Egocentric-Exocentric Visual Perception",
+  "factSummary": "Deep reinforcement policy learning directly in physical robots (on-robot learning) remains bottlenecked by slow wall-clock training times. We present SymmGrid, a trajectory level augmentation framework inspired by parallelized symmetries that super-scales group transformations to significantly accelerate on-robot learning in both egocentric and exocentric visual setups. We model a Markov Decision Process (MDP) under a symmetry tree, in which state-action pairs have admissible parallelized invariant transformations that yield a geometric grid structure. The state is modelled with ego- or exocentric images and proprioception information. The latter require special treatment, in the form of homographies, to warp visual scenes in line with their corresponding spatial transformations. These parallelized transformations produce a large set of unique symmetric equivalences that populate the replay buffer with diverse and consistent experiences that speed up learning and improve performance. We present extensive training and evaluations performed directly on real robot manipulation contact tasks including peg-insertions, cable routing, and object relocations. Relative to SOTA, SymmGrid achieved wall-clock training convergence speed-ups of 1.37-2.17x, evaluation success rate improvements of 1.09x-1.27x, fastest training convergence times of 16.6, 10.9, and 79.3 minutes respectively. For trajectory wide assessments, we used normalized area under the curve (nAUC) ratios. SymmGrid achieved improvements of up to 2.59x. These results confirm that simple branch symmetries can have an outsized result due to super-scaling and bring us closer to sub-10 minute on-robot learning training in manipulation tasks suitable for arms and humanoids. The project page is available at symmgrid-robot.github.io",
+  "summary": "Deep reinforcement policy learning directly in physical robots (on-robot learning) remains bottlenecked by slow wall-clock training times. We present SymmGrid, a trajectory level augmentation framework inspired by parallelized symmetries that super-scales group transformations to significantly accelerate on-robot learning in both egocentric and exocentric visual setups. We model a Markov Decision Process (MDP) under a symmetry tree, in which state-action pairs have admissible parallelized invariant transformations that yield a geometric grid structure. The state is modelled with ego- or exocentric images and proprioception information. The latter require special treatment, in the form of homographies, to warp visual scenes in line with their corresponding spatial transformations. These parallelized transformations produce a large set of unique symmetric equivalences that populate the replay buffer with diverse and consistent experiences that speed up learning and improve performance. We present extensive training and evaluations performed directly on real robot manipulation contact tasks including peg-insertions, cable routing, and object relocations. Relative to SOTA, SymmGrid achieved wall-clock training convergence speed-ups of 1.37-2.17x, evaluation success rate improvements of 1.09x-1.27x, fastest training convergence times of 16.6, 10.9, and 79.3 minutes respectively. For trajectory wide assessments, we used normalized area under the curve (nAUC) ratios. SymmGrid achieved improvements of up to 2.59x. These results confirm that simple branch symmetries can have an outsized result due to super-scaling and bring us closer to sub-10 minute on-robot learning training in manipulation tasks suitable for arms and humanoids. The project page is available at symmgrid-robot.github.io",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "symmgrid",
+    "super",
+    "scaling",
+    "robot",
+    "learning",
+    "parallelized",
+    "symmetries",
+    "egocentric"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T14:41:02.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:10.957Z",
+  "updatedAt": "2026-07-30T03:51:10.990Z"
+},
+{
+  "id": "10da9aa4-7f66-47b2-961f-e87552e9e548",
+  "slug": "symphony-for-text-generation-benchmarking-clinical-note-generation-2026-10-07",
+  "title": "Symphony for Text Generation: Benchmarking Clinical Note Generation",
+  "factSummary": "Ambient documentation systems are rapidly gaining adoption, yet their impact on clinical note quality remains poorly characterized. We introduce MedConv, a multilingual dataset of 300 clinical encounters in English, Danish, and German, and use it alongside the Ambient Clinical Intelligence benchmark (ACI-BENCH) to compare Corti, a clinical AI platform, with two leading, accessible ambient scribe software applications built on general-purpose AI. We present a controlled clinical evaluation framework that combines entailment metrics with LLM-judged pairwise comparisons across eight dimensions adopted from PDSQI-9. Results show that Corti's API-based text-generation infrastructure is on par with or outperforms leading commercial scribes. We further show that Corti's configurable API provides the flexibility necessary to fine-tune quality dimensions for specific documentation use cases. We present the evaluation methodology and release a dataset to support future reproducible comparison of ambient documentation systems.",
+  "summary": "Ambient documentation systems are rapidly gaining adoption, yet their impact on clinical note quality remains poorly characterized. We introduce MedConv, a multilingual dataset of 300 clinical encounters in English, Danish, and German, and use it alongside the Ambient Clinical Intelligence benchmark (ACI-BENCH) to compare Corti, a clinical AI platform, with two leading, accessible ambient scribe software applications built on general-purpose AI. We present a controlled clinical evaluation framework that combines entailment metrics with LLM-judged pairwise comparisons across eight dimensions adopted from PDSQI-9. Results show that Corti's API-based text-generation infrastructure is on par with or outperforms leading commercial scribes. We further show that Corti's configurable API provides the flexibility necessary to fine-tune quality dimensions for specific documentation use cases. We present the evaluation methodology and release a dataset to support future reproducible comparison of ambient documentation systems.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "symphony",
+    "text",
+    "generation",
+    "benchmarking",
+    "clinical",
+    "note"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 82,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-06T11:13:02.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-07T06:37:22.797Z",
+  "updatedAt": "2026-10-07T06:37:22.851Z"
+},
+{
+  "id": "724e31e9-c6ad-48cb-9e63-c38f2429f90c",
+  "slug": "syndrome-synergy-and-safety-structured-reasoning-and-knowledge-driven-alignment-for-tcm-pr-2026-09-23",
+  "title": "Syndrome, Synergy, and Safety: Structured Reasoning and Knowledge-Driven Alignment for TCM Prescription Generation",
+  "factSummary": "Applying large language models to Traditional Chinese Medicine (TCM) prescription generation reveals three clinically critical gaps: models produce end-to-end mappings without auditable reasoning following the li-fa-fang-yao paradigm (SR Gap), treat each encounter in isolation without follow-up adjustment via sui zheng jia jian (LA Gap), and fail to enforce absolute contraindication rules such as Shi Ba Fan (SC Gap). We propose a progressive four-stage framework (SFT $\\to$ PG-CoT $\\to$ Dynamic $\\to$ K-RL) that addresses each gap: PG-CoT constrains CoT distillation under the li-fa-fang-yao paradigm to produce auditable diagnostic chains, Dynamic SFT models patient trajectories with explicit transition reasoning, and K-RL encodes deterministic pharmacological rules as rule-based DPO preference signals. Across 12 fine-tuned models and 6 zero-shot baselines, our framework substantially improves prescription quality over zero-shot baselines---with a 7B model (Mistral-7B) surpassing zero-shot GPT-5 on all three TCM evaluation metrics.",
+  "summary": "Applying large language models to Traditional Chinese Medicine (TCM) prescription generation reveals three clinically critical gaps: models produce end-to-end mappings without auditable reasoning following the li-fa-fang-yao paradigm (SR Gap), treat each encounter in isolation without follow-up adjustment via sui zheng jia jian (LA Gap), and fail to enforce absolute contraindication rules such as Shi Ba Fan (SC Gap). We propose a progressive four-stage framework (SFT $\\to$ PG-CoT $\\to$ Dynamic $\\to$ K-RL) that addresses each gap: PG-CoT constrains CoT distillation under the li-fa-fang-yao paradigm to produce auditable diagnostic chains, Dynamic SFT models patient trajectories with explicit transition reasoning, and K-RL encodes deterministic pharmacological rules as rule-based DPO preference signals. Across 12 fine-tuned models and 6 zero-shot baselines, our framework substantially improves prescription quality over zero-shot baselines---with a 7B model (Mistral-7B) surpassing zero-shot GPT-5 on all three TCM evaluation metrics.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "syndrome",
+    "synergy",
+    "safety",
+    "structured",
+    "reasoning",
+    "knowledge",
+    "driven",
+    "alignment"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 79,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T06:49:19.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T05:18:49.276Z",
+  "updatedAt": "2026-09-23T05:18:49.321Z"
+},
+{
+  "id": "7fda657d-cfff-4992-acca-e6ed15a48f09",
+  "slug": "syntax-meets-semantics-understanding-scientific-formulae-2026-08-04",
+  "title": "Syntax Meets Semantics: Understanding Scientific Formulae",
+  "factSummary": "Scientific formulae are a fundamental component of scholarly communication, yet their dual nature -- as structured syntax and carriers of semantics -- remains underexplored in scholarly information retrieval. Although prior studies show that jointly modeling syntactic and semantic modalities improves retrieval performance, the relationship between their underlying representations has not been systematically investigated. In this work, we empirically study cross-modal correspondence between formula syntax and semantics. We find that their native representation spaces exhibit extremely weak observable correspondence despite strong latent correlation, indicating a substantial representation mismatch between the two modalities. We further evaluate whether this mismatch can be reduced using standard representation learning and alignment techniques. We represent syntactic structure using graph-based encoders and semantic information using text-based encoders, then apply contrastive learning to induce a shared representation space. Results show that the learned alignment substantially improves cross-modal retrieval, suggesting that explicit representation learning can recover correspondence absent from the original representation spaces.",
+  "summary": "Scientific formulae are a fundamental component of scholarly communication, yet their dual nature -- as structured syntax and carriers of semantics -- remains underexplored in scholarly information retrieval. Although prior studies show that jointly modeling syntactic and semantic modalities improves retrieval performance, the relationship between their underlying representations has not been systematically investigated. In this work, we empirically study cross-modal correspondence between formula syntax and semantics. We find that their native representation spaces exhibit extremely weak observable correspondence despite strong latent correlation, indicating a substantial representation mismatch between the two modalities. We further evaluate whether this mismatch can be reduced using standard representation learning and alignment techniques. We represent syntactic structure using graph-based encoders and semantic information using text-based encoders, then apply contrastive learning to induce a shared representation space. Results show that the learned alignment substantially improves cross-modal retrieval, suggesting that explicit representation learning can recover correspondence absent from the original representation spaces.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "syntax",
+    "meets",
+    "semantics",
+    "understanding",
+    "scientific",
+    "formulae"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-03T16:31:06.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-04T03:59:27.312Z",
+  "updatedAt": "2026-08-04T03:59:27.350Z"
+},
+{
+  "id": "46002b78-5872-4647-bffe-278450186797",
+  "slug": "syntaxbench-a-statistical-diagnostic-framework-for-character-level-reasoning-in-large-lang-2026-10-05",
+  "title": "SyntaxBench: A Statistical Diagnostic Framework for Character-Level Reasoning in Large Language Models",
+  "factSummary": "Large language models are increasingly used where small syntactic errors matter, yet character-level reasoning is still evaluated mostly through isolated probes and aggregate accuracy. We introduce SyntaxBench, a diagnostic benchmark and statistical evaluation framework for character-level reasoning. It contains five core tasks, character counting, letter containment, palindrome detection, edit distance, and longest-string selection, plus index_to_span, a harder substring-extraction stress test. The five core tasks use paired English and character-length-matched random-string inputs. index_to_span documents share a 200-500 word band and are not character-length matched. All six tasks use zero-, one-, and four-shot prompts. We evaluate eight open-weight models from 2B to 32B parameters across 11 reasoning-mode configurations. The framework reports exact-match and relaxed accuracy, Cohen's kappa, paired McNemar tests with odds ratios, bootstrap confidence intervals, Kendall's tau, class-conditional metrics, tokenization analysis, and multiple-comparison-corrected tests. Three findings stand out. First, tokenization shapes accuracy: random strings are more character-visible than English strings (1.892 vs. 3.169 characters per token), and character-counting accuracy falls as English words occupy more tokens. Second, reasoning mode is not uniformly helpful: Gemma4-31B is nearly unchanged across modes on the near-saturated tasks, while Qwen3.6-27B is worse with thinking on palindrome detection (0.952 non-thinking vs. 0.886 thinking at four-shot). Third, index_to_span remains largely unsolved; the best four-shot exact-match accuracy is 6.75%. Character-level evaluation needs controlled inputs, paired tests, and analyses of tokenization and reasoning mode rather than aggregate accuracy alone.",
+  "summary": "Large language models are increasingly used where small syntactic errors matter, yet character-level reasoning is still evaluated mostly through isolated probes and aggregate accuracy. We introduce SyntaxBench, a diagnostic benchmark and statistical evaluation framework for character-level reasoning. It contains five core tasks, character counting, letter containment, palindrome detection, edit distance, and longest-string selection, plus index_to_span, a harder substring-extraction stress test. The five core tasks use paired English and character-length-matched random-string inputs. index_to_span documents share a 200-500 word band and are not character-length matched. All six tasks use zero-, one-, and four-shot prompts. We evaluate eight open-weight models from 2B to 32B parameters across 11 reasoning-mode configurations. The framework reports exact-match and relaxed accuracy, Cohen's kappa, paired McNemar tests with odds ratios, bootstrap confidence intervals, Kendall's tau, class-conditional metrics, tokenization analysis, and multiple-comparison-corrected tests. Three findings stand out. First, tokenization shapes accuracy: random strings are more character-visible than English strings (1.892 vs. 3.169 characters per token), and character-counting accuracy falls as English words occupy more tokens. Second, reasoning mode is not uniformly helpful: Gemma4-31B is nearly unchanged across modes on the near-saturated tasks, while Qwen3.6-27B is worse with thinking on palindrome detection (0.952 non-thinking vs. 0.886 thinking at four-shot). Third, index_to_span remains largely unsolved; the best four-shot exact-match accuracy is 6.75%. Character-level evaluation needs controlled inputs, paired tests, and analyses of tokenization and reasoning mode rather than aggregate accuracy alone.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "syntaxbench",
+    "statistical",
+    "diagnostic",
+    "framework",
+    "character",
+    "level",
+    "reasoning",
+    "large"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 49,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-02T14:02:56.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-05T09:34:04.769Z",
+  "updatedAt": "2026-10-05T09:34:04.818Z"
+},
+{
+  "id": "4eae7de5-3b59-4e08-acf4-979c4088fad3",
+  "slug": "synthdemo-rl-breaking-the-zero-reward-barrier-in-vla-adaptation-with-llm-guided-synthetic--2026-09-21",
+  "title": "SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations",
+  "factSummary": "Fine-tuning Vision-Language-Action (VLA) models commonly relies on human teleoperation demonstrations, while reinforcement learning (RL) with sparse binary rewards faces an exploration challenge when successful trajectories are rarely sampled. We propose SynthDemo-RL, a teacher-student framework in which an automated teacher converts simulator-privileged state into successful manipulation trajectories, a VLA student is distilled from them by supervised fine-tuning (SFT), and PPO with binary task-success rewards refines the student. We study reward coverage, the fraction of tasks for which at least one success is observed under the fixed evaluation protocol, as a complement to the average success rate. On LIBERO-PRO, a public benchmark of perturbed LIBERO tasks for which no demonstrations exist, 27 of 57 scored tasks are at exactly 0% success for a pi_0.5 policy fine-tuned on the original LIBERO tasks. Direct PPO from this policy, under the same PPO recipe and the same RL compute as SynthDemo-RL's refinement stage, rescues 10 of these 27 tasks and leaves 17 at 0%. SynthDemo-RL, with 50 synthesized trajectories per task and no new human demonstrations, rescues all 27 and reaches average success rates of 97.8% and 97.1% on the Position and Task axes of LIBERO-PRO, respectively. On standard LIBERO, the same pipeline reaches 96.0% with no human demonstrations, within 1.7 points of pi_0.5 trained on 50 human demonstrations per task. We further validate the pipeline on RoboTwin 2.0 and verify that trajectories from a policy trained in a MuJoCo twin execute open-loop on a physical robot.",
+  "summary": "Fine-tuning Vision-Language-Action (VLA) models commonly relies on human teleoperation demonstrations, while reinforcement learning (RL) with sparse binary rewards faces an exploration challenge when successful trajectories are rarely sampled. We propose SynthDemo-RL, a teacher-student framework in which an automated teacher converts simulator-privileged state into successful manipulation trajectories, a VLA student is distilled from them by supervised fine-tuning (SFT), and PPO with binary task-success rewards refines the student. We study reward coverage, the fraction of tasks for which at least one success is observed under the fixed evaluation protocol, as a complement to the average success rate. On LIBERO-PRO, a public benchmark of perturbed LIBERO tasks for which no demonstrations exist, 27 of 57 scored tasks are at exactly 0% success for a pi_0.5 policy fine-tuned on the original LIBERO tasks. Direct PPO from this policy, under the same PPO recipe and the same RL compute as SynthDemo-RL's refinement stage, rescues 10 of these 27 tasks and leaves 17 at 0%. SynthDemo-RL, with 50 synthesized trajectories per task and no new human demonstrations, rescues all 27 and reaches average success rates of 97.8% and 97.1% on the Position and Task axes of LIBERO-PRO, respectively. On standard LIBERO, the same pipeline reaches 96.0% with no human demonstrations, within 1.7 points of pi_0.5 trained on 50 human demonstrations per task. We further validate the pipeline on RoboTwin 2.0 and verify that trajectories from a policy trained in a MuJoCo twin execute open-loop on a physical robot.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "synthdemo",
+    "rl",
+    "breaking",
+    "zero",
+    "reward",
+    "barrier",
+    "vla",
+    "adaptation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 50,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T11:48:05.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-21T05:36:26.708Z",
+  "updatedAt": "2026-09-21T05:36:26.747Z"
+},
+{
   "id": "494c1de6-5ccd-42fa-866a-801e7b056cb5",
   "slug": "synthetic-cultural-agents-from-aggregate-anchors-2026-10-06",
   "title": "Synthetic Cultural Agents from Aggregate Anchors",
@@ -444,8 +987,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -1628,8 +2171,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -3077,6 +3620,50 @@
   "updatedAt": "2026-09-23T05:18:39.591Z"
 },
 {
+  "id": "6b2a0cdc-3e1f-4258-89b5-185fbc354db8",
+  "slug": "tensorrt-11-4-release-2026-10-09",
+  "title": "TensorRT 11.4 Release",
+  "factSummary": "NVIDIA 发布 TensorRT 11.4。该版本在 Parsers 中新增 IRefitterObserver 类与 IParser::setRefitObserver，用于在解析时更好地处理可重新拟合（refittable）权重；Plugins 源码加入多项 C++20 更新；Samples 将仅与 trtexec 相关的 samples/common 文件迁移至 samples/trtexecCommon。",
+  "summary": "TensorRT 11.4 的变更集中在解析器可重拟合权重的可观测性、插件源码的 C++20 现代化，以及示例目录结构的整理。证据未披露性能数据、支持硬件或发布时间之外的细节。",
+  "technicalInsight": "新增 IRefitterObserver 与 setRefitObserver 表明解析阶段对可重拟合权重的处理被显式暴露为可观察接口，可能便于调试与集成；C++20 更新与示例目录拆分属于工程维护性改动。以上为基于变更描述的判断，实际收益需以官方 release notes 与基准测试验证。",
+  "industryInsight": "推理运行时持续迭代解析器与插件接口，反映推理工具链竞争仍围绕开发者体验与集成便利性展开；但单一版本发布不足以判断市场格局变化。",
+  "futureOutlook": "可验证的下一信号：后续版本是否扩展 IRefitterObserver 的文档与示例、是否公布 C++20 迁移对构建工具链的最低要求，以及 samples/trtexecCommon 调整是否影响既有示例路径。",
+  "businessValue": "对使用 TensorRT 的团队，可重拟合权重的可观察接口可能降低调试与集成成本；示例目录调整可能带来构建脚本的迁移成本。价值大小需结合自身工作流评估。",
+  "category": "inference-runtime",
+  "company": "TensorRT",
+  "keywords": [
+    "TensorRT",
+    "NVIDIA",
+    "IRefitterObserver",
+    "C++20",
+    "trtexec",
+    "推理运行时"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T17:55:05.000Z",
+  "publishedAt": "2026-10-09T18:30:01.669Z",
+  "createdAt": "2026-10-09T18:29:12.604Z",
+  "updatedAt": "2026-10-09T18:30:01.669Z"
+},
+{
   "id": "cc4d186e-6cc4-4152-b243-0cee5b498b7d",
   "slug": "tepa-revoking-stale-memories-for-conflict-robust-language-agents-2026-08-10",
   "title": "TEPA: Revoking Stale Memories for Conflict-Robust Language Agents",
@@ -3620,8 +4207,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -8343,8 +8930,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -9068,8 +9655,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -9157,8 +9744,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -9338,8 +9925,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -13209,8 +13796,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -14244,8 +14831,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -14515,8 +15102,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -21190,6 +21777,46 @@
   "updatedAt": "2026-08-17T02:14:11.934Z"
 },
 {
+  "id": "f1dfa4f4-d3eb-417b-9954-8c0cf78a5b20",
+  "slug": "v1-13-0-2026-10-09",
+  "title": "v1.13.0",
+  "factSummary": "Features api: add types for the Chat and Cowork unified analytics metrics api: add workflows, multiagent configuration and thread status filtering to Managed Agents Chores internal: name the default API version header value",
+  "summary": "Features api: add types for the Chat and Cowork unified analytics metrics api: add workflows, multiagent configuration and thread status filtering to Managed Agents Chores internal: name the default API version header value",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "13"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T15:28:52.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:13.381Z",
+  "updatedAt": "2026-10-09T18:29:13.439Z"
+},
+{
   "id": "d31c1f61-a027-4ba6-80ff-2c675e955654",
   "slug": "v1-14-0-2026-09-25",
   "title": "v1.14.0",
@@ -22560,6 +23187,52 @@
   "publishedAt": null,
   "createdAt": "2026-10-07T06:37:17.116Z",
   "updatedAt": "2026-10-07T06:37:17.169Z"
+},
+{
+  "id": "5c29572e-84b1-4539-93a3-e450468b99e0",
+  "slug": "v1-39-11-queue-backup-and-shutdown-reliability-fixes-plus-a-zlib-cve-patch-2026-10-09",
+  "title": "v1.39.11 - Queue, backup and shutdown reliability fixes, plus a zlib CVE patch",
+  "factSummary": "Weaviate 发布 v1.39.11，包含队列、备份与关闭可靠性修复，并将 zlib 固定到不受 CVE-2026-85091 影响的版本。",
+  "summary": "Weaviate v1.39.11 为修复版本，无破坏性变更与新增功能。修复项包括：对象 ID 检查失败时返回 500 而非 already exists；队列在下一轮重放失败批次而非阻塞 worker；从不可读与损坏 chunk 中恢复且不遗留计数；无多向量支持的索引拒绝多向量写入；hnsw 在入口点耗尽时检测 bootstrap；lsmkv 关闭时不再无限等待失败 flush 遗留的 memtable；备份携带内置角色分配、按对象长度读取备份对象、仅解码增量备份所需的基础备份元数据；shard 拆除时释放 shard status gauge；安全方面将 zlib 固定到不受 CVE-2026-85091 影响的版本；另有 CI 缓存与 golangci-lint 升级等维护项。",
+  "technicalInsight": "修复集中在分布式存储与向量索引的故障恢复路径：队列重放、损坏 chunk 恢复、memtable 关闭等待与 hnsw bootstrap 检测，指向对长时间运行集群可靠性的持续加固；zlib 版本固定属于依赖层面的 CVE 缓解。可验证下一信号：后续版本是否补充这些修复的回归测试或发布对应的安全公告。",
+  "industryInsight": "向量数据库的竞争正从功能覆盖转向运维可靠性，备份一致性与关闭路径的修复直接影响生产环境可用性；CVE 依赖修补反映开源基础设施对供应链安全的常规响应。可验证下一信号：同类向量数据库是否在相近时间发布类似的可靠性或 CVE 修复。",
+  "futureOutlook": "若这些修复在后续小版本中稳定，Weaviate 集群在故障恢复与升级场景下的运维负担可能下降；但单次补丁发布不足以判断长期趋势。可验证下一信号：观察后续版本是否出现相关回归问题或用户报告的恢复失败案例。",
+  "businessValue": "对使用 Weaviate 的团队而言，该版本降低队列阻塞、备份不一致与关闭挂起带来的运维风险，并修补已知 CVE，适合纳入常规升级窗口；价值主要体现在稳定性与安全合规，而非新能力。可验证下一信号：升级后队列重放与备份恢复相关故障工单是否减少。",
+  "category": "vector-database-reliability",
+  "company": "Weaviate",
+  "keywords": [
+    "Weaviate",
+    "向量数据库",
+    "CVE-2026-85091",
+    "zlib",
+    "备份恢复",
+    "队列重放",
+    "HNSW",
+    "LSMKV"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T16:37:07.000Z",
+  "publishedAt": "2026-10-09T18:30:01.668Z",
+  "createdAt": "2026-10-09T18:29:13.002Z",
+  "updatedAt": "2026-10-09T18:30:01.668Z"
 },
 {
   "id": "9371f7ef-3a68-4c68-8567-db7c1d8e875b",
@@ -28247,6 +28920,46 @@
   "updatedAt": "2026-10-08T18:58:05.142Z"
 },
 {
+  "id": "461f5311-ee9a-47b3-9717-d65bdad6cf1b",
+  "slug": "v3-27-0-2026-10-09",
+  "title": "v3.27.0",
+  "factSummary": "3.27.0 (2026-10-09) Features api: add prewarmed hosted environments ( #4043 ) ( c511a77 )",
+  "summary": "3.27.0 (2026-10-09) Features api: add prewarmed hosted environments ( #4043 ) ( c511a77 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v3",
+    "27"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 66,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 95,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T13:46:41.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:13.905Z",
+  "updatedAt": "2026-10-09T18:29:13.966Z"
+},
+{
   "id": "13768a33-ca82-47ba-a58a-35b8ef0b23fb",
   "slug": "v4-0-0-rc-1-2026-07-24",
   "title": "v4.0.0-rc.1",
@@ -29003,6 +29716,46 @@
   "publishedAt": null,
   "createdAt": "2026-09-16T15:45:14.069Z",
   "updatedAt": "2026-09-16T15:45:14.096Z"
+},
+{
+  "id": "36d23a32-e5cb-4dfb-a357-cbdd86fed90c",
+  "slug": "v4-17-2-2026-10-09",
+  "title": "v4.17.2",
+  "factSummary": "📦 升级指南 镜像更新 更新 fastgpt-app(FastGPT 主服务)镜像 tag: v4.17.2 更新 fastgpt-pro(FastGPT 商业版)镜像 tag: v4.17.2 升级脚本 本次升级包含以下手动触发升级脚本(可在「管理员 > 版本升级」中查看与执行): 历史分块训练任务迁移 ( 20261008_migrate_chunk_training ):将存量旧版 chunk 训练任务平滑转换为关联正式数据行的新模式。属于手动触发任务(不阻塞服务启动),请在确认集群中所有旧版本 FastGPT App 与 Pro 实例已完全停止、旧任务租约过期后再点击执行。 知识库重建状态迁移 ( 20261009_migrate_dataset_rebuild_status ):依赖上述训练任务迁移完成,属于手动触发任务(不阻塞服务启动),将历史知识库数据行中的旧版 rebuilding 标记和过渡状态统一迁移至全新的 indexStatus 重建状态体系。 🚀 新增内容 知识库数据提前落库与训练链路重构 : 解析分块、图片导入及备份/模板导入在内容解析完成后立即落库为可见数据行,全流程绑定唯一 dataId ;训练完成后直接把向量与索引写回同一条数据,彻底避免长训练周期中无数据、训练中断残留孤儿数据的问题。 新增数据索引三态流转( parsed -> indexing -> indexed ):待索引数据在检索层天然隔离不被召回,前端提供只读查看,后端对编辑、删除数据及修改索引提供安全拦截;训练失败数据支持直接编辑或删除。 QA 拆分一对多优化:源数据直接复用为首条拆分项,其余叶子节点新建预落库数据,入队、数据写入与源任务清理收敛在单数据库事务中。 知识库模型切换与同义词重建优化:仅对已完成索引( indexed )的数据触发重建,待索引数据不参与重建链;同义词重建时自动复用未变更的向量数据,大幅降低重算开销。 训练进度精细化看板:训练弹窗支持按处理模式(Vector、QA 等)分类展示当前阶段的训练进度,优化训练错误查看与重试体验。 知识库与文件列表搜索支持限定在当前目录及子树 :在知识库列表或文件集合列表指定目录下搜索时,范围自动限制为当前路径自身及其全部子文件夹下的内容,命中结果平铺展示;在根目录下搜索则保持检索全量内容。底层采用高效内存分桶与层序遍历,并包含成环与最大深度/节点数截断保护。 ⚙️ 优化 核心控制台与管理页面迁移至客户端渲染(CSR)并启用浅路由(shallow routing):将智能体、技能、MCP、系统工具、模板市场、评测等工作台页面,账号中心各模块,管理员后台以及定价页全面迁移为客户端渲染,避免页面切换时的完整 SSR 往返请求与白屏重渲染,显著提升交互响应速度。 国际化(i18n)资源加载性能优化:将客户端语言包打包为单一 chunk 预加载,统一采用安全翻译 hook( useSafeTranslation ),移除冗余的 namespace 异步网络请求,减少初始化开销并消除水合闪烁。 异步任务队列(BullMQ)失败保留策略优化:提取共享的 BullMQ 队列与 Worker 默认配置,将所有后台任务(应用删除、知识库删除、知识库同步、评测、S3 文件清理、技能创建/删除、团队删除及商业版账号注销)的失败任务保留策略统一由按时间过期改为按数量保留最新 10,000 条( removeOnFail: { count: 10000 } ),并统一采用 5000ms 指数退避重试,防止突发异常时历史失败记录过早丢失,便于任务排查与重放恢复。 系统模型状态探测告警优化:当模型健康状态探测达到最大重试次数全部失败时,错误信息开头自动附带模型名称,便于在告警通知与监控平台中直观识别故障模型。 数字本土化单位格式化进位优化:修复 formatNumberWithUnit 在四舍五入到两位小数后正好达到下一单位时(如 99,999,999 进位到 10000 万、999,999 进位到 1000K),正确使用更高一级的单位(如 1 亿、1M)。 知识库多路召回检索去重时误删不同图片的问题:在融合去重时结合归一化文本与原始图片 imageId ,确保描述相同或为空的不同图片均被完整保留。 文件下载 Header 解析( parseContentDispositionFilename )在 filename* 包含损坏编码时解析失败的问题,安全回退到常规 filename 参数,避免下载文件名丢失。 🐛 修复 修复工作流条件判断器( If/Else )「包含/不包含」条件对非字符串值判断异常的问题:针对 any 类型变量在运行时输入数字、布尔等非字符串值的情况,先转为字符串再进行匹配,避免…",
+  "summary": "📦 升级指南 镜像更新 更新 fastgpt-app(FastGPT 主服务)镜像 tag: v4.17.2 更新 fastgpt-pro(FastGPT 商业版)镜像 tag: v4.17.2 升级脚本 本次升级包含以下手动触发升级脚本(可在「管理员 > 版本升级」中查看与执行): 历史分块训练任务迁移 ( 20261008_migrate_chunk_training ):将存量旧版 chunk 训练任务平滑转换为关联正式数据行的新模式。属于手动触发任务(不阻塞服务启动),请在确认集群中所有旧版本 FastGPT App 与 Pro 实例已完全停止、旧任务租约过期后再点击执行。 知识库重建状态迁移 ( 20261009_migrate_dataset_rebuild_status ):依赖上述训练任务迁移完成,属于手动触发任务(不阻塞服务启动),将历史知识库数据行中的旧版 rebuilding 标记和过渡状态统一迁移至全新的 indexStatus 重建状态体系。 🚀 新增内容 知识库数据提前落库与训练链路重构 : 解析分块、图片导入及备份/模板导入在内容解析完成后立即落库为可见数据行,全流程绑定唯一 dataId ;训练完成后直接把向量与索引写回同一条数据,彻底避免长训练周期中无数据、训练中断残留孤儿数据的问题。 新增数据索引三态流转( parsed -> indexing -> indexed ):待索引数据在检索层天然隔离不被召回,前端提供只读查看,后端对编辑、删除数据及修改索引提供安全拦截;训练失败数据支持直接编辑或删除。 QA 拆分一对多优化:源数据直接复用为首条拆分项,其余叶子节点新建预落库数据,入队、数据写入与源任务清理收敛在单数据库事务中。 知识库模型切换与同义词重建优化:仅对已完成索引( indexed )的数据触发重建,待索引数据不参与重建链;同义词重建时自动复用未变更的向量数据,大幅降低重算开销。 训练进度精细化看板:训练弹窗支持按处理模式(Vector、QA 等)分类展示当前阶段的训练进度,优化训练错误查看与重试体验。 知识库与文件列表搜索支持限定在当前目录及子树 :在知识库列表或文件集合列表指定目录下搜索时,范围自动限制为当前路径自身及其全部子文件夹下的内容,命中结果平铺展示;在根目录下搜索则保持检索全量内容。底层采用高效内存分桶与层序遍历,并包含成环与最大深度/节点数截断保护。 ⚙️ 优化 核心控制台与管理页面迁移至客户端渲染(CSR)并启用浅路由(shallow routing):将智能体、技能、MCP、系统工具、模板市场、评测等工作台页面,账号中心各模块,管理员后台以及定价页全面迁移为客户端渲染,避免页面切换时的完整 SSR 往返请求与白屏重渲染,显著提升交互响应速度。 国际化(i18n)资源加载性能优化:将客户端语言包打包为单一 chunk 预加载,统一采用安全翻译 hook( useSafeTranslation ),移除冗余的 namespace 异步网络请求,减少初始化开销并消除水合闪烁。 异步任务队列(BullMQ)失败保留策略优化:提取共享的 BullMQ 队列与 Worker 默认配置,将所有后台任务(应用删除、知识库删除、知识库同步、评测、S3 文件清理、技能创建/删除、团队删除及商业版账号注销)的失败任务保留策略统一由按时间过期改为按数量保留最新 10,000 条( removeOnFail: { count: 10000 } ),并统一采用 5000ms 指数退避重试,防止突发异常时历史失败记录过早丢失,便于任务排查与重放恢复。 系统模型状态探测告警优化:当模型健康状态探测达到最大重试次数全部失败时,错误信息开头自动附带模型名称,便于在告警通知与监控平台中直观识别故障模型。 数字本土化单位格式化进位优化:修复 formatNumberWithUnit 在四舍五入到两位小数后正好达到下一单位时(如 99,999,999 进位到 10000 万、999,999 进位到 1000K),正确使用更高一级的单位(如 1 亿、1M)。 知识库多路召回检索去重时误删不同图片的问题:在融合去重时结合归一化文本与原始图片 imageId ,确保描述相同或为空的不同图片均被完整保留。 文件下载 Header 解析( parseContentDispositionFilename )在 filename* 包含损坏编码时解析失败的问题,安全回退到常规 filename 参数,避免下载文件名丢失。 🐛 修复 修复工作流条件判断器( If/Else )「包含/不包含」条件对非字符串值判断异常的问题:针对 any 类型变量在运行时输入数字、布尔等非字符串值的情况,先转为字符串再进行匹配,避免…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "17"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 94,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T12:04:44.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:13.981Z",
+  "updatedAt": "2026-10-09T18:29:14.040Z"
 },
 {
   "id": "ae6de7d8-6de6-4380-a58d-edbb679e4232",
@@ -29973,6 +30726,46 @@
   "publishedAt": null,
   "createdAt": "2026-10-08T18:58:04.696Z",
   "updatedAt": "2026-10-08T18:58:04.759Z"
+},
+{
+  "id": "0ba02778-6117-4dcf-a691-b2dda5221d5e",
+  "slug": "v4-56-0-2026-10-09",
+  "title": "v4.56.0",
+  "factSummary": "Features feat(web): design-system CodeSection replaces CodeView by @nmtrang29 in #18462 feat(sessions): Add syntax highlighting to session tool previews by @bezbac in #18472 feat(billing): send spend alerts for ClickHouse-billed organizations by @Steffen911 in #17615 feat(web): ask new users what they will use Langfuse for by @AbdallahAHO in #18356 feat(topics): add adaptive map exploration and compact workspace by @nkabardin in #18492 feat(evals): revamp decision model results by @wochinge in #18523 feat(tables): let rows use a custom height by @nkabardin in #18445 Fixes fix(web): design-system Timeline with dotted faded connectors by @nmtrang29 in #18464 fix(web): text, key-value and numeric facets share the 12px inset by @nmtrang29 in #18471 fix(web): input placeholders match the search bar by @nmtrang29 in #18473 fix(web): retire ui/toggle-group onto design-system Tabs inset by @nmtrang29 in #18475 fix(web): comment count uses the score chip shell by @nmtrang29 in #18476 fix(web): level badge matches score chip height everywhere by @nmtrang29 in #18458 fix(web): additional input follows preview section spacing by @nmtrang29 in #18467 fix(web): tool names in sans, not-called list states its status once by @nmtrang29 in #18400 fix(web): header actions, metrics, scores and +N match across trace, observation and session by @nmtrang29 in #18470 fix(web): large search bar on full-page lists by @nmtrang29 in #18474 fix(web): design-system LabelList with score-chip style labels by @nmtrang29 in #18463 fix(web): keep the previous trace on screen while the next one loads by @nmtrang29 in #18280 fix(web): env and plan badges use the design-system Badge by @nmtrang29 in #18481 fix(sessions): Session view improvements by @bezbac in #18479 fix(mcp): Always require date range in get observations tool by @bezbac in #18485 fix(web): keep trace tree rows from painting over the scrollbar by @dergeraetbot in #18453 fix(experiment): update experiment display settings and score colu…",
+  "summary": "Features feat(web): design-system CodeSection replaces CodeView by @nmtrang29 in #18462 feat(sessions): Add syntax highlighting to session tool previews by @bezbac in #18472 feat(billing): send spend alerts for ClickHouse-billed organizations by @Steffen911 in #17615 feat(web): ask new users what they will use Langfuse for by @AbdallahAHO in #18356 feat(topics): add adaptive map exploration and compact workspace by @nkabardin in #18492 feat(evals): revamp decision model results by @wochinge in #18523 feat(tables): let rows use a custom height by @nkabardin in #18445 Fixes fix(web): design-system Timeline with dotted faded connectors by @nmtrang29 in #18464 fix(web): text, key-value and numeric facets share the 12px inset by @nmtrang29 in #18471 fix(web): input placeholders match the search bar by @nmtrang29 in #18473 fix(web): retire ui/toggle-group onto design-system Tabs inset by @nmtrang29 in #18475 fix(web): comment count uses the score chip shell by @nmtrang29 in #18476 fix(web): level badge matches score chip height everywhere by @nmtrang29 in #18458 fix(web): additional input follows preview section spacing by @nmtrang29 in #18467 fix(web): tool names in sans, not-called list states its status once by @nmtrang29 in #18400 fix(web): header actions, metrics, scores and +N match across trace, observation and session by @nmtrang29 in #18470 fix(web): large search bar on full-page lists by @nmtrang29 in #18474 fix(web): design-system LabelList with score-chip style labels by @nmtrang29 in #18463 fix(web): keep the previous trace on screen while the next one loads by @nmtrang29 in #18280 fix(web): env and plan badges use the design-system Badge by @nmtrang29 in #18481 fix(sessions): Session view improvements by @bezbac in #18479 fix(mcp): Always require date range in get observations tool by @bezbac in #18485 fix(web): keep trace tree rows from painting over the scrollbar by @dergeraetbot in #18453 fix(experiment): update experiment display settings and score colu…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "56"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T10:13:50.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:14.128Z",
+  "updatedAt": "2026-10-09T18:29:14.187Z"
 },
 {
   "id": "a5b488ba-7f4b-4b4f-872c-2cf6f805a25b",
@@ -32932,8 +33725,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -33250,8 +34043,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -33885,8 +34678,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -33928,8 +34721,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -34196,8 +34989,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -34423,8 +35216,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -34646,8 +35439,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -39449,8 +40242,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -40631,8 +41424,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -41573,8 +42366,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -41617,8 +42410,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -42113,8 +42906,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -42156,8 +42949,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -42199,8 +42992,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -42242,8 +43035,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",

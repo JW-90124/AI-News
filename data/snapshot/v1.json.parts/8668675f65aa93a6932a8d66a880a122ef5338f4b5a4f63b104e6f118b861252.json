@@ -1,5 +1,409 @@
 [
 {
+  "id": "a1422772-7803-49b8-8a91-655f4baf2ace",
+  "slug": "generating-heterogeneous-3d-geological-microstructures-from-2d-images-via-a-stable-diffusi-2026-09-18",
+  "title": "Generating Heterogeneous 3D Geological Microstructures from 2D Images via a Stable Diffusion-Adversarial Model",
+  "factSummary": "Characterizing the physical properties of clay and cementitious materials matters across many fields, from materials science to geological waste disposal. Property simulation typically calls for 3D imaging, which is expensive, not always accessible, and technically limited for certain materials. Recent progress in deep generative models offers a way around this, reconstructing 3D volumes from the more easily acquired 2D images. Among GAN-based methods for 3D microstructure generation, SliceGAN has shown strong results for homogeneous isotropic and anisotropic systems. It struggles, however, to capture the finer detail of more complex heterogeneous microstructures, which motivates alternative generative frameworks. We introduce a hybrid approach that draws on the stability and generation quality of denoising diffusion models. Since no 3D ground truth is available, we replace the standard denoising loss with an adversarial loss, which yields a stable training process in our experiments. We show that the resulting model generates microstructures of varying complexity with minimal slice artefacts and close agreement with ground-truth phase fractions and structural descriptors.",
+  "summary": "Characterizing the physical properties of clay and cementitious materials matters across many fields, from materials science to geological waste disposal. Property simulation typically calls for 3D imaging, which is expensive, not always accessible, and technically limited for certain materials. Recent progress in deep generative models offers a way around this, reconstructing 3D volumes from the more easily acquired 2D images. Among GAN-based methods for 3D microstructure generation, SliceGAN has shown strong results for homogeneous isotropic and anisotropic systems. It struggles, however, to capture the finer detail of more complex heterogeneous microstructures, which motivates alternative generative frameworks. We introduce a hybrid approach that draws on the stability and generation quality of denoising diffusion models. Since no 3D ground truth is available, we replace the standard denoising loss with an adversarial loss, which yields a stable training process in our experiments. We show that the resulting model generates microstructures of varying complexity with minimal slice artefacts and close agreement with ground-truth phase fractions and structural descriptors.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generating",
+    "heterogeneous",
+    "3d",
+    "geological",
+    "microstructures",
+    "from",
+    "2d",
+    "images"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T13:21:48.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:13.617Z",
+  "updatedAt": "2026-09-18T05:20:13.656Z"
+},
+{
+  "id": "a66cde2c-7c64-4f93-a34b-0b21fccdef27",
+  "slug": "generative-agents-simulacra",
+  "title": "Generative Agents: Interactive Simulacra of Human Behavior：大模型驱动的可信人类行为模拟",
+  "factSummary": "2023年4月，斯坦福大学和Google Research提出生成式智能体（Generative Agents），利用大语言模型（LLM）驱动25个智能体在一个类似《模拟人生》的沙盒环境中自主生活。智能体能够起床、做饭、工作、社交、形成记忆并规划未来，仅从一个“想办情人节派对”的初始设定出发，智能体自主传播邀请、结识新朋友、协调时间并最终共同参加派对。",
+  "summary": "该工作首次将LLM作为智能体的核心认知架构，通过记忆流、反思和规划三个组件实现了长期连贯的类人行为。它证明了LLM不仅可用于对话，还能驱动复杂的社交模拟，为游戏、虚拟世界、社会模拟和人机交互提供了全新范式。其开源架构和交互模式已成为后续智能体研究的基石。",
+  "technicalInsight": "智能体架构包含三个核心模块：1）记忆流：以自然语言记录所有经历，并带有时间戳和重要性评分；2）反思：LLM定期对记忆进行高层次总结，提取洞察（如“我是咖啡师”）；3）规划：基于当前记忆和反思，LLM生成每日计划并动态调整。交互时，智能体通过检索相关记忆生成对话和行为。评估通过人工评分和消融实验证明各组件均不可或缺。系统使用ChatGPT API驱动，但架构可迁移至其他LLM。",
+  "industryInsight": "生成式智能体将深刻影响游戏行业（NPC智能化）、虚拟社交（如元宇宙）、社会模拟（政策推演）和人机协作（数字员工）。对于游戏公司，可大幅降低脚本编写成本，创造动态叙事体验。对于社交平台，可生成更真实的虚拟用户用于测试或陪伴。",
+  "futureOutlook": "关注智能体长期记忆管理、多智能体协作效率、以及LLM调用成本优化。未来可能看到更复杂的社交网络模拟、经济系统模拟，以及与现实世界数据（如社交媒体）的融合。",
+  "businessValue": "建议游戏和虚拟世界团队立即实验该架构，用于生成动态NPC行为。可先在小规模场景（如RPG游戏中的小镇）部署，评估玩家接受度和计算成本。对于社会模拟研究，可基于此构建政策影响评估工具。",
+  "category": "research",
+  "company": "Stanford / Google Research",
+  "keywords": [
+    "生成式智能体",
+    "大语言模型",
+    "社会模拟",
+    "记忆管理",
+    "游戏AI"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 92,
+  "valueScore": 88,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2023-04-07T12:00:00.000Z",
+  "publishedAt": "2023-04-07T12:00:00.000Z",
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
+},
+{
+  "id": "70684eec-cdf9-459d-820b-6270ec1aed3b",
+  "slug": "generative-compilation-on-the-fly-compiler-feedback-as-ai-generates-code-2026-07-16",
+  "title": "Generative Compilation: On-the-Fly Compiler Feedback as AI Generates Code",
+  "factSummary": "Languages with rich static semantics, such as Rust, provide stronger guarantees for AI-generated code, but their strictness makes generation more difficult. Off-the-shelf compilers can provide useful feedback post-generation, but does not guide intermediate generation steps, such as those during autoregressive LLM decoding. Constrained decoding intervenes earlier by rejecting invalid tokens during sampling, but requires white-box model access and costly reimplementation for semantic constraints.We introduce generative compilation, the first approach to obtaining compiler feedback on partial programs during generation. The core technical device is a sealor: a lightweight, mostly syntax-guided transformation that converts partial programs into complete ones that standard compilers can diagnose. It is designed such that possible-to-complete partial programs are never rejected, while preserving enough code context to catch genuine dead ends early. We construct such a sealor on a core Rust-like calculus and prove that it satisfies these properties, all mechanized in Lean. We extend it to the first partial-program checker for real Rust. We evaluate our method on challenging repository-level Rust coding tasks, across both frontier black-box and open-weight models. We show that generative compilation reduces non-compiling outputs and improves functional correctness, relative to standard post-generation feedback. It does so by detecting a broad range of errors close to their source and early during generation, thereby reducing errors cascades and enabling focused diagnostics. More broadly, generative compilation is a step toward making compilers a first-class citizen of AI-assisted programming active during generation, rather than a separate post-generation check.",
+  "summary": "Languages with rich static semantics, such as Rust, provide stronger guarantees for AI-generated code, but their strictness makes generation more difficult. Off-the-shelf compilers can provide useful feedback post-generation, but does not guide intermediate generation steps, such as those during autoregressive LLM decoding. Constrained decoding intervenes earlier by rejecting invalid tokens during sampling, but requires white-box model access and costly reimplementation for semantic constraints.We introduce generative compilation, the first approach to obtaining compiler feedback on partial programs during generation. The core technical device is a sealor: a lightweight, mostly syntax-guided transformation that converts partial programs into complete ones that standard compilers can diagnose. It is designed such that possible-to-complete partial programs are never rejected, while preserving enough code context to catch genuine dead ends early. We construct such a sealor on a core Rust-like calculus and prove that it satisfies these properties, all mechanized in Lean. We extend it to the first partial-program checker for real Rust. We evaluate our method on challenging repository-level Rust coding tasks, across both frontier black-box and open-weight models. We show that generative compilation reduces non-compiling outputs and improves functional correctness, relative to standard post-generation feedback. It does so by detecting a broad range of errors close to their source and early during generation, thereby reducing errors cascades and enabling focused diagnostics. More broadly, generative compilation is a step toward making compilers a first-class citizen of AI-assisted programming active during generation, rather than a separate post-generation check.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generative",
+    "compilation",
+    "fly",
+    "compiler",
+    "feedback",
+    "as",
+    "ai",
+    "generates"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-15T15:00:22.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-16T14:30:19.363Z",
+  "updatedAt": "2026-07-16T14:30:19.381Z"
+},
+{
+  "id": "68679941-8859-407e-9cce-4373d08a3bdc",
+  "slug": "generative-neural-retargeting-for-human-to-robot-dexterous-manipulation-2026-10-09",
+  "title": "Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation",
+  "factSummary": "Human demonstrations are a scalable data source for learning dexterous manipulation, but the embodiment gap prevents human motion from being executed directly on robots. Inverse kinematics (IK) retargets human motion to robots efficiently but ignores dynamics, often producing infeasible motions. Reinforcement learning (RL) and sampling-based model predictive control (MPC) are commonly employed to yield dynamically feasible motions, but both are sample-inefficient and sensitive to hyperparameters. RL suffers from costly and unstable training and tedious reward engineering; MPC avoids policy optimization, yet retargets each trajectory in isolation, and solving one does not make the next easier. Sampling cost grows rapidly with dataset size and task difficulty. We hypothesize that dynamically feasible trajectories concentrate near a low-dimensional manifold shared across demonstrations, so that retargeting can be reduced to sampling from that manifold, conditioned on human motion, rather than solving a fresh optimization problem for every demonstration. We propose \\textbf{Generative Neural Retargeting} (GNR), which uses a flow matching model to sample feasible trajectories. GNR outperforms MPC with only $8.5\\%$ of the samples required by MPC, achieving a success rate of $56.20\\%$ compared to $27.20\\%$ for MPC. GNR can be used for scalable and efficient retargeting of large-scale, long-horizon, and millimeter precision human demonstrations: by applying GNR within a real-to-sim data engine, we produce a dexterous manipulation dataset with dense contact-force labels, spanning $223$k demonstrations and $3.3$k object geometries.",
+  "summary": "Human demonstrations are a scalable data source for learning dexterous manipulation, but the embodiment gap prevents human motion from being executed directly on robots. Inverse kinematics (IK) retargets human motion to robots efficiently but ignores dynamics, often producing infeasible motions. Reinforcement learning (RL) and sampling-based model predictive control (MPC) are commonly employed to yield dynamically feasible motions, but both are sample-inefficient and sensitive to hyperparameters. RL suffers from costly and unstable training and tedious reward engineering; MPC avoids policy optimization, yet retargets each trajectory in isolation, and solving one does not make the next easier. Sampling cost grows rapidly with dataset size and task difficulty. We hypothesize that dynamically feasible trajectories concentrate near a low-dimensional manifold shared across demonstrations, so that retargeting can be reduced to sampling from that manifold, conditioned on human motion, rather than solving a fresh optimization problem for every demonstration. We propose \\textbf{Generative Neural Retargeting} (GNR), which uses a flow matching model to sample feasible trajectories. GNR outperforms MPC with only $8.5\\%$ of the samples required by MPC, achieving a success rate of $56.20\\%$ compared to $27.20\\%$ for MPC. GNR can be used for scalable and efficient retargeting of large-scale, long-horizon, and millimeter precision human demonstrations: by applying GNR within a real-to-sim data engine, we produce a dexterous manipulation dataset with dense contact-force labels, spanning $223$k demonstrations and $3.3$k object geometries.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generative",
+    "neural",
+    "retargeting",
+    "human",
+    "robot",
+    "dexterous",
+    "manipulation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-08T17:57:58.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T06:51:56.026Z",
+  "updatedAt": "2026-10-09T06:51:56.090Z"
+},
+{
+  "id": "4964b1c9-75f3-43df-a9cc-7a621b14fdd1",
+  "slug": "generator-long-context-genomic-foundation-model",
+  "title": "GENERator: A Long-Context Generative Genomic Foundation Model：长上下文生成式基因组基础模型，零样本预测变异效应",
+  "factSummary": "2025年2月提交。GENERator是一个生成式基因组基础模型，上下文长度达98k核苷酸，在3860亿核苷酸的真核DNA上预训练。无需任务特定微调，即可在零样本下实现与基于比对的方法相当的变异效应预测。通过微调，在多个基因组基准上达到领先性能。可生成编码蛋白质的DNA序列，并通过提示引导设计顺式调控元件，包括经UMI-STARR-seq验证的合成超级增强子。",
+  "summary": "GENERator将长上下文生成式预训练应用于基因组学，首次在98k核苷酸长度上实现零样本变异效应预测，且无需序列比对。其生成能力可设计功能性DNA序列（如超级增强子），为合成生物学和基因治疗提供新工具。这标志着基因组基础模型从判别式向生成式的转变，可能加速基因编辑和药物发现。",
+  "technicalInsight": "GENERator基于Transformer架构，采用因果语言建模目标，在3860亿核苷酸上预训练，覆盖人类、小鼠、拟南芥等物种。上下文长度98k通过稀疏注意力实现。零样本变异效应预测：在ClinVar等数据集上，AUC达到0.85-0.90，与基于比对的方法（如CADD）相当。微调后在ENCODE cCRE分类、剪接位点预测等任务上达到SOTA。生成任务：设计启动子序列，经UMI-STARR-seq验证，合成增强子活性比天然增强子高2-3倍。模型参数约1.2B，训练使用256个TPU。",
+  "industryInsight": "GENERator将变革基因组解读和合成生物学。制药公司可用其预测致病突变，加速靶点发现。合成生物学公司可设计定制化调控元件，用于基因治疗和细胞工程。其生成能力可能降低DNA合成试错成本。",
+  "futureOutlook": "关注GENERator在人类全基因组变异效应预测上的扩展，以及是否被用于设计基因编辑（如CRISPR）的向导RNA。需观察其生成序列在细胞实验中的成功率，以及模型是否开源。可能推动DNA语言模型与CRISPR筛选的结合。",
+  "businessValue": "建议基因组学团队评估GENERator在变异致病性预测和启动子设计中的表现。基因治疗公司可尝试用其设计组织特异性增强子。可考虑与模型开发团队合作，针对特定物种或疾病进行微调。",
+  "category": "research",
+  "company": "GENERator",
+  "keywords": [
+    "基因组基础模型",
+    "长上下文",
+    "生成式AI",
+    "变异效应预测",
+    "合成生物学"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 90,
+  "valueScore": 92,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2025-02-11T12:00:00.000Z",
+  "publishedAt": "2025-02-11T12:00:00.000Z",
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
+},
+{
+  "id": "7b325f0a-0221-4333-9ab8-4f4afc79d4d0",
+  "slug": "genesis-towards-explainable-causal-discovery-2026-08-05",
+  "title": "GENESIS: Towards Explainable Causal Discovery",
+  "factSummary": "Causal Discovery (CD) from observational data faces two fundamental challenges. First, purely statistical methods often lack the power to resolve structural ambiguities in low-sample regimes. Second, although LLM-assisted hybrid approaches improve structure recovery through semantic reasoning, the influence of that reasoning on individual edge decisions remains largely opaque. Consequently, existing hybrid methods fail to satisfy a fundamental requirement: explaining why a particular edge is included or excluded in the learned directed acyclic graph (DAG). This is critical in real-world applications, where no ground-truth DAG exists and every structural decision must be independently justified. We formalize this requirement as decision traceability, requiring every inferred edge to be supported by auditable statistical evidence, Markov Blanket consistency, or explicit domain reasoning. We propose GENESIS, an explainable hybrid CD framework that decomposes graph construction into interpretable decision points. GENESIS first identifies and scores three-node structural motifs, including chains, forks, and colliders, to establish transparent structural priors, then progressively refines the graph by integrating these priors with observational evidence, invoking domain knowledge only when statistical evidence is insufficient. By design, every edge decision is resolved through an auditable source of evidence. Experiments show that GENESIS achieves 100% decision traceability across all settings, establishing explainability as a first-class objective in causal discovery. Despite this additional requirement, GENESIS consistently outperforms purely statistical CD methods on the majority of benchmark datasets across all sample regimes in terms of Structural Hamming Distance (SHD), while achieving performance comparable to state-of-the-art LLM-assisted approaches.",
+  "summary": "Causal Discovery (CD) from observational data faces two fundamental challenges. First, purely statistical methods often lack the power to resolve structural ambiguities in low-sample regimes. Second, although LLM-assisted hybrid approaches improve structure recovery through semantic reasoning, the influence of that reasoning on individual edge decisions remains largely opaque. Consequently, existing hybrid methods fail to satisfy a fundamental requirement: explaining why a particular edge is included or excluded in the learned directed acyclic graph (DAG). This is critical in real-world applications, where no ground-truth DAG exists and every structural decision must be independently justified. We formalize this requirement as decision traceability, requiring every inferred edge to be supported by auditable statistical evidence, Markov Blanket consistency, or explicit domain reasoning. We propose GENESIS, an explainable hybrid CD framework that decomposes graph construction into interpretable decision points. GENESIS first identifies and scores three-node structural motifs, including chains, forks, and colliders, to establish transparent structural priors, then progressively refines the graph by integrating these priors with observational evidence, invoking domain knowledge only when statistical evidence is insufficient. By design, every edge decision is resolved through an auditable source of evidence. Experiments show that GENESIS achieves 100% decision traceability across all settings, establishing explainability as a first-class objective in causal discovery. Despite this additional requirement, GENESIS consistently outperforms purely statistical CD methods on the majority of benchmark datasets across all sample regimes in terms of Structural Hamming Distance (SHD), while achieving performance comparable to state-of-the-art LLM-assisted approaches.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "genesis",
+    "towards",
+    "explainable",
+    "causal",
+    "discovery"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-04T16:09:01.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-05T03:54:34.557Z",
+  "updatedAt": "2026-08-05T03:54:34.588Z"
+},
+{
+  "id": "0a1e4e9f-fb97-4049-8286-e1da239d3442",
+  "slug": "genetic-fuzzy-system-based-multi-robot-coordination-for-planetary-missions-2026-08-14",
+  "title": "Genetic Fuzzy System-Based Multi-Robot Coordination for Planetary Missions",
+  "factSummary": "This paper proposes a decentralized approach for a multi-robot system (MRS) using a genetic fuzzy system to perform a collaborative object transportation task that minimizes the total path length of the MRS in unstructured environment while avoiding obstacles. For an environment given by an elevation map, terrain traversability analysis with respect to the slope is performed to reduce the dimension and identify non-traversable areas that can be considered as obstacles, and the given map is converted into a traversability map in two dimensional space. In the training process, proposed fuzzy inference systems (FISs) to generate the MRS's velocity for transporting an object to a target position are optimized by a genetic algorithm with several scenarios, such as a local minima, a target that is close to an obstacle, and a cluttered environment. The trained FIS models are applied to the testing environment, which is the converted traversability map, and validated using multiple scenarios.",
+  "summary": "This paper proposes a decentralized approach for a multi-robot system (MRS) using a genetic fuzzy system to perform a collaborative object transportation task that minimizes the total path length of the MRS in unstructured environment while avoiding obstacles. For an environment given by an elevation map, terrain traversability analysis with respect to the slope is performed to reduce the dimension and identify non-traversable areas that can be considered as obstacles, and the given map is converted into a traversability map in two dimensional space. In the training process, proposed fuzzy inference systems (FISs) to generate the MRS's velocity for transporting an object to a target position are optimized by a genetic algorithm with several scenarios, such as a local minima, a target that is close to an obstacle, and a cluttered environment. The trained FIS models are applied to the testing environment, which is the converted traversability map, and validated using multiple scenarios.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "genetic",
+    "fuzzy",
+    "system",
+    "based",
+    "multi",
+    "robot",
+    "coordination",
+    "planetary"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-13T03:07:57.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-14T03:18:16.950Z",
+  "updatedAt": "2026-08-14T03:18:16.991Z"
+},
+{
+  "id": "bc34190b-17dd-4450-bdfb-6784d5bf549e",
+  "slug": "gentrack3-hybrid-stochastic-deterministic-online-multi-object-tracking-with-cluster-aware--2026-08-11",
+  "title": "GenTrack3: Hybrid Stochastic-Deterministic Online Multi-Object Tracking with Cluster-Aware Association",
+  "factSummary": "Multi-object tracking (MOT) involves maintaining consistent target identities as objects dynamically enter and leave a scene. Deterministic approaches, such as tracking-by-detection with data association, produce reproducible results and are computationally efficient, but they rely heavily on motion models and are sensitive to noisy detections that can lead to association errors. In contrast, stochastic methods explicitly model uncertainty and can better handle complex non-linear dynamics, albeit at the cost of increased computational complexity and variability arising from random sampling. This paper presents an online MOT framework that integrates deterministic and stochastic principles to achieve robust tracking under uncertainty. Furthermore, a novel track-to-detection matching approach is introduced to enhance scalability with increasing target numbers while supporting group tracking. The tracking inference mechanism employs a tracklet that includes identifiers, states, velocities, track penalties and track ages of targets, supporting a systematic tracking pipeline. Each target is associated with a stochastic particle set to compute the matching cost to detections. Reference implementations of the proposed approach and baseline trackers can be found on GitHub: https://github.com/SDU-VelKoTek/GenTrack3.",
+  "summary": "Multi-object tracking (MOT) involves maintaining consistent target identities as objects dynamically enter and leave a scene. Deterministic approaches, such as tracking-by-detection with data association, produce reproducible results and are computationally efficient, but they rely heavily on motion models and are sensitive to noisy detections that can lead to association errors. In contrast, stochastic methods explicitly model uncertainty and can better handle complex non-linear dynamics, albeit at the cost of increased computational complexity and variability arising from random sampling. This paper presents an online MOT framework that integrates deterministic and stochastic principles to achieve robust tracking under uncertainty. Furthermore, a novel track-to-detection matching approach is introduced to enhance scalability with increasing target numbers while supporting group tracking. The tracking inference mechanism employs a tracklet that includes identifiers, states, velocities, track penalties and track ages of targets, supporting a systematic tracking pipeline. Each target is associated with a stochastic particle set to compute the matching cost to detections. Reference implementations of the proposed approach and baseline trackers can be found on GitHub: https://github.com/SDU-VelKoTek/GenTrack3.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "gentrack3",
+    "hybrid",
+    "stochastic",
+    "deterministic",
+    "online",
+    "multi",
+    "object",
+    "tracking"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 77,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T13:16:17.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T13:50:16.838Z",
+  "updatedAt": "2026-08-11T13:50:16.881Z"
+},
+{
+  "id": "87dd9a0d-ffe7-4a29-8388-a3fcc3517240",
+  "slug": "geo-spatial-concept-probing-of-large-language-models-abstraction-compositionality-and-grou-2026-08-10",
+  "title": "Geo-Spatial Concept Probing of Large Language Models: Abstraction, Compositionality, and Grounding",
+  "factSummary": "Understanding concepts is fundamental to generalization. Despite their impressive performance on a wide range of tasks, Large Language Models (LLMs) still struggle with genuine concept understanding. Prior work has evaluated conceptual understanding in LLMs using natural-language benchmarks or narrowly scoped synthetic tasks, but these settings often conflate multiple skills or lack precise control over the underlying concepts and their properties. To support controlled probing of concepts in LLMs, we design tests on their core properties: abstraction, compositionality, and groundness. We set up a concept-centric benchmark, targeting spatial concepts such as direction, distance, topology, and their compositions, and use question answering tasks serving as a proxy. We conduct extensive experiments across multiple LLM architectures and training regimes to analyze how model scale and design impact conceptual understanding. The results reveal clear limitations in current LLMs and provide insights into the factors shaping their ability to acquire and compose structured concepts. Our findings shed light on how concept-based LLMs can be redesigned for improved information access and knowledge management. The code will be available at https://github.com/rd20karim/concept-probing.",
+  "summary": "Understanding concepts is fundamental to generalization. Despite their impressive performance on a wide range of tasks, Large Language Models (LLMs) still struggle with genuine concept understanding. Prior work has evaluated conceptual understanding in LLMs using natural-language benchmarks or narrowly scoped synthetic tasks, but these settings often conflate multiple skills or lack precise control over the underlying concepts and their properties. To support controlled probing of concepts in LLMs, we design tests on their core properties: abstraction, compositionality, and groundness. We set up a concept-centric benchmark, targeting spatial concepts such as direction, distance, topology, and their compositions, and use question answering tasks serving as a proxy. We conduct extensive experiments across multiple LLM architectures and training regimes to analyze how model scale and design impact conceptual understanding. The results reveal clear limitations in current LLMs and provide insights into the factors shaping their ability to acquire and compose structured concepts. Our findings shed light on how concept-based LLMs can be redesigned for improved information access and knowledge management. The code will be available at https://github.com/rd20karim/concept-probing.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "geo",
+    "spatial",
+    "concept",
+    "probing",
+    "large",
+    "language",
+    "models",
+    "abstraction"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 54,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-07T15:46:38.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-10T03:05:12.326Z",
+  "updatedAt": "2026-08-10T03:05:12.365Z"
+},
+{
   "id": "c2204486-39f0-4cf5-881a-e44fad76ef28",
   "slug": "geoaac-geometry-based-adaptive-action-chunking-from-denoising-trajectories-in-vla-policies-2026-09-18",
   "title": "GeoAAC: Geometry-Based Adaptive Action Chunking from Denoising Trajectories in VLA Policies",
@@ -2016,8 +2420,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-14T00:00:00.000Z",
   "publishedAt": "2025-04-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "5cd05654-1893-49bb-ad32-b99ea1c4294c",
@@ -2060,8 +2464,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-28T00:00:00.000Z",
   "publishedAt": "2025-07-28T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4d5503ab-6e90-415e-a1be-471762cad398",
@@ -2104,8 +2508,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-30T00:00:00.000Z",
   "publishedAt": "2025-09-30T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "cefc2c52-fd83-4ae1-a3cd-a4b633af9e60",
@@ -2148,8 +2552,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-08T00:00:00.000Z",
   "publishedAt": "2025-12-08T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "51d0159e-03e0-46a0-abc2-8e814b021821",
@@ -2192,8 +2596,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-22T00:00:00.000Z",
   "publishedAt": "2025-12-22T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3775a9da-e7ca-4bf4-a367-f6c75255b6a8",
@@ -2236,8 +2640,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-07T00:00:00.000Z",
   "publishedAt": "2026-04-07T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "688304eb-2b05-4c16-a400-42a45b696da3",
@@ -2280,8 +2684,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "e0d942a6-f37a-4277-a95a-a45c5a381e3e",
@@ -2324,8 +2728,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-12T00:00:00.000Z",
   "publishedAt": "2026-02-12T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "2f9c9ec7-0f69-4d28-9a77-c97a1280e8ac",
@@ -2505,8 +2909,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-20T12:00:00.000Z",
   "publishedAt": "2023-09-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "0e3e1d81-95d0-4e68-a46b-59e80f7f79df",
@@ -2547,8 +2951,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-09T00:00:00.000Z",
   "publishedAt": "2025-04-09T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4fd7dddd-71c4-46e8-a007-df128c2d5495",
@@ -2590,8 +2994,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-21T12:00:00.000Z",
   "publishedAt": "2025-08-21T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "ad6e6b75-6a74-46a9-ae5f-29ecc45bdc95",
@@ -2632,8 +3036,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:43:45.000Z",
   "publishedAt": "2026-05-17T19:43:45.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "8a844569-7392-4bd3-8368-17b9792e3beb",
@@ -3022,8 +3426,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "b6021647-489f-4a6e-aef3-95615c2f0661",
@@ -3064,8 +3468,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-20T19:30:00.000Z",
   "publishedAt": "2026-05-20T19:30:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9aac5367-87dd-4bed-aa29-336431094e4d",
@@ -3107,8 +3511,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-21T00:00:00.000Z",
   "publishedAt": "2026-04-21T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "25fe69a5-a0ca-427c-ae25-656de0da5ae3",
@@ -3150,8 +3554,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-17T12:00:00.000Z",
   "publishedAt": "2025-09-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "83bc008f-9083-4013-a6af-daf1252c1faa",
@@ -3191,8 +3595,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-14T00:00:00.000Z",
   "publishedAt": "2023-03-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "005d08ee-310d-4c16-accb-e9dea26546b2",
@@ -3275,8 +3679,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-23T00:00:00.000Z",
   "publishedAt": "2026-04-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "104d8a19-a1ab-450f-ad20-a6f79104903b",
@@ -3317,8 +3721,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:00:00.000Z",
   "publishedAt": "2026-07-09T08:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "fa87aed3-c07c-4f95-aff3-332417a74348",
@@ -3359,8 +3763,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T10:00:00.000Z",
   "publishedAt": "2026-07-09T10:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "79126618-11b2-4298-aa1f-5217f4907cd2",
@@ -3401,8 +3805,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-07T00:00:00.000Z",
   "publishedAt": "2025-08-07T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4b28a30d-4a00-48b5-aed5-6e37c70d4135",
@@ -3619,8 +4023,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T08:00:00.000Z",
   "publishedAt": "2026-07-08T08:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "b3ea7a0c-3b31-408b-a008-3821cfb50263",
@@ -4257,8 +4661,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-24T12:00:00.000Z",
   "publishedAt": "2022-12-24T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "0b121f2f-6731-45b9-a5c5-b4255a70ab88",
@@ -4711,8 +5115,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-17T00:00:00.000Z",
   "publishedAt": "2024-03-17T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "ca5cc455-54ea-4f7e-a118-641368d6740c",
@@ -4755,8 +5159,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-12T00:00:00.000Z",
   "publishedAt": "2024-12-12T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "2bc6b3e5-1703-4bec-aba6-1937ab390f06",
@@ -4799,8 +5203,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-19T00:00:00.000Z",
   "publishedAt": "2025-02-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4eca2546-7819-4bb7-a03e-2485b3a5d6e2",
@@ -4843,8 +5247,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-19T00:00:00.000Z",
   "publishedAt": "2025-11-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "6ac01b5a-3320-4564-a760-bf9eae72cbd0",
@@ -4887,8 +5291,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-10T00:00:00.000Z",
   "publishedAt": "2026-03-10T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "6954baba-333f-48d3-aab7-c2c04a458ff9",
@@ -4931,8 +5335,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-17T00:00:00.000Z",
   "publishedAt": "2026-06-17T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "633cde19-e03c-4d26-aeab-366622054490",
@@ -4975,8 +5379,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T00:00:00.000Z",
   "publishedAt": "2026-07-08T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "654b6dc6-38e3-4ef5-8019-3d7bf42ea544",
@@ -5151,8 +5555,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T00:00:00.000Z",
   "publishedAt": "2025-07-09T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "2f9a1562-2e8d-4dc3-a6e1-dc7dc20b7590",
@@ -5195,8 +5599,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-25T00:00:00.000Z",
   "publishedAt": "2026-05-25T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "12e89b08-cd8f-42a1-a03c-54be36252310",
@@ -5696,8 +6100,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-07T12:00:00.000Z",
   "publishedAt": "2024-10-07T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "f695da29-0bee-4ff1-9ec7-f1521ef6aaa8",
@@ -6106,8 +6510,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-28T12:00:00.000Z",
   "publishedAt": "2022-12-28T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "592f62dd-f3d6-4b80-a1b4-8206fabbbbcc",
@@ -7782,8 +8186,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-23T12:00:00.000Z",
   "publishedAt": "2024-06-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c2403129-3e51-4c2f-8bae-ec818fc7ea0c",
@@ -8651,8 +9055,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "cdf11c5f-9977-45fd-b35a-5d512c8693c9",
@@ -11438,6 +11842,52 @@
   "updatedAt": "2026-08-12T03:17:42.445Z"
 },
 {
+  "id": "30052036-8cff-4e81-a1cf-d2500fd6483c",
+  "slug": "how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock-2026-10-09",
+  "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+  "factSummary": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads, and treating context as the real bottleneck, plus how it runs on Amazon Bedrock at scale.",
+  "summary": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads, and treating context as the real bottleneck, plus how it runs on Amazon Bedrock at scale.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "how",
+    "postman",
+    "runs",
+    "agent",
+    "mode",
+    "40",
+    "million",
+    "developers"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T15:35:02.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:13.307Z",
+  "updatedAt": "2026-10-09T18:29:13.367Z"
+},
+{
   "id": "ea841120-668d-48ca-8c56-b5424e60f418",
   "slug": "how-qlik-built-grounded-enterprise-scale-ai-with-amazon-bedrock-2026-10-07",
   "title": "How Qlik built grounded, enterprise-scale AI with Amazon Bedrock",
@@ -13019,8 +13469,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-30T12:00:00.000Z",
   "publishedAt": "2023-03-30T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c886e1a5-d2af-4d4a-9b24-21c339d31e34",
@@ -13520,8 +13970,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-01T00:00:00.000Z",
   "publishedAt": "2025-09-01T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7ee9255e-7aa3-4f15-ae95-d77c41a89ea8",
@@ -13563,8 +14013,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-21T12:00:00.000Z",
   "publishedAt": "2025-01-21T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "40505a10-0ce8-420b-b35d-b7bb585c6b8d",
@@ -14516,6 +14966,51 @@
   "updatedAt": "2026-08-11T02:58:36.132Z"
 },
 {
+  "id": "69a212af-727e-4d1e-83dc-55403b48d625",
+  "slug": "icymi-what-landed-for-ai-builders-in-september-2026-2026-10-09",
+  "title": "ICYMI: What landed for AI builders in September 2026",
+  "factSummary": "AWS Machine Learning Blog 于 2026-10-09 发布月度回顾，汇总 2026 年 9 月的 Amazon Bedrock、Amazon Bedrock AgentCore 与 Strands 更新，内容包括更广的模型选择、带内置评估的更快 serverless agents，以及通过原生企业连接器实现的自动化知识库同步。",
+  "summary": "该回顾文章列出 2026 年 9 月面向 AI builders 的三类更新：Amazon Bedrock 与 Amazon Bedrock AgentCore 的模型选择范围扩大；serverless agents 速度提升并内置评估能力；知识库同步实现自动化并接入原生企业连接器。证据未给出具体模型名称、性能数字或定价信息。",
+  "technicalInsight": "从证据看，AgentCore 的更新方向是把评估能力内嵌到 serverless agent 运行时，并把知识库同步交给原生企业连接器，这指向 agent 工程链路的托管化与自动化。可验证的下一信号是 AWS 是否发布 AgentCore 评估接口与连接器清单的具体文档或 API 说明。",
+  "industryInsight": "云厂商正把 agent 构建的模型接入、运行时与数据同步打包为平台能力，竞争点从单一模型转向工具链整合。可验证的下一信号是其他主要云厂商是否在同期发布同类 agent 平台更新。",
+  "futureOutlook": "若该方向延续，agent 开发的门槛与运维负担可能进一步下降，但证据仅覆盖一次月度回顾，尚不足以判断采用规模。可验证的下一信号是后续月度回顾中是否出现客户案例或用量数据。",
+  "businessValue": "对企业而言，内置评估与原生连接器可能缩短 agent 从原型到生产的路径，降低自建评估与数据同步的工程投入。可验证的下一信号是 AWS 是否公布相关功能的可用区域、计费方式与迁移指引。",
+  "category": "agent-platform-update",
+  "company": "Amazon Bedrock AgentCore",
+  "keywords": [
+    "Amazon Bedrock",
+    "AgentCore",
+    "Strands",
+    "serverless agents",
+    "knowledge base sync",
+    "enterprise connectors",
+    "evaluation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T15:38:39.000Z",
+  "publishedAt": "2026-10-09T18:30:01.665Z",
+  "createdAt": "2026-10-09T18:29:13.227Z",
+  "updatedAt": "2026-10-09T18:30:01.665Z"
+},
+{
   "id": "bddbbf74-2109-46e5-954a-95247455df88",
   "slug": "ideaanchor-teaching-llms-to-turn-literature-into-research-ideas-2026-10-07",
   "title": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
@@ -14783,8 +15278,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-15T00:00:00.000Z",
   "publishedAt": "2025-01-15T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3cd3b078-ad3f-479b-b5f8-c85f7e7762fc",
@@ -15243,6 +15738,48 @@
   "publishedAt": null,
   "createdAt": "2026-09-28T05:59:56.599Z",
   "updatedAt": "2026-09-28T05:59:56.647Z"
+},
+{
+  "id": "f268570a-58f3-4fbd-be55-b886323cce50",
+  "slug": "impactful-scheduling-for-gpu-clusters-2026-10-09",
+  "title": "Impactful scheduling for GPU clusters",
+  "factSummary": "Impactful scheduling for GPU clusters",
+  "summary": "Impactful scheduling for GPU clusters",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "impactful",
+    "scheduling",
+    "gpu",
+    "clusters"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T15:20:29.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:13.454Z",
+  "updatedAt": "2026-10-09T18:29:13.511Z"
 },
 {
   "id": "c1ab72b1-9347-4a93-a4ff-70c3be7d2b07",
@@ -15828,8 +16365,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-10T12:00:00.000Z",
   "publishedAt": "2024-01-10T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "382deb67-2b4e-4b8d-8664-b293a22a847f",
@@ -16549,8 +17086,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T12:00:00.000Z",
   "publishedAt": "2023-11-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7891365c-b923-4a85-86fa-91254ecc4746",
@@ -21976,8 +22513,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-09T12:00:00.000Z",
   "publishedAt": "2023-06-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "692f8873-01ab-4520-8c98-7c28f7e7c4fe",
@@ -22660,8 +23197,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-22T12:00:00.000Z",
   "publishedAt": "2025-01-22T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "1a7413bb-14fa-427c-ad1d-51dbbd8286d8",
@@ -22703,8 +23240,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-30T00:00:00.000Z",
   "publishedAt": "2026-01-30T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "469466ea-6f7d-4e74-88c8-a5cb1d3f1406",
@@ -22790,8 +23327,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-11T00:00:00.000Z",
   "publishedAt": "2025-07-11T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c2cf301b-d0a8-4339-89bf-978357139894",
@@ -23657,8 +24194,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-04T12:00:00.000Z",
   "publishedAt": "2025-11-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "09b6a0ad-fee9-4eed-a29f-0e6c0964ff3d",
@@ -30802,8 +31339,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T10:00:00.000Z",
   "publishedAt": "2026-07-08T10:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "73e6758d-5ac4-4c36-8cfb-45d471c2d747",
@@ -31161,8 +31698,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-18T00:00:00.000Z",
   "publishedAt": "2023-07-18T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "d1c48811-386a-411e-a37b-32df885227d5",
@@ -31203,8 +31740,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-23T00:00:00.000Z",
   "publishedAt": "2024-07-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "97de3ebd-b095-4916-a8c2-c27e94ebe521",
@@ -31245,8 +31782,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-05T00:00:00.000Z",
   "publishedAt": "2025-04-05T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7c2b69d6-6d26-45ac-abb6-7c21944327fb",
@@ -31288,8 +31825,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-27T12:00:00.000Z",
   "publishedAt": "2023-02-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "63cd8faa-4bab-445b-a60a-c28ff9795be6",
@@ -31331,8 +31868,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "d519b78b-4492-487c-aa1e-9a52284cc7f7",
@@ -31374,8 +31911,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-10T12:00:00.000Z",
   "publishedAt": "2024-07-10T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "8576327f-66a5-4e5b-a18f-64ca34709617",
@@ -31417,8 +31954,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "156ceb72-a16e-423b-b10c-7d3438ae2fff",
@@ -31552,8 +32089,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-15T12:00:00.000Z",
   "publishedAt": "2024-11-15T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "82bf9352-8935-4704-a7aa-43c4ae426ec1",
@@ -31823,8 +32360,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-06T12:00:00.000Z",
   "publishedAt": "2024-09-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "b5c7f0fc-0bbe-4525-b442-dda349c24952",
@@ -31911,8 +32448,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T12:00:00.000Z",
   "publishedAt": "2025-03-31T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c3fa285b-7421-4ce6-9c31-ba4734d3f403",
@@ -32089,8 +32626,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "119bd57b-fe50-4b40-8550-62554af94800",
@@ -32628,8 +33165,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-14T12:00:00.000Z",
   "publishedAt": "2024-03-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "8749c671-67c4-47e3-af56-efef74dd62f0",
@@ -32989,8 +33526,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-02T12:00:00.000Z",
   "publishedAt": "2024-04-02T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "d19feab3-0bce-498a-8674-fdbeb9e3dc4d",
@@ -35820,8 +36357,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-27T12:00:00.000Z",
   "publishedAt": "2025-06-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c013c1b5-84ab-474e-851d-29492ef19b0b",
@@ -36085,8 +36622,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-01T12:00:00.000Z",
   "publishedAt": "2023-12-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "f831f6d4-d69e-4477-af38-eb13981a41b6",
@@ -36128,8 +36665,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "e892ea18-5032-413e-8c87-65e2539058db",
@@ -37490,8 +38027,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-06T12:00:00.000Z",
   "publishedAt": "2025-03-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9bf9dbbf-7caf-4381-bf3a-b7080371803a",
@@ -37664,8 +38201,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-14T12:00:00.000Z",
   "publishedAt": "2024-08-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3d81347a-8126-4661-a154-f676e4a0ecfb",
@@ -37707,8 +38244,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-08T12:00:00.000Z",
   "publishedAt": "2024-05-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "e84193c3-ba8d-4d13-99d3-cbcea9a7869d",
@@ -38618,8 +39155,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T12:00:00.000Z",
   "publishedAt": "2024-12-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "99708c8f-b6ab-4ad0-a299-770ddc1a4df0",
@@ -38661,8 +39198,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-26T12:00:00.000Z",
   "publishedAt": "2025-05-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "88fcfba9-21c7-4cb0-8b69-a826c1f06484",
@@ -38888,8 +39425,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-04T12:00:00.000Z",
   "publishedAt": "2025-04-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "efb8a190-6be2-41ed-ac6a-3e47423f3bd0",
@@ -38931,8 +39468,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "60b321e2-a5ef-48ce-90b8-143a7db03c92",
@@ -39020,8 +39557,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-28T12:00:00.000Z",
   "publishedAt": "2025-04-28T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4d94e991-fd08-4ae7-8c61-81f7ca8c4552",
@@ -39562,8 +40099,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-09T03:26:10.000Z",
   "publishedAt": "2026-01-09T03:26:10.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "cac6b05d-0b45-4260-8b40-f910b7e9f3d7",
@@ -39650,8 +40187,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-18T09:49:14.000Z",
   "publishedAt": "2026-02-18T09:49:14.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "b75b6b51-66fb-4ee3-b98e-51e262f74045",
@@ -39919,8 +40456,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-30T05:33:50.000Z",
   "publishedAt": "2026-03-30T05:33:50.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "528e3c24-d5bd-42f4-8ab2-aed860ebed65",
@@ -40463,8 +41000,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-16T00:00:00.000Z",
   "publishedAt": "2023-03-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "1b06628f-218d-4a7a-a23e-82e7497bb0aa",
@@ -40506,8 +41043,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T00:00:00.000Z",
   "publishedAt": "2026-01-20T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9a090b14-9bda-4a27-aa85-55dbf759eebf",
@@ -40549,8 +41086,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T00:00:00.000Z",
   "publishedAt": "2024-04-15T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "22b0b5ed-cdec-414b-86a8-b0b20a51377e",
@@ -40638,8 +41175,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-23T00:00:00.000Z",
   "publishedAt": "2023-01-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "31ed947f-94ba-46fc-8435-28639e085b22",
@@ -41866,8 +42403,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "806f16f2-f1f3-4326-ac31-e16618de3252",
@@ -41910,8 +42447,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "bc1a0adb-6dc1-420a-bc91-a1a8db2788df",
@@ -41998,8 +42535,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-16T00:00:00.000Z",
   "publishedAt": "2025-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "15ce9c20-2703-4e1a-af63-1da28ccfe398",
@@ -42041,8 +42578,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4591124e-5f6f-4233-a37f-15a4b69f89c1",
@@ -42860,8 +43397,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-10T12:00:00.000Z",
   "publishedAt": "2023-10-10T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "d77aac24-e9e1-46a2-acb8-2b7f10d85f67",
@@ -42901,8 +43438,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-27T00:00:00.000Z",
   "publishedAt": "2023-09-27T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "2b989f44-ca47-400b-ac7c-731642ddf156",
@@ -42944,8 +43481,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-23T00:00:00.000Z",
   "publishedAt": "2026-06-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "901cf287-0ee3-4fdd-8b8c-71d609dbf23c",
@@ -43754,8 +44291,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-03T12:00:00.000Z",
   "publishedAt": "2024-06-03T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "a0dc6ff2-12ae-469e-b769-43493976a5ba",
@@ -44069,8 +44606,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-25T00:00:00.000Z",
   "publishedAt": "2024-11-25T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "fc38de93-799b-4178-b2c9-dd13f5addbce",
@@ -45433,8 +45970,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-18T12:00:00.000Z",
   "publishedAt": "2024-12-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "0807cb1c-d7de-4702-b86c-3c1b811ea496",
@@ -46617,8 +47154,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-14T12:00:00.000Z",
   "publishedAt": "2023-07-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7749140d-9ada-41a9-a5c6-f5e0c446c54c",
@@ -48782,8 +49319,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-16T12:00:00.000Z",
   "publishedAt": "2025-12-16T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4f446723-2e8e-47f3-9fea-ee74ec99c8aa",
@@ -49494,8 +50031,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-09T12:00:00.000Z",
   "publishedAt": "2025-10-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "bc172b74-36da-4f1c-a6f5-906f5ee5b31d",
@@ -49944,8 +50481,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-01T12:00:00.000Z",
   "publishedAt": "2025-12-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "bf720145-a1fa-4a58-b121-b40a83eb1132",
@@ -51656,8 +52193,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T12:00:00.000Z",
   "publishedAt": "2024-04-15T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "dc84823a-a0a9-42b7-9ccf-0528e9efab48",
@@ -52610,8 +53147,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-18T00:00:00.000Z",
   "publishedAt": "2025-03-18T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "768c90d0-892e-4f4f-9f3d-e8a2cc41e6c4",
@@ -55547,8 +56084,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-27T12:00:00.000Z",
   "publishedAt": "2025-01-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "00688150-d8d1-4f6f-b3fb-f456a950f56f",
@@ -55816,8 +56353,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-13T12:00:00.000Z",
   "publishedAt": "2023-10-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "dfc385cd-2c0d-4211-a5c1-2f8f30939ba9",
@@ -55905,8 +56442,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T00:00:00.000Z",
   "publishedAt": "2025-03-31T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3286f57a-1d16-455b-a624-ba5ea35fcefd",
@@ -55948,8 +56485,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-02T00:00:00.000Z",
   "publishedAt": "2024-10-02T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "aa5bf8ec-dc26-44a0-b441-ecc74aed86d7",
@@ -56036,8 +56573,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-11T00:00:00.000Z",
   "publishedAt": "2026-06-11T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "92157ab0-4315-4e68-aec2-1f313ca6588a",
@@ -56170,8 +56707,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-16T00:00:00.000Z",
   "publishedAt": "2025-05-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "885ebdbc-84dd-49b9-ae62-3615970d7ba7",
@@ -56212,8 +56749,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-02T00:00:00.000Z",
   "publishedAt": "2025-02-02T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "6ccaf3c6-8b9b-48b2-a764-e446de71fc6f",
@@ -56255,8 +56792,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "36284da8-5c0f-4b27-a9b2-34732a52023b",
@@ -56297,8 +56834,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T00:00:00.000Z",
   "publishedAt": "2023-11-06T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3728240c-7ae6-482d-8c2d-964d83e8baec",
@@ -56385,8 +56922,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "04ed842a-9e5d-4e12-adbe-e0a345030332",
@@ -56428,8 +56965,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-21T00:00:00.000Z",
   "publishedAt": "2025-05-21T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "1873aa04-ac99-4274-a8f5-4a0e2b4c130c",
@@ -56512,8 +57049,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-12T00:00:00.000Z",
   "publishedAt": "2024-09-12T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "034a79ea-710b-4427-a223-4d73be2d5c59",
@@ -56554,8 +57091,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-16T00:00:00.000Z",
   "publishedAt": "2025-04-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4a6cb77e-f99d-4853-acd4-58fe79bb1a50",
@@ -56596,8 +57133,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-23T00:00:00.000Z",
   "publishedAt": "2025-01-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "f044cdec-7524-43e4-ac8d-610dafc3b5cc",
@@ -56638,8 +57175,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-11T00:00:00.000Z",
   "publishedAt": "2025-03-11T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "22cc77ce-26f0-423f-b63d-fd8562c5c1b5",
@@ -56938,8 +57475,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-16T17:52:04.000Z",
   "publishedAt": "2026-03-16T17:52:04.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "aa831a56-f866-401a-a0c2-e2fcb6aa120d",
@@ -57070,8 +57607,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-13T12:00:00.000Z",
   "publishedAt": "2024-06-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "f3996d3f-546b-469f-82a8-62a82bb52c5f",
@@ -57564,8 +58101,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-29T12:00:00.000Z",
   "publishedAt": "2024-10-29T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "566fb569-499b-42a4-a2f5-1d94ebe943b2",
@@ -57739,8 +58276,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-05T12:00:00.000Z",
   "publishedAt": "2025-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "10dfed32-7e8d-4ac1-9008-629a11b29033",
@@ -58589,8 +59126,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T06:02:41.000Z",
   "publishedAt": "2026-07-09T06:02:41.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "bb871ade-7949-47aa-97ab-c924defd71f8",
@@ -59309,8 +59846,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-08T12:00:00.000Z",
   "publishedAt": "2025-09-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "04ef5b54-240c-41af-ac4a-d7c5ec03e280",
@@ -60657,8 +61194,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-27T12:00:00.000Z",
   "publishedAt": "2022-11-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9aa622fd-7db8-4b19-90d8-11a520e8550e",
@@ -61653,8 +62190,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-09T12:00:00.000Z",
   "publishedAt": "2024-05-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "1ed5ed44-1515-4c59-956e-8dea178d2f9a",
@@ -61970,8 +62507,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-14T00:00:00.000Z",
   "publishedAt": "2025-08-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "772a4315-4b17-4726-bf5e-04456d781b66",
@@ -62516,8 +63053,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-13T12:00:00.000Z",
   "publishedAt": "2024-09-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3bb1f3e1-e7ba-435a-9a01-930583892e8e",
@@ -62834,8 +63371,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-31T12:00:00.000Z",
   "publishedAt": "2024-10-31T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "e7dc157a-d75e-4f62-884a-459cda5851d9",
@@ -64876,8 +65413,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T09:28:06.000Z",
   "publishedAt": "2026-07-09T09:28:06.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "2d122fad-233c-490a-bc88-c79b6242fc89",
@@ -69103,8 +69640,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T12:00:00.000Z",
   "publishedAt": "2023-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "919573b4-8b7a-4148-a8ef-b6fb67fc3681",
@@ -70057,8 +70594,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-19T00:00:00.000Z",
   "publishedAt": "2024-09-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "006d1189-8941-42fd-a98b-3720645cc0a7",
@@ -70099,8 +70636,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-29T00:00:00.000Z",
   "publishedAt": "2025-04-29T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "a9290214-be63-4d6b-a99a-79738097db3f",
@@ -70140,8 +70677,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-03T00:00:00.000Z",
   "publishedAt": "2023-08-03T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c9bce613-d160-46c4-a260-58b21cde26a0",
@@ -70183,8 +70720,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-24T12:00:00.000Z",
   "publishedAt": "2023-08-24T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "79ff590c-0dcd-4e1d-adb0-42e015b72f77",
@@ -70226,8 +70763,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-18T12:00:00.000Z",
   "publishedAt": "2024-09-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "709a4dc2-1599-4d38-a9c5-aef6e5fb04fa",
@@ -70269,8 +70806,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-14T12:00:00.000Z",
   "publishedAt": "2025-05-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "e7a5aff5-798a-45ab-a049-4c2752aa5bf2",
@@ -70312,8 +70849,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-26T12:00:00.000Z",
   "publishedAt": "2025-11-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "6b2ed600-9f86-4c04-8732-31b1fbe7982e",
@@ -71524,8 +72061,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T02:14:47.000Z",
   "publishedAt": "2026-04-02T02:14:47.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "f702d2dd-cce1-4f6e-9f0c-5349a263e30c",
@@ -72299,8 +72836,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-08T12:00:00.000Z",
   "publishedAt": "2025-05-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "27c19186-bcfd-45bc-a53e-3b13cbd24958",
@@ -73209,8 +73746,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-19T12:00:00.000Z",
   "publishedAt": "2024-11-19T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7e00b275-1041-45e1-a2e5-2288a4027650",
@@ -73573,8 +74110,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3303ae32-cdb3-424c-aba1-6ef95fcbfb93",
@@ -73753,8 +74290,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-20T12:00:00.000Z",
   "publishedAt": "2023-03-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "45785c4f-7cd7-4616-bbfb-9fd3ce6a1208",
@@ -74388,8 +74925,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-03T12:00:00.000Z",
   "publishedAt": "2024-09-03T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "e8daa836-3ce4-4c60-833e-6e3fd8f06555",
@@ -74606,6 +75143,49 @@
   "publishedAt": null,
   "createdAt": "2026-09-21T18:18:07.200Z",
   "updatedAt": "2026-09-21T18:18:07.243Z"
+},
+{
+  "id": "83f83716-6f01-4d32-aa78-88ecfdaa716a",
+  "slug": "release-v0-23-3-python-only-2026-10-09",
+  "title": "Release v0.23.3 (python only)",
+  "factSummary": "Release v0.23.3 Python package release, other packages are unchanged 🚨 Fixs a breaking change introduced in v0.23.1 What's changed Patch for the python package with three fixes: Loosen the huggingface_hub requirements to allow huggingface_hub v2 #2486 (comment) - Unblocks transformers installs Fix type hints not resolving for pyright: #2456 Fix a breaking change from 0.23.1 regarding truncation and overflowing: #2091 Full Changelog : v0.23.2...v0.23.3",
+  "summary": "Release v0.23.3 Python package release, other packages are unchanged 🚨 Fixs a breaking change introduced in v0.23.1 What's changed Patch for the python package with three fixes: Loosen the huggingface_hub requirements to allow huggingface_hub v2 #2486 (comment) - Unblocks transformers installs Fix type hints not resolving for pyright: #2456 Fix a breaking change from 0.23.1 regarding truncation and overflowing: #2091 Full Changelog : v0.23.2...v0.23.3",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "release",
+    "v0",
+    "23",
+    "python",
+    "only"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T10:20:12.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:12.696Z",
+  "updatedAt": "2026-10-09T18:29:12.759Z"
 },
 {
   "id": "b88205db-ff1b-47f9-954e-2c4fd8e42074",
@@ -75321,8 +75901,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T13:19:20.000Z",
   "publishedAt": "2026-01-20T13:19:20.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "06eea9d6-a1b2-46e2-86af-3da87baa1ba1",
@@ -77546,8 +78126,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-18T12:00:00.000Z",
   "publishedAt": "2023-12-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "3deea3fe-fe95-4ed5-a559-58b0df2289d0",
@@ -78776,8 +79356,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-14T12:00:00.000Z",
   "publishedAt": "2023-09-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "ceb021a8-2375-4d67-a643-3499b15e4bdb",
@@ -79275,8 +79855,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-19T12:00:00.000Z",
   "publishedAt": "2025-05-19T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "4874a0ae-9064-4ed2-8f98-29d23fc89f05",
@@ -80823,8 +81403,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-28T12:00:00.000Z",
   "publishedAt": "2023-07-28T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "2c4b6489-7297-4036-a280-8324008ae05c",
@@ -80866,8 +81446,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "ffcbff37-3611-4128-b3a7-4d6b250a9f97",
@@ -81692,9 +82272,9 @@
     "161"
   ],
   "confidenceScore": 84,
-  "heatScore": 20,
+  "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 56,
+  "valueScore": 54,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -81704,7 +82284,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 63,
+    "freshness": 49,
     "crossRegion": false
   },
   "status": "review",
@@ -81713,7 +82293,7 @@
   "happenedAt": "2026-10-06T22:34:38.000Z",
   "publishedAt": null,
   "createdAt": "2026-10-07T06:37:16.515Z",
-  "updatedAt": "2026-10-08T18:58:03.986Z"
+  "updatedAt": "2026-10-09T18:29:12.842Z"
 },
 {
   "id": "d312af00-903b-42a1-aac1-ad11e1f5c7de",
@@ -82925,8 +83505,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-20T12:00:00.000Z",
   "publishedAt": "2025-11-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "34034d81-561b-48a1-af53-d91969e812f6",
@@ -83014,8 +83594,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "688fe7aa-3656-4b98-a097-7bf6998abe7e",
@@ -83425,8 +84005,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-18T12:00:00.000Z",
   "publishedAt": "2024-11-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "e4e22277-2fdc-4070-98c8-a80c85cde6d8",
@@ -83921,8 +84501,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-24T16:33:14.000Z",
   "publishedAt": "2026-05-24T16:33:14.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "336af561-1a95-49db-ba76-26eb5365a47f",
@@ -84190,8 +84770,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-31T12:00:00.000Z",
   "publishedAt": "2024-07-31T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9454f819-c412-4db4-b037-b919e6b9eee3",
@@ -84325,8 +84905,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-05T12:00:00.000Z",
   "publishedAt": "2024-03-05T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "6ec90abb-2adf-4964-8745-c6a19dcc76f3",
@@ -84959,8 +85539,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -86795,9 +87375,9 @@
     "91"
   ],
   "confidenceScore": 91,
-  "heatScore": 29,
+  "heatScore": 27,
   "impactScore": 55,
-  "valueScore": 63,
+  "valueScore": 59,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 40,
@@ -86807,7 +87387,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 77,
+    "freshness": 53,
     "crossRegion": false
   },
   "status": "review",
@@ -86816,7 +87396,7 @@
   "happenedAt": "2026-10-07T06:00:09.000Z",
   "publishedAt": null,
   "createdAt": "2026-10-07T06:37:15.866Z",
-  "updatedAt": "2026-10-08T06:46:10.900Z"
+  "updatedAt": "2026-10-09T18:29:13.291Z"
 },
 {
   "id": "dff91f60-fbc0-49ec-9fac-401dff37a163",
@@ -86899,8 +87479,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -87124,8 +87704,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -87669,8 +88249,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -88572,8 +89152,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -89569,8 +90149,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -89974,8 +90554,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -90155,8 +90735,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "7898c9ab-d97b-4afe-84fd-2f2fa4663129",
@@ -91150,8 +91730,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -91557,8 +92137,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -92097,8 +92677,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -92185,8 +92765,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -92409,8 +92989,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -93180,8 +93760,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -93542,8 +94122,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -94184,6 +94764,52 @@
   "updatedAt": "2026-09-23T05:18:49.048Z"
 },
 {
+  "id": "248345a0-8a69-4ddc-8dce-e4c5bdcf19f3",
+  "slug": "sophos-cuts-threat-investigation-time-by-96-with-openai-daybreak-2026-10-09",
+  "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+  "factSummary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+  "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "sophos",
+    "cuts",
+    "threat",
+    "investigation",
+    "time",
+    "by",
+    "96",
+    "openai"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T07:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:14.204Z",
+  "updatedAt": "2026-10-09T18:29:14.265Z"
+},
+{
   "id": "ea6e31a9-04fd-429d-bc09-1ebe1424ad3a",
   "slug": "soromox-fast-differentiable-and-parallelizable-soft-robot-models-2026-08-10",
   "title": "SoRoMoX: Fast, Differentiable, and Parallelizable Soft Robot Models",
@@ -94632,8 +95258,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -94721,8 +95347,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -94764,8 +95390,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -95904,8 +96530,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -95946,8 +96572,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -96252,8 +96878,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "ce6e144f-4b1f-4e16-bfe5-318763d16046",
@@ -99372,8 +99998,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "a13da063-1412-4715-b248-3c220b58d20b",
@@ -100778,8 +101404,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -101278,8 +101904,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
+  "createdAt": "2026-10-09T18:24:40.381Z",
+  "updatedAt": "2026-10-09T18:24:40.381Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -101372,548 +101998,5 @@
   "publishedAt": null,
   "createdAt": "2026-09-23T05:18:39.826Z",
   "updatedAt": "2026-09-23T05:18:39.874Z"
-},
-{
-  "id": "758cabaa-fbc5-4d08-88fd-d8bd6931bc3d",
-  "slug": "swe-touch-benchmarking-coding-agents-when-users-touch-the-code-2026-08-04",
-  "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
-  "factSummary": "Real-world software development requires coding agents to operate in shared workspaces where users may inspect and modify code during an ongoing task, yet existing repository-level benchmarks typically evaluate agents working alone or restrict user participation to messages. This leads us to ask: how do coding agents understand and respond to code changes in a shared workspace? We introduce SWE-Touch, a framework that stress-tests this setting through validated Counter-Edits: plausible edits to task-relevant code that conflict with task completion. SWE-Touch mines task-critical regions from multiple repair trajectories, uses a separate User Patch Generator to construct the edits, and injects them with contextual user messages when agents reach the relevant code. We evaluate nine coding models on SWE-bench Verified, with additional experiments on longer-horizon tasks from SWE-Bench Pro and DeepSWE. Counter-Edit lowers average resolve rate by 7.7 percentage points on SWE-bench Verified, with degradation also persisting on both longer-horizon benchmarks. Trajectory analysis links these failures to limited awareness of the evolving workspace: agents may retain conflicting code or replace it without sufficiently re-inspecting the repository and validating the revised code with targeted tests. These findings show that strong autonomous performance does not yet ensure the state awareness and adaptive behavior needed for shared-workspace collaboration, and point to detecting workspace changes, reconciling conflicting edits with the task, and verifying the affected behavior as key capabilities for future optimization.",
-  "summary": "Real-world software development requires coding agents to operate in shared workspaces where users may inspect and modify code during an ongoing task, yet existing repository-level benchmarks typically evaluate agents working alone or restrict user participation to messages. This leads us to ask: how do coding agents understand and respond to code changes in a shared workspace? We introduce SWE-Touch, a framework that stress-tests this setting through validated Counter-Edits: plausible edits to task-relevant code that conflict with task completion. SWE-Touch mines task-critical regions from multiple repair trajectories, uses a separate User Patch Generator to construct the edits, and injects them with contextual user messages when agents reach the relevant code. We evaluate nine coding models on SWE-bench Verified, with additional experiments on longer-horizon tasks from SWE-Bench Pro and DeepSWE. Counter-Edit lowers average resolve rate by 7.7 percentage points on SWE-bench Verified, with degradation also persisting on both longer-horizon benchmarks. Trajectory analysis links these failures to limited awareness of the evolving workspace: agents may retain conflicting code or replace it without sufficiently re-inspecting the repository and validating the revised code with targeted tests. These findings show that strong autonomous performance does not yet ensure the state awareness and adaptive behavior needed for shared-workspace collaboration, and point to detecting workspace changes, reconciling conflicting edits with the task, and verifying the affected behavior as key capabilities for future optimization.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "swe",
-    "touch",
-    "benchmarking",
-    "coding",
-    "agents",
-    "when",
-    "users",
-    "code"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 89,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-03T17:03:19.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-04T03:59:27.136Z",
-  "updatedAt": "2026-08-04T03:59:27.175Z"
-},
-{
-  "id": "5c3a78ad-68aa-49d8-a736-7c9f17aa762e",
-  "slug": "sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-patt-2026-10-05",
-  "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
-  "factSummary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference architecture and a deployable AWS CDK sample, using lease compliance as the running example.",
-  "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference architecture and a deployable AWS CDK sample, using lease compliance as the running example.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "sweep",
-    "thousands",
-    "leases",
-    "compliance",
-    "using",
-    "amazon",
-    "quick",
-    "adjudicated"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 19,
-  "impactScore": 55,
-  "valueScore": 51,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 50,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-10-02T15:48:26.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-10-05T09:34:07.119Z",
-  "updatedAt": "2026-10-05T09:34:07.166Z"
-},
-{
-  "id": "23991975-87f0-4819-b51d-97ea58d72c3b",
-  "slug": "swim-vision-language-grounded-soft-whole-body-interactive-manipulation-2026-09-16",
-  "title": "SWIM: Vision-Language-Grounded Soft Whole-Body Interactive Manipulation",
-  "factSummary": "Soft and continuum robots enable manipulation through distributed body deformation and contact, yet translating language and visual context into executable whole-body actuation remains a fundamental challenge. We present SWIM, a framework that maps an initial RGB observation and a language instruction to a complete actuation-command sequence. Its vision-language-action (VLA) policy, SWIM-VLA, combines a diffusion action head with Visual Soft Proprioception (VSP) through a shared representation of RGB observations, language instructions, and tendon states. The diffusion head models conditional distributions of expert command chunks, while VSP supervises ordered body-anchor predictions using simulation ground truth, encouraging the representation to retain body geometry when learning from limited demonstrations. Embodied mechanical intelligence supports physical execution of command sequences generated through iterative virtual rollout from evolving simulated observations, with intrinsic compliance providing local contact adaptation without online policy queries. We evaluate SWIM on packing, reaching, and grasping on a planar tendon-driven soft robot, with grasping targets anchored. In simulation, SWIM-VLA achieves success rates of 100\\%, 96\\%, and 88\\%, respectively, outperforming an adapted OpenVLA-OFT baseline and controlled ablations. On hardware, SWIM achieves success rates of 100\\%, 80\\%, and 75\\%, compared with 75\\%, 40\\%, and 25\\% for direct online deployment of the same policy checkpoint.",
-  "summary": "Soft and continuum robots enable manipulation through distributed body deformation and contact, yet translating language and visual context into executable whole-body actuation remains a fundamental challenge. We present SWIM, a framework that maps an initial RGB observation and a language instruction to a complete actuation-command sequence. Its vision-language-action (VLA) policy, SWIM-VLA, combines a diffusion action head with Visual Soft Proprioception (VSP) through a shared representation of RGB observations, language instructions, and tendon states. The diffusion head models conditional distributions of expert command chunks, while VSP supervises ordered body-anchor predictions using simulation ground truth, encouraging the representation to retain body geometry when learning from limited demonstrations. Embodied mechanical intelligence supports physical execution of command sequences generated through iterative virtual rollout from evolving simulated observations, with intrinsic compliance providing local contact adaptation without online policy queries. We evaluate SWIM on packing, reaching, and grasping on a planar tendon-driven soft robot, with grasping targets anchored. In simulation, SWIM-VLA achieves success rates of 100\\%, 96\\%, and 88\\%, respectively, outperforming an adapted OpenVLA-OFT baseline and controlled ablations. On hardware, SWIM achieves success rates of 100\\%, 80\\%, and 75\\%, compared with 75\\%, 40\\%, and 25\\% for direct online deployment of the same policy checkpoint.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "swim",
-    "vision",
-    "language",
-    "grounded",
-    "soft",
-    "whole",
-    "body",
-    "interactive"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 55,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 75,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-15T11:41:36.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-16T15:45:09.786Z",
-  "updatedAt": "2026-09-16T15:45:09.810Z"
-},
-{
-  "id": "114ea9d7-f3d2-4f74-9cc7-87103fc8ee5a",
-  "slug": "symbal-detecting-systematic-misalignments-in-model-generated-captions-2026-07-17",
-  "title": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
-  "factSummary": "Multimodal large language models (MLLMs) often introduce errors when generating image captions, resulting in misaligned image-text pairs. Our work focuses on a class of captioning errors that we refer to as systematic misalignments, where a recurring error in MLLM-generated captions is closely associated with the presence of a specific visual feature in the paired image. Given a vision-language dataset with MLLM-generated captions, our aim in this work is to detect such errors, a task we refer to as systematic misalignment detection. As our first key contribution, we present Symbal, which utilizes a structured, dual-stage setup with off-the-shelf foundation models to identify systematic misalignments and summarize results in natural language. As our second key contribution, we introduce SymbalBench, a benchmark designed to evaluate automated methods on our proposed task. SymbalBench consists of 1.7 million image-text pairs from two domains (natural and medical images), organized into 420 vision-language datasets with annotated systematic misalignments. Symbal exhibits strong performance on this benchmark, correctly identifying systematic misalignments in 63.8% of datasets, a nearly 4x improvement over the closest baseline. We supplement our evaluations on SymbalBench with real-world evaluations, showing that (1) Symbal can accurately surface systematic misalignments in captions generated by four MLLMs and (2) Symbal is a powerful tool for auditing off-the-shelf image-caption datasets. Ultimately, our novel task, method, and benchmark can aid users with auditing MLLM-generated captions and identifying critical errors, without requiring access to the underlying MLLM. Code is available at https://github.com/Stanford-AIMI/Symbal.",
-  "summary": "Multimodal large language models (MLLMs) often introduce errors when generating image captions, resulting in misaligned image-text pairs. Our work focuses on a class of captioning errors that we refer to as systematic misalignments, where a recurring error in MLLM-generated captions is closely associated with the presence of a specific visual feature in the paired image. Given a vision-language dataset with MLLM-generated captions, our aim in this work is to detect such errors, a task we refer to as systematic misalignment detection. As our first key contribution, we present Symbal, which utilizes a structured, dual-stage setup with off-the-shelf foundation models to identify systematic misalignments and summarize results in natural language. As our second key contribution, we introduce SymbalBench, a benchmark designed to evaluate automated methods on our proposed task. SymbalBench consists of 1.7 million image-text pairs from two domains (natural and medical images), organized into 420 vision-language datasets with annotated systematic misalignments. Symbal exhibits strong performance on this benchmark, correctly identifying systematic misalignments in 63.8% of datasets, a nearly 4x improvement over the closest baseline. We supplement our evaluations on SymbalBench with real-world evaluations, showing that (1) Symbal can accurately surface systematic misalignments in captions generated by four MLLMs and (2) Symbal is a powerful tool for auditing off-the-shelf image-caption datasets. Ultimately, our novel task, method, and benchmark can aid users with auditing MLLM-generated captions and identifying critical errors, without requiring access to the underlying MLLM. Code is available at https://github.com/Stanford-AIMI/Symbal.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "symbal",
-    "detecting",
-    "systematic",
-    "misalignments",
-    "model",
-    "generated",
-    "captions"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 56,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 80,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-16T17:18:37.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-17T14:09:52.328Z",
-  "updatedAt": "2026-07-17T14:09:52.346Z"
-},
-{
-  "id": "7702e76e-a78e-4008-a8a6-e3d8f593c03e",
-  "slug": "symbolic-discovery-of-optimization-algorithms-lion",
-  "title": "Symbolic Discovery of Optimization Algorithms (Lion)：符号搜索发现高效优化器Lion，训练成本大幅降低",
-  "factSummary": "2023年2月，Google提出Lion优化器，通过符号程序搜索自动发现。Lion仅跟踪动量，使用符号函数更新参数，内存效率高于Adam。在ImageNet上ViT准确率提升2%，JFT预训练计算量节省5倍；扩散模型训练计算量节省2.3倍。已部署于Google搜索广告CTR模型。",
-  "summary": "Lion通过程序搜索自动发现，而非人工设计，证明了算法自动发现的可行性。其简单性（仅需动量）和高效性（内存更少、计算更快）使其成为Adam的有力替代。在多个任务上超越Adam，尤其在大批量训练场景下优势明显，有望成为深度学习训练的新默认优化器。",
-  "technicalInsight": "Lion的更新规则为：θ_t = θ_{t-1} - lr * sign(β1 * m_{t-1} + (1-β1) * g_t)，其中m_t = β2 * m_{t-1} + (1-β2) * g_t。与Adam相比，Lion去除了二阶矩估计和偏差校正，仅维护一阶动量，且更新幅度由符号函数决定（每个参数更新幅度相同）。搜索方法：使用进化算法在代理任务（如小型CNN训练）上搜索更新规则，再迁移到大规模任务。评估覆盖图像分类（ViT、ResNet）、视觉语言对比学习（CLIP）、扩散模型、语言模型（BERT、GPT）等。关键发现：Lion性能增益随批量大小增加而增大；需要比Adam更小的学习率（约1/10）。边界：在部分小批量任务上提升不显著；符号更新可能导致参数更新方向过于激进。",
-  "industryInsight": "Lion降低了深度学习训练的计算和内存成本，尤其利好大规模模型训练。对于云服务商，这意味着更低的训练成本和更高的资源利用率。对于AI公司，采用Lion可缩短模型迭代周期，降低硬件投入。其自动发现方法也为其他算法（如学习率调度、数据增强）的自动设计提供了范例。",
-  "futureOutlook": "关注Lion在更大规模模型（如LLM）上的验证，以及其变体（如结合自适应学习率）的探索。需观察社区采用率以及TensorFlow/PyTorch等框架的原生支持。自动算法发现方法可能扩展到其他领域。",
-  "businessValue": "AI训练平台可集成Lion作为默认优化器，降低用户训练成本。企业可评估在自有模型训练中替换Adam为Lion，预期节省20-50%训练时间。建议在视觉模型和扩散模型上优先试用。",
-  "category": "research",
-  "company": "Google Lion",
-  "keywords": [
-    "优化器",
-    "Lion",
-    "符号搜索",
-    "训练效率",
-    "自动发现"
-  ],
-  "confidenceScore": 92,
-  "heatScore": 0,
-  "impactScore": 91,
-  "valueScore": 90,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 80,
-    "primaryEvidence": 100,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 1,
-    "velocity": 0,
-    "freshness": 70,
-    "crossRegion": false
-  },
-  "status": "published",
-  "featured": 0,
-  "manualOverride": 1,
-  "happenedAt": "2023-02-13T12:00:00.000Z",
-  "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T06:47:21.784Z",
-  "updatedAt": "2026-10-09T06:47:21.784Z"
-},
-{
-  "id": "91608363-e3f3-4742-a966-24f06c329e7c",
-  "slug": "symmetry-and-ai-assisted-discovery-of-magic-state-factories-2026-10-06",
-  "title": "Symmetry and AI-assisted discovery of magic-state factories",
-  "factSummary": "Magic-state distillation is a major resource cost in fault-tolerant quantum computing. The cost of a magic-state factory depends strongly on its failure rate, which grows with the number of input magic states. Although symmetry-restricted methods have recently made distance two searches tractable, distance three and above have remained elusive at moderate input counts. We develop symmetry- and AI-assisted methods to search this regime. We present a unified binary-matrix formulation encompassing both triorthogonal-code and direct circuit searches. We show that distance at least three is equivalent to nonzero, pairwise distinct syndromes, separating the choice of syndromes from the search for compatible output gates. We restrict the syndrome search using group symmetry and language-model agents, followed by deterministic solving and independent verification. Our searches yield 699 factory classes, including 564 new ones. These include factories for pure-T states and factories with entangled outputs comprising combinations of T, CS, and CCZ magic states. The pure-T factories [[63, 11, 3]] and [[850, 128, 6]] achieve the lowest overhead exponents we know among protocols with at most 100 and 1000 inputs, respectively, with $γ= 1.589$ and $γ= 1.057$. Our [[1715, 287, 6]] factory, with $γ= 0.998$, is the smallest known pure-T factory with $γ< 1$. We also provide a context directory of search briefs and campaign notes with which readers can train their own agents and tailor the search to their requirements. With these results, we begin constructing an active, open-source repository of magic-state distillation protocols for the quantum community, supplemented by our methods and data, for the practical fault-tolerant quantum computing regime.",
-  "summary": "Magic-state distillation is a major resource cost in fault-tolerant quantum computing. The cost of a magic-state factory depends strongly on its failure rate, which grows with the number of input magic states. Although symmetry-restricted methods have recently made distance two searches tractable, distance three and above have remained elusive at moderate input counts. We develop symmetry- and AI-assisted methods to search this regime. We present a unified binary-matrix formulation encompassing both triorthogonal-code and direct circuit searches. We show that distance at least three is equivalent to nonzero, pairwise distinct syndromes, separating the choice of syndromes from the search for compatible output gates. We restrict the syndrome search using group symmetry and language-model agents, followed by deterministic solving and independent verification. Our searches yield 699 factory classes, including 564 new ones. These include factories for pure-T states and factories with entangled outputs comprising combinations of T, CS, and CCZ magic states. The pure-T factories [[63, 11, 3]] and [[850, 128, 6]] achieve the lowest overhead exponents we know among protocols with at most 100 and 1000 inputs, respectively, with $γ= 1.589$ and $γ= 1.057$. Our [[1715, 287, 6]] factory, with $γ= 0.998$, is the smallest known pure-T factory with $γ< 1$. We also provide a context directory of search briefs and campaign notes with which readers can train their own agents and tailor the search to their requirements. With these results, we begin constructing an active, open-source repository of magic-state distillation protocols for the quantum community, supplemented by our methods and data, for the practical fault-tolerant quantum computing regime.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "symmetry",
-    "ai",
-    "assisted",
-    "discovery",
-    "magic",
-    "state",
-    "factories"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 55,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 76,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-10-05T15:36:37.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-10-06T18:31:09.758Z",
-  "updatedAt": "2026-10-06T18:31:09.807Z"
-},
-{
-  "id": "c505b6fe-6a4c-4a21-b3c0-1a58932d27af",
-  "slug": "symmgrid-super-scaling-on-robot-learning-with-parallelized-symmetries-and-egocentric-exoce-2026-07-30",
-  "title": "SymmGrid: Super-Scaling On-Robot Learning with Parallelized Symmetries and Egocentric-Exocentric Visual Perception",
-  "factSummary": "Deep reinforcement policy learning directly in physical robots (on-robot learning) remains bottlenecked by slow wall-clock training times. We present SymmGrid, a trajectory level augmentation framework inspired by parallelized symmetries that super-scales group transformations to significantly accelerate on-robot learning in both egocentric and exocentric visual setups. We model a Markov Decision Process (MDP) under a symmetry tree, in which state-action pairs have admissible parallelized invariant transformations that yield a geometric grid structure. The state is modelled with ego- or exocentric images and proprioception information. The latter require special treatment, in the form of homographies, to warp visual scenes in line with their corresponding spatial transformations. These parallelized transformations produce a large set of unique symmetric equivalences that populate the replay buffer with diverse and consistent experiences that speed up learning and improve performance. We present extensive training and evaluations performed directly on real robot manipulation contact tasks including peg-insertions, cable routing, and object relocations. Relative to SOTA, SymmGrid achieved wall-clock training convergence speed-ups of 1.37-2.17x, evaluation success rate improvements of 1.09x-1.27x, fastest training convergence times of 16.6, 10.9, and 79.3 minutes respectively. For trajectory wide assessments, we used normalized area under the curve (nAUC) ratios. SymmGrid achieved improvements of up to 2.59x. These results confirm that simple branch symmetries can have an outsized result due to super-scaling and bring us closer to sub-10 minute on-robot learning training in manipulation tasks suitable for arms and humanoids. The project page is available at symmgrid-robot.github.io",
-  "summary": "Deep reinforcement policy learning directly in physical robots (on-robot learning) remains bottlenecked by slow wall-clock training times. We present SymmGrid, a trajectory level augmentation framework inspired by parallelized symmetries that super-scales group transformations to significantly accelerate on-robot learning in both egocentric and exocentric visual setups. We model a Markov Decision Process (MDP) under a symmetry tree, in which state-action pairs have admissible parallelized invariant transformations that yield a geometric grid structure. The state is modelled with ego- or exocentric images and proprioception information. The latter require special treatment, in the form of homographies, to warp visual scenes in line with their corresponding spatial transformations. These parallelized transformations produce a large set of unique symmetric equivalences that populate the replay buffer with diverse and consistent experiences that speed up learning and improve performance. We present extensive training and evaluations performed directly on real robot manipulation contact tasks including peg-insertions, cable routing, and object relocations. Relative to SOTA, SymmGrid achieved wall-clock training convergence speed-ups of 1.37-2.17x, evaluation success rate improvements of 1.09x-1.27x, fastest training convergence times of 16.6, 10.9, and 79.3 minutes respectively. For trajectory wide assessments, we used normalized area under the curve (nAUC) ratios. SymmGrid achieved improvements of up to 2.59x. These results confirm that simple branch symmetries can have an outsized result due to super-scaling and bring us closer to sub-10 minute on-robot learning training in manipulation tasks suitable for arms and humanoids. The project page is available at symmgrid-robot.github.io",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "symmgrid",
-    "super",
-    "scaling",
-    "robot",
-    "learning",
-    "parallelized",
-    "symmetries",
-    "egocentric"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 87,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-29T14:41:02.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-30T03:51:10.957Z",
-  "updatedAt": "2026-07-30T03:51:10.990Z"
-},
-{
-  "id": "10da9aa4-7f66-47b2-961f-e87552e9e548",
-  "slug": "symphony-for-text-generation-benchmarking-clinical-note-generation-2026-10-07",
-  "title": "Symphony for Text Generation: Benchmarking Clinical Note Generation",
-  "factSummary": "Ambient documentation systems are rapidly gaining adoption, yet their impact on clinical note quality remains poorly characterized. We introduce MedConv, a multilingual dataset of 300 clinical encounters in English, Danish, and German, and use it alongside the Ambient Clinical Intelligence benchmark (ACI-BENCH) to compare Corti, a clinical AI platform, with two leading, accessible ambient scribe software applications built on general-purpose AI. We present a controlled clinical evaluation framework that combines entailment metrics with LLM-judged pairwise comparisons across eight dimensions adopted from PDSQI-9. Results show that Corti's API-based text-generation infrastructure is on par with or outperforms leading commercial scribes. We further show that Corti's configurable API provides the flexibility necessary to fine-tune quality dimensions for specific documentation use cases. We present the evaluation methodology and release a dataset to support future reproducible comparison of ambient documentation systems.",
-  "summary": "Ambient documentation systems are rapidly gaining adoption, yet their impact on clinical note quality remains poorly characterized. We introduce MedConv, a multilingual dataset of 300 clinical encounters in English, Danish, and German, and use it alongside the Ambient Clinical Intelligence benchmark (ACI-BENCH) to compare Corti, a clinical AI platform, with two leading, accessible ambient scribe software applications built on general-purpose AI. We present a controlled clinical evaluation framework that combines entailment metrics with LLM-judged pairwise comparisons across eight dimensions adopted from PDSQI-9. Results show that Corti's API-based text-generation infrastructure is on par with or outperforms leading commercial scribes. We further show that Corti's configurable API provides the flexibility necessary to fine-tune quality dimensions for specific documentation use cases. We present the evaluation methodology and release a dataset to support future reproducible comparison of ambient documentation systems.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "symphony",
-    "text",
-    "generation",
-    "benchmarking",
-    "clinical",
-    "note"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 82,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-10-06T11:13:02.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-10-07T06:37:22.797Z",
-  "updatedAt": "2026-10-07T06:37:22.851Z"
-},
-{
-  "id": "724e31e9-c6ad-48cb-9e63-c38f2429f90c",
-  "slug": "syndrome-synergy-and-safety-structured-reasoning-and-knowledge-driven-alignment-for-tcm-pr-2026-09-23",
-  "title": "Syndrome, Synergy, and Safety: Structured Reasoning and Knowledge-Driven Alignment for TCM Prescription Generation",
-  "factSummary": "Applying large language models to Traditional Chinese Medicine (TCM) prescription generation reveals three clinically critical gaps: models produce end-to-end mappings without auditable reasoning following the li-fa-fang-yao paradigm (SR Gap), treat each encounter in isolation without follow-up adjustment via sui zheng jia jian (LA Gap), and fail to enforce absolute contraindication rules such as Shi Ba Fan (SC Gap). We propose a progressive four-stage framework (SFT $\\to$ PG-CoT $\\to$ Dynamic $\\to$ K-RL) that addresses each gap: PG-CoT constrains CoT distillation under the li-fa-fang-yao paradigm to produce auditable diagnostic chains, Dynamic SFT models patient trajectories with explicit transition reasoning, and K-RL encodes deterministic pharmacological rules as rule-based DPO preference signals. Across 12 fine-tuned models and 6 zero-shot baselines, our framework substantially improves prescription quality over zero-shot baselines---with a 7B model (Mistral-7B) surpassing zero-shot GPT-5 on all three TCM evaluation metrics.",
-  "summary": "Applying large language models to Traditional Chinese Medicine (TCM) prescription generation reveals three clinically critical gaps: models produce end-to-end mappings without auditable reasoning following the li-fa-fang-yao paradigm (SR Gap), treat each encounter in isolation without follow-up adjustment via sui zheng jia jian (LA Gap), and fail to enforce absolute contraindication rules such as Shi Ba Fan (SC Gap). We propose a progressive four-stage framework (SFT $\\to$ PG-CoT $\\to$ Dynamic $\\to$ K-RL) that addresses each gap: PG-CoT constrains CoT distillation under the li-fa-fang-yao paradigm to produce auditable diagnostic chains, Dynamic SFT models patient trajectories with explicit transition reasoning, and K-RL encodes deterministic pharmacological rules as rule-based DPO preference signals. Across 12 fine-tuned models and 6 zero-shot baselines, our framework substantially improves prescription quality over zero-shot baselines---with a 7B model (Mistral-7B) surpassing zero-shot GPT-5 on all three TCM evaluation metrics.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "syndrome",
-    "synergy",
-    "safety",
-    "structured",
-    "reasoning",
-    "knowledge",
-    "driven",
-    "alignment"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 56,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 79,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-22T06:49:19.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-23T05:18:49.276Z",
-  "updatedAt": "2026-09-23T05:18:49.321Z"
-},
-{
-  "id": "7fda657d-cfff-4992-acca-e6ed15a48f09",
-  "slug": "syntax-meets-semantics-understanding-scientific-formulae-2026-08-04",
-  "title": "Syntax Meets Semantics: Understanding Scientific Formulae",
-  "factSummary": "Scientific formulae are a fundamental component of scholarly communication, yet their dual nature -- as structured syntax and carriers of semantics -- remains underexplored in scholarly information retrieval. Although prior studies show that jointly modeling syntactic and semantic modalities improves retrieval performance, the relationship between their underlying representations has not been systematically investigated. In this work, we empirically study cross-modal correspondence between formula syntax and semantics. We find that their native representation spaces exhibit extremely weak observable correspondence despite strong latent correlation, indicating a substantial representation mismatch between the two modalities. We further evaluate whether this mismatch can be reduced using standard representation learning and alignment techniques. We represent syntactic structure using graph-based encoders and semantic information using text-based encoders, then apply contrastive learning to induce a shared representation space. Results show that the learned alignment substantially improves cross-modal retrieval, suggesting that explicit representation learning can recover correspondence absent from the original representation spaces.",
-  "summary": "Scientific formulae are a fundamental component of scholarly communication, yet their dual nature -- as structured syntax and carriers of semantics -- remains underexplored in scholarly information retrieval. Although prior studies show that jointly modeling syntactic and semantic modalities improves retrieval performance, the relationship between their underlying representations has not been systematically investigated. In this work, we empirically study cross-modal correspondence between formula syntax and semantics. We find that their native representation spaces exhibit extremely weak observable correspondence despite strong latent correlation, indicating a substantial representation mismatch between the two modalities. We further evaluate whether this mismatch can be reduced using standard representation learning and alignment techniques. We represent syntactic structure using graph-based encoders and semantic information using text-based encoders, then apply contrastive learning to induce a shared representation space. Results show that the learned alignment substantially improves cross-modal retrieval, suggesting that explicit representation learning can recover correspondence absent from the original representation spaces.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "syntax",
-    "meets",
-    "semantics",
-    "understanding",
-    "scientific",
-    "formulae"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 89,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-03T16:31:06.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-04T03:59:27.312Z",
-  "updatedAt": "2026-08-04T03:59:27.350Z"
-},
-{
-  "id": "46002b78-5872-4647-bffe-278450186797",
-  "slug": "syntaxbench-a-statistical-diagnostic-framework-for-character-level-reasoning-in-large-lang-2026-10-05",
-  "title": "SyntaxBench: A Statistical Diagnostic Framework for Character-Level Reasoning in Large Language Models",
-  "factSummary": "Large language models are increasingly used where small syntactic errors matter, yet character-level reasoning is still evaluated mostly through isolated probes and aggregate accuracy. We introduce SyntaxBench, a diagnostic benchmark and statistical evaluation framework for character-level reasoning. It contains five core tasks, character counting, letter containment, palindrome detection, edit distance, and longest-string selection, plus index_to_span, a harder substring-extraction stress test. The five core tasks use paired English and character-length-matched random-string inputs. index_to_span documents share a 200-500 word band and are not character-length matched. All six tasks use zero-, one-, and four-shot prompts. We evaluate eight open-weight models from 2B to 32B parameters across 11 reasoning-mode configurations. The framework reports exact-match and relaxed accuracy, Cohen's kappa, paired McNemar tests with odds ratios, bootstrap confidence intervals, Kendall's tau, class-conditional metrics, tokenization analysis, and multiple-comparison-corrected tests. Three findings stand out. First, tokenization shapes accuracy: random strings are more character-visible than English strings (1.892 vs. 3.169 characters per token), and character-counting accuracy falls as English words occupy more tokens. Second, reasoning mode is not uniformly helpful: Gemma4-31B is nearly unchanged across modes on the near-saturated tasks, while Qwen3.6-27B is worse with thinking on palindrome detection (0.952 non-thinking vs. 0.886 thinking at four-shot). Third, index_to_span remains largely unsolved; the best four-shot exact-match accuracy is 6.75%. Character-level evaluation needs controlled inputs, paired tests, and analyses of tokenization and reasoning mode rather than aggregate accuracy alone.",
-  "summary": "Large language models are increasingly used where small syntactic errors matter, yet character-level reasoning is still evaluated mostly through isolated probes and aggregate accuracy. We introduce SyntaxBench, a diagnostic benchmark and statistical evaluation framework for character-level reasoning. It contains five core tasks, character counting, letter containment, palindrome detection, edit distance, and longest-string selection, plus index_to_span, a harder substring-extraction stress test. The five core tasks use paired English and character-length-matched random-string inputs. index_to_span documents share a 200-500 word band and are not character-length matched. All six tasks use zero-, one-, and four-shot prompts. We evaluate eight open-weight models from 2B to 32B parameters across 11 reasoning-mode configurations. The framework reports exact-match and relaxed accuracy, Cohen's kappa, paired McNemar tests with odds ratios, bootstrap confidence intervals, Kendall's tau, class-conditional metrics, tokenization analysis, and multiple-comparison-corrected tests. Three findings stand out. First, tokenization shapes accuracy: random strings are more character-visible than English strings (1.892 vs. 3.169 characters per token), and character-counting accuracy falls as English words occupy more tokens. Second, reasoning mode is not uniformly helpful: Gemma4-31B is nearly unchanged across modes on the near-saturated tasks, while Qwen3.6-27B is worse with thinking on palindrome detection (0.952 non-thinking vs. 0.886 thinking at four-shot). Third, index_to_span remains largely unsolved; the best four-shot exact-match accuracy is 6.75%. Character-level evaluation needs controlled inputs, paired tests, and analyses of tokenization and reasoning mode rather than aggregate accuracy alone.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "syntaxbench",
-    "statistical",
-    "diagnostic",
-    "framework",
-    "character",
-    "level",
-    "reasoning",
-    "large"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 19,
-  "impactScore": 55,
-  "valueScore": 51,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 49,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-10-02T14:02:56.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-10-05T09:34:04.769Z",
-  "updatedAt": "2026-10-05T09:34:04.818Z"
-},
-{
-  "id": "4eae7de5-3b59-4e08-acf4-979c4088fad3",
-  "slug": "synthdemo-rl-breaking-the-zero-reward-barrier-in-vla-adaptation-with-llm-guided-synthetic--2026-09-21",
-  "title": "SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations",
-  "factSummary": "Fine-tuning Vision-Language-Action (VLA) models commonly relies on human teleoperation demonstrations, while reinforcement learning (RL) with sparse binary rewards faces an exploration challenge when successful trajectories are rarely sampled. We propose SynthDemo-RL, a teacher-student framework in which an automated teacher converts simulator-privileged state into successful manipulation trajectories, a VLA student is distilled from them by supervised fine-tuning (SFT), and PPO with binary task-success rewards refines the student. We study reward coverage, the fraction of tasks for which at least one success is observed under the fixed evaluation protocol, as a complement to the average success rate. On LIBERO-PRO, a public benchmark of perturbed LIBERO tasks for which no demonstrations exist, 27 of 57 scored tasks are at exactly 0% success for a pi_0.5 policy fine-tuned on the original LIBERO tasks. Direct PPO from this policy, under the same PPO recipe and the same RL compute as SynthDemo-RL's refinement stage, rescues 10 of these 27 tasks and leaves 17 at 0%. SynthDemo-RL, with 50 synthesized trajectories per task and no new human demonstrations, rescues all 27 and reaches average success rates of 97.8% and 97.1% on the Position and Task axes of LIBERO-PRO, respectively. On standard LIBERO, the same pipeline reaches 96.0% with no human demonstrations, within 1.7 points of pi_0.5 trained on 50 human demonstrations per task. We further validate the pipeline on RoboTwin 2.0 and verify that trajectories from a policy trained in a MuJoCo twin execute open-loop on a physical robot.",
-  "summary": "Fine-tuning Vision-Language-Action (VLA) models commonly relies on human teleoperation demonstrations, while reinforcement learning (RL) with sparse binary rewards faces an exploration challenge when successful trajectories are rarely sampled. We propose SynthDemo-RL, a teacher-student framework in which an automated teacher converts simulator-privileged state into successful manipulation trajectories, a VLA student is distilled from them by supervised fine-tuning (SFT), and PPO with binary task-success rewards refines the student. We study reward coverage, the fraction of tasks for which at least one success is observed under the fixed evaluation protocol, as a complement to the average success rate. On LIBERO-PRO, a public benchmark of perturbed LIBERO tasks for which no demonstrations exist, 27 of 57 scored tasks are at exactly 0% success for a pi_0.5 policy fine-tuned on the original LIBERO tasks. Direct PPO from this policy, under the same PPO recipe and the same RL compute as SynthDemo-RL's refinement stage, rescues 10 of these 27 tasks and leaves 17 at 0%. SynthDemo-RL, with 50 synthesized trajectories per task and no new human demonstrations, rescues all 27 and reaches average success rates of 97.8% and 97.1% on the Position and Task axes of LIBERO-PRO, respectively. On standard LIBERO, the same pipeline reaches 96.0% with no human demonstrations, within 1.7 points of pi_0.5 trained on 50 human demonstrations per task. We further validate the pipeline on RoboTwin 2.0 and verify that trajectories from a policy trained in a MuJoCo twin execute open-loop on a physical robot.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "synthdemo",
-    "rl",
-    "breaking",
-    "zero",
-    "reward",
-    "barrier",
-    "vla",
-    "adaptation"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 19,
-  "impactScore": 55,
-  "valueScore": 51,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 50,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-18T11:48:05.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-21T05:36:26.708Z",
-  "updatedAt": "2026-09-21T05:36:26.747Z"
 }
 ]
