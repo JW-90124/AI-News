@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "d33b4597-a3a9-4bf2-b7e3-0f9386f4e46a",
+  "id": "840605dc-ca95-493a-8381-eacbf1bafcae",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -58,19 +58,19 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 65,
-      "rawScore": 65,
+      "score": 66,
+      "rawScore": 66,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 23332,
+      "sampleSize": 23622,
       "sampleTarget": 100,
-      "summary": "23332 条信号中 16491 条来自 primary/research/policy，6729 条证据进入事件。",
+      "summary": "23622 条信号中 16727 条来自 primary/research/policy，6890 条证据进入事件。",
       "evidence": {
-        "signals": 23332,
-        "direct": 23332,
-        "primary": 16491,
-        "linkedEvidence": 6729,
+        "signals": 23622,
+        "direct": 23622,
+        "primary": 16727,
+        "linkedEvidence": 6890,
         "linkedSourceCount": 168,
         "aggregatorDebt": 0
       },
@@ -109,14 +109,14 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 861,
+      "sampleSize": 868,
       "sampleTarget": 30,
-      "summary": "861 个公开事件仅 46 个拥有多源证据，836 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "868 个公开事件仅 47 个拥有多源证据，843 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 861,
-        "primaryEvidence": 853,
-        "multiSource": 46,
-        "readyPublished": 836,
+        "published": 868,
+        "primaryEvidence": 860,
+        "multiSource": 47,
+        "readyPublished": 843,
         "averageEvidence": 1.5,
         "averageSelfReportedConfidence": 83
       },
@@ -135,10 +135,10 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 861,
+        "published": 868,
         "fieldCompleteness": 100,
-        "readyPublished": 836,
-        "multiSource": 46,
+        "readyPublished": 843,
+        "multiSource": 47,
         "outcomeFeedback": 0
       },
       "penalties": [
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 269,
       "sampleTarget": 100,
-      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 275 个。",
+      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 282 个。",
       "evidence": {
         "healthy": 269,
         "freshHealthy": 135,
         "active": 137,
         "activeWithRecentSuccess": 134,
-        "published": 861,
-        "recentPublished": 275
+        "published": 868,
+        "recentPublished": 282
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 421,
         "restrictedEnabled": 0,
-        "readyEvents": 836,
-        "totalEvents": 5471,
+        "readyEvents": 843,
+        "totalEvents": 5618,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-10-08T18:59:16.038Z",
-  "finishedAt": "2026-10-08T18:59:16.379Z",
+  "startedAt": "2026-10-09T06:53:20.997Z",
+  "finishedAt": "2026-10-09T06:53:21.347Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -743,23 +743,21 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 65,
+      "score": 66,
       "status": "measured",
-      "weightedGap": 2,
+      "weightedGap": 1,
       "penalties": [],
       "nextAction": "提升一手信号占比和 Signal→Event 证据绑定率，并核验媒体集团独立性。"
     }
   ],
   "comparison": {
-    "passed": false,
+    "passed": true,
     "baselineScore": 61,
     "currentScore": 61,
     "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
-    "regressions": [
-      "dimension primary-source-provenance regressed from 66 to 65"
-    ]
+    "regressions": []
   }
 }
