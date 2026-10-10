@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "9796b148-de88-491d-910c-183062efe783",
+  "id": "d5301c84-96e9-4299-b9b8-153fa834334e",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -17,9 +17,9 @@
       "status": "measured",
       "sampleSize": 137,
       "sampleTarget": 100,
-      "summary": "421 个目录源中 269 个单轮健康、77 个处于隔离观察，只有 137 个既 active 且健康；E2/E3 不等同生产覆盖。",
+      "summary": "422 个目录源中 269 个单轮健康、77 个处于隔离观察，只有 137 个既 active 且健康；E2/E3 不等同生产覆盖。",
       "evidence": {
-        "catalog": 421,
+        "catalog": 422,
         "checked": 414,
         "healthy": 269,
         "degraded": 24,
@@ -63,14 +63,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 23761,
+      "sampleSize": 23862,
       "sampleTarget": 100,
-      "summary": "23761 条信号中 16789 条来自 primary/research/policy，6920 条证据进入事件。",
+      "summary": "23862 条信号中 16846 条来自 primary/research/policy，6946 条证据进入事件。",
       "evidence": {
-        "signals": 23761,
-        "direct": 23761,
-        "primary": 16789,
-        "linkedEvidence": 6920,
+        "signals": 23862,
+        "direct": 23862,
+        "primary": 16846,
+        "linkedEvidence": 6946,
         "linkedSourceCount": 168,
         "aggregatorDebt": 0
       },
@@ -95,7 +95,7 @@
         "failed": 69,
         "skipped": 52,
         "latestRuns": 212,
-        "latestRunSuccess": 210,
+        "latestRunSuccess": 212,
         "auditWindows": 9
       },
       "penalties": [],
@@ -109,14 +109,14 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 876,
+      "sampleSize": 883,
       "sampleTarget": 30,
-      "summary": "876 个公开事件仅 47 个拥有多源证据，851 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "883 个公开事件仅 47 个拥有多源证据，858 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 876,
-        "primaryEvidence": 868,
+        "published": 883,
+        "primaryEvidence": 875,
         "multiSource": 47,
-        "readyPublished": 851,
+        "readyPublished": 858,
         "averageEvidence": 1.5,
         "averageSelfReportedConfidence": 83
       },
@@ -135,9 +135,9 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 876,
+        "published": 883,
         "fieldCompleteness": 100,
-        "readyPublished": 851,
+        "readyPublished": 858,
         "multiSource": 47,
         "outcomeFeedback": 0
       },
@@ -159,7 +159,7 @@
       "summary": "collector 耗时不是上游发布到页面可见的端到端延迟；以成功运行比例作为实时性估算。",
       "evidence": {
         "latestSourceRuns": 212,
-        "latestRunSuccess": 210,
+        "latestRunSuccess": 212,
         "freshHealthySources": 135,
         "activeWithRecentSuccess": 134,
         "endToEndLatencySamples": 0
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 269,
       "sampleTarget": 100,
-      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 290 个。",
+      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 297 个。",
       "evidence": {
         "healthy": 269,
         "freshHealthy": 135,
         "active": 137,
         "activeWithRecentSuccess": 134,
-        "published": 876,
-        "recentPublished": 290
+        "published": 883,
+        "recentPublished": 297
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -222,15 +222,15 @@
       "weight": 8,
       "status": "insufficient_data",
       "sampleSize": 414,
-      "sampleTarget": 421,
+      "sampleTarget": 422,
       "summary": "字段存在只证明策略已声明，不证明策略有效；当前缺少策略版本回放、发布回滚演练和审计抽检。",
       "evidence": {
-        "sources": 421,
+        "sources": 422,
         "checked": 414,
-        "licenseDeclared": 421,
+        "licenseDeclared": 422,
         "restrictedEnabled": 0,
-        "readyEvents": 851,
-        "totalEvents": 5640,
+        "readyEvents": 858,
+        "totalEvents": 5659,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-10-09T18:30:20.800Z",
-  "finishedAt": "2026-10-09T18:30:21.131Z",
+  "startedAt": "2026-10-10T06:30:41.959Z",
+  "finishedAt": "2026-10-10T06:30:42.255Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",

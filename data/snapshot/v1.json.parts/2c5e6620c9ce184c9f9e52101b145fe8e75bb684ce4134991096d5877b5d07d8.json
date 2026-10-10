@@ -1,5 +1,367 @@
 [
 {
+  "id": "7d8d4699-ee74-4c76-a27c-a6cf4e8b5bf3",
+  "slug": "generalist-foundation-models-outcompete-specialist-tuning-medicine",
+  "title": "通用基础模型能否超越专用微调？医学案例研究：决策启示：提示工程可释放通用模型深度专业能力，超越专用模型",
+  "factSummary": "该研究通过系统提示工程（Medprompt）使GPT-4在MultiMedQA全部九个医学基准上超越此前最佳专用模型Med-PaLM 2，在MedQA上错误率降低27%，首次突破90%准确率，且模型调用量减少一个数量级。方法无需领域专家参与，并泛化至电气工程、机器学习、哲学、会计、法律、护理和临床心理学等领域的考试。",
+  "summary": "论文挑战了通用基础模型无法匹敌专用微调模型的普遍假设。通过设计通用提示策略Medprompt，GPT-4在医学基准上大幅超越此前领先的专用模型，且方法可迁移至其他专业领域，表明提示工程创新可解锁通用模型的深度专业能力。",
+  "technicalInsight": "Medprompt组合了多种提示策略（如动态少样本选择、思维链、自一致性等），在无领域专家参与下系统优化GPT-4输出。实验设计严格控制提示工程过拟合，在MultiMedQA九个数据集上均取得最优结果。与Med-PaLM 2相比，Medprompt以十分之一的模型调用量实现更高准确率，在MedQA上错误率降低27%。方法在电气工程、机器学习等七个非医学领域考试中也表现优异。",
+  "industryInsight": "该研究对医疗AI行业具有颠覆性：提示工程可替代昂贵的领域微调，降低模型部署成本。同时，方法通用性暗示基础模型在专业领域（如法律、会计）的潜力，可能改变行业对专用模型的依赖。",
+  "futureOutlook": "未来需验证Medprompt在更大规模、更多样化专业任务上的泛化能力，以及提示策略的自动化搜索与优化。关键信号包括：在更多医学子领域（如影像、病理）的零样本表现，以及与其他基础模型（如Claude、Gemini）的兼容性。",
+  "businessValue": "建议医疗AI公司优先采用提示工程而非微调来提升模型性能，可采购GPT-4 API并应用Medprompt策略快速构建诊断辅助系统，降低研发成本。同时关注提示策略的自动化工具开发，形成差异化竞争力。",
+  "category": "research",
+  "company": "Medprompt",
+  "keywords": [
+    "提示工程",
+    "通用基础模型",
+    "医学基准",
+    "GPT-4",
+    "专用微调"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 95,
+  "valueScore": 93,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2023-11-28T12:00:00.000Z",
+  "publishedAt": "2023-11-28T12:00:00.000Z",
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
+},
+{
+  "id": "b27d4900-a206-4aca-be9f-78c98cb56f41",
+  "slug": "generalist-specialist-mixture-of-experts-for-rare-pathology-detection-in-multimodal-imagin-2026-09-17",
+  "title": "Generalist-Specialist Mixture-of-Experts for Rare Pathology Detection in Multimodal Imaging",
+  "factSummary": "AI models for multimodal medical imaging must balance modality-specific specialization with cross-modal shared representations, a trade-off that pure Mixture-of-Experts (MoE) architectures currently fail to satisfy. Expert-based routing improves in-domain learning but may sacrifice cross-modal signals, which appear particularly important for rare (low-prevalence) pathologies in our experiments. To resolve this, we introduce Generalist-Specialist-MoE (GS-MoE), a two-branch (MoE) architecture that couples a cross-modal generalist model with distinct modality-specific specialists (experts) via domain-constrained feature fusion. On RadImageNet (1.35M images, 165 pathologies, three modalities), GS-MoE recovers detection of six low-prevalence pathologies on which every baseline scores F1 $=$ 0, with per-class gains up to +0.60 F1. It attains this while even slightly exceeding dense and specialist-only MoE aggregate baselines (MCC 0.770), while using ${\\sim}53\\%$ fewer active parameters at inference than the strongest investigated dense model.",
+  "summary": "AI models for multimodal medical imaging must balance modality-specific specialization with cross-modal shared representations, a trade-off that pure Mixture-of-Experts (MoE) architectures currently fail to satisfy. Expert-based routing improves in-domain learning but may sacrifice cross-modal signals, which appear particularly important for rare (low-prevalence) pathologies in our experiments. To resolve this, we introduce Generalist-Specialist-MoE (GS-MoE), a two-branch (MoE) architecture that couples a cross-modal generalist model with distinct modality-specific specialists (experts) via domain-constrained feature fusion. On RadImageNet (1.35M images, 165 pathologies, three modalities), GS-MoE recovers detection of six low-prevalence pathologies on which every baseline scores F1 $=$ 0, with per-class gains up to +0.60 F1. It attains this while even slightly exceeding dense and specialist-only MoE aggregate baselines (MCC 0.770), while using ${\\sim}53\\%$ fewer active parameters at inference than the strongest investigated dense model.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generalist",
+    "specialist",
+    "mixture",
+    "experts",
+    "rare",
+    "pathology",
+    "detection",
+    "multimodal"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-16T14:04:24.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T05:32:44.502Z",
+  "updatedAt": "2026-09-17T05:32:44.539Z"
+},
+{
+  "id": "52f80fa9-4c01-4ab4-9b28-5be74464fbb5",
+  "slug": "generalizable-robotic-insertion-with-world-models-2026-09-24",
+  "title": "Generalizable Robotic Insertion with World Models",
+  "factSummary": "Robotic assembly in high-mixture settings requires adaptable systems that can handle diverse parts, yet current approaches typically rely on policies specialized to each insertion task. Although this can reach high success rates, it makes the process of deploying systems for new problems tedious and time consuming. We present a framework for generalizable insertion using world models that combine robot proprioceptive information with raw visual observations captured by a wrist-mounted camera. Our model-based approach trains a single world model on up to 90 insertion tasks with geometrically diverse parts, achieving 56% zero-shot success on unseen objects with unknown geometry compared to just 7% with a model-free baseline. Importantly, performance improves as more objects are included in the training dataset, demonstrating strong scalability. Lastly, finetuning the generalist model on held-out objects significantly enhances data-efficiency compared to training from scratch and, in some cases, achieves better asymptotic performance. To our knowledge, this is the first system capable of assembling unseen objects in an entirely data-driven manner, and thus represents a significant step toward scalable, generalizable robotic assembly systems.",
+  "summary": "Robotic assembly in high-mixture settings requires adaptable systems that can handle diverse parts, yet current approaches typically rely on policies specialized to each insertion task. Although this can reach high success rates, it makes the process of deploying systems for new problems tedious and time consuming. We present a framework for generalizable insertion using world models that combine robot proprioceptive information with raw visual observations captured by a wrist-mounted camera. Our model-based approach trains a single world model on up to 90 insertion tasks with geometrically diverse parts, achieving 56% zero-shot success on unseen objects with unknown geometry compared to just 7% with a model-free baseline. Importantly, performance improves as more objects are included in the training dataset, demonstrating strong scalability. Lastly, finetuning the generalist model on held-out objects significantly enhances data-efficiency compared to training from scratch and, in some cases, achieves better asymptotic performance. To our knowledge, this is the first system capable of assembling unseen objects in an entirely data-driven manner, and thus represents a significant step toward scalable, generalizable robotic assembly systems.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generalizable",
+    "robotic",
+    "insertion",
+    "world",
+    "models"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T15:20:45.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T05:33:33.268Z",
+  "updatedAt": "2026-09-24T05:33:33.316Z"
+},
+{
+  "id": "e4d94dac-083e-40c0-bb5a-a7a1a41f3d47",
+  "slug": "generalization-of-transformer-based-neural-quantum-states-via-in-context-learning-2026-10-05",
+  "title": "Generalization of Transformer-Based Neural Quantum States via In-Context Learning",
+  "factSummary": "Neural quantum states based on modern deep learning architectures have emerged as powerful representations for quantum many-body systems. In particular, Transformer-based neural quantum states provide expressive models capable of capturing long-range correlations, and their empirical generalization performance has recently been demonstrated. However, a theoretical understanding of their generalization behavior remains largely unexplored. In this paper, we develop a theoretical framework to analyze the generalization properties of Transformer-based neural quantum states under in-context learning. We establish a rigorous inference-time generalization error bound in terms of mean squared error (MSE), showing that the pointwise prediction error decreases inversely with both the number of in-context examples and the depth of the Transformer. We further show that the Transformer depth required to achieve this guarantee scales only linearly with the system size--namely, the number of particles in continuous systems or the number of qudits in discrete systems. Building on this result, we extend our analysis to full quantum states formulated as rank-one density operators, and derive MSE-based generalization bounds over both continuous and discrete domains under physical constraints. Finally, numerical simulations corroborate our theoretical analysis.",
+  "summary": "Neural quantum states based on modern deep learning architectures have emerged as powerful representations for quantum many-body systems. In particular, Transformer-based neural quantum states provide expressive models capable of capturing long-range correlations, and their empirical generalization performance has recently been demonstrated. However, a theoretical understanding of their generalization behavior remains largely unexplored. In this paper, we develop a theoretical framework to analyze the generalization properties of Transformer-based neural quantum states under in-context learning. We establish a rigorous inference-time generalization error bound in terms of mean squared error (MSE), showing that the pointwise prediction error decreases inversely with both the number of in-context examples and the depth of the Transformer. We further show that the Transformer depth required to achieve this guarantee scales only linearly with the system size--namely, the number of particles in continuous systems or the number of qudits in discrete systems. Building on this result, we extend our analysis to full quantum states formulated as rank-one density operators, and derive MSE-based generalization bounds over both continuous and discrete domains under physical constraints. Finally, numerical simulations corroborate our theoretical analysis.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generalization",
+    "transformer",
+    "based",
+    "neural",
+    "quantum",
+    "states",
+    "via",
+    "context"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 50,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-02T15:38:10.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-05T09:34:03.714Z",
+  "updatedAt": "2026-10-05T09:34:03.760Z"
+},
+{
+  "id": "21998fe2-961d-47ea-9e40-7a6d567aaba2",
+  "slug": "generalization-through-lexical-abstraction-in-transformer-models-the-case-of-functional-wo-2026-09-18",
+  "title": "Generalization through Lexical Abstraction in Transformer Models: The Case of Functional Words",
+  "factSummary": "Pronouns, adverbs and other functional words (such as they, her, somewhere, there) are often used in language to replace concrete nouns or phrases, when their properties - such as gender, grammatical number - provide sufficient information for the given context. Do pretrained transformer models encode such functional words in a manner that allows them to be used like humans do? Can language models recognize the syntactic and semantic parallelism of sentences such as \"The researchers wrote the paper\" and \"They wrote it\", which relies on such lexical abstraction? We map these linguistic questions into the embedding space of a pretrained transformer model, and compare representations of nouns, with the representations of the pronouns and adverbs that can replace these nouns, in isolation and in parallel lexicalized and functional sentences. We then probe for shared syntactic and semantic structure in the embeddings of parallel lexicalized and functional sentences. We find that functional words are located centrally compared to nouns, but are also distinct, which is congruent with their behaviour as place-holders in a wide variety of contexts. The analysis of the embeddings of parallel (lexicalized and functional) sentences show them inhabiting different subspaces of the embedding space. Experiments that distil the structural information of the sentence show that training on either type of data does not reveal the shared structure - because of the over-consistency of the vocabulary (in case of the functional data), and the too much variety (in case of the lexicalized versions). However, training with a mix of functional and lexicalized sentences, the shared structure emerges.",
+  "summary": "Pronouns, adverbs and other functional words (such as they, her, somewhere, there) are often used in language to replace concrete nouns or phrases, when their properties - such as gender, grammatical number - provide sufficient information for the given context. Do pretrained transformer models encode such functional words in a manner that allows them to be used like humans do? Can language models recognize the syntactic and semantic parallelism of sentences such as \"The researchers wrote the paper\" and \"They wrote it\", which relies on such lexical abstraction? We map these linguistic questions into the embedding space of a pretrained transformer model, and compare representations of nouns, with the representations of the pronouns and adverbs that can replace these nouns, in isolation and in parallel lexicalized and functional sentences. We then probe for shared syntactic and semantic structure in the embeddings of parallel lexicalized and functional sentences. We find that functional words are located centrally compared to nouns, but are also distinct, which is congruent with their behaviour as place-holders in a wide variety of contexts. The analysis of the embeddings of parallel (lexicalized and functional) sentences show them inhabiting different subspaces of the embedding space. Experiments that distil the structural information of the sentence show that training on either type of data does not reveal the shared structure - because of the over-consistency of the vocabulary (in case of the functional data), and the too much variety (in case of the lexicalized versions). However, training with a mix of functional and lexicalized sentences, the shared structure emerges.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generalization",
+    "through",
+    "lexical",
+    "abstraction",
+    "transformer",
+    "models",
+    "case",
+    "functional"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 81,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T08:35:09.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:14.537Z",
+  "updatedAt": "2026-09-18T05:20:14.575Z"
+},
+{
+  "id": "32de5374-a614-4e3d-a26f-c41adfc798cc",
+  "slug": "generalized-convexity-and-smoothness-via-conjugate-duality-optimization-theory-for-deep-ne-2026-08-11",
+  "title": "Generalized Convexity and Smoothness via Conjugate Duality: Optimization Theory for Deep Neural Networks",
+  "factSummary": "Deep neural network (DNN) training with stochastic gradient descent (SGD) and its variants achieves strong empirical performance, yet classical optimization theory does not fully explain this success. This limitation arises because conventional analyses rely on assumptions such as differentiability, convexity, or smoothness, which are often violated by DNN objectives. In this paper, we establish a unified optimization framework for DNN training by generalizing classical convexity and smoothness through Legendre functions and convex conjugation. Specifically, we introduce $\\mathcal{H}(ψ)$-convexity and $\\mathcal{H}(Ψ)$-smoothness, which unify convex and non-convex as well as smooth and non-smooth objectives within a single formalism and reveal a natural duality between generalized smoothness and convexity. Building on these generalized properties, we introduce generalized gradient descent (GD) and generalized SGD through convex conjugation. We theoretically prove that generalized GD admits an optimal learning rate of exactly $1$, and derive rigorous gradient-energy-based convergence rates for both proposed optimizers. We further reformulate DNN training as a composite optimization problem, demonstrating that its convergence relies on jointly reducing the gradient energy and controlling the induced norm of the network Jacobian. To characterize the practical influences of network architectures and training configurations, we introduce the gradient correlation factor and model capacity risk, and quantitatively analyze how architectural designs, batch size, and model capacity shape training convergence. Extensive experiments across diverse network architectures, datasets, optimizers, and loss functions validate our theoretical bounds and demonstrate precise alignment between our theoretical predictions and empirical training dynamics.",
+  "summary": "Deep neural network (DNN) training with stochastic gradient descent (SGD) and its variants achieves strong empirical performance, yet classical optimization theory does not fully explain this success. This limitation arises because conventional analyses rely on assumptions such as differentiability, convexity, or smoothness, which are often violated by DNN objectives. In this paper, we establish a unified optimization framework for DNN training by generalizing classical convexity and smoothness through Legendre functions and convex conjugation. Specifically, we introduce $\\mathcal{H}(ψ)$-convexity and $\\mathcal{H}(Ψ)$-smoothness, which unify convex and non-convex as well as smooth and non-smooth objectives within a single formalism and reveal a natural duality between generalized smoothness and convexity. Building on these generalized properties, we introduce generalized gradient descent (GD) and generalized SGD through convex conjugation. We theoretically prove that generalized GD admits an optimal learning rate of exactly $1$, and derive rigorous gradient-energy-based convergence rates for both proposed optimizers. We further reformulate DNN training as a composite optimization problem, demonstrating that its convergence relies on jointly reducing the gradient energy and controlling the induced norm of the network Jacobian. To characterize the practical influences of network architectures and training configurations, we introduce the gradient correlation factor and model capacity risk, and quantitatively analyze how architectural designs, batch size, and model capacity shape training convergence. Extensive experiments across diverse network architectures, datasets, optimizers, and loss functions validate our theoretical bounds and demonstrate precise alignment between our theoretical predictions and empirical training dynamics.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generalized",
+    "convexity",
+    "smoothness",
+    "via",
+    "conjugate",
+    "duality",
+    "optimization",
+    "theory"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T12:24:29.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:36.783Z",
+  "updatedAt": "2026-08-11T02:58:36.819Z"
+},
+{
+  "id": "2995fee3-b95d-47ea-8526-6e040f513cf2",
+  "slug": "generate-autonomous-business-insights-with-ai-agent-and-mcp-servers-2026-07-30",
+  "title": "Generate Autonomous Business Insights with AI Agent and MCP Servers",
+  "factSummary": "Learn how Amazon Bedrock AgentCore delivers autonomous, cross-system business intelligence through configuration rather than custom code. Using pre-built MCP server connectors, fine-grained access control, and persistent memory, enterprises can query multiple data sources with natural language while enforcing role-based boundaries automatically.",
+  "summary": "Learn how Amazon Bedrock AgentCore delivers autonomous, cross-system business intelligence through configuration rather than custom code. Using pre-built MCP server connectors, fine-grained access control, and persistent memory, enterprises can query multiple data sources with natural language while enforcing role-based boundaries automatically.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generate",
+    "autonomous",
+    "business",
+    "insights",
+    "ai",
+    "agent",
+    "mcp",
+    "servers"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T15:34:18.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:11.457Z",
+  "updatedAt": "2026-07-30T03:51:11.487Z"
+},
+{
+  "id": "c4a97b07-18ea-415a-8cc3-ef546275daff",
+  "slug": "generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2-2026-09-28",
+  "title": "Generate images and video with vLLM-Omni on SageMaker AI – Part 2",
+  "factSummary": "Deploy two generative media models from one AWS vLLM-Omni Deep Learning Container on Amazon SageMaker AI. Generate an image with FLUX.2-klein through real-time inference, then animate it into video with Wan2.1-VACE through asynchronous inference, and retrieve the MP4 from Amazon S3.",
+  "summary": "Deploy two generative media models from one AWS vLLM-Omni Deep Learning Container on Amazon SageMaker AI. Generate an image with FLUX.2-klein through real-time inference, then animate it into video with Wan2.1-VACE through asynchronous inference, and retrieve the MP4 from Amazon S3.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "generate",
+    "images",
+    "video",
+    "vllm",
+    "omni",
+    "sagemaker",
+    "ai",
+    "part"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T16:15:17.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T19:47:16.170Z",
+  "updatedAt": "2026-09-28T19:47:16.220Z"
+},
+{
   "id": "a1422772-7803-49b8-8a91-655f4baf2ace",
   "slug": "generating-heterogeneous-3d-geological-microstructures-from-2d-images-via-a-stable-diffusi-2026-09-18",
   "title": "Generating Heterogeneous 3D Geological Microstructures from 2D Images via a Stable Diffusion-Adversarial Model",
@@ -85,8 +447,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-07T12:00:00.000Z",
   "publishedAt": "2023-04-07T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "70684eec-cdf9-459d-820b-6270ec1aed3b",
@@ -219,8 +581,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-11T12:00:00.000Z",
   "publishedAt": "2025-02-11T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7b325f0a-0221-4333-9ab8-4f4afc79d4d0",
@@ -1307,6 +1669,49 @@
   "updatedAt": "2026-09-29T06:20:43.042Z"
 },
 {
+  "id": "79d92cfb-da83-4347-a8c8-f393262d7786",
+  "slug": "gfx950-tutorial-v3-0-2026-10-10",
+  "title": "gfx950-tutorial-v3.0",
+  "factSummary": "Triton 编译器发布 gfx950-tutorial-v3.0，该版本将上游 main 固定在提交 3b0c7f0，并关联 PR #12209。",
+  "summary": "Triton Compiler Releases 发布了 gfx950-tutorial-v3.0，说明该教程版本基于上游 main 的 3b0c7f0 提交（PR #12209）进行固定。证据未提供该版本的功能变更、性能数据或适用硬件细节。",
+  "technicalInsight": "将教程版本固定到具体上游提交，通常意味着可复现性优先于跟随最新 main；但证据未说明固定原因或是否包含 gfx950 相关改动，需查看 PR #12209 的 diff 才能确认。",
+  "industryInsight": "该发布属于开源编译器生态的版本管理动作，证据不足以判断其对 AMD gfx950 生态或 Triton 采用率的影响。",
+  "futureOutlook": "可验证的下一信号是 PR #12209 的合并内容与后续 release 是否继续以提交固定方式发布教程版本。",
+  "businessValue": "对使用 Triton 的开发者而言，提交级固定的教程版本有助于降低环境漂移风险；具体收益需结合 PR #12209 内容评估。",
+  "category": "compiler-release",
+  "company": "Triton",
+  "keywords": [
+    "Triton",
+    "gfx950",
+    "tutorial",
+    "release",
+    "commit-pin"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-10T02:40:04.000Z",
+  "publishedAt": "2026-10-10T06:30:28.660Z",
+  "createdAt": "2026-10-10T06:29:40.329Z",
+  "updatedAt": "2026-10-10T06:30:28.660Z"
+},
+{
   "id": "fb42c9be-eab6-4d15-805b-93bcea426b12",
   "slug": "ghost-q-towards-studying-grounding-hallucinations-overlooked-under-same-score-tradeoffs-in-2026-09-25",
   "title": "GHOST-Q: Towards Studying Grounding Hallucinations Overlooked Under Same-score TradeOffs in Quantized VLMS",
@@ -1982,6 +2387,49 @@
   "updatedAt": "2026-09-16T17:08:55.829Z"
 },
 {
+  "id": "7ffeef7b-3f99-43a5-b793-58200629aa7d",
+  "slug": "github-copilot-weekly-releases-october-5-2026-10-10",
+  "title": "GitHub Copilot weekly releases — October 5",
+  "factSummary": "GitHub 发布 Copilot 周更（10 月 5 日当周），称更新让 Copilot 在跨账户与跨环境使用时更易用，并对 agent 可访问的内容及其工作管理提供更多控制。证据摘要中提及 GitHub Copilot Claude Haiku，但未给出具体功能细节。",
+  "summary": "GitHub 官方博客 changelog 发布 Copilot 周更条目，主题为跨账户与跨环境可用性提升，以及 agent 访问权限与任务管理的控制增强。证据仅提供概述性描述，未列出具体命令、模型版本或发布日期之外的细节。",
+  "technicalInsight": "从证据看，本次更新方向集中在 agent 的权限边界与任务管理控制，而非模型能力本身；这属于工具链层面的可控性改进。可验证下一信号：GitHub 后续 changelog 是否给出 agent 权限范围、审计或任务编排的具体配置项与文档。",
+  "industryInsight": "编码助手竞争正从补全能力转向 agent 权限治理与多环境一致性，这是企业采用的前置条件。可验证下一信号：其他主流编码助手是否在同期发布类似的权限与账户管理控制。",
+  "futureOutlook": "若权限控制成为标配，编码 agent 的落地瓶颈将从能力转向合规与运维。可验证下一信号：GitHub 是否在后续周更中披露企业级管理或合规相关能力。",
+  "businessValue": "对使用 Copilot 的团队，跨账户与环境的一致体验和 agent 访问控制可降低管理成本与安全顾虑，但证据未提供量化收益。可验证下一信号：GitHub 是否公布企业客户采用或管理功能使用数据。",
+  "category": "coding-agent-governance",
+  "company": "GitHub Copilot",
+  "keywords": [
+    "GitHub Copilot",
+    "agent 权限控制",
+    "跨环境",
+    "周更",
+    "开发者工具"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T22:58:23.000Z",
+  "publishedAt": "2026-10-10T06:30:28.659Z",
+  "createdAt": "2026-10-10T06:29:39.947Z",
+  "updatedAt": "2026-10-10T06:30:28.659Z"
+},
+{
   "id": "c495f0f7-11bf-4bdc-af88-e5e1b7812cd9",
   "slug": "github-copilot-weekly-releases-september-14-2026-09-19",
   "title": "GitHub Copilot weekly releases — September 14",
@@ -2420,8 +2868,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-14T00:00:00.000Z",
   "publishedAt": "2025-04-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "5cd05654-1893-49bb-ad32-b99ea1c4294c",
@@ -2464,8 +2912,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-28T00:00:00.000Z",
   "publishedAt": "2025-07-28T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4d5503ab-6e90-415e-a1be-471762cad398",
@@ -2508,8 +2956,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-30T00:00:00.000Z",
   "publishedAt": "2025-09-30T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "cefc2c52-fd83-4ae1-a3cd-a4b633af9e60",
@@ -2552,8 +3000,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-08T00:00:00.000Z",
   "publishedAt": "2025-12-08T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "51d0159e-03e0-46a0-abc2-8e814b021821",
@@ -2596,8 +3044,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-22T00:00:00.000Z",
   "publishedAt": "2025-12-22T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3775a9da-e7ca-4bf4-a367-f6c75255b6a8",
@@ -2640,8 +3088,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-07T00:00:00.000Z",
   "publishedAt": "2026-04-07T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "688304eb-2b05-4c16-a400-42a45b696da3",
@@ -2684,8 +3132,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "e0d942a6-f37a-4277-a95a-a45c5a381e3e",
@@ -2728,8 +3176,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-12T00:00:00.000Z",
   "publishedAt": "2026-02-12T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "2f9c9ec7-0f69-4d28-9a77-c97a1280e8ac",
@@ -2909,8 +3357,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-20T12:00:00.000Z",
   "publishedAt": "2023-09-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "0e3e1d81-95d0-4e68-a46b-59e80f7f79df",
@@ -2951,8 +3399,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-09T00:00:00.000Z",
   "publishedAt": "2025-04-09T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4fd7dddd-71c4-46e8-a007-df128c2d5495",
@@ -2994,8 +3442,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-21T12:00:00.000Z",
   "publishedAt": "2025-08-21T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "ad6e6b75-6a74-46a9-ae5f-29ecc45bdc95",
@@ -3036,8 +3484,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:43:45.000Z",
   "publishedAt": "2026-05-17T19:43:45.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "8a844569-7392-4bd3-8368-17b9792e3beb",
@@ -3426,8 +3874,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "b6021647-489f-4a6e-aef3-95615c2f0661",
@@ -3468,8 +3916,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-20T19:30:00.000Z",
   "publishedAt": "2026-05-20T19:30:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9aac5367-87dd-4bed-aa29-336431094e4d",
@@ -3511,8 +3959,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-21T00:00:00.000Z",
   "publishedAt": "2026-04-21T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "25fe69a5-a0ca-427c-ae25-656de0da5ae3",
@@ -3554,8 +4002,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-17T12:00:00.000Z",
   "publishedAt": "2025-09-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "83bc008f-9083-4013-a6af-daf1252c1faa",
@@ -3595,8 +4043,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-14T00:00:00.000Z",
   "publishedAt": "2023-03-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "005d08ee-310d-4c16-accb-e9dea26546b2",
@@ -3679,8 +4127,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-23T00:00:00.000Z",
   "publishedAt": "2026-04-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "104d8a19-a1ab-450f-ad20-a6f79104903b",
@@ -3721,8 +4169,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:00:00.000Z",
   "publishedAt": "2026-07-09T08:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "fa87aed3-c07c-4f95-aff3-332417a74348",
@@ -3763,8 +4211,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T10:00:00.000Z",
   "publishedAt": "2026-07-09T10:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "79126618-11b2-4298-aa1f-5217f4907cd2",
@@ -3805,8 +4253,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-07T00:00:00.000Z",
   "publishedAt": "2025-08-07T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4b28a30d-4a00-48b5-aed5-6e37c70d4135",
@@ -4023,8 +4471,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T08:00:00.000Z",
   "publishedAt": "2026-07-08T08:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "b3ea7a0c-3b31-408b-a008-3821cfb50263",
@@ -4661,8 +5109,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-24T12:00:00.000Z",
   "publishedAt": "2022-12-24T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "0b121f2f-6731-45b9-a5c5-b4255a70ab88",
@@ -5115,8 +5563,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-17T00:00:00.000Z",
   "publishedAt": "2024-03-17T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "ca5cc455-54ea-4f7e-a118-641368d6740c",
@@ -5159,8 +5607,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-12T00:00:00.000Z",
   "publishedAt": "2024-12-12T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "2bc6b3e5-1703-4bec-aba6-1937ab390f06",
@@ -5203,8 +5651,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-19T00:00:00.000Z",
   "publishedAt": "2025-02-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4eca2546-7819-4bb7-a03e-2485b3a5d6e2",
@@ -5247,8 +5695,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-19T00:00:00.000Z",
   "publishedAt": "2025-11-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "6ac01b5a-3320-4564-a760-bf9eae72cbd0",
@@ -5291,8 +5739,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-10T00:00:00.000Z",
   "publishedAt": "2026-03-10T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "6954baba-333f-48d3-aab7-c2c04a458ff9",
@@ -5335,8 +5783,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-17T00:00:00.000Z",
   "publishedAt": "2026-06-17T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "633cde19-e03c-4d26-aeab-366622054490",
@@ -5379,8 +5827,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T00:00:00.000Z",
   "publishedAt": "2026-07-08T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "654b6dc6-38e3-4ef5-8019-3d7bf42ea544",
@@ -5555,8 +6003,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T00:00:00.000Z",
   "publishedAt": "2025-07-09T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "2f9a1562-2e8d-4dc3-a6e1-dc7dc20b7590",
@@ -5599,8 +6047,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-25T00:00:00.000Z",
   "publishedAt": "2026-05-25T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "12e89b08-cd8f-42a1-a03c-54be36252310",
@@ -6100,8 +6548,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-07T12:00:00.000Z",
   "publishedAt": "2024-10-07T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "f695da29-0bee-4ff1-9ec7-f1521ef6aaa8",
@@ -6510,8 +6958,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-28T12:00:00.000Z",
   "publishedAt": "2022-12-28T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "592f62dd-f3d6-4b80-a1b4-8206fabbbbcc",
@@ -8186,8 +8634,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-23T12:00:00.000Z",
   "publishedAt": "2024-06-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c2403129-3e51-4c2f-8bae-ec818fc7ea0c",
@@ -9055,8 +9503,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "cdf11c5f-9977-45fd-b35a-5d512c8693c9",
@@ -13469,8 +13917,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-30T12:00:00.000Z",
   "publishedAt": "2023-03-30T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c886e1a5-d2af-4d4a-9b24-21c339d31e34",
@@ -13970,8 +14418,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-01T00:00:00.000Z",
   "publishedAt": "2025-09-01T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7ee9255e-7aa3-4f15-ae95-d77c41a89ea8",
@@ -14013,8 +14461,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-21T12:00:00.000Z",
   "publishedAt": "2025-01-21T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "40505a10-0ce8-420b-b35d-b7bb585c6b8d",
@@ -15278,8 +15726,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-15T00:00:00.000Z",
   "publishedAt": "2025-01-15T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3cd3b078-ad3f-479b-b5f8-c85f7e7762fc",
@@ -16365,8 +16813,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-10T12:00:00.000Z",
   "publishedAt": "2024-01-10T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "382deb67-2b4e-4b8d-8664-b293a22a847f",
@@ -17086,8 +17534,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T12:00:00.000Z",
   "publishedAt": "2023-11-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7891365c-b923-4a85-86fa-91254ecc4746",
@@ -19070,6 +19518,52 @@
   "updatedAt": "2026-09-29T06:20:44.707Z"
 },
 {
+  "id": "d261ab98-a50a-4e97-bbb3-e2bb058b0c9a",
+  "slug": "introducing-clef-omni-with-full-multimodality-plus-a-faster-clef-and-a-cheaper-clef-flash-2026-10-10",
+  "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+  "factSummary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x.",
+  "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "introducing",
+    "clef",
+    "omni",
+    "full",
+    "multimodality",
+    "plus",
+    "faster",
+    "cheaper"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T18:27:34.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-10T06:29:40.035Z",
+  "updatedAt": "2026-10-10T06:29:40.098Z"
+},
+{
   "id": "12febbbc-8111-4261-a2b8-7ed4a3640e97",
   "slug": "introducing-clef-our-open-source-decision-models-and-new-rl-fine-tuning-platform-2026-10-05",
   "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
@@ -19895,20 +20389,20 @@
     "gpt",
     "sol"
   ],
-  "confidenceScore": 98,
-  "heatScore": 50,
+  "confidenceScore": 100,
+  "heatScore": 46,
   "impactScore": 55,
-  "valueScore": 71,
+  "valueScore": 59,
   "scoreFactors": {
     "authority": 92,
-    "corroboration": 60,
+    "corroboration": 80,
     "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 3,
-    "platformBreadth": 2,
+    "independentSources": 4,
+    "platformBreadth": 1,
     "regionBreadth": 1,
     "velocity": 0,
-    "freshness": 81,
+    "freshness": 7,
     "crossRegion": false
   },
   "status": "review",
@@ -19917,7 +20411,7 @@
   "happenedAt": "2026-09-29T10:00:00.000Z",
   "publishedAt": null,
   "createdAt": "2026-09-29T18:11:48.231Z",
-  "updatedAt": "2026-09-30T06:05:22.485Z"
+  "updatedAt": "2026-10-10T06:29:41.402Z"
 },
 {
   "id": "74bd0670-6765-4dda-89b1-b4bf0859a6c8",
@@ -22513,8 +23007,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-09T12:00:00.000Z",
   "publishedAt": "2023-06-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "692f8873-01ab-4520-8c98-7c28f7e7c4fe",
@@ -23197,8 +23691,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-22T12:00:00.000Z",
   "publishedAt": "2025-01-22T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "1a7413bb-14fa-427c-ad1d-51dbbd8286d8",
@@ -23240,8 +23734,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-30T00:00:00.000Z",
   "publishedAt": "2026-01-30T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "469466ea-6f7d-4e74-88c8-a5cb1d3f1406",
@@ -23327,8 +23821,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-11T00:00:00.000Z",
   "publishedAt": "2025-07-11T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c2cf301b-d0a8-4339-89bf-978357139894",
@@ -24194,8 +24688,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-04T12:00:00.000Z",
   "publishedAt": "2025-11-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "09b6a0ad-fee9-4eed-a29f-0e6c0964ff3d",
@@ -31339,8 +31833,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T10:00:00.000Z",
   "publishedAt": "2026-07-08T10:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "73e6758d-5ac4-4c36-8cfb-45d471c2d747",
@@ -31698,8 +32192,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-18T00:00:00.000Z",
   "publishedAt": "2023-07-18T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "d1c48811-386a-411e-a37b-32df885227d5",
@@ -31740,8 +32234,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-23T00:00:00.000Z",
   "publishedAt": "2024-07-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "97de3ebd-b095-4916-a8c2-c27e94ebe521",
@@ -31782,8 +32276,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-05T00:00:00.000Z",
   "publishedAt": "2025-04-05T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7c2b69d6-6d26-45ac-abb6-7c21944327fb",
@@ -31825,8 +32319,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-27T12:00:00.000Z",
   "publishedAt": "2023-02-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "63cd8faa-4bab-445b-a60a-c28ff9795be6",
@@ -31868,8 +32362,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "d519b78b-4492-487c-aa1e-9a52284cc7f7",
@@ -31911,8 +32405,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-10T12:00:00.000Z",
   "publishedAt": "2024-07-10T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "8576327f-66a5-4e5b-a18f-64ca34709617",
@@ -31954,8 +32448,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "156ceb72-a16e-423b-b10c-7d3438ae2fff",
@@ -32089,8 +32583,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-15T12:00:00.000Z",
   "publishedAt": "2024-11-15T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "82bf9352-8935-4704-a7aa-43c4ae426ec1",
@@ -32360,8 +32854,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-06T12:00:00.000Z",
   "publishedAt": "2024-09-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "b5c7f0fc-0bbe-4525-b442-dda349c24952",
@@ -32448,8 +32942,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T12:00:00.000Z",
   "publishedAt": "2025-03-31T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c3fa285b-7421-4ce6-9c31-ba4734d3f403",
@@ -32626,8 +33120,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "119bd57b-fe50-4b40-8550-62554af94800",
@@ -33165,8 +33659,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-14T12:00:00.000Z",
   "publishedAt": "2024-03-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "8749c671-67c4-47e3-af56-efef74dd62f0",
@@ -33526,8 +34020,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-02T12:00:00.000Z",
   "publishedAt": "2024-04-02T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "d19feab3-0bce-498a-8674-fdbeb9e3dc4d",
@@ -34949,6 +35443,51 @@
   "updatedAt": "2026-09-17T05:32:42.625Z"
 },
 {
+  "id": "2a3e142c-a565-47bc-b868-427bf3204894",
+  "slug": "lowe-s-answers-millions-of-home-improvement-questions-with-openai-2026-10-10",
+  "title": "Lowe’s answers millions of home improvement questions with OpenAI",
+  "factSummary": "Lowe’s uses OpenAI models to power Mylow and Mylow Companion, helping customers and associates answer 25M+ questions and move home improvement projects forward.",
+  "summary": "Lowe’s uses OpenAI models to power Mylow and Mylow Companion, helping customers and associates answer 25M+ questions and move home improvement projects forward.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "lowe",
+    "answers",
+    "millions",
+    "home",
+    "improvement",
+    "questions",
+    "openai"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 15,
+  "impactScore": 55,
+  "valueScore": 43,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 2,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T07:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-10T06:29:41.295Z",
+  "updatedAt": "2026-10-10T06:29:41.355Z"
+},
+{
   "id": "9058e749-259d-42a6-82d1-ce5d4bb5527b",
   "slug": "lp-nas-linear-programming-based-neural-architecture-search-2026-08-17",
   "title": "LP-NAS: Linear Programming-based Neural Architecture Search",
@@ -36357,8 +36896,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-27T12:00:00.000Z",
   "publishedAt": "2025-06-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c013c1b5-84ab-474e-851d-29492ef19b0b",
@@ -36622,8 +37161,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-01T12:00:00.000Z",
   "publishedAt": "2023-12-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "f831f6d4-d69e-4477-af38-eb13981a41b6",
@@ -36665,8 +37204,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "e892ea18-5032-413e-8c87-65e2539058db",
@@ -38027,8 +38566,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-06T12:00:00.000Z",
   "publishedAt": "2025-03-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9bf9dbbf-7caf-4381-bf3a-b7080371803a",
@@ -38201,8 +38740,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-14T12:00:00.000Z",
   "publishedAt": "2024-08-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3d81347a-8126-4661-a154-f676e4a0ecfb",
@@ -38244,8 +38783,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-08T12:00:00.000Z",
   "publishedAt": "2024-05-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "e84193c3-ba8d-4d13-99d3-cbcea9a7869d",
@@ -39155,8 +39694,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T12:00:00.000Z",
   "publishedAt": "2024-12-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "99708c8f-b6ab-4ad0-a299-770ddc1a4df0",
@@ -39198,8 +39737,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-26T12:00:00.000Z",
   "publishedAt": "2025-05-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "88fcfba9-21c7-4cb0-8b69-a826c1f06484",
@@ -39425,8 +39964,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-04T12:00:00.000Z",
   "publishedAt": "2025-04-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "efb8a190-6be2-41ed-ac6a-3e47423f3bd0",
@@ -39468,8 +40007,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "60b321e2-a5ef-48ce-90b8-143a7db03c92",
@@ -39557,8 +40096,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-28T12:00:00.000Z",
   "publishedAt": "2025-04-28T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4d94e991-fd08-4ae7-8c61-81f7ca8c4552",
@@ -40099,8 +40638,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-09T03:26:10.000Z",
   "publishedAt": "2026-01-09T03:26:10.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "cac6b05d-0b45-4260-8b40-f910b7e9f3d7",
@@ -40187,8 +40726,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-18T09:49:14.000Z",
   "publishedAt": "2026-02-18T09:49:14.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "b75b6b51-66fb-4ee3-b98e-51e262f74045",
@@ -40456,8 +40995,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-30T05:33:50.000Z",
   "publishedAt": "2026-03-30T05:33:50.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "528e3c24-d5bd-42f4-8ab2-aed860ebed65",
@@ -41000,8 +41539,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-16T00:00:00.000Z",
   "publishedAt": "2023-03-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "1b06628f-218d-4a7a-a23e-82e7497bb0aa",
@@ -41043,8 +41582,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T00:00:00.000Z",
   "publishedAt": "2026-01-20T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9a090b14-9bda-4a27-aa85-55dbf759eebf",
@@ -41086,8 +41625,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T00:00:00.000Z",
   "publishedAt": "2024-04-15T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "22b0b5ed-cdec-414b-86a8-b0b20a51377e",
@@ -41175,8 +41714,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-23T00:00:00.000Z",
   "publishedAt": "2023-01-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "31ed947f-94ba-46fc-8435-28639e085b22",
@@ -42403,8 +42942,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "806f16f2-f1f3-4326-ac31-e16618de3252",
@@ -42447,8 +42986,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "bc1a0adb-6dc1-420a-bc91-a1a8db2788df",
@@ -42535,8 +43074,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-16T00:00:00.000Z",
   "publishedAt": "2025-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "15ce9c20-2703-4e1a-af63-1da28ccfe398",
@@ -42578,8 +43117,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4591124e-5f6f-4233-a37f-15a4b69f89c1",
@@ -43397,8 +43936,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-10T12:00:00.000Z",
   "publishedAt": "2023-10-10T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "d77aac24-e9e1-46a2-acb8-2b7f10d85f67",
@@ -43438,8 +43977,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-27T00:00:00.000Z",
   "publishedAt": "2023-09-27T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "2b989f44-ca47-400b-ac7c-731642ddf156",
@@ -43481,8 +44020,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-23T00:00:00.000Z",
   "publishedAt": "2026-06-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "901cf287-0ee3-4fdd-8b8c-71d609dbf23c",
@@ -44291,8 +44830,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-03T12:00:00.000Z",
   "publishedAt": "2024-06-03T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "a0dc6ff2-12ae-469e-b769-43493976a5ba",
@@ -44606,8 +45145,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-25T00:00:00.000Z",
   "publishedAt": "2024-11-25T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "fc38de93-799b-4178-b2c9-dd13f5addbce",
@@ -45970,8 +46509,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-18T12:00:00.000Z",
   "publishedAt": "2024-12-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "0807cb1c-d7de-4702-b86c-3c1b811ea496",
@@ -47154,8 +47693,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-14T12:00:00.000Z",
   "publishedAt": "2023-07-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7749140d-9ada-41a9-a5c6-f5e0c446c54c",
@@ -49319,8 +49858,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-16T12:00:00.000Z",
   "publishedAt": "2025-12-16T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4f446723-2e8e-47f3-9fea-ee74ec99c8aa",
@@ -50031,8 +50570,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-09T12:00:00.000Z",
   "publishedAt": "2025-10-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "bc172b74-36da-4f1c-a6f5-906f5ee5b31d",
@@ -50481,8 +51020,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-01T12:00:00.000Z",
   "publishedAt": "2025-12-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "bf720145-a1fa-4a58-b121-b40a83eb1132",
@@ -52193,8 +52732,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T12:00:00.000Z",
   "publishedAt": "2024-04-15T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "dc84823a-a0a9-42b7-9ccf-0528e9efab48",
@@ -53147,8 +53686,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-18T00:00:00.000Z",
   "publishedAt": "2025-03-18T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "768c90d0-892e-4f4f-9f3d-e8a2cc41e6c4",
@@ -56084,8 +56623,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-27T12:00:00.000Z",
   "publishedAt": "2025-01-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "00688150-d8d1-4f6f-b3fb-f456a950f56f",
@@ -56353,8 +56892,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-13T12:00:00.000Z",
   "publishedAt": "2023-10-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "dfc385cd-2c0d-4211-a5c1-2f8f30939ba9",
@@ -56442,8 +56981,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T00:00:00.000Z",
   "publishedAt": "2025-03-31T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3286f57a-1d16-455b-a624-ba5ea35fcefd",
@@ -56485,8 +57024,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-02T00:00:00.000Z",
   "publishedAt": "2024-10-02T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "aa5bf8ec-dc26-44a0-b441-ecc74aed86d7",
@@ -56573,8 +57112,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-11T00:00:00.000Z",
   "publishedAt": "2026-06-11T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "92157ab0-4315-4e68-aec2-1f313ca6588a",
@@ -56707,8 +57246,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-16T00:00:00.000Z",
   "publishedAt": "2025-05-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "885ebdbc-84dd-49b9-ae62-3615970d7ba7",
@@ -56749,8 +57288,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-02T00:00:00.000Z",
   "publishedAt": "2025-02-02T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "6ccaf3c6-8b9b-48b2-a764-e446de71fc6f",
@@ -56792,8 +57331,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "36284da8-5c0f-4b27-a9b2-34732a52023b",
@@ -56834,8 +57373,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T00:00:00.000Z",
   "publishedAt": "2023-11-06T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3728240c-7ae6-482d-8c2d-964d83e8baec",
@@ -56922,8 +57461,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "04ed842a-9e5d-4e12-adbe-e0a345030332",
@@ -56965,8 +57504,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-21T00:00:00.000Z",
   "publishedAt": "2025-05-21T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "1873aa04-ac99-4274-a8f5-4a0e2b4c130c",
@@ -57049,8 +57588,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-12T00:00:00.000Z",
   "publishedAt": "2024-09-12T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "034a79ea-710b-4427-a223-4d73be2d5c59",
@@ -57091,8 +57630,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-16T00:00:00.000Z",
   "publishedAt": "2025-04-16T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4a6cb77e-f99d-4853-acd4-58fe79bb1a50",
@@ -57133,8 +57672,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-23T00:00:00.000Z",
   "publishedAt": "2025-01-23T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "f044cdec-7524-43e4-ac8d-610dafc3b5cc",
@@ -57175,8 +57714,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-11T00:00:00.000Z",
   "publishedAt": "2025-03-11T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "22cc77ce-26f0-423f-b63d-fd8562c5c1b5",
@@ -57475,8 +58014,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-16T17:52:04.000Z",
   "publishedAt": "2026-03-16T17:52:04.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "aa831a56-f866-401a-a0c2-e2fcb6aa120d",
@@ -57607,8 +58146,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-13T12:00:00.000Z",
   "publishedAt": "2024-06-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "f3996d3f-546b-469f-82a8-62a82bb52c5f",
@@ -58101,8 +58640,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-29T12:00:00.000Z",
   "publishedAt": "2024-10-29T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "566fb569-499b-42a4-a2f5-1d94ebe943b2",
@@ -58276,8 +58815,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-05T12:00:00.000Z",
   "publishedAt": "2025-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "10dfed32-7e8d-4ac1-9008-629a11b29033",
@@ -59126,8 +59665,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T06:02:41.000Z",
   "publishedAt": "2026-07-09T06:02:41.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "bb871ade-7949-47aa-97ab-c924defd71f8",
@@ -59846,8 +60385,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-08T12:00:00.000Z",
   "publishedAt": "2025-09-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "04ef5b54-240c-41af-ac4a-d7c5ec03e280",
@@ -61194,8 +61733,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-27T12:00:00.000Z",
   "publishedAt": "2022-11-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9aa622fd-7db8-4b19-90d8-11a520e8550e",
@@ -62190,8 +62729,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-09T12:00:00.000Z",
   "publishedAt": "2024-05-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "1ed5ed44-1515-4c59-956e-8dea178d2f9a",
@@ -62507,8 +63046,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-14T00:00:00.000Z",
   "publishedAt": "2025-08-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "772a4315-4b17-4726-bf5e-04456d781b66",
@@ -63053,8 +63592,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-13T12:00:00.000Z",
   "publishedAt": "2024-09-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3bb1f3e1-e7ba-435a-9a01-930583892e8e",
@@ -63371,8 +63910,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-31T12:00:00.000Z",
   "publishedAt": "2024-10-31T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "e7dc157a-d75e-4f62-884a-459cda5851d9",
@@ -65413,8 +65952,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T09:28:06.000Z",
   "publishedAt": "2026-07-09T09:28:06.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "2d122fad-233c-490a-bc88-c79b6242fc89",
@@ -69640,8 +70179,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T12:00:00.000Z",
   "publishedAt": "2023-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "919573b4-8b7a-4148-a8ef-b6fb67fc3681",
@@ -70594,8 +71133,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-19T00:00:00.000Z",
   "publishedAt": "2024-09-19T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "006d1189-8941-42fd-a98b-3720645cc0a7",
@@ -70636,8 +71175,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-29T00:00:00.000Z",
   "publishedAt": "2025-04-29T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "a9290214-be63-4d6b-a99a-79738097db3f",
@@ -70677,8 +71216,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-03T00:00:00.000Z",
   "publishedAt": "2023-08-03T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c9bce613-d160-46c4-a260-58b21cde26a0",
@@ -70720,8 +71259,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-24T12:00:00.000Z",
   "publishedAt": "2023-08-24T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "79ff590c-0dcd-4e1d-adb0-42e015b72f77",
@@ -70763,8 +71302,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-18T12:00:00.000Z",
   "publishedAt": "2024-09-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "709a4dc2-1599-4d38-a9c5-aef6e5fb04fa",
@@ -70806,8 +71345,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-14T12:00:00.000Z",
   "publishedAt": "2025-05-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "e7a5aff5-798a-45ab-a049-4c2752aa5bf2",
@@ -70849,8 +71388,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-26T12:00:00.000Z",
   "publishedAt": "2025-11-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "6b2ed600-9f86-4c04-8732-31b1fbe7982e",
@@ -72061,8 +72600,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T02:14:47.000Z",
   "publishedAt": "2026-04-02T02:14:47.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "f702d2dd-cce1-4f6e-9f0c-5349a263e30c",
@@ -72836,8 +73375,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-08T12:00:00.000Z",
   "publishedAt": "2025-05-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "27c19186-bcfd-45bc-a53e-3b13cbd24958",
@@ -73746,8 +74285,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-19T12:00:00.000Z",
   "publishedAt": "2024-11-19T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7e00b275-1041-45e1-a2e5-2288a4027650",
@@ -74110,8 +74649,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3303ae32-cdb3-424c-aba1-6ef95fcbfb93",
@@ -74290,8 +74829,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-20T12:00:00.000Z",
   "publishedAt": "2023-03-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "45785c4f-7cd7-4616-bbfb-9fd3ce6a1208",
@@ -74925,8 +75464,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-03T12:00:00.000Z",
   "publishedAt": "2024-09-03T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "e8daa836-3ce4-4c60-833e-6e3fd8f06555",
@@ -75901,8 +76440,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T13:19:20.000Z",
   "publishedAt": "2026-01-20T13:19:20.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "06eea9d6-a1b2-46e2-86af-3da87baa1ba1",
@@ -78126,8 +78665,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-18T12:00:00.000Z",
   "publishedAt": "2023-12-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "3deea3fe-fe95-4ed5-a559-58b0df2289d0",
@@ -79356,8 +79895,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-14T12:00:00.000Z",
   "publishedAt": "2023-09-14T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "ceb021a8-2375-4d67-a643-3499b15e4bdb",
@@ -79855,8 +80394,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-19T12:00:00.000Z",
   "publishedAt": "2025-05-19T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "4874a0ae-9064-4ed2-8f98-29d23fc89f05",
@@ -81403,8 +81942,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-28T12:00:00.000Z",
   "publishedAt": "2023-07-28T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "2c4b6489-7297-4036-a280-8324008ae05c",
@@ -81446,8 +81985,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "ffcbff37-3611-4128-b3a7-4d6b250a9f97",
@@ -83505,8 +84044,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-20T12:00:00.000Z",
   "publishedAt": "2025-11-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "34034d81-561b-48a1-af53-d91969e812f6",
@@ -83594,8 +84133,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "688fe7aa-3656-4b98-a097-7bf6998abe7e",
@@ -84005,8 +84544,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-18T12:00:00.000Z",
   "publishedAt": "2024-11-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "e4e22277-2fdc-4070-98c8-a80c85cde6d8",
@@ -84501,8 +85040,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-24T16:33:14.000Z",
   "publishedAt": "2026-05-24T16:33:14.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "336af561-1a95-49db-ba76-26eb5365a47f",
@@ -84770,8 +85309,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-31T12:00:00.000Z",
   "publishedAt": "2024-07-31T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9454f819-c412-4db4-b037-b919e6b9eee3",
@@ -84905,8 +85444,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-05T12:00:00.000Z",
   "publishedAt": "2024-03-05T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "6ec90abb-2adf-4964-8745-c6a19dcc76f3",
@@ -85539,8 +86078,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -87479,8 +88018,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -87704,8 +88243,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -88249,8 +88788,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -89152,8 +89691,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -90149,8 +90688,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -90554,8 +91093,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -90735,8 +91274,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7898c9ab-d97b-4afe-84fd-2f2fa4663129",
@@ -91730,8 +92269,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -92137,8 +92676,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -92677,8 +93216,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -92765,8 +93304,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -92989,8 +93528,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -93760,8 +94299,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -94122,8 +94661,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -95258,8 +95797,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
@@ -95347,8 +95886,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -95390,8 +95929,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -96530,8 +97069,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -96572,8 +97111,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -96878,8 +97417,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "ce6e144f-4b1f-4e16-bfe5-318763d16046",
@@ -99097,6 +99636,95 @@
   "updatedAt": "2026-10-09T06:52:01.332Z"
 },
 {
+  "id": "2751cd5d-0c43-47f8-813e-e6c7eb5d14ed",
+  "slug": "stagehand-python-4-2-1a0-dev1593-2026-10-10",
+  "title": "stagehand-python@4.2.1a0.dev1593",
+  "factSummary": "Stagehand 发布了 Python 包版本 stagehand-python@4.2.1a0.dev1593，发布说明中记录了一条被标记为 Claimed #3155 的修复：accept new model IDs without a Stagehand release。",
+  "summary": "Stagehand 的 Python 发行版出现新版本 stagehand-python@4.2.1a0.dev1593，其发布说明包含一条修复条目，内容为在不发布新 Stagehand 版本的情况下接受新的模型 ID。",
+  "technicalInsight": "该修复条目指向模型 ID 与 Stagehand 版本解耦的方向，即新增模型标识可能不再需要等待框架发版；但证据仅为发布说明中的一行描述，无法确认具体实现方式、覆盖范围或是否已合并。可验证下一信号：查看该 release 对应的 commit/PR 是否修改了模型 ID 校验或配置逻辑。",
+  "industryInsight": "浏览器自动化 Agent 框架对模型迭代的适配速度，可能成为其被开发者选用的一个实际因素；但单一 alpha 版本的修复条目不足以判断生态位变化。可验证下一信号：后续版本是否持续出现同类免发版适配条目。",
+  "futureOutlook": "若模型 ID 适配持续与框架发版解耦，Stagehand 类工具的模型切换成本可能下降；当前证据不足以确认该趋势已成立。可验证下一信号：观察后续 release notes 中同类修复的出现频率与是否进入稳定版。",
+  "businessValue": "对使用 Stagehand Python 包的开发者而言，潜在价值在于减少因模型 ID 更新而被迫升级框架的摩擦；该价值目前仅为发布说明层面的声明，尚未有采用或性能数据支撑。可验证下一信号：该修复是否进入非 dev 的正式版本并被文档引用。",
+  "category": "agent-browser-automation",
+  "company": "Stagehand",
+  "keywords": [
+    "Stagehand",
+    "Python SDK",
+    "模型 ID",
+    "版本解耦",
+    "浏览器自动化"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T23:21:44.000Z",
+  "publishedAt": "2026-10-10T06:30:28.659Z",
+  "createdAt": "2026-10-10T06:29:40.473Z",
+  "updatedAt": "2026-10-10T06:30:28.659Z"
+},
+{
+  "id": "a8fe6d26-3e72-445a-b0f1-a952beb6c8fe",
+  "slug": "stagehand-python-4-2-1a0-dev1594-fix-extension-bind-llm-gateway-fetch-to-a-load-time-refer-2026-10-10",
+  "title": "stagehand-python@4.2.1a0.dev1594: fix(extension): bind LLM/gateway fetch to a load-time reference (#3153)",
+  "factSummary": "What Internal hardening of how the browser runtime issues authenticated LLM and Model Gateway requests: they now use a fetch reference captured at startup rather than the ambient global. No public API or behavior change for callers. Changes extension/llm/boundFetch.ts (new) — a fetch reference captured at module load. extension/llm/aiSdkClient.ts — pass boundFetch into the provider connection (OpenAI/Anthropic/Google/Groq/Cerebras). extension/llm/LLMProvider.ts — pass boundFetch into getAISDKLanguageModel 's provider factory. extension/llm/gatewayClient.ts — fetchWithoutModel uses boundFetch ; createGatewayLanguageModel always passes the load-time reference (previously only when no model config). sdk-go embedded extension regenerated; gateway-client test updated to the new contract. Draft — part of an incremental hardening series.",
+  "summary": "What Internal hardening of how the browser runtime issues authenticated LLM and Model Gateway requests: they now use a fetch reference captured at startup rather than the ambient global. No public API or behavior change for callers. Changes extension/llm/boundFetch.ts (new) — a fetch reference captured at module load. extension/llm/aiSdkClient.ts — pass boundFetch into the provider connection (OpenAI/Anthropic/Google/Groq/Cerebras). extension/llm/LLMProvider.ts — pass boundFetch into getAISDKLanguageModel 's provider factory. extension/llm/gatewayClient.ts — fetchWithoutModel uses boundFetch ; createGatewayLanguageModel always passes the load-time reference (previously only when no model config). sdk-go embedded extension regenerated; gateway-client test updated to the new contract. Draft — part of an incremental hardening series.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "stagehand",
+    "python",
+    "1a0",
+    "dev1594",
+    "fix",
+    "extension",
+    "bind",
+    "llm"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T23:57:35.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-10T06:29:40.402Z",
+  "updatedAt": "2026-10-10T06:29:40.460Z"
+},
+{
   "id": "52cf0fc3-5d1a-429d-8c10-1bb68f15cf02",
   "slug": "stagehand-server-v3-v3-7-4-2026-07-22",
   "title": "stagehand/server-v3 v3.7.4",
@@ -99998,8 +100626,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "a13da063-1412-4715-b248-3c220b58d20b",
@@ -101404,8 +102032,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -101588,415 +102216,5 @@
   "publishedAt": null,
   "createdAt": "2026-09-24T05:33:33.781Z",
   "updatedAt": "2026-09-24T05:33:33.828Z"
-},
-{
-  "id": "7c815e4f-d09a-438b-9767-28fc75621037",
-  "slug": "supportcal-label-free-calibration-of-post-trained-llms-via-reference-support-and-corrobora-2026-09-22",
-  "title": "SupportCal: Label-Free Calibration of Post-Trained LLMs via Reference Support and Corroboration",
-  "factSummary": "Post-training often improves task performance but can degrade confidence calibration, leaving post-trained language models (PoLMs) more overconfident than their corresponding pretrained language models (PLMs). Because task-specific labeled calibration data can be costly or unavailable, the corresponding pretrained PLM provides a natural label-free reference for post-hoc calibration. Prior agreement-gated PLM-referenced calibration fits a scalar temperature using only examples on which the PoLM and its PLM reference agree, excluding disagreement examples because direct alignment can drive the fitted temperature excessively high and induce under-confidence. We revisit this binary treatment. A controlled reintroduction diagnostic reveals a non-monotonic aggregate effect: admitting a moderate fraction of disagreement examples can improve calibration, whereas the benefit diminishes as unit-weight inclusion approaches the full disagreement set. We introduce SupportCal, a label-free post-hoc method that retains agreement examples at unit weight and assigns disagreement examples continuous weights based on the own-base PLM's relative support and corroboration from pretrained references selected from a size-compatible candidate pool. We further characterize when the resulting weighted objective admits a finite optimal temperature. Across MedMCQA and MathQA, SupportCal yields lower ECE than the agreement-only baseline for nearly all evaluated target-model configurations; supplementary TweetEval Sentiment results show the same pattern on a fixed-label classification task.",
-  "summary": "Post-training often improves task performance but can degrade confidence calibration, leaving post-trained language models (PoLMs) more overconfident than their corresponding pretrained language models (PLMs). Because task-specific labeled calibration data can be costly or unavailable, the corresponding pretrained PLM provides a natural label-free reference for post-hoc calibration. Prior agreement-gated PLM-referenced calibration fits a scalar temperature using only examples on which the PoLM and its PLM reference agree, excluding disagreement examples because direct alignment can drive the fitted temperature excessively high and induce under-confidence. We revisit this binary treatment. A controlled reintroduction diagnostic reveals a non-monotonic aggregate effect: admitting a moderate fraction of disagreement examples can improve calibration, whereas the benefit diminishes as unit-weight inclusion approaches the full disagreement set. We introduce SupportCal, a label-free post-hoc method that retains agreement examples at unit weight and assigns disagreement examples continuous weights based on the own-base PLM's relative support and corroboration from pretrained references selected from a size-compatible candidate pool. We further characterize when the resulting weighted objective admits a finite optimal temperature. Across MedMCQA and MathQA, SupportCal yields lower ECE than the agreement-only baseline for nearly all evaluated target-model configurations; supplementary TweetEval Sentiment results show the same pattern on a fixed-label classification task.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "supportcal",
-    "label",
-    "free",
-    "calibration",
-    "post",
-    "trained",
-    "llms",
-    "via"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 56,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 81,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-21T09:02:41.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-22T05:30:13.670Z",
-  "updatedAt": "2026-09-22T05:30:13.711Z"
-},
-{
-  "id": "c3b4c55c-03a7-4560-a0f4-a05deae09984",
-  "slug": "surfacing-the-unsaid-cue-bench-for-affective-stance-in-chinese-discourse-2026-08-12",
-  "title": "Surfacing the Unsaid: CUE-Bench for Affective Stance in Chinese Discourse",
-  "factSummary": "Emotion understanding in discourse requires reasoning beyond surface sentiment because speakers often convey affect through indirect, implicit, polite, ironic, or deliberately mismatched expressions. Existing emotion benchmarks mainly annotate surface polarity or final emotion categories, while lacking a structured account of how explicit expression, implicit affect, pragmatic intent, and fine grained emotion interact. This limitation makes current evaluations insensitive to cases where affective meaning is concealed, weakened, inverted, or pragmatically reshaped, thereby obscuring model failures in deeper emotion understanding. To address this gap, we introduce CUE Bench, a Chinese Unsaid Emotion benchmark that centers on Affective Stance and covers diverse communicative scenarios. CUE Bench constructs nine human interpretable affective stances from explicit implicit polarity interaction and further provides intent and fine grained emotion annotations for structured affective inference. Experiments show that incorporating Affective Stance improves fine grained emotion recognition by 3.5 percentage points and pragmatic intent detection by 7.8 percentage points over strong baselines.",
-  "summary": "Emotion understanding in discourse requires reasoning beyond surface sentiment because speakers often convey affect through indirect, implicit, polite, ironic, or deliberately mismatched expressions. Existing emotion benchmarks mainly annotate surface polarity or final emotion categories, while lacking a structured account of how explicit expression, implicit affect, pragmatic intent, and fine grained emotion interact. This limitation makes current evaluations insensitive to cases where affective meaning is concealed, weakened, inverted, or pragmatically reshaped, thereby obscuring model failures in deeper emotion understanding. To address this gap, we introduce CUE Bench, a Chinese Unsaid Emotion benchmark that centers on Affective Stance and covers diverse communicative scenarios. CUE Bench constructs nine human interpretable affective stances from explicit implicit polarity interaction and further provides intent and fine grained emotion annotations for structured affective inference. Experiments show that incorporating Affective Stance improves fine grained emotion recognition by 3.5 percentage points and pragmatic intent detection by 7.8 percentage points over strong baselines.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "surfacing",
-    "unsaid",
-    "cue",
-    "bench",
-    "affective",
-    "stance",
-    "chinese",
-    "discourse"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 85,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-11T11:29:32.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-12T03:17:45.731Z",
-  "updatedAt": "2026-08-12T03:17:45.769Z"
-},
-{
-  "id": "8a1034da-e315-49ec-b7e0-61eb78f7829a",
-  "slug": "surgical-wam-a-world-action-model-for-data-efficient-surgical-robot-learning-2026-08-12",
-  "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
-  "factSummary": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises our central question: under a fixed budget of action-labeled demonstrations, does action-free video pretraining improve closed-loop surgical manipulation? To answer it, we introduce the Surgical World-Action Model (Surgical WAM), a unified generative model built on Cosmos Policy that jointly predicts future endoscopic observations and executable surgical robot action chunks. Surgical WAM first learns surgical visual dynamics from action-free video and is then fine-tuned on the fixed action-labeled budget; at deployment, it acts as a closed-loop, receding-horizon controller that executes a short prefix of each predicted action chunk and replans from the resulting observation. On a suite of four simulated surgical manipulation tasks, video pretraining improves the average success rate from 63.5% to 77.8%, including an absolute gain of 20 percentage points on PegTransfer, with the largest improvements on contact-rich and bimanual tasks. These results demonstrate that action-free video provides transferable visual dynamics priors for learning surgical robot control with limited action supervision, positioning data-efficient video pretraining as a practical path toward scaling up surgical robot learning.",
-  "summary": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises our central question: under a fixed budget of action-labeled demonstrations, does action-free video pretraining improve closed-loop surgical manipulation? To answer it, we introduce the Surgical World-Action Model (Surgical WAM), a unified generative model built on Cosmos Policy that jointly predicts future endoscopic observations and executable surgical robot action chunks. Surgical WAM first learns surgical visual dynamics from action-free video and is then fine-tuned on the fixed action-labeled budget; at deployment, it acts as a closed-loop, receding-horizon controller that executes a short prefix of each predicted action chunk and replans from the resulting observation. On a suite of four simulated surgical manipulation tasks, video pretraining improves the average success rate from 63.5% to 77.8%, including an absolute gain of 20 percentage points on PegTransfer, with the largest improvements on contact-rich and bimanual tasks. These results demonstrate that action-free video provides transferable visual dynamics priors for learning surgical robot control with limited action supervision, positioning data-efficient video pretraining as a practical path toward scaling up surgical robot learning.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "surgical",
-    "wam",
-    "world",
-    "action",
-    "model",
-    "data",
-    "efficient",
-    "robot"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 91,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-11T17:59:13.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-12T03:17:38.928Z",
-  "updatedAt": "2026-08-12T03:17:38.966Z"
-},
-{
-  "id": "cb066e88-e4ed-4904-aeea-f468669ceea6",
-  "slug": "svf-cr-synchronized-visual-facial-cross-refinement-for-multimodal-ambivalence-and-hesitanc-2026-07-13",
-  "title": "SVF-CR: Synchronized Visual-Facial Cross-Refinement for Multimodal Ambivalence and Hesitancy Recognition",
-  "factSummary": "Ambivalence and hesitancy are subtle behavioral states that are expressed through a combination of verbal content, facial behavior, visual context, and acoustic cues. Effective recognition therefore requires not only extracting informative unimodal representations, but also modeling how temporally aligned behavioral evidence interacts across modalities. In this paper, we propose a synchronized visual-facial cross-refinement framework (SVF-CR) with pairwise multimodal evidence fusion for ambivalence and hesitancy recognition. The proposed method first extracts whole-video segment tokens and cropped-face segment tokens using the same temporal partition. The synchronized visual and facial tokens are refined through intra-modal self-attention and bidirectional visual-facial cross-attention, allowing whole-video context and local facial behavior to mutually refine each other before evidence construction. We then construct segment-level visual-facial evidence using consistency and discrepancy modeling, followed by temporal self-attention and attention pooling. Textual and acoustic features are lightly refined through context self-attention and are fused with the enhanced visual-facial evidence at the final decision stage using pairwise evidence fusion. Experiments on the BAH (Behavioral Ambivalence/Hesitancy) public evaluation split show that the proposed synchronized visual-facial cross-refinement improves public macro-F1 over both global visual-face token fusion and synchronized evidence baselines, achieving a public macro-F1 of 0.7156. Code is available at : https://github.com/hiinnnii/BAH-Challenge-ECCV2026\\_SVF-CR.",
-  "summary": "Ambivalence and hesitancy are subtle behavioral states that are expressed through a combination of verbal content, facial behavior, visual context, and acoustic cues. Effective recognition therefore requires not only extracting informative unimodal representations, but also modeling how temporally aligned behavioral evidence interacts across modalities. In this paper, we propose a synchronized visual-facial cross-refinement framework (SVF-CR) with pairwise multimodal evidence fusion for ambivalence and hesitancy recognition. The proposed method first extracts whole-video segment tokens and cropped-face segment tokens using the same temporal partition. The synchronized visual and facial tokens are refined through intra-modal self-attention and bidirectional visual-facial cross-attention, allowing whole-video context and local facial behavior to mutually refine each other before evidence construction. We then construct segment-level visual-facial evidence using consistency and discrepancy modeling, followed by temporal self-attention and attention pooling. Textual and acoustic features are lightly refined through context self-attention and are fused with the enhanced visual-facial evidence at the final decision stage using pairwise evidence fusion. Experiments on the BAH (Behavioral Ambivalence/Hesitancy) public evaluation split show that the proposed synchronized visual-facial cross-refinement improves public macro-F1 over both global visual-face token fusion and synchronized evidence baselines, achieving a public macro-F1 of 0.7156. Code is available at : https://github.com/hiinnnii/BAH-Challenge-ECCV2026\\_SVF-CR.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "svf",
-    "cr",
-    "synchronized",
-    "visual",
-    "facial",
-    "cross",
-    "refinement",
-    "multimodal"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 19,
-  "impactScore": 55,
-  "valueScore": 51,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 53,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-10T13:48:35.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-13T02:12:41.492Z",
-  "updatedAt": "2026-07-13T02:12:41.492Z"
-},
-{
-  "id": "122bd7ec-5b37-49f1-a65e-9344ba519dd8",
-  "slug": "svi-dag-a-structured-variational-inference-approach-to-bayesian-causal-discovery-2026-08-06",
-  "title": "SVI-DAG: A Structured Variational Inference Approach to Bayesian Causal Discovery",
-  "factSummary": "Bayesian causal discovery seeks to determine the posterior distribution of causal theories, which are interpreted as directed acyclic graphs (DAGs) that explain the observed data. The resulting posterior allows systematic reasoning regarding epistemic uncertainty within these theories. Nonetheless, finding such graphs is difficult due to identifiability problems and limited observational data. Furthermore, precisely approximating posterior over graphs is challenging given vast range of potential DAGs. Recent Bayesian approaches have addressed some of these challenges, yet they remain limited as they fail to encode dependencies between edges, and lack principled ways to incorporate domain knowledge as inductive biases during the search process. To overcome these limitations, we propose SVI-DAG, a structured variational inference approach to Bayesian causal discovery using observational data and prior beliefs that uses normalizing flows to model dependencies between edges, supporting expressive and multimodal posterior learning over DAGs. To mitigate mode seeking behaviour in evidence lower bound optimization and promote mode coverage, we use stein variational gradient descent to update the node potentials using a kernel in acyclicity space. We evaluate SVI-DAG against 5 state-of-the-art Bayesian DAG learning methods and demonstrate superior performance in uncertainty quantification while remaining competitive in terms of structural accuracy.",
-  "summary": "Bayesian causal discovery seeks to determine the posterior distribution of causal theories, which are interpreted as directed acyclic graphs (DAGs) that explain the observed data. The resulting posterior allows systematic reasoning regarding epistemic uncertainty within these theories. Nonetheless, finding such graphs is difficult due to identifiability problems and limited observational data. Furthermore, precisely approximating posterior over graphs is challenging given vast range of potential DAGs. Recent Bayesian approaches have addressed some of these challenges, yet they remain limited as they fail to encode dependencies between edges, and lack principled ways to incorporate domain knowledge as inductive biases during the search process. To overcome these limitations, we propose SVI-DAG, a structured variational inference approach to Bayesian causal discovery using observational data and prior beliefs that uses normalizing flows to model dependencies between edges, supporting expressive and multimodal posterior learning over DAGs. To mitigate mode seeking behaviour in evidence lower bound optimization and promote mode coverage, we use stein variational gradient descent to update the node potentials using a kernel in acyclicity space. We evaluate SVI-DAG against 5 state-of-the-art Bayesian DAG learning methods and demonstrate superior performance in uncertainty quantification while remaining competitive in terms of structural accuracy.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "svi",
-    "dag",
-    "structured",
-    "variational",
-    "inference",
-    "approach",
-    "bayesian",
-    "causal"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 87,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-05T14:56:14.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-06T03:59:09.136Z",
-  "updatedAt": "2026-08-06T03:59:09.164Z"
-},
-{
-  "id": "f9a808f9-e470-4f0d-8203-9cba4ac2f5ed",
-  "slug": "svr-self-verifying-refinement-via-joint-verdict-confidence-reinforcement-learning-for-adap-2026-07-31",
-  "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
-  "factSummary": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while verifier-guided refinement relies on external feedback. We introduce Self-Verifying Refinement (SVR), an oracle-free multi-turn reinforcement learning framework that learns to use self-verification as a compute-control policy. At each turn, the model produces a solution together with a discrete correctness verdict and a confidence score; it retains the current answer only when the verdict is Correct and confidence exceeds a threshold, and otherwise continues refinement using its own self-verification. Ground-truth correctness is used only to construct training rewards and is never exposed to the policy through refinement prompts or required at inference. SVR is trained with GRPO on fixed-horizon trajectories using rewards that promote solution correctness, calibration-aware self-verification, and stop-ready correct states; adaptive stopping is activated only at inference. On seven mathematical reasoning benchmarks with Qwen3.5-2B, SVR achieves a macro-average accuracy of 0.563 with only 2.99 inference turns on average. In the evaluated complete-system comparison, it exceeds standard GRPO, strong multi-turn baselines, and a fixed-budget oracle-guided score-feedback reference while requiring substantially fewer turns than fixed ten-turn inference. These results demonstrate that learned self-verification can serve as an effective internal control signal for answer retention and adaptive test-time compute allocation.",
-  "summary": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while verifier-guided refinement relies on external feedback. We introduce Self-Verifying Refinement (SVR), an oracle-free multi-turn reinforcement learning framework that learns to use self-verification as a compute-control policy. At each turn, the model produces a solution together with a discrete correctness verdict and a confidence score; it retains the current answer only when the verdict is Correct and confidence exceeds a threshold, and otherwise continues refinement using its own self-verification. Ground-truth correctness is used only to construct training rewards and is never exposed to the policy through refinement prompts or required at inference. SVR is trained with GRPO on fixed-horizon trajectories using rewards that promote solution correctness, calibration-aware self-verification, and stop-ready correct states; adaptive stopping is activated only at inference. On seven mathematical reasoning benchmarks with Qwen3.5-2B, SVR achieves a macro-average accuracy of 0.563 with only 2.99 inference turns on average. In the evaluated complete-system comparison, it exceeds standard GRPO, strong multi-turn baselines, and a fixed-budget oracle-guided score-feedback reference while requiring substantially fewer turns than fixed ten-turn inference. These results demonstrate that learned self-verification can serve as an effective internal control signal for answer retention and adaptive test-time compute allocation.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "svr",
-    "self",
-    "verifying",
-    "refinement",
-    "via",
-    "joint",
-    "verdict",
-    "confidence"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 88,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-30T16:20:58.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-31T04:18:34.454Z",
-  "updatedAt": "2026-07-31T04:18:34.478Z"
-},
-{
-  "id": "05a8570a-2466-4c7f-a456-83317d120a6f",
-  "slug": "swe-bench-pro-signal-noise",
-  "title": "SWE-Bench Pro 评测反思：编码 Agent 从榜单走向真实任务",
-  "factSummary": "OpenAI 发布 SWE-Bench Pro 分析，讨论现行编码评测中的信噪比和能力误判问题。",
-  "summary": "领先实验室开始公开质疑 benchmark 与真实软件工程之间的偏差，说明编码 Agent 评估正从单一通过率走向可复现、可维护和端到端交付。",
-  "technicalInsight": "未来评测需要覆盖需求理解、代码库导航、测试有效性、回归风险、长任务恢复和人类接管成本。",
-  "industryInsight": "榜单优势的营销价值会下降，拥有真实任务集和持续生产反馈的平台价值上升。",
-  "futureOutlook": "观察私有评测集、真实 PR 合并率、回滚率和长周期维护指标是否成为采购标准。",
-  "businessValue": "采购编码 Agent 时应建立企业自己的黄金任务集，避免用公开 benchmark 直接代替 ROI。",
-  "category": "research",
-  "company": "OpenAI",
-  "keywords": [
-    "SWE-Bench",
-    "编码 Agent",
-    "评测",
-    "可靠性"
-  ],
-  "confidenceScore": 96,
-  "heatScore": 68,
-  "impactScore": 84,
-  "valueScore": 82,
-  "scoreFactors": {
-    "authority": 96,
-    "corroboration": 80,
-    "primaryEvidence": 100,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 1,
-    "velocity": 68,
-    "freshness": 70,
-    "crossRegion": false
-  },
-  "status": "published",
-  "featured": 0,
-  "manualOverride": 1,
-  "happenedAt": "2026-07-08T12:00:00.000Z",
-  "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
-},
-{
-  "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
-  "slug": "swe-bench-promax-benchmarking-agents-on-large-scale-multilingual-code-refactoring-2026-08-11",
-  "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
-  "factSummary": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code refactoring, which requires coordinated, behavior-preserving changes across many files, offers a substantially harder and more realistic test of agent capability, yet remains underserved by current benchmarks. We introduce SWE-Bench ProMax, an expert-curated, multilingual code refactoring benchmark of 170 instances drawn from real commits across seven programming languages (Python, Java, TypeScript, Go, C, C++, and Rust). Every instance undergoes rigorous, multi-stage curation that directly addresses the quality problems identified in prior benchmarks: issue descriptions are rewritten from scratch to provide precise, unambiguous specifications, and test suites are manually reviewed to remove overly narrow and overly broad tests. Tasks with insufficient complexity or limited cross-file scope are filtered out, yielding a benchmark of challenging, large-scale refactoring tasks that average 11.4 modified files and 261.6 lines of code per instance, substantially exceeding the scale of existing benchmarks. Experiments with frontier models under two agent scaffolds show that the best model achieves only 41.2% resolve rate, confirming that SWE-Bench ProMax presents a meaningful and unsaturated challenge for current AI coding agents. Our benchmark is available at https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax.",
-  "summary": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code refactoring, which requires coordinated, behavior-preserving changes across many files, offers a substantially harder and more realistic test of agent capability, yet remains underserved by current benchmarks. We introduce SWE-Bench ProMax, an expert-curated, multilingual code refactoring benchmark of 170 instances drawn from real commits across seven programming languages (Python, Java, TypeScript, Go, C, C++, and Rust). Every instance undergoes rigorous, multi-stage curation that directly addresses the quality problems identified in prior benchmarks: issue descriptions are rewritten from scratch to provide precise, unambiguous specifications, and test suites are manually reviewed to remove overly narrow and overly broad tests. Tasks with insufficient complexity or limited cross-file scope are filtered out, yielding a benchmark of challenging, large-scale refactoring tasks that average 11.4 modified files and 261.6 lines of code per instance, substantially exceeding the scale of existing benchmarks. Experiments with frontier models under two agent scaffolds show that the best model achieves only 41.2% resolve rate, confirming that SWE-Bench ProMax presents a meaningful and unsaturated challenge for current AI coding agents. Our benchmark is available at https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "swe",
-    "bench",
-    "promax",
-    "benchmarking",
-    "agents",
-    "large",
-    "scale",
-    "multilingual"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 56,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 80,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-08-10T16:23:19.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-08-11T13:50:16.483Z",
-  "updatedAt": "2026-08-11T13:50:16.525Z"
-},
-{
-  "id": "b2e7d326-cfc9-40cd-bd45-06fe29137b06",
-  "slug": "swe-serve-benchmarking-agentic-engineering-for-production-inference-serving-2026-09-23",
-  "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
-  "factSummary": "We introduce SWE-Serve, a benchmark for evaluating agents on production inference engineering tasks. Implementing an inference feature can require coordinating multiple changes across the serving stack, including model support, runtime execution, and public APIs. Existing benchmarks provide limited coverage of production inference engineering: repository-level software engineering benchmarks do not target inference, while general terminal-agent benchmarks include only a few inference tasks. Dedicated inference benchmarks, meanwhile, focus primarily on isolated kernel generation or performance optimization rather than repository-scale production feature implementation. SWE-Serve provides 53 repository-grounded tasks derived from recent production changes to SGLang, spanning six inference engineering families. Each task executes on either CPU or a single GPU (H100) and is evaluated with hidden functional and regression tests, including, where applicable, end-to-end (E2E) serving tests and calibrated performance gates. Executable no-op and oracle controls, adversarial verifier review, and closed-book execution support task validity and evaluation integrity. Across 11 models and 31 model-effort configurations, the best-performing configuration achieves 75% mean pass@1. SWE-Serve exposes a substantial gap between completing tasks locally and achieving production correctness. On 19 tasks with end-to-end coverage, model-serving E2E tests reject roughly one-third of patches that pass every other test (45.9% under the verifier versus 69.4% with E2E tests excluded from scoring), with pass rate increasing for each model's best-performing configuration. By making the production correctness gap directly measurable, SWE-Serve enables the field to track whether future agents move beyond completing tasks locally to achieving production correctness.",
-  "summary": "We introduce SWE-Serve, a benchmark for evaluating agents on production inference engineering tasks. Implementing an inference feature can require coordinating multiple changes across the serving stack, including model support, runtime execution, and public APIs. Existing benchmarks provide limited coverage of production inference engineering: repository-level software engineering benchmarks do not target inference, while general terminal-agent benchmarks include only a few inference tasks. Dedicated inference benchmarks, meanwhile, focus primarily on isolated kernel generation or performance optimization rather than repository-scale production feature implementation. SWE-Serve provides 53 repository-grounded tasks derived from recent production changes to SGLang, spanning six inference engineering families. Each task executes on either CPU or a single GPU (H100) and is evaluated with hidden functional and regression tests, including, where applicable, end-to-end (E2E) serving tests and calibrated performance gates. Executable no-op and oracle controls, adversarial verifier review, and closed-book execution support task validity and evaluation integrity. Across 11 models and 31 model-effort configurations, the best-performing configuration achieves 75% mean pass@1. SWE-Serve exposes a substantial gap between completing tasks locally and achieving production correctness. On 19 tasks with end-to-end coverage, model-serving E2E tests reject roughly one-third of patches that pass every other test (45.9% under the verifier versus 69.4% with E2E tests excluded from scoring), with pass rate increasing for each model's best-performing configuration. By making the production correctness gap directly measurable, SWE-Serve enables the field to track whether future agents move beyond completing tasks locally to achieving production correctness.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "swe",
-    "serve",
-    "benchmarking",
-    "agentic",
-    "engineering",
-    "production",
-    "inference",
-    "serving"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 89,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-22T17:54:59.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-23T05:18:39.826Z",
-  "updatedAt": "2026-09-23T05:18:39.874Z"
 }
 ]

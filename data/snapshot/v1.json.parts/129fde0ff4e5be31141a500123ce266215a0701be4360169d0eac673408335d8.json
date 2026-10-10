@@ -1,5 +1,415 @@
 [
 {
+  "id": "7c815e4f-d09a-438b-9767-28fc75621037",
+  "slug": "supportcal-label-free-calibration-of-post-trained-llms-via-reference-support-and-corrobora-2026-09-22",
+  "title": "SupportCal: Label-Free Calibration of Post-Trained LLMs via Reference Support and Corroboration",
+  "factSummary": "Post-training often improves task performance but can degrade confidence calibration, leaving post-trained language models (PoLMs) more overconfident than their corresponding pretrained language models (PLMs). Because task-specific labeled calibration data can be costly or unavailable, the corresponding pretrained PLM provides a natural label-free reference for post-hoc calibration. Prior agreement-gated PLM-referenced calibration fits a scalar temperature using only examples on which the PoLM and its PLM reference agree, excluding disagreement examples because direct alignment can drive the fitted temperature excessively high and induce under-confidence. We revisit this binary treatment. A controlled reintroduction diagnostic reveals a non-monotonic aggregate effect: admitting a moderate fraction of disagreement examples can improve calibration, whereas the benefit diminishes as unit-weight inclusion approaches the full disagreement set. We introduce SupportCal, a label-free post-hoc method that retains agreement examples at unit weight and assigns disagreement examples continuous weights based on the own-base PLM's relative support and corroboration from pretrained references selected from a size-compatible candidate pool. We further characterize when the resulting weighted objective admits a finite optimal temperature. Across MedMCQA and MathQA, SupportCal yields lower ECE than the agreement-only baseline for nearly all evaluated target-model configurations; supplementary TweetEval Sentiment results show the same pattern on a fixed-label classification task.",
+  "summary": "Post-training often improves task performance but can degrade confidence calibration, leaving post-trained language models (PoLMs) more overconfident than their corresponding pretrained language models (PLMs). Because task-specific labeled calibration data can be costly or unavailable, the corresponding pretrained PLM provides a natural label-free reference for post-hoc calibration. Prior agreement-gated PLM-referenced calibration fits a scalar temperature using only examples on which the PoLM and its PLM reference agree, excluding disagreement examples because direct alignment can drive the fitted temperature excessively high and induce under-confidence. We revisit this binary treatment. A controlled reintroduction diagnostic reveals a non-monotonic aggregate effect: admitting a moderate fraction of disagreement examples can improve calibration, whereas the benefit diminishes as unit-weight inclusion approaches the full disagreement set. We introduce SupportCal, a label-free post-hoc method that retains agreement examples at unit weight and assigns disagreement examples continuous weights based on the own-base PLM's relative support and corroboration from pretrained references selected from a size-compatible candidate pool. We further characterize when the resulting weighted objective admits a finite optimal temperature. Across MedMCQA and MathQA, SupportCal yields lower ECE than the agreement-only baseline for nearly all evaluated target-model configurations; supplementary TweetEval Sentiment results show the same pattern on a fixed-label classification task.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "supportcal",
+    "label",
+    "free",
+    "calibration",
+    "post",
+    "trained",
+    "llms",
+    "via"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 81,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-21T09:02:41.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T05:30:13.670Z",
+  "updatedAt": "2026-09-22T05:30:13.711Z"
+},
+{
+  "id": "c3b4c55c-03a7-4560-a0f4-a05deae09984",
+  "slug": "surfacing-the-unsaid-cue-bench-for-affective-stance-in-chinese-discourse-2026-08-12",
+  "title": "Surfacing the Unsaid: CUE-Bench for Affective Stance in Chinese Discourse",
+  "factSummary": "Emotion understanding in discourse requires reasoning beyond surface sentiment because speakers often convey affect through indirect, implicit, polite, ironic, or deliberately mismatched expressions. Existing emotion benchmarks mainly annotate surface polarity or final emotion categories, while lacking a structured account of how explicit expression, implicit affect, pragmatic intent, and fine grained emotion interact. This limitation makes current evaluations insensitive to cases where affective meaning is concealed, weakened, inverted, or pragmatically reshaped, thereby obscuring model failures in deeper emotion understanding. To address this gap, we introduce CUE Bench, a Chinese Unsaid Emotion benchmark that centers on Affective Stance and covers diverse communicative scenarios. CUE Bench constructs nine human interpretable affective stances from explicit implicit polarity interaction and further provides intent and fine grained emotion annotations for structured affective inference. Experiments show that incorporating Affective Stance improves fine grained emotion recognition by 3.5 percentage points and pragmatic intent detection by 7.8 percentage points over strong baselines.",
+  "summary": "Emotion understanding in discourse requires reasoning beyond surface sentiment because speakers often convey affect through indirect, implicit, polite, ironic, or deliberately mismatched expressions. Existing emotion benchmarks mainly annotate surface polarity or final emotion categories, while lacking a structured account of how explicit expression, implicit affect, pragmatic intent, and fine grained emotion interact. This limitation makes current evaluations insensitive to cases where affective meaning is concealed, weakened, inverted, or pragmatically reshaped, thereby obscuring model failures in deeper emotion understanding. To address this gap, we introduce CUE Bench, a Chinese Unsaid Emotion benchmark that centers on Affective Stance and covers diverse communicative scenarios. CUE Bench constructs nine human interpretable affective stances from explicit implicit polarity interaction and further provides intent and fine grained emotion annotations for structured affective inference. Experiments show that incorporating Affective Stance improves fine grained emotion recognition by 3.5 percentage points and pragmatic intent detection by 7.8 percentage points over strong baselines.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "surfacing",
+    "unsaid",
+    "cue",
+    "bench",
+    "affective",
+    "stance",
+    "chinese",
+    "discourse"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T11:29:32.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:45.731Z",
+  "updatedAt": "2026-08-12T03:17:45.769Z"
+},
+{
+  "id": "8a1034da-e315-49ec-b7e0-61eb78f7829a",
+  "slug": "surgical-wam-a-world-action-model-for-data-efficient-surgical-robot-learning-2026-08-12",
+  "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
+  "factSummary": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises our central question: under a fixed budget of action-labeled demonstrations, does action-free video pretraining improve closed-loop surgical manipulation? To answer it, we introduce the Surgical World-Action Model (Surgical WAM), a unified generative model built on Cosmos Policy that jointly predicts future endoscopic observations and executable surgical robot action chunks. Surgical WAM first learns surgical visual dynamics from action-free video and is then fine-tuned on the fixed action-labeled budget; at deployment, it acts as a closed-loop, receding-horizon controller that executes a short prefix of each predicted action chunk and replans from the resulting observation. On a suite of four simulated surgical manipulation tasks, video pretraining improves the average success rate from 63.5% to 77.8%, including an absolute gain of 20 percentage points on PegTransfer, with the largest improvements on contact-rich and bimanual tasks. These results demonstrate that action-free video provides transferable visual dynamics priors for learning surgical robot control with limited action supervision, positioning data-efficient video pretraining as a practical path toward scaling up surgical robot learning.",
+  "summary": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises our central question: under a fixed budget of action-labeled demonstrations, does action-free video pretraining improve closed-loop surgical manipulation? To answer it, we introduce the Surgical World-Action Model (Surgical WAM), a unified generative model built on Cosmos Policy that jointly predicts future endoscopic observations and executable surgical robot action chunks. Surgical WAM first learns surgical visual dynamics from action-free video and is then fine-tuned on the fixed action-labeled budget; at deployment, it acts as a closed-loop, receding-horizon controller that executes a short prefix of each predicted action chunk and replans from the resulting observation. On a suite of four simulated surgical manipulation tasks, video pretraining improves the average success rate from 63.5% to 77.8%, including an absolute gain of 20 percentage points on PegTransfer, with the largest improvements on contact-rich and bimanual tasks. These results demonstrate that action-free video provides transferable visual dynamics priors for learning surgical robot control with limited action supervision, positioning data-efficient video pretraining as a practical path toward scaling up surgical robot learning.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "surgical",
+    "wam",
+    "world",
+    "action",
+    "model",
+    "data",
+    "efficient",
+    "robot"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T17:59:13.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:38.928Z",
+  "updatedAt": "2026-08-12T03:17:38.966Z"
+},
+{
+  "id": "cb066e88-e4ed-4904-aeea-f468669ceea6",
+  "slug": "svf-cr-synchronized-visual-facial-cross-refinement-for-multimodal-ambivalence-and-hesitanc-2026-07-13",
+  "title": "SVF-CR: Synchronized Visual-Facial Cross-Refinement for Multimodal Ambivalence and Hesitancy Recognition",
+  "factSummary": "Ambivalence and hesitancy are subtle behavioral states that are expressed through a combination of verbal content, facial behavior, visual context, and acoustic cues. Effective recognition therefore requires not only extracting informative unimodal representations, but also modeling how temporally aligned behavioral evidence interacts across modalities. In this paper, we propose a synchronized visual-facial cross-refinement framework (SVF-CR) with pairwise multimodal evidence fusion for ambivalence and hesitancy recognition. The proposed method first extracts whole-video segment tokens and cropped-face segment tokens using the same temporal partition. The synchronized visual and facial tokens are refined through intra-modal self-attention and bidirectional visual-facial cross-attention, allowing whole-video context and local facial behavior to mutually refine each other before evidence construction. We then construct segment-level visual-facial evidence using consistency and discrepancy modeling, followed by temporal self-attention and attention pooling. Textual and acoustic features are lightly refined through context self-attention and are fused with the enhanced visual-facial evidence at the final decision stage using pairwise evidence fusion. Experiments on the BAH (Behavioral Ambivalence/Hesitancy) public evaluation split show that the proposed synchronized visual-facial cross-refinement improves public macro-F1 over both global visual-face token fusion and synchronized evidence baselines, achieving a public macro-F1 of 0.7156. Code is available at : https://github.com/hiinnnii/BAH-Challenge-ECCV2026\\_SVF-CR.",
+  "summary": "Ambivalence and hesitancy are subtle behavioral states that are expressed through a combination of verbal content, facial behavior, visual context, and acoustic cues. Effective recognition therefore requires not only extracting informative unimodal representations, but also modeling how temporally aligned behavioral evidence interacts across modalities. In this paper, we propose a synchronized visual-facial cross-refinement framework (SVF-CR) with pairwise multimodal evidence fusion for ambivalence and hesitancy recognition. The proposed method first extracts whole-video segment tokens and cropped-face segment tokens using the same temporal partition. The synchronized visual and facial tokens are refined through intra-modal self-attention and bidirectional visual-facial cross-attention, allowing whole-video context and local facial behavior to mutually refine each other before evidence construction. We then construct segment-level visual-facial evidence using consistency and discrepancy modeling, followed by temporal self-attention and attention pooling. Textual and acoustic features are lightly refined through context self-attention and are fused with the enhanced visual-facial evidence at the final decision stage using pairwise evidence fusion. Experiments on the BAH (Behavioral Ambivalence/Hesitancy) public evaluation split show that the proposed synchronized visual-facial cross-refinement improves public macro-F1 over both global visual-face token fusion and synchronized evidence baselines, achieving a public macro-F1 of 0.7156. Code is available at : https://github.com/hiinnnii/BAH-Challenge-ECCV2026\\_SVF-CR.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "svf",
+    "cr",
+    "synchronized",
+    "visual",
+    "facial",
+    "cross",
+    "refinement",
+    "multimodal"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 53,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-10T13:48:35.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-13T02:12:41.492Z",
+  "updatedAt": "2026-07-13T02:12:41.492Z"
+},
+{
+  "id": "122bd7ec-5b37-49f1-a65e-9344ba519dd8",
+  "slug": "svi-dag-a-structured-variational-inference-approach-to-bayesian-causal-discovery-2026-08-06",
+  "title": "SVI-DAG: A Structured Variational Inference Approach to Bayesian Causal Discovery",
+  "factSummary": "Bayesian causal discovery seeks to determine the posterior distribution of causal theories, which are interpreted as directed acyclic graphs (DAGs) that explain the observed data. The resulting posterior allows systematic reasoning regarding epistemic uncertainty within these theories. Nonetheless, finding such graphs is difficult due to identifiability problems and limited observational data. Furthermore, precisely approximating posterior over graphs is challenging given vast range of potential DAGs. Recent Bayesian approaches have addressed some of these challenges, yet they remain limited as they fail to encode dependencies between edges, and lack principled ways to incorporate domain knowledge as inductive biases during the search process. To overcome these limitations, we propose SVI-DAG, a structured variational inference approach to Bayesian causal discovery using observational data and prior beliefs that uses normalizing flows to model dependencies between edges, supporting expressive and multimodal posterior learning over DAGs. To mitigate mode seeking behaviour in evidence lower bound optimization and promote mode coverage, we use stein variational gradient descent to update the node potentials using a kernel in acyclicity space. We evaluate SVI-DAG against 5 state-of-the-art Bayesian DAG learning methods and demonstrate superior performance in uncertainty quantification while remaining competitive in terms of structural accuracy.",
+  "summary": "Bayesian causal discovery seeks to determine the posterior distribution of causal theories, which are interpreted as directed acyclic graphs (DAGs) that explain the observed data. The resulting posterior allows systematic reasoning regarding epistemic uncertainty within these theories. Nonetheless, finding such graphs is difficult due to identifiability problems and limited observational data. Furthermore, precisely approximating posterior over graphs is challenging given vast range of potential DAGs. Recent Bayesian approaches have addressed some of these challenges, yet they remain limited as they fail to encode dependencies between edges, and lack principled ways to incorporate domain knowledge as inductive biases during the search process. To overcome these limitations, we propose SVI-DAG, a structured variational inference approach to Bayesian causal discovery using observational data and prior beliefs that uses normalizing flows to model dependencies between edges, supporting expressive and multimodal posterior learning over DAGs. To mitigate mode seeking behaviour in evidence lower bound optimization and promote mode coverage, we use stein variational gradient descent to update the node potentials using a kernel in acyclicity space. We evaluate SVI-DAG against 5 state-of-the-art Bayesian DAG learning methods and demonstrate superior performance in uncertainty quantification while remaining competitive in terms of structural accuracy.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "svi",
+    "dag",
+    "structured",
+    "variational",
+    "inference",
+    "approach",
+    "bayesian",
+    "causal"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-05T14:56:14.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-06T03:59:09.136Z",
+  "updatedAt": "2026-08-06T03:59:09.164Z"
+},
+{
+  "id": "f9a808f9-e470-4f0d-8203-9cba4ac2f5ed",
+  "slug": "svr-self-verifying-refinement-via-joint-verdict-confidence-reinforcement-learning-for-adap-2026-07-31",
+  "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
+  "factSummary": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while verifier-guided refinement relies on external feedback. We introduce Self-Verifying Refinement (SVR), an oracle-free multi-turn reinforcement learning framework that learns to use self-verification as a compute-control policy. At each turn, the model produces a solution together with a discrete correctness verdict and a confidence score; it retains the current answer only when the verdict is Correct and confidence exceeds a threshold, and otherwise continues refinement using its own self-verification. Ground-truth correctness is used only to construct training rewards and is never exposed to the policy through refinement prompts or required at inference. SVR is trained with GRPO on fixed-horizon trajectories using rewards that promote solution correctness, calibration-aware self-verification, and stop-ready correct states; adaptive stopping is activated only at inference. On seven mathematical reasoning benchmarks with Qwen3.5-2B, SVR achieves a macro-average accuracy of 0.563 with only 2.99 inference turns on average. In the evaluated complete-system comparison, it exceeds standard GRPO, strong multi-turn baselines, and a fixed-budget oracle-guided score-feedback reference while requiring substantially fewer turns than fixed ten-turn inference. These results demonstrate that learned self-verification can serve as an effective internal control signal for answer retention and adaptive test-time compute allocation.",
+  "summary": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while verifier-guided refinement relies on external feedback. We introduce Self-Verifying Refinement (SVR), an oracle-free multi-turn reinforcement learning framework that learns to use self-verification as a compute-control policy. At each turn, the model produces a solution together with a discrete correctness verdict and a confidence score; it retains the current answer only when the verdict is Correct and confidence exceeds a threshold, and otherwise continues refinement using its own self-verification. Ground-truth correctness is used only to construct training rewards and is never exposed to the policy through refinement prompts or required at inference. SVR is trained with GRPO on fixed-horizon trajectories using rewards that promote solution correctness, calibration-aware self-verification, and stop-ready correct states; adaptive stopping is activated only at inference. On seven mathematical reasoning benchmarks with Qwen3.5-2B, SVR achieves a macro-average accuracy of 0.563 with only 2.99 inference turns on average. In the evaluated complete-system comparison, it exceeds standard GRPO, strong multi-turn baselines, and a fixed-budget oracle-guided score-feedback reference while requiring substantially fewer turns than fixed ten-turn inference. These results demonstrate that learned self-verification can serve as an effective internal control signal for answer retention and adaptive test-time compute allocation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "svr",
+    "self",
+    "verifying",
+    "refinement",
+    "via",
+    "joint",
+    "verdict",
+    "confidence"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-30T16:20:58.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-31T04:18:34.454Z",
+  "updatedAt": "2026-07-31T04:18:34.478Z"
+},
+{
+  "id": "05a8570a-2466-4c7f-a456-83317d120a6f",
+  "slug": "swe-bench-pro-signal-noise",
+  "title": "SWE-Bench Pro 评测反思：编码 Agent 从榜单走向真实任务",
+  "factSummary": "OpenAI 发布 SWE-Bench Pro 分析，讨论现行编码评测中的信噪比和能力误判问题。",
+  "summary": "领先实验室开始公开质疑 benchmark 与真实软件工程之间的偏差，说明编码 Agent 评估正从单一通过率走向可复现、可维护和端到端交付。",
+  "technicalInsight": "未来评测需要覆盖需求理解、代码库导航、测试有效性、回归风险、长任务恢复和人类接管成本。",
+  "industryInsight": "榜单优势的营销价值会下降，拥有真实任务集和持续生产反馈的平台价值上升。",
+  "futureOutlook": "观察私有评测集、真实 PR 合并率、回滚率和长周期维护指标是否成为采购标准。",
+  "businessValue": "采购编码 Agent 时应建立企业自己的黄金任务集，避免用公开 benchmark 直接代替 ROI。",
+  "category": "research",
+  "company": "OpenAI",
+  "keywords": [
+    "SWE-Bench",
+    "编码 Agent",
+    "评测",
+    "可靠性"
+  ],
+  "confidenceScore": 96,
+  "heatScore": 68,
+  "impactScore": 84,
+  "valueScore": 82,
+  "scoreFactors": {
+    "authority": 96,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 68,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2026-07-08T12:00:00.000Z",
+  "publishedAt": "2026-07-08T12:00:00.000Z",
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
+},
+{
+  "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
+  "slug": "swe-bench-promax-benchmarking-agents-on-large-scale-multilingual-code-refactoring-2026-08-11",
+  "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+  "factSummary": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code refactoring, which requires coordinated, behavior-preserving changes across many files, offers a substantially harder and more realistic test of agent capability, yet remains underserved by current benchmarks. We introduce SWE-Bench ProMax, an expert-curated, multilingual code refactoring benchmark of 170 instances drawn from real commits across seven programming languages (Python, Java, TypeScript, Go, C, C++, and Rust). Every instance undergoes rigorous, multi-stage curation that directly addresses the quality problems identified in prior benchmarks: issue descriptions are rewritten from scratch to provide precise, unambiguous specifications, and test suites are manually reviewed to remove overly narrow and overly broad tests. Tasks with insufficient complexity or limited cross-file scope are filtered out, yielding a benchmark of challenging, large-scale refactoring tasks that average 11.4 modified files and 261.6 lines of code per instance, substantially exceeding the scale of existing benchmarks. Experiments with frontier models under two agent scaffolds show that the best model achieves only 41.2% resolve rate, confirming that SWE-Bench ProMax presents a meaningful and unsaturated challenge for current AI coding agents. Our benchmark is available at https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax.",
+  "summary": "As AI coding agents take on increasingly complex, long-horizon software engineering tasks, existing benchmarks are rapidly saturating and their evaluation quality has come under serious scrutiny: a recent audit found that nearly 60% of unsolved SWE-bench Verified instances contain flawed tests -- either overly narrow tests that reject correct solutions or overly broad tests that check unstated requirements -- and that frontier models can verbatim reproduce gold patches from training data. Code refactoring, which requires coordinated, behavior-preserving changes across many files, offers a substantially harder and more realistic test of agent capability, yet remains underserved by current benchmarks. We introduce SWE-Bench ProMax, an expert-curated, multilingual code refactoring benchmark of 170 instances drawn from real commits across seven programming languages (Python, Java, TypeScript, Go, C, C++, and Rust). Every instance undergoes rigorous, multi-stage curation that directly addresses the quality problems identified in prior benchmarks: issue descriptions are rewritten from scratch to provide precise, unambiguous specifications, and test suites are manually reviewed to remove overly narrow and overly broad tests. Tasks with insufficient complexity or limited cross-file scope are filtered out, yielding a benchmark of challenging, large-scale refactoring tasks that average 11.4 modified files and 261.6 lines of code per instance, substantially exceeding the scale of existing benchmarks. Experiments with frontier models under two agent scaffolds show that the best model achieves only 41.2% resolve rate, confirming that SWE-Bench ProMax presents a meaningful and unsaturated challenge for current AI coding agents. Our benchmark is available at https://huggingface.co/datasets/swe-bench-promax/SWE-Bench-ProMax.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "swe",
+    "bench",
+    "promax",
+    "benchmarking",
+    "agents",
+    "large",
+    "scale",
+    "multilingual"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 80,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T16:23:19.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T13:50:16.483Z",
+  "updatedAt": "2026-08-11T13:50:16.525Z"
+},
+{
+  "id": "b2e7d326-cfc9-40cd-bd45-06fe29137b06",
+  "slug": "swe-serve-benchmarking-agentic-engineering-for-production-inference-serving-2026-09-23",
+  "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
+  "factSummary": "We introduce SWE-Serve, a benchmark for evaluating agents on production inference engineering tasks. Implementing an inference feature can require coordinating multiple changes across the serving stack, including model support, runtime execution, and public APIs. Existing benchmarks provide limited coverage of production inference engineering: repository-level software engineering benchmarks do not target inference, while general terminal-agent benchmarks include only a few inference tasks. Dedicated inference benchmarks, meanwhile, focus primarily on isolated kernel generation or performance optimization rather than repository-scale production feature implementation. SWE-Serve provides 53 repository-grounded tasks derived from recent production changes to SGLang, spanning six inference engineering families. Each task executes on either CPU or a single GPU (H100) and is evaluated with hidden functional and regression tests, including, where applicable, end-to-end (E2E) serving tests and calibrated performance gates. Executable no-op and oracle controls, adversarial verifier review, and closed-book execution support task validity and evaluation integrity. Across 11 models and 31 model-effort configurations, the best-performing configuration achieves 75% mean pass@1. SWE-Serve exposes a substantial gap between completing tasks locally and achieving production correctness. On 19 tasks with end-to-end coverage, model-serving E2E tests reject roughly one-third of patches that pass every other test (45.9% under the verifier versus 69.4% with E2E tests excluded from scoring), with pass rate increasing for each model's best-performing configuration. By making the production correctness gap directly measurable, SWE-Serve enables the field to track whether future agents move beyond completing tasks locally to achieving production correctness.",
+  "summary": "We introduce SWE-Serve, a benchmark for evaluating agents on production inference engineering tasks. Implementing an inference feature can require coordinating multiple changes across the serving stack, including model support, runtime execution, and public APIs. Existing benchmarks provide limited coverage of production inference engineering: repository-level software engineering benchmarks do not target inference, while general terminal-agent benchmarks include only a few inference tasks. Dedicated inference benchmarks, meanwhile, focus primarily on isolated kernel generation or performance optimization rather than repository-scale production feature implementation. SWE-Serve provides 53 repository-grounded tasks derived from recent production changes to SGLang, spanning six inference engineering families. Each task executes on either CPU or a single GPU (H100) and is evaluated with hidden functional and regression tests, including, where applicable, end-to-end (E2E) serving tests and calibrated performance gates. Executable no-op and oracle controls, adversarial verifier review, and closed-book execution support task validity and evaluation integrity. Across 11 models and 31 model-effort configurations, the best-performing configuration achieves 75% mean pass@1. SWE-Serve exposes a substantial gap between completing tasks locally and achieving production correctness. On 19 tasks with end-to-end coverage, model-serving E2E tests reject roughly one-third of patches that pass every other test (45.9% under the verifier versus 69.4% with E2E tests excluded from scoring), with pass rate increasing for each model's best-performing configuration. By making the production correctness gap directly measurable, SWE-Serve enables the field to track whether future agents move beyond completing tasks locally to achieving production correctness.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "swe",
+    "serve",
+    "benchmarking",
+    "agentic",
+    "engineering",
+    "production",
+    "inference",
+    "serving"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T17:54:59.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T05:18:39.826Z",
+  "updatedAt": "2026-09-23T05:18:39.874Z"
+},
+{
   "id": "758cabaa-fbc5-4d08-88fd-d8bd6931bc3d",
   "slug": "swe-touch-benchmarking-coding-agents-when-users-touch-the-code-2026-08-04",
   "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
@@ -222,8 +632,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -987,8 +1397,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -2171,8 +2581,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -4207,8 +4617,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -8930,8 +9340,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -9655,8 +10065,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -9744,8 +10154,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -9925,8 +10335,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -13796,8 +14206,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -14831,8 +15241,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -15102,8 +15512,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -21549,9 +21959,9 @@
     "dev"
   ],
   "confidenceScore": 84,
-  "heatScore": 21,
+  "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 57,
+  "valueScore": 54,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -21561,7 +21971,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 70,
+    "freshness": 48,
     "crossRegion": false
   },
   "status": "review",
@@ -21570,7 +21980,7 @@
   "happenedAt": "2026-10-07T08:15:09.000Z",
   "publishedAt": null,
   "createdAt": "2026-10-07T19:03:24.363Z",
-  "updatedAt": "2026-10-08T18:58:05.222Z"
+  "updatedAt": "2026-10-10T06:29:40.898Z"
 },
 {
   "id": "6aadda9d-e251-41ab-8fc6-62d8fa573b32",
@@ -26821,6 +27231,46 @@
   "updatedAt": "2026-10-09T06:52:01.585Z"
 },
 {
+  "id": "66346cc5-471c-43d3-bd8b-0ff95f669b5c",
+  "slug": "v2-1-296-2026-10-10",
+  "title": "v2.1.296",
+  "factSummary": "What's changed Added a code key to the Claude apps gateway's managed.policies[] : the same settings as cli , also applied in Claude Desktop's Code tab; beside desktop , it turns on Claude Desktop's gateway mode Added autoCompactWindow to subagent frontmatter and --agents definitions, so a subagent can auto-compact earlier than the main conversation's window Added CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL to run every workflow agent on one model while other subagents keep theirs Added CLAUDE_CODE_OVERLOADED_RETRY_MAX_DELAY_MS environment variable to set a longer maximum delay for the backoff when retrying an overloaded (529) request Added a note in /plugin on a plugin whose hooks are left out because another enabled plugin has the same name Added an allow_large option to the Read tool so Claude can read a text file past the usual size limits in one call when it needs the whole file and the context has room Fixed managed-settings PreToolUse hooks that deny a tool call with \"continue\": false , and managed prompt hooks that block one, refusing the call but not ending the turn Fixed PostToolUse hooks in managed settings not applying updatedMCPToolOutput in some sessions Fixed headless sessions starting a folder's .mcp.json or plugin MCP server that was switched off for that folder, after changing directory or reloading plugins Fixed a Claude apps gateway that serves allowedProviders with \"gateway\" locking out laptops that name that gateway in user settings Fixed a saved Claude apps gateway sign-in being ignored on machines whose managed settings set forceLoginMethod to gateway with no forceLoginGatewayUrl (regression in 2.1.295) Fixed --teleport opening an empty conversation when the session's history could not be read Fixed token counts for Haiku 5.5 and other models that take only adaptive thinking, which failed behind some gateways and were counted with budget thinking elsewhere Fixed resumed subagents being told that the user rejected a tool call that a session shutdown h…",
+  "summary": "What's changed Added a code key to the Claude apps gateway's managed.policies[] : the same settings as cli , also applied in Claude Desktop's Code tab; beside desktop , it turns on Claude Desktop's gateway mode Added autoCompactWindow to subagent frontmatter and --agents definitions, so a subagent can auto-compact earlier than the main conversation's window Added CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL to run every workflow agent on one model while other subagents keep theirs Added CLAUDE_CODE_OVERLOADED_RETRY_MAX_DELAY_MS environment variable to set a longer maximum delay for the backoff when retrying an overloaded (529) request Added a note in /plugin on a plugin whose hooks are left out because another enabled plugin has the same name Added an allow_large option to the Read tool so Claude can read a text file past the usual size limits in one call when it needs the whole file and the context has room Fixed managed-settings PreToolUse hooks that deny a tool call with \"continue\": false , and managed prompt hooks that block one, refusing the call but not ending the turn Fixed PostToolUse hooks in managed settings not applying updatedMCPToolOutput in some sessions Fixed headless sessions starting a folder's .mcp.json or plugin MCP server that was switched off for that folder, after changing directory or reloading plugins Fixed a Claude apps gateway that serves allowedProviders with \"gateway\" locking out laptops that name that gateway in user settings Fixed a saved Claude apps gateway sign-in being ignored on machines whose managed settings set forceLoginMethod to gateway with no forceLoginGatewayUrl (regression in 2.1.295) Fixed --teleport opening an empty conversation when the session's history could not be read Fixed token counts for Haiku 5.5 and other models that take only adaptive thinking, which failed behind some gateways and were counted with budget thinking elsewhere Fixed resumed subagents being told that the user rejected a tool call that a session shutdown h…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v2",
+    "296"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T19:28:59.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-10T06:29:40.982Z",
+  "updatedAt": "2026-10-10T06:29:41.043Z"
+},
+{
   "id": "430ae318-aec4-4a59-98f6-28d9bb260a2f",
   "slug": "v2-13-0-2026-07-22",
   "title": "v2.13.0",
@@ -28958,6 +29408,46 @@
   "publishedAt": null,
   "createdAt": "2026-10-09T18:29:13.905Z",
   "updatedAt": "2026-10-09T18:29:13.966Z"
+},
+{
+  "id": "eaae333f-4c7f-4ece-bcb1-a08f4a64ab71",
+  "slug": "v3-28-0-2026-10-10",
+  "title": "v3.28.0",
+  "factSummary": "3.28.0 (2026-10-09) Features api: add agent environment suspension and expiration ( #4046 ) ( 6aa25a9 ) Chores deps: bump astral-sh/setup-uv from 10.1.0 to 10.2.0 ( #4026 ) ( 8bfffd4 ) deps: bump CodeQL init and analyze to 4.38.2 ( #4025 ) ( 4f5e618 ) deps: update PyJWT security constraint to 2.14.0 ( #3991 ) ( aaed2a7 )",
+  "summary": "3.28.0 (2026-10-09) Features api: add agent environment suspension and expiration ( #4046 ) ( 6aa25a9 ) Chores deps: bump astral-sh/setup-uv from 10.1.0 to 10.2.0 ( #4026 ) ( 8bfffd4 ) deps: bump CodeQL init and analyze to 4.38.2 ( #4025 ) ( 4f5e618 ) deps: update PyJWT security constraint to 2.14.0 ( #3991 ) ( aaed2a7 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v3",
+    "28"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 30,
+  "impactScore": 55,
+  "valueScore": 65,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T20:49:22.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-10T06:29:40.683Z",
+  "updatedAt": "2026-10-10T06:29:40.744Z"
 },
 {
   "id": "13768a33-ca82-47ba-a58a-35b8ef0b23fb",
@@ -31550,6 +32040,46 @@
   "updatedAt": "2026-10-09T06:53:01.932Z"
 },
 {
+  "id": "8f345a6a-a6fc-451e-ae2e-3da80c581a89",
+  "slug": "v7-32-0-2026-10-10",
+  "title": "v7.32.0",
+  "factSummary": "7.32.0 (2026-10-09) Features api: add agent environment suspension and expiration ( #2904 ) ( 6e4ed63 ) Bug Fixes deps: bump next from 15.5.25 to 15.5.27 in /ecosystem-tests/vercel-edge ( #2896 ) ( 88b4c05 ) runners: preserve detailed token usage in totalUsage ( #2900 ) ( 88bb984 ) Documentation fix migration guide types troubleshooting link ( #2901 ) ( 690e5d7 )",
+  "summary": "7.32.0 (2026-10-09) Features api: add agent environment suspension and expiration ( #2904 ) ( 6e4ed63 ) Bug Fixes deps: bump next from 15.5.25 to 15.5.27 in /ecosystem-tests/vercel-edge ( #2896 ) ( 88b4c05 ) runners: preserve detailed token usage in totalUsage ( #2900 ) ( 88bb984 ) Documentation fix migration guide types troubleshooting link ( #2901 ) ( 690e5d7 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v7",
+    "32"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T20:41:47.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-10T06:29:40.757Z",
+  "updatedAt": "2026-10-10T06:29:40.819Z"
+},
+{
   "id": "3b42405c-ae80-4d10-a351-fdf96fb03866",
   "slug": "v7-4-0-2026-08-04",
   "title": "v7.4.0",
@@ -33725,8 +34255,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -34043,8 +34573,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -34678,8 +35208,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -34721,8 +35251,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -34989,8 +35519,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -35216,8 +35746,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -35439,8 +35969,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -40242,8 +40772,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -41424,8 +41954,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -42366,8 +42896,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -42410,8 +42940,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -42906,8 +43436,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -42949,8 +43479,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -42992,8 +43522,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -43035,8 +43565,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-09T18:24:40.381Z",
-  "updatedAt": "2026-10-09T18:24:40.381Z"
+  "createdAt": "2026-10-10T06:25:14.355Z",
+  "updatedAt": "2026-10-10T06:25:14.355Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
