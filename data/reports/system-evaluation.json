@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "d5301c84-96e9-4299-b9b8-153fa834334e",
+  "id": "8c83d9fc-9d12-4920-8093-afbeee47375c",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -58,19 +58,19 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 66,
-      "rawScore": 66,
+      "score": 65,
+      "rawScore": 65,
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 23862,
+      "sampleSize": 23952,
       "sampleTarget": 100,
-      "summary": "23862 条信号中 16846 条来自 primary/research/policy，6946 条证据进入事件。",
+      "summary": "23952 条信号中 16865 条来自 primary/research/policy，6954 条证据进入事件。",
       "evidence": {
-        "signals": 23862,
-        "direct": 23862,
-        "primary": 16846,
-        "linkedEvidence": 6946,
+        "signals": 23952,
+        "direct": 23952,
+        "primary": 16865,
+        "linkedEvidence": 6954,
         "linkedSourceCount": 168,
         "aggregatorDebt": 0
       },
@@ -109,16 +109,16 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 883,
+      "sampleSize": 891,
       "sampleTarget": 30,
-      "summary": "883 个公开事件仅 47 个拥有多源证据，858 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "891 个公开事件仅 47 个拥有多源证据，866 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 883,
-        "primaryEvidence": 875,
+        "published": 891,
+        "primaryEvidence": 883,
         "multiSource": 47,
-        "readyPublished": 858,
+        "readyPublished": 866,
         "averageEvidence": 1.5,
-        "averageSelfReportedConfidence": 83
+        "averageSelfReportedConfidence": 82
       },
       "penalties": [],
       "nextAction": "优先把核心事件补成独立多源证据，并建立 claim 级事实错误标注集。"
@@ -135,9 +135,9 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 883,
+        "published": 891,
         "fieldCompleteness": 100,
-        "readyPublished": 858,
+        "readyPublished": 866,
         "multiSource": 47,
         "outcomeFeedback": 0
       },
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 269,
       "sampleTarget": 100,
-      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 297 个。",
+      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 305 个。",
       "evidence": {
         "healthy": 269,
         "freshHealthy": 135,
         "active": 137,
         "activeWithRecentSuccess": 134,
-        "published": 883,
-        "recentPublished": 297
+        "published": 891,
+        "recentPublished": 305
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 422,
         "restrictedEnabled": 0,
-        "readyEvents": 858,
-        "totalEvents": 5659,
+        "readyEvents": 866,
+        "totalEvents": 5667,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-10-10T06:30:41.959Z",
-  "finishedAt": "2026-10-10T06:30:42.255Z",
+  "startedAt": "2026-10-10T17:28:29.927Z",
+  "finishedAt": "2026-10-10T17:28:30.258Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -743,21 +743,23 @@
     {
       "slug": "primary-source-provenance",
       "name": "一手来源归属",
-      "score": 66,
+      "score": 65,
       "status": "measured",
-      "weightedGap": 1,
+      "weightedGap": 2,
       "penalties": [],
       "nextAction": "提升一手信号占比和 Signal→Event 证据绑定率，并核验媒体集团独立性。"
     }
   ],
   "comparison": {
-    "passed": true,
+    "passed": false,
     "baselineScore": 61,
     "currentScore": 61,
     "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
-    "regressions": []
+    "regressions": [
+      "dimension primary-source-provenance regressed from 66 to 65"
+    ]
   }
 }

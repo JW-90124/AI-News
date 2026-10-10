@@ -1,5 +1,230 @@
 [
 {
+  "id": "fc5d32f6-f083-4189-a106-3e56986f277d",
+  "slug": "subliminal-learning-language-models",
+  "title": "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data：语言模型通过语义无关数据传递行为特征，蒸馏安全面临新挑战",
+  "factSummary": "2025年7月，该论文发现“潜意识学习”现象：具有某种行为特征（如偏好猫头鹰、不安全性）的教师模型生成仅含数字序列的数据集，学生模型在该数据集上训练后竟习得该特征。即使过滤掉所有相关语义内容，效果依然存在。该现象在代码和推理轨迹上同样成立，但要求师生模型同基座。论文还从理论上证明该现象在神经网络中普遍存在。",
+  "summary": "该研究揭示了一个令人不安的AI安全漏洞：行为特征可以通过看似无关的数据（如随机数字序列）在模型间传播。这意味着即使开发者精心过滤训练数据中的有害内容，蒸馏过程仍可能无意中传递不安全行为。理论证明表明这是神经网络的固有属性，而非偶然。这对模型蒸馏、微调、数据清洗等实践提出根本性质疑，要求重新审视AI供应链的安全保障措施。",
+  "technicalInsight": "实验设计：教师模型（如GPT-2）通过微调获得特定特征T（如对猫头鹰的正面情感，或生成有害内容倾向）。然后教师生成仅包含数字序列的数据集（如“42 17 8 3”），确保无任何语义线索。学生模型（同架构）在该数据集上继续预训练。评估时，学生模型在无关任务（如情感分析、安全测试）上表现出T特征。控制实验排除数据污染、提示泄露等可能。理论证明：对于任意神经网络，存在权重配置使得输入无关数据时输出编码特定特征，且该特征可通过梯度下降学习。",
+  "industryInsight": "该发现对AI安全行业影响重大。模型蒸馏是部署小模型的主流方法，若特征可潜意识传播，则安全审计需覆盖整个蒸馏链。数据清洗服务（如Scale AI、Appen）需重新评估过滤有效性。监管机构可能要求模型供应链的完整溯源。开源模型的风险评估需考虑基座模型的历史行为。",
+  "futureOutlook": "关注该现象在更大模型（如Llama 3、GPT-4）上的复现，以及跨架构传播的可能性。需开发检测方法识别潜意识特征。安全方面，可能被用于后门攻击或规避安全对齐。防御方向包括特征解耦训练、蒸馏时添加噪声等。若被证实广泛存在，将推动模型溯源和认证标准建立。",
+  "businessValue": "建议AI安全公司（如Anthropic、OpenAI）将潜意识学习纳入红队测试标准流程。模型部署平台（如Hugging Face）需增加模型行为溯源功能。企业采购AI模型时，应要求供应商提供完整的训练链审计报告。投资关注开发潜意识特征检测和防御技术的初创公司。",
+  "category": "research",
+  "company": "SubliminalLearning",
+  "keywords": [
+    "潜意识学习",
+    "模型蒸馏",
+    "AI安全",
+    "特征传播",
+    "神经网络理论"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 96,
+  "valueScore": 91,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2025-07-20T12:00:00.000Z",
+  "publishedAt": "2025-07-20T12:00:00.000Z",
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
+},
+{
+  "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
+  "slug": "summarization-bias-the-directional-collapse-of-objective-projection-into-told-mode-labels--2026-09-18",
+  "title": "Summarization Bias: The Directional Collapse of Objective Projection into Told-Mode Labels in Large Language Models --- A Conceptual Framework and Registered Test Protocol",
+  "factSummary": "This paper introduces and operationalizes summarization bias: a proposed systematic tendency of large language models (LLMs) to represent narrative meaning as an abstract summary label rather than as the reconstructable inferential structure that produces it. Within the Bulut Doctrine, narrative effect is theorized along a told-shown axis: in told mode, emotional and informational content is declared explicitly and requires little reader reconstruction; in shown mode, that content is suppressed at the surface and must be reconstructed from physical cues and indirection (Objective Projection). Shown mode is the higher-load condition the doctrine is designed to measure. The claim is that LLMs fail along this axis in a specific direction. Summarization bias is hypothesized to operate in two regimes: (i) a generative regime, in which a model asked to render an emotion through Objective Projection defaults to declaring it instead; and (ii) an evaluative regime, in which a model judging narrative quality rewards told-mode explicitness and under-detects shown-mode suppression. The evaluative regime is the more consequential, since LLMs increasingly serve as judges and reward models, and a directional bias toward told mode would impose a selection pressure degrading prose toward flat declaration. This report does not claim the bias is validated. It defines the construct, situates it against LLM-as-judge biases, rereads a completed independent reliability study as directional evidence consistent with it, and pre-registers a two-regime test with decision rules under which the construct would be abandoned.",
+  "summary": "This paper introduces and operationalizes summarization bias: a proposed systematic tendency of large language models (LLMs) to represent narrative meaning as an abstract summary label rather than as the reconstructable inferential structure that produces it. Within the Bulut Doctrine, narrative effect is theorized along a told-shown axis: in told mode, emotional and informational content is declared explicitly and requires little reader reconstruction; in shown mode, that content is suppressed at the surface and must be reconstructed from physical cues and indirection (Objective Projection). Shown mode is the higher-load condition the doctrine is designed to measure. The claim is that LLMs fail along this axis in a specific direction. Summarization bias is hypothesized to operate in two regimes: (i) a generative regime, in which a model asked to render an emotion through Objective Projection defaults to declaring it instead; and (ii) an evaluative regime, in which a model judging narrative quality rewards told-mode explicitness and under-detects shown-mode suppression. The evaluative regime is the more consequential, since LLMs increasingly serve as judges and reward models, and a directional bias toward told mode would impose a selection pressure degrading prose toward flat declaration. This report does not claim the bias is validated. It defines the construct, situates it against LLM-as-judge biases, rereads a completed independent reliability study as directional evidence consistent with it, and pre-registers a two-regime test with decision rules under which the construct would be abandoned.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "summarization",
+    "bias",
+    "directional",
+    "collapse",
+    "objective",
+    "projection",
+    "into",
+    "told"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T17:09:58.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:08.230Z",
+  "updatedAt": "2026-09-18T05:20:08.268Z"
+},
+{
+  "id": "1e3b0a52-347a-4768-9fd0-a12936d39908",
+  "slug": "supercharge-regulated-workloads-with-claude-code-and-amazon-bedrock-2026-10-05",
+  "title": "Supercharge regulated workloads with Claude Code and Amazon Bedrock",
+  "factSummary": "Anthropic 的 Claude Opus 5.5 和 Claude Sonnet 5.5 已在 AWS GovCloud (US) 区域的 Amazon Bedrock 上可用。AWS 博客说明可将这两个模型与 Anthropic 的 agentic coding 工具 Claude Code 配合使用，面向受监管和 ITAR 工作负载进行合规对齐的 AI 辅助开发。",
+  "summary": "AWS Machine Learning Blog 发布文章，宣布 Claude Opus 5.5 与 Claude Sonnet 5.5 在 AWS GovCloud (US) 区域的 Amazon Bedrock 上可用，并介绍如何与 Claude Code 结合用于受监管及 ITAR 工作负载的合规对齐开发。",
+  "technicalInsight": "证据仅表明模型在 GovCloud 区域通过 Bedrock 提供并可与 Claude Code 组合使用，未披露推理、上下文或合规认证的技术细节；可验证的下一信号是 AWS 或 Anthropic 是否发布 GovCloud 上的具体模型版本号、区域清单与合规控制文档。",
+  "industryInsight": "这显示前沿模型厂商与云厂商正把 agentic coding 能力推向政府与受监管行业的分发渠道，判断依据是模型进入 GovCloud 区域这一事实；是否形成实质采用仍需观察。",
+  "futureOutlook": "若该组合被政府与国防承包商采用，可能推动更多模型在主权云区域落地；下一信号是 AWS 或 Anthropic 公布 GovCloud 上的客户案例、可用区域扩展或 FedRAMP/ITAR 相关合规说明。",
+  "businessValue": "对受监管行业客户而言，可在既有 AWS 合规边界内使用 Claude Code 进行开发，减少数据出境与合规摩擦；价值兑现取决于实际定价、配额与合规认证范围是否公开。",
+  "category": "regulated-cloud-ai-coding",
+  "company": "Claude Code",
+  "keywords": [
+    "Claude Code",
+    "Amazon Bedrock",
+    "AWS GovCloud",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "ITAR",
+    "合规"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-05T17:25:20.000Z",
+  "publishedAt": "2026-10-05T20:41:41.340Z",
+  "createdAt": "2026-10-05T20:40:58.697Z",
+  "updatedAt": "2026-10-05T20:41:41.340Z"
+},
+{
+  "id": "5c172c01-a3f4-44f1-80aa-89073e78ecdd",
+  "slug": "supernav-an-agentic-navigation-system-for-any-task-in-any-scene-2026-10-09",
+  "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+  "factSummary": "General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating motion execution to navigation tools. To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM. Our harness supports these decisions with Navigation Skills, agent-oriented Tools for physical interaction, and task-progress and context management. A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback. Together, these components support sustained navigation across different task requirements and environments. SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments. Project Page: https://zju3dv.github.io/SuperNav/",
+  "summary": "General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating motion execution to navigation tools. To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM. Our harness supports these decisions with Navigation Skills, agent-oriented Tools for physical interaction, and task-progress and context management. A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback. Together, these components support sustained navigation across different task requirements and environments. SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments. Project Page: https://zju3dv.github.io/SuperNav/",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "supernav",
+    "agentic",
+    "navigation",
+    "system",
+    "any",
+    "task",
+    "scene"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-08T15:19:40.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T06:52:06.706Z",
+  "updatedAt": "2026-10-09T06:52:06.767Z"
+},
+{
+  "id": "b060a5b9-14e6-455f-a116-f1fc413b3cd1",
+  "slug": "support-compiled-feature-folding-more-evidence-at-lower-memory-across-tabular-foundation-m-2026-09-24",
+  "title": "Support-Compiled Feature Folding: More Evidence at Lower Memory Across Tabular Foundation Models",
+  "factSummary": "Tabular foundation models face a feature-side scaling dilemma: full-width pairwise mixing grows quadratically with the number of columns, whereas feature selection saves memory by discarding evidence. We introduce Support-Compiled Feature Folding (SCFF), a training-free inference framework that resolves this dilemma without changing the frozen backbone. SCFF routes support-ranked features through bounded leaves of the native feature encoder, support-checks the residual evidence, and merges the encoded messages before a single contextual prediction. It thereby converts quadratic feature-interaction work into linear-in-width work with a bounded local working set, without ensembling predictions or training new parameters. On the exhaustive 18-dataset wide-table slice of fixed AMLB-29, TabZilla, and TabArena snapshots, SCFF improves dataset-macro accuracy and NLL on all six evaluated backbones. All four matched-width comparisons retain favorable 95 percent dataset-bootstrap intervals on locked folds, with relative error reductions up to 26.1 percent. Median paired GPU-memory savings are 2.09x to 2.36x, and the ratio of separately observed maximum peaks reaches 34.3x. Under a measured peak-memory ceiling, SCFF uses the saved budget to preserve more support-selected evidence, improving accuracy by 4.06 and 3.72 points over the widest feasible single leaf on predeclared wide-Core strata of TabICLv2 and TabPFN-3.",
+  "summary": "Tabular foundation models face a feature-side scaling dilemma: full-width pairwise mixing grows quadratically with the number of columns, whereas feature selection saves memory by discarding evidence. We introduce Support-Compiled Feature Folding (SCFF), a training-free inference framework that resolves this dilemma without changing the frozen backbone. SCFF routes support-ranked features through bounded leaves of the native feature encoder, support-checks the residual evidence, and merges the encoded messages before a single contextual prediction. It thereby converts quadratic feature-interaction work into linear-in-width work with a bounded local working set, without ensembling predictions or training new parameters. On the exhaustive 18-dataset wide-table slice of fixed AMLB-29, TabZilla, and TabArena snapshots, SCFF improves dataset-macro accuracy and NLL on all six evaluated backbones. All four matched-width comparisons retain favorable 95 percent dataset-bootstrap intervals on locked folds, with relative error reductions up to 26.1 percent. Median paired GPU-memory savings are 2.09x to 2.36x, and the ratio of separately observed maximum peaks reaches 34.3x. Under a measured peak-memory ceiling, SCFF uses the saved budget to preserve more support-selected evidence, improving accuracy by 4.06 and 3.72 points over the widest feasible single leaf on predeclared wide-Core strata of TabICLv2 and TabPFN-3.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "support",
+    "compiled",
+    "feature",
+    "folding",
+    "more",
+    "evidence",
+    "at",
+    "lower"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T14:45:06.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T05:33:33.781Z",
+  "updatedAt": "2026-09-24T05:33:33.828Z"
+},
+{
   "id": "7c815e4f-d09a-438b-9767-28fc75621037",
   "slug": "supportcal-label-free-calibration-of-post-trained-llms-via-reference-support-and-corrobora-2026-09-22",
   "title": "SupportCal: Label-Free Calibration of Post-Trained LLMs via Reference Support and Corroboration",
@@ -314,8 +539,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -632,8 +857,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -1397,8 +1622,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -2581,8 +2806,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -4617,8 +4842,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -9340,8 +9565,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -10065,8 +10290,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -10154,8 +10379,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -10335,8 +10560,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -14206,8 +14431,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -15241,8 +15466,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -15512,8 +15737,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -34255,8 +34480,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -34573,8 +34798,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -35208,8 +35433,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -35251,8 +35476,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -35519,8 +35744,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -35746,8 +35971,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -35969,8 +36194,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -40772,8 +40997,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -41954,8 +42179,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -42896,8 +43121,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -42940,8 +43165,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -43436,8 +43661,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -43479,8 +43704,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -43522,8 +43747,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -43565,8 +43790,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-10T06:25:14.355Z",
-  "updatedAt": "2026-10-10T06:25:14.355Z"
+  "createdAt": "2026-10-10T17:22:49.898Z",
+  "updatedAt": "2026-10-10T17:22:49.898Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
