@@ -1,5 +1,189 @@
 [
 {
+  "id": "8fb7cfb5-a899-490a-bb87-c5a0090b4132",
+  "slug": "structure-enhanced-features-and-quality-aware-dynamic-anchor-scoring-for-robust-lane-detec-2026-08-11",
+  "title": "Structure-Enhanced Features and Quality-Aware Dynamic Anchor Scoring for Robust Lane Detection",
+  "factSummary": "Lane detection requires recovering thin, elongated, and frequently occluded lane structures under challenging driving conditions. While anchor-based detectors provide efficient candidate generation, their performance is limited by two coupled issues: backbone features often lose structural continuity along partially visible lanes, and classification confidence may decouple from line-level localization quality, allowing inaccurate anchors to persist before non-maximum suppression (NMS). We propose a structure-enhanced and quality-aware framework that improves lane representation and dynamic-anchor scoring while preserving the inference pipeline of the Anchor Decomposition Network (ADNet). Specifically, a Gated Horizontal-Vertical Token (GHVT) module enhances mid- and high-level backbone features via lightweight directional token interactions with a learnable residual gate. In parallel, Line-Quality-Aware Dynamic Anchor Scoring (LQAS) calibrates existing classification logits using quality supervision, hard-negative suppression, and pairwise ranking without adding inference branches. On the VIL-100 dataset, our method improves ADNet-R34 from 89.97 to 91.28 in F1 score at the 0.5 intersection-over-union threshold (F1@50), reducing both false positives and false negatives. Additional experiments on CULane and TuSimple datasets, extensive ablations, score-distribution diagnostics, and runtime analysis confirm complementary structural and ranking improvements with minimal computational overhead.",
+  "summary": "Lane detection requires recovering thin, elongated, and frequently occluded lane structures under challenging driving conditions. While anchor-based detectors provide efficient candidate generation, their performance is limited by two coupled issues: backbone features often lose structural continuity along partially visible lanes, and classification confidence may decouple from line-level localization quality, allowing inaccurate anchors to persist before non-maximum suppression (NMS). We propose a structure-enhanced and quality-aware framework that improves lane representation and dynamic-anchor scoring while preserving the inference pipeline of the Anchor Decomposition Network (ADNet). Specifically, a Gated Horizontal-Vertical Token (GHVT) module enhances mid- and high-level backbone features via lightweight directional token interactions with a learnable residual gate. In parallel, Line-Quality-Aware Dynamic Anchor Scoring (LQAS) calibrates existing classification logits using quality supervision, hard-negative suppression, and pairwise ranking without adding inference branches. On the VIL-100 dataset, our method improves ADNet-R34 from 89.97 to 91.28 in F1 score at the 0.5 intersection-over-union threshold (F1@50), reducing both false positives and false negatives. Additional experiments on CULane and TuSimple datasets, extensive ablations, score-distribution diagnostics, and runtime analysis confirm complementary structural and ranking improvements with minimal computational overhead.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "structure",
+    "enhanced",
+    "features",
+    "quality",
+    "aware",
+    "dynamic",
+    "anchor",
+    "scoring"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T13:52:04.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:35.793Z",
+  "updatedAt": "2026-08-11T02:58:35.828Z"
+},
+{
+  "id": "5bccce39-311c-4aaf-8126-84ce592f1a94",
+  "slug": "structure-guided-spatiotemporal-attention-graph-neural-network-for-traffic-flow-prediction-2026-08-17",
+  "title": "Structure-Guided Spatiotemporal Attention Graph Neural Network for Traffic Flow Prediction",
+  "factSummary": "Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil the intrinsic decision-making mechanisms governing traffic dynamics, resulting in suboptimal interpretability and limited operational trustworthiness. To address these challenges, this paper proposes the Structure-Guided Spatiotemporal Attention Graph Neural Network (SGSAN). Departing from traditional architectures that rely on unconstrained adaptive graphs, SGSAN explicitly learns a static Directed Dependency Graph (DDG) to identify the invariant macroscopic propagation paths of traffic states. We further introduce an InfoNCE-based soft-coupling mechanism that anchors the model's dynamic spatiotemporal attention to this structural prior, offering a mechanistic account of the model's decision-making process while ensuring robust forecasting by aligning attention-based reasoning with identified macroscopic dependencies and preventing over-reliance on ephemeral local noise. Furthermore, a decoupled two-stage optimization framework is developed to resolve the fundamental conflict between structural discovery and predictive error minimization. Extensive experiments on multiple real-world datasets demonstrate that SGSAN achieves state-of-the-art predictive accuracy while providing built-in interpretability that organically aligns with the physical logic of traffic networks.",
+  "summary": "Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil the intrinsic decision-making mechanisms governing traffic dynamics, resulting in suboptimal interpretability and limited operational trustworthiness. To address these challenges, this paper proposes the Structure-Guided Spatiotemporal Attention Graph Neural Network (SGSAN). Departing from traditional architectures that rely on unconstrained adaptive graphs, SGSAN explicitly learns a static Directed Dependency Graph (DDG) to identify the invariant macroscopic propagation paths of traffic states. We further introduce an InfoNCE-based soft-coupling mechanism that anchors the model's dynamic spatiotemporal attention to this structural prior, offering a mechanistic account of the model's decision-making process while ensuring robust forecasting by aligning attention-based reasoning with identified macroscopic dependencies and preventing over-reliance on ephemeral local noise. Furthermore, a decoupled two-stage optimization framework is developed to resolve the fundamental conflict between structural discovery and predictive error minimization. Extensive experiments on multiple real-world datasets demonstrate that SGSAN achieves state-of-the-art predictive accuracy while providing built-in interpretability that organically aligns with the physical logic of traffic networks.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "structure",
+    "guided",
+    "spatiotemporal",
+    "attention",
+    "graph",
+    "neural",
+    "network",
+    "traffic"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-14T10:46:37.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-17T02:14:09.842Z",
+  "updatedAt": "2026-08-17T02:14:09.886Z"
+},
+{
+  "id": "ec961374-8bfa-4b27-affe-b51ea5f6e5c7",
+  "slug": "structureclaw-traceable-llm-agents-and-an-executable-benchmark-for-structural-engineering--2026-07-17",
+  "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+  "factSummary": "Addressing a structural-engineering request requires more than a single answer; it requires a chain of interdependent artifacts: interpreted requirements, a computable model, validation records, solver outputs, code-check records, and a final report. Evaluations centered on question answering or script generation rarely verify this complete evidence chain and may therefore reward fluent outputs even when the underlying engineering workflow is incomplete, internally inconsistent, or non-executable. To address this limitation, we present StructureClaw, an artifact-centered workbench in which LLM agents operate through governed engineering skills, typed tools, shared artifact state, and local analysis backends. We also introduce StructureClaw-Bench, an executable benchmark of 150 controlled scenarios spanning standard workflow execution, interactive robustness, and multimodal structural-model reconstruction. A scenario succeeds only when all required artifact- and execution-level assertions pass in a single run. Across ten agent-model configurations, each evaluated on the same 50 standard cases, the average Success Rate rises from 56.8% with the generic-skill baseline to 88.6% with the full automatic workflow. The interactive and multimodal evaluations identify two prominent remaining challenges: safe handling of invalid numerical inputs and fixture-consistent reconstruction of structural models. These findings show that artifact-centered evaluation can expose workflow-level failures that are difficult to identify from final responses alone, providing a more rigorous basis for evaluating and improving structural-engineering agents. The code and benchmark are available at https://github.com/structureclaw/structureclaw.",
+  "summary": "Addressing a structural-engineering request requires more than a single answer; it requires a chain of interdependent artifacts: interpreted requirements, a computable model, validation records, solver outputs, code-check records, and a final report. Evaluations centered on question answering or script generation rarely verify this complete evidence chain and may therefore reward fluent outputs even when the underlying engineering workflow is incomplete, internally inconsistent, or non-executable. To address this limitation, we present StructureClaw, an artifact-centered workbench in which LLM agents operate through governed engineering skills, typed tools, shared artifact state, and local analysis backends. We also introduce StructureClaw-Bench, an executable benchmark of 150 controlled scenarios spanning standard workflow execution, interactive robustness, and multimodal structural-model reconstruction. A scenario succeeds only when all required artifact- and execution-level assertions pass in a single run. Across ten agent-model configurations, each evaluated on the same 50 standard cases, the average Success Rate rises from 56.8% with the generic-skill baseline to 88.6% with the full automatic workflow. The interactive and multimodal evaluations identify two prominent remaining challenges: safe handling of invalid numerical inputs and fixture-consistent reconstruction of structural models. These findings show that artifact-centered evaluation can expose workflow-level failures that are difficult to identify from final responses alone, providing a more rigorous basis for evaluating and improving structural-engineering agents. The code and benchmark are available at https://github.com/structureclaw/structureclaw.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "structureclaw",
+    "traceable",
+    "llm",
+    "agents",
+    "executable",
+    "benchmark",
+    "structural",
+    "engineering"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 76,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-16T12:13:41.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-17T14:09:54.298Z",
+  "updatedAt": "2026-07-17T14:09:54.317Z"
+},
+{
+  "id": "3373fa4e-4bec-43de-aa9a-842fb7162cc8",
+  "slug": "structured-claim-level-discourse-representations-for-dense-health-narratives-2026-09-17",
+  "title": "Structured Claim-Level Discourse Representations for Dense Health Narratives",
+  "factSummary": "Health discourse in social media videos often contains densely entangled claims spanning multiple thematic aspects, stances, evidential frames, and rhetorical functions within short conversational spans. Existing approaches largely rely on coarse topic-level, sentiment-based, or stance-oriented representations that do not adequately capture this structure. Our analysis identifies an average of 13.22 atomic claims per minute, motivating richer claim-level discourse representations. We introduce a structured framework for claim-level discourse analysis in dense health narratives. Our framework models discourse through tuples linking atomic claims with thematic aspects, stance, and multidimensional pragmatic discourse attributes. To support this setting, we construct a benchmark spanning four health domains with 1,191 manually annotated claims from 60 videos. Using this framework, we evaluate automated structured discourse analysis under different discourse context settings. Results show that current LLMs achieve strong performance on thematic categorization and stance prediction, but struggle with high-dimensional pragmatic profiling. We also find that different discourse tasks benefit from different forms of contextual reasoning, suggesting that future systems may require task decomposition and specialized inference strategies.",
+  "summary": "Health discourse in social media videos often contains densely entangled claims spanning multiple thematic aspects, stances, evidential frames, and rhetorical functions within short conversational spans. Existing approaches largely rely on coarse topic-level, sentiment-based, or stance-oriented representations that do not adequately capture this structure. Our analysis identifies an average of 13.22 atomic claims per minute, motivating richer claim-level discourse representations. We introduce a structured framework for claim-level discourse analysis in dense health narratives. Our framework models discourse through tuples linking atomic claims with thematic aspects, stance, and multidimensional pragmatic discourse attributes. To support this setting, we construct a benchmark spanning four health domains with 1,191 manually annotated claims from 60 videos. Using this framework, we evaluate automated structured discourse analysis under different discourse context settings. Results show that current LLMs achieve strong performance on thematic categorization and stance prediction, but struggle with high-dimensional pragmatic profiling. We also find that different discourse tasks benefit from different forms of contextual reasoning, suggesting that future systems may require task decomposition and specialized inference strategies.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "structured",
+    "claim",
+    "level",
+    "discourse",
+    "representations",
+    "dense",
+    "health",
+    "narratives"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-16T16:43:11.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T05:32:40.738Z",
+  "updatedAt": "2026-09-17T05:32:40.784Z"
+},
+{
   "id": "482443d2-b601-41fa-8756-02c7e4510244",
   "slug": "structured-composition-of-verifiable-atomic-insights-for-table-to-report-generation-2026-10-05",
   "title": "Structured Composition of Verifiable Atomic Insights for Table-to-Report Generation",
@@ -269,8 +453,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -769,8 +953,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -1087,8 +1271,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -1852,8 +2036,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -3036,8 +3220,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -5072,8 +5256,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -9795,8 +9979,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -10520,8 +10704,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -10609,8 +10793,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -10790,8 +10974,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -14661,8 +14845,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -15696,8 +15880,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -15967,8 +16151,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -22379,20 +22563,20 @@
     "v1",
     "104"
   ],
-  "confidenceScore": 74,
-  "heatScore": 22,
+  "confidenceScore": 84,
+  "heatScore": 18,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 53,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 90,
+    "freshness": 43,
     "crossRegion": false
   },
   "status": "review",
@@ -22401,7 +22585,7 @@
   "happenedAt": "2026-10-08T08:39:07.000Z",
   "publishedAt": null,
   "createdAt": "2026-10-08T18:58:05.157Z",
-  "updatedAt": "2026-10-08T18:58:05.218Z"
+  "updatedAt": "2026-10-11T17:47:28.092Z"
 },
 {
   "id": "6fc82175-f717-4acb-80b8-50b40ccea1c4",
@@ -22462,9 +22646,9 @@
     "rc"
   ],
   "confidenceScore": 84,
-  "heatScore": 21,
+  "heatScore": 18,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 52,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -22474,7 +22658,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 80,
+    "freshness": 38,
     "crossRegion": false
   },
   "status": "review",
@@ -22483,7 +22667,7 @@
   "happenedAt": "2026-10-07T21:28:51.000Z",
   "publishedAt": null,
   "createdAt": "2026-10-08T06:46:11.304Z",
-  "updatedAt": "2026-10-08T18:58:05.140Z"
+  "updatedAt": "2026-10-11T17:47:28.097Z"
 },
 {
   "id": "4feba896-7396-49b9-8c22-a4bbac77c104",
@@ -29994,6 +30178,46 @@
   "updatedAt": "2026-10-10T06:29:40.744Z"
 },
 {
+  "id": "cea8ef32-14e5-440e-aa11-67c8f24b3952",
+  "slug": "v3-29-0-2026-10-11",
+  "title": "v3.29.0",
+  "factSummary": "3.29.0 (2026-10-11) Features api: add billing_not_active session error code ( #4052 ) ( c88b320 ) api: add shida to named Live voices ( #4053 ) ( 7352cf5 ) api: add vault updates and metadata filters ( #4047 ) ( e72f493 ) api: align beta pagination limits and non-null parameters ( #4057 ) ( 800899e ) Chores api: clarify decision creation documentation ( #4054 ) ( 16d3d3b ) api: clarify Decisions question and answer descriptions ( #4051 ) ( 895d617 ) api: document 128-character safety identifiers ( #4050 ) ( 2c1ae52 ) api: document decision choice constraints ( #4055 ) ( b7a1990 ) api: document Files API rate-limit responses ( #4049 ) ( f6a3459 )",
+  "summary": "3.29.0 (2026-10-11) Features api: add billing_not_active session error code ( #4052 ) ( c88b320 ) api: add shida to named Live voices ( #4053 ) ( 7352cf5 ) api: add vault updates and metadata filters ( #4047 ) ( e72f493 ) api: align beta pagination limits and non-null parameters ( #4057 ) ( 800899e ) Chores api: clarify decision creation documentation ( #4054 ) ( 16d3d3b ) api: clarify Decisions question and answer descriptions ( #4051 ) ( 895d617 ) api: document 128-character safety identifiers ( #4050 ) ( 2c1ae52 ) api: document decision choice constraints ( #4055 ) ( b7a1990 ) api: document Files API rate-limit responses ( #4049 ) ( f6a3459 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v3",
+    "29"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 67,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-11T17:38:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-11T17:47:27.512Z",
+  "updatedAt": "2026-10-11T17:47:27.585Z"
+},
+{
   "id": "13768a33-ca82-47ba-a58a-35b8ef0b23fb",
   "slug": "v4-0-0-rc-1-2026-07-24",
   "title": "v4.0.0-rc.1",
@@ -34799,8 +35023,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -35117,8 +35341,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -35752,8 +35976,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -35795,8 +36019,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -36063,8 +36287,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -36290,8 +36514,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -36513,8 +36737,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -41316,8 +41540,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -42498,8 +42722,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -43440,8 +43664,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -43484,8 +43708,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -43980,8 +44204,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -44023,8 +44247,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -44066,8 +44290,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -44109,8 +44333,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-11T06:30:43.746Z",
-  "updatedAt": "2026-10-11T06:30:43.746Z"
+  "createdAt": "2026-10-11T17:42:53.209Z",
+  "updatedAt": "2026-10-11T17:42:53.209Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
