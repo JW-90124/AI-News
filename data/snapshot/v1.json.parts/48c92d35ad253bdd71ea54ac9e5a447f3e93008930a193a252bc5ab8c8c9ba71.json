@@ -1,5 +1,235 @@
 [
 {
+  "id": "482443d2-b601-41fa-8756-02c7e4510244",
+  "slug": "structured-composition-of-verifiable-atomic-insights-for-table-to-report-generation-2026-10-05",
+  "title": "Structured Composition of Verifiable Atomic Insights for Table-to-Report Generation",
+  "factSummary": "Table-to-report generation refers to the task of automatically generating article-level analyt- ical reports from relational tables and is an essential capability for automated data science and decision support. Its central challenge lies in systematically discovering verifiable com- posite insights across tables, attributes, and analytical perspectives, and organizing them into coherent, complete, and traceable evidence chains. Existing methods primarily rely on sequential, reactive data agents or direct Large Language Model(LLM) generation. They suffer from exploration bias: early local observations constrain subsequent actions, causing models to focus prematurely on local analyzes and miss cross-table or cross-dimensional evidence. We propose ComInsight, which reformulates insight discovery as the composition of atomic evidences. We first define an atomic insight as the smallest executable analytical unit conforming to a predefined analysis pattern and enumerate all valid atomic insights from database schema and content. These atoms are then organized into a multi-relational insight graph, where nodes represent verified data facts and edges encode logical, temporal, or hierarchical relations. Finally, a set of composition operators systematically fuses atomic nodes into higher-order composite conclusions. Every composite output is accompanied by executable SQL and fine-grained provenance, ensuring full verifiability. Across three benchmarks InsightBench, DDR-Bench, and T2R-Bench, ComInsight consistently outperforms strong baselines in factual correctness, novelty, and structural completeness. We believe ComInsight offers a reliable, efficient, and explainable path toward table-to-report generation.",
+  "summary": "Table-to-report generation refers to the task of automatically generating article-level analyt- ical reports from relational tables and is an essential capability for automated data science and decision support. Its central challenge lies in systematically discovering verifiable com- posite insights across tables, attributes, and analytical perspectives, and organizing them into coherent, complete, and traceable evidence chains. Existing methods primarily rely on sequential, reactive data agents or direct Large Language Model(LLM) generation. They suffer from exploration bias: early local observations constrain subsequent actions, causing models to focus prematurely on local analyzes and miss cross-table or cross-dimensional evidence. We propose ComInsight, which reformulates insight discovery as the composition of atomic evidences. We first define an atomic insight as the smallest executable analytical unit conforming to a predefined analysis pattern and enumerate all valid atomic insights from database schema and content. These atoms are then organized into a multi-relational insight graph, where nodes represent verified data facts and edges encode logical, temporal, or hierarchical relations. Finally, a set of composition operators systematically fuses atomic nodes into higher-order composite conclusions. Every composite output is accompanied by executable SQL and fine-grained provenance, ensuring full verifiability. Across three benchmarks InsightBench, DDR-Bench, and T2R-Bench, ComInsight consistently outperforms strong baselines in factual correctness, novelty, and structural completeness. We believe ComInsight offers a reliable, efficient, and explainable path toward table-to-report generation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "structured",
+    "composition",
+    "verifiable",
+    "atomic",
+    "insights",
+    "table",
+    "report",
+    "generation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 51,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-02T16:14:18.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-05T09:34:03.072Z",
+  "updatedAt": "2026-10-05T09:34:03.118Z"
+},
+{
+  "id": "79e64f27-d332-4b0d-bde3-4a21568b8f5f",
+  "slug": "structured-four-stage-legal-translation-from-natural-language-traffic-rules-to-prolog-2026-09-18",
+  "title": "Structured Four-Stage Legal Translation: From Natural-Language Traffic Rules to PROLOG",
+  "factSummary": "Traffic regulations are written for human interpretation and therefore rely on shared background knowledge and flexible phrasing, which inherently introduce ambiguity, context dependence, and semantic underspecification. These linguistic characteristics conflict with the precision required by computational reasoning engines such as Prolog, which demand explicit logical structure. This study evaluates two baseline translation approaches, Natural Language to Prolog ($NL\\rightarrow Prolog$) and Logical English to Prolog ($LE\\rightarrow Prolog$), and introduces a new reasoning-guided translation framework called Structured Four-Stage Legal Translation ($S4L\\rightarrow Prolog$). The proposed S4L framework performs semantic role extraction, scene completion, logical mapping, and Prolog rule generation within a single guided prompt, enabling direct translation of raw traffic rules into executable logic without human intervention. A benchmark consisting of twenty real-world traffic rules was used to evaluate each approach in terms of syntactic validity, semantic correctness, and logical completeness. $S4L\\rightarrow Prolog$ achieves the highest accuracy, correctly formalizing 75 percent of the rules, while $NL\\rightarrow Prolog$ reaches 60 percent and $LE\\rightarrow Prolog$ reaches 55 percent. Qualitative analysis further shows that S4L captures implicit causal relations, deontic modality, and exception structure more reliably than the baselines. These results demonstrate that structured reasoning prompts can substantially improve the reliability of natural-language-to-logic translation for legal and safety-critical applications.",
+  "summary": "Traffic regulations are written for human interpretation and therefore rely on shared background knowledge and flexible phrasing, which inherently introduce ambiguity, context dependence, and semantic underspecification. These linguistic characteristics conflict with the precision required by computational reasoning engines such as Prolog, which demand explicit logical structure. This study evaluates two baseline translation approaches, Natural Language to Prolog ($NL\\rightarrow Prolog$) and Logical English to Prolog ($LE\\rightarrow Prolog$), and introduces a new reasoning-guided translation framework called Structured Four-Stage Legal Translation ($S4L\\rightarrow Prolog$). The proposed S4L framework performs semantic role extraction, scene completion, logical mapping, and Prolog rule generation within a single guided prompt, enabling direct translation of raw traffic rules into executable logic without human intervention. A benchmark consisting of twenty real-world traffic rules was used to evaluate each approach in terms of syntactic validity, semantic correctness, and logical completeness. $S4L\\rightarrow Prolog$ achieves the highest accuracy, correctly formalizing 75 percent of the rules, while $NL\\rightarrow Prolog$ reaches 60 percent and $LE\\rightarrow Prolog$ reaches 55 percent. Qualitative analysis further shows that S4L captures implicit causal relations, deontic modality, and exception structure more reliably than the baselines. These results demonstrate that structured reasoning prompts can substantially improve the reliability of natural-language-to-logic translation for legal and safety-critical applications.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "structured",
+    "four",
+    "stage",
+    "legal",
+    "translation",
+    "from",
+    "natural",
+    "language"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T13:05:49.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:13.801Z",
+  "updatedAt": "2026-09-18T05:20:13.839Z"
+},
+{
+  "id": "73b7291c-2ea0-42c6-ad1e-45f452272d40",
+  "slug": "structured-memory-for-edge-language-models-persistent-context-and-corpus-retrieval-via-o-1-2026-08-04",
+  "title": "Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection",
+  "factSummary": "Retrieval-augmented generation (RAG) imposes a prefill cost proportional to retrieved context length, and -- with Transformer backbones -- a KV-cache that grows with each generated token. State-Space Models (SSMs) avoid the second cost by construction; we eliminate the first, collapsing prefill from $O(L_{context})$ to $O(1)$ per query. We introduce PRECOG (Pre-Computed Context Injection), a retrieval mechanism that exploits a property unique to SSMs: the fixed-size, position-agnostic recurrent hidden state is a complete summary of everything the model has read. PRECOG pre-encodes document corpora offline as SSM hidden states and injects the best-matching state directly at query time, bypassing in-context re-ingestion entirely. The same state-injection mechanism enables SMC (Structured Memory Consolidation): a hierarchical persistent memory with cognitive-domain clustering, an adjustable fidelity-vs-storage dial, and $O(1)$ session initialization, which consolidates short-term episodic states into long-term semantic memory and fuses both with retrieved corpus states at query time. We demonstrate the system on TENNs-LLM, a 1.2B-parameter gated-SSM language model with a 192 KB hidden state. PRECOG matches in-context RAG answer quality, reducing prefill latency from $\\sim$27 s to $<$6 ms on edge hardware -- a $\\sim$4500$\\times$ speedup that crosses the threshold from unusable to interactive. The mechanism is architecturally impossible for Transformer KV-caches, which are position-entangled and grow linearly with context length.",
+  "summary": "Retrieval-augmented generation (RAG) imposes a prefill cost proportional to retrieved context length, and -- with Transformer backbones -- a KV-cache that grows with each generated token. State-Space Models (SSMs) avoid the second cost by construction; we eliminate the first, collapsing prefill from $O(L_{context})$ to $O(1)$ per query. We introduce PRECOG (Pre-Computed Context Injection), a retrieval mechanism that exploits a property unique to SSMs: the fixed-size, position-agnostic recurrent hidden state is a complete summary of everything the model has read. PRECOG pre-encodes document corpora offline as SSM hidden states and injects the best-matching state directly at query time, bypassing in-context re-ingestion entirely. The same state-injection mechanism enables SMC (Structured Memory Consolidation): a hierarchical persistent memory with cognitive-domain clustering, an adjustable fidelity-vs-storage dial, and $O(1)$ session initialization, which consolidates short-term episodic states into long-term semantic memory and fuses both with retrieved corpus states at query time. We demonstrate the system on TENNs-LLM, a 1.2B-parameter gated-SSM language model with a 192 KB hidden state. PRECOG matches in-context RAG answer quality, reducing prefill latency from $\\sim$27 s to $<$6 ms on edge hardware -- a $\\sim$4500$\\times$ speedup that crosses the threshold from unusable to interactive. The mechanism is architecturally impossible for Transformer KV-caches, which are position-entangled and grow linearly with context length.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "structured",
+    "memory",
+    "edge",
+    "language",
+    "models",
+    "persistent",
+    "context",
+    "corpus"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 90,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-03T17:43:36.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-04T03:59:26.928Z",
+  "updatedAt": "2026-08-04T03:59:26.964Z"
+},
+{
+  "id": "74f4ef1f-8eba-4bf4-8617-aab3180000a1",
+  "slug": "studentbench-ai-and-human-tutoring-yield-equivalent-gre-learning-gains-2026-09-24",
+  "title": "StudentBench: AI and human tutoring yield equivalent GRE learning gains",
+  "factSummary": "Artificial intelligence offers an unprecedented opportunity to augment human capabilities, yet progress at the frontier has focused primarily on advancing model capabilities. We introduce StudentBench, a suite of AI teaching evaluations and a public platform that enables large-scale data collection with over 175,000 student-AI messages to study whether large language models (LLMs) produce learning gains equivalent to human tutoring. Using StudentBench, we measured learning gains on Quantitative and Verbal GRE questions across 2,383 human participants receiving AI tutoring, human tutoring, or no tutoring. We establish that AI tutoring is statistically equivalent to expert human tutoring for GRE learning gains (p = .015), and in five of the seven GRE domains, the best performing AI tutor surpassed the human tutor, on average. In a second study, expert human tutors compared LLM-generated lesson plans and practice problems through 2,028 pairwise rubric evaluations. Together, the two studies clearly separate AI tutors across: (1) lesson planning, (2) practice-problem creation, (3) conversational pedagogy, (4) cost, and (5) engagement. Surprisingly, one AI tutor achieved learning gains equivalent to human tutoring (p = .044) at 918 times lower cost (USD 0.0052 for AI versus USD 4.81 for human, per percentage point gained). For Quantitative GRE sessions, faster AI replies correlated with more student messages, more messages with more correct practice, and more correct practice with larger learning gains (all p < .002). The StudentBench platform is freely available at https://studentbench.org.",
+  "summary": "Artificial intelligence offers an unprecedented opportunity to augment human capabilities, yet progress at the frontier has focused primarily on advancing model capabilities. We introduce StudentBench, a suite of AI teaching evaluations and a public platform that enables large-scale data collection with over 175,000 student-AI messages to study whether large language models (LLMs) produce learning gains equivalent to human tutoring. Using StudentBench, we measured learning gains on Quantitative and Verbal GRE questions across 2,383 human participants receiving AI tutoring, human tutoring, or no tutoring. We establish that AI tutoring is statistically equivalent to expert human tutoring for GRE learning gains (p = .015), and in five of the seven GRE domains, the best performing AI tutor surpassed the human tutor, on average. In a second study, expert human tutors compared LLM-generated lesson plans and practice problems through 2,028 pairwise rubric evaluations. Together, the two studies clearly separate AI tutors across: (1) lesson planning, (2) practice-problem creation, (3) conversational pedagogy, (4) cost, and (5) engagement. Surprisingly, one AI tutor achieved learning gains equivalent to human tutoring (p = .044) at 918 times lower cost (USD 0.0052 for AI versus USD 4.81 for human, per percentage point gained). For Quantitative GRE sessions, faster AI replies correlated with more student messages, more messages with more correct practice, and more correct practice with larger learning gains (all p < .002). The StudentBench platform is freely available at https://studentbench.org.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "studentbench",
+    "ai",
+    "human",
+    "tutoring",
+    "yield",
+    "equivalent",
+    "gre",
+    "learning"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T17:57:45.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T05:33:31.139Z",
+  "updatedAt": "2026-09-24T05:33:31.186Z"
+},
+{
+  "id": "a5787959-8519-4433-bcb9-ebca24e75909",
+  "slug": "style-not-self-surface-cues-explain-zero-shot-code-attribution-by-large-language-models-2026-09-25",
+  "title": "Style, Not Self: Surface Cues Explain Zero-Shot Code Attribution by Large Language Models",
+  "factSummary": "If a language model can recognize code it wrote, it may favor that code as a judge, and instances of one model monitoring each other could collude. We test this zero-shot on current commercial models. Five LLMs generate solutions to MBPP, HumanEval, and DS-1000, seven more to MBPP, and models act as evaluators in four tasks: picking their own solution from a pair, judging whether a single solution is their own, identifying which of two solutions a named model wrote, and judging quality blind. In the single-solution task, balanced accuracy is 49-58% for all 15 model-benchmark combinations, while raw accuracy (38-67%) mostly reflects how readily a model claims authorship. In the pairwise task, accuracy across 14 evaluator-opponent combinations correlates at r=0.93 with how often the evaluator's solution is longer. Attribution to a named model succeeds on some pairs and is consistently inverted on others. A rule-based normalization that strips docstrings, comments, type hints, and local names preserves Pass@1 and leaves ten of twelve re-tested results at chance; the other two follow a length difference it leaves, although a trained classifier still separates most normalized pairs. Claude Haiku's self-preference also disappears. We recommend reporting balanced accuracy, heuristic baselines, and label consistency.",
+  "summary": "If a language model can recognize code it wrote, it may favor that code as a judge, and instances of one model monitoring each other could collude. We test this zero-shot on current commercial models. Five LLMs generate solutions to MBPP, HumanEval, and DS-1000, seven more to MBPP, and models act as evaluators in four tasks: picking their own solution from a pair, judging whether a single solution is their own, identifying which of two solutions a named model wrote, and judging quality blind. In the single-solution task, balanced accuracy is 49-58% for all 15 model-benchmark combinations, while raw accuracy (38-67%) mostly reflects how readily a model claims authorship. In the pairwise task, accuracy across 14 evaluator-opponent combinations correlates at r=0.93 with how often the evaluator's solution is longer. Attribution to a named model succeeds on some pairs and is consistently inverted on others. A rule-based normalization that strips docstrings, comments, type hints, and local names preserves Pass@1 and leaves ten of twelve re-tested results at chance; the other two follow a length difference it leaves, although a trained classifier still separates most normalized pairs. Claude Haiku's self-preference also disappears. We recommend reporting balanced accuracy, heuristic baselines, and label consistency.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "style",
+    "not",
+    "self",
+    "surface",
+    "cues",
+    "explain",
+    "zero",
+    "shot"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T16:11:21.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-25T05:31:11.935Z",
+  "updatedAt": "2026-09-25T05:31:11.980Z"
+},
+{
   "id": "fc5d32f6-f083-4189-a106-3e56986f277d",
   "slug": "subliminal-learning-language-models",
   "title": "Subliminal Learning: Language models transmit behavioral traits via hidden signals in data：语言模型通过语义无关数据传递行为特征，蒸馏安全面临新挑战",
@@ -39,8 +269,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -539,8 +769,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -857,8 +1087,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -1622,8 +1852,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -2806,8 +3036,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -4842,8 +5072,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -9565,8 +9795,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -10290,8 +10520,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -10379,8 +10609,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -10560,8 +10790,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -14431,8 +14661,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -15466,8 +15696,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -15737,8 +15967,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -18347,6 +18577,51 @@
   "publishedAt": null,
   "createdAt": "2026-07-27T15:21:44.776Z",
   "updatedAt": "2026-07-27T15:21:44.810Z"
+},
+{
+  "id": "bb7b076a-bc5a-4e86-98a0-1781dc2cc436",
+  "slug": "v0-12-0-2026-10-11",
+  "title": "v0.12.0",
+  "factSummary": "Open WebUI 发布 v0.12.0，新增实时语音通话功能。管理员可在音频设置的语音通话部分将通话模式从 Standard 切换为 Realtime，使语音模式通过 OpenAI Realtime 语音模型（默认 gpt-realtime-2.1-mini 与 Marin 语音）进行对话，该模型自行处理闲聊，并将实际问题与任务交给聊天中选定的模型，连同其对话历史与工具，在说出答案的同时完整回复显示在聊天中。工具发起的审批与提问仍需在聊天中回答；通话需要 Allow Call 权限，并在 1 小时后结束；模型可在模型编辑器中设置自己的 Realtime Voice；相关设置也可通过 AUDIO_REALTIME_ENABLED、AUDIO_REALTIME_OPENAI_API_BASE_URL、AUDIO_REALTIME_OPENAI_API_KEY、AUDIO_REALTIME_MODEL、AUDIO_REALTIME_VOICE、AUDIO_REALTIME_TRANSCRIPTION_MODEL 和 REALTIME_CALL_PROMPT_TEMPLATE 环境变量给出。该版本还支持在实时语音通话中显示动画头像：模型可在模型编辑器中上传最大 25 MiB 的绑定 VRM 头像并预览。",
+  "summary": "Open WebUI v0.12.0 引入实时语音通话，将语音交互拆分为由 OpenAI Realtime 模型处理的实时对话层与由聊天选定模型处理的任务层，并支持 VRM 动画头像。",
+  "technicalInsight": "从发布说明看，该实现采用双模型分工：Realtime 语音模型负责低延迟闲聊，任务与问题转交聊天选定模型并复用其历史与工具，工具审批仍回到聊天界面。这暗示语音层与推理层解耦，但证据未披露延迟、并发或成本数据，实际效果需观察。可验证下一信号：官方文档或后续版本是否公布端到端延迟、通话时长限制调整或对非 OpenAI Realtime 后端的支持。",
+  "industryInsight": "该版本把实时语音与工具调用、权限、环境变量配置整合进开源聊天界面，反映开源前端正把语音作为 Agent 交互入口之一。但证据仅来自单一项目发布说明，无法据此判断行业整体采用或竞争格局。可验证下一信号：其他开源聊天项目是否跟进类似 Realtime 语音与工具转交架构。",
+  "futureOutlook": "若该模式被采用，语音可能成为 Agent 的默认入口之一，但审批仍需在聊天中完成，说明全语音闭环尚未实现。可验证下一信号：后续版本是否允许在通话中直接完成工具审批，或增加多语言、多语音后端支持。",
+  "businessValue": "对自托管用户而言，该功能可在不更换聊天界面的前提下增加实时语音交互，并通过环境变量集中配置，降低部署门槛。但证据未提供采用率、收入或成本数据，商业影响尚不可量化。可验证下一信号：项目是否公布该功能的使用统计或企业版相关定价。",
+  "category": "open-source-voice-agent",
+  "company": "Open WebUI",
+  "keywords": [
+    "Open WebUI",
+    "v0.12.0",
+    "Realtime voice",
+    "OpenAI Realtime",
+    "gpt-realtime-2.1-mini",
+    "VRM avatar",
+    "tool calling"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-10T21:17:46.000Z",
+  "publishedAt": "2026-10-11T06:36:00.718Z",
+  "createdAt": "2026-10-11T06:35:11.543Z",
+  "updatedAt": "2026-10-11T06:36:00.718Z"
 },
 {
   "id": "26fb0292-d15b-4948-a578-4a659a5e6859",
@@ -21040,6 +21315,50 @@
   "publishedAt": null,
   "createdAt": "2026-10-08T18:58:04.388Z",
   "updatedAt": "2026-10-08T18:58:04.451Z"
+},
+{
+  "id": "16059413-034f-4f9b-acb4-a897d82c2f6a",
+  "slug": "v0-40-3-2026-10-11",
+  "title": "v0.40.3",
+  "factSummary": "Ollama 发布 v0.40.3。变更包括：ollama launch claude 不再显示关于 Claude connectors 的警告（#18878）；ollama launch codex 不再警告服务层级（#18879）；暂停后台模型升级，该升级在高频使用（如 embeddings）中给每个请求增加开销（#18908）。完整变更日志为 v0.40.2...v0.40.3-rc0。v0.40.3-rc0 的说明为 server: skip local model compatibility migration（#18908）。",
+  "summary": "Ollama 发布 v0.40.3，主要包含两类改动：一是移除 ollama launch claude 与 ollama launch codex 的警告提示；二是暂停后台模型升级，理由是其在 embeddings 等高并发场景下为每个请求增加开销。对应预发布版本 v0.40.3-rc0 的说明为跳过本地模型兼容性迁移。",
+  "technicalInsight": "从变更描述看，Ollama 将后台模型升级与本地模型兼容性迁移视为影响请求路径的额外开销，选择在高频调用场景下暂停该行为，属于对推理服务请求延迟与吞吐的取舍。可验证下一信号：后续版本是否以显式开关或按需触发方式重新引入模型升级与兼容性迁移。",
+  "industryInsight": "本地模型运行时在开发者工具链中承担推理入口角色，其版本迭代开始关注高频调用（如 embeddings）下的请求开销，而非仅新增模型支持。可验证下一信号：其他本地推理运行时是否跟进类似默认行为调整。",
+  "futureOutlook": "若该调整被保留，Ollama 在高并发 embeddings 场景下的请求开销可能下降，但模型升级与兼容性迁移的自动化程度可能降低。可验证下一信号：v0.40.3 之后版本的 changelog 是否记录该行为的恢复或替代方案。",
+  "businessValue": "对依赖 Ollama 提供 embeddings 或高频推理的开发者与团队，该版本可能减少每请求的额外开销，降低单位任务成本；同时需关注模型升级与兼容性迁移改为手动或延后带来的运维影响。可验证下一信号：实际部署中请求延迟与吞吐的对比数据。",
+  "category": "local-inference-runtime",
+  "company": "Ollama",
+  "keywords": [
+    "Ollama",
+    "v0.40.3",
+    "embeddings",
+    "模型升级",
+    "兼容性迁移",
+    "本地推理"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 62,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-11T04:24:55.000Z",
+  "publishedAt": "2026-10-11T06:36:00.719Z",
+  "createdAt": "2026-10-11T06:35:11.406Z",
+  "updatedAt": "2026-10-11T06:36:00.719Z"
 },
 {
   "id": "e918d10c-b01d-42f8-be20-e48d5386a742",
@@ -34480,8 +34799,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -34798,8 +35117,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -35433,8 +35752,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -35476,8 +35795,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -35744,8 +36063,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -35971,8 +36290,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -36194,8 +36513,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -40997,8 +41316,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -42179,8 +42498,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -43121,8 +43440,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -43165,8 +43484,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -43661,8 +43980,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -43704,8 +44023,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -43747,8 +44066,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -43790,8 +44109,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-11T01:13:54.736Z",
-  "updatedAt": "2026-10-11T01:13:54.736Z"
+  "createdAt": "2026-10-11T06:30:43.746Z",
+  "updatedAt": "2026-10-11T06:30:43.746Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "8c83d9fc-9d12-4920-8093-afbeee47375c",
+  "id": "ed39a9d5-8ddf-4d4b-873b-07fcf4f4467e",
   "releaseVersion": "0.11.1",
   "status": "partial",
   "overallScore": 61,
@@ -17,17 +17,17 @@
       "status": "measured",
       "sampleSize": 137,
       "sampleTarget": 100,
-      "summary": "422 个目录源中 269 个单轮健康、77 个处于隔离观察，只有 137 个既 active 且健康；E2/E3 不等同生产覆盖。",
+      "summary": "422 个目录源中 269 个单轮健康、75 个处于隔离观察，只有 137 个既 active 且健康；E2/E3 不等同生产覆盖。",
       "evidence": {
         "catalog": 422,
         "checked": 414,
         "healthy": 269,
         "degraded": 24,
-        "failed": 69,
-        "skipped": 52,
-        "active": 137,
+        "failed": 70,
+        "skipped": 51,
+        "active": 138,
         "activeHealthy": 137,
-        "observingHealthy": 77,
+        "observingHealthy": 75,
         "healthyCategories": 13,
         "healthyChina": 60
       },
@@ -48,7 +48,7 @@
       "evidence": {
         "usableChecks": 293,
         "healthy": 269,
-        "auditWindows": 9,
+        "auditWindows": 10,
         "averageObservedQuality": 67,
         "schemaValid": 269
       },
@@ -63,14 +63,14 @@
       "scoreCap": 100,
       "weight": 10,
       "status": "measured",
-      "sampleSize": 23952,
+      "sampleSize": 24012,
       "sampleTarget": 100,
-      "summary": "23952 条信号中 16865 条来自 primary/research/policy，6954 条证据进入事件。",
+      "summary": "24012 条信号中 16891 条来自 primary/research/policy，6966 条证据进入事件。",
       "evidence": {
-        "signals": 23952,
-        "direct": 23952,
-        "primary": 16865,
-        "linkedEvidence": 6954,
+        "signals": 24012,
+        "direct": 24012,
+        "primary": 16891,
+        "linkedEvidence": 6966,
         "linkedSourceCount": 168,
         "aggregatorDebt": 0
       },
@@ -92,11 +92,11 @@
         "checked": 414,
         "healthy": 269,
         "degraded": 24,
-        "failed": 69,
-        "skipped": 52,
+        "failed": 70,
+        "skipped": 51,
         "latestRuns": 212,
         "latestRunSuccess": 212,
-        "auditWindows": 9
+        "auditWindows": 10
       },
       "penalties": [],
       "nextAction": "连续运行 7 天，按来源计算成功率、异常空结果、P95 延迟和恢复时间。"
@@ -109,15 +109,15 @@
       "scoreCap": 100,
       "weight": 12,
       "status": "measured",
-      "sampleSize": 891,
+      "sampleSize": 899,
       "sampleTarget": 30,
-      "summary": "891 个公开事件仅 47 个拥有多源证据，866 个通过当前就绪门禁；人工置信分只占 10%。",
+      "summary": "899 个公开事件仅 47 个拥有多源证据，874 个通过当前就绪门禁；人工置信分只占 10%。",
       "evidence": {
-        "published": 891,
-        "primaryEvidence": 883,
+        "published": 899,
+        "primaryEvidence": 891,
         "multiSource": 47,
-        "readyPublished": 866,
-        "averageEvidence": 1.5,
+        "readyPublished": 874,
+        "averageEvidence": 1.49,
         "averageSelfReportedConfidence": 82
       },
       "penalties": [],
@@ -135,9 +135,9 @@
       "sampleTarget": 30,
       "summary": "洞察字段完整不等于有价值；当前没有读者保存、引用、决策帮助度或付费反馈样本。",
       "evidence": {
-        "published": 891,
+        "published": 899,
         "fieldCompleteness": 100,
-        "readyPublished": 866,
+        "readyPublished": 874,
         "multiSource": 47,
         "outcomeFeedback": 0
       },
@@ -179,14 +179,14 @@
       "status": "measured",
       "sampleSize": 269,
       "sampleTarget": 100,
-      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 305 个。",
+      "summary": "135/269 个健康来源在 7 天窗口内有新内容，最近 30 天公开事件 313 个。",
       "evidence": {
         "healthy": 269,
         "freshHealthy": 135,
-        "active": 137,
+        "active": 138,
         "activeWithRecentSuccess": 134,
-        "published": 891,
-        "recentPublished": 305
+        "published": 899,
+        "recentPublished": 313
       },
       "penalties": [],
       "nextAction": "按 cadence 衡量来源 freshness lag，并补齐从事件发生到页面发布的延迟。"
@@ -229,8 +229,8 @@
         "checked": 414,
         "licenseDeclared": 422,
         "restrictedEnabled": 0,
-        "readyEvents": 866,
-        "totalEvents": 5667,
+        "readyEvents": 874,
+        "totalEvents": 5676,
         "rollbackDrills": 0
       },
       "penalties": [
@@ -683,8 +683,8 @@
     }
   ],
   "notes": "3 dimensions lack sufficient evidence; calibrated weighted score 66, evidence coverage 72%, final score 61",
-  "startedAt": "2026-10-10T17:28:29.927Z",
-  "finishedAt": "2026-10-10T17:28:30.258Z",
+  "startedAt": "2026-10-11T06:36:15.232Z",
+  "finishedAt": "2026-10-11T06:36:15.578Z",
   "target": 80,
   "targetReached": false,
   "policy": "measured-evidence-only",
@@ -751,15 +751,13 @@
     }
   ],
   "comparison": {
-    "passed": false,
+    "passed": true,
     "baselineScore": 61,
     "currentScore": 61,
     "scoreDelta": 0,
     "baselineEvidenceCoverage": 72,
     "currentEvidenceCoverage": 72,
     "evidenceCoverageDelta": 0,
-    "regressions": [
-      "dimension primary-source-provenance regressed from 66 to 65"
-    ]
+    "regressions": []
   }
 }
