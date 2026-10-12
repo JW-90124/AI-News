@@ -931,9 +931,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-10T06:27:31.992Z",
-  "lastSeenAt": "2026-10-11T06:33:07.334Z",
+  "lastSeenAt": "2026-10-12T06:38:06.886Z",
   "createdAt": "2026-10-10T06:27:31.992Z",
-  "updatedAt": "2026-10-11T06:33:07.334Z"
+  "updatedAt": "2026-10-12T06:38:06.886Z"
 },
 {
   "id": "860444d3-94ca-4cc9-b7b6-9c143a243464",
@@ -3693,9 +3693,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.012Z",
-  "lastSeenAt": "2026-10-11T06:33:07.340Z",
+  "lastSeenAt": "2026-10-12T06:38:06.892Z",
   "createdAt": "2026-10-09T06:49:46.012Z",
-  "updatedAt": "2026-10-11T06:33:07.340Z"
+  "updatedAt": "2026-10-12T06:38:06.892Z"
 },
 {
   "id": "a4c6b9fb-e38c-4e3d-8ead-5cb81c1292ba",
@@ -4071,9 +4071,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-10T06:27:31.995Z",
-  "lastSeenAt": "2026-10-11T06:33:07.337Z",
+  "lastSeenAt": "2026-10-12T06:38:06.890Z",
   "createdAt": "2026-10-10T06:27:31.995Z",
-  "updatedAt": "2026-10-11T06:33:07.337Z"
+  "updatedAt": "2026-10-12T06:38:06.890Z"
 },
 {
   "id": "c16febba-4757-4e82-b191-924a9e6a940d",
@@ -4186,9 +4186,9 @@
   "matchedSignalId": "f693bb7b-0da9-4529-a65e-7e53185dc1a8",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-08T18:55:55.298Z",
-  "lastSeenAt": "2026-10-11T06:33:07.360Z",
+  "lastSeenAt": "2026-10-12T06:38:06.914Z",
   "createdAt": "2026-10-08T18:55:55.298Z",
-  "updatedAt": "2026-10-11T06:33:07.360Z"
+  "updatedAt": "2026-10-12T06:38:06.914Z"
 },
 {
   "id": "0f673918-7c86-494c-808e-ce4f772622cc",
@@ -5725,9 +5725,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-08T18:55:55.314Z",
-  "lastSeenAt": "2026-10-11T06:33:07.372Z",
+  "lastSeenAt": "2026-10-12T06:38:06.926Z",
   "createdAt": "2026-10-08T18:55:55.314Z",
-  "updatedAt": "2026-10-11T06:33:07.372Z"
+  "updatedAt": "2026-10-12T06:38:06.926Z"
 },
 {
   "id": "6c638771-335d-4861-b666-ddc8c2aba4fb",
@@ -6520,14 +6520,14 @@
       "CN"
     ]
   },
-  "matchedSourceSlug": "nvidia-blog-ai",
+  "matchedSourceSlug": "hackernews-ai",
   "candidateSourceSlugs": [],
-  "matchedSignalId": null,
-  "status": "matched_source",
+  "matchedSignalId": "b53c6ce5-b4a1-4542-b2d3-31a51a532251",
+  "status": "merged_signal",
   "firstSeenAt": "2026-10-08T06:43:59.760Z",
   "lastSeenAt": "2026-10-09T06:49:46.117Z",
   "createdAt": "2026-10-08T06:43:59.760Z",
-  "updatedAt": "2026-10-09T06:49:46.117Z"
+  "updatedAt": "2026-10-12T06:38:02.207Z"
 },
 {
   "id": "34274735-bc9e-4cf5-b0c5-e6c2407a67ac",
@@ -9292,6 +9292,47 @@
   "updatedAt": "2026-10-10T06:27:32.044Z"
 },
 {
+  "id": "528cd764-2eca-4063-b61b-59faa2124621",
+  "identityHash": "3cd773ac9b56146ab4eee7a98b3b6d6dccda84efdebfd2f9973ad541ee520aee",
+  "aggregatorSlug": "aihot",
+  "externalId": "z54sznsd0r2teb6gqyvwu4nc2",
+  "discoveryUrl": "https://aihot.news/items/z54sznsd0r2teb6gqyvwu4nc2",
+  "discoveryUrlHash": "5f684ce56c560cccb821c3ff519885d74fec5f7b32a3700b9caa48da61ed34d8",
+  "originUrl": "https://x.com/thsottiaux/status/2109430343346581527",
+  "originUrlHash": "a091b1beb12d0fc4176f752396e266c2935549f3d0767c943d895f16a819622d",
+  "originKind": "social",
+  "originName": "X：Tibo (@thsottiaux)",
+  "handles": [
+    {
+      "handle": "thsottiaux"
+    }
+  ],
+  "title": "GPT-6.1 Sol 在 Codex 与 Work 中默认上下文长度提升至 500k",
+  "summary": "Tibo 宣布 GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文长度从 272k 提升到 500k,约增加 80%。此举可减少压缩(compaction)发生,帮助需要长期保留大量上下文和细节的任务;用户仍可自行覆盖设置,模型最大上下文长度为 1M。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-11T23:45:59.000Z",
+  "category": "ai-products",
+  "tags": [
+    "ai-products"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "x-ai",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T06:38:06.806Z",
+  "lastSeenAt": "2026-10-12T06:38:06.806Z",
+  "createdAt": "2026-10-12T06:38:06.806Z",
+  "updatedAt": "2026-10-12T06:40:30.006Z"
+},
+{
   "id": "67e78ac6-1968-4f21-a67b-e8f2864518c4",
   "identityHash": "3cda5fa1cf0a93594daf92dfb322e9347acd2cbf2ea095a6dbe5f1b3fdcbfa87",
   "aggregatorSlug": "aihot",
@@ -9434,14 +9475,14 @@
       "CN"
     ]
   },
-  "matchedSourceSlug": null,
+  "matchedSourceSlug": "sierra",
   "candidateSourceSlugs": [],
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.973Z",
-  "lastSeenAt": "2026-10-11T06:33:07.308Z",
+  "lastSeenAt": "2026-10-12T06:38:06.852Z",
   "createdAt": "2026-10-10T06:27:31.973Z",
-  "updatedAt": "2026-10-11T06:36:14.543Z"
+  "updatedAt": "2026-10-12T06:41:46.587Z"
 },
 {
   "id": "27400e61-9890-4f85-aa48-8fbaf401c729",
@@ -10361,9 +10402,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.009Z",
-  "lastSeenAt": "2026-10-11T06:33:07.330Z",
+  "lastSeenAt": "2026-10-12T06:38:06.883Z",
   "createdAt": "2026-10-09T06:49:46.009Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "f57527d8-1404-408b-86f7-ed483544fc8b",
@@ -10550,9 +10591,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.976Z",
-  "lastSeenAt": "2026-10-11T06:33:07.311Z",
+  "lastSeenAt": "2026-10-12T06:38:06.855Z",
   "createdAt": "2026-10-10T06:27:31.976Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "ab1feaeb-ac56-4487-a7af-0931f17db90d",
@@ -11039,9 +11080,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T18:27:03.931Z",
-  "lastSeenAt": "2026-10-11T06:33:07.320Z",
+  "lastSeenAt": "2026-10-12T06:38:06.875Z",
   "createdAt": "2026-10-09T18:27:03.931Z",
-  "updatedAt": "2026-10-11T06:33:07.320Z"
+  "updatedAt": "2026-10-12T06:38:06.875Z"
 },
 {
   "id": "8e634565-5cf6-4d26-8611-5d0f55bcd81f",
@@ -12577,9 +12618,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.949Z",
-  "lastSeenAt": "2026-10-11T06:33:07.280Z",
+  "lastSeenAt": "2026-10-12T06:38:06.825Z",
   "createdAt": "2026-10-10T06:27:31.949Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "5d5899ad-9131-44ad-9542-c4d99d5098bb",
@@ -13382,9 +13423,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-08T18:55:55.310Z",
-  "lastSeenAt": "2026-10-11T06:33:07.369Z",
+  "lastSeenAt": "2026-10-12T06:38:06.922Z",
   "createdAt": "2026-10-08T18:55:55.310Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "3fab73ca-a787-44d6-8613-a516db824f20",
@@ -17033,9 +17074,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-09T06:49:46.031Z",
-  "lastSeenAt": "2026-10-11T06:33:07.353Z",
+  "lastSeenAt": "2026-10-12T06:38:06.907Z",
   "createdAt": "2026-10-09T06:49:46.031Z",
-  "updatedAt": "2026-10-11T06:33:07.353Z"
+  "updatedAt": "2026-10-12T06:38:06.907Z"
 },
 {
   "id": "3eeada9d-c6f0-4fb5-8a26-b3cee2cede0e",
@@ -17760,9 +17801,9 @@
   "matchedSignalId": "55c8824a-b270-46ad-a275-1600dc317e4d",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-10T06:27:31.961Z",
-  "lastSeenAt": "2026-10-11T06:33:07.295Z",
+  "lastSeenAt": "2026-10-12T06:38:06.840Z",
   "createdAt": "2026-10-10T06:27:31.961Z",
-  "updatedAt": "2026-10-11T06:33:07.295Z"
+  "updatedAt": "2026-10-12T06:38:06.841Z"
 },
 {
   "id": "c3a08ec4-e0ca-45f0-b5bb-683fdbae32a2",
@@ -18641,9 +18682,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.969Z",
-  "lastSeenAt": "2026-10-11T06:33:07.305Z",
+  "lastSeenAt": "2026-10-12T06:38:06.848Z",
   "createdAt": "2026-10-10T06:27:31.969Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "df63efc0-cb70-4fbf-b3a1-176e6d650df4",
@@ -20044,9 +20085,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-10T06:27:32.029Z",
-  "lastSeenAt": "2026-10-11T06:33:07.376Z",
+  "lastSeenAt": "2026-10-12T06:38:06.929Z",
   "createdAt": "2026-10-10T06:27:32.029Z",
-  "updatedAt": "2026-10-11T06:33:07.376Z"
+  "updatedAt": "2026-10-12T06:38:06.929Z"
 },
 {
   "id": "04487afb-9562-4f79-984c-970dccd3656a",
@@ -21860,9 +21901,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T17:25:17.638Z",
-  "lastSeenAt": "2026-10-11T06:33:07.271Z",
+  "lastSeenAt": "2026-10-12T06:38:06.816Z",
   "createdAt": "2026-10-10T17:25:17.638Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "74677dcc-4cfc-42e5-942d-fd87180e21f1",
@@ -24579,9 +24620,9 @@
   "matchedSignalId": "2e34db87-693a-461d-b4e9-3c8a43430041",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-10T17:25:17.642Z",
-  "lastSeenAt": "2026-10-11T06:33:07.274Z",
+  "lastSeenAt": "2026-10-12T06:38:06.819Z",
   "createdAt": "2026-10-10T17:25:17.642Z",
-  "updatedAt": "2026-10-11T06:33:07.275Z"
+  "updatedAt": "2026-10-12T06:38:06.820Z"
 },
 {
   "id": "f937e4ef-5f0c-43b3-9c0e-39c7c2eb0f07",
@@ -25047,9 +25088,9 @@
   "matchedSignalId": "db2eceb0-3361-4029-b939-fb8f2ce2ffd2",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-09T18:27:03.924Z",
-  "lastSeenAt": "2026-10-11T06:33:07.315Z",
+  "lastSeenAt": "2026-10-12T06:38:06.868Z",
   "createdAt": "2026-10-09T18:27:03.924Z",
-  "updatedAt": "2026-10-11T06:33:07.315Z"
+  "updatedAt": "2026-10-12T06:38:06.869Z"
 },
 {
   "id": "9defd3f2-7982-4203-8847-57c214c5125e",
@@ -26048,9 +26089,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.027Z",
-  "lastSeenAt": "2026-10-11T06:33:07.350Z",
+  "lastSeenAt": "2026-10-12T06:38:06.903Z",
   "createdAt": "2026-10-09T06:49:46.027Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "74d38ad1-2954-486d-be76-6e99ec141f22",
@@ -27586,9 +27627,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.003Z",
-  "lastSeenAt": "2026-10-11T06:33:07.325Z",
+  "lastSeenAt": "2026-10-12T06:38:06.879Z",
   "createdAt": "2026-10-09T06:49:46.003Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "91861383-eefa-4275-8fa2-6218a7f8e6d0",
@@ -28170,9 +28211,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.035Z",
-  "lastSeenAt": "2026-10-11T06:33:07.357Z",
+  "lastSeenAt": "2026-10-12T06:38:06.911Z",
   "createdAt": "2026-10-09T06:49:46.035Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "3dbf4486-38a6-4218-867a-06aee1559c14",
@@ -29692,9 +29733,9 @@
   "matchedSignalId": "60d8721e-9cc5-4391-b296-ce1102d4546d",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-11T06:33:07.264Z",
-  "lastSeenAt": "2026-10-11T06:33:07.264Z",
+  "lastSeenAt": "2026-10-12T06:38:06.809Z",
   "createdAt": "2026-10-11T06:33:07.264Z",
-  "updatedAt": "2026-10-11T06:33:07.265Z"
+  "updatedAt": "2026-10-12T06:38:06.810Z"
 },
 {
   "id": "03a841d3-6585-4ea0-8c4b-e8dc75e96892",
@@ -29921,9 +29962,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-08T18:55:55.305Z",
-  "lastSeenAt": "2026-10-11T06:33:07.365Z",
+  "lastSeenAt": "2026-10-12T06:38:06.918Z",
   "createdAt": "2026-10-08T18:55:55.305Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "3b7f7d16-4b1a-4582-9009-2724be917609",
@@ -30438,6 +30479,47 @@
   "lastSeenAt": "2026-10-05T09:31:44.745Z",
   "createdAt": "2026-10-05T09:31:44.745Z",
   "updatedAt": "2026-10-05T09:34:14.778Z"
+},
+{
+  "id": "8673f8a7-d633-4b4b-bcf9-c94cc63d47c7",
+  "identityHash": "bd5b9630c3c3bf8b399fb6bf5057b88155b06b98678d46ec0ab47b301f249d92",
+  "aggregatorSlug": "aihot",
+  "externalId": "hvxwaxeyj6i82xv44ef4ce6fz",
+  "discoveryUrl": "https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
+  "discoveryUrlHash": "3dc846736e252f0232af57b025c8fff145e4d90c7f1283a2100256d68649ad80",
+  "originUrl": "https://x.com/Khazix0918/status/2109501787736813663",
+  "originUrlHash": "ad9ae0dda0be5865f6cd0c694d1be3136c4f4e397ce386517cdb25f8ef146d72",
+  "originKind": "social",
+  "originName": "X：卡兹克 (@Khazix0918)",
+  "handles": [
+    {
+      "handle": "khazix0918"
+    }
+  ],
+  "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
+  "summary": "数字生命卡兹克撰文分析AI驱动逆向工程热潮:开发者Brandon Thomas因不满Adobe订阅规则,用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等,不到10天单PS项目获4.6万Star。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T04:29:53.000Z",
+  "category": "opinion",
+  "tags": [
+    "opinion"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "x-ai",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T06:38:06.797Z",
+  "lastSeenAt": "2026-10-12T06:38:06.797Z",
+  "createdAt": "2026-10-12T06:38:06.797Z",
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "99abe360-757d-4296-a97f-c0dce730aa29",
@@ -33574,9 +33656,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.957Z",
-  "lastSeenAt": "2026-10-11T06:33:07.288Z",
+  "lastSeenAt": "2026-10-12T06:38:06.835Z",
   "createdAt": "2026-10-10T06:27:31.957Z",
-  "updatedAt": "2026-10-11T06:33:07.288Z"
+  "updatedAt": "2026-10-12T06:38:06.835Z"
 },
 {
   "id": "2650dc55-3783-4eb5-9cee-1c3f2849bc46",
@@ -34889,9 +34971,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.954Z",
-  "lastSeenAt": "2026-10-11T06:33:07.285Z",
+  "lastSeenAt": "2026-10-12T06:38:06.831Z",
   "createdAt": "2026-10-10T06:27:31.954Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "e2be8636-0b3a-41b3-8a7e-2cb1c0aa7fba",
@@ -37023,9 +37105,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.966Z",
-  "lastSeenAt": "2026-10-11T06:33:07.301Z",
+  "lastSeenAt": "2026-10-12T06:38:06.845Z",
   "createdAt": "2026-10-10T06:27:31.966Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "efa87cae-85f6-47d1-b9b5-1c8e92e5f047",
@@ -37399,9 +37481,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.023Z",
-  "lastSeenAt": "2026-10-11T06:33:07.346Z",
+  "lastSeenAt": "2026-10-12T06:38:06.898Z",
   "createdAt": "2026-10-09T06:49:46.023Z",
-  "updatedAt": "2026-10-11T06:35:15.657Z"
+  "updatedAt": "2026-10-12T06:40:30.006Z"
 },
 {
   "id": "b4403766-a962-4a8d-bfdc-e8dd6a8c1dcd",
@@ -38893,6 +38975,43 @@
   "lastSeenAt": "2026-07-12T00:08:49.852Z",
   "createdAt": "2026-07-12T00:08:49.852Z",
   "updatedAt": "2026-07-12T00:08:49.852Z"
+},
+{
+  "id": "e6deb0cb-0c8f-4c27-9d4a-35f5a8141ca1",
+  "identityHash": "fb26b1a76cf11095d78d27db3f5bbaa9baa77302db8947131be25dff2bd0bdae",
+  "aggregatorSlug": "aihot",
+  "externalId": "u9f1ozdbs5nobwugj3yss3z0e",
+  "discoveryUrl": "https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
+  "discoveryUrlHash": "07aec9b7b450dbe5017e5e26655815b53ff9971bfa619f6a256ac9c6f65a3fc2",
+  "originUrl": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&idx=1&mid=2647686995&sn=cc40a3488a2ea7652d2ab589056f40b4",
+  "originUrlHash": "e9357cd93c315c971fdd56bc098b33791782af863917395971dd1dda1500d8eb",
+  "originKind": "unknown",
+  "originName": "公众号：数字生命卡兹克",
+  "handles": [],
+  "title": "AI逆向一切:Brandon Thomas用Claude Opus 5.5重写Adobe七款软件开源,REA项目逼近10万Star",
+  "summary": "开发者Brandon Thomas因不满Adobe订阅违约金,用Claude Opus 5.5以Rust逆向重写了Photoshop等7款Adobe软件并开源,其中PS项目不到10天获4.6万Star。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T00:26:00.000Z",
+  "category": "opinion",
+  "tags": [
+    "opinion"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": null,
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "pending",
+  "firstSeenAt": "2026-10-12T06:38:06.801Z",
+  "lastSeenAt": "2026-10-12T06:38:06.801Z",
+  "createdAt": "2026-10-12T06:38:06.801Z",
+  "updatedAt": "2026-10-12T06:38:06.801Z"
 },
 {
   "id": "7a089282-d0f1-495e-bf9a-33216d91f635",
