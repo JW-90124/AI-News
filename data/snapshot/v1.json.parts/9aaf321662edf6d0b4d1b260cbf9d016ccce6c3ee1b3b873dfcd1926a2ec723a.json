@@ -1,5 +1,690 @@
 [
 {
+  "id": "c3f39935-499d-4953-bca5-628b0ee6134d",
+  "slug": "sparser-sparse-variable-projection-by-exploiting-separable-structure-in-robotic-perception-2026-09-22",
+  "title": "SPARSER: Sparse Variable Projection by Exploiting Separable Structure in Robotic Perception",
+  "factSummary": "Robotic perception often requires solving large nonlinear least-squares (NLS) problems. While sparsity has been widely exploited to scale solvers, a complementary and underused structure is \\emph{separability}: some variables, such as visual landmarks, appear linearly in the residuals and admit a closed-form solution once the remaining variables, such as poses, are fixed. Variable projection (VarPro) exploits this structure by analytically eliminating the linear variables, yielding a reduced problem with favorable computational properties. However, its use in robotic perception has been limited by gauge symmetries, such as invariance to global translations and rotations, which introduce challenges for standard VarPro methods. We present SPARSER (\\textbf{S}parsity \\textbf{P}reserving \\textbf{A}nalytic \\textbf{R}eduction for \\textbf{S}eparable \\textbf{R}obotic \\textbf{P}erception), a VarPro framework for gauge-symmetric problems that jointly exploits separability and sparsity. Our method constructs a \\emph{matrix-free Schur complement operator} for efficient evaluation of reduced costs, gradients, and Hessian-vector products, enabling integration with iterative NLS solvers. We characterize the applicable problem class, identify common cases admitting further analytical simplifications, and show that IRLS-based robust costs preserve most of the exploitable structure. Across synthetic and real SLAM, SNL, and SfM benchmarks, SPARSER is on average $5\\times$--$7\\times$ faster than state-of-the-art baselines on CPU and GPU, with gains exceeding $40\\times$ on individual datasets. On outlier-corrupted multi-robot SLAM data, the robust variant is $2\\times$--$16\\times$ faster than a state-of-the-art GNC solver. We release open-source C++ code and all datasets.",
+  "summary": "Robotic perception often requires solving large nonlinear least-squares (NLS) problems. While sparsity has been widely exploited to scale solvers, a complementary and underused structure is \\emph{separability}: some variables, such as visual landmarks, appear linearly in the residuals and admit a closed-form solution once the remaining variables, such as poses, are fixed. Variable projection (VarPro) exploits this structure by analytically eliminating the linear variables, yielding a reduced problem with favorable computational properties. However, its use in robotic perception has been limited by gauge symmetries, such as invariance to global translations and rotations, which introduce challenges for standard VarPro methods. We present SPARSER (\\textbf{S}parsity \\textbf{P}reserving \\textbf{A}nalytic \\textbf{R}eduction for \\textbf{S}eparable \\textbf{R}obotic \\textbf{P}erception), a VarPro framework for gauge-symmetric problems that jointly exploits separability and sparsity. Our method constructs a \\emph{matrix-free Schur complement operator} for efficient evaluation of reduced costs, gradients, and Hessian-vector products, enabling integration with iterative NLS solvers. We characterize the applicable problem class, identify common cases admitting further analytical simplifications, and show that IRLS-based robust costs preserve most of the exploitable structure. Across synthetic and real SLAM, SNL, and SfM benchmarks, SPARSER is on average $5\\times$--$7\\times$ faster than state-of-the-art baselines on CPU and GPU, with gains exceeding $40\\times$ on individual datasets. On outlier-corrupted multi-robot SLAM data, the robust variant is $2\\times$--$16\\times$ faster than a state-of-the-art GNC solver. We release open-source C++ code and all datasets.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sparser",
+    "sparse",
+    "variable",
+    "projection",
+    "by",
+    "exploiting",
+    "separable",
+    "structure"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-21T14:52:11.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T05:30:07.858Z",
+  "updatedAt": "2026-09-22T05:30:07.898Z"
+},
+{
+  "id": "6eb9a014-9747-40e7-a10c-cea970321c78",
+  "slug": "spatial-grafting-grounding-3d-features-for-flow-matching-robot-policies-2026-09-29",
+  "title": "Spatial Grafting: Grounding 3D Features for Flow-Matching Robot Policies",
+  "factSummary": "Pretrained robot manipulation policies such as vision-language-action models (VLAs) or world-action models (WAMs) leave interaction-relevant metric geometry implicit. Recent breakthroughs in spatial reconstruction can supply the necessary geometry reliably, but their features describe local shape without stating where it lies with respect to the robot. How best to deliver these features to a pretrained policy remains unresolved. We propose Spatial Grafting, a versatile, lightweight spatial module that binds frozen reconstruction features to metric, robot-relative geometry. Spatial Grafting constructs metric-grounded spatial tokens and injects them into the flow-matching action expert through cross-attention, without modifying the host's perceptual pathway, so the host retains the full benefit of its pretraining. We evaluate it more broadly than any geometry-aware policy we compare against: one graft architecture, with no per-host redesign, on two VLAs and two WAMs, across four simulation benchmarks that span short-horizon manipulation, visual robustness, clutter and long-horizon mobile manipulation, and on three real-robot platforms with single- and dual-arm configurations. On RoboTwin 2.0, a dual-arm manipulation benchmark, the graft improves every host across VLAs and WAMs. Grafted $π_{0.5}$ gains 11.3% and 15.6% on clean and randomized scenes, reaching 94.0% and 92.4%, above the strongest published 3D-conditioned policy, WAM4D (93.8% and 89.9%). The margin widens as the horizon lengthens: on tasks from BEHAVIOR-1K, a dual-arm mobile manipulation challenge scored by average task progress, it surpasses the 2025 challenge winner on five of six tasks,by up to 0.47 Q-score, and exceeds a map-conditioned spatial policy on average across the three tasks both report.",
+  "summary": "Pretrained robot manipulation policies such as vision-language-action models (VLAs) or world-action models (WAMs) leave interaction-relevant metric geometry implicit. Recent breakthroughs in spatial reconstruction can supply the necessary geometry reliably, but their features describe local shape without stating where it lies with respect to the robot. How best to deliver these features to a pretrained policy remains unresolved. We propose Spatial Grafting, a versatile, lightweight spatial module that binds frozen reconstruction features to metric, robot-relative geometry. Spatial Grafting constructs metric-grounded spatial tokens and injects them into the flow-matching action expert through cross-attention, without modifying the host's perceptual pathway, so the host retains the full benefit of its pretraining. We evaluate it more broadly than any geometry-aware policy we compare against: one graft architecture, with no per-host redesign, on two VLAs and two WAMs, across four simulation benchmarks that span short-horizon manipulation, visual robustness, clutter and long-horizon mobile manipulation, and on three real-robot platforms with single- and dual-arm configurations. On RoboTwin 2.0, a dual-arm manipulation benchmark, the graft improves every host across VLAs and WAMs. Grafted $π_{0.5}$ gains 11.3% and 15.6% on clean and randomized scenes, reaching 94.0% and 92.4%, above the strongest published 3D-conditioned policy, WAM4D (93.8% and 89.9%). The margin widens as the horizon lengthens: on tasks from BEHAVIOR-1K, a dual-arm mobile manipulation challenge scored by average task progress, it surpasses the 2025 challenge winner on five of six tasks,by up to 0.47 Q-score, and exceeds a map-conditioned spatial policy on average across the three tasks both report.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatial",
+    "grafting",
+    "grounding",
+    "3d",
+    "features",
+    "flow",
+    "matching",
+    "robot"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T14:17:31.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-29T06:20:49.176Z",
+  "updatedAt": "2026-09-29T06:20:49.233Z"
+},
+{
+  "id": "60214dd9-a796-409e-9101-0e7577c66115",
+  "slug": "spatial-semantic-uncertainty-in-vlm-based-target-search-balancing-exploration-and-identifi-2026-09-18",
+  "title": "Spatial-Semantic Uncertainty in VLM-Based Target Search: Balancing Exploration and Identification",
+  "factSummary": "Robots searching for a target from a natural-language description must determine not only where to search, but also which observed candidate is the desired target. These decisions reflect two distinct sources of uncertainty - spatial uncertainty over candidate locations and semantic uncertainty over target identity - that are often conflated in VLM-based search systems. We introduce a spatial-semantic uncertainty formulation that maintains separate beliefs over each component and integrates probabilistic VLM evidence into a global target-identity posterior, including probability mass for undiscovered targets. This decomposition allows an information-theoretic planner to independently value candidate discovery and target disambiguation through spatial and semantic expected information gain (EIG), providing an explicit mechanism for trading broader exploration against earlier identification. We evaluate six VLM uncertainty-elicitation interfaces on 500 synthetic targets and show that similar recognition accuracy can conceal substantial differences in calibration and false confidence. In degraded-observation search-and-identify experiments, EIG-based planners reach confident decisions in 75.0%-92.5% of trials, compared with 20.0% for Random search, while different spatial-semantic weightings achieve comparable identification accuracy once confidence is attained. Increasing semantic emphasis reduces unnecessary exploration and VLM queries, demonstrating that explicitly planning over semantic uncertainty can accelerate target resolution without sacrificing decision quality. These results highlight the distinct roles of uncertainty representation and uncertainty-driven planning in embodied VLM systems.",
+  "summary": "Robots searching for a target from a natural-language description must determine not only where to search, but also which observed candidate is the desired target. These decisions reflect two distinct sources of uncertainty - spatial uncertainty over candidate locations and semantic uncertainty over target identity - that are often conflated in VLM-based search systems. We introduce a spatial-semantic uncertainty formulation that maintains separate beliefs over each component and integrates probabilistic VLM evidence into a global target-identity posterior, including probability mass for undiscovered targets. This decomposition allows an information-theoretic planner to independently value candidate discovery and target disambiguation through spatial and semantic expected information gain (EIG), providing an explicit mechanism for trading broader exploration against earlier identification. We evaluate six VLM uncertainty-elicitation interfaces on 500 synthetic targets and show that similar recognition accuracy can conceal substantial differences in calibration and false confidence. In degraded-observation search-and-identify experiments, EIG-based planners reach confident decisions in 75.0%-92.5% of trials, compared with 20.0% for Random search, while different spatial-semantic weightings achieve comparable identification accuracy once confidence is attained. Increasing semantic emphasis reduces unnecessary exploration and VLM queries, demonstrating that explicitly planning over semantic uncertainty can accelerate target resolution without sacrificing decision quality. These results highlight the distinct roles of uncertainty representation and uncertainty-driven planning in embodied VLM systems.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatial",
+    "semantic",
+    "uncertainty",
+    "vlm",
+    "based",
+    "target",
+    "search",
+    "balancing"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T14:16:15.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:12.969Z",
+  "updatedAt": "2026-09-18T05:20:13.008Z"
+},
+{
+  "id": "c6acd5a1-931c-4d6b-8e96-63136a3bc452",
+  "slug": "spatialasm-internalizing-active-mentalization-for-spatial-reasoning-2026-10-12",
+  "title": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
+  "factSummary": "When solving complex spatial reasoning tasks, ordinary humans naturally revisit the scenes from task-relevant viewpoints and mentally reconstruct the spatial layouts from those viewpoints. But can Large Vision-Language Models (LVLMs) proactively think in the same way? We term this ability Active Spatial Mentalization (ASM), an intrinsic component of visual intelligence that remains substantially underdeveloped in current LVLMs. To bridge this gap, we introduce SpatialASM, a scalable framework to internalize ASM into LVLMs through training-time spatial simulation. SpatialASM employs an allocentric novel-view generator to ground hypothetical viewpoints in visual evidence and produces two complementary forms of supervision: i) explicit ASM trajectories that teach LVLMs when and how to adaptively invoke view planning and imagination during spatial reasoning, and ii) automatically-constructed perspective-taking tasks that further strengthens viewpoint-conditioned scene imagination. On seven benchmarks spanning relatively perception-oriented spatial understanding to more challenging tasks requiring multi-image, cross-view and viewpoint-transformation reasoning, SpatialASM yields performance gain on LVLMs of four LVLM backbones in spatial reasoning while retaining their original general vision capabilities. The experimental results demonstrate that our approach improves average accuracy across the seven spatial benchmarks. And the synthesis of ASM trajectories provides a scalable pathway to alleviate the scarcity of spatial Chain-of-Thought (CoT) supervision for eliciting active viewpoint exploration and mental scene simulation.",
+  "summary": "When solving complex spatial reasoning tasks, ordinary humans naturally revisit the scenes from task-relevant viewpoints and mentally reconstruct the spatial layouts from those viewpoints. But can Large Vision-Language Models (LVLMs) proactively think in the same way? We term this ability Active Spatial Mentalization (ASM), an intrinsic component of visual intelligence that remains substantially underdeveloped in current LVLMs. To bridge this gap, we introduce SpatialASM, a scalable framework to internalize ASM into LVLMs through training-time spatial simulation. SpatialASM employs an allocentric novel-view generator to ground hypothetical viewpoints in visual evidence and produces two complementary forms of supervision: i) explicit ASM trajectories that teach LVLMs when and how to adaptively invoke view planning and imagination during spatial reasoning, and ii) automatically-constructed perspective-taking tasks that further strengthens viewpoint-conditioned scene imagination. On seven benchmarks spanning relatively perception-oriented spatial understanding to more challenging tasks requiring multi-image, cross-view and viewpoint-transformation reasoning, SpatialASM yields performance gain on LVLMs of four LVLM backbones in spatial reasoning while retaining their original general vision capabilities. The experimental results demonstrate that our approach improves average accuracy across the seven spatial benchmarks. And the synthesis of ASM trajectories provides a scalable pathway to alleviate the scarcity of spatial Chain-of-Thought (CoT) supervision for eliciting active viewpoint exploration and mental scene simulation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatialasm",
+    "internalizing",
+    "active",
+    "mentalization",
+    "spatial",
+    "reasoning"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T16:39:50.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-12T06:40:17.508Z",
+  "updatedAt": "2026-10-12T06:40:17.570Z"
+},
+{
+  "id": "5b951282-911c-47ac-977a-b2bdc4de1138",
+  "slug": "spatialchain-a-benchmark-for-auditing-spatial-reasoning-faithfulness-in-vlms-2026-10-06",
+  "title": "SpatialChain: A Benchmark for Auditing Spatial Reasoning Faithfulness in VLMs",
+  "factSummary": "Thinking-enabled vision-language models (VLMs) report ever-higher accuracy on spatial benchmarks, yet final-answer scores cannot reveal whether a correct prediction reflects faithful spatial reasoning or a linguistic shortcut. We introduce SpatialChain, a dataset of 28,350 training and 899 test examples pairing spatially-oriented GQA questions with scene-graph-grounded reasoning chains, retained only when the generated answer matches the symbolic ground truth, and a two-axis evaluation combining objective chain-overlap metrics with a scene-graph-aware LLM judge that scores faithfulness and completeness independently of the final answer. Applied to nine thinking-enabled VLMs, the protocol surfaces three findings invisible to standard accuracy: (i) four of nine models achieve $\\geq$79% VQA accuracy while exhibiting shortcut rates above 39%, i.e., correct answers whose reasoning the judge marks as unfaithful; (ii) chain quality significantly predicts answer correctness for seven of nine models, but the two exceptions (Claude Sonnet 4.6, InternVL3.5-8B) reveal qualitatively distinct failure modes, terse output vs. verbose-decorative reasoning, that benchmark accuracy alone conflates; (iii) SFT on SpatialChain improves Qwen3-VL-8B by +6.2 pp in-domain and reduces its shortcut rate to 22%, while a stylistic specialization effect on external benchmarks motivates replay-augmented training as mitigation. The faithfulness judge is validated against 198 human-annotated items, where judge-human agreement matches human-human agreement, and against a second judge from a different provider, which preserves the model ranking ($ρ$ = 0.88). Data, generation scripts, and evaluation code are released at https://github.com/spatialchain/SpatialChainBenchmark.",
+  "summary": "Thinking-enabled vision-language models (VLMs) report ever-higher accuracy on spatial benchmarks, yet final-answer scores cannot reveal whether a correct prediction reflects faithful spatial reasoning or a linguistic shortcut. We introduce SpatialChain, a dataset of 28,350 training and 899 test examples pairing spatially-oriented GQA questions with scene-graph-grounded reasoning chains, retained only when the generated answer matches the symbolic ground truth, and a two-axis evaluation combining objective chain-overlap metrics with a scene-graph-aware LLM judge that scores faithfulness and completeness independently of the final answer. Applied to nine thinking-enabled VLMs, the protocol surfaces three findings invisible to standard accuracy: (i) four of nine models achieve $\\geq$79% VQA accuracy while exhibiting shortcut rates above 39%, i.e., correct answers whose reasoning the judge marks as unfaithful; (ii) chain quality significantly predicts answer correctness for seven of nine models, but the two exceptions (Claude Sonnet 4.6, InternVL3.5-8B) reveal qualitatively distinct failure modes, terse output vs. verbose-decorative reasoning, that benchmark accuracy alone conflates; (iii) SFT on SpatialChain improves Qwen3-VL-8B by +6.2 pp in-domain and reduces its shortcut rate to 22%, while a stylistic specialization effect on external benchmarks motivates replay-augmented training as mitigation. The faithfulness judge is validated against 198 human-annotated items, where judge-human agreement matches human-human agreement, and against a second judge from a different provider, which preserves the model ranking ($ρ$ = 0.88). Data, generation scripts, and evaluation code are released at https://github.com/spatialchain/SpatialChainBenchmark.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatialchain",
+    "benchmark",
+    "auditing",
+    "spatial",
+    "reasoning",
+    "faithfulness",
+    "vlms"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 75,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-05T14:29:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-06T18:31:10.490Z",
+  "updatedAt": "2026-10-06T18:31:10.542Z"
+},
+{
+  "id": "66ccd0fd-2b55-4edb-b0bc-476409c3bd51",
+  "slug": "spatiotemporal-agility-time-constrained-reinforcement-learning-for-vision-guided-dynamic-q-2026-08-10",
+  "title": "Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception",
+  "factSummary": "Legged robots require robust agility to perceive and interact with complex and dynamic environments within a constrained time. However, most existing quadruped locomotion works rely on velocity-tracking policy, which struggle to reach precise targets within strict temporal constraints. Moreover, integrating real-time perception with agile locomotion for highly dynamic targets remains challenging due to sensor latency and processing delays. To concretely study and benchmark such agility in dynamic settings, we introduce a challenging ball-catching task for legged robots. This paper proposes an integrated framework that combines a vision module for landing point and time prediction with a direct position and time conditioned RL locomotion policy, instead of intermediate velocity commands. Beyond the method design, this work presents a system-level contribution that completes real-time robotic interception system that integrates multi-camera perception, online trajectory prediction, low-latency target communication, and sim-to-real locomotion control into a closed-loop deployment pipeline. By explicitly predicting the future spatial-temporal target, our approach mitigates perception latency during dynamic interception. We conducted extensive ball-catching experiments for the legged robot. Through comparative experiments against a velocity-tracking baseline, our direct target-conditioned approach achieves a higher success rate in catching balls with predicted landing spots within 2 meters and flight times between 0.8 and 1.2 seconds. This shows that the robot has successfully completed the dynamic ball-catching task under our tested setup. Furthermore, our policy exhibits a smaller performance gap after deployment, suggesting improved sim-to-real behavior in these trials.",
+  "summary": "Legged robots require robust agility to perceive and interact with complex and dynamic environments within a constrained time. However, most existing quadruped locomotion works rely on velocity-tracking policy, which struggle to reach precise targets within strict temporal constraints. Moreover, integrating real-time perception with agile locomotion for highly dynamic targets remains challenging due to sensor latency and processing delays. To concretely study and benchmark such agility in dynamic settings, we introduce a challenging ball-catching task for legged robots. This paper proposes an integrated framework that combines a vision module for landing point and time prediction with a direct position and time conditioned RL locomotion policy, instead of intermediate velocity commands. Beyond the method design, this work presents a system-level contribution that completes real-time robotic interception system that integrates multi-camera perception, online trajectory prediction, low-latency target communication, and sim-to-real locomotion control into a closed-loop deployment pipeline. By explicitly predicting the future spatial-temporal target, our approach mitigates perception latency during dynamic interception. We conducted extensive ball-catching experiments for the legged robot. Through comparative experiments against a velocity-tracking baseline, our direct target-conditioned approach achieves a higher success rate in catching balls with predicted landing spots within 2 meters and flight times between 0.8 and 1.2 seconds. This shows that the robot has successfully completed the dynamic ball-catching task under our tested setup. Furthermore, our policy exhibits a smaller performance gap after deployment, suggesting improved sim-to-real behavior in these trials.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatiotemporal",
+    "agility",
+    "time",
+    "constrained",
+    "reinforcement",
+    "learning",
+    "vision",
+    "guided"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 50,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-07T07:42:19.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-10T03:05:15.078Z",
+  "updatedAt": "2026-08-10T03:05:15.116Z"
+},
+{
+  "id": "59e674a5-dcaa-41ee-81a1-d57b20b9d735",
+  "slug": "spatiotemporal-context-dependent-personalized-movement-compensation-in-delayed-telemanipul-2026-08-11",
+  "title": "Spatiotemporal Context-dependent Personalized Movement Compensation in Delayed Telemanipulation",
+  "factSummary": "Communication delay remains a central challenge in telerobotics, where it disrupts visuomotor coordination and reduces task precision. Motion scaling is an effective countermeasure to delay-induced overshoot, yet typical deployments rely on uniform gains that neglect individual and contextual variability. We propose a human-centered method that fits personalized delay-, direction-, and distance-specific scaling parameters for each participant. We conducted experiments with twenty participants who performed delayed reaching tasks in a virtual simulator. Scaling gains were computed to minimize mean overshoot in simulation in each combination of experimental conditions. Evaluation was done in simulation and on a telesurgical robot to evaluate assistance benefits. Performance was assessed across multiple delays, distances, and movement directions using overshoot, endpoint error, trajectory smoothness, economy of motion, and a composite error-time metric. Motion scaling consistently improved performance relative to unassisted trials, yielding up to 20-25% performance gains in key metrics. Effects were most pronounced at longer delays. Personalization demonstrated additional accuracy benefits for inward reaching at a short distance under moderate delay. The results highlight the potential of personalized scaling as a foundation for more adaptive frameworks that integrate contextual information to improve the safety and precision of teleoperated procedures.",
+  "summary": "Communication delay remains a central challenge in telerobotics, where it disrupts visuomotor coordination and reduces task precision. Motion scaling is an effective countermeasure to delay-induced overshoot, yet typical deployments rely on uniform gains that neglect individual and contextual variability. We propose a human-centered method that fits personalized delay-, direction-, and distance-specific scaling parameters for each participant. We conducted experiments with twenty participants who performed delayed reaching tasks in a virtual simulator. Scaling gains were computed to minimize mean overshoot in simulation in each combination of experimental conditions. Evaluation was done in simulation and on a telesurgical robot to evaluate assistance benefits. Performance was assessed across multiple delays, distances, and movement directions using overshoot, endpoint error, trajectory smoothness, economy of motion, and a composite error-time metric. Motion scaling consistently improved performance relative to unassisted trials, yielding up to 20-25% performance gains in key metrics. Effects were most pronounced at longer delays. Personalization demonstrated additional accuracy benefits for inward reaching at a short distance under moderate delay. The results highlight the potential of personalized scaling as a foundation for more adaptive frameworks that integrate contextual information to improve the safety and precision of teleoperated procedures.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spatiotemporal",
+    "context",
+    "dependent",
+    "personalized",
+    "movement",
+    "compensation",
+    "delayed",
+    "telemanipulation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 54,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-08T15:51:09.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:41.952Z",
+  "updatedAt": "2026-08-11T02:58:41.989Z"
+},
+{
+  "id": "471daae9-86ba-4ada-babb-811928f7f86b",
+  "slug": "speaker-labeled-transcription-with-whisperx-on-sagemaker-ai-2026-09-24",
+  "title": "Speaker-labeled transcription with WhisperX on SageMaker AI",
+  "factSummary": "AWS 发布 WhisperX Deep Learning Container，将 Whisper、wav2vec2 强制对齐与说话人分离打包为 GPU 就绪镜像，可部署到 Amazon SageMaker AI 实时与异步端点，实现词级、带说话人标签的转录；文中还涉及 GPU AMI 版本固定、扩缩容与成本控制等生产细节。",
+  "summary": "AWS Machine Learning Blog 介绍了在 SageMaker AI 上使用 WhisperX 进行带说话人标签的转录方案：该 Deep Learning Container 集成 Whisper、wav2vec2 强制对齐和说话人分离，支持部署到实时与异步端点，并给出 GPU AMI 固定、扩缩容和成本控制等生产化要点。",
+  "technicalInsight": "该方案把语音识别、强制对齐与说话人分离三类模型封装进单一容器，降低了多模型串联的工程复杂度；但证据未给出准确率、延迟或吞吐数据，实际效果仍需以官方基准或自测为准。可验证下一信号：AWS 是否公布该容器的推理延迟、并发上限或与自建方案的对比数据。",
+  "industryInsight": "云厂商正把开源语音模型组合封装为托管推理镜像，争夺语音转录这一企业工作流入口；这属于基础设施层的产品化动作，而非模型能力本身的突破。可验证下一信号：其他云厂商或开源社区是否推出同类打包方案。",
+  "futureOutlook": "若该容器被广泛采用，语音转录的部署门槛可能进一步下降，竞争焦点转向成本与运维体验；但目前仅为单篇官方博客，采用情况尚不可知。可验证下一信号：SageMaker 相关文档、定价页或客户案例的后续更新。",
+  "businessValue": "对企业而言，可直接在 SageMaker 上获得词级、带说话人标签的转录能力，减少自建对齐与分离流水线的投入；成本收益取决于实际调用量与 GPU 利用率，证据未提供量化数据。可验证下一信号：AWS 是否发布该方案的定价示例或成本对比说明。",
+  "category": "speech-transcription-infra",
+  "company": "WhisperX",
+  "keywords": [
+    "WhisperX",
+    "SageMaker AI",
+    "说话人分离",
+    "强制对齐",
+    "语音转录",
+    "AWS"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-24T16:20:12.000Z",
+  "publishedAt": "2026-09-24T17:21:39.678Z",
+  "createdAt": "2026-09-24T17:20:52.353Z",
+  "updatedAt": "2026-09-24T17:21:39.678Z"
+},
+{
+  "id": "8e1c0562-f5bc-4356-b22e-04b32ce817f9",
+  "slug": "speakermem-r1-speaker-centered-dual-track-memory-for-multi-party-dialogue-2026-09-23",
+  "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+  "factSummary": "Long-term conversational memory in multi-party settings requires more than retrieving relevant content from long-term conversations: it must distinguish who said what, whom each statement concerns, how individuals perceive one another, what information is shared by the group, and how states change over time. Recent studies on multi-party dialogue benchmarks show that existing general-purpose LLM memory systems tend to lose person and group relations or struggle to integrate clues distributed across members, groups, and time. Together, these issues reveal two core bottlenecks: message attribution and relational understanding in multi-party dialogue, and state reconstruction from interleaved histories. To address both, we propose $\\textbf{SpeakerMem-R1}$: its dual-track memory stores speaker-labeled verbatim messages and derived states organized into person-level and group-level views, then combines evidence from both tracks by entity, event, and time at query time. To reduce attribution and update errors during structured memory construction while enabling local deployment, we train Writer-R1 with SpeakerLevenshtein and speaker-conditioned GRPO. On GroupMemBench, SocialMemBench, and EverMemBench, SpeakerMem-R1 achieves binary accuracies of 47.9%, 69.2%, and 61.9%, respectively. On the publicly reported EverMemBench leaderboard from EverMind-AI, we achieves 62.33%, the best reported result among the latest state-of-the-art frameworks. It also achieves 70.85% on all 1,986 LoCoMo questions, which we use as a two-person long-term conversation boundary test. In a controlled evaluation of 305 questions, RL raises the SFT Writer's mean accuracy from 57.38% to 68.20%. We report both binary accuracy and token-F1, and ablations show that the verbatim and structured tracks, as well as person-level and group-level views, are complementary under the standardized evaluation interface.",
+  "summary": "Long-term conversational memory in multi-party settings requires more than retrieving relevant content from long-term conversations: it must distinguish who said what, whom each statement concerns, how individuals perceive one another, what information is shared by the group, and how states change over time. Recent studies on multi-party dialogue benchmarks show that existing general-purpose LLM memory systems tend to lose person and group relations or struggle to integrate clues distributed across members, groups, and time. Together, these issues reveal two core bottlenecks: message attribution and relational understanding in multi-party dialogue, and state reconstruction from interleaved histories. To address both, we propose $\\textbf{SpeakerMem-R1}$: its dual-track memory stores speaker-labeled verbatim messages and derived states organized into person-level and group-level views, then combines evidence from both tracks by entity, event, and time at query time. To reduce attribution and update errors during structured memory construction while enabling local deployment, we train Writer-R1 with SpeakerLevenshtein and speaker-conditioned GRPO. On GroupMemBench, SocialMemBench, and EverMemBench, SpeakerMem-R1 achieves binary accuracies of 47.9%, 69.2%, and 61.9%, respectively. On the publicly reported EverMemBench leaderboard from EverMind-AI, we achieves 62.33%, the best reported result among the latest state-of-the-art frameworks. It also achieves 70.85% on all 1,986 LoCoMo questions, which we use as a two-person long-term conversation boundary test. In a controlled evaluation of 305 questions, RL raises the SFT Writer's mean accuracy from 57.38% to 68.20%. We report both binary accuracy and token-F1, and ablations show that the verbatim and structured tracks, as well as person-level and group-level views, are complementary under the standardized evaluation interface.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "speakermem",
+    "r1",
+    "speaker",
+    "centered",
+    "dual",
+    "track",
+    "memory",
+    "multi"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T17:56:12.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T05:18:39.771Z",
+  "updatedAt": "2026-09-23T05:18:39.818Z"
+},
+{
+  "id": "997e771b-537e-44b1-92d2-94e67e56fbdb",
+  "slug": "specialists-learn-faster-knowledge-organization-in-pre-training-shapes-knowledge-update-ef-2026-10-12",
+  "title": "Specialists Learn Faster: Knowledge Organization in Pre-training Shapes Knowledge Update Efficiency",
+  "factSummary": "An ideal (language) model must continually update its knowledge. Existing work largely focuses on making these updates efficient after training. We investigate how the organization of time-varying knowledge during pre-training shapes the efficiency of subsequent updates. Models trained on chronologically ordered knowledge specialize in the most recently encountered knowledge; we call them specialists. In contrast, models trained on the same knowledge in randomly shuffled order perform well across all represented time periods; we call them generalists. Surprisingly, specialists require far fewer update steps than generalists to acquire new knowledge. To explain this advantage, we derive a law from first principles that relates update cost to the model's optimization dynamics and that closely predicts empirical results. Guided by these findings, we design a strategy for organizing pre-training data that preserves stable historical knowledge while enabling efficient updates to current knowledge. We also show that the benefits of temporal knowledge organization extend to real-world pre-trained models and existing knowledge update tools, and generalize to other knowledge orderings. Project page: https://horizon-lab.org/specialist/",
+  "summary": "An ideal (language) model must continually update its knowledge. Existing work largely focuses on making these updates efficient after training. We investigate how the organization of time-varying knowledge during pre-training shapes the efficiency of subsequent updates. Models trained on chronologically ordered knowledge specialize in the most recently encountered knowledge; we call them specialists. In contrast, models trained on the same knowledge in randomly shuffled order perform well across all represented time periods; we call them generalists. Surprisingly, specialists require far fewer update steps than generalists to acquire new knowledge. To explain this advantage, we derive a law from first principles that relates update cost to the model's optimization dynamics and that closely predicts empirical results. Guided by these findings, we design a strategy for organizing pre-training data that preserves stable historical knowledge while enabling efficient updates to current knowledge. We also show that the benefits of temporal knowledge organization extend to real-world pre-trained models and existing knowledge update tools, and generalize to other knowledge orderings. Project page: https://horizon-lab.org/specialist/",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "specialists",
+    "learn",
+    "faster",
+    "knowledge",
+    "organization",
+    "pre",
+    "training",
+    "shapes"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T16:42:33.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-12T06:40:17.353Z",
+  "updatedAt": "2026-10-12T06:40:17.416Z"
+},
+{
+  "id": "0af3036d-eb01-4f61-b558-fefc1025db05",
+  "slug": "specialized-decision-models-vs-general-purpose-llms-benchmarking-jev-across-knowledge-reas-2026-10-09",
+  "title": "Specialized Decision Models vs. General-Purpose LLMs: Benchmarking Jev Across Knowledge, Reasoning, and Multilingual Tasks",
+  "factSummary": "Jev is a \"System One\" model that returns a choice among given options instead of generating text. We study how such a specialized decision model compares with general-purpose large language models (LLMs). We evaluate Jev on 13 multiple-choice benchmarks covering knowledge, reasoning, and multilingual understanding, and compare it with 19 LLMs in three tiers: frontier, representative, and small. Jev is competitive with frontier LLMs on knowledge and commonsense benchmarks and obtains the best score on MMLU-Redux and ARC-Challenge. Outside mathematics, it also outperforms most representative LLMs and all small LLMs. However, it falls behind on mathematical word problems: on MathQA, it is 17.7 points below the frontier median and scores lower than all 19 LLMs. These results indicate that a specialized decision model can match general-purpose LLMs on decisions that rely mainly on knowledge, but not on decisions that require multi-step calculation.",
+  "summary": "Jev is a \"System One\" model that returns a choice among given options instead of generating text. We study how such a specialized decision model compares with general-purpose large language models (LLMs). We evaluate Jev on 13 multiple-choice benchmarks covering knowledge, reasoning, and multilingual understanding, and compare it with 19 LLMs in three tiers: frontier, representative, and small. Jev is competitive with frontier LLMs on knowledge and commonsense benchmarks and obtains the best score on MMLU-Redux and ARC-Challenge. Outside mathematics, it also outperforms most representative LLMs and all small LLMs. However, it falls behind on mathematical word problems: on MathQA, it is 17.7 points below the frontier median and scores lower than all 19 LLMs. These results indicate that a specialized decision model can match general-purpose LLMs on decisions that rely mainly on knowledge, but not on decisions that require multi-step calculation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "specialized",
+    "decision",
+    "models",
+    "vs",
+    "general",
+    "purpose",
+    "llms",
+    "benchmarking"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-08T13:52:42.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T06:52:07.644Z",
+  "updatedAt": "2026-10-09T06:52:07.709Z"
+},
+{
+  "id": "3a2b5294-7e89-4dbc-80c1-02d1a494b432",
+  "slug": "specquant-speculative-decoding-with-multi-parent-quantization-for-adaptive-llm-inference-2026-09-21",
+  "title": "SpecQuant: Speculative Decoding with Multi-Parent Quantization for Adaptive LLM Inference",
+  "factSummary": "Running large language models (LLMs) locally continues to be limited by restrictions of compute and memory on consumer hardware. The popular acceleration technologies, such as quantization, speculative decoding, and adaptive inferencing, offer substantial speed boosts but usually necessitate retraining, per architecture tuning, or draft models. SpecQuant is a trainingfree framework, that combines speculative decoding with multiparent quantization to perform adaptive, efficient inference of LLMs. SpecQuant derives multiple quantized variants (INT4, FP8, FP16) from a shared base model, and dynamically routes queries based on predicted complexity; lightweight variants are used for simple or factual tasks, and full-precision models are used for complex reasoning tasks or long-context inputs. The shared-weight design of SpecQuant ensures sufficient token acceptance for speculative decoding without compatibility issues using separate draft parent models. We evaluate SpecQuant on Qwen2.5 based models on the MMLU, AlpacaEval, and GSM8K datasets, or benchmarks, demonstrating 35-43% speedups without degrading accuracy greater than 2%, substantial within the LLM community. SpecQuant enables practical on-device LLM deployment across diverse hardware without special infrastructure or expertise.",
+  "summary": "Running large language models (LLMs) locally continues to be limited by restrictions of compute and memory on consumer hardware. The popular acceleration technologies, such as quantization, speculative decoding, and adaptive inferencing, offer substantial speed boosts but usually necessitate retraining, per architecture tuning, or draft models. SpecQuant is a trainingfree framework, that combines speculative decoding with multiparent quantization to perform adaptive, efficient inference of LLMs. SpecQuant derives multiple quantized variants (INT4, FP8, FP16) from a shared base model, and dynamically routes queries based on predicted complexity; lightweight variants are used for simple or factual tasks, and full-precision models are used for complex reasoning tasks or long-context inputs. The shared-weight design of SpecQuant ensures sufficient token acceptance for speculative decoding without compatibility issues using separate draft parent models. We evaluate SpecQuant on Qwen2.5 based models on the MMLU, AlpacaEval, and GSM8K datasets, or benchmarks, demonstrating 35-43% speedups without degrading accuracy greater than 2%, substantial within the LLM community. SpecQuant enables practical on-device LLM deployment across diverse hardware without special infrastructure or expertise.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "specquant",
+    "speculative",
+    "decoding",
+    "multi",
+    "parent",
+    "quantization",
+    "adaptive",
+    "llm"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 51,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T12:39:47.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-21T05:36:26.075Z",
+  "updatedAt": "2026-09-21T05:36:26.115Z"
+},
+{
+  "id": "4999f7d0-8e02-4e0f-8f4e-943ac42a2d9d",
+  "slug": "spectonet-a-physics-guided-spectral-deep-operator-network-for-euler-bernoulli-beam-dynamic-2026-07-29",
+  "title": "SpectONet: A Physics-Guided Spectral Deep Operator Network for Euler-Bernoulli Beam Dynamics",
+  "factSummary": "This paper proposes a novel physics-guided spectral deep operator network, termed SpectONet, for solving Euler-Bernoulli beam (EBB) vibration problems. The proposed framework integrates the operator-learning capability of DeepONet with physics-informed constraints and Chebyshev-Gauss-Lobatto (CGL) sensor placement. Unlike conventional DeepONet frameworks, which commonly employ uniformly distributed sensors, SpectONet uses nonuniform spectral sensor locations with a higher concentration of points near the domain boundaries. This sampling strategy improves the finite-dimensional representation of boundary-sensitive structural responses while requiring only a limited number of branch-network inputs. The governing beam equation, together with the associated initial and boundary conditions, incorporated into the training objective to promote physically consistent and generalizable predictions. Numerical experiments on three synthetic EBB vibration problems and a real-world bridge vibration dataset demonstrate the effectiveness of the proposed framework. Comparisons with strong baselines such as, Vanilla DeepONet, PI-DeepONet, PINN, and CNN-UNet show that SpectONet consistently achieves lower prediction errors across all considered evaluation metrics. In particular, SpectONet achieves at least \\(64\\%\\) improvement over the considered baseline models across the three synthetic problems and at least \\(37\\%\\) for the real-world problems. These results demonstrate that SpectONet provides an accurate, computationally efficient, and physically consistent operator-learning framework for structural vibration analysis.",
+  "summary": "This paper proposes a novel physics-guided spectral deep operator network, termed SpectONet, for solving Euler-Bernoulli beam (EBB) vibration problems. The proposed framework integrates the operator-learning capability of DeepONet with physics-informed constraints and Chebyshev-Gauss-Lobatto (CGL) sensor placement. Unlike conventional DeepONet frameworks, which commonly employ uniformly distributed sensors, SpectONet uses nonuniform spectral sensor locations with a higher concentration of points near the domain boundaries. This sampling strategy improves the finite-dimensional representation of boundary-sensitive structural responses while requiring only a limited number of branch-network inputs. The governing beam equation, together with the associated initial and boundary conditions, incorporated into the training objective to promote physically consistent and generalizable predictions. Numerical experiments on three synthetic EBB vibration problems and a real-world bridge vibration dataset demonstrate the effectiveness of the proposed framework. Comparisons with strong baselines such as, Vanilla DeepONet, PI-DeepONet, PINN, and CNN-UNet show that SpectONet consistently achieves lower prediction errors across all considered evaluation metrics. In particular, SpectONet achieves at least \\(64\\%\\) improvement over the considered baseline models across the three synthetic problems and at least \\(37\\%\\) for the real-world problems. These results demonstrate that SpectONet provides an accurate, computationally efficient, and physically consistent operator-learning framework for structural vibration analysis.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spectonet",
+    "physics",
+    "guided",
+    "spectral",
+    "deep",
+    "operator",
+    "network",
+    "euler"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T14:42:04.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-29T04:00:13.657Z",
+  "updatedAt": "2026-07-29T04:00:13.690Z"
+},
+{
+  "id": "5f5cdf3b-c12e-42b5-a446-b257d010aa7f",
+  "slug": "spectra-adaptive-execution-of-speculative-decoding-on-a-runtime-reconfigurable-tiled-archi-2026-09-22",
+  "title": "SPECTRA: Adaptive Execution of Speculative Decoding on a Runtime-Reconfigurable Tiled Architecture",
+  "factSummary": "LLM inference on edge devices is constrained by computational and memory resources, making efficient autoregressive decoding challenging. Speculative decoding alleviates this bottleneck by generating tokens with a smaller draft model and verifying multiple tokens in parallel with a batched target model pass. However, verification introduces a runtime-dependent intermediate regime between memory-bound general matrix-vector (GEMV) operations in decoding and compute-bound general matrix-matrix (GEMM) operations in prefill, as its arithmetic intensity varies with speculation length and acceptance rate. We present SPECTRA, a runtime-reconfigurable tiled architecture that sustains high utilization across the full speculative decoding pipeline. Within each tile, the compute engine switches between systolic execution for GEMMs and vector-lane execution for GEMVs. Across tiles, SPECTRA dynamically adapts computation parallelism by selecting tile count, kernel partitioning, and communication pattern. Both tile-level and system-level reconfiguration operate on a per-kernel basis, enabling efficient execution across these diverse regimes. Evaluated on a 20-tile FPGA prototype across the Pythia, SmolLM2, and GPT-2 families, SPECTRA achieves up to $2.09\\times$ speedup from tile-level reconfiguration and a further $1.25\\times$ gain from system-level adaptability over fixed designs.",
+  "summary": "LLM inference on edge devices is constrained by computational and memory resources, making efficient autoregressive decoding challenging. Speculative decoding alleviates this bottleneck by generating tokens with a smaller draft model and verifying multiple tokens in parallel with a batched target model pass. However, verification introduces a runtime-dependent intermediate regime between memory-bound general matrix-vector (GEMV) operations in decoding and compute-bound general matrix-matrix (GEMM) operations in prefill, as its arithmetic intensity varies with speculation length and acceptance rate. We present SPECTRA, a runtime-reconfigurable tiled architecture that sustains high utilization across the full speculative decoding pipeline. Within each tile, the compute engine switches between systolic execution for GEMMs and vector-lane execution for GEMVs. Across tiles, SPECTRA dynamically adapts computation parallelism by selecting tile count, kernel partitioning, and communication pattern. Both tile-level and system-level reconfiguration operate on a per-kernel basis, enabling efficient execution across these diverse regimes. Evaluated on a 20-tile FPGA prototype across the Pythia, SmolLM2, and GPT-2 families, SPECTRA achieves up to $2.09\\times$ speedup from tile-level reconfiguration and a further $1.25\\times$ gain from system-level adaptability over fixed designs.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spectra",
+    "adaptive",
+    "execution",
+    "speculative",
+    "decoding",
+    "runtime",
+    "reconfigurable",
+    "tiled"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-21T16:25:24.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-22T05:30:06.713Z",
+  "updatedAt": "2026-09-22T05:30:06.754Z"
+},
+{
+  "id": "daff6162-d080-4cd8-950c-3aec6d74efbb",
+  "slug": "speculate-while-you-reason-teaching-agents-to-predict-their-next-tool-call-via-joint-agent-2026-07-29",
+  "title": "Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL",
+  "factSummary": "Large language model agents often spend substantial wall-clock time waiting for tool call results. Tool-call speculation can hide this latency by predicting and pre-executing an agent's next tool call if the prediction matches the agent's eventual tool call, but existing speculators are typically separate draft models or cached traces that are poorly aligned with the deployed agent's own behavior. We identify this speculator-agent gap and show that the target agent itself is a strong next-call speculator. This points to a simpler design: unifying the agent and speculator within the same model. In this paper, we introduce the self-speculating agent, a single model that both solves tasks in agent mode and predicts its next tool call from partial trajectories in speculator mode, fully reusing prefix KV cache. To enable this dual-mode agent without degrading performance, we propose a joint agent-speculator reinforcement learning method, which derives speculation targets from the agent's own rollouts and alternates agent and speculator updates. Across agentic search QA and conversational tool-use agentic tasks, our method improves average next tool-call Hit@1 from 44.1 to 61.2 for Qwen3-4B and from 48.9 to 66.3 for Qwen3.5-4B, while preserving agent task success.",
+  "summary": "Large language model agents often spend substantial wall-clock time waiting for tool call results. Tool-call speculation can hide this latency by predicting and pre-executing an agent's next tool call if the prediction matches the agent's eventual tool call, but existing speculators are typically separate draft models or cached traces that are poorly aligned with the deployed agent's own behavior. We identify this speculator-agent gap and show that the target agent itself is a strong next-call speculator. This points to a simpler design: unifying the agent and speculator within the same model. In this paper, we introduce the self-speculating agent, a single model that both solves tasks in agent mode and predicts its next tool call from partial trajectories in speculator mode, fully reusing prefix KV cache. To enable this dual-mode agent without degrading performance, we propose a joint agent-speculator reinforcement learning method, which derives speculation targets from the agent's own rollouts and alternates agent and speculator updates. Across agentic search QA and conversational tool-use agentic tasks, our method improves average next tool-call Hit@1 from 44.1 to 61.2 for Qwen3-4B and from 48.9 to 66.3 for Qwen3.5-4B, while preserving agent task success.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "speculate",
+    "while",
+    "you",
+    "reason",
+    "teaching",
+    "agents",
+    "predict",
+    "their"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-28T15:00:10.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-29T04:00:13.617Z",
+  "updatedAt": "2026-07-29T04:00:13.650Z"
+},
+{
   "id": "5c87a512-fd11-40fe-b42a-ce80d467569f",
   "slug": "speedtuning-speeding-up-policy-execution-with-lightweight-reinforcement-learning-2026-08-11",
   "title": "SpeedTuning: Speeding Up Policy Execution with Lightweight Reinforcement Learning",
@@ -357,8 +1042,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -399,8 +1084,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -705,8 +1390,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "ce6e144f-4b1f-4e16-bfe5-318763d16046",
@@ -3911,8 +4596,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "a13da063-1412-4715-b248-3c220b58d20b",
@@ -5409,8 +6094,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -5909,8 +6594,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -6273,8 +6958,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -7083,8 +7768,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -8312,8 +8997,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -10390,8 +11075,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -15158,8 +15843,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -15883,8 +16568,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -15972,8 +16657,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -16153,8 +16838,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -20297,8 +20982,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -21332,8 +22017,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -21648,8 +22333,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -27018,9 +27703,9 @@
     "本地推理"
   ],
   "confidenceScore": 84,
-  "heatScore": 23,
+  "heatScore": 20,
   "impactScore": 55,
-  "valueScore": 62,
+  "valueScore": 56,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
@@ -27030,7 +27715,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 98,
+    "freshness": 65,
     "crossRegion": false
   },
   "status": "published",
@@ -27039,7 +27724,7 @@
   "happenedAt": "2026-10-11T04:24:55.000Z",
   "publishedAt": "2026-10-11T06:36:00.719Z",
   "createdAt": "2026-10-11T06:35:11.406Z",
-  "updatedAt": "2026-10-11T06:36:00.719Z"
+  "updatedAt": "2026-10-12T21:23:10.257Z"
 },
 {
   "id": "e918d10c-b01d-42f8-be20-e48d5386a742",
@@ -28940,6 +29625,50 @@
   "updatedAt": "2026-10-09T06:52:01.425Z"
 },
 {
+  "id": "6658bf2e-f8ee-4649-b29e-674f3a905f44",
+  "slug": "v1-27-1-2026-10-12",
+  "title": "v1.27.1",
+  "factSummary": "OpenHands 发布 v1.27.1（2026-10-12），修复 Docker 镜像未复制 MARS web bridge 模块的问题，并使警告反馈主题感知；同日发布 v1.27.0，包含 verify-openhands 在 DeepSeek 上驱动 mock-LLM 端到端行为、浏览器录制、ACP 内置 OpenCode 与 Pi 代理、自动化设置草稿流程，以及将 Agent Canvas 连接至 DigitalOcean Managed Agents 等功能。",
+  "summary": "OpenHands 在 2026-10-12 连续发布 v1.27.0 与 v1.27.1：前者引入 ACP 内置代理、自动化设置流程与 Agent Canvas 对接 DigitalOcean Managed Agents 等特性，后者修复 Docker 镜像中 MARS web bridge 模块缺失及主题感知警告反馈。",
+  "technicalInsight": "从发布说明看，OpenHands 正把 ACP 代理接入、端到端验证与浏览器录制纳入常规发布流程，说明其工程重心在代理互操作与可验证性；但证据未披露性能或成功率数据，实际效果需后续版本说明或基准验证。",
+  "industryInsight": "开源编码代理项目开始将第三方代理协议（ACP）与云托管代理服务（DigitalOcean Managed Agents）纳入同一产品面，反映代理工具链向互操作与托管化并行的趋势；该判断基于单一项目发布记录，尚不能代表行业整体。",
+  "futureOutlook": "可验证下一信号：后续版本是否继续扩展 ACP 内置代理列表、是否公布 verify-openhands 在 DeepSeek 上的验证结果，以及 MARS web bridge 与 Agent Canvas 的集成是否进入稳定发布。",
+  "businessValue": "对开发者而言，Docker 镜像修复与 ACP 代理内置降低了自托管与多代理接入的配置成本；对平台方而言，Agent Canvas 对接托管代理服务提供了分发入口，但商业影响需观察采用与留存数据。",
+  "category": "agent-framework-release",
+  "company": "OpenHands",
+  "keywords": [
+    "OpenHands",
+    "ACP",
+    "Agent Canvas",
+    "DigitalOcean Managed Agents",
+    "MARS web bridge",
+    "verify-openhands"
+  ],
+  "confidenceScore": 100,
+  "heatScore": 47,
+  "impactScore": 55,
+  "valueScore": 73,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 4,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 98,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T19:41:46.000Z",
+  "publishedAt": "2026-10-12T21:24:00.834Z",
+  "createdAt": "2026-10-12T21:23:10.104Z",
+  "updatedAt": "2026-10-12T21:24:00.834Z"
+},
+{
   "id": "a0fd5704-3244-4b09-b89e-25ea334fe015",
   "slug": "v1-29-0-2026-07-28",
   "title": "v1.29.0",
@@ -29870,6 +30599,52 @@
   "updatedAt": "2026-10-09T18:30:01.668Z"
 },
 {
+  "id": "ff2cb236-771d-4746-acc4-7b5d24fa18c0",
+  "slug": "v1-39-12-schema-drop-and-recreate-class-fix-reindex-vector-dimensions-at-startup-performan-2026-10-12",
+  "title": "v1.39.12 - Schema drop and recreate class Fix, Reindex vector dimensions at startup performance improvement",
+  "factSummary": "Breaking Changes none New Features none Fixes queue: fix flaky tests that race the running scheduler by @asdine in #13504 test(concurrency): count only the goroutines a budget test starts by @aliszka in #13497 Update golang.org/x/net to fix CVE-2026-78663 etc by @dirkkul in #13509 perf: improve reindex vector dimensions at startup by @antas-marcin in #13190 fix(schema): never drop a live class that differs from an orphan only by case by @moogacs in #13513 Full Changelog : v1.39.11...v1.39.12",
+  "summary": "Breaking Changes none New Features none Fixes queue: fix flaky tests that race the running scheduler by @asdine in #13504 test(concurrency): count only the goroutines a budget test starts by @aliszka in #13497 Update golang.org/x/net to fix CVE-2026-78663 etc by @dirkkul in #13509 perf: improve reindex vector dimensions at startup by @antas-marcin in #13190 fix(schema): never drop a live class that differs from an orphan only by case by @moogacs in #13513 Full Changelog : v1.39.11...v1.39.12",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "39",
+    "12",
+    "schema",
+    "drop",
+    "recreate",
+    "class",
+    "fix"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 62,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T17:53:16.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-12T21:23:10.702Z",
+  "updatedAt": "2026-10-12T21:23:10.965Z"
+},
+{
   "id": "9371f7ef-3a68-4c68-8567-db7c1d8e875b",
   "slug": "v1-39-4-hfresh-recover-orphaned-postings-through-reassign-all-fix-2026-09-16",
   "title": "v1.39.4 - HFresh recover orphaned postings through reassign-all Fix",
@@ -30315,6 +31090,46 @@
   "publishedAt": null,
   "createdAt": "2026-10-05T09:34:13.618Z",
   "updatedAt": "2026-10-05T09:34:13.666Z"
+},
+{
+  "id": "dcf97275-8d38-4946-a8ef-cf62f59219e2",
+  "slug": "v1-40-1-2026-10-12",
+  "title": "v1.40.1",
+  "factSummary": "release v1.40.1 -",
+  "summary": "release v1.40.1 -",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "40"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T13:08:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-12T21:23:11.721Z",
+  "updatedAt": "2026-10-12T21:23:11.791Z"
 },
 {
   "id": "abec8f9b-47bd-4a93-8917-a1625dea8f3d",
@@ -40526,8 +41341,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -40844,8 +41659,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -41479,8 +42294,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -41522,8 +42337,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -41790,8 +42605,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -42063,8 +42878,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -42286,8 +43101,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -47273,8 +48088,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -48455,8 +49270,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -49443,8 +50258,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -49487,8 +50302,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -49983,8 +50798,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -50026,8 +50841,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -50069,8 +50884,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -50112,8 +50927,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-12T06:35:42.545Z",
-  "updatedAt": "2026-10-12T06:35:42.545Z"
+  "createdAt": "2026-10-12T21:18:42.879Z",
+  "updatedAt": "2026-10-12T21:18:42.879Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",

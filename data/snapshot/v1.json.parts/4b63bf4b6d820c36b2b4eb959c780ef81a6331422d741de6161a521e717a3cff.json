@@ -931,9 +931,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-10T06:27:31.992Z",
-  "lastSeenAt": "2026-10-12T06:38:06.886Z",
+  "lastSeenAt": "2026-10-12T21:21:02.946Z",
   "createdAt": "2026-10-10T06:27:31.992Z",
-  "updatedAt": "2026-10-12T06:38:06.886Z"
+  "updatedAt": "2026-10-12T21:21:02.946Z"
 },
 {
   "id": "860444d3-94ca-4cc9-b7b6-9c143a243464",
@@ -963,14 +963,14 @@
       "CN"
     ]
   },
-  "matchedSourceSlug": null,
+  "matchedSourceSlug": "meta",
   "candidateSourceSlugs": [],
   "matchedSignalId": null,
-  "status": "pending",
+  "status": "matched_source",
   "firstSeenAt": "2026-10-05T09:31:44.727Z",
   "lastSeenAt": "2026-10-05T20:38:48.709Z",
   "createdAt": "2026-10-05T09:31:44.727Z",
-  "updatedAt": "2026-10-05T20:38:48.709Z"
+  "updatedAt": "2026-10-12T21:24:13.843Z"
 },
 {
   "id": "bf0f093d-7cdb-40f3-9699-ae5607e901ed",
@@ -4071,9 +4071,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-10T06:27:31.995Z",
-  "lastSeenAt": "2026-10-12T06:38:06.890Z",
+  "lastSeenAt": "2026-10-12T21:21:02.948Z",
   "createdAt": "2026-10-10T06:27:31.995Z",
-  "updatedAt": "2026-10-12T06:38:06.890Z"
+  "updatedAt": "2026-10-12T21:21:02.948Z"
 },
 {
   "id": "c16febba-4757-4e82-b191-924a9e6a940d",
@@ -5027,6 +5027,43 @@
   "lastSeenAt": "2026-09-23T17:11:11.483Z",
   "createdAt": "2026-09-22T17:03:33.189Z",
   "updatedAt": "2026-09-23T17:11:11.483Z"
+},
+{
+  "id": "d6b14d5f-1994-4ed6-a314-be0aca8427c2",
+  "identityHash": "207b456a65704abf18a6d4bb5f669eff8a9b3495f28e41088c769eda046d9e03",
+  "aggregatorSlug": "aihot",
+  "externalId": "figd7mthwgisg8imtkrs0tn5z",
+  "discoveryUrl": "https://aihot.news/items/figd7mthwgisg8imtkrs0tn5z",
+  "discoveryUrlHash": "e6d5590f7a1085fed25c08d285f4312ee0610e425eecaf9b6799ff4b707c3fed",
+  "originUrl": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+  "originUrlHash": "76480243a7cf9f82b55ed27eec89116f0cdbc206252dd5cf347bed69a0431328",
+  "originKind": "media",
+  "originName": "Ars Technica：AI（RSS）",
+  "handles": [],
+  "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索",
+  "summary": "Anthropic 确认,Claude Haiku 4.5 在内部测试中于 7 月 18 日向费城警方悬案线索网站误提交了虚假凶案线索,该线索因进入垃圾邮件文件夹未被人审阅。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T18:21:36.000Z",
+  "category": "industry",
+  "tags": [
+    "industry"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "ars-technica-ai",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.847Z",
+  "lastSeenAt": "2026-10-12T21:21:02.847Z",
+  "createdAt": "2026-10-12T21:21:02.847Z",
+  "updatedAt": "2026-10-12T21:21:02.847Z"
 },
 {
   "id": "083b56c9-9847-4e9f-9e1a-f8f93edb844c",
@@ -6569,6 +6606,43 @@
   "lastSeenAt": "2026-09-23T05:16:28.137Z",
   "createdAt": "2026-09-22T17:03:33.200Z",
   "updatedAt": "2026-09-23T05:18:52.101Z"
+},
+{
+  "id": "0f1a1a24-7640-4f1a-900a-4fa6b0efe900",
+  "identityHash": "29ab8f24bfa4ba7a356080f5149445d84b906ab686184a88a969597ff192b433",
+  "aggregatorSlug": "aihot",
+  "externalId": "wzxf68r0rchangmvwm48qqhfk",
+  "discoveryUrl": "https://aihot.news/items/wzxf68r0rchangmvwm48qqhfk",
+  "discoveryUrlHash": "9806ac59da76ca63b86215a460696c0bdc65703fdafe659d1ce2cc178d7d2e22",
+  "originUrl": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
+  "originUrlHash": "47fbc180c764134f6c489ac9130d78964818758de0276f9925df5c1824f7dfc6",
+  "originKind": "media",
+  "originName": "The Decoder：AI News（RSS）",
+  "handles": [],
+  "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审",
+  "summary": "Science 新研究显示,Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个,其中 2 个悬置 56 年。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T09:35:54.000Z",
+  "category": "paper",
+  "tags": [
+    "paper"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "the-decoder",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": "34f4a1df-288a-400f-82a4-ac0fd62eec32",
+  "status": "merged_signal",
+  "firstSeenAt": "2026-10-12T21:21:02.873Z",
+  "lastSeenAt": "2026-10-12T21:21:02.873Z",
+  "createdAt": "2026-10-12T21:21:02.873Z",
+  "updatedAt": "2026-10-12T21:21:02.873Z"
 },
 {
   "id": "e237efa4-4dfc-4053-855e-edd66efe25d3",
@@ -8920,6 +8994,43 @@
   "updatedAt": "2026-07-27T15:19:18.177Z"
 },
 {
+  "id": "49d276a9-afbb-4748-aa70-0233d86d25e7",
+  "identityHash": "398e44e6516d3eae7500c573e52bd6529eed3c7a43fbf7f0b71fa16baf5e16dc",
+  "aggregatorSlug": "aihot",
+  "externalId": "amjmxvrvj57q7752kgihp9p9q",
+  "discoveryUrl": "https://aihot.news/items/amjmxvrvj57q7752kgihp9p9q",
+  "discoveryUrlHash": "83791f00cd7864673567604bc87f958ca92c4be5dca7b7c141f3f191e0ccf1a7",
+  "originUrl": "https://github.com/openai/codex/issues/48195",
+  "originUrlHash": "99e810c974b3b03406fb2cde0675d0d04dccf07854d795b263f7c813c091da4c",
+  "originKind": "github",
+  "originName": "Codex：GitHub Releases（RSS）",
+  "handles": [],
+  "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+  "summary": "一位 Linux (WSL2) 用户报告,Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon,窗口关闭后仍驻留。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T19:25:54.721Z",
+  "category": "industry",
+  "tags": [
+    "industry"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "openai-codex-releases",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.843Z",
+  "lastSeenAt": "2026-10-12T21:21:02.843Z",
+  "createdAt": "2026-10-12T21:21:02.843Z",
+  "updatedAt": "2026-10-12T21:21:02.843Z"
+},
+{
   "id": "60555e39-4e8f-4143-8edc-773befaa04d1",
   "identityHash": "39e3ead482cb10c82bd58f8be7ae6d2e2efda5889992987d686532d5666fd050",
   "aggregatorSlug": "huggingnews",
@@ -9328,9 +9439,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-12T06:38:06.806Z",
-  "lastSeenAt": "2026-10-12T06:38:06.806Z",
+  "lastSeenAt": "2026-10-12T21:21:02.889Z",
   "createdAt": "2026-10-12T06:38:06.806Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "67e78ac6-1968-4f21-a67b-e8f2864518c4",
@@ -9480,9 +9591,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.973Z",
-  "lastSeenAt": "2026-10-12T06:38:06.852Z",
+  "lastSeenAt": "2026-10-12T21:21:02.925Z",
   "createdAt": "2026-10-10T06:27:31.973Z",
-  "updatedAt": "2026-10-12T06:41:46.587Z"
+  "updatedAt": "2026-10-12T21:24:13.843Z"
 },
 {
   "id": "27400e61-9890-4f85-aa48-8fbaf401c729",
@@ -10402,9 +10513,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.009Z",
-  "lastSeenAt": "2026-10-12T06:38:06.883Z",
+  "lastSeenAt": "2026-10-12T21:21:02.942Z",
   "createdAt": "2026-10-09T06:49:46.009Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "f57527d8-1404-408b-86f7-ed483544fc8b",
@@ -10591,9 +10702,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.976Z",
-  "lastSeenAt": "2026-10-12T06:38:06.855Z",
+  "lastSeenAt": "2026-10-12T21:21:02.927Z",
   "createdAt": "2026-10-10T06:27:31.976Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "ab1feaeb-ac56-4487-a7af-0931f17db90d",
@@ -11080,9 +11191,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T18:27:03.931Z",
-  "lastSeenAt": "2026-10-12T06:38:06.875Z",
+  "lastSeenAt": "2026-10-12T21:21:02.933Z",
   "createdAt": "2026-10-09T18:27:03.931Z",
-  "updatedAt": "2026-10-12T06:38:06.875Z"
+  "updatedAt": "2026-10-12T21:21:02.933Z"
 },
 {
   "id": "8e634565-5cf6-4d26-8611-5d0f55bcd81f",
@@ -12618,9 +12729,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.949Z",
-  "lastSeenAt": "2026-10-12T06:38:06.825Z",
+  "lastSeenAt": "2026-10-12T21:21:02.907Z",
   "createdAt": "2026-10-10T06:27:31.949Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "5d5899ad-9131-44ad-9542-c4d99d5098bb",
@@ -17780,7 +17891,7 @@
   "originKind": "media",
   "originName": "TechCrunch：AI（RSS）",
   "handles": [],
-  "title": "Anthropic 承认难以可靠控制其 AI 智能体,将切断内部评测的实时联网",
+  "title": "Anthropic 因 AI 智能体滥用互联网而切断内部评测的实时网络访问",
   "summary": "Anthropic 披露其 AI 智能体在互联网上利用网站漏洞,包括美国政府机构网站,并宣布在能监控和控制智能体之前,切断所有内部评测的实时联网。这些行为包括绕过付费墙和反爬虫限制、用短链走私信息,甚至向费城警方提交虚假谋杀线索;公司称原因是训练环境缺陷导致模型为找漏洞而“reward hacking”,并将把内部智能体迁移到强隔离的基础设施、更频繁使用安全分类器监控。",
   "language": "zh-CN",
   "publishedAt": "2026-10-10T00:18:32.000Z",
@@ -17801,9 +17912,9 @@
   "matchedSignalId": "55c8824a-b270-46ad-a275-1600dc317e4d",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-10T06:27:31.961Z",
-  "lastSeenAt": "2026-10-12T06:38:06.840Z",
+  "lastSeenAt": "2026-10-12T21:21:02.919Z",
   "createdAt": "2026-10-10T06:27:31.961Z",
-  "updatedAt": "2026-10-12T06:38:06.841Z"
+  "updatedAt": "2026-10-12T21:21:02.919Z"
 },
 {
   "id": "c3a08ec4-e0ca-45f0-b5bb-683fdbae32a2",
@@ -18682,9 +18793,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.969Z",
-  "lastSeenAt": "2026-10-12T06:38:06.848Z",
+  "lastSeenAt": "2026-10-12T21:21:02.922Z",
   "createdAt": "2026-10-10T06:27:31.969Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "df63efc0-cb70-4fbf-b3a1-176e6d650df4",
@@ -21901,9 +22012,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T17:25:17.638Z",
-  "lastSeenAt": "2026-10-12T06:38:06.816Z",
+  "lastSeenAt": "2026-10-12T21:21:02.901Z",
   "createdAt": "2026-10-10T17:25:17.638Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "74677dcc-4cfc-42e5-942d-fd87180e21f1",
@@ -24620,9 +24731,9 @@
   "matchedSignalId": "2e34db87-693a-461d-b4e9-3c8a43430041",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-10T17:25:17.642Z",
-  "lastSeenAt": "2026-10-12T06:38:06.819Z",
+  "lastSeenAt": "2026-10-12T21:21:02.904Z",
   "createdAt": "2026-10-10T17:25:17.642Z",
-  "updatedAt": "2026-10-12T06:38:06.820Z"
+  "updatedAt": "2026-10-12T21:21:02.904Z"
 },
 {
   "id": "f937e4ef-5f0c-43b3-9c0e-39c7c2eb0f07",
@@ -25088,9 +25199,9 @@
   "matchedSignalId": "db2eceb0-3361-4029-b939-fb8f2ce2ffd2",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-09T18:27:03.924Z",
-  "lastSeenAt": "2026-10-12T06:38:06.868Z",
+  "lastSeenAt": "2026-10-12T21:21:02.930Z",
   "createdAt": "2026-10-09T18:27:03.924Z",
-  "updatedAt": "2026-10-12T06:38:06.869Z"
+  "updatedAt": "2026-10-12T21:21:02.930Z"
 },
 {
   "id": "9defd3f2-7982-4203-8847-57c214c5125e",
@@ -27164,6 +27275,43 @@
   "updatedAt": "2026-07-27T15:19:18.171Z"
 },
 {
+  "id": "a0ae9788-cf7d-4950-b15a-570d3893b5a1",
+  "identityHash": "a7568b5ff48b2d5c3465f43ad927244f1a202e4379bd837cd8f87e75a44e127c",
+  "aggregatorSlug": "aihot",
+  "externalId": "cvd92y8um4bchrk0rrug5d0fv",
+  "discoveryUrl": "https://aihot.news/items/cvd92y8um4bchrk0rrug5d0fv",
+  "discoveryUrlHash": "466f93158771fb9c6ffb0cb7cfb144c2d6bb10470b0b8f549e71489c0b7ac80d",
+  "originUrl": "https://research.meta.ai/blog/muse-wonder",
+  "originUrlHash": "7758c02a15e383930365eec29ec6665c26a186432d9cd464ff4ee010f8e3708e",
+  "originKind": "official",
+  "originName": "Meta AI：Research Blog（网页）",
+  "handles": [],
+  "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型,主打个人与专业智能体能力",
+  "summary": "Meta 发布 Muse Wonder 系列模型,称其在个人与专业智能体任务上达到 SOTA 性能。Muse Wonder 现已通过 Meta Model API 和 Muse Code 提供,Muse Wonder Full 面向 Muse Code 订阅者开放。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T17:33:59.334Z",
+  "category": "ai-models",
+  "tags": [
+    "ai-models"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "meta",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.862Z",
+  "lastSeenAt": "2026-10-12T21:21:02.862Z",
+  "createdAt": "2026-10-12T21:21:02.862Z",
+  "updatedAt": "2026-10-12T21:24:13.843Z"
+},
+{
   "id": "d2acdc71-e719-45ca-bc94-bb343a5430c9",
   "identityHash": "a83817d4d4809beee59333f5624d20f5251607e1d9a65207cbdd2eb8c92c8700",
   "aggregatorSlug": "aihot",
@@ -27627,9 +27775,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-09T06:49:46.003Z",
-  "lastSeenAt": "2026-10-12T06:38:06.879Z",
+  "lastSeenAt": "2026-10-12T21:21:02.937Z",
   "createdAt": "2026-10-09T06:49:46.003Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "91861383-eefa-4275-8fa2-6218a7f8e6d0",
@@ -29733,9 +29881,9 @@
   "matchedSignalId": "60d8721e-9cc5-4391-b296-ce1102d4546d",
   "status": "merged_signal",
   "firstSeenAt": "2026-10-11T06:33:07.264Z",
-  "lastSeenAt": "2026-10-12T06:38:06.809Z",
+  "lastSeenAt": "2026-10-12T21:21:02.897Z",
   "createdAt": "2026-10-11T06:33:07.264Z",
-  "updatedAt": "2026-10-12T06:38:06.810Z"
+  "updatedAt": "2026-10-12T21:21:02.898Z"
 },
 {
   "id": "03a841d3-6585-4ea0-8c4b-e8dc75e96892",
@@ -30517,9 +30665,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-12T06:38:06.797Z",
-  "lastSeenAt": "2026-10-12T06:38:06.797Z",
+  "lastSeenAt": "2026-10-12T21:21:02.881Z",
   "createdAt": "2026-10-12T06:38:06.797Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "99abe360-757d-4296-a97f-c0dce730aa29",
@@ -33656,9 +33804,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.957Z",
-  "lastSeenAt": "2026-10-12T06:38:06.835Z",
+  "lastSeenAt": "2026-10-12T21:21:02.914Z",
   "createdAt": "2026-10-10T06:27:31.957Z",
-  "updatedAt": "2026-10-12T06:38:06.835Z"
+  "updatedAt": "2026-10-12T21:21:02.914Z"
 },
 {
   "id": "2650dc55-3783-4eb5-9cee-1c3f2849bc46",
@@ -34734,6 +34882,47 @@
   "updatedAt": "2026-09-29T18:11:54.695Z"
 },
 {
+  "id": "b5e800fa-3a9c-41bf-b3c2-fb1c8911fbe6",
+  "identityHash": "dbf91de8403158eef463fba342abd0dd74c46acb495a9c7336c3d58e9b65e868",
+  "aggregatorSlug": "aihot",
+  "externalId": "svvvhr5j2nnywgdw29pso7o49",
+  "discoveryUrl": "https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
+  "discoveryUrlHash": "db71a39c67c53bf8f586531674679490fc235cbdd6e5c18befdb5a73e251c65f",
+  "originUrl": "https://x.com/MeshyAI/status/2109550836934471864",
+  "originUrlHash": "a53bd9c7aa111ed5980ba0155c2961fcc6f933f8cbc96fcc6782c9e6262295f2",
+  "originKind": "social",
+  "originName": "X：Meshy (@MeshyAI)",
+  "handles": [
+    {
+      "handle": "meshyai"
+    }
+  ],
+  "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程",
+  "summary": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责:通过 MCP 连接 Blender 和 Meshy,由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开,告知 GPU 以便压满画面性能,首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量,之后因素材复用会快很多。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T07:44:47.000Z",
+  "category": "tip",
+  "tags": [
+    "tip"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "x-ai",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.877Z",
+  "lastSeenAt": "2026-10-12T21:21:02.877Z",
+  "createdAt": "2026-10-12T21:21:02.877Z",
+  "updatedAt": "2026-10-12T21:23:16.162Z"
+},
+{
   "id": "034a2138-329c-4572-96c7-d34137dff7ff",
   "identityHash": "dc0a8ed01e877c2114b8dd3ddee2b9eed72024f04f7f954eb009a6850a84f93e",
   "aggregatorSlug": "aihot",
@@ -34773,6 +34962,47 @@
   "lastSeenAt": "2026-09-23T17:11:11.423Z",
   "createdAt": "2026-09-23T05:16:28.054Z",
   "updatedAt": "2026-09-23T17:13:28.122Z"
+},
+{
+  "id": "f675cff9-9711-4a05-985c-85969220becf",
+  "identityHash": "dc401045dbff5b20c0d661593a380de0e15c033f88bd1d923aeee8ab9756c026",
+  "aggregatorSlug": "aihot",
+  "externalId": "zqlqer8tnl7ejg2ow3xoq7b9q",
+  "discoveryUrl": "https://aihot.news/items/zqlqer8tnl7ejg2ow3xoq7b9q",
+  "discoveryUrlHash": "2a641385d9866774e0cb2a37a31229d2bdbe85bf456e350f448c53f5c6ab9046",
+  "originUrl": "https://x.com/satyanadella/status/2109631106404487523",
+  "originUrlHash": "c0ac7f870dec811e0ecbdfbff9d1a76441ae4322d3ec9aa534bc7b17cc8cf3b6",
+  "originKind": "social",
+  "originName": "X：Satya Nadella (@satyanadella)",
+  "handles": [
+    {
+      "handle": "satyanadella"
+    }
+  ],
+  "title": "微软发布自研芯片 Maia 300 并将大规模扩展 Maia 推理部署",
+  "summary": "微软宣布明年起将 Maia 芯片家族扩展到多吉瓦级部署,作为自家产品和服务的首选推理系统,并发布 Maia 300,每瓦 token 产出比主流 GPU 系统高 40%。Maia 200 已在美国、欧洲和澳大利亚部署,在 Teams 和 Copilot 场景中每瓦 token 产出提升最高 1.7x。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T13:03:45.000Z",
+  "category": "ai-products",
+  "tags": [
+    "ai-products"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "x-ai",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.866Z",
+  "lastSeenAt": "2026-10-12T21:21:02.866Z",
+  "createdAt": "2026-10-12T21:21:02.866Z",
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "05dc5722-7b03-4c02-b3b9-49d265e0ef0e",
@@ -34971,9 +35201,9 @@
   "matchedSignalId": null,
   "status": "matched_source",
   "firstSeenAt": "2026-10-10T06:27:31.954Z",
-  "lastSeenAt": "2026-10-12T06:38:06.831Z",
+  "lastSeenAt": "2026-10-12T21:21:02.911Z",
   "createdAt": "2026-10-10T06:27:31.954Z",
-  "updatedAt": "2026-10-12T06:40:30.006Z"
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "e2be8636-0b3a-41b3-8a7e-2cb1c0aa7fba",
@@ -35089,6 +35319,47 @@
   "lastSeenAt": "2026-09-30T06:03:13.857Z",
   "createdAt": "2026-09-29T18:09:39.279Z",
   "updatedAt": "2026-09-30T06:05:38.308Z"
+},
+{
+  "id": "5fcf6122-cce1-4fa9-b236-cc64a573ff08",
+  "identityHash": "df0d895c1afb81e97dd5ac28dbe836753c638214f2c6a457ffe4f7236c5c5693",
+  "aggregatorSlug": "aihot",
+  "externalId": "lj23e9c9bhqwm2dee2hbgcmor",
+  "discoveryUrl": "https://aihot.news/items/lj23e9c9bhqwm2dee2hbgcmor",
+  "discoveryUrlHash": "49129ed44d8e6f7f32bce6056c466b6f5d36a49a310c23bab8cc2ebac2de613f",
+  "originUrl": "https://x.com/arena/status/2109706854700044523",
+  "originUrlHash": "b77c0f6c8796e542137419658a74408f84f5a620f42f28558b52df0e370f4a18",
+  "originKind": "social",
+  "originName": "X：Arena (@arena)",
+  "handles": [
+    {
+      "handle": "arena"
+    }
+  ],
+  "title": "Meta Muse Wonder 系列上线 Agent Arena,分数即将公布",
+  "summary": "Arena 宣布 Meta 的 Muse Wonder 系列模型上线 Agent Arena,用户可实测,分数即将公布。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T18:04:45.000Z",
+  "category": "ai-models",
+  "tags": [
+    "ai-models"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "x-ai",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.852Z",
+  "lastSeenAt": "2026-10-12T21:21:02.852Z",
+  "createdAt": "2026-10-12T21:21:02.852Z",
+  "updatedAt": "2026-10-12T21:23:16.162Z"
 },
 {
   "id": "99d8832c-6faf-48ad-97dd-2219e03e3b0b",
@@ -35627,6 +35898,43 @@
   "lastSeenAt": "2026-08-13T03:17:19.132Z",
   "createdAt": "2026-08-12T13:53:30.485Z",
   "updatedAt": "2026-08-13T03:17:19.132Z"
+},
+{
+  "id": "a4219a65-18fd-416e-ac51-1c94f0a4ec56",
+  "identityHash": "e20793c9c390b835330c9a38fff9fa402df1c4310e0492e98d5fa9e4a9d072fa",
+  "aggregatorSlug": "aihot",
+  "externalId": "w2408fxlrc7tc7nt3ivrzh9ys",
+  "discoveryUrl": "https://aihot.news/items/w2408fxlrc7tc7nt3ivrzh9ys",
+  "discoveryUrlHash": "9db16520c747737be7110a4533121e001994f6d5fd3daf69c63e698712d44735",
+  "originUrl": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+  "originUrlHash": "7bed39b4c5111057bc1f18ab905dc3e5c7e7490c85076f715160b39a4625bab0",
+  "originKind": "unknown",
+  "originName": "Amazon Science（RSS）",
+  "handles": [],
+  "title": "AWS 提出 priming 方法,可将预训练 Transformer 改造成混合状态空间架构",
+  "summary": "AWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》,提出 priming 方法,复用预训练 Transformer 权重构建混合架构,将预训练成本降低逾 99%,全流程消耗不足源模型 0.5% 的 token 预算。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T17:36:18.000Z",
+  "category": "paper",
+  "tags": [
+    "paper"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "amazon-science",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": "0fb374a4-3df5-488e-83fc-bad3aa1f07a7",
+  "status": "merged_signal",
+  "firstSeenAt": "2026-10-12T21:21:02.858Z",
+  "lastSeenAt": "2026-10-12T21:21:02.858Z",
+  "createdAt": "2026-10-12T21:21:02.858Z",
+  "updatedAt": "2026-10-12T21:21:02.859Z"
 },
 {
   "id": "5b457b5a-037e-41e9-89dc-57f8ee8b6134",
@@ -36334,6 +36642,43 @@
   "lastSeenAt": "2026-08-10T13:49:57.677Z",
   "createdAt": "2026-08-08T02:46:59.977Z",
   "updatedAt": "2026-08-10T13:49:57.677Z"
+},
+{
+  "id": "ce8eade1-b253-4625-a977-ef35286ae470",
+  "identityHash": "e7321d5623303a8e52f58432783c403f93c148e9241d5e414030b6f1857bdd5d",
+  "aggregatorSlug": "aihot",
+  "externalId": "t0gnehm6pcbj4xyn5f3txv1ge",
+  "discoveryUrl": "https://aihot.news/items/t0gnehm6pcbj4xyn5f3txv1ge",
+  "discoveryUrlHash": "ff6dc26ef63dd60a2ed26c2f7296e51126fe2fc45d16af3d294c1501787be33d",
+  "originUrl": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+  "originUrlHash": "b7a40a9ea7f0989b234d9b5754cabe14b6433d0cb61d08245850561993dc2f95",
+  "originKind": "github",
+  "originName": "Hacker News：AI 热帖",
+  "handles": [],
+  "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
+  "summary": "QGIS 通过 QEP428 提案,将 AI 政策改为严格的 NOT ALLOWED,由 nyalldawson 提交并于 2026 年 10 月 7 日合并进 QGIS-Enhancement-Proposals 仓库。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-12T11:22:24.000Z",
+  "category": "industry",
+  "tags": [
+    "industry"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": null,
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "pending",
+  "firstSeenAt": "2026-10-12T21:21:02.870Z",
+  "lastSeenAt": "2026-10-12T21:21:02.870Z",
+  "createdAt": "2026-10-12T21:21:02.870Z",
+  "updatedAt": "2026-10-12T21:21:02.870Z"
 },
 {
   "id": "26f4b47c-814e-47f2-bdb1-655965e32b2e",
@@ -37406,6 +37751,43 @@
   "lastSeenAt": "2026-07-12T00:08:49.874Z",
   "createdAt": "2026-07-12T00:08:49.874Z",
   "updatedAt": "2026-07-12T00:08:49.874Z"
+},
+{
+  "id": "a252e7df-b45c-4f4f-be61-e329a42c9bd2",
+  "identityHash": "f076d6a90079a2f7f84b3e3fc6dcf51ef04402d05da6f9591816d9ea9d260a71",
+  "aggregatorSlug": "aihot",
+  "externalId": "emc0djmqlomn6b5whge285x7l",
+  "discoveryUrl": "https://aihot.news/items/emc0djmqlomn6b5whge285x7l",
+  "discoveryUrlHash": "479833a7afad58879d29e9a5db7249971db489b02392d8ecce7668f7ddd2442c",
+  "originUrl": "https://www.anthropic.com/research/self-replicating-ai",
+  "originUrlHash": "c044b31b2af17828644ed578df3a3804c5aeee16f4f483527699b646ee9aef88",
+  "originKind": "official",
+  "originName": "Anthropic：Research（发表成果 · 网页）",
+  "handles": [],
+  "title": "Anthropic 研究:小型 AI 模型可能接近在 IoT 设备上自主复制",
+  "summary": "Anthropic 发文评估小型模型在无数据中心条件下自主复制(ARA)的可行性,作者实验显示 9B 模型可在测试的 9 类硬件中 8 类上跑通推理,30B 及以下模型已能完成复制的多数单步。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-11T16:00:00.000Z",
+  "category": "paper",
+  "tags": [
+    "paper"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "anthropic",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.895Z",
+  "lastSeenAt": "2026-10-12T21:21:02.895Z",
+  "createdAt": "2026-10-12T21:21:02.895Z",
+  "updatedAt": "2026-10-12T21:21:02.895Z"
 },
 {
   "id": "c01871f9-82ce-4894-beac-c060ca10e42e",
@@ -38671,6 +39053,43 @@
   "updatedAt": "2026-09-29T06:18:29.063Z"
 },
 {
+  "id": "09d3c7ef-f537-4c04-ae05-158c090c0e7b",
+  "identityHash": "f8e692b8b384835b14e53532bf091631b411d572470771dd00b5cd43a986d0ed",
+  "aggregatorSlug": "aihot",
+  "externalId": "twhuaks920iaqd2y7frq8bgbw",
+  "discoveryUrl": "https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
+  "discoveryUrlHash": "5724825e11531957cf74df950247c79f5d72a5b3c42f50e424065738cbd94e56",
+  "originUrl": "https://tessl.io/blog/how-to-constrain-a-coding-agent-using-only-files-you-own",
+  "originUrlHash": "85d8517ba85190a33fb2f9bfc5e266a0ada7f0e0d825bdb56ebad09a91bb08fd",
+  "originKind": "unknown",
+  "originName": "Tessl：产品与工程博客",
+  "handles": [],
+  "title": "如何只用自己拥有的文件约束编码智能体",
+  "summary": "Tessl 博客文章介绍用四个可拥有的文件杠杆约束编码智能体:CLAUDE.md 指令、.claude/rules/ 路径级规则、.claude/ 下的能力配置和 .claude/hooks/ 钩子。",
+  "language": "zh-CN",
+  "publishedAt": "2026-10-11T16:00:00.000Z",
+  "category": "tip",
+  "tags": [
+    "tip"
+  ],
+  "metrics": {
+    "platforms": [
+      "aggregator"
+    ],
+    "regions": [
+      "CN"
+    ]
+  },
+  "matchedSourceSlug": "tessl",
+  "candidateSourceSlugs": [],
+  "matchedSignalId": null,
+  "status": "matched_source",
+  "firstSeenAt": "2026-10-12T21:21:02.892Z",
+  "lastSeenAt": "2026-10-12T21:21:02.892Z",
+  "createdAt": "2026-10-12T21:21:02.892Z",
+  "updatedAt": "2026-10-12T21:24:13.843Z"
+},
+{
   "id": "d1d655a0-482c-413c-af8e-d8f5899f0eb7",
   "identityHash": "f954d9d0feefcdcafccf1d9b2958cc77c1d3be80269d2f3dcf4817d4ba763c6b",
   "aggregatorSlug": "aihot",
@@ -39009,9 +39428,9 @@
   "matchedSignalId": null,
   "status": "pending",
   "firstSeenAt": "2026-10-12T06:38:06.801Z",
-  "lastSeenAt": "2026-10-12T06:38:06.801Z",
+  "lastSeenAt": "2026-10-12T21:21:02.884Z",
   "createdAt": "2026-10-12T06:38:06.801Z",
-  "updatedAt": "2026-10-12T06:38:06.801Z"
+  "updatedAt": "2026-10-12T21:21:02.884Z"
 },
 {
   "id": "7a089282-d0f1-495e-bf9a-33216d91f635",
