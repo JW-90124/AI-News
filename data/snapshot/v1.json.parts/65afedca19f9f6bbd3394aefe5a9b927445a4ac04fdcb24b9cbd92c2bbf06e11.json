@@ -1,5 +1,232 @@
 [
 {
+  "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
+  "slug": "sparks-protein-design",
+  "title": "Sparks: Multi-Agent Artificial Intelligence Model Discovers Protein Design Principles：多模态多智能体系统自主发现蛋白质设计新原理",
+  "factSummary": "2025年4月，MIT团队提出Sparks，一个多模态多智能体AI系统，能够自主完成从假设生成、实验设计到迭代优化的完整科学发现循环，无需人类干预。在蛋白质科学应用中，Sparks发现了两个此前未知的现象：1）β-折叠偏向的肽段在超过约80个残基时，其展开力超过α-螺旋肽段，建立了肽段力学的新设计原理；2）链长/二级结构稳定性图谱揭示了β-折叠富集架构的意外鲁棒性，以及混合α/β折叠中的高方差“挫败区”。这些发现完全由自驱动推理循环产生，结合了生成式序列设计、高精度结构预测和物理感知属性模型。",
+  "summary": "Sparks代表了AI从“知识检索”到“知识发现”的质变。与大多数AI系统仅复现训练数据中的知识不同，Sparks通过多智能体协作和迭代推理，自主发现了蛋白质科学中尚未被人类记录的新原理。这证明了AI在基础科学发现中的独立价值，尤其适用于复杂生物系统的规律挖掘。系统采用配对生成-反思智能体实现自我纠错和可重复性，为自动化科学发现提供了新范式。",
+  "technicalInsight": "Sparks采用多模态多智能体架构，包含生成智能体（generative agent）和反思智能体（reflection agent）的配对循环。生成智能体负责提出假设并设计实验（如序列设计），反思智能体则评估结果并驱动迭代优化。系统集成了高精度结构预测模型（如AlphaFold类模型）和物理感知属性模型（如分子动力学模拟）。关键创新在于完全自主的推理循环，无需人类提供初始假设或中间反馈。发现的两个新原理均通过计算实验验证，并形成可泛化的设计原则。",
+  "industryInsight": "该成果对生物技术和制药行业具有变革性影响。Sparks能够自主发现蛋白质设计原理，可加速抗体设计、酶工程和材料科学中的蛋白质优化。对于CRO/CDMO企业，该技术可提供从序列设计到功能预测的自动化管线。对于AI制药公司，Sparks的多智能体框架可扩展至小分子药物设计，降低研发成本。",
+  "futureOutlook": "需关注Sparks发现的原理是否能在湿实验中得到验证，以及系统能否推广到其他生物分子（如RNA、糖类）。关键信号包括：与实验团队的合作验证、系统在工业级蛋白质设计任务中的表现、以及开源代码的社区贡献。此外，系统的计算资源需求和推理时间也是实际部署的瓶颈。",
+  "businessValue": "建议生物技术公司立即与MIT团队合作，将Sparks集成到蛋白质设计工作流中。可投资开发基于Sparks的蛋白质工程SaaS平台，面向药企提供抗体优化、酶设计等服务。同时，关注Sparks在合成生物学和材料科学中的潜在应用，提前布局知识产权。",
+  "category": "research",
+  "company": "MIT",
+  "keywords": [
+    "蛋白质设计",
+    "多智能体系统",
+    "科学发现",
+    "自主推理",
+    "生物技术"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 93,
+  "valueScore": 90,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2025-04-26T12:00:00.000Z",
+  "publishedAt": "2025-04-26T12:00:00.000Z",
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
+},
+{
+  "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
+  "slug": "sparse-autoencoders-encode-both-concepts-and-functions-the-downstream-geometry-of-feature--2026-07-28",
+  "title": "Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects",
+  "factSummary": "The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead study the geometry of changes in model logits caused by feature interventions. We introduce Feature-Effect Geometry Analysis (FEGA), an unsupervised framework that removes the same active SAE feature across contexts and analyzes the resulting cloud of logit changes. Across SAE variants, consistent one-dimensional effects are rare: few features behave like reusable directions. To interpret this variation, we distinguish value-like features, tied to static information such as factual attributes, from pointer-like features, associated with context-dependent operations. Value-like features more often exhibit structured, low-dimensional effects, although these effects typically span several directions. Pointer-like features, by contrast, predominantly exhibit diffuse effects. Our results show that a feature can be interpretable and causally relevant without providing a stable direction for steering.",
+  "summary": "The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead study the geometry of changes in model logits caused by feature interventions. We introduce Feature-Effect Geometry Analysis (FEGA), an unsupervised framework that removes the same active SAE feature across contexts and analyzes the resulting cloud of logit changes. Across SAE variants, consistent one-dimensional effects are rare: few features behave like reusable directions. To interpret this variation, we distinguish value-like features, tied to static information such as factual attributes, from pointer-like features, associated with context-dependent operations. Value-like features more often exhibit structured, low-dimensional effects, although these effects typically span several directions. Pointer-like features, by contrast, predominantly exhibit diffuse effects. Our results show that a feature can be interpretable and causally relevant without providing a stable direction for steering.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sparse",
+    "autoencoders",
+    "encode",
+    "both",
+    "concepts",
+    "functions",
+    "downstream",
+    "geometry"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-27T16:45:08.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-28T03:56:55.014Z",
+  "updatedAt": "2026-07-28T03:56:55.050Z"
+},
+{
+  "id": "d6450d64-163f-4aa0-9b9e-d7a744be53c4",
+  "slug": "sparse-evidence-can-suffice-agentic-evidence-seeking-for-multimodal-video-misinformation-d-2026-07-21",
+  "title": "Sparse Evidence Can Suffice: Agentic Evidence Seeking for Multimodal Video Misinformation Detection",
+  "factSummary": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection.",
+  "summary": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sparse",
+    "evidence",
+    "can",
+    "suffice",
+    "agentic",
+    "seeking",
+    "multimodal",
+    "video"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 79,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-20T15:48:31.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-21T14:31:11.220Z",
+  "updatedAt": "2026-07-21T14:31:11.250Z"
+},
+{
+  "id": "8944d389-8f65-443c-9f63-5316a2011055",
+  "slug": "sparsedecoding-decoding-aware-pruning-for-accurate-and-efficient-llm-inference-2026-10-09",
+  "title": "SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference",
+  "factSummary": "The memory-bound nature of the decoding stage of large language model (LLM) inference incurs significant latency. Layer-wise training-free network pruning approaches guided by the Hessian have been a prominent solution to this problem, as pruning reduces the number of nonzero parameters read from memory during decoding. Nevertheless, typical methods in this line compute the Hessian using pre-collected natural sequences, whereas the model is fed self-generated tokens during decoding, creating a distribution shift between the two sequences. The Hessian calculated on the natural sequence is different from that calculated on the generated sequence. We observe that this discrepancy causes the activation distribution during generation to deviate from that used for pruning, further hurting the pruned model performance. Moreover, most existing LLM pruning methods that bring actual speedup primarily target the sparse matrix-matrix (SpMM) multiplication, providing limited support for the sparse matrix-vector (SpMV) operations, which dominate decoding. To solve these problems, we introduce SparseDecoding, a principled decoding-aware pruning framework tailored for accurate and efficient LLM decoding. Specifically, at the algorithmic axis, SparseDecoding constructs calibration matrices from layer-wise activations collected during the dense-model autoregressive generation, excluding prefill, thereby aligning the pruning objective with the decoding activations. At the system axis, we develop an optimized N:M sparse matrix-vector kernel with bitmask indexing and fixed-step traversal. Substantial empirical results on representative LLMs (Llama-3.1-8B, Llama-3.3-70B, Qwen3-14B / 32B) demonstrate that our method consistently outperforms standard fixed-text calibration on the long-form generation benchmarks while achieving up to 1.48x end-to-end wall-clock decoding speedup on A100 GPUs.",
+  "summary": "The memory-bound nature of the decoding stage of large language model (LLM) inference incurs significant latency. Layer-wise training-free network pruning approaches guided by the Hessian have been a prominent solution to this problem, as pruning reduces the number of nonzero parameters read from memory during decoding. Nevertheless, typical methods in this line compute the Hessian using pre-collected natural sequences, whereas the model is fed self-generated tokens during decoding, creating a distribution shift between the two sequences. The Hessian calculated on the natural sequence is different from that calculated on the generated sequence. We observe that this discrepancy causes the activation distribution during generation to deviate from that used for pruning, further hurting the pruned model performance. Moreover, most existing LLM pruning methods that bring actual speedup primarily target the sparse matrix-matrix (SpMM) multiplication, providing limited support for the sparse matrix-vector (SpMV) operations, which dominate decoding. To solve these problems, we introduce SparseDecoding, a principled decoding-aware pruning framework tailored for accurate and efficient LLM decoding. Specifically, at the algorithmic axis, SparseDecoding constructs calibration matrices from layer-wise activations collected during the dense-model autoregressive generation, excluding prefill, thereby aligning the pruning objective with the decoding activations. At the system axis, we develop an optimized N:M sparse matrix-vector kernel with bitmask indexing and fixed-step traversal. Substantial empirical results on representative LLMs (Llama-3.1-8B, Llama-3.3-70B, Qwen3-14B / 32B) demonstrate that our method consistently outperforms standard fixed-text calibration on the long-form generation benchmarks while achieving up to 1.48x end-to-end wall-clock decoding speedup on A100 GPUs.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sparsedecoding",
+    "decoding",
+    "aware",
+    "pruning",
+    "accurate",
+    "efficient",
+    "llm",
+    "inference"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-08T17:06:32.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T06:51:58.825Z",
+  "updatedAt": "2026-10-09T06:51:58.889Z"
+},
+{
+  "id": "107c5983-e7ff-4011-8819-df83d6d9f6d9",
+  "slug": "sparsenav-instruction-conditioned-sparse-semantic-perception-for-training-free-vision-lang-2026-09-23",
+  "title": "SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation",
+  "factSummary": "Map-based vision-language navigation (VLN) relies on persistent spatial representations to connect language understanding with geometric planning. However, acquiring semantics beyond the needs of the current instruction can introduce unnecessary perception cost and irrelevant annotations. Continuously accumulating unrelated objects may not only waste computation, but also clutter the visual-spatial representation consumed by the vision-language model (VLM) planner. To address this problem, we present SparseNav, a training-free framework that follows a less-is-more principle for semantic navigation. SparseNav persistently maintains a lightweight geometric bird's-eye-view (BEV) map and sparse landmark memory, acquiring new semantics on demand using the active sub-instruction to decide what is worth grounding. An instruction manager first tracks navigation progress and identifies the active landmark query. An instruction-conditioned perception mechanism then invokes open-vocabulary segmentation when the queried landmark is visible and its metric location can inform the next decision. The resulting landmark memory supports VLM selection among hybrid frontier and local directional waypoint candidates. Without any additional training, SparseNav achieves success rates of 42.8% on R2R-CE and 40.7% on RxR-CE, both on the Val-Unseen splits. Controlled ablations examine semantic perception strategies and the contributions of individual framework components. Furthermore, we successfully deployed SparseNav on a Unitree Go2 quadruped equipped with an Intel RealSense D455 RGB-D camera for geometric mapping and landmark grounding and a Livox MID-360 LiDAR for localization, without a prebuilt map. We validated its effectiveness across multiple indoor environments using instruction-conditioned waypoint navigation.",
+  "summary": "Map-based vision-language navigation (VLN) relies on persistent spatial representations to connect language understanding with geometric planning. However, acquiring semantics beyond the needs of the current instruction can introduce unnecessary perception cost and irrelevant annotations. Continuously accumulating unrelated objects may not only waste computation, but also clutter the visual-spatial representation consumed by the vision-language model (VLM) planner. To address this problem, we present SparseNav, a training-free framework that follows a less-is-more principle for semantic navigation. SparseNav persistently maintains a lightweight geometric bird's-eye-view (BEV) map and sparse landmark memory, acquiring new semantics on demand using the active sub-instruction to decide what is worth grounding. An instruction manager first tracks navigation progress and identifies the active landmark query. An instruction-conditioned perception mechanism then invokes open-vocabulary segmentation when the queried landmark is visible and its metric location can inform the next decision. The resulting landmark memory supports VLM selection among hybrid frontier and local directional waypoint candidates. Without any additional training, SparseNav achieves success rates of 42.8% on R2R-CE and 40.7% on RxR-CE, both on the Val-Unseen splits. Controlled ablations examine semantic perception strategies and the contributions of individual framework components. Furthermore, we successfully deployed SparseNav on a Unitree Go2 quadruped equipped with an Intel RealSense D455 RGB-D camera for geometric mapping and landmark grounding and a Livox MID-360 LiDAR for localization, without a prebuilt map. We validated its effectiveness across multiple indoor environments using instruction-conditioned waypoint navigation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sparsenav",
+    "instruction",
+    "conditioned",
+    "sparse",
+    "semantic",
+    "perception",
+    "training",
+    "free"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T13:41:49.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T05:18:46.817Z",
+  "updatedAt": "2026-09-23T05:18:46.862Z"
+},
+{
   "id": "c3f39935-499d-4953-bca5-628b0ee6134d",
   "slug": "sparser-sparse-variable-projection-by-exploiting-separable-structure-in-robotic-perception-2026-09-22",
   "title": "SPARSER: Sparse Variable Projection by Exploiting Separable Structure in Robotic Perception",
@@ -1042,8 +1269,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -1084,8 +1311,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -1390,8 +1617,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "ce6e144f-4b1f-4e16-bfe5-318763d16046",
@@ -4596,8 +4823,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "a13da063-1412-4715-b248-3c220b58d20b",
@@ -6094,8 +6321,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -6594,8 +6821,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -6958,8 +7185,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -7768,8 +7995,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -8997,8 +9224,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -11075,8 +11302,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -15843,8 +16070,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -16568,8 +16795,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -16657,8 +16884,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -16838,8 +17065,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -20982,8 +21209,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -22017,8 +22244,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -22333,8 +22560,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -27715,7 +27942,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 65,
+    "freshness": 59,
     "crossRegion": false
   },
   "status": "published",
@@ -27724,7 +27951,7 @@
   "happenedAt": "2026-10-11T04:24:55.000Z",
   "publishedAt": "2026-10-11T06:36:00.719Z",
   "createdAt": "2026-10-11T06:35:11.406Z",
-  "updatedAt": "2026-10-12T21:23:10.257Z"
+  "updatedAt": "2026-10-13T07:13:09.051Z"
 },
 {
   "id": "e918d10c-b01d-42f8-be20-e48d5386a742",
@@ -35100,6 +35327,50 @@
   "updatedAt": "2026-10-08T06:46:11.222Z"
 },
 {
+  "id": "94e07b95-227b-4e30-a0b0-90568657545d",
+  "slug": "v2-29-0-2026-10-13",
+  "title": "v2.29.0",
+  "factSummary": "Google Gen AI JavaScript SDK 发布 v2.29.0（2026-10-13），新增流式续传用量元数据与 initialPromptTokenCount，向 Interactions 的 interaction.status_update 事件加入 continuation_token，新增 CONTINUATION_REQUIRED 交互状态与计费 token 计数字段，并为 Transcription 增加 startOffset/endOffset、为 RealtimeInputConfig 增加 interimTranscriptTimestampEnabled；同时修复流式续传中中间 CONTINUATION finishReason、未完成续传轮次写入精选聊天历史、js 端 stale token 与 AbortError 等边界问题，并从 Interactions 模型选项中移除不支持的 2.5 与 1.6 模型。",
+  "summary": "Google Gen AI JavaScript SDK 的 v2.29.0 版本围绕流式续传（continuation）机制做了功能与修复更新，涉及续传 token 的自动消费、交互状态事件、计费 token 计数与转录时间戳字段，并清理了不支持的模型选项。",
+  "technicalInsight": "从变更项看，该版本把长流式会话的续传与用量计量作为一等能力处理：continuation_token 进入状态更新事件、新增 CONTINUATION_REQUIRED 状态、并区分是否自动消费续传 token 来决定 initialPromptTokenCount，说明 SDK 正在为跨请求的流式会话连续性建立显式协议语义。可验证下一信号：后续版本是否在文档或类型定义中固化 continuation 状态机，以及是否有服务端侧对应的续传配额或超时说明。",
+  "industryInsight": "这是开发者工具链层面的渐进式更新，而非模型能力发布；其意义在于把长时流式交互的断点续传与计费口径标准化，属于 SDK 与 API 生态的成熟度信号。可验证下一信号：其他厂商 SDK 是否跟进类似的续传状态与用量字段命名。",
+  "futureOutlook": "若续传语义被稳定下来，长时语音与实时交互类应用的会话恢复成本可能下降，但当前证据仅覆盖 JS SDK 单版本变更，尚不足以判断跨语言 SDK 的一致性与服务端行为。可验证下一信号：Python 或其他语言 SDK 是否出现对应的 continuation 状态与计费字段。",
+  "businessValue": "对使用该 SDK 构建实时语音或长会话应用的开发者，续传与用量字段的明确化有助于更精确地做会话恢复与成本核算；但该版本同时移除了不支持的 2.5 与 1.6 模型选项，依赖旧模型名的集成需要核对升级影响。",
+  "category": "sdk-streaming-continuation",
+  "company": "Google Gen AI JavaScript SDK",
+  "keywords": [
+    "Google Gen AI SDK",
+    "流式续传",
+    "continuation token",
+    "Interactions API",
+    "计费 token 计数",
+    "实时语音"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 66,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 97,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-13T04:45:06.000Z",
+  "publishedAt": "2026-10-13T07:14:04.836Z",
+  "createdAt": "2026-10-13T07:13:09.066Z",
+  "updatedAt": "2026-10-13T07:14:04.836Z"
+},
+{
   "id": "2623c441-5b27-4bd4-ac49-661a16faadfc",
   "slug": "v2-3-0-rc-0-2026-07-23",
   "title": "v2.3.0-rc.0",
@@ -35138,6 +35409,46 @@
   "publishedAt": null,
   "createdAt": "2026-07-23T04:04:13.545Z",
   "updatedAt": "2026-07-24T04:02:43.736Z"
+},
+{
+  "id": "81323054-2780-4df0-9fe1-f49d0ef4b3fd",
+  "slug": "v2-30-0-2026-10-13",
+  "title": "v2.30.0",
+  "factSummary": "2.30.0 (2026-10-13) Features Accumulate streaming continuation usage metadata and expose initial_prompt_token_count ( b27f3cd ) Add continuation_token to the Interactions interaction.status_update event. ( 02db4c5 ) Add a CONTINUATION_REQUIRED Interaction status ( bf9d6d7 ) Add billable token counts fields ( 6a6501c ) Add startOffset/endOffset to Transcription and interimTranscriptTimestampEnabled to RealtimeInputConfig ( c644a94 ) Add usage in InteractionStatusUpdate events ( 56c3a1a ) Allow automatic resumption of continuation token for in generate content and generate content stream. Default behavior for this feature is disabled ( 83e43ea ) cli: Update Speakeasy generator to v2.948.0, bump CLI to v0.4.2, and apply CLI overlay fixes ( cdcd3dd ) Enable automatic continuation token resumption for chats module. ( 9ebf714 ) Bug Fixes Clear intermediate CONTINUATION finish_reason in streaming continuation ( 8a641d8 ) Do not record incomplete continuation stream turns in curated chat history ( b382e01 ) gemini-api-cli: Remove unsupported 2.5 and 1.6 models from Interactions model options and CLI examples ( fe5fb10 ) genai: Deduplicate Flash and Omni descriptions in ModelOption ( 33efaad ) interactions: Restore super().model_construct in Interaction model validator ( ccd5dd3 ) python: Discard stale checkpoint token on non-resumable finish reason ( f44e8ee ) Raise default HTTP timeouts so long-running requests aren't killed client-side ( b006b4b ) Resume streaming generation from the latest checkpoint continuation token on mid-stream errors or cutoffs ( 90bb32b ) Update EnvironmentConfig.env schema to map keys to EnvVar or string. ( 3108d8c ) Use the mTLS endpoint on the httpx and websocket transports ( 97d5821 )",
+  "summary": "2.30.0 (2026-10-13) Features Accumulate streaming continuation usage metadata and expose initial_prompt_token_count ( b27f3cd ) Add continuation_token to the Interactions interaction.status_update event. ( 02db4c5 ) Add a CONTINUATION_REQUIRED Interaction status ( bf9d6d7 ) Add billable token counts fields ( 6a6501c ) Add startOffset/endOffset to Transcription and interimTranscriptTimestampEnabled to RealtimeInputConfig ( c644a94 ) Add usage in InteractionStatusUpdate events ( 56c3a1a ) Allow automatic resumption of continuation token for in generate content and generate content stream. Default behavior for this feature is disabled ( 83e43ea ) cli: Update Speakeasy generator to v2.948.0, bump CLI to v0.4.2, and apply CLI overlay fixes ( cdcd3dd ) Enable automatic continuation token resumption for chats module. ( 9ebf714 ) Bug Fixes Clear intermediate CONTINUATION finish_reason in streaming continuation ( 8a641d8 ) Do not record incomplete continuation stream turns in curated chat history ( b382e01 ) gemini-api-cli: Remove unsupported 2.5 and 1.6 models from Interactions model options and CLI examples ( fe5fb10 ) genai: Deduplicate Flash and Omni descriptions in ModelOption ( 33efaad ) interactions: Restore super().model_construct in Interaction model validator ( ccd5dd3 ) python: Discard stale checkpoint token on non-resumable finish reason ( f44e8ee ) Raise default HTTP timeouts so long-running requests aren't killed client-side ( b006b4b ) Resume streaming generation from the latest checkpoint continuation token on mid-stream errors or cutoffs ( 90bb32b ) Update EnvironmentConfig.env schema to map keys to EnvVar or string. ( 3108d8c ) Use the mTLS endpoint on the httpx and websocket transports ( 97d5821 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v2",
+    "30"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 93,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-13T00:17:24.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-13T07:13:09.432Z",
+  "updatedAt": "2026-10-13T07:13:09.487Z"
 },
 {
   "id": "cc28f864-1360-4667-8fb6-f88743e500f1",
@@ -36119,6 +36430,47 @@
   "publishedAt": null,
   "createdAt": "2026-08-03T15:25:23.259Z",
   "updatedAt": "2026-08-05T14:40:47.865Z"
+},
+{
+  "id": "277462e0-2d9f-4601-8097-330aa58277b2",
+  "slug": "v3-225-12-2026-10-13",
+  "title": "v3.225.12",
+  "factSummary": "What's Changed feat(web): hint self-hosted v3 deployments to upgrade to Langfuse v4 by @maxdeichmann in #18644 fix(web): tidy the v3 version menu upgrade hint by @maxdeichmann in #18661 Full Changelog : v3.225.11...v3.225.12",
+  "summary": "What's Changed feat(web): hint self-hosted v3 deployments to upgrade to Langfuse v4 by @maxdeichmann in #18644 fix(web): tidy the v3 version menu upgrade hint by @maxdeichmann in #18661 Full Changelog : v3.225.11...v3.225.12",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v3",
+    "225",
+    "12"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T21:43:09.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-13T07:13:09.858Z",
+  "updatedAt": "2026-10-13T07:13:09.912Z"
 },
 {
   "id": "7eddc9da-c094-42e2-8f4b-bea130b0ab50",
@@ -38342,6 +38694,52 @@
   "publishedAt": null,
   "createdAt": "2026-10-09T18:29:14.128Z",
   "updatedAt": "2026-10-09T18:29:14.187Z"
+},
+{
+  "id": "c30c5463-5d25-422f-8410-3d1c5f413b3e",
+  "slug": "v4-58-0-2026-10-13",
+  "title": "v4.58.0",
+  "factSummary": "Langfuse 发布 v4.58.0，包含多项功能、修复与杂项变更，例如在密码重置邮件中要求 Turnstile、将 dependabot 升级到 opus5.5、在 TypeScript 解析前提取媒体、为媒体上传增加带并发与字节限制的上传池、按项目设置 trace 空闲时间、在项目自有 LLM 连接上配置 Topics，以及修复媒体提取中的重复 UTF-8 校验、S3 媒体请求超时等问题。Xinference 发布 v4.0.0，其亮点包括将 Xavier 扩展到更多推理引擎、支持跨引擎与硬件的异构 prefill/decode 部署，并允许在不重新加载权重的情况下重新配置运行中的模型；Xavier 现已支持 vLLM、SGLang 和 MLX。",
+  "summary": "Langfuse v4.58.0 与 Xinference v4.0.0 相继发布：前者围绕可观测性平台的安全、媒体处理与项目级配置做增量更新；后者将 Xavier 扩展至 vLLM、SGLang 和 MLX，并支持异构 prefill/decode 部署与运行时模型重配置。",
+  "technicalInsight": "从发布说明看，Xinference 4.0 的方向是推理引擎抽象与部署灵活性：Xavier 跨 vLLM、SGLang、MLX，以及异构 prefill/decode 和免重载重配置，指向对多硬件、多引擎调度的工程化支持。Langfuse 的变更则集中在媒体提取、上传并发与字节限制、S3 超时等可观测性数据管道的稳健性。可验证下一信号：Xinference 是否发布 Xavier 跨引擎的基准或部署文档，Langfuse 是否公开媒体上传池的默认并发与字节上限。",
+  "industryInsight": "两条发布说明共同显示开源 AI 基础设施仍在快速迭代：推理侧强调引擎与硬件异构编排，可观测性侧强调数据摄取的安全与资源约束。这属于工程能力竞争，而非模型能力突破。可验证下一信号：后续版本是否出现跨引擎性能对比或企业级部署案例。",
+  "futureOutlook": "若 Xinference 的异构 prefill/decode 与免重载重配置被更多引擎采纳，推理部署的硬件组合灵活性可能提升；Langfuse 的媒体与上传治理若持续完善，可观测性平台处理多模态数据的成本与稳定性可能改善。上述均为基于发布说明的判断，需后续版本与文档验证。",
+  "businessValue": "对使用开源推理栈的团队，Xinference 4.0 的跨引擎与异构部署能力可能降低硬件锁定与重载成本；对使用 Langfuse 的团队，媒体上传限制与超时控制有助于控制存储与网络开销。价值实现取决于实际部署验证，尚无收入或采用数据支撑。",
+  "category": "open-source-release",
+  "company": "Xinference",
+  "keywords": [
+    "Langfuse",
+    "Xinference",
+    "Xavier",
+    "vLLM",
+    "SGLang",
+    "MLX",
+    "推理引擎",
+    "可观测性"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 67,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-13T07:05:09.000Z",
+  "publishedAt": "2026-10-13T07:14:04.837Z",
+  "createdAt": "2026-10-13T07:13:08.995Z",
+  "updatedAt": "2026-10-13T07:14:04.837Z"
 },
 {
   "id": "a5b488ba-7f4b-4b4f-872c-2cf6f805a25b",
@@ -41341,8 +41739,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -41659,8 +42057,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -42294,8 +42692,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -42337,8 +42735,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -42605,8 +43003,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -42878,8 +43276,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -43101,8 +43499,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -48088,8 +48486,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -49270,8 +49668,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -50258,8 +50656,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -50302,8 +50700,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -50798,8 +51196,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -50841,8 +51239,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -50884,8 +51282,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -50927,8 +51325,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",

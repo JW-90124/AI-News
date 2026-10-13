@@ -1,5 +1,143 @@
 [
 {
+  "id": "54959492-6931-4629-91f3-21a681c973e0",
+  "slug": "from-resource-flow-to-executable-tests-petri-net-guided-llm-test-generation-for-concurrent-2026-07-24",
+  "title": "From Resource Flow to Executable Tests: Petri-Net-Guided LLM Test Generation for Concurrent Stateful Rust APIs",
+  "factSummary": "Concurrent stateful library APIs expose behavior through evolving resource ownership, lifecycle states, and competing interleavings. Large language models can synthesize executable Rust tests, but their outputs often violate API preconditions, remain shallow, or reduce concurrency to accidental sequential traces. Conversely, model-based and systematic testing techniques provide semantic control but commonly require substantial handwritten code to turn abstract scenarios into executable tests. This paper addresses the gap between formal scenario design and low-cost test concretization. We present a Petri-net-guided methodology for test generation over concurrent stateful Rust APIs. The method represents API resources, lifecycle conditions, and causal dependencies as colored tokens and transitions; derives legal deep-state, near-legal, and partial-order concurrent scenarios; and uses these scenarios as a constrained intermediate representation for LLM-based code synthesis. A local-faithfulness contract and structural repair loop preserve the modeled intent during concretization, while Petri-guided schedule shaping prioritizes high-conflict concurrency skeletons for systematic exploration. A layered semantic oracle then distinguishes synthesis failures from violations of the target API's expected behavior.",
+  "summary": "Concurrent stateful library APIs expose behavior through evolving resource ownership, lifecycle states, and competing interleavings. Large language models can synthesize executable Rust tests, but their outputs often violate API preconditions, remain shallow, or reduce concurrency to accidental sequential traces. Conversely, model-based and systematic testing techniques provide semantic control but commonly require substantial handwritten code to turn abstract scenarios into executable tests. This paper addresses the gap between formal scenario design and low-cost test concretization. We present a Petri-net-guided methodology for test generation over concurrent stateful Rust APIs. The method represents API resources, lifecycle conditions, and causal dependencies as colored tokens and transitions; derives legal deep-state, near-legal, and partial-order concurrent scenarios; and uses these scenarios as a constrained intermediate representation for LLM-based code synthesis. A local-faithfulness contract and structural repair loop preserve the modeled intent during concretization, while Petri-guided schedule shaping prioritizes high-conflict concurrency skeletons for systematic exploration. A layered semantic oracle then distinguishes synthesis failures from violations of the target API's expected behavior.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "from",
+    "resource",
+    "flow",
+    "executable",
+    "tests",
+    "petri",
+    "net",
+    "guided"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-23T17:15:53.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-24T04:02:42.582Z",
+  "updatedAt": "2026-07-24T04:02:42.613Z"
+},
+{
+  "id": "a6d7694a-6145-4179-9a69-eabe9ee4d4cc",
+  "slug": "from-reward-signal-to-visual-utility-a-controlled-audit-of-medical-vlm-post-training-2026-09-28",
+  "title": "From Reward Signal to Visual Utility: A Controlled Audit of Medical VLM Post-Training",
+  "factSummary": "Medical vision-language model (VLM) post-training is commonly evaluated through answer accuracy. We examine how changes in accuracy and training objectives relate to image-conditioned decisions in a controlled Qwen2.5-VL-3B study on PMC-VQA. We compare supervised fine-tuning (SFT) with low-rank adaptation (LoRA) restricted to the language model, expanded multimodal adaptation scopes, standard answer-only Group Relative Policy Optimization (GRPO), and a counterfactual evidence objective. On 2,000 clean-test questions, language model LoRA SFT changes correct-image accuracy by +1.10 percentage points (95% paired bootstrap CI:-0.85 to +3.05), while visual-benefit events decrease by 2.40 points and image sensitivity decreases by 5.60 points. Paired records reveal 155 acquired and 203 lost visual-benefit events. Broader adaptation yields lower correct-image accuracy than language-model LoRA SFT. Standard GRPO produces mixed-reward groups and parameter updates, with an uncertain clean test accuracy change. A generation audit reveals that canonical option scores can follow a different token path from generated answers. With scores taken along the greedy generation path, the evidence target improves on the training set; its gains over standard GRPO remain inconsistent on validation data at matched training doses. Sample-level analyses trace how evidence scores, decision margins, and generated answers change during post-training. This empirical and measurement audit identifies gaps between optimization activity, target acquisition, and useful held-out visual behavior.",
+  "summary": "Medical vision-language model (VLM) post-training is commonly evaluated through answer accuracy. We examine how changes in accuracy and training objectives relate to image-conditioned decisions in a controlled Qwen2.5-VL-3B study on PMC-VQA. We compare supervised fine-tuning (SFT) with low-rank adaptation (LoRA) restricted to the language model, expanded multimodal adaptation scopes, standard answer-only Group Relative Policy Optimization (GRPO), and a counterfactual evidence objective. On 2,000 clean-test questions, language model LoRA SFT changes correct-image accuracy by +1.10 percentage points (95% paired bootstrap CI:-0.85 to +3.05), while visual-benefit events decrease by 2.40 points and image sensitivity decreases by 5.60 points. Paired records reveal 155 acquired and 203 lost visual-benefit events. Broader adaptation yields lower correct-image accuracy than language-model LoRA SFT. Standard GRPO produces mixed-reward groups and parameter updates, with an uncertain clean test accuracy change. A generation audit reveals that canonical option scores can follow a different token path from generated answers. With scores taken along the greedy generation path, the evidence target improves on the training set; its gains over standard GRPO remain inconsistent on validation data at matched training doses. Sample-level analyses trace how evidence scores, decision margins, and generated answers change during post-training. This empirical and measurement audit identifies gaps between optimization activity, target acquisition, and useful held-out visual behavior.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "from",
+    "reward",
+    "signal",
+    "visual",
+    "utility",
+    "controlled",
+    "audit",
+    "medical"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T16:06:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T05:59:53.839Z",
+  "updatedAt": "2026-09-28T05:59:53.890Z"
+},
+{
+  "id": "8f00cfd8-91df-44fd-a4a4-d72ab229ee1a",
+  "slug": "from-routing-signals-to-selective-review-visual-regrounding-in-moe-vlms-2026-09-30",
+  "title": "From Routing Signals to Selective Review: Visual regrounding in MoE VLMs",
+  "factSummary": "Vision-language models (VLMs) may accept false visual premises, answering questions about a target object's color, count, location, or state even when it is absent. We call this reliability-critical behavior a target-absence grounding failure. Existing visual-grounding detectors primarily rely on generated responses, hidden states, or uncertainty measures. We present the first framework to leverage internal routing decisions in Mixture-of-Experts (MoE) VLMs to detect target absence before generation and guide selective correction. We extract target-token routing probabilities from Qwen3-VL-30B-A3B-Instruct and Gemma-4-26B-A4B-it, train a separate L2-regularized linear detector for each model, and use its predictions to selectively invoke a target-aware review prompt. Using routing alone, the Qwen and Gemma detectors achieve ROC-AUCs of 0.9988 and 0.9956 on GQA-Inpaint and retain 0.8095 and 0.7781 on the external OBER dataset, respectively. The resulting routing-gated policy improves end-to-end accuracy on GQA-Inpaint and OBER by +22.25% and +12.17% for Qwen, and by +13.42% and +1.39% for Gemma, without modifying model weights. Further analysis shows that the signal is localized to the target-object token, emerges in early MoE layers, and is distributed across partially substitutable experts. Although cross-dataset threshold shifts require recalibration, false-positive review causes limited harm overall, suggesting that intervention risk can be controlled through joint selection of the detector threshold and review prompt. Overall, we show that routing probabilities alone preserve actionable information about visual perception, allowing computation already produced by an MoE VLM to support low-cost detection and selective visual regrounding.",
+  "summary": "Vision-language models (VLMs) may accept false visual premises, answering questions about a target object's color, count, location, or state even when it is absent. We call this reliability-critical behavior a target-absence grounding failure. Existing visual-grounding detectors primarily rely on generated responses, hidden states, or uncertainty measures. We present the first framework to leverage internal routing decisions in Mixture-of-Experts (MoE) VLMs to detect target absence before generation and guide selective correction. We extract target-token routing probabilities from Qwen3-VL-30B-A3B-Instruct and Gemma-4-26B-A4B-it, train a separate L2-regularized linear detector for each model, and use its predictions to selectively invoke a target-aware review prompt. Using routing alone, the Qwen and Gemma detectors achieve ROC-AUCs of 0.9988 and 0.9956 on GQA-Inpaint and retain 0.8095 and 0.7781 on the external OBER dataset, respectively. The resulting routing-gated policy improves end-to-end accuracy on GQA-Inpaint and OBER by +22.25% and +12.17% for Qwen, and by +13.42% and +1.39% for Gemma, without modifying model weights. Further analysis shows that the signal is localized to the target-object token, emerges in early MoE layers, and is distributed across partially substitutable experts. Although cross-dataset threshold shifts require recalibration, false-positive review causes limited harm overall, suggesting that intervention risk can be controlled through joint selection of the detector threshold and review prompt. Overall, we show that routing probabilities alone preserve actionable information about visual perception, allowing computation already produced by an MoE VLM to support low-cost detection and selective visual regrounding.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "from",
+    "routing",
+    "signals",
+    "selective",
+    "review",
+    "visual",
+    "regrounding",
+    "moe"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-29T17:49:07.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-30T06:05:23.796Z",
+  "updatedAt": "2026-09-30T06:05:23.859Z"
+},
+{
   "id": "eeba6fc3-17d1-456d-bf84-395e0255249e",
   "slug": "from-safety-documentation-to-safety-knowledge-support-an-evidence-grounded-llm-framework-f-2026-08-13",
   "title": "From Safety Documentation to Safety Knowledge Support: An Evidence-Grounded LLM Framework for Medical Devices",
@@ -1230,8 +1368,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-07T12:00:00.000Z",
   "publishedAt": "2024-11-07T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "cbc80403-7e51-4a73-8943-bd072d0718bc",
@@ -2144,8 +2282,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-16T12:00:00.000Z",
   "publishedAt": "2022-11-16T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "8a5fc72c-cb68-4f01-93cf-898a68db5beb",
@@ -2688,8 +2826,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-06T00:00:00.000Z",
   "publishedAt": "2023-12-06T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9a3e110e-fafb-4be5-b74b-541e67cec23c",
@@ -2772,8 +2910,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-25T00:00:00.000Z",
   "publishedAt": "2025-03-25T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "efde5ec2-6528-4a1a-ae90-cd4c7611f28f",
@@ -2814,8 +2952,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-11T00:00:00.000Z",
   "publishedAt": "2024-12-11T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b6375882-e125-49e6-9f4d-5d0414ab45b9",
@@ -2993,8 +3131,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-24T16:30:01.000Z",
   "publishedAt": "2026-06-24T16:30:01.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "8cdb9f6b-1d7a-4c65-a92d-5fb80509c5fc",
@@ -3035,8 +3173,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-15T22:50:12.000Z",
   "publishedAt": "2026-05-15T22:50:12.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "46e63991-566b-4972-ad91-a049b923c848",
@@ -3345,8 +3483,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-19T12:00:00.000Z",
   "publishedAt": "2023-12-19T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "6ee45d01-59e6-4364-ada2-18e73c244e82",
@@ -3387,8 +3525,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:50:57.000Z",
   "publishedAt": "2026-05-17T19:50:57.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "f2ae67c4-1fa7-4343-a4de-ddbc5b94ba4b",
@@ -3430,8 +3568,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-25T12:00:00.000Z",
   "publishedAt": "2025-03-25T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e462afdc-4b8d-480b-afb3-f788c0d2b0b6",
@@ -3517,8 +3655,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-13T15:52:13.000Z",
   "publishedAt": "2026-04-13T15:52:13.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "879d2132-ad69-4144-af0e-5a2264e6a2e2",
@@ -3605,8 +3743,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-09T14:10:19.000Z",
   "publishedAt": "2026-06-09T14:10:19.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "49c16a9d-c7af-4eb9-a967-ea7a08ec9b09",
@@ -3647,8 +3785,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T16:00:49.000Z",
   "publishedAt": "2026-04-02T16:00:49.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "dbb709b7-e3d9-47ea-860d-2e16bcaa5bcb",
@@ -3826,8 +3964,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-28T12:00:00.000Z",
   "publishedAt": "2023-11-28T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b27d4900-a206-4aca-be9f-78c98cb56f41",
@@ -4234,8 +4372,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-07T12:00:00.000Z",
   "publishedAt": "2023-04-07T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "70684eec-cdf9-459d-820b-6270ec1aed3b",
@@ -4368,8 +4506,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-11T12:00:00.000Z",
   "publishedAt": "2025-02-11T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7b325f0a-0221-4333-9ab8-4f4afc79d4d0",
@@ -5474,20 +5612,20 @@
     "release",
     "commit-pin"
   ],
-  "confidenceScore": 74,
-  "heatScore": 23,
+  "confidenceScore": 84,
+  "heatScore": 19,
   "impactScore": 55,
-  "valueScore": 59,
+  "valueScore": 53,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 96,
+    "freshness": 45,
     "crossRegion": false
   },
   "status": "published",
@@ -5496,7 +5634,7 @@
   "happenedAt": "2026-10-10T02:40:04.000Z",
   "publishedAt": "2026-10-10T06:30:28.660Z",
   "createdAt": "2026-10-10T06:29:40.329Z",
-  "updatedAt": "2026-10-10T06:30:28.660Z"
+  "updatedAt": "2026-10-13T07:13:09.913Z"
 },
 {
   "id": "fb42c9be-eab6-4d15-805b-93bcea426b12",
@@ -6655,8 +6793,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-14T00:00:00.000Z",
   "publishedAt": "2025-04-14T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "5cd05654-1893-49bb-ad32-b99ea1c4294c",
@@ -6699,8 +6837,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-28T00:00:00.000Z",
   "publishedAt": "2025-07-28T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4d5503ab-6e90-415e-a1be-471762cad398",
@@ -6743,8 +6881,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-30T00:00:00.000Z",
   "publishedAt": "2025-09-30T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "cefc2c52-fd83-4ae1-a3cd-a4b633af9e60",
@@ -6787,8 +6925,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-08T00:00:00.000Z",
   "publishedAt": "2025-12-08T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "51d0159e-03e0-46a0-abc2-8e814b021821",
@@ -6831,8 +6969,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-22T00:00:00.000Z",
   "publishedAt": "2025-12-22T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "3775a9da-e7ca-4bf4-a367-f6c75255b6a8",
@@ -6875,8 +7013,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-07T00:00:00.000Z",
   "publishedAt": "2026-04-07T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "688304eb-2b05-4c16-a400-42a45b696da3",
@@ -6919,8 +7057,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e0d942a6-f37a-4277-a95a-a45c5a381e3e",
@@ -6963,8 +7101,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-12T00:00:00.000Z",
   "publishedAt": "2026-02-12T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2f9c9ec7-0f69-4d28-9a77-c97a1280e8ac",
@@ -7144,8 +7282,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-20T12:00:00.000Z",
   "publishedAt": "2023-09-20T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "0e3e1d81-95d0-4e68-a46b-59e80f7f79df",
@@ -7186,8 +7324,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-09T00:00:00.000Z",
   "publishedAt": "2025-04-09T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4fd7dddd-71c4-46e8-a007-df128c2d5495",
@@ -7229,8 +7367,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-21T12:00:00.000Z",
   "publishedAt": "2025-08-21T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "ad6e6b75-6a74-46a9-ae5f-29ecc45bdc95",
@@ -7271,8 +7409,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-17T19:43:45.000Z",
   "publishedAt": "2026-05-17T19:43:45.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "8a844569-7392-4bd3-8368-17b9792e3beb",
@@ -7661,8 +7799,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b6021647-489f-4a6e-aef3-95615c2f0661",
@@ -7703,8 +7841,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-20T19:30:00.000Z",
   "publishedAt": "2026-05-20T19:30:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9aac5367-87dd-4bed-aa29-336431094e4d",
@@ -7746,8 +7884,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-21T00:00:00.000Z",
   "publishedAt": "2026-04-21T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "25fe69a5-a0ca-427c-ae25-656de0da5ae3",
@@ -7789,8 +7927,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-17T12:00:00.000Z",
   "publishedAt": "2025-09-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "83bc008f-9083-4013-a6af-daf1252c1faa",
@@ -7830,8 +7968,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-14T00:00:00.000Z",
   "publishedAt": "2023-03-14T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "005d08ee-310d-4c16-accb-e9dea26546b2",
@@ -7914,8 +8052,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-23T00:00:00.000Z",
   "publishedAt": "2026-04-23T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "104d8a19-a1ab-450f-ad20-a6f79104903b",
@@ -7956,8 +8094,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T08:00:00.000Z",
   "publishedAt": "2026-07-09T08:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "fa87aed3-c07c-4f95-aff3-332417a74348",
@@ -7998,8 +8136,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T10:00:00.000Z",
   "publishedAt": "2026-07-09T10:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "79126618-11b2-4298-aa1f-5217f4907cd2",
@@ -8040,8 +8178,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-07T00:00:00.000Z",
   "publishedAt": "2025-08-07T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4b28a30d-4a00-48b5-aed5-6e37c70d4135",
@@ -8258,8 +8396,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T08:00:00.000Z",
   "publishedAt": "2026-07-08T08:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b3ea7a0c-3b31-408b-a008-3821cfb50263",
@@ -8896,8 +9034,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-24T12:00:00.000Z",
   "publishedAt": "2022-12-24T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "0b121f2f-6731-45b9-a5c5-b4255a70ab88",
@@ -9350,8 +9488,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-17T00:00:00.000Z",
   "publishedAt": "2024-03-17T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "ca5cc455-54ea-4f7e-a118-641368d6740c",
@@ -9394,8 +9532,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-12T00:00:00.000Z",
   "publishedAt": "2024-12-12T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2bc6b3e5-1703-4bec-aba6-1937ab390f06",
@@ -9438,8 +9576,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-19T00:00:00.000Z",
   "publishedAt": "2025-02-19T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4eca2546-7819-4bb7-a03e-2485b3a5d6e2",
@@ -9482,8 +9620,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-19T00:00:00.000Z",
   "publishedAt": "2025-11-19T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "6ac01b5a-3320-4564-a760-bf9eae72cbd0",
@@ -9526,8 +9664,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-10T00:00:00.000Z",
   "publishedAt": "2026-03-10T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "6954baba-333f-48d3-aab7-c2c04a458ff9",
@@ -9570,8 +9708,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-17T00:00:00.000Z",
   "publishedAt": "2026-06-17T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "633cde19-e03c-4d26-aeab-366622054490",
@@ -9614,8 +9752,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T00:00:00.000Z",
   "publishedAt": "2026-07-08T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "654b6dc6-38e3-4ef5-8019-3d7bf42ea544",
@@ -9790,8 +9928,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T00:00:00.000Z",
   "publishedAt": "2025-07-09T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2f9a1562-2e8d-4dc3-a6e1-dc7dc20b7590",
@@ -9834,8 +9972,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-25T00:00:00.000Z",
   "publishedAt": "2026-05-25T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2e028619-1780-450f-9a1f-c085a47af2bd",
@@ -10381,8 +10519,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-07T12:00:00.000Z",
   "publishedAt": "2024-10-07T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "f695da29-0bee-4ff1-9ec7-f1521ef6aaa8",
@@ -10791,8 +10929,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-28T12:00:00.000Z",
   "publishedAt": "2022-12-28T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "592f62dd-f3d6-4b80-a1b4-8206fabbbbcc",
@@ -12467,8 +12605,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-23T12:00:00.000Z",
   "publishedAt": "2024-06-23T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "c2403129-3e51-4c2f-8bae-ec818fc7ea0c",
@@ -13381,8 +13519,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "cdf11c5f-9977-45fd-b35a-5d512c8693c9",
@@ -17930,8 +18068,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-30T12:00:00.000Z",
   "publishedAt": "2023-03-30T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "c886e1a5-d2af-4d4a-9b24-21c339d31e34",
@@ -18523,8 +18661,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-01T00:00:00.000Z",
   "publishedAt": "2025-09-01T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7ee9255e-7aa3-4f15-ae95-d77c41a89ea8",
@@ -18566,8 +18704,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-21T12:00:00.000Z",
   "publishedAt": "2025-01-21T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "40505a10-0ce8-420b-b35d-b7bb585c6b8d",
@@ -19831,8 +19969,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-15T00:00:00.000Z",
   "publishedAt": "2025-01-15T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "3cd3b078-ad3f-479b-b5f8-c85f7e7762fc",
@@ -20918,8 +21056,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-10T12:00:00.000Z",
   "publishedAt": "2024-01-10T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "382deb67-2b4e-4b8d-8664-b293a22a847f",
@@ -21731,8 +21869,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T12:00:00.000Z",
   "publishedAt": "2023-11-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7891365c-b923-4a85-86fa-91254ecc4746",
@@ -27250,8 +27388,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-09T12:00:00.000Z",
   "publishedAt": "2023-06-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "692f8873-01ab-4520-8c98-7c28f7e7c4fe",
@@ -27934,8 +28072,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-22T12:00:00.000Z",
   "publishedAt": "2025-01-22T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "1a7413bb-14fa-427c-ad1d-51dbbd8286d8",
@@ -27977,8 +28115,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-30T00:00:00.000Z",
   "publishedAt": "2026-01-30T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "469466ea-6f7d-4e74-88c8-a5cb1d3f1406",
@@ -28064,8 +28202,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-11T00:00:00.000Z",
   "publishedAt": "2025-07-11T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "c2cf301b-d0a8-4339-89bf-978357139894",
@@ -28931,8 +29069,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-04T12:00:00.000Z",
   "publishedAt": "2025-11-04T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "09b6a0ad-fee9-4eed-a29f-0e6c0964ff3d",
@@ -31151,6 +31289,46 @@
   "updatedAt": "2026-10-06T18:31:03.371Z"
 },
 {
+  "id": "62108ffc-0e8f-4180-9a63-747a9ca59761",
+  "slug": "langgraph-1-2-15-2026-10-13",
+  "title": "langgraph==1.2.15",
+  "factSummary": "Changes since 1.2.14 release(langgraph): 1.2.15 ( #9283 ) fix(langgraph): give every message written to a messages DeltaChannel an id ( #9275 ) fix(langgraph): save a cached node's writes like a node that ran ( #9259 ) fix(langgraph): stop at an interrupt_before breakpoint when a drain is requested before it ( #9281 ) fix(langgraph): keep an exit run from a checkpoint the thread moved past out of its newer branch ( #9269 ) fix(langgraph): store an update_state input's writes on the checkpoint it updates ( #9258 ) fix(langgraph): read a run's DeltaChannel input back only on its own checkpoints ( #9260 ) fix(langgraph): snapshot a DeltaChannel that an update_state Overwrite resets ( #9263 ) fix(langgraph): keep a fork's DeltaChannel snapshot from starting nodes that never ran ( #9264 ) fix(langgraph): don't save a checkpoint past a failed DeltaChannel write ( #9235 ) fix(langgraph,prebuilt): stop ToolNode from swallowing invalid resume values ( #9232 ) fix(langgraph): never store exit-mode delta writes under the null task id ( #9229 ) fix(langgraph): stop astream_events dropping control/interrupts on v1/v2 ( #9219 ) chore(deps): bump notebook from 7.5.7 to 7.6.3 in /libs/langgraph ( #9206 ) fix(langgraph): give each bulk_update_state update its own task id ( #9128 ) fix(langgraph): replay a resumed exit-mode run's delta writes in live order ( #9114 ) fix: order delta channel replay by task path ( #8544 )",
+  "summary": "Changes since 1.2.14 release(langgraph): 1.2.15 ( #9283 ) fix(langgraph): give every message written to a messages DeltaChannel an id ( #9275 ) fix(langgraph): save a cached node's writes like a node that ran ( #9259 ) fix(langgraph): stop at an interrupt_before breakpoint when a drain is requested before it ( #9281 ) fix(langgraph): keep an exit run from a checkpoint the thread moved past out of its newer branch ( #9269 ) fix(langgraph): store an update_state input's writes on the checkpoint it updates ( #9258 ) fix(langgraph): read a run's DeltaChannel input back only on its own checkpoints ( #9260 ) fix(langgraph): snapshot a DeltaChannel that an update_state Overwrite resets ( #9263 ) fix(langgraph): keep a fork's DeltaChannel snapshot from starting nodes that never ran ( #9264 ) fix(langgraph): don't save a checkpoint past a failed DeltaChannel write ( #9235 ) fix(langgraph,prebuilt): stop ToolNode from swallowing invalid resume values ( #9232 ) fix(langgraph): never store exit-mode delta writes under the null task id ( #9229 ) fix(langgraph): stop astream_events dropping control/interrupts on v1/v2 ( #9219 ) chore(deps): bump notebook from 7.5.7 to 7.6.3 in /libs/langgraph ( #9206 ) fix(langgraph): give each bulk_update_state update its own task id ( #9128 ) fix(langgraph): replay a resumed exit-mode run's delta writes in live order ( #9114 ) fix: order delta channel replay by task path ( #8544 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "langgraph",
+    "15"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T22:38:26.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-13T07:13:09.714Z",
+  "updatedAt": "2026-10-13T07:13:09.768Z"
+},
+{
   "id": "a9895bc3-9fec-40d5-8f95-7c421ea74c13",
   "slug": "langgraph-checkpoint-postgres-3-1-2-2026-08-08",
   "title": "langgraph-checkpoint-postgres==3.1.2",
@@ -31192,6 +31370,50 @@
   "publishedAt": "2026-08-08T13:19:42.493Z",
   "createdAt": "2026-08-08T02:49:21.891Z",
   "updatedAt": "2026-08-08T13:19:42.493Z"
+},
+{
+  "id": "ccf61445-6f55-42b1-84fb-dd6a8a8f88fb",
+  "slug": "langgraph-checkpoint-postgres-3-1-3-2026-10-13",
+  "title": "langgraph-checkpoint-postgres==3.1.3",
+  "factSummary": "LangGraph 发布三个 checkpoint 相关包的新版本：langgraph-checkpoint-postgres==3.1.3、langgraph-checkpoint==4.3.0、langgraph-checkpoint-sqlite==3.1.2。变更日志显示多项修复，包括将空 checkpoint_id 视为 delta 历史中的最新检查点、在 store dispatch 前校验 namespace 标签、按 task path 排序 delta channel 重放、将 Store put 值类型放宽为 Mapping[str, Any]，以及若干依赖升级。",
+  "summary": "LangGraph 在 2026-10-12 同日发布 checkpoint、checkpoint-postgres 与 checkpoint-sqlite 三个包的新版本，集中修复 delta 历史游标、namespace 标签校验、delta channel 重放顺序与 Store 类型定义等问题，并同步升级依赖。",
+  "technicalInsight": "从变更条目看，本次更新集中在 checkpoint 的 delta 历史遍历与重放一致性：空 checkpoint_id 被统一解释为最新检查点，delta walk 从目标处开始，重放按 task path 排序，namespace 标签在 store dispatch 前校验。这些属于状态持久化与恢复语义的修正，而非新增能力；是否真正解决跨后端一致性问题，需看后续是否补充对应测试或文档。",
+  "industryInsight": "checkpoint 是 Agent 长任务执行与恢复的关键基础设施，LangGraph 同时维护内存、Postgres、SQLite 三种后端并统一修复同类问题，反映开源 Agent 框架正把持久化一致性作为工程重点。判断依据仅为本次发布内容，尚不足以说明竞争格局变化。",
+  "futureOutlook": "可验证的下一信号：后续版本是否将 delta 一致性测试纳入 CI（如对 InMemorySaver 运行 conformance suite 的条目所示），以及是否出现针对 checkpoint 恢复语义的文档或迁移说明。",
+  "businessValue": "对使用 LangGraph 构建长任务 Agent 的开发者，本次修复可能降低检查点恢复与 delta 重放中的状态不一致风险；但证据未提供性能或可靠性量化数据，实际收益需通过升级后的回归测试验证。",
+  "category": "agent-checkpointing",
+  "company": "LangGraph",
+  "keywords": [
+    "LangGraph",
+    "checkpoint",
+    "delta history",
+    "Postgres",
+    "SQLite",
+    "Agent 状态持久化"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 61,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T23:05:31.000Z",
+  "publishedAt": "2026-10-13T07:14:04.833Z",
+  "createdAt": "2026-10-13T07:13:09.500Z",
+  "updatedAt": "2026-10-13T07:14:04.833Z"
 },
 {
   "id": "3081fba5-014b-4d70-a980-6fe26c786af4",
@@ -31397,6 +31619,46 @@
   "publishedAt": null,
   "createdAt": "2026-10-06T18:31:03.382Z",
   "updatedAt": "2026-10-06T18:31:03.427Z"
+},
+{
+  "id": "cf342bbd-c4db-46f3-8b08-974eee3a8276",
+  "slug": "langgraph-sdk-0-4-7-2026-10-13",
+  "title": "langgraph-sdk==0.4.7",
+  "factSummary": "Changes since sdk==0.4.6 release(sdk-py): 0.4.7 ( #9289 ) release(langgraph): 1.2.15 ( #9283 ) fix(sdk-py): end a thread stream's run only on a root lifecycle event ( #9228 ) fix: order delta channel replay by task path ( #8544 ) release(langgraph): 1.2.14 ( #9215 )",
+  "summary": "Changes since sdk==0.4.6 release(sdk-py): 0.4.7 ( #9289 ) release(langgraph): 1.2.15 ( #9283 ) fix(sdk-py): end a thread stream's run only on a root lifecycle event ( #9228 ) fix: order delta channel replay by task path ( #8544 ) release(langgraph): 1.2.14 ( #9215 )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "langgraph",
+    "sdk"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T22:54:19.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-13T07:13:09.647Z",
+  "updatedAt": "2026-10-13T07:13:09.702Z"
 },
 {
   "id": "de964763-bdfc-4eb1-823c-31bf2b10c8b9",
@@ -32035,6 +32297,52 @@
   "publishedAt": null,
   "createdAt": "2026-09-18T05:20:07.909Z",
   "updatedAt": "2026-09-18T05:20:07.947Z"
+},
+{
+  "id": "76d69d01-e767-4051-a17b-eca5123358da",
+  "slug": "large-language-models-for-machine-translation-quality-annotation-humans-and-models-are-bot-2026-10-13",
+  "title": "Large Language Models for Machine Translation Quality Annotation: Humans and Models Are Both Challenged",
+  "factSummary": "Large Language Models (LLMs) are considered to be a more efficient and cost-effective alternative to human judgment for Machine Translation (MT) evaluation. With MT evaluation spanning a large number of language pairs, domains and levels of annotation granularity, LLMs must be thoroughly evaluated across these dimensions before being reliably used as alternatives to human evaluation. In this paper, we evaluate the performance of LLMs for two prominent MT quality evaluation schemes: Multidimensional Quality Metrics (MQM) and Error Span Annotation (ESA) by comparing their agreement with human...",
+  "summary": "Large Language Models (LLMs) are considered to be a more efficient and cost-effective alternative to human judgment for Machine Translation (MT) evaluation. With MT evaluation spanning a large number of language pairs, domains and levels of annotation granularity, LLMs must be thoroughly evaluated across these dimensions before being reliably used as alternatives to human evaluation. In this paper, we evaluate the performance of LLMs for two prominent MT quality evaluation schemes: Multidimensional Quality Metrics (MQM) and Error Span Annotation (ESA) by comparing their agreement with human...",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "large",
+    "language",
+    "models",
+    "machine",
+    "translation",
+    "quality",
+    "annotation",
+    "humans"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 72,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T00:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-13T07:13:08.904Z",
+  "updatedAt": "2026-10-13T07:13:08.966Z"
 },
 {
   "id": "f9adf1a9-6000-4e65-83a5-86ff0d3301b7",
@@ -36207,8 +36515,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T10:00:00.000Z",
   "publishedAt": "2026-07-08T10:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "73e6758d-5ac4-4c36-8cfb-45d471c2d747",
@@ -36566,8 +36874,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-18T00:00:00.000Z",
   "publishedAt": "2023-07-18T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "d1c48811-386a-411e-a37b-32df885227d5",
@@ -36608,8 +36916,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-23T00:00:00.000Z",
   "publishedAt": "2024-07-23T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "97de3ebd-b095-4916-a8c2-c27e94ebe521",
@@ -36650,8 +36958,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-05T00:00:00.000Z",
   "publishedAt": "2025-04-05T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7c2b69d6-6d26-45ac-abb6-7c21944327fb",
@@ -36693,8 +37001,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-27T12:00:00.000Z",
   "publishedAt": "2023-02-27T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "63cd8faa-4bab-445b-a60a-c28ff9795be6",
@@ -36736,8 +37044,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "d519b78b-4492-487c-aa1e-9a52284cc7f7",
@@ -36779,8 +37087,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-10T12:00:00.000Z",
   "publishedAt": "2024-07-10T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "8576327f-66a5-4e5b-a18f-64ca34709617",
@@ -36822,8 +37130,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "156ceb72-a16e-423b-b10c-7d3438ae2fff",
@@ -36957,8 +37265,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-15T12:00:00.000Z",
   "publishedAt": "2024-11-15T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "82bf9352-8935-4704-a7aa-43c4ae426ec1",
@@ -37228,8 +37536,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-06T12:00:00.000Z",
   "publishedAt": "2024-09-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b5c7f0fc-0bbe-4525-b442-dda349c24952",
@@ -37316,8 +37624,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T12:00:00.000Z",
   "publishedAt": "2025-03-31T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "c3fa285b-7421-4ce6-9c31-ba4734d3f403",
@@ -37494,8 +37802,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "119bd57b-fe50-4b40-8550-62554af94800",
@@ -38033,8 +38341,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-14T12:00:00.000Z",
   "publishedAt": "2024-03-14T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "8749c671-67c4-47e3-af56-efef74dd62f0",
@@ -38394,8 +38702,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-02T12:00:00.000Z",
   "publishedAt": "2024-04-02T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "d19feab3-0bce-498a-8674-fdbeb9e3dc4d",
@@ -41407,8 +41715,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-27T12:00:00.000Z",
   "publishedAt": "2025-06-27T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "c013c1b5-84ab-474e-851d-29492ef19b0b",
@@ -41672,8 +41980,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-01T12:00:00.000Z",
   "publishedAt": "2023-12-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "f831f6d4-d69e-4477-af38-eb13981a41b6",
@@ -41715,8 +42023,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-07T12:00:00.000Z",
   "publishedAt": "2024-02-07T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e892ea18-5032-413e-8c87-65e2539058db",
@@ -43123,8 +43431,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-06T12:00:00.000Z",
   "publishedAt": "2025-03-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9bf9dbbf-7caf-4381-bf3a-b7080371803a",
@@ -43297,8 +43605,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-14T12:00:00.000Z",
   "publishedAt": "2024-08-14T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "3d81347a-8126-4661-a154-f676e4a0ecfb",
@@ -43340,8 +43648,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-08T12:00:00.000Z",
   "publishedAt": "2024-05-08T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e84193c3-ba8d-4d13-99d3-cbcea9a7869d",
@@ -44342,8 +44650,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-26T12:00:00.000Z",
   "publishedAt": "2024-12-26T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "99708c8f-b6ab-4ad0-a299-770ddc1a4df0",
@@ -44385,8 +44693,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-26T12:00:00.000Z",
   "publishedAt": "2025-05-26T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "88fcfba9-21c7-4cb0-8b69-a826c1f06484",
@@ -44612,8 +44920,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-04T12:00:00.000Z",
   "publishedAt": "2025-04-04T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "efb8a190-6be2-41ed-ac6a-3e47423f3bd0",
@@ -44655,8 +44963,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "60b321e2-a5ef-48ce-90b8-143a7db03c92",
@@ -44744,8 +45052,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-28T12:00:00.000Z",
   "publishedAt": "2025-04-28T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4d94e991-fd08-4ae7-8c61-81f7ca8c4552",
@@ -45286,8 +45594,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-09T03:26:10.000Z",
   "publishedAt": "2026-01-09T03:26:10.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "cac6b05d-0b45-4260-8b40-f910b7e9f3d7",
@@ -45374,8 +45682,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-18T09:49:14.000Z",
   "publishedAt": "2026-02-18T09:49:14.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "b75b6b51-66fb-4ee3-b98e-51e262f74045",
@@ -45688,8 +45996,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-30T05:33:50.000Z",
   "publishedAt": "2026-03-30T05:33:50.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "528e3c24-d5bd-42f4-8ab2-aed860ebed65",
@@ -46232,8 +46540,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-16T00:00:00.000Z",
   "publishedAt": "2023-03-16T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "1b06628f-218d-4a7a-a23e-82e7497bb0aa",
@@ -46275,8 +46583,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T00:00:00.000Z",
   "publishedAt": "2026-01-20T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9a090b14-9bda-4a27-aa85-55dbf759eebf",
@@ -46318,8 +46626,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T00:00:00.000Z",
   "publishedAt": "2024-04-15T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "22b0b5ed-cdec-414b-86a8-b0b20a51377e",
@@ -46407,8 +46715,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-23T00:00:00.000Z",
   "publishedAt": "2023-01-23T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "31ed947f-94ba-46fc-8435-28639e085b22",
@@ -47680,8 +47988,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-09T12:00:00.000Z",
   "publishedAt": "2024-04-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "806f16f2-f1f3-4326-ac31-e16618de3252",
@@ -47724,8 +48032,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-19T00:00:00.000Z",
   "publishedAt": "2026-05-19T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "bc1a0adb-6dc1-420a-bc91-a1a8db2788df",
@@ -47812,8 +48120,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-16T00:00:00.000Z",
   "publishedAt": "2025-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "15ce9c20-2703-4e1a-af63-1da28ccfe398",
@@ -47855,8 +48163,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4591124e-5f6f-4233-a37f-15a4b69f89c1",
@@ -48674,8 +48982,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-10T12:00:00.000Z",
   "publishedAt": "2023-10-10T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "d77aac24-e9e1-46a2-acb8-2b7f10d85f67",
@@ -48715,8 +49023,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-27T00:00:00.000Z",
   "publishedAt": "2023-09-27T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2b989f44-ca47-400b-ac7c-731642ddf156",
@@ -48758,8 +49066,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-23T00:00:00.000Z",
   "publishedAt": "2026-06-23T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "901cf287-0ee3-4fdd-8b8c-71d609dbf23c",
@@ -49568,8 +49876,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-03T12:00:00.000Z",
   "publishedAt": "2024-06-03T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "a0dc6ff2-12ae-469e-b769-43493976a5ba",
@@ -49883,8 +50191,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-25T00:00:00.000Z",
   "publishedAt": "2024-11-25T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "fc38de93-799b-4178-b2c9-dd13f5addbce",
@@ -51247,8 +51555,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-12-18T12:00:00.000Z",
   "publishedAt": "2024-12-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "0807cb1c-d7de-4702-b86c-3c1b811ea496",
@@ -52476,8 +52784,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-14T12:00:00.000Z",
   "publishedAt": "2023-07-14T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7749140d-9ada-41a9-a5c6-f5e0c446c54c",
@@ -54683,8 +54991,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-16T12:00:00.000Z",
   "publishedAt": "2025-12-16T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4f446723-2e8e-47f3-9fea-ee74ec99c8aa",
@@ -55395,8 +55703,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-09T12:00:00.000Z",
   "publishedAt": "2025-10-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "bc172b74-36da-4f1c-a6f5-906f5ee5b31d",
@@ -55845,8 +56153,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-12-01T12:00:00.000Z",
   "publishedAt": "2025-12-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "bf720145-a1fa-4a58-b121-b40a83eb1132",
@@ -57600,8 +57908,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-04-15T12:00:00.000Z",
   "publishedAt": "2024-04-15T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "dc84823a-a0a9-42b7-9ccf-0528e9efab48",
@@ -58781,8 +59089,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-18T00:00:00.000Z",
   "publishedAt": "2025-03-18T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "768c90d0-892e-4f4f-9f3d-e8a2cc41e6c4",
@@ -61806,8 +62114,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-27T12:00:00.000Z",
   "publishedAt": "2025-01-27T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "00688150-d8d1-4f6f-b3fb-f456a950f56f",
@@ -62075,8 +62383,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-10-13T12:00:00.000Z",
   "publishedAt": "2023-10-13T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "dfc385cd-2c0d-4211-a5c1-2f8f30939ba9",
@@ -62164,8 +62472,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-31T00:00:00.000Z",
   "publishedAt": "2025-03-31T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "3286f57a-1d16-455b-a624-ba5ea35fcefd",
@@ -62207,8 +62515,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-02T00:00:00.000Z",
   "publishedAt": "2024-10-02T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "aa5bf8ec-dc26-44a0-b441-ecc74aed86d7",
@@ -62295,8 +62603,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-11T00:00:00.000Z",
   "publishedAt": "2026-06-11T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "92157ab0-4315-4e68-aec2-1f313ca6588a",
@@ -62429,8 +62737,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-16T00:00:00.000Z",
   "publishedAt": "2025-05-16T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "885ebdbc-84dd-49b9-ae62-3615970d7ba7",
@@ -62471,8 +62779,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-02T00:00:00.000Z",
   "publishedAt": "2025-02-02T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "6ccaf3c6-8b9b-48b2-a764-e446de71fc6f",
@@ -62514,8 +62822,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-16T00:00:00.000Z",
   "publishedAt": "2026-06-16T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "36284da8-5c0f-4b27-a9b2-34732a52023b",
@@ -62556,8 +62864,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-11-06T00:00:00.000Z",
   "publishedAt": "2023-11-06T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "3728240c-7ae6-482d-8c2d-964d83e8baec",
@@ -62644,8 +62952,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-13T00:00:00.000Z",
   "publishedAt": "2026-02-13T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "04ed842a-9e5d-4e12-adbe-e0a345030332",
@@ -62687,8 +62995,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-21T00:00:00.000Z",
   "publishedAt": "2025-05-21T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "1873aa04-ac99-4274-a8f5-4a0e2b4c130c",
@@ -62771,8 +63079,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-12T00:00:00.000Z",
   "publishedAt": "2024-09-12T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "034a79ea-710b-4427-a223-4d73be2d5c59",
@@ -62813,8 +63121,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-16T00:00:00.000Z",
   "publishedAt": "2025-04-16T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4a6cb77e-f99d-4853-acd4-58fe79bb1a50",
@@ -62855,8 +63163,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-01-23T00:00:00.000Z",
   "publishedAt": "2025-01-23T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "f044cdec-7524-43e4-ac8d-610dafc3b5cc",
@@ -62897,8 +63205,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-11T00:00:00.000Z",
   "publishedAt": "2025-03-11T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "22cc77ce-26f0-423f-b63d-fd8562c5c1b5",
@@ -63243,8 +63551,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-16T17:52:04.000Z",
   "publishedAt": "2026-03-16T17:52:04.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "aa831a56-f866-401a-a0c2-e2fcb6aa120d",
@@ -63375,8 +63683,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-06-13T12:00:00.000Z",
   "publishedAt": "2024-06-13T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "f3996d3f-546b-469f-82a8-62a82bb52c5f",
@@ -63869,8 +64177,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-29T12:00:00.000Z",
   "publishedAt": "2024-10-29T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "566fb569-499b-42a4-a2f5-1d94ebe943b2",
@@ -64044,8 +64352,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-05T12:00:00.000Z",
   "publishedAt": "2025-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "10dfed32-7e8d-4ac1-9008-629a11b29033",
@@ -64983,8 +65291,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T06:02:41.000Z",
   "publishedAt": "2026-07-09T06:02:41.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "bb871ade-7949-47aa-97ab-c924defd71f8",
@@ -65747,8 +66055,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-08T12:00:00.000Z",
   "publishedAt": "2025-09-08T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "04ef5b54-240c-41af-ac4a-d7c5ec03e280",
@@ -67141,8 +67449,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-11-27T12:00:00.000Z",
   "publishedAt": "2022-11-27T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9aa622fd-7db8-4b19-90d8-11a520e8550e",
@@ -68137,8 +68445,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-09T12:00:00.000Z",
   "publishedAt": "2024-05-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "1ed5ed44-1515-4c59-956e-8dea178d2f9a",
@@ -68454,8 +68762,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-08-14T00:00:00.000Z",
   "publishedAt": "2025-08-14T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "772a4315-4b17-4726-bf5e-04456d781b66",
@@ -69046,8 +69354,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-13T12:00:00.000Z",
   "publishedAt": "2024-09-13T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "3bb1f3e1-e7ba-435a-9a01-930583892e8e",
@@ -69364,8 +69672,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-10-31T12:00:00.000Z",
   "publishedAt": "2024-10-31T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e7dc157a-d75e-4f62-884a-459cda5851d9",
@@ -71406,8 +71714,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-09T09:28:06.000Z",
   "publishedAt": "2026-07-09T09:28:06.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2d122fad-233c-490a-bc88-c79b6242fc89",
@@ -75812,8 +76120,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-23T12:00:00.000Z",
   "publishedAt": "2023-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "919573b4-8b7a-4148-a8ef-b6fb67fc3681",
@@ -76812,8 +77120,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-19T00:00:00.000Z",
   "publishedAt": "2024-09-19T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "006d1189-8941-42fd-a98b-3720645cc0a7",
@@ -76854,8 +77162,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-29T00:00:00.000Z",
   "publishedAt": "2025-04-29T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "a9290214-be63-4d6b-a99a-79738097db3f",
@@ -76895,8 +77203,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-03T00:00:00.000Z",
   "publishedAt": "2023-08-03T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "c9bce613-d160-46c4-a260-58b21cde26a0",
@@ -76938,8 +77246,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-24T12:00:00.000Z",
   "publishedAt": "2023-08-24T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "79ff590c-0dcd-4e1d-adb0-42e015b72f77",
@@ -76981,8 +77289,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-18T12:00:00.000Z",
   "publishedAt": "2024-09-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "709a4dc2-1599-4d38-a9c5-aef6e5fb04fa",
@@ -77024,8 +77332,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-14T12:00:00.000Z",
   "publishedAt": "2025-05-14T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e7a5aff5-798a-45ab-a049-4c2752aa5bf2",
@@ -77067,8 +77375,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-26T12:00:00.000Z",
   "publishedAt": "2025-11-26T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "6b2ed600-9f86-4c04-8732-31b1fbe7982e",
@@ -78414,8 +78722,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-02T02:14:47.000Z",
   "publishedAt": "2026-04-02T02:14:47.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "f702d2dd-cce1-4f6e-9f0c-5349a263e30c",
@@ -79189,8 +79497,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-08T12:00:00.000Z",
   "publishedAt": "2025-05-08T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "27c19186-bcfd-45bc-a53e-3b13cbd24958",
@@ -80144,8 +80452,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-19T12:00:00.000Z",
   "publishedAt": "2024-11-19T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7e00b275-1041-45e1-a2e5-2288a4027650",
@@ -80508,8 +80816,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-06-01T12:00:00.000Z",
   "publishedAt": "2023-06-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4a5ddac0-37f6-43ca-951e-8fb8e2c26353",
@@ -80734,8 +81042,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-20T12:00:00.000Z",
   "publishedAt": "2023-03-20T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "45785c4f-7cd7-4616-bbfb-9fd3ce6a1208",
@@ -81369,8 +81677,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-09-03T12:00:00.000Z",
   "publishedAt": "2024-09-03T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e8daa836-3ce4-4c60-833e-6e3fd8f06555",
@@ -82345,8 +82653,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-20T13:19:20.000Z",
   "publishedAt": "2026-01-20T13:19:20.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "06eea9d6-a1b2-46e2-86af-3da87baa1ba1",
@@ -84616,8 +84924,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-18T12:00:00.000Z",
   "publishedAt": "2023-12-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "1b2c48bb-57c7-4186-bf1e-e688afc67eee",
@@ -85984,8 +86292,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-09-14T12:00:00.000Z",
   "publishedAt": "2023-09-14T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "ceb021a8-2375-4d67-a643-3499b15e4bdb",
@@ -86483,8 +86791,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-05-19T12:00:00.000Z",
   "publishedAt": "2025-05-19T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "4874a0ae-9064-4ed2-8f98-29d23fc89f05",
@@ -88077,8 +88385,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-28T12:00:00.000Z",
   "publishedAt": "2023-07-28T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "2c4b6489-7297-4036-a280-8324008ae05c",
@@ -88120,8 +88428,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-04-17T12:00:00.000Z",
   "publishedAt": "2023-04-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "ffcbff37-3611-4128-b3a7-4d6b250a9f97",
@@ -90316,8 +90624,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-20T12:00:00.000Z",
   "publishedAt": "2025-11-20T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "34034d81-561b-48a1-af53-d91969e812f6",
@@ -90405,8 +90713,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "688fe7aa-3656-4b98-a097-7bf6998abe7e",
@@ -90862,8 +91170,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-11-18T12:00:00.000Z",
   "publishedAt": "2024-11-18T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "e4e22277-2fdc-4070-98c8-a80c85cde6d8",
@@ -91358,8 +91666,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-24T16:33:14.000Z",
   "publishedAt": "2026-05-24T16:33:14.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "336af561-1a95-49db-ba76-26eb5365a47f",
@@ -91627,8 +91935,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-31T12:00:00.000Z",
   "publishedAt": "2024-07-31T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9454f819-c412-4db4-b037-b919e6b9eee3",
@@ -91762,8 +92070,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-03-05T12:00:00.000Z",
   "publishedAt": "2024-03-05T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "6ec90abb-2adf-4964-8745-c6a19dcc76f3",
@@ -92396,8 +92704,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-10T22:55:30.000Z",
   "publishedAt": "2026-06-10T22:55:30.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "bb48b041-f500-4ebe-8013-4ed9a16ee119",
@@ -94336,8 +94644,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-04T12:00:00.000Z",
   "publishedAt": "2023-07-04T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "39474222-914b-4556-af8f-1aaf6d7301e7",
@@ -94561,8 +94869,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-26T06:46:41.000Z",
   "publishedAt": "2026-02-26T06:46:41.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
@@ -95106,8 +95414,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-14T00:00:00.000Z",
   "publishedAt": "2026-02-14T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
@@ -96055,8 +96363,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -97052,8 +97360,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -97503,8 +97811,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -97684,8 +97992,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "7898c9ab-d97b-4afe-84fd-2f2fa4663129",
@@ -98725,8 +99033,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -99132,8 +99440,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -99672,8 +99980,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -99760,8 +100068,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -99984,8 +100292,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -100755,8 +101063,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -101117,8 +101425,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -102299,8 +102607,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 },
 {
   "id": "a276f665-95b3-47db-9245-4ccd5087723a",
@@ -102434,234 +102742,7 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
-},
-{
-  "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
-  "slug": "sparks-protein-design",
-  "title": "Sparks: Multi-Agent Artificial Intelligence Model Discovers Protein Design Principles：多模态多智能体系统自主发现蛋白质设计新原理",
-  "factSummary": "2025年4月，MIT团队提出Sparks，一个多模态多智能体AI系统，能够自主完成从假设生成、实验设计到迭代优化的完整科学发现循环，无需人类干预。在蛋白质科学应用中，Sparks发现了两个此前未知的现象：1）β-折叠偏向的肽段在超过约80个残基时，其展开力超过α-螺旋肽段，建立了肽段力学的新设计原理；2）链长/二级结构稳定性图谱揭示了β-折叠富集架构的意外鲁棒性，以及混合α/β折叠中的高方差“挫败区”。这些发现完全由自驱动推理循环产生，结合了生成式序列设计、高精度结构预测和物理感知属性模型。",
-  "summary": "Sparks代表了AI从“知识检索”到“知识发现”的质变。与大多数AI系统仅复现训练数据中的知识不同，Sparks通过多智能体协作和迭代推理，自主发现了蛋白质科学中尚未被人类记录的新原理。这证明了AI在基础科学发现中的独立价值，尤其适用于复杂生物系统的规律挖掘。系统采用配对生成-反思智能体实现自我纠错和可重复性，为自动化科学发现提供了新范式。",
-  "technicalInsight": "Sparks采用多模态多智能体架构，包含生成智能体（generative agent）和反思智能体（reflection agent）的配对循环。生成智能体负责提出假设并设计实验（如序列设计），反思智能体则评估结果并驱动迭代优化。系统集成了高精度结构预测模型（如AlphaFold类模型）和物理感知属性模型（如分子动力学模拟）。关键创新在于完全自主的推理循环，无需人类提供初始假设或中间反馈。发现的两个新原理均通过计算实验验证，并形成可泛化的设计原则。",
-  "industryInsight": "该成果对生物技术和制药行业具有变革性影响。Sparks能够自主发现蛋白质设计原理，可加速抗体设计、酶工程和材料科学中的蛋白质优化。对于CRO/CDMO企业，该技术可提供从序列设计到功能预测的自动化管线。对于AI制药公司，Sparks的多智能体框架可扩展至小分子药物设计，降低研发成本。",
-  "futureOutlook": "需关注Sparks发现的原理是否能在湿实验中得到验证，以及系统能否推广到其他生物分子（如RNA、糖类）。关键信号包括：与实验团队的合作验证、系统在工业级蛋白质设计任务中的表现、以及开源代码的社区贡献。此外，系统的计算资源需求和推理时间也是实际部署的瓶颈。",
-  "businessValue": "建议生物技术公司立即与MIT团队合作，将Sparks集成到蛋白质设计工作流中。可投资开发基于Sparks的蛋白质工程SaaS平台，面向药企提供抗体优化、酶设计等服务。同时，关注Sparks在合成生物学和材料科学中的潜在应用，提前布局知识产权。",
-  "category": "research",
-  "company": "MIT",
-  "keywords": [
-    "蛋白质设计",
-    "多智能体系统",
-    "科学发现",
-    "自主推理",
-    "生物技术"
-  ],
-  "confidenceScore": 92,
-  "heatScore": 0,
-  "impactScore": 93,
-  "valueScore": 90,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 80,
-    "primaryEvidence": 100,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 1,
-    "velocity": 0,
-    "freshness": 70,
-    "crossRegion": false
-  },
-  "status": "published",
-  "featured": 0,
-  "manualOverride": 1,
-  "happenedAt": "2025-04-26T12:00:00.000Z",
-  "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-10-12T21:18:42.879Z",
-  "updatedAt": "2026-10-12T21:18:42.879Z"
-},
-{
-  "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
-  "slug": "sparse-autoencoders-encode-both-concepts-and-functions-the-downstream-geometry-of-feature--2026-07-28",
-  "title": "Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects",
-  "factSummary": "The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead study the geometry of changes in model logits caused by feature interventions. We introduce Feature-Effect Geometry Analysis (FEGA), an unsupervised framework that removes the same active SAE feature across contexts and analyzes the resulting cloud of logit changes. Across SAE variants, consistent one-dimensional effects are rare: few features behave like reusable directions. To interpret this variation, we distinguish value-like features, tied to static information such as factual attributes, from pointer-like features, associated with context-dependent operations. Value-like features more often exhibit structured, low-dimensional effects, although these effects typically span several directions. Pointer-like features, by contrast, predominantly exhibit diffuse effects. Our results show that a feature can be interpretable and causally relevant without providing a stable direction for steering.",
-  "summary": "The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead study the geometry of changes in model logits caused by feature interventions. We introduce Feature-Effect Geometry Analysis (FEGA), an unsupervised framework that removes the same active SAE feature across contexts and analyzes the resulting cloud of logit changes. Across SAE variants, consistent one-dimensional effects are rare: few features behave like reusable directions. To interpret this variation, we distinguish value-like features, tied to static information such as factual attributes, from pointer-like features, associated with context-dependent operations. Value-like features more often exhibit structured, low-dimensional effects, although these effects typically span several directions. Pointer-like features, by contrast, predominantly exhibit diffuse effects. Our results show that a feature can be interpretable and causally relevant without providing a stable direction for steering.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "sparse",
-    "autoencoders",
-    "encode",
-    "both",
-    "concepts",
-    "functions",
-    "downstream",
-    "geometry"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 58,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 89,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-27T16:45:08.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-28T03:56:55.014Z",
-  "updatedAt": "2026-07-28T03:56:55.050Z"
-},
-{
-  "id": "d6450d64-163f-4aa0-9b9e-d7a744be53c4",
-  "slug": "sparse-evidence-can-suffice-agentic-evidence-seeking-for-multimodal-video-misinformation-d-2026-07-21",
-  "title": "Sparse Evidence Can Suffice: Agentic Evidence Seeking for Multimodal Video Misinformation Detection",
-  "factSummary": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection.",
-  "summary": "Multimodal video misinformation detection is commonly formulated as a holistic video-understanding task, where the entire video and its associated content are processed and judged in a single pass. However, real-world misinformation often exhibits a sparse and compositional evidence structure: a reliable decision may depend on only a few coupled clues, while most video content contributes limited additional information. Exhaustive multimodal reasoning may therefore introduce substantial redundancy and obscure decisive evidence. This motivates decoupling evidence acquisition from verification: first identifying sparse, decision-relevant clues and then judging veracity based on the acquired evidence. Accordingly, we propose SIEVE, a framework for Sparse Interactive Evidence Verification via Extraction in multimodal video misinformation detection. An evidence-seeking agent actively explores the available multimodal evidence and constructs a compact evidence package, which is then used by a verifier to determine veracity. The agent is trained with supervised evidence-seeking trajectories and an evidence-aware reinforcement learning objective that promotes informative evidence acquisition while discouraging unnecessary or invalid interactions. Experiments on multiple video misinformation benchmarks show that SIEVE consistently outperforms the evaluated baselines and supports reliable verification using compact evidence packages. Moreover, the resulting acquisition process provides an explicit and inspectable evidence trail, improving the transparency and groundedness of multimodal misinformation detection.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "sparse",
-    "evidence",
-    "can",
-    "suffice",
-    "agentic",
-    "seeking",
-    "multimodal",
-    "video"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 21,
-  "impactScore": 55,
-  "valueScore": 56,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 79,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-07-20T15:48:31.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-07-21T14:31:11.220Z",
-  "updatedAt": "2026-07-21T14:31:11.250Z"
-},
-{
-  "id": "8944d389-8f65-443c-9f63-5316a2011055",
-  "slug": "sparsedecoding-decoding-aware-pruning-for-accurate-and-efficient-llm-inference-2026-10-09",
-  "title": "SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference",
-  "factSummary": "The memory-bound nature of the decoding stage of large language model (LLM) inference incurs significant latency. Layer-wise training-free network pruning approaches guided by the Hessian have been a prominent solution to this problem, as pruning reduces the number of nonzero parameters read from memory during decoding. Nevertheless, typical methods in this line compute the Hessian using pre-collected natural sequences, whereas the model is fed self-generated tokens during decoding, creating a distribution shift between the two sequences. The Hessian calculated on the natural sequence is different from that calculated on the generated sequence. We observe that this discrepancy causes the activation distribution during generation to deviate from that used for pruning, further hurting the pruned model performance. Moreover, most existing LLM pruning methods that bring actual speedup primarily target the sparse matrix-matrix (SpMM) multiplication, providing limited support for the sparse matrix-vector (SpMV) operations, which dominate decoding. To solve these problems, we introduce SparseDecoding, a principled decoding-aware pruning framework tailored for accurate and efficient LLM decoding. Specifically, at the algorithmic axis, SparseDecoding constructs calibration matrices from layer-wise activations collected during the dense-model autoregressive generation, excluding prefill, thereby aligning the pruning objective with the decoding activations. At the system axis, we develop an optimized N:M sparse matrix-vector kernel with bitmask indexing and fixed-step traversal. Substantial empirical results on representative LLMs (Llama-3.1-8B, Llama-3.3-70B, Qwen3-14B / 32B) demonstrate that our method consistently outperforms standard fixed-text calibration on the long-form generation benchmarks while achieving up to 1.48x end-to-end wall-clock decoding speedup on A100 GPUs.",
-  "summary": "The memory-bound nature of the decoding stage of large language model (LLM) inference incurs significant latency. Layer-wise training-free network pruning approaches guided by the Hessian have been a prominent solution to this problem, as pruning reduces the number of nonzero parameters read from memory during decoding. Nevertheless, typical methods in this line compute the Hessian using pre-collected natural sequences, whereas the model is fed self-generated tokens during decoding, creating a distribution shift between the two sequences. The Hessian calculated on the natural sequence is different from that calculated on the generated sequence. We observe that this discrepancy causes the activation distribution during generation to deviate from that used for pruning, further hurting the pruned model performance. Moreover, most existing LLM pruning methods that bring actual speedup primarily target the sparse matrix-matrix (SpMM) multiplication, providing limited support for the sparse matrix-vector (SpMV) operations, which dominate decoding. To solve these problems, we introduce SparseDecoding, a principled decoding-aware pruning framework tailored for accurate and efficient LLM decoding. Specifically, at the algorithmic axis, SparseDecoding constructs calibration matrices from layer-wise activations collected during the dense-model autoregressive generation, excluding prefill, thereby aligning the pruning objective with the decoding activations. At the system axis, we develop an optimized N:M sparse matrix-vector kernel with bitmask indexing and fixed-step traversal. Substantial empirical results on representative LLMs (Llama-3.1-8B, Llama-3.3-70B, Qwen3-14B / 32B) demonstrate that our method consistently outperforms standard fixed-text calibration on the long-form generation benchmarks while achieving up to 1.48x end-to-end wall-clock decoding speedup on A100 GPUs.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "sparsedecoding",
-    "decoding",
-    "aware",
-    "pruning",
-    "accurate",
-    "efficient",
-    "llm",
-    "inference"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 87,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-10-08T17:06:32.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-10-09T06:51:58.825Z",
-  "updatedAt": "2026-10-09T06:51:58.889Z"
-},
-{
-  "id": "107c5983-e7ff-4011-8819-df83d6d9f6d9",
-  "slug": "sparsenav-instruction-conditioned-sparse-semantic-perception-for-training-free-vision-lang-2026-09-23",
-  "title": "SparseNav: Instruction-conditioned Sparse Semantic Perception for Training-Free Vision-Language Navigation",
-  "factSummary": "Map-based vision-language navigation (VLN) relies on persistent spatial representations to connect language understanding with geometric planning. However, acquiring semantics beyond the needs of the current instruction can introduce unnecessary perception cost and irrelevant annotations. Continuously accumulating unrelated objects may not only waste computation, but also clutter the visual-spatial representation consumed by the vision-language model (VLM) planner. To address this problem, we present SparseNav, a training-free framework that follows a less-is-more principle for semantic navigation. SparseNav persistently maintains a lightweight geometric bird's-eye-view (BEV) map and sparse landmark memory, acquiring new semantics on demand using the active sub-instruction to decide what is worth grounding. An instruction manager first tracks navigation progress and identifies the active landmark query. An instruction-conditioned perception mechanism then invokes open-vocabulary segmentation when the queried landmark is visible and its metric location can inform the next decision. The resulting landmark memory supports VLM selection among hybrid frontier and local directional waypoint candidates. Without any additional training, SparseNav achieves success rates of 42.8% on R2R-CE and 40.7% on RxR-CE, both on the Val-Unseen splits. Controlled ablations examine semantic perception strategies and the contributions of individual framework components. Furthermore, we successfully deployed SparseNav on a Unitree Go2 quadruped equipped with an Intel RealSense D455 RGB-D camera for geometric mapping and landmark grounding and a Livox MID-360 LiDAR for localization, without a prebuilt map. We validated its effectiveness across multiple indoor environments using instruction-conditioned waypoint navigation.",
-  "summary": "Map-based vision-language navigation (VLN) relies on persistent spatial representations to connect language understanding with geometric planning. However, acquiring semantics beyond the needs of the current instruction can introduce unnecessary perception cost and irrelevant annotations. Continuously accumulating unrelated objects may not only waste computation, but also clutter the visual-spatial representation consumed by the vision-language model (VLM) planner. To address this problem, we present SparseNav, a training-free framework that follows a less-is-more principle for semantic navigation. SparseNav persistently maintains a lightweight geometric bird's-eye-view (BEV) map and sparse landmark memory, acquiring new semantics on demand using the active sub-instruction to decide what is worth grounding. An instruction manager first tracks navigation progress and identifies the active landmark query. An instruction-conditioned perception mechanism then invokes open-vocabulary segmentation when the queried landmark is visible and its metric location can inform the next decision. The resulting landmark memory supports VLM selection among hybrid frontier and local directional waypoint candidates. Without any additional training, SparseNav achieves success rates of 42.8% on R2R-CE and 40.7% on RxR-CE, both on the Val-Unseen splits. Controlled ablations examine semantic perception strategies and the contributions of individual framework components. Furthermore, we successfully deployed SparseNav on a Unitree Go2 quadruped equipped with an Intel RealSense D455 RGB-D camera for geometric mapping and landmark grounding and a Livox MID-360 LiDAR for localization, without a prebuilt map. We validated its effectiveness across multiple indoor environments using instruction-conditioned waypoint navigation.",
-  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
-  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
-  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
-  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
-  "category": "industry",
-  "company": "industry",
-  "keywords": [
-    "sparsenav",
-    "instruction",
-    "conditioned",
-    "sparse",
-    "semantic",
-    "perception",
-    "training",
-    "free"
-  ],
-  "confidenceScore": 74,
-  "heatScore": 22,
-  "impactScore": 55,
-  "valueScore": 57,
-  "scoreFactors": {
-    "authority": 92,
-    "corroboration": 20,
-    "primaryEvidence": 50,
-    "uniqueAuthors": 0,
-    "independentSources": 1,
-    "platformBreadth": 1,
-    "regionBreadth": 0,
-    "velocity": 0,
-    "freshness": 85,
-    "crossRegion": false
-  },
-  "status": "review",
-  "featured": 0,
-  "manualOverride": 0,
-  "happenedAt": "2026-09-22T13:41:49.000Z",
-  "publishedAt": null,
-  "createdAt": "2026-09-23T05:18:46.817Z",
-  "updatedAt": "2026-09-23T05:18:46.862Z"
+  "createdAt": "2026-10-13T07:08:37.044Z",
+  "updatedAt": "2026-10-13T07:08:37.044Z"
 }
 ]
