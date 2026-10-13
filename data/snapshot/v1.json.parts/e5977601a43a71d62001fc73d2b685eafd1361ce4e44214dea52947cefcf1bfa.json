@@ -1,5 +1,913 @@
 [
 {
+  "id": "88f677b8-a086-40a0-8fec-3ccdb1d57326",
+  "slug": "sol-pi-recursively-scaling-auto-research-loops-for-efficient-agent-harness-2026-09-18",
+  "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+  "factSummary": "As coding agents move from supervised code completion to unattended, around-the-clock exploration, their work expands from isolated predictions into long trajectories of reasoning, tool use, and feedback. Token efficiency therefore becomes important for scaling recursive self-improvement. We take an RSI-inspired approach at the harness layer, scaling auto-research loops across increasingly numerous and diverse environments for harness rollouts. At this scale, the process yields reusable improvements that transfer beyond their development setting, moving automated harness discovery toward production-level outcomes. Four mechanisms survive selection and form SoL-Pi, spanning action execution, context compaction, observation handling, and delegated reading. On the 51-task EdgeBench evaluation, SoL-Pi achieves performance comparable to Pi across GPT-5.6 Sol and Opus 5 while reducing recorded token traffic by 44.7-49.0% and API cost by about one third. In other words, estimated hourly savings are \\$8.75-\\$13.50 relative to native Codex and Claude Code harnesses, and \\$4.36-\\$5.71 relative to Pi.",
+  "summary": "As coding agents move from supervised code completion to unattended, around-the-clock exploration, their work expands from isolated predictions into long trajectories of reasoning, tool use, and feedback. Token efficiency therefore becomes important for scaling recursive self-improvement. We take an RSI-inspired approach at the harness layer, scaling auto-research loops across increasingly numerous and diverse environments for harness rollouts. At this scale, the process yields reusable improvements that transfer beyond their development setting, moving automated harness discovery toward production-level outcomes. Four mechanisms survive selection and form SoL-Pi, spanning action execution, context compaction, observation handling, and delegated reading. On the 51-task EdgeBench evaluation, SoL-Pi achieves performance comparable to Pi across GPT-5.6 Sol and Opus 5 while reducing recorded token traffic by 44.7-49.0% and API cost by about one third. In other words, estimated hourly savings are \\$8.75-\\$13.50 relative to native Codex and Claude Code harnesses, and \\$4.36-\\$5.71 relative to Pi.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sol",
+    "pi",
+    "recursively",
+    "scaling",
+    "auto",
+    "research",
+    "loops",
+    "efficient"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T14:58:29.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-18T05:20:09.700Z",
+  "updatedAt": "2026-09-18T05:20:09.738Z"
+},
+{
+  "id": "e6d6e1f6-1895-4eab-8765-12f7d2d43e0b",
+  "slug": "solarchain-eval-a-physics-constrained-benchmark-for-trustworthy-economic-agents-in-decentr-2026-07-13",
+  "title": "SolarChain-Eval: A Physics-Constrained Benchmark for Trustworthy Economic Agents in Decentralized Energy Markets",
+  "factSummary": "As agentic AI systems are increasingly applied to cyber-physical environments, their evaluation requires assessment of both task performance and trustworthiness. In decentralized energy markets, autonomous agents may improve market utility, but may also exploit invalid physical data, create artificial liquidity, and produce unstable governance decisions. Therefore, we propose SolarChain-Eval, a physics-constrained benchmark for evaluating trustworthy economic agents. It formulates market governance as a Gymnasium-compatible Markov Decision Process, where agents make hourly decisions. SolarChain-Eval evaluates each policy across multiple dimensions, including market utility, physical safety, slippage, action smoothness, spatial fairness, and auditability. To support agentic evaluation, SolarChain-Eval incorporates an LLM-based Planner/Auditor layer. The Planner defines episode-level action bounds and audit rules, while the Auditor reviews and revises high-risk actions. All interventions are recorded through structured logs, including trigger signals, proposed actions, revised actions, and audit rationales. Experiments with static, random, myopic, RL, and RL+LLM policies reveal a clear utility-safety trade-off. RL agents improve market utility but can still produce unsafe behavior. When the physics penalty is removed, reward-maximizing agents exploit invalid generation and increase artificial liquidity. The LLM Planner/Auditor improves auditability and mitigates selected risks, but it cannot fully compensate for a misspecified reward function. These results indicate that trustworthy agentic AI evaluation requires both physical constraints and transparent intervention traces. We release data and code as open access on GitHub for replicability.",
+  "summary": "As agentic AI systems are increasingly applied to cyber-physical environments, their evaluation requires assessment of both task performance and trustworthiness. In decentralized energy markets, autonomous agents may improve market utility, but may also exploit invalid physical data, create artificial liquidity, and produce unstable governance decisions. Therefore, we propose SolarChain-Eval, a physics-constrained benchmark for evaluating trustworthy economic agents. It formulates market governance as a Gymnasium-compatible Markov Decision Process, where agents make hourly decisions. SolarChain-Eval evaluates each policy across multiple dimensions, including market utility, physical safety, slippage, action smoothness, spatial fairness, and auditability. To support agentic evaluation, SolarChain-Eval incorporates an LLM-based Planner/Auditor layer. The Planner defines episode-level action bounds and audit rules, while the Auditor reviews and revises high-risk actions. All interventions are recorded through structured logs, including trigger signals, proposed actions, revised actions, and audit rationales. Experiments with static, random, myopic, RL, and RL+LLM policies reveal a clear utility-safety trade-off. RL agents improve market utility but can still produce unsafe behavior. When the physics penalty is removed, reward-maximizing agents exploit invalid generation and increase artificial liquidity. The LLM Planner/Auditor improves auditability and mitigates selected risks, but it cannot fully compensate for a misspecified reward function. These results indicate that trustworthy agentic AI evaluation requires both physical constraints and transparent intervention traces. We release data and code as open access on GitHub for replicability.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "solarchain",
+    "eval",
+    "physics",
+    "constrained",
+    "benchmark",
+    "trustworthy",
+    "economic",
+    "agents"
+  ],
+  "confidenceScore": 84,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 53,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 44,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-09T16:43:42.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-13T00:17:50.836Z",
+  "updatedAt": "2026-07-13T00:17:50.836Z"
+},
+{
+  "id": "187f9a92-018b-4986-8a77-8293ee037100",
+  "slug": "solid26-a-first-principles-solid-liquid-interface-dataset-for-machine-learned-interatomic--2026-09-24",
+  "title": "SoLiD26: A First Principles Solid-Liquid Interface Dataset for Machine-learned Interatomic Potentials",
+  "factSummary": "Machine-learned interatomic potentials (MLIPs) for solid-liquid interfaces in advanced materials applications, e.g., electrochemistry, catalysis and corrosion, require training data that samples both liquid environments, the solid and the interface itself. We present SoLiD26, a curated solid-liquid interface dataset, containing 15.4 million first-principles atomic structures with up to 576 atoms and 15 chemical elements for training and evaluating MLIPs. The structures were compiled from density functional theory (DFT) calculations performed in studies of solid-liquid interfaces, with most configurations originating from ab initio molecular dynamics (AIMD) simulations. Each record contains atomic species, positions, simulation cell, periodic boundary conditions, potential energy and atomic forces. SoLiD26 includes aqueous coinage metal interfaces, electrode-electrolyte systems, and selected bulk reference structures, calculated with VASP using the PBE functional and D3 dispersion corrections. We describe the data ingestion and preparation pipeline used to construct the dataset. The application of SoLiD26 for training and evaluating MLIPs is demonstrated with a suite of MACE models on a simple training, validation and test split. The dataset enables development and benchmarking of MLIPs for structurally and chemically heterogeneous solid-liquid interfaces.",
+  "summary": "Machine-learned interatomic potentials (MLIPs) for solid-liquid interfaces in advanced materials applications, e.g., electrochemistry, catalysis and corrosion, require training data that samples both liquid environments, the solid and the interface itself. We present SoLiD26, a curated solid-liquid interface dataset, containing 15.4 million first-principles atomic structures with up to 576 atoms and 15 chemical elements for training and evaluating MLIPs. The structures were compiled from density functional theory (DFT) calculations performed in studies of solid-liquid interfaces, with most configurations originating from ab initio molecular dynamics (AIMD) simulations. Each record contains atomic species, positions, simulation cell, periodic boundary conditions, potential energy and atomic forces. SoLiD26 includes aqueous coinage metal interfaces, electrode-electrolyte systems, and selected bulk reference structures, calculated with VASP using the PBE functional and D3 dispersion corrections. We describe the data ingestion and preparation pipeline used to construct the dataset. The application of SoLiD26 for training and evaluating MLIPs is demonstrated with a suite of MACE models on a simple training, validation and test split. The dataset enables development and benchmarking of MLIPs for structurally and chemically heterogeneous solid-liquid interfaces.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "solid26",
+    "first",
+    "principles",
+    "solid",
+    "liquid",
+    "interface",
+    "dataset",
+    "machine"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-23T12:36:34.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-24T05:33:38.640Z",
+  "updatedAt": "2026-09-24T05:33:38.687Z"
+},
+{
+  "id": "2cdb283f-a7c8-48fe-8672-e60a5ae23ca4",
+  "slug": "solution-of-the-hempel-s-statistical-ambiguity-problem-and-causal-ai-2026-07-15",
+  "title": "Solution of the Hempel's statistical ambiguity problem and Causal AI",
+  "factSummary": "This paper addresses Carl Hempel's longstanding problem of statistical ambiguity in inductive-statistical inference, in which contradictory predictions are derived from statistical laws. To avoid such predictions, Carl Hempel proposed the Requirement of Maximal Specificity (RMS) for the statistical laws used in the inference. An analysis of the RMS refinements made by Wesley Salmon, Alberto Coffa, and James Fetzer led to the following definition of maximally specific statistical laws: \"the lawlike premises of an adequate explanation must specify all and only those properties whose presence or absence made a difference to the occurrence of its explanandum-phenomenon.\" However, there was no proof of a solution to the statistical ambiguity problem based on this definition. We use Nancy Cartwright's definition of causes that raise probabilities across background contexts, and then introduce the concept of Causal Rules. Then we define a special semantic probabilistic inference procedure that incrementally refines these causal rules by incorporating all statistically relevant information. This procedure yields Maximally Specific Causal Relationships (MSCRs), for which we prove (Theorem 1) that predictions derived from them are consistent. This resolves the statistical ambiguity problem. The semantic probabilistic inference procedure provides a probabilistic causal learning system, which may be used in such new areas as Causal AI and Causal Machine Learning. They fundamentally explore causal inference as a tool for understanding cause-and-effect relationships within complex systems. Properties similar to RMS remain under discussion. Several notions related to RMS are considered: invariant feature learning, invariant causal prediction, and spurious association.",
+  "summary": "This paper addresses Carl Hempel's longstanding problem of statistical ambiguity in inductive-statistical inference, in which contradictory predictions are derived from statistical laws. To avoid such predictions, Carl Hempel proposed the Requirement of Maximal Specificity (RMS) for the statistical laws used in the inference. An analysis of the RMS refinements made by Wesley Salmon, Alberto Coffa, and James Fetzer led to the following definition of maximally specific statistical laws: \"the lawlike premises of an adequate explanation must specify all and only those properties whose presence or absence made a difference to the occurrence of its explanandum-phenomenon.\" However, there was no proof of a solution to the statistical ambiguity problem based on this definition. We use Nancy Cartwright's definition of causes that raise probabilities across background contexts, and then introduce the concept of Causal Rules. Then we define a special semantic probabilistic inference procedure that incrementally refines these causal rules by incorporating all statistically relevant information. This procedure yields Maximally Specific Causal Relationships (MSCRs), for which we prove (Theorem 1) that predictions derived from them are consistent. This resolves the statistical ambiguity problem. The semantic probabilistic inference procedure provides a probabilistic causal learning system, which may be used in such new areas as Causal AI and Causal Machine Learning. They fundamentally explore causal inference as a tool for understanding cause-and-effect relationships within complex systems. Properties similar to RMS remain under discussion. Several notions related to RMS are considered: invariant feature learning, invariant causal prediction, and spurious association.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "solution",
+    "hempel",
+    "statistical",
+    "ambiguity",
+    "problem",
+    "causal",
+    "ai"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-14T14:44:48.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-15T14:18:13.257Z",
+  "updatedAt": "2026-07-15T14:18:13.276Z"
+},
+{
+  "id": "0888f360-1fbc-4dc4-a080-5557966a2de3",
+  "slug": "sometimes-you-gotta-run-before-you-can-walk-run-then-walk-scheduling-strategy-for-vlm-auto-2026-09-23",
+  "title": "Sometimes You Gotta Run Before You Can Walk: Run-then-Walk Scheduling Strategy for VLM Autonomous Driving",
+  "factSummary": "Recent VLM-based autonomous driving planners adopt GRPO-style reinforcement learning to optimize driving performance. However, existing GRPO recipes either optimize driving efficiency, risking progress-seeking but unsafe behavior, or enforce early safety constraints, leading to overly conservative behavior; both require lengthy training. To solve these problems, we first reveal two distinct RL regimes: a progress regime (Run-GRPO) that aggressively explores high progress, and a safety regime (Walk-GRPO) that restores safety under stable progress. Based on this finding, we propose $\\textit{Run-then-Walk}$, a simple yet effective two-stage reward scheduling strategy for GRPO, achieving both better performance and faster convergence. Unlike one-stage RL, which may focus on progress, safety, or a mixture of both within a single training phase, this schedule explicitly separates progress discovery from safety repair. In the $\\textit{Run}$ phase, we focus on progress, allowing the policy to escape the conservative bias and discover high-progress modes. In the subsequent $\\textit{Walk}$ phase, we introduce endpoint and safety strategy to repair unsafe behaviors from the Run phase. This reversed schedule overcomes the conservatism of Walk-first methods and the unsafe progress-seeking of joint optimization. We validate it with various VLM-based planners on multiple benchmarks: NAVSIMv1, NAVSIMv2, Navhard, and nuScenes. Extensive experiments demonstrate improved driving performance while requiring 40--50\\% fewer RL training epochs than the baselines.",
+  "summary": "Recent VLM-based autonomous driving planners adopt GRPO-style reinforcement learning to optimize driving performance. However, existing GRPO recipes either optimize driving efficiency, risking progress-seeking but unsafe behavior, or enforce early safety constraints, leading to overly conservative behavior; both require lengthy training. To solve these problems, we first reveal two distinct RL regimes: a progress regime (Run-GRPO) that aggressively explores high progress, and a safety regime (Walk-GRPO) that restores safety under stable progress. Based on this finding, we propose $\\textit{Run-then-Walk}$, a simple yet effective two-stage reward scheduling strategy for GRPO, achieving both better performance and faster convergence. Unlike one-stage RL, which may focus on progress, safety, or a mixture of both within a single training phase, this schedule explicitly separates progress discovery from safety repair. In the $\\textit{Run}$ phase, we focus on progress, allowing the policy to escape the conservative bias and discover high-progress modes. In the subsequent $\\textit{Walk}$ phase, we introduce endpoint and safety strategy to repair unsafe behaviors from the Run phase. This reversed schedule overcomes the conservatism of Walk-first methods and the unsafe progress-seeking of joint optimization. We validate it with various VLM-based planners on multiple benchmarks: NAVSIMv1, NAVSIMv2, Navhard, and nuScenes. Extensive experiments demonstrate improved driving performance while requiring 40--50\\% fewer RL training epochs than the baselines.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sometimes",
+    "you",
+    "gotta",
+    "run",
+    "before",
+    "can",
+    "walk",
+    "then"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 80,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-22T07:58:04.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-23T05:18:49.002Z",
+  "updatedAt": "2026-09-23T05:18:49.048Z"
+},
+{
+  "id": "829839ea-a509-4d2d-a109-b10cb52ddbc6",
+  "slug": "sonic-amg-streaming-human-motion-generation-from-spatial-audio-2026-10-12",
+  "title": "Sonic-AMG: Streaming Human Motion Generation from Spatial Audio",
+  "factSummary": "Modeling human reactions to spatial audio requires understanding both what is heard and where it comes from. Prior work generates motion offline from complete acoustic and spatial input sequences. Humans, however, react to sounds without knowing what they will hear next. We present Sonic-AMG, to our knowledge the first framework for streaming human motion generation from spatial audio. The model encodes acoustic content and body-relative source geometry as separate tokens. Conditioned on these tokens, a causal transformer with a flow head generates continuous motion latents, from which a causal decoder reconstructs motion segments. Standard teacher-forced training derives motion histories and body-relative source locations from ground-truth motion, whereas streaming inference relies on generated motion for both, resulting in a training-inference mismatch. To reduce this history discrepancy, we introduce rehearsal training, which combines full-sequence teacher-forced supervision with supervised prediction along short autoregressive self-rollouts. To keep spatial conditioning consistent with generated motion, we propose spatial feedback, which recomputes body-relative source locations from generated root poses during both rehearsal training and inference. On SAM, Sonic-AMG achieves state-of-the-art FID and R-precision. It further supports real-time online generation of coherent reactions across sound events and source locations. Project page: https://jingchengni.com/sonic-amg/.",
+  "summary": "Modeling human reactions to spatial audio requires understanding both what is heard and where it comes from. Prior work generates motion offline from complete acoustic and spatial input sequences. Humans, however, react to sounds without knowing what they will hear next. We present Sonic-AMG, to our knowledge the first framework for streaming human motion generation from spatial audio. The model encodes acoustic content and body-relative source geometry as separate tokens. Conditioned on these tokens, a causal transformer with a flow head generates continuous motion latents, from which a causal decoder reconstructs motion segments. Standard teacher-forced training derives motion histories and body-relative source locations from ground-truth motion, whereas streaming inference relies on generated motion for both, resulting in a training-inference mismatch. To reduce this history discrepancy, we introduce rehearsal training, which combines full-sequence teacher-forced supervision with supervised prediction along short autoregressive self-rollouts. To keep spatial conditioning consistent with generated motion, we propose spatial feedback, which recomputes body-relative source locations from generated root poses during both rehearsal training and inference. On SAM, Sonic-AMG achieves state-of-the-art FID and R-precision. It further supports real-time online generation of coherent reactions across sound events and source locations. Project page: https://jingchengni.com/sonic-amg/.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sonic",
+    "amg",
+    "streaming",
+    "human",
+    "motion",
+    "generation",
+    "from",
+    "spatial"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 49,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T09:47:03.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-12T06:40:23.763Z",
+  "updatedAt": "2026-10-12T06:40:23.825Z"
+},
+{
+  "id": "248345a0-8a69-4ddc-8dce-e4c5bdcf19f3",
+  "slug": "sophos-cuts-threat-investigation-time-by-96-with-openai-daybreak-2026-10-09",
+  "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+  "factSummary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+  "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "OpenAI",
+  "keywords": [
+    "sophos",
+    "cuts",
+    "threat",
+    "investigation",
+    "time",
+    "by",
+    "96",
+    "openai"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T07:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T18:29:14.204Z",
+  "updatedAt": "2026-10-09T18:29:14.265Z"
+},
+{
+  "id": "ea6e31a9-04fd-429d-bc09-1ebe1424ad3a",
+  "slug": "soromox-fast-differentiable-and-parallelizable-soft-robot-models-2026-08-10",
+  "title": "SoRoMoX: Fast, Differentiable, and Parallelizable Soft Robot Models",
+  "factSummary": "Reduced-order models based on Cosserat-rod theory are now well established, and modeling theory is no longer the primary bottleneck in soft-robot control. Their implementations, however, do not support the differentiable, GPU-parallel, and control-oriented workflows that underpin advanced rigid-robotics applications. Here, we fill this gap with SoRoMoX (Soft Robot Models in JAX), a fully numerical, JIT-compilable Python/JAX framework. SoRoMoX implements articulated, Piecewise Constant Strain, and Variable Strain models through a unified, control-ready interface that provides inertia matrices, gravitational and elastic forces, Jacobians, and their derivatives. To our knowledge, it is the first rod/strain-based soft-robot modeling framework that runs directly on GPUs and is end-to-end differentiable with respect to states, inputs, and parameters. Sequential CPU rollouts are up to 18.1x faster than state-of-the-art alternatives, while GPU-parallel rollouts increase throughput by up to 234.6x. This performance enables workflows that were previously impractical or impossible: static-equilibrium system identification with 66% lower marker RMSE; residual-force learning with a further 64% reduction; computed-torque tracking with RMSE reduced by a factor of approximately 500 relative to model-free PD; control-gain optimization with up to 62% lower loss than untuned gains; safety-constrained control using high-order control barrier functions to keep the peak contact force within a prescribed 5 N bound, compared with 33.5 N without the safety constraint; and reinforcement-learning policy training up to 7x faster than a CPU PyElastica discrete-rod baseline through massively parallel rollouts.",
+  "summary": "Reduced-order models based on Cosserat-rod theory are now well established, and modeling theory is no longer the primary bottleneck in soft-robot control. Their implementations, however, do not support the differentiable, GPU-parallel, and control-oriented workflows that underpin advanced rigid-robotics applications. Here, we fill this gap with SoRoMoX (Soft Robot Models in JAX), a fully numerical, JIT-compilable Python/JAX framework. SoRoMoX implements articulated, Piecewise Constant Strain, and Variable Strain models through a unified, control-ready interface that provides inertia matrices, gravitational and elastic forces, Jacobians, and their derivatives. To our knowledge, it is the first rod/strain-based soft-robot modeling framework that runs directly on GPUs and is end-to-end differentiable with respect to states, inputs, and parameters. Sequential CPU rollouts are up to 18.1x faster than state-of-the-art alternatives, while GPU-parallel rollouts increase throughput by up to 234.6x. This performance enables workflows that were previously impractical or impossible: static-equilibrium system identification with 66% lower marker RMSE; residual-force learning with a further 64% reduction; computed-torque tracking with RMSE reduced by a factor of approximately 500 relative to model-free PD; control-gain optimization with up to 62% lower loss than untuned gains; safety-constrained control using high-order control barrier functions to keep the peak contact force within a prescribed 5 N bound, compared with 33.5 N without the safety constraint; and reinforcement-learning policy training up to 7x faster than a CPU PyElastica discrete-rod baseline through massively parallel rollouts.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "soromox",
+    "fast",
+    "differentiable",
+    "parallelizable",
+    "soft",
+    "robot",
+    "models"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 50,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 46,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-06T23:31:47.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-10T03:05:18.477Z",
+  "updatedAt": "2026-08-10T03:05:18.514Z"
+},
+{
+  "id": "7f74df9f-4d35-4782-9ecd-8af082eaf1bc",
+  "slug": "sorry-robot-happy-human-vision-language-models-read-only-one-of-two-legible-typographic-la-2026-09-28",
+  "title": "Sorry Robot, Happy Human: Vision-Language Models Read Only One of Two Legible Typographic Layers",
+  "factSummary": "Vision-language models (VLMs), despite their success in optical character recognition (OCR) tasks, are vulnerable to typographic attacks and have a fragile structure for images with multiple text layers. In this study, the DecoyBench dataset was created using the Decoy Font method. The dataset consists of 300 images, each containing text with sharp contour lines superimposed on another text with soft shading. Six recent closed-source models from three different model families were evaluated using this dataset under two different prompting conditions (naive and guided) and at two different resolutions ($512\\times512$ and $64\\times64$). A validation study showed that human participants could read both text layers with high accuracy. In contrast, the models, with most variants and both prompting methods, read the contour text with near-human accuracy at high resolution, but almost never fully extracted the shading text. At low resolution, the contour text could not be read by either the models or humans, while the shading text could be extracted with high accuracy. The findings indicate that the evaluated VLMs exhibit a consistent behavioral limitation when processing typographic structures containing multiple spatial frequency layers.",
+  "summary": "Vision-language models (VLMs), despite their success in optical character recognition (OCR) tasks, are vulnerable to typographic attacks and have a fragile structure for images with multiple text layers. In this study, the DecoyBench dataset was created using the Decoy Font method. The dataset consists of 300 images, each containing text with sharp contour lines superimposed on another text with soft shading. Six recent closed-source models from three different model families were evaluated using this dataset under two different prompting conditions (naive and guided) and at two different resolutions ($512\\times512$ and $64\\times64$). A validation study showed that human participants could read both text layers with high accuracy. In contrast, the models, with most variants and both prompting methods, read the contour text with near-human accuracy at high resolution, but almost never fully extracted the shading text. At low resolution, the contour text could not be read by either the models or humans, while the shading text could be extracted with high accuracy. The findings indicate that the evaluated VLMs exhibit a consistent behavioral limitation when processing typographic structures containing multiple spatial frequency layers.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sorry",
+    "robot",
+    "happy",
+    "human",
+    "vision",
+    "language",
+    "models",
+    "read"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T15:27:21.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T05:59:54.150Z",
+  "updatedAt": "2026-09-28T05:59:54.199Z"
+},
+{
+  "id": "7ff8b234-d8c2-46b1-9475-f3cc54eed1a7",
+  "slug": "sota-stock-options-trading-agents-guided-by-option-implied-return-distributions-2026-10-08",
+  "title": "SOTA: Stock Options Trading Agents Guided by Option-Implied Return Distributions",
+  "factSummary": "As option markets grow and AI advances, agentic systems for option trading are gaining increasing attention. Language-model-based agents can reason over contextual information such as news, but option trading presents a particularly challenging decision problem: a single stock can have thousands of contracts, and the agent must decide both which contracts to trade and how to combine them. Existing approaches often sidestep this complexity by restricting the policy to a fixed strategy structure, such as a straddle, limiting their ability to switch strategies as market conditions change. We present SOTA (Stock Options Trading Agents), an agentic trading framework for structured option-strategy selection. SOTA abstracts the large option universe into strategy-level decisions while deterministic resolvers handle portfolio implementation. We develop SOTA by post-training Qwen3.8-27B with supervised fine-tuning followed by reinforcement learning. SOTA is evaluated on options on nine large-cap U.S. equities and SPY against rule-based and machine-learning strategy selectors in the same trading environment. Over a six-month out-of-sample period, SOTA earns an 18.3% total return with a Sharpe ratio of 1.60 and a maximum drawdown of 8.96%. We also document an asymmetric role of news: news improves frontier-teacher trajectories, but retaining news during reinforcement learning reduces out-of-sample return from 18.3% to -2.7%.",
+  "summary": "As option markets grow and AI advances, agentic systems for option trading are gaining increasing attention. Language-model-based agents can reason over contextual information such as news, but option trading presents a particularly challenging decision problem: a single stock can have thousands of contracts, and the agent must decide both which contracts to trade and how to combine them. Existing approaches often sidestep this complexity by restricting the policy to a fixed strategy structure, such as a straddle, limiting their ability to switch strategies as market conditions change. We present SOTA (Stock Options Trading Agents), an agentic trading framework for structured option-strategy selection. SOTA abstracts the large option universe into strategy-level decisions while deterministic resolvers handle portfolio implementation. We develop SOTA by post-training Qwen3.8-27B with supervised fine-tuning followed by reinforcement learning. SOTA is evaluated on options on nine large-cap U.S. equities and SPY against rule-based and machine-learning strategy selectors in the same trading environment. Over a six-month out-of-sample period, SOTA earns an 18.3% total return with a Sharpe ratio of 1.60 and a maximum drawdown of 8.96%. We also document an asymmetric role of news: news improves frontier-teacher trajectories, but retaining news during reinforcement learning reduces out-of-sample return from 18.3% to -2.7%.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sota",
+    "stock",
+    "options",
+    "trading",
+    "agents",
+    "guided",
+    "by",
+    "option"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-07T16:55:05.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-08T06:46:08.465Z",
+  "updatedAt": "2026-10-08T06:46:08.523Z"
+},
+{
+  "id": "8576fb43-397f-4509-9ab1-bb5b569a6f4f",
+  "slug": "sound-probabilistic-safety-bounds-for-large-language-models-2026-07-23",
+  "title": "Sound Probabilistic Safety Bounds for Large Language Models",
+  "factSummary": "We propose a novel framework for computing rigorous bounds on the probability that a large language model (LLM) generates harmful output to a given prompt. We study a new application of the Clopper-Pearson confidence intervals to obtain probably approximately correct (PAC) bounds for this problem. As our main technical contribution, we propose an algorithm that leverages features in the latent space to prioritize exploring branches in the auto-regressive generation tree that are more likely to produce harmful outputs. Our approach in particular enables the efficient computation of useful lower bounds, even in scenarios where the true harm probability is extremely small, and crucially, the obtained lower bounds are sound, i.e., formally proven to be less than the actual harmfulness probability: our experimental results demonstrate the effectiveness of our method by computing non-trivial lower bounds on state-of-the-art LLMs. This study newly enables the evaluation and statistical certification of LLMs.",
+  "summary": "We propose a novel framework for computing rigorous bounds on the probability that a large language model (LLM) generates harmful output to a given prompt. We study a new application of the Clopper-Pearson confidence intervals to obtain probably approximately correct (PAC) bounds for this problem. As our main technical contribution, we propose an algorithm that leverages features in the latent space to prioritize exploring branches in the auto-regressive generation tree that are more likely to produce harmful outputs. Our approach in particular enables the efficient computation of useful lower bounds, even in scenarios where the true harm probability is extremely small, and crucially, the obtained lower bounds are sound, i.e., formally proven to be less than the actual harmfulness probability: our experimental results demonstrate the effectiveness of our method by computing non-trivial lower bounds on state-of-the-art LLMs. This study newly enables the evaluation and statistical certification of LLMs.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "sound",
+    "probabilistic",
+    "safety",
+    "bounds",
+    "large",
+    "language",
+    "models"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-22T15:31:28.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-23T04:04:13.104Z",
+  "updatedAt": "2026-07-23T04:04:13.133Z"
+},
+{
+  "id": "ed3d6665-a39c-4075-b4f7-bd0bacefbeca",
+  "slug": "source-preference-in-the-wild-how-llm-agents-favor-items-by-source-and-how-to-reduce-it-2026-10-05",
+  "title": "Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It",
+  "factSummary": "As LLM agents decide on users' behalf which product to buy, which hotel to book, or which paper to cite, a preference for items from certain sources (the sites or services they come from) shapes what users receive and which sources are selected. We study source preference in end-to-end search with 12 agent models across three domains. Comparing items from different sources that satisfy the same requirements at the same position, we find that each model prefers some sources and avoids others in every domain, largely agreeing on which. This preference can outweigh how well items satisfy the request: an item satisfying one requirement fewer is selected about two-thirds of the time when it comes from a preferred source and the better one from a dispreferred source, but almost never in the reverse case. The information identifying an item's source affects selection by itself: hiding it weakens the preference, and relabeling an item with a preferred source raises its selection rate. We test two routes to this preference: training that rewards better items can make a source a shortcut for requirement satisfaction, and missing information can trigger preconceptions about the source. Supplying missing information or a prompt countering these preconceptions reduces source preference.",
+  "summary": "As LLM agents decide on users' behalf which product to buy, which hotel to book, or which paper to cite, a preference for items from certain sources (the sites or services they come from) shapes what users receive and which sources are selected. We study source preference in end-to-end search with 12 agent models across three domains. Comparing items from different sources that satisfy the same requirements at the same position, we find that each model prefers some sources and avoids others in every domain, largely agreeing on which. This preference can outweigh how well items satisfy the request: an item satisfying one requirement fewer is selected about two-thirds of the time when it comes from a preferred source and the better one from a dispreferred source, but almost never in the reverse case. The information identifying an item's source affects selection by itself: hiding it weakens the preference, and relabeling an item with a preferred source raises its selection rate. We test two routes to this preference: training that rewards better items can make a source a shortcut for requirement satisfaction, and missing information can trigger preconceptions about the source. Supplying missing information or a prompt countering these preconceptions reduces source preference.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "source",
+    "preference",
+    "wild",
+    "how",
+    "llm",
+    "agents",
+    "favor",
+    "items"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 49,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-02T12:10:03.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-05T09:34:05.475Z",
+  "updatedAt": "2026-10-05T09:34:05.522Z"
+},
+{
+  "id": "d85c48b1-616a-4848-bd9f-de312f8a7e4a",
+  "slug": "source-preserving-alignment-for-robust-evidence-localization-in-scientific-pdfs-2026-09-29",
+  "title": "Source-preserving alignment for robust evidence localization in scientific PDFS",
+  "factSummary": "Scientific information-extraction systems often return a claim with an evidence string, which users must locate in the original PDF. This is challenging because the extracted evidence and PDF text layer are different representations: line wrapping, Unicode variants, superscripts, citation markers, and fragmented items alter text sequences and geometry. We present a source-preserving alignment framework: normalize text for robust matching while preserving provenance for accurate localization. It aligns evidence with normalized page text, maps matches back to source-character spans, and renders only their geometry. When exact alignment fails, line-break-aware token alignment recovers supported spans while excluding unmatched noise. Experiments on 1,020 chemistry papers show that the framework achieves a 92.6\\% quote-level automatic localization rate, compared with 43.6\\% for text search and 19.1\\% for a precomputed bounding-box baseline. Component ablation confirms distinct contributions from normalization and approximate token alignment, while human verification assesses the visual correctness of returned highlights. Overall, these results demonstrate that reliable evidence verification requires robust matching and precise localization within a shared source-preserving alignment representation.",
+  "summary": "Scientific information-extraction systems often return a claim with an evidence string, which users must locate in the original PDF. This is challenging because the extracted evidence and PDF text layer are different representations: line wrapping, Unicode variants, superscripts, citation markers, and fragmented items alter text sequences and geometry. We present a source-preserving alignment framework: normalize text for robust matching while preserving provenance for accurate localization. It aligns evidence with normalized page text, maps matches back to source-character spans, and renders only their geometry. When exact alignment fails, line-break-aware token alignment recovers supported spans while excluding unmatched noise. Experiments on 1,020 chemistry papers show that the framework achieves a 92.6\\% quote-level automatic localization rate, compared with 43.6\\% for text search and 19.1\\% for a precomputed bounding-box baseline. Component ablation confirms distinct contributions from normalization and approximate token alignment, while human verification assesses the visual correctness of returned highlights. Overall, these results demonstrate that reliable evidence verification requires robust matching and precise localization within a shared source-preserving alignment representation.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "source",
+    "preserving",
+    "alignment",
+    "robust",
+    "evidence",
+    "localization",
+    "scientific",
+    "pdfs"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-28T16:40:33.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-29T06:20:41.730Z",
+  "updatedAt": "2026-09-29T06:20:41.787Z"
+},
+{
+  "id": "ad8fb8da-30f1-4d36-9dfc-6acb0b307fbf",
+  "slug": "sovereign-agentops-self-hosted-constitutional-ai-governance-for-mcp-agents-2026-07-12",
+  "title": "Sovereign AgentOps – Self-hosted constitutional AI governance for MCP agents",
+  "factSummary": "Article URL: https://github.com/geludobre/sovereign-agentops Comments URL: https://news.ycombinator.com/item?id=48875223 Points: 1 # Comments: 0",
+  "summary": "Sovereign AgentOps 是一个自托管的 MCP 治理服务器，为 AI agent 提供宪法治理、Ed25519 签名审计追踪和 EU AI Act 合规工具。社区版提供 7 个 MCP 工具，企业版 91 个工具。",
+  "technicalInsight": "引入「宪法治理」概念——在 agent 执行前进行策略校验、执行后生成加密签名收据——为 agent 在受监管行业的合规运营提供了可验证的技术基础设施。",
+  "industryInsight": "随着 AI agent 承担更多实际操作（代码部署、数据访问、金融交易），可验证的治理和审计能力从「锦上添花」变为「准入门槛」，这是 agent 从实验走向生产的关键一环。",
+  "futureOutlook": "关注 EU AI Act 对 agent 系统的合规要求是否会催生更多治理工具创业公司，以及 MCP 治理协议是否会成为行业标准。",
+  "businessValue": "金融、医疗、政务等受监管行业的 AI agent 部署，必须内置可审计的治理层——合规即竞争力。",
+  "category": "product",
+  "company": "industry",
+  "keywords": [
+    "sovereign",
+    "agentops",
+    "self",
+    "hosted",
+    "constitutional",
+    "ai",
+    "governance",
+    "mcp"
+  ],
+  "confidenceScore": 35,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 47,
+  "scoreFactors": {
+    "authority": 45,
+    "corroboration": 20,
+    "primaryEvidence": 0,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-11T19:52:10.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-12T00:12:52.732Z",
+  "updatedAt": "2026-07-12T00:12:52.732Z"
+},
+{
+  "id": "014948fa-1af7-4b0f-b849-e6ed7e7303aa",
+  "slug": "spacecast-bench-evaluating-predictive-spatial-reasoning-in-vision-language-models-2026-10-09",
+  "title": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
+  "factSummary": "Existing spatial reasoning benchmarks mainly test spatial perception: reading off relations already visible in the input. Yet real-world spatial intelligence demands predictive spatial reasoning: constructing a scene from observations, anticipating how an intervention changes it, and reasoning about the unseen outcome. We introduce SpaceCast-Bench, the first benchmark to directly and diagnostically evaluate this capability. Built around an observe-transform-infer framework, its 3,862 questions from 182 real-world scenes span 16 task types at three levels: static perception, local prediction, and global prediction, progressively requiring scene understanding, spatial state updating, and relational inference over unobserved outcomes. Evaluating 21 models exposes a stark gap: the strongest model reaches only 58.0% against 87.2% human performance, while spatially specialized models remain near random chance. Controlled analyses further reveal that bridge views are critical for integrating distributed observations, and that explicit 3D evidence benefits models more reliably than generated outcome images or videos. Fine-tuning on our programmatically generated data lifts Qwen3-VL-4B from 34.0% to 65.7% with macro-average gains across six out-of-domain benchmarks.",
+  "summary": "Existing spatial reasoning benchmarks mainly test spatial perception: reading off relations already visible in the input. Yet real-world spatial intelligence demands predictive spatial reasoning: constructing a scene from observations, anticipating how an intervention changes it, and reasoning about the unseen outcome. We introduce SpaceCast-Bench, the first benchmark to directly and diagnostically evaluate this capability. Built around an observe-transform-infer framework, its 3,862 questions from 182 real-world scenes span 16 task types at three levels: static perception, local prediction, and global prediction, progressively requiring scene understanding, spatial state updating, and relational inference over unobserved outcomes. Evaluating 21 models exposes a stark gap: the strongest model reaches only 58.0% against 87.2% human performance, while spatially specialized models remain near random chance. Controlled analyses further reveal that bridge views are critical for integrating distributed observations, and that explicit 3D evidence benefits models more reliably than generated outcome images or videos. Fine-tuning on our programmatically generated data lifts Qwen3-VL-4B from 34.0% to 65.7% with macro-average gains across six out-of-domain benchmarks.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spacecast",
+    "bench",
+    "evaluating",
+    "predictive",
+    "spatial",
+    "reasoning",
+    "vision",
+    "language"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-08T17:44:17.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T06:51:56.908Z",
+  "updatedAt": "2026-10-09T06:51:56.970Z"
+},
+{
+  "id": "c8b40b1b-ac4c-4741-be33-f9a692dd21f5",
+  "slug": "spaceflow-locally-controllable-3d-generation-2026-10-09",
+  "title": "SpaceFlow: Locally Controllable 3D Generation",
+  "factSummary": "Current 3D generation methods lack explicit local control: geometric adherence is often defined by a global control strength, and appearance cannot be specified locally. We present SpaceFlow, a training-free pipeline for locally controllable 3D generation from text descriptions and a collection of geometric primitives. Each primitive serves as a proxy for an object part and is assigned a local control level, enabling users to specify whether regions should strictly follow the input shape or allow generative completion. During structure generation, we enforce these spatial constraints within the generative flow process. For appearance synthesis, the generated structure is segmented and matched to the primitives. Each generated part is conditioned only on its assigned text or image cue, thereby limiting cross-part leakage. Regional geometry metrics demonstrate that SpaceFlow preserves the specified geometry in high-control regions and enables plausible shape variation in low-control areas. A user study further indicates that the resulting balance between geometric fidelity and generative freedom remains competitive in overall quality. When evaluating appearance on fixed geometry, text-conditioned routing achieves state-of-the-art prompt faithfulness and color/material accuracy. Qualitative results additionally show localized routing of image cues. The project page is available at SpaceFlow3D.github.io.",
+  "summary": "Current 3D generation methods lack explicit local control: geometric adherence is often defined by a global control strength, and appearance cannot be specified locally. We present SpaceFlow, a training-free pipeline for locally controllable 3D generation from text descriptions and a collection of geometric primitives. Each primitive serves as a proxy for an object part and is assigned a local control level, enabling users to specify whether regions should strictly follow the input shape or allow generative completion. During structure generation, we enforce these spatial constraints within the generative flow process. For appearance synthesis, the generated structure is segmented and matched to the primitives. Each generated part is conditioned only on its assigned text or image cue, thereby limiting cross-part leakage. Regional geometry metrics demonstrate that SpaceFlow preserves the specified geometry in high-control regions and enables plausible shape variation in low-control areas. A user study further indicates that the resulting balance between geometric fidelity and generative freedom remains competitive in overall quality. When evaluating appearance on fixed geometry, text-conditioned routing achieves state-of-the-art prompt faithfulness and color/material accuracy. Qualitative results additionally show localized routing of image cues. The project page is available at SpaceFlow3D.github.io.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spaceflow",
+    "locally",
+    "controllable",
+    "3d",
+    "generation"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-08T17:42:39.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-09T06:51:57.064Z",
+  "updatedAt": "2026-10-09T06:51:57.127Z"
+},
+{
+  "id": "98bc5fac-ff67-4d2d-ac76-2ce731a9a204",
+  "slug": "spanish-bert-benchmark",
+  "title": "Spanish Pre-trained BERT Model and Evaluation Data：西班牙语专用BERT模型与评测基准发布",
+  "factSummary": "该论文发布了首个完全基于西班牙语数据预训练的BERT模型，并整合了多个西班牙语自然语言处理任务形成类似GLUE的评测基准。实验表明，该模型在大多数任务上优于多语言BERT模型，部分任务达到新最优水平。模型、预训练数据和基准已公开。",
+  "summary": "针对西班牙语资源匮乏问题，论文贡献了纯西班牙语预训练的BERT模型和统一评测基准，显著提升了西班牙语NLP任务性能，并开源了全部资源。",
+  "technicalInsight": "模型采用BERT架构，在西班牙语维基百科、新闻、书籍等大规模语料上预训练。评测基准涵盖情感分析、命名实体识别、自然语言推理等任务。与多语言BERT（如mBERT）对比，西班牙语BERT在多数任务上准确率提升2-5个百分点，部分任务（如情感分析）达到新SOTA。局限性在于未探索更大模型或更先进架构。",
+  "industryInsight": "西班牙语是全球第三大语言，该模型可直接用于西班牙语客服、搜索、翻译等商业场景，降低对多语言模型的依赖，提升本地化效果。",
+  "futureOutlook": "后续需验证模型在更多下游任务（如问答、摘要）上的表现，以及与其他西班牙语模型（如RoBERTa）的对比。",
+  "businessValue": "建议西班牙语市场团队在客服、内容审核和搜索排序数据上对比该模型与现有mBERT，按准确率、语言变体覆盖和推理成本验收，不直接把论文基准增益外推到生产。",
+  "category": "research",
+  "company": "Spanish-BERT",
+  "keywords": [
+    "西班牙语",
+    "BERT",
+    "预训练",
+    "评测基准",
+    "自然语言处理"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 88,
+  "valueScore": 85,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2023-08-06T12:00:00.000Z",
+  "publishedAt": "2023-08-06T12:00:00.000Z",
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
+},
+{
+  "id": "a276f665-95b3-47db-9245-4ccd5087723a",
+  "slug": "spanning-diffusion-and-flow-based-posterior-sampling-via-exact-gaussian-conditioning-2026-10-12",
+  "title": "Spanning Diffusion and Flow-based Posterior Sampling via Exact Gaussian Conditioning",
+  "factSummary": "Flow-matching and diffusion models are increasingly used as priors for linear inverse problems, however, most methods are bespoke to one class of trajectory prior. Plug-and-play methods have been proposed, however these implicitly decorrelate the guided trajectory, resulting in broad priors that can struggle when data is sparse. This work proposes $β$-Flow: a general plug-and-play method indexed by a correlation parameter $β$ that generalises over flow, diffusion, and decorrelated priors, and a confidence parameter $κ$ that controls how strongly the path distribution is enforced. Each step requires only one forward evaluation of a denoising network, followed by a Gaussian conditioning step. This step is an exact Kalman update that is not dependent on network gradients. We show that many existing guided samplers can be interpreted as instances or approximations of our method, each implicitly using a different trajectory prior and operator in place of the Kalman gain. From this viewpoint, we provide a qualitative comparison of methods in terms of their implicit biases and assumptions. We demonstrate consistently state-of-the-art level performance across 7 inverse problems over 4 datasets in terms of PSNR and SSIM. Moreover, we demonstrate the utility of this prior control, by showing that confident high correlations (strict priors) work best when observations are less informative, while low correlation is preferred when observations are more informative, reflecting the complementary roles of the prior and likelihood in Bayesian inference.",
+  "summary": "Flow-matching and diffusion models are increasingly used as priors for linear inverse problems, however, most methods are bespoke to one class of trajectory prior. Plug-and-play methods have been proposed, however these implicitly decorrelate the guided trajectory, resulting in broad priors that can struggle when data is sparse. This work proposes $β$-Flow: a general plug-and-play method indexed by a correlation parameter $β$ that generalises over flow, diffusion, and decorrelated priors, and a confidence parameter $κ$ that controls how strongly the path distribution is enforced. Each step requires only one forward evaluation of a denoising network, followed by a Gaussian conditioning step. This step is an exact Kalman update that is not dependent on network gradients. We show that many existing guided samplers can be interpreted as instances or approximations of our method, each implicitly using a different trajectory prior and operator in place of the Kalman gain. From this viewpoint, we provide a qualitative comparison of methods in terms of their implicit biases and assumptions. We demonstrate consistently state-of-the-art level performance across 7 inverse problems over 4 datasets in terms of PSNR and SSIM. Moreover, we demonstrate the utility of this prior control, by showing that confident high correlations (strict priors) work best when observations are less informative, while low correlation is preferred when observations are more informative, reflecting the complementary roles of the prior and likelihood in Bayesian inference.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spanning",
+    "diffusion",
+    "flow",
+    "based",
+    "posterior",
+    "sampling",
+    "via",
+    "exact"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T16:24:23.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-12T06:40:17.898Z",
+  "updatedAt": "2026-10-12T06:40:17.960Z"
+},
+{
+  "id": "f26db5cf-e741-4939-bc74-028ecbd0eb4b",
+  "slug": "spark-to-paper-end-to-end-research-paper-generation-as-a-composable-skill-2026-08-13",
+  "title": "Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill",
+  "factSummary": "Turning a research idea into a complete paper requires more than text generation: the system must retrieve literature, design and execute experiments, revise claims according to evidence, produce publication-ready figures, and maintain consistency across a long generation process. We present Spark-to-Paper, an end-to-end research paper generation system implemented as thirteen composable skills inside an existing coding assistant, without requiring a separate agent platform or orchestration service. Spark-to-Paper separates model-based judgment from deterministic operations that can be directly executed and checked. It further separates experiment planning from reporting, so that required evidence is specified before results are observed and manuscript claims are revised according to measured outcomes. To improve reliability over long research trajectories, the system combines deterministic integrity checks with self-critique and bounds a failure mode we call the Self-Refutation Loop, in which repeated experiments continue to reject the original research objective. Spark-to-Paper also produces editable vector figures through programmatic plotting for experimental results and code-based reconstruction for generated method diagrams. Across eight controlled research topics, Spark-to-Paper achieves 99.5% citation validity and 96.4% figure editability. A controlled ablation increases fabrication detection from 14% for a single-pass draft to 92% with the full integrity and review stack, while adversarial review achieves 74% precision. The full system uses 11.9M tokens, costs $8.1 per manuscript, and requires 3.2 hours on average. These results show that end-to-end research paper generation can be implemented as a lightweight, composable workflow inside existing coding assistants while keeping experimental evidence central to how claims are accepted, revised, or abandoned.",
+  "summary": "Turning a research idea into a complete paper requires more than text generation: the system must retrieve literature, design and execute experiments, revise claims according to evidence, produce publication-ready figures, and maintain consistency across a long generation process. We present Spark-to-Paper, an end-to-end research paper generation system implemented as thirteen composable skills inside an existing coding assistant, without requiring a separate agent platform or orchestration service. Spark-to-Paper separates model-based judgment from deterministic operations that can be directly executed and checked. It further separates experiment planning from reporting, so that required evidence is specified before results are observed and manuscript claims are revised according to measured outcomes. To improve reliability over long research trajectories, the system combines deterministic integrity checks with self-critique and bounds a failure mode we call the Self-Refutation Loop, in which repeated experiments continue to reject the original research objective. Spark-to-Paper also produces editable vector figures through programmatic plotting for experimental results and code-based reconstruction for generated method diagrams. Across eight controlled research topics, Spark-to-Paper achieves 99.5% citation validity and 96.4% figure editability. A controlled ablation increases fabrication detection from 14% for a single-pass draft to 92% with the full integrity and review stack, while adversarial review achieves 74% precision. The full system uses 11.9M tokens, costs $8.1 per manuscript, and requires 3.2 hours on average. These results show that end-to-end research paper generation can be implemented as a lightweight, composable workflow inside existing coding assistants while keeping experimental evidence central to how claims are accepted, revised, or abandoned.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "spark",
+    "paper",
+    "end",
+    "research",
+    "generation",
+    "as",
+    "composable",
+    "skill"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 85,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-12T11:11:07.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-13T03:19:42.533Z",
+  "updatedAt": "2026-08-13T03:19:42.580Z"
+},
+{
+  "id": "ced38d09-8da9-4e9c-a985-2a875b784ed0",
+  "slug": "sparks-of-agi-gpt4",
+  "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4：GPT-4展现通用智能火花，AGI雏形已现",
+  "factSummary": "2023年3月，微软研究团队发布了对早期GPT-4的评估报告。论文通过大量实验证明，GPT-4在数学、编程、视觉、医学、法律、心理学等众多领域表现出接近人类水平的性能，且无需特殊提示。作者认为GPT-4可被视为早期（但不完整）的AGI系统，并指出其局限性在于仍基于下一个词预测范式。",
+  "summary": "该论文是GPT-4能力最全面的公开评估之一，首次系统论证了大型语言模型在广泛任务中达到接近人类水平，引发了对AGI临近的广泛讨论。它改变了业界对LLM能力边界的认知，推动了后续对通用智能的探索和风险讨论。",
+  "technicalInsight": "论文采用定性+定量方法，对GPT-4进行多领域零样本测试，包括数学推理、代码生成、视觉理解、医学考试等。结果显示GPT-4在多项基准上超越ChatGPT和PaLM，且无需微调。作者特别强调其局限性：在复杂推理、事实一致性、对抗性输入等方面仍有不足，并指出当前架构（下一个词预测）可能无法通向更全面的AGI。评估未使用标准化基准，而是自建任务集，因此结果可复现性有限。",
+  "industryInsight": "该论文直接影响了AI行业对LLM能力的预期，加速了GPT-4在客服、编程辅助、内容生成等领域的商业化部署。同时引发了对AI安全、对齐、监管的紧迫讨论，推动各国政府和企业制定AI治理框架。",
+  "futureOutlook": "后续需关注GPT-4在真实场景中的可靠性、幻觉率、以及多模态扩展。关键信号包括：OpenAI是否发布GPT-4的详细技术报告、第三方复现结果、以及基于GPT-4的AGI安全研究进展。",
+  "businessValue": "企业应评估GPT-4在内部知识管理、自动化报告生成、代码审查等场景的试点部署，同时建立AI输出审核机制以控制风险。投资可关注基于GPT-4的垂直应用和AI安全初创公司。",
+  "category": "research",
+  "company": "Microsoft Research",
+  "keywords": [
+    "GPT-4",
+    "AGI",
+    "通用智能",
+    "大型语言模型",
+    "能力评估"
+  ],
+  "confidenceScore": 92,
+  "heatScore": 0,
+  "impactScore": 97,
+  "valueScore": 95,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 1,
+  "manualOverride": 1,
+  "happenedAt": "2023-03-22T12:00:00.000Z",
+  "publishedAt": "2023-03-22T12:00:00.000Z",
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
+},
+{
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
   "slug": "sparks-protein-design",
   "title": "Sparks: Multi-Agent Artificial Intelligence Model Discovers Protein Design Principles：多模态多智能体系统自主发现蛋白质设计新原理",
@@ -39,8 +947,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "deb0fa4d-1245-42f6-843f-6a4bdd77dc66",
@@ -1269,8 +2177,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -1311,8 +2219,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -1617,8 +2525,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "ce6e144f-4b1f-4e16-bfe5-318763d16046",
@@ -4823,8 +5731,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "a13da063-1412-4715-b248-3c220b58d20b",
@@ -6321,8 +7229,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -6821,8 +7729,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -7185,8 +8093,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -7995,8 +8903,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -9224,8 +10132,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -11302,8 +12210,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -16070,8 +16978,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -16795,8 +17703,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -16884,8 +17792,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -17065,8 +17973,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -21209,8 +22117,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -22244,8 +23152,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -22560,8 +23468,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -26997,6 +27905,52 @@
   "publishedAt": null,
   "createdAt": "2026-10-07T06:37:17.395Z",
   "updatedAt": "2026-10-07T06:37:17.449Z"
+},
+{
+  "id": "90266049-b7a0-4b41-8b4b-20b6dba66627",
+  "slug": "v0-32-0rc0-hisparse-report-host-pool-in-kv-cache-capacity-logs-60285-2026-10-13",
+  "title": "v0.32.0rc0: [HiSparse] Report host pool in KV cache capacity logs (#60285)",
+  "factSummary": "Signed-off-by: Matthew Bonanni mbonanni@redhat.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+  "summary": "Signed-off-by: Matthew Bonanni mbonanni@redhat.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v0",
+    "32",
+    "0rc0",
+    "hisparse",
+    "report",
+    "host",
+    "pool",
+    "kv"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 79,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-12T20:49:49.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-13T19:25:00.574Z",
+  "updatedAt": "2026-10-13T19:25:00.637Z"
 },
 {
   "id": "450fde20-3eb2-4619-8a52-e6b7d6bc76f7",
@@ -35347,9 +36301,9 @@
     "实时语音"
   ],
   "confidenceScore": 91,
-  "heatScore": 31,
+  "heatScore": 30,
   "impactScore": 55,
-  "valueScore": 66,
+  "valueScore": 64,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 40,
@@ -35359,7 +36313,7 @@
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 97,
+    "freshness": 86,
     "crossRegion": false
   },
   "status": "published",
@@ -35368,7 +36322,7 @@
   "happenedAt": "2026-10-13T04:45:06.000Z",
   "publishedAt": "2026-10-13T07:14:04.836Z",
   "createdAt": "2026-10-13T07:13:09.066Z",
-  "updatedAt": "2026-10-13T07:14:04.836Z"
+  "updatedAt": "2026-10-13T19:24:59.553Z"
 },
 {
   "id": "2623c441-5b27-4bd4-ac49-661a16faadfc",
@@ -35426,20 +36380,20 @@
     "v2",
     "30"
   ],
-  "confidenceScore": 74,
+  "confidenceScore": 84,
   "heatScore": 22,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 60,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 93,
+    "freshness": 82,
     "crossRegion": false
   },
   "status": "review",
@@ -35448,7 +36402,7 @@
   "happenedAt": "2026-10-13T00:17:24.000Z",
   "publishedAt": null,
   "createdAt": "2026-10-13T07:13:09.432Z",
-  "updatedAt": "2026-10-13T07:13:09.487Z"
+  "updatedAt": "2026-10-13T19:24:59.554Z"
 },
 {
   "id": "cc28f864-1360-4667-8fb6-f88743e500f1",
@@ -37298,6 +38252,46 @@
   "updatedAt": "2026-10-07T19:03:24.487Z"
 },
 {
+  "id": "48c30078-2c38-4b02-b767-fa0aa59c6fa9",
+  "slug": "v4-1-24-2026-10-13",
+  "title": "v4.1.24",
+  "factSummary": "Changed With no model chosen, the Cline and OpenRouter providers now use Claude Sonnet 5.5. For Cline, that's the first model in Cline's recommended list. Selecting ai shows its own API key and model picker, instead of the generic OpenAI-compatible form with base URL and custom headers. Refreshed the model catalog. Adds Claude Haiku 5.5 and the AI/ML API, LowRouter, and Prime Inference providers. The Cline free list adds Step 5 Preview. The v0 provider now offers only its default model, v0-1.5-md , and OpenCode Go uses its new https://opencode.ai/inference/go/v1 endpoint. Default models change for 302.AI, Cortecs, CrossModel, DevPass, DigitalOcean, Eden AI, GitHub Copilot, Google Vertex AI, LLM Gateway, Meta, Moark, NanoGPT, NEAR AI Cloud, Neuralwatt, Novita AI, Ofox, OpenCode Go, Requesty, Vivgrid, and a few others (most now Claude Haiku 5.5 or Muse Wonder 1.0). If you use one of those providers without pinning a model, expect a different default. Fixed Turning reasoning off no longer fails with a 400 error on GPT-6 Astra, GPT-6.1 Sol, Claude Fable 5 or Claude Opus 5.5, and now works on every provider. Level-only Gemini models no longer reject the request with a thinking-budget error. An MCP server or hook that exits before reading all of its input no longer crashes the extension host about 3 seconds later. A 404 from a stale or retired model id is no longer shown as a sign-in problem. Cline shows the real error instead of the logged-out card. Errors in the Cline output log keep their details. Production builds used to drop them, so a line like \"Cline OAuth login failed:\" showed no reason. Deleting a slash command from the input keeps the spacing of the text around it. Screenshots and other images no longer inflate the token estimate, which made auto-compaction run long before the conversation was near its limit. Auto-compaction uses the selected model's context window when the catalog entry has none. Rule files that are symlinks now load, and skills in .claude/sk…",
+  "summary": "Changed With no model chosen, the Cline and OpenRouter providers now use Claude Sonnet 5.5. For Cline, that's the first model in Cline's recommended list. Selecting ai shows its own API key and model picker, instead of the generic OpenAI-compatible form with base URL and custom headers. Refreshed the model catalog. Adds Claude Haiku 5.5 and the AI/ML API, LowRouter, and Prime Inference providers. The Cline free list adds Step 5 Preview. The v0 provider now offers only its default model, v0-1.5-md , and OpenCode Go uses its new https://opencode.ai/inference/go/v1 endpoint. Default models change for 302.AI, Cortecs, CrossModel, DevPass, DigitalOcean, Eden AI, GitHub Copilot, Google Vertex AI, LLM Gateway, Meta, Moark, NanoGPT, NEAR AI Cloud, Neuralwatt, Novita AI, Ofox, OpenCode Go, Requesty, Vivgrid, and a few others (most now Claude Haiku 5.5 or Muse Wonder 1.0). If you use one of those providers without pinning a model, expect a different default. Fixed Turning reasoning off no longer fails with a 400 error on GPT-6 Astra, GPT-6.1 Sol, Claude Fable 5 or Claude Opus 5.5, and now works on every provider. Level-only Gemini models no longer reject the request with a thinking-budget error. An MCP server or hook that exits before reading all of its input no longer crashes the extension host about 3 seconds later. A 404 from a stale or retired model id is no longer shown as a sign-in problem. Cline shows the real error instead of the logged-out card. Errors in the Cline output log keep their details. Production builds used to drop them, so a line like \"Cline OAuth login failed:\" showed no reason. Deleting a slash command from the input keeps the spacing of the text around it. Screenshots and other images no longer inflate the token estimate, which made auto-compaction run long before the conversation was near its limit. Auto-compaction uses the selected model's context window when the catalog entry has none. Rule files that are symlinks now load, and skills in .claude/sk…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "24"
+  ],
+  "confidenceScore": 91,
+  "heatScore": 31,
+  "impactScore": 55,
+  "valueScore": 66,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 40,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 2,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 96,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-13T15:02:28.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-13T19:24:59.493Z",
+  "updatedAt": "2026-10-13T19:24:59.553Z"
+},
+{
   "id": "1987ea1f-eda6-4224-9ac9-ff386128f037",
   "slug": "v4-1-7-2026-08-09",
   "title": "v4.1.7",
@@ -38717,20 +39711,20 @@
     "推理引擎",
     "可观测性"
   ],
-  "confidenceScore": 91,
-  "heatScore": 31,
+  "confidenceScore": 98,
+  "heatScore": 38,
   "impactScore": 55,
-  "valueScore": 67,
+  "valueScore": 69,
   "scoreFactors": {
     "authority": 92,
-    "corroboration": 40,
+    "corroboration": 60,
     "primaryEvidence": 100,
     "uniqueAuthors": 0,
-    "independentSources": 2,
+    "independentSources": 3,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 100,
+    "freshness": 88,
     "crossRegion": false
   },
   "status": "published",
@@ -38739,7 +39733,7 @@
   "happenedAt": "2026-10-13T07:05:09.000Z",
   "publishedAt": "2026-10-13T07:14:04.837Z",
   "createdAt": "2026-10-13T07:13:08.995Z",
-  "updatedAt": "2026-10-13T07:14:04.837Z"
+  "updatedAt": "2026-10-13T19:24:59.565Z"
 },
 {
   "id": "a5b488ba-7f4b-4b4f-872c-2cf6f805a25b",
@@ -41739,8 +42733,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -42057,8 +43051,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -42692,8 +43686,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -42735,8 +43729,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -43003,8 +43997,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -43276,8 +44270,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -43499,8 +44493,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -48486,8 +49480,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -49668,8 +50662,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -50656,8 +51650,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -50700,8 +51694,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -51196,8 +52190,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -51239,8 +52233,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -51282,8 +52276,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -51325,8 +52319,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-13T07:08:37.044Z",
-  "updatedAt": "2026-10-13T07:08:37.044Z"
+  "createdAt": "2026-10-13T19:20:30.440Z",
+  "updatedAt": "2026-10-13T19:20:30.440Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
