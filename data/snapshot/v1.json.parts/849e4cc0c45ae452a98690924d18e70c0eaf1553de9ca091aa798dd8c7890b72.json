@@ -1,5 +1,1049 @@
 [
 {
+  "id": "7948494e-1fbc-4a06-9114-f42b9f5f9b98",
+  "slug": "searching-for-robust-augmentations-to-improve-out-of-domain-generalization-in-dermoscopic--2026-07-30",
+  "title": "Searching for Robust Augmentations to Improve Out-of-Domain Generalization in Dermoscopic Skin Cancer Classification",
+  "factSummary": "Background/Objectives: Dermoscopic skin lesion classifiers often lose accuracy under domain shift across imaging devices, illumination, and capture artifacts. We study how data augmentation improves the robustness of a binary malignant-versus-non-malignant classifier, with emphasis on out-of-domain (OOD) generalization. Methods: Single augmentations, photometric combinations, and composite policies were searched on a multi-source ISIC Archive collection with Derm7pt, using a ConvNeXt-Large backbone and ROC-AUC. Splits were made at the lesion-ID level, and HAM10000 and ISIC 2019-2020 were held out as a predominantly source-disjoint OOD test. Results: The largest OOD gain came from the mix policy, and photometric transformations dominated the most useful OOD operations. On an expanded pool from the same held-out sources the gain was +0.053 (95% CI +0.045 to +0.061, p<0.001), consistent across four training seeds (per-seed ROC-AUC: baseline 0.761-0.775, mix 0.806-0.829). On a small independent clinical collection, single-checkpoint sensitivity rose from 0.591 to 0.818, but this rested on 22 malignant cases and did not persist across seeds. Conclusions: Augmentations modelling real sources of domain shift can matter more than maximizing in-domain accuracy. Because the policy was selected on the same sources used to evaluate it, a source-disjoint selection protocol is needed before this effect size can be read as unbiased.",
+  "summary": "Background/Objectives: Dermoscopic skin lesion classifiers often lose accuracy under domain shift across imaging devices, illumination, and capture artifacts. We study how data augmentation improves the robustness of a binary malignant-versus-non-malignant classifier, with emphasis on out-of-domain (OOD) generalization. Methods: Single augmentations, photometric combinations, and composite policies were searched on a multi-source ISIC Archive collection with Derm7pt, using a ConvNeXt-Large backbone and ROC-AUC. Splits were made at the lesion-ID level, and HAM10000 and ISIC 2019-2020 were held out as a predominantly source-disjoint OOD test. Results: The largest OOD gain came from the mix policy, and photometric transformations dominated the most useful OOD operations. On an expanded pool from the same held-out sources the gain was +0.053 (95% CI +0.045 to +0.061, p<0.001), consistent across four training seeds (per-seed ROC-AUC: baseline 0.761-0.775, mix 0.806-0.829). On a small independent clinical collection, single-checkpoint sensitivity rose from 0.591 to 0.818, but this rested on 22 malignant cases and did not persist across seeds. Conclusions: Augmentations modelling real sources of domain shift can matter more than maximizing in-domain accuracy. Because the policy was selected on the same sources used to evaluate it, a source-disjoint selection protocol is needed before this effect size can be read as unbiased.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "searching",
+    "robust",
+    "augmentations",
+    "improve",
+    "out",
+    "domain",
+    "generalization",
+    "dermoscopic"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T11:06:06.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:13.689Z",
+  "updatedAt": "2026-07-30T03:51:13.719Z"
+},
+{
+  "id": "8f462b31-dfbd-424d-ba16-08f010344eb0",
+  "slug": "searchos-v1-towards-robust-open-domain-information-seeking-agent-collaboration-2026-07-17",
+  "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+  "factSummary": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-agent framework that turns fragile, implicit search progress into explicit, persistent, and shared state. First, we formulate open-domain information seeking as relational schema completion with grounded citations, where agents discover entities, populate attributes across linked tables, and anchor each value to source evidence. Then we design Search-Oriented Context Management (SOCM), which externalizes the evolving state into Frontier Task, an Evidence Graph, a Coverage Map, and Failure Memory. Built on SOCM, SearchOS applies a pipeline-parallel scheduling mechanism that overlaps the execution of sub-agents and continuously refills freed slots with tasks targeting unresolved coverage gaps to improve utilization and throughput. To schedule and control the execution of search agents, SearchOS introduces a Search Tool Middleware Harness that intercepts model and tool interactions to record grounded evidence and react to stalls or budget exhaustion, and provides a reusable hierarchical skill system comprising strategy and access skills to augment the agents' search process and avoid repeating failed search patterns across runs. On WideSearch and GISA, SearchOS leads all metrics among the evaluated single- and multi-agent baselines, paving the way toward robust information-seeking collaboration.",
+  "summary": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-agent framework that turns fragile, implicit search progress into explicit, persistent, and shared state. First, we formulate open-domain information seeking as relational schema completion with grounded citations, where agents discover entities, populate attributes across linked tables, and anchor each value to source evidence. Then we design Search-Oriented Context Management (SOCM), which externalizes the evolving state into Frontier Task, an Evidence Graph, a Coverage Map, and Failure Memory. Built on SOCM, SearchOS applies a pipeline-parallel scheduling mechanism that overlaps the execution of sub-agents and continuously refills freed slots with tasks targeting unresolved coverage gaps to improve utilization and throughput. To schedule and control the execution of search agents, SearchOS introduces a Search Tool Middleware Harness that intercepts model and tool interactions to record grounded evidence and react to stalls or budget exhaustion, and provides a reusable hierarchical skill system comprising strategy and access skills to augment the agents' search process and avoid repeating failed search patterns across runs. On WideSearch and GISA, SearchOS leads all metrics among the evaluated single- and multi-agent baselines, paving the way toward robust information-seeking collaboration.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "searchos",
+    "v1",
+    "towards",
+    "robust",
+    "open",
+    "domain",
+    "information",
+    "seeking"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 81,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-16T17:51:23.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-17T14:09:52.242Z",
+  "updatedAt": "2026-07-17T14:09:52.261Z"
+},
+{
+  "id": "b22b01a4-e4cb-4e11-8f38-69dff2ca5554",
+  "slug": "secjev-bringing-security-expertise-to-system-one-decision-models-2026-10-05",
+  "title": "SecJev: Bringing Security Expertise to System One Decision Models",
+  "factSummary": "Security workflows need models that turn complex observations and explicit policies into decisions. System One models introduced by Jev return typed predictions and probabilities; security specialization supplies the domain expertise behind those predictions. We introduce SecJev, to our knowledge the first family of Jev-like decision models specialized for security, spanning 0.8B to 9B parameters. Built on Kev's single-pass candidate scorer, SecJev learns Boolean, choice, and ordered decisions from text, telemetry, and observation histories. We develop SecJev-Corpus to unify source-label prediction and explicit-policy evaluation across 14 tasks and eight sources. It covers tool outputs, traffic, federated updates, consensus, authentication, and vehicle messages. Scene-weighted training adapts the models across these domains while preserving a shared typed decision interface. Security specialization improves every model in the family; SecJev-0.8B outperforms general Kev-9B by 20.51 percentage points in task-macro accuracy. Comparisons with answer-only generative fine-tuning show close accuracy and latency with lower peak inference memory. Tests on new source groups reproduce gains over Kev in prompt-injection and traffic decisions, with capture-dependent false alarms. We release adapters, decision heads, SecJev-Corpus, and training and inference code.",
+  "summary": "Security workflows need models that turn complex observations and explicit policies into decisions. System One models introduced by Jev return typed predictions and probabilities; security specialization supplies the domain expertise behind those predictions. We introduce SecJev, to our knowledge the first family of Jev-like decision models specialized for security, spanning 0.8B to 9B parameters. Built on Kev's single-pass candidate scorer, SecJev learns Boolean, choice, and ordered decisions from text, telemetry, and observation histories. We develop SecJev-Corpus to unify source-label prediction and explicit-policy evaluation across 14 tasks and eight sources. It covers tool outputs, traffic, federated updates, consensus, authentication, and vehicle messages. Scene-weighted training adapts the models across these domains while preserving a shared typed decision interface. Security specialization improves every model in the family; SecJev-0.8B outperforms general Kev-9B by 20.51 percentage points in task-macro accuracy. Comparisons with answer-only generative fine-tuning show close accuracy and latency with lower peak inference memory. Tests on new source groups reproduce gains over Kev in prompt-injection and traffic decisions, with capture-dependent false alarms. We release adapters, decision heads, SecJev-Corpus, and training and inference code.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "secjev",
+    "bringing",
+    "security",
+    "expertise",
+    "system",
+    "one",
+    "decision",
+    "models"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 47,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-02T09:57:05.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-05T09:34:06.255Z",
+  "updatedAt": "2026-10-05T09:34:06.302Z"
+},
+{
+  "id": "4c715803-7b6f-4137-912e-f5a7433b1105",
+  "slug": "secure-all-your-internal-vibe-coded-applications-in-one-click-2026-08-15",
+  "title": "Secure all your internal vibe-coded applications — in one click",
+  "factSummary": "Introducing Cloudflare Access for Workers. Attach an Access policy directly to a Worker and it applies everywhere that Worker runs — routes, custom domains, workers.dev, and previews — automatically.",
+  "summary": "Introducing Cloudflare Access for Workers. Attach an Access policy directly to a Worker and it applies everywhere that Worker runs — routes, custom domains, workers.dev, and previews — automatically.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "secure",
+    "all",
+    "your",
+    "internal",
+    "vibe",
+    "coded",
+    "applications",
+    "one"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-14T13:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-15T02:08:54.718Z",
+  "updatedAt": "2026-08-15T02:08:54.763Z"
+},
+{
+  "id": "165a48d4-37d5-408f-b936-9defb7aa766d",
+  "slug": "secure-speculative-decoding-for-large-language-models-2026-10-07",
+  "title": "Secure Speculative Decoding for Large Language Models",
+  "factSummary": "Speculative decoding accelerates inference for a large language model (LLM), referred to as the \\emph{target model}, by first using a smaller model, referred to as the \\emph{draft model}, to generate candidate tokens and then verifying them with the target model for acceptance or rejection. Prior studies primarily focused on the efficiency-utility trade-off of speculative decoding, e.g., lossy speculative decoding, leaving its security implications largely unexplored. In this work, we bridge this gap by providing the \\emph{first} systematic study of the security implications of speculative decoding. Through a large-scale measurement study, we reveal a pronounced security-utility asymmetry: across a wide range of lossy speculative decoding methods, improvements in inference efficiency come at a disproportionately high cost to security, with attack success rates for jailbreak and prompt injection attacks increasing much faster than utility degrades. We then propose SecureSD, a new theory-guided speculative decoding method that enhances security while maintaining efficiency and utility. Specifically, our theoretical analysis reveals that security degradation primarily originates from the early tokens generated by the draft model. Motivated by this insight, SecureSD applies a stricter verification criterion to draft-model tokens at early decoding positions. Extensive experiments on both security and utility benchmarks demonstrate that SecureSD significantly improves security while preserving efficiency and utility compared to existing speculative decoding methods.",
+  "summary": "Speculative decoding accelerates inference for a large language model (LLM), referred to as the \\emph{target model}, by first using a smaller model, referred to as the \\emph{draft model}, to generate candidate tokens and then verifying them with the target model for acceptance or rejection. Prior studies primarily focused on the efficiency-utility trade-off of speculative decoding, e.g., lossy speculative decoding, leaving its security implications largely unexplored. In this work, we bridge this gap by providing the \\emph{first} systematic study of the security implications of speculative decoding. Through a large-scale measurement study, we reveal a pronounced security-utility asymmetry: across a wide range of lossy speculative decoding methods, improvements in inference efficiency come at a disproportionately high cost to security, with attack success rates for jailbreak and prompt injection attacks increasing much faster than utility degrades. We then propose SecureSD, a new theory-guided speculative decoding method that enhances security while maintaining efficiency and utility. Specifically, our theoretical analysis reveals that security degradation primarily originates from the early tokens generated by the draft model. Motivated by this insight, SecureSD applies a stricter verification criterion to draft-model tokens at early decoding positions. Extensive experiments on both security and utility benchmarks demonstrate that SecureSD significantly improves security while preserving efficiency and utility compared to existing speculative decoding methods.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "secure",
+    "speculative",
+    "decoding",
+    "large",
+    "language",
+    "models"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 87,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-06T16:59:37.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-07T06:37:13.603Z",
+  "updatedAt": "2026-10-07T06:37:13.658Z"
+},
+{
+  "id": "b91cede2-bd95-42ee-8a23-20030e9c5038",
+  "slug": "securing-ai-agents-with-temporal-policies-in-amazon-bedrock-agentcore-2026-08-07",
+  "title": "Securing AI agents with temporal policies in Amazon Bedrock AgentCore",
+  "factSummary": "AWS 在 Amazon Bedrock AgentCore 中引入了 temporal policies，允许基于 agent 的会话历史定义有状态规则，用于评估授权。这些策略可用于强制执行工作流顺序、防止数据捏造、限制财务风险敞口，并要求对高价值操作进行人工审批。",
+  "summary": "AWS 在 Amazon Bedrock AgentCore 中引入了 temporal policies，这是一种基于会话历史的有状态授权机制，用于增强 AI agent 的安全性。",
+  "technicalInsight": "Temporal policies 通过利用会话历史实现有状态授权，这标志着从静态权限向动态、上下文感知的安全模型的转变。下一步可观察的信号是这些策略在复杂多步骤工作流中的实际应用效果。",
+  "industryInsight": "该功能反映了 AI agent 安全性的行业趋势，即从简单的身份验证转向基于行为的授权。这可能会推动其他云提供商和 agent 平台采用类似机制。",
+  "futureOutlook": "随着 AI agent 在企业中承担更复杂的任务，temporal policies 可能成为标准安全组件。未来可观察的进展包括与更广泛的合规框架集成，以及跨平台标准化。",
+  "businessValue": "对于企业客户，temporal policies 提供了更强的安全控制，可能加速 AI agent 在金融、医疗等高风险行业的采用。",
+  "category": "agent-security",
+  "company": "Amazon Bedrock AgentCore",
+  "keywords": [
+    "temporal policies",
+    "AI agents",
+    "security",
+    "Amazon Bedrock",
+    "authorization"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 91,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-06T18:57:55.000Z",
+  "publishedAt": "2026-08-07T03:45:23.640Z",
+  "createdAt": "2026-08-07T03:44:44.473Z",
+  "updatedAt": "2026-08-07T03:45:23.640Z"
+},
+{
+  "id": "e7377ac2-ec5d-447a-8b0a-879964f91771",
+  "slug": "securing-quantum-error-correction-against-misleading-advice-from-ai-agents-2026-09-17",
+  "title": "Securing quantum error correction against misleading advice from AI agents",
+  "factSummary": "Can an attacker turn influence over an artificial intelligence (AI) adviser into a harmful quantum error-correction update? We identify an ambiguity in passive syndrome records that obstructs recovery selection, then show how additional calibration measurements support certified recovery updates under uncertainty and drift. In an odd-distance square toric code with error-free preparation, syndrome measurements, and recovery operations, opposite coherent $X$ rotations produce identical passive syndrome-history distributions. Yet a fixed phase correction can help at one sign and harm at the other. A terminal logical measurement on known encoded calibration states supplies the missing sign information. A separate evaluator accepts an update only when calibration uncertainty and a justified drift bound certify improvement over the current recovery, without assuming that the adviser recommends correctly. In simulated advice attacks, calibration-confidence checks reject harmful proposals while retaining beneficial updates under honest advice. We derive sufficient limits on calibration age that require improvement through deployment. In matched simulations, a validated channel-specific bound retains more beneficial updates than the general bound after accounting for evaluation time, while preventing the tested harmful activations under the stated drift assumption. A separate surface-code experiment includes stochastic circuit faults and noise changing during acquisition. Deterministic controllers achieve at least as many beneficial updates with the same observations. Violating the drift assumption permits harmful acceptance in the toric experiment. The results identify information required for recovery selection, establish conditional guarantees against harmful updates, and quantify the recovery improvements forgone through conservative acceptance.",
+  "summary": "Can an attacker turn influence over an artificial intelligence (AI) adviser into a harmful quantum error-correction update? We identify an ambiguity in passive syndrome records that obstructs recovery selection, then show how additional calibration measurements support certified recovery updates under uncertainty and drift. In an odd-distance square toric code with error-free preparation, syndrome measurements, and recovery operations, opposite coherent $X$ rotations produce identical passive syndrome-history distributions. Yet a fixed phase correction can help at one sign and harm at the other. A terminal logical measurement on known encoded calibration states supplies the missing sign information. A separate evaluator accepts an update only when calibration uncertainty and a justified drift bound certify improvement over the current recovery, without assuming that the adviser recommends correctly. In simulated advice attacks, calibration-confidence checks reject harmful proposals while retaining beneficial updates under honest advice. We derive sufficient limits on calibration age that require improvement through deployment. In matched simulations, a validated channel-specific bound retains more beneficial updates than the general bound after accounting for evaluation time, while preventing the tested harmful activations under the stated drift assumption. A separate surface-code experiment includes stochastic circuit faults and noise changing during acquisition. Deterministic controllers achieve at least as many beneficial updates with the same observations. Violating the drift assumption permits harmful acceptance in the toric experiment. The results identify information required for recovery selection, establish conditional guarantees against harmful updates, and quantify the recovery improvements forgone through conservative acceptance.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "securing",
+    "quantum",
+    "error",
+    "correction",
+    "against",
+    "misleading",
+    "advice",
+    "from"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 88,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-16T17:26:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-17T05:32:40.340Z",
+  "updatedAt": "2026-09-17T05:32:40.372Z"
+},
+{
+  "id": "5e7f8280-7310-4a45-886f-747486d3e860",
+  "slug": "security-and-privacy-taxonomy-generation-from-mobile-app-reviews-2026-08-11",
+  "title": "Security and Privacy Taxonomy Generation from Mobile App Reviews",
+  "factSummary": "Mobile app reviews are a rich, continuously renewing source of how users experience privacy and security, yet existing taxonomies of these concerns are hand-crafted and cannot keep pace with the evolving nature of the data. Automating taxonomy construction is the natural response, but scalability is the core challenge: current LLM- and clustering-based methods are developed for scientific corpora of a few thousand documents and do not extend to app review collections numbering in the hundreds of thousands. We address this gap in two ways. First, we filter app reviews for privacy- and security-related content, yielding a comprehensive corpus of over 600K reviews. Second, we introduce TaxoScale, a pipeline that handles taxonomy construction at this scale by extending an expert-defined taxonomy via Recursive Hierarchical Clustering and LLM-based node naming. TaxoScale outperforms strong automatic-taxonomy baselines on path, level, coverage, and novelty metrics, and discovers novel branches absent from prior taxonomies.",
+  "summary": "Mobile app reviews are a rich, continuously renewing source of how users experience privacy and security, yet existing taxonomies of these concerns are hand-crafted and cannot keep pace with the evolving nature of the data. Automating taxonomy construction is the natural response, but scalability is the core challenge: current LLM- and clustering-based methods are developed for scientific corpora of a few thousand documents and do not extend to app review collections numbering in the hundreds of thousands. We address this gap in two ways. First, we filter app reviews for privacy- and security-related content, yielding a comprehensive corpus of over 600K reviews. Second, we introduce TaxoScale, a pipeline that handles taxonomy construction at this scale by extending an expert-defined taxonomy via Recursive Hierarchical Clustering and LLM-based node naming. TaxoScale outperforms strong automatic-taxonomy baselines on path, level, coverage, and novelty metrics, and discovers novel branches absent from prior taxonomies.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "security",
+    "privacy",
+    "taxonomy",
+    "generation",
+    "from",
+    "mobile",
+    "app",
+    "reviews"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-10T02:55:24.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-11T02:58:41.501Z",
+  "updatedAt": "2026-08-11T02:58:41.538Z"
+},
+{
+  "id": "8e958805-faba-4a87-af76-730601b0493e",
+  "slug": "see-like-a-robot-robot-centric-pointmaps-for-vision-language-action-models-2026-07-14",
+  "title": "See like a Robot: Robot-Centric Pointmaps for Vision-Language-Action Models",
+  "factSummary": "Vision-language-action (VLA) models predict robot actions from visual observations and language instructions. These actions are defined in the robot's own 3D coordinate frame, yet most VLAs observe the scene in the camera frame, creating a frame mismatch between where the scene is observed and where actions are defined. The mismatch is benign under a fixed viewpoint, where the policy can memorize a single observation-to-action mapping, but grows harder as large-scale datasets aggregate demonstrations across diverse camera setups and the policy must generalize this mapping across viewpoints. We address this mismatch with robot-centric pointmaps, images whose pixels store the 3D coordinates of scene points in the robot frame. Pointmaps provide robot-frame 3D geometry while preserving the dense H x W grid expected by pretrained 2D VLAs, so they integrate into existing VLAs with minimal architectural change. On RoboCasa, pointmaps improve both pi0.5 and SmolVLA and outperform representative camera-viewpoint and 3D-aware baselines. In real-robot experiments, their advantage over an RGB-only policy widens when the camera is moved to a placement unseen during training.",
+  "summary": "Vision-language-action (VLA) models predict robot actions from visual observations and language instructions. These actions are defined in the robot's own 3D coordinate frame, yet most VLAs observe the scene in the camera frame, creating a frame mismatch between where the scene is observed and where actions are defined. The mismatch is benign under a fixed viewpoint, where the policy can memorize a single observation-to-action mapping, but grows harder as large-scale datasets aggregate demonstrations across diverse camera setups and the policy must generalize this mapping across viewpoints. We address this mismatch with robot-centric pointmaps, images whose pixels store the 3D coordinates of scene points in the robot frame. Pointmaps provide robot-frame 3D geometry while preserving the dense H x W grid expected by pretrained 2D VLAs, so they integrate into existing VLAs with minimal architectural change. On RoboCasa, pointmaps improve both pi0.5 and SmolVLA and outperform representative camera-viewpoint and 3D-aware baselines. In real-robot experiments, their advantage over an RGB-only policy widens when the camera is moved to a placement unseen during training.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "see",
+    "like",
+    "robot",
+    "centric",
+    "pointmaps",
+    "vision",
+    "language",
+    "action"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-13T12:50:32.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-14T03:11:52.013Z",
+  "updatedAt": "2026-07-14T03:11:52.035Z"
+},
+{
+  "id": "467756b9-ee96-436e-84be-05b46b612a88",
+  "slug": "see-to-reach-feel-to-grasp-learning-a-blind-grasp-reflex-for-anthropomorphic-robotic-hands-2026-09-28",
+  "title": "See to Reach, Feel to Grasp: Learning A Blind Grasp Reflex for Anthropomorphic Robotic Hands",
+  "factSummary": "In this work we study if a robotic hand using proprioception alone can grasp diverse objects with no visual observation. We present a modular dexterous grasping architecture that separates global arm motion from local contact control. An independently controlled arm guides the hand toward the object, while a reinforcement learning policy grasps and stabilizes it using only hand proprioceptive feedback. We call this \\textit{a blind grasp reflex}: grasping without images, object poses, or geometric observations. A learned stable-grasp score determines when the object is securely held, allowing the arm to begin post-grasp manipulation. This separation makes grasping a reusable hand-level skill that can be combined with independently designed arm controllers for various manipulation tasks. Experiments in simulation and on hardware demonstrate robust blind grasping across diverse objects and seamless composition with a range of arm controllers. Moreover, despite never observing contact geometry, the learned grasp score closely aligns with an independent physics-based measure of grasp stability. The resulting approach follows a simple principle: see to reach, feel to grasp. Project page: https://blindgraspreflex.github.io.",
+  "summary": "In this work we study if a robotic hand using proprioception alone can grasp diverse objects with no visual observation. We present a modular dexterous grasping architecture that separates global arm motion from local contact control. An independently controlled arm guides the hand toward the object, while a reinforcement learning policy grasps and stabilizes it using only hand proprioceptive feedback. We call this \\textit{a blind grasp reflex}: grasping without images, object poses, or geometric observations. A learned stable-grasp score determines when the object is securely held, allowing the arm to begin post-grasp manipulation. This separation makes grasping a reusable hand-level skill that can be combined with independently designed arm controllers for various manipulation tasks. Experiments in simulation and on hardware demonstrate robust blind grasping across diverse objects and seamless composition with a range of arm controllers. Moreover, despite never observing contact geometry, the learned grasp score closely aligns with an independent physics-based measure of grasp stability. The resulting approach follows a simple principle: see to reach, feel to grasp. Project page: https://blindgraspreflex.github.io.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "see",
+    "reach",
+    "feel",
+    "grasp",
+    "learning",
+    "blind",
+    "reflex",
+    "anthropomorphic"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T14:27:54.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T05:59:55.565Z",
+  "updatedAt": "2026-09-28T05:59:55.614Z"
+},
+{
+  "id": "68d067df-5608-4c29-8b9b-74b3f20d37ff",
+  "slug": "see2think-do-multimodal-models-really-use-intermediate-visual-states-2026-07-30",
+  "title": "See2Think: Do Multimodal Models Really Use Intermediate Visual States?",
+  "factSummary": "Multimodal large language models increasingly use sketches, annotations, tools, and intermediate images during reasoning, but it remains unclear whether they truly rely on these visual states. Existing benchmarks are limited both by task collections with narrow coverage or partially text-solvable samples and by evaluations that emphasize final answers without diagnosing how intermediate visual states are generated, rendered, and used. We introduce See2Think, a unified evaluation framework comprising See2ThinkBench and Visual Action-of-Thought (VAoT). See2ThinkBench contains 1,200 open-ended, visually dependent problems across 12 task categories spanning 2D structured, 3D scene, and real-world reasoning. VAoT records textual thoughts, visual actions, rendered states, and subsequent reasoning under four controlled inference settings. Evaluating representative proprietary and open-source multimodal models, we find that visual reasoning is strongly model- and environment-dependent, with no single setting consistently dominating across tasks. Process analysis further shows that models usually select relevant visual operations, while faithful rendering remains the clearest bottleneck and high feedback uptake does not necessarily translate into accuracy gains. Under task-relevant corrupted feedback, models exhibit behavioral dependence on visual states, with accuracy dropping by over 10 percentage points in controlled interventions.",
+  "summary": "Multimodal large language models increasingly use sketches, annotations, tools, and intermediate images during reasoning, but it remains unclear whether they truly rely on these visual states. Existing benchmarks are limited both by task collections with narrow coverage or partially text-solvable samples and by evaluations that emphasize final answers without diagnosing how intermediate visual states are generated, rendered, and used. We introduce See2Think, a unified evaluation framework comprising See2ThinkBench and Visual Action-of-Thought (VAoT). See2ThinkBench contains 1,200 open-ended, visually dependent problems across 12 task categories spanning 2D structured, 3D scene, and real-world reasoning. VAoT records textual thoughts, visual actions, rendered states, and subsequent reasoning under four controlled inference settings. Evaluating representative proprietary and open-source multimodal models, we find that visual reasoning is strongly model- and environment-dependent, with no single setting consistently dominating across tasks. Process analysis further shows that models usually select relevant visual operations, while faithful rendering remains the clearest bottleneck and high feedback uptake does not necessarily translate into accuracy gains. Under task-relevant corrupted feedback, models exhibit behavioral dependence on visual states, with accuracy dropping by over 10 percentage points in controlled interventions.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "see2think",
+    "do",
+    "multimodal",
+    "models",
+    "really",
+    "use",
+    "intermediate",
+    "visual"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 84,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-29T11:10:34.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-07-30T03:51:13.654Z",
+  "updatedAt": "2026-07-30T03:51:13.684Z"
+},
+{
+  "id": "aeb41f5f-723b-474a-a979-b5089e44aca4",
+  "slug": "seed-2-general-agent-models",
+  "title": "Seed 2.0 发布：字节把多模态理解与长时 Agent 推进生产部署",
+  "factSummary": "字节跳动 Seed 团队于 2026 年 2 月发布 Seed 2.0 Pro、Lite 与 Mini 三档通用 Agent 模型。",
+  "summary": "字节在豆包产品之外，进一步公开完整模型系列和技术路线，并把多模态、推理和长时任务组织为不同成本层级的服务。",
+  "technicalInsight": "Seed 2.0 系列覆盖复杂工作流、高并发和轻量部署，强调动态视觉理解、交互式应用生成与研究级任务处理。",
+  "industryInsight": "拥有消费级分发和内容业务的大厂正在把内部模型能力转成开发者与企业供给，模型、云服务和产品数据形成联动。",
+  "futureOutlook": "观察 API 开放范围、外部开发者采用、长时任务轨迹、成本和与豆包产品的能力同步。",
+  "businessValue": "评估字节模型时应拆分模型本身、火山引擎交付和豆包分发三层价值，避免把内部应用规模等同外部 API 留存。",
+  "category": "model-release",
+  "company": "字节跳动 Seed / 豆包",
+  "keywords": [
+    "字节跳动",
+    "ByteDance",
+    "Seed",
+    "Seed 2.0",
+    "豆包",
+    "Doubao"
+  ],
+  "confidenceScore": 99,
+  "heatScore": 0,
+  "impactScore": 93,
+  "valueScore": 93,
+  "scoreFactors": {
+    "authority": 99,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 1,
+    "velocity": 0,
+    "freshness": 70,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 1,
+  "happenedAt": "2026-02-14T00:00:00.000Z",
+  "publishedAt": "2026-02-14T00:00:00.000Z",
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
+},
+{
+  "id": "9e380304-8187-4eca-8092-90dc5ca01eaf",
+  "slug": "seeds-before-objectives-rethinking-evaluation-for-low-resource-garhwali-asr-2026-08-12",
+  "title": "Seeds Before Objectives: Rethinking Evaluation for Low-Resource Garhwali ASR",
+  "factSummary": "At corpus sizes typical of low-resource dialects, single-run comparisons can yield gains that do not replicate. We show this for Garhwali, an under-resourced Indo-Aryan language of the central Himalaya, building the first reproducible multi-seed ASR benchmark on the official VAANI splits, with per-seed outputs and significance testing. Re-examining plausible gains, we find them fragile: neither Focal CTC nor a matra-weighted objective beats standard CTC under seed-level testing, the matra objective fails to cut even its targeted errors, and Hindi-to-Garhwali transfer gives no gain over direct fine-tuning. What holds up is mundane: w2v-BERT 2.0 with standard CTC reaches 47.0% WER over five seeds, beating the larger MMS-1B and comparable models; pretraining design, not parameter count, drives performance, and speed augmentation gives a small, largely consistent gain. Multi-seed evaluation on official splits separates real gains from seed noise.",
+  "summary": "At corpus sizes typical of low-resource dialects, single-run comparisons can yield gains that do not replicate. We show this for Garhwali, an under-resourced Indo-Aryan language of the central Himalaya, building the first reproducible multi-seed ASR benchmark on the official VAANI splits, with per-seed outputs and significance testing. Re-examining plausible gains, we find them fragile: neither Focal CTC nor a matra-weighted objective beats standard CTC under seed-level testing, the matra objective fails to cut even its targeted errors, and Hindi-to-Garhwali transfer gives no gain over direct fine-tuning. What holds up is mundane: w2v-BERT 2.0 with standard CTC reaches 47.0% WER over five seeds, beating the larger MMS-1B and comparable models; pretraining design, not parameter count, drives performance, and speed augmentation gives a small, largely consistent gain. Multi-seed evaluation on official splits separates real gains from seed noise.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "seeds",
+    "before",
+    "objectives",
+    "rethinking",
+    "evaluation",
+    "low",
+    "resource",
+    "garhwali"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 83,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-11T08:51:57.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-12T03:17:46.837Z",
+  "updatedAt": "2026-08-12T03:17:46.881Z"
+},
+{
+  "id": "5a5feeb7-65ce-4cb8-bc9d-3e244a34e336",
+  "slug": "seeing-is-free-speaking-is-not-uncovering-the-true-energy-bottleneck-in-edge-vlm-inference-2026-07-13",
+  "title": "Seeing is Free, Speaking is Not: Uncovering the True Energy Bottleneck in Edge VLM Inference",
+  "factSummary": "一篇 arXiv 论文（2607.09520v1）于 2026-07-10 发布，研究边缘设备上视觉语言模型（VLM）的能耗瓶颈，发现视觉处理并非主要能耗来源，而语言生成（解码）才是真正的能耗瓶颈。",
+  "summary": "该论文通过实验测量边缘硬件上 VLM 的能耗，推翻了“视觉 token 处理是主要能耗”的常见假设，指出语言解码阶段消耗了大部分能量。",
+  "technicalInsight": "VLM 在边缘设备上的能耗优化重点应从减少视觉 token 转向优化语言解码过程，例如通过更高效的解码架构或硬件加速。",
+  "industryInsight": "这一发现可能影响边缘 AI 芯片设计，促使厂商在语言解码单元上投入更多资源，而非仅关注视觉处理。",
+  "futureOutlook": "未来可能出现针对边缘 VLM 语言解码的专用硬件或算法优化，如稀疏解码或量化技术。",
+  "businessValue": "对于边缘 AI 设备制造商和 VLM 部署方，该发现有助于更精准地分配能效优化资源，降低整体功耗，延长设备续航。",
+  "category": "research-paper",
+  "company": "Seeing is Free, Speaking is Not: Uncovering the True Energy Bottleneck in Edge VLM Inference",
+  "keywords": [
+    "VLM",
+    "edge inference",
+    "energy bottleneck",
+    "language decoding",
+    "vision-language model"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 54,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-10T15:31:06.000Z",
+  "publishedAt": "2026-07-14T12:51:01.320Z",
+  "createdAt": "2026-07-13T02:12:41.349Z",
+  "updatedAt": "2026-07-14T12:51:01.320Z"
+},
+{
+  "id": "18bf5993-7e32-4b2b-8b1c-438efbeb0a2b",
+  "slug": "seeing-red-thinking-bad-color-bias-in-vision-language-models-2026-08-17",
+  "title": "Seeing Red, Thinking Bad: Color Bias in Vision Language Models",
+  "factSummary": "Vision language models (VLMs) are increasingly used in industrial decision-making systems, such as recruitment support and recommendation. This motivates careful analysis of how VLMs process visual and textual information. In this work, we study how VLMs interpret text rendered as an image, and investigate the influence of visual styling biases. To this end, we introduce Stealth Visual Prompts, which subtly change visual styling of text, such as color and contrast, while preserving semantic content. Using these prompts, we systematically control the visual styling of words in text and measure their impact on the analysis performed by VLMs. We further analyze how such visual perturbations affect the latent representations of the vision encoder. From our experiments, we observed that coloring positive words in green consistently shifts sentiment predictions toward a positive direction. As a result, VLMs often fail to properly account for negative words present in the text. Our analysis suggests that this behavior is correlated with changes in the latent representations of the vision encoder induced by color variations. In addition, we show that reducing text--background contrast increases reliance on visually salient cues and leads to more incorrect Visual Question Answering (VQA) outputs. These results suggest that the visual styling of rendered text can guide VLMs' interpretation in ways that diverge from human semantic understanding. Project page: https://github.com/KohsukeIde/color-bias-vlm",
+  "summary": "Vision language models (VLMs) are increasingly used in industrial decision-making systems, such as recruitment support and recommendation. This motivates careful analysis of how VLMs process visual and textual information. In this work, we study how VLMs interpret text rendered as an image, and investigate the influence of visual styling biases. To this end, we introduce Stealth Visual Prompts, which subtly change visual styling of text, such as color and contrast, while preserving semantic content. Using these prompts, we systematically control the visual styling of words in text and measure their impact on the analysis performed by VLMs. We further analyze how such visual perturbations affect the latent representations of the vision encoder. From our experiments, we observed that coloring positive words in green consistently shifts sentiment predictions toward a positive direction. As a result, VLMs often fail to properly account for negative words present in the text. Our analysis suggests that this behavior is correlated with changes in the latent representations of the vision encoder induced by color variations. In addition, we show that reducing text--background contrast increases reliance on visually salient cues and leads to more incorrect Visual Question Answering (VQA) outputs. These results suggest that the visual styling of rendered text can guide VLMs' interpretation in ways that diverge from human semantic understanding. Project page: https://github.com/KohsukeIde/color-bias-vlm",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "seeing",
+    "red",
+    "thinking",
+    "bad",
+    "color",
+    "bias",
+    "vision",
+    "language"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 53,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-08-14T13:14:58.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-17T02:14:08.884Z",
+  "updatedAt": "2026-08-17T02:14:08.928Z"
+},
+{
+  "id": "19ec1718-3a19-46d8-9900-ff414873252b",
+  "slug": "seeing-what-matters-visual-cue-guided-video-planning-for-generalizable-robot-navigation-2026-09-16",
+  "title": "Seeing What Matters: Visual Cue Guided Video Planning for Generalizable Robot Navigation",
+  "factSummary": "Generative video models can serve as a promising backbone for robot navigation by predicting future observations as video plans. Recent approaches often condition video planning on short-horizon guidance and recover geometric waypoints through scene reconstruction, leaving longer-horizon planning and precise video-to-action translation less explored. We present CueNav, a video model-based navigation framework combining visual cue guided video planning with an embodiment-specific Inverse-Dynamics Model (IDM). As visual cues, we use a Bird's-Eye View (BEV) map to convey global task context and retain part of the robot body in the egocentric observation to expose embodiment context. These cues guide the video planner, while the IDM translates dense flow fields extracted from the video plan into robot actions. With the visual cue encoding global task context, CueNav achieves nearly 2x higher success in maze navigation than planning without the cue. The body-aware view with the IDM enables precise navigation with 70% success in a narrow passage where comparison methods largely fail to complete the task. We further demonstrate zero-shot semantic-conditioned navigation and deployment of the same video planner across different robot platforms. Our results show that visual cue-guided video planning with embodiment-specific action grounding paves the way toward a generalizable navigation framework for longer-horizon planning and embodiment-aware control. Additional results and code are available on our project website: https://cuenav.github.io.",
+  "summary": "Generative video models can serve as a promising backbone for robot navigation by predicting future observations as video plans. Recent approaches often condition video planning on short-horizon guidance and recover geometric waypoints through scene reconstruction, leaving longer-horizon planning and precise video-to-action translation less explored. We present CueNav, a video model-based navigation framework combining visual cue guided video planning with an embodiment-specific Inverse-Dynamics Model (IDM). As visual cues, we use a Bird's-Eye View (BEV) map to convey global task context and retain part of the robot body in the egocentric observation to expose embodiment context. These cues guide the video planner, while the IDM translates dense flow fields extracted from the video plan into robot actions. With the visual cue encoding global task context, CueNav achieves nearly 2x higher success in maze navigation than planning without the cue. The body-aware view with the IDM enables precise navigation with 70% success in a narrow passage where comparison methods largely fail to complete the task. We further demonstrate zero-shot semantic-conditioned navigation and deployment of the same video planner across different robot platforms. Our results show that visual cue-guided video planning with embodiment-specific action grounding paves the way toward a generalizable navigation framework for longer-horizon planning and embodiment-aware control. Additional results and code are available on our project website: https://cuenav.github.io.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "seeing",
+    "what",
+    "matters",
+    "visual",
+    "cue",
+    "guided",
+    "video",
+    "planning"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 55,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 71,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-15T07:11:21.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-16T15:45:10.656Z",
+  "updatedAt": "2026-09-16T15:45:10.680Z"
+},
+{
+  "id": "9142b01f-e8dc-4fb8-8610-342a17af8968",
+  "slug": "seekbrain-an-autonomous-multi-agent-system-for-accelerating-neuroscience-discovery-2026-08-03",
+  "title": "SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery",
+  "factSummary": "Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic planning and execution engines, the framework scalably generates hypotheses and analytical pipelines on demand. Systematic evaluation on the expert-annotated BrainArena benchmark demonstrates that SeekBrain substantially outperforms state-of-the-art agent baselines across various analysis tasks. Crucially, when deployed in real-world research, SeekBrain integrated behavioral, neural, and anatomical data to reveal structured, distributed neural representations of larval zebrafish behavior and a shared axis of regional decoding strength across the brain in a mouse decision-making task. These results establish SeekBrain as a scalable and practical tool for accelerating data-driven discoveries in neuroscience.",
+  "summary": "Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic planning and execution engines, the framework scalably generates hypotheses and analytical pipelines on demand. Systematic evaluation on the expert-annotated BrainArena benchmark demonstrates that SeekBrain substantially outperforms state-of-the-art agent baselines across various analysis tasks. Crucially, when deployed in real-world research, SeekBrain integrated behavioral, neural, and anatomical data to reveal structured, distributed neural representations of larval zebrafish behavior and a shared axis of regional decoding strength across the brain in a mouse decision-making task. These results establish SeekBrain as a scalable and practical tool for accelerating data-driven discoveries in neuroscience.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "seekbrain",
+    "autonomous",
+    "multi",
+    "agent",
+    "system",
+    "accelerating",
+    "neuroscience",
+    "discovery"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 51,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-07-31T12:30:12.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-08-03T04:25:37.645Z",
+  "updatedAt": "2026-08-03T04:25:37.686Z"
+},
+{
+  "id": "dbc73683-9198-4ac1-9e6a-83d124ff178f",
+  "slug": "seeq-training-generalist-value-functions-for-long-horizon-robotic-manipulation-2026-09-21",
+  "title": "SeeQ: Training Generalist Value Functions for Long-Horizon Robotic Manipulation",
+  "factSummary": "SeeQ（Subtask-elicited Q-functions）是一种面向长时程机器人操作的价值函数训练方法。它针对通用机器人策略在多阶段或需反复尝试的长时程任务上表现脆弱的问题，改为学习当前活跃子任务的 Q 值，从而缩短价值预测时程，使时序差分（TD）目标下的学习更有效。训练时利用离线机器人数据中已有的子任务级标注获得任务分解，并可从广泛、可能次优的机器人数据集中学习。为在测试时免除人工标注或模块化子任务预测系统，其 Q 函数架构被训练为先以自然语言自回归预测活跃子任务，再估计其价值。SeeQ 基于视觉-语言骨干网络实例化，并在多样化的开源机器人数据上预训练。",
+  "summary": "arXiv cs.RO 收录的 SeeQ 提出以子任务级 Q 函数替代任务级稀疏奖励下的长时程价值学习：训练阶段借助离线数据中的子任务标注完成分解，测试阶段由模型自回归用自然语言预测当前子任务再估值，从而避免人工标注与模块化子任务预测器。该方法基于视觉-语言骨干并在多样化开源机器人数据上预训练。",
+  "technicalInsight": "从证据看，SeeQ 的核心判断是：把价值预测的时程从任务级压缩到子任务级，可缓解稀疏任务级奖励带来的长信用分配与 Bellman 备份困难，并降低对数据覆盖的要求。其自回归预测活跃子任务的设计，意在把子任务分解能力内化进单一 Q 函数，而非依赖外部模块。可验证的下一信号：论文是否给出与任务级 Q 函数基线在长时程操作基准上的量化对比，以及测试时子任务预测的准确率。",
+  "industryInsight": "若该方法成立，其意义在于把离线机器人数据中已有的子任务标注转化为可复用的价值学习信号，这可能降低长时程操作策略改进对高质量人工标注与在线交互的依赖。但证据仅为一篇论文摘要，尚无产品化、采用或成本数据支撑，因此不宜推断产业格局变化。可验证的下一信号：是否有团队在公开机器人数据集或真实平台上复现并报告成功率提升。",
+  "futureOutlook": "后续值得观察的是 SeeQ 在真实长时程操作任务上的泛化表现，以及自然语言子任务预测在分布外场景下是否稳定。可验证的下一信号：论文发布代码或模型权重，并出现第三方在标准长时程操作基准上的独立评测结果。",
+  "businessValue": "潜在价值方向是减少机器人策略训练中对人工子任务标注与模块化流水线的工程投入，从而影响数据标注与策略训练环节的成本结构。但当前证据未提供任何成本、效率或商业采用数据，该判断仅为方向性推断。可验证的下一信号：出现基于该方法的开源实现被下游团队集成，或相关数据集与工具链的采用记录。",
+  "category": "robot-value-function-learning",
+  "company": "SeeQ",
+  "keywords": [
+    "SeeQ",
+    "Q-function",
+    "long-horizon manipulation",
+    "subtask decomposition",
+    "temporal-difference learning",
+    "vision-language backbone",
+    "offline robot data"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 52,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 54,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-18T17:59:47.000Z",
+  "publishedAt": "2026-09-21T05:37:14.698Z",
+  "createdAt": "2026-09-21T05:36:22.462Z",
+  "updatedAt": "2026-09-21T05:37:14.698Z"
+},
+{
+  "id": "cdffd8a3-881c-4c9c-8b13-105d5492aba9",
+  "slug": "segment-level-agentic-topic-modeling-for-improved-data-exploration-and-resource-efficiency-2026-09-28",
+  "title": "Segment-Level Agentic Topic Modeling for Improved Data Exploration and Resource Efficiency",
+  "factSummary": "Topic modeling is an effective technique for discovering hidden themes within documents and is widely used in text mining and data analysis across a variety of industry sectors. Recently, large language model (LLM)-based topic models have been emerged that prompt LLMs to generate topics then assign the topics to documents, producing more natural and human-readable topics than conventional topic modeling algorithms. However, the nature of topic assignment process causes certain drawbacks, such as the incapability to produce topic distributions over a document, too broad or narrow topics, and high resource consumption, which increases with the number and length of of documents being assigned topics. These issues are particularly critical for industrial applications, which require high-quality, in-depth analysis and the processing of large volumes of documents. In this context, this paper introduces a framework called SeLATM, which addresses these concerns by employing segment-level topic generation and topic refinement through agentic feedback loops. Experimental results on various datasets demonstrate that SeLATM significantly reduces the LLM resources compared to methods based on topic assignment process, while maintaining superior performance.",
+  "summary": "Topic modeling is an effective technique for discovering hidden themes within documents and is widely used in text mining and data analysis across a variety of industry sectors. Recently, large language model (LLM)-based topic models have been emerged that prompt LLMs to generate topics then assign the topics to documents, producing more natural and human-readable topics than conventional topic modeling algorithms. However, the nature of topic assignment process causes certain drawbacks, such as the incapability to produce topic distributions over a document, too broad or narrow topics, and high resource consumption, which increases with the number and length of of documents being assigned topics. These issues are particularly critical for industrial applications, which require high-quality, in-depth analysis and the processing of large volumes of documents. In this context, this paper introduces a framework called SeLATM, which addresses these concerns by employing segment-level topic generation and topic refinement through agentic feedback loops. Experimental results on various datasets demonstrate that SeLATM significantly reduces the LLM resources compared to methods based on topic assignment process, while maintaining superior performance.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "segment",
+    "level",
+    "agentic",
+    "topic",
+    "modeling",
+    "improved",
+    "data",
+    "exploration"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 53,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-25T16:11:42.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-28T05:59:53.646Z",
+  "updatedAt": "2026-09-28T05:59:53.696Z"
+},
+{
+  "id": "7eae9e05-61f6-4a92-8850-63ad142508f7",
+  "slug": "selectarena-a-modern-benchmark-for-feature-selection-on-real-world-tabular-data-2026-10-12",
+  "title": "SelectArena: A Modern Benchmark for Feature Selection on Real-world Tabular Data",
+  "factSummary": "Selecting a subset of features (columns) from a tabular dataset is a ubiquitous challenge in real-world applications. Industry experts seek to minimize model training costs, climate scientists require an interpretable subset of factors to understand extreme weather events, and clinicians need to choose among diagnostic tests due to financial and time constraints. When looking at the scientific literature to determine which feature selection method to use, practitioners across domains face an unrepresentative landscape of benchmarking. Despite extensive research, existing feature selection benchmarks provide limited guidance because they rely on outdated models, ad hoc evaluation protocols, or artificially generated data that do not reflect real-world problems. To close the gap between scientific benchmarking and real-world applications, we introduce SelectArena, a modern benchmark for feature selection. We compare 15 widely used feature selection methods on 71 manually curated real-world tabular datasets, covering classification and regression problems, using standardized evaluation protocols and state-of-the-art tabular (foundation) models. Our results reveal clear trade-offs across predictive performance, runtime, stability, and validity. Tree-based methods, CART and RFImportance, along with F-Test are Pareto-optimal when taking into account predictive performance and runtime. F-Test, information-theory-, and distance-based methods lead on stability and validity, with F-Test emerging as a balanced choice across our metrics. Search-based methods are slow, unstable and achieve low performance. SelectArena turns these findings into practical guidance and, as an extensible platform, supports future feature selection research.",
+  "summary": "Selecting a subset of features (columns) from a tabular dataset is a ubiquitous challenge in real-world applications. Industry experts seek to minimize model training costs, climate scientists require an interpretable subset of factors to understand extreme weather events, and clinicians need to choose among diagnostic tests due to financial and time constraints. When looking at the scientific literature to determine which feature selection method to use, practitioners across domains face an unrepresentative landscape of benchmarking. Despite extensive research, existing feature selection benchmarks provide limited guidance because they rely on outdated models, ad hoc evaluation protocols, or artificially generated data that do not reflect real-world problems. To close the gap between scientific benchmarking and real-world applications, we introduce SelectArena, a modern benchmark for feature selection. We compare 15 widely used feature selection methods on 71 manually curated real-world tabular datasets, covering classification and regression problems, using standardized evaluation protocols and state-of-the-art tabular (foundation) models. Our results reveal clear trade-offs across predictive performance, runtime, stability, and validity. Tree-based methods, CART and RFImportance, along with F-Test are Pareto-optimal when taking into account predictive performance and runtime. F-Test, information-theory-, and distance-based methods lead on stability and validity, with F-Test emerging as a balanced choice across our metrics. Search-based methods are slow, unstable and achieve low performance. SelectArena turns these findings into practical guidance and, as an extensible platform, supports future feature selection research.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "selectarena",
+    "modern",
+    "benchmark",
+    "feature",
+    "selection",
+    "real",
+    "world",
+    "tabular"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 51,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-09T14:21:47.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-12T06:40:20.340Z",
+  "updatedAt": "2026-10-12T06:40:20.402Z"
+},
+{
+  "id": "ae9de35a-9201-46c0-a169-8d638a5f9f58",
+  "slug": "selected-models-in-github-copilot-deprecated-2026-10-05",
+  "title": "Selected models in GitHub Copilot deprecated",
+  "factSummary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model&#8230; The post Selected models in GitHub Copilot deprecated appeared first on The GitHub Blog .",
+  "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model&#8230; The post Selected models in GitHub Copilot deprecated appeared first on The GitHub Blog .",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "selected",
+    "models",
+    "github",
+    "copilot",
+    "deprecated"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 19,
+  "impactScore": 55,
+  "valueScore": 51,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 52,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-02T18:24:19.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-05T09:33:58.253Z",
+  "updatedAt": "2026-10-05T09:33:58.299Z"
+},
+{
+  "id": "c7436134-92d7-410f-9600-a80c857b88c0",
+  "slug": "selecting-a-vector-store-for-amazon-bedrock-knowledge-bases-2026-09-17",
+  "title": "Selecting a vector store for Amazon Bedrock Knowledge Bases",
+  "factSummary": "AWS Machine Learning Blog 发布文章，讨论为 Amazon Bedrock Knowledge Bases 的 RAG 应用选择向量存储。文章比较了 Amazon OpenSearch Service、Amazon Aurora PostgreSQL with pgvector 和 Amazon S3 Vectors，覆盖三种 RAG 用例，并给出基准测试与选择框架。",
+  "summary": "AWS 官方博客发布向量存储选型指南，面向 Amazon Bedrock Knowledge Bases 的 RAG 应用，对比 Amazon OpenSearch Service、Amazon Aurora PostgreSQL with pgvector 与 Amazon S3 Vectors，并附带基准测试和实用选择框架。",
+  "technicalInsight": "文章将选型问题拆解为三类 RAG 用例并给出基准，说明向量存储的性能与成本权衡高度依赖具体负载而非单一最优解；可验证的下一信号是 AWS 是否公开基准的测试条件、数据集规模与延迟/成本口径。",
+  "industryInsight": "云厂商正把 RAG 基础设施的选型责任前移给应用方，通过官方对比内容降低采用门槛，这有利于其托管向量服务组合的整体渗透；可验证的下一信号是后续是否出现针对这些组合的定价或托管能力调整。",
+  "futureOutlook": "若此类选型框架被广泛引用，向量存储竞争可能从单一产品性能转向与 Bedrock 等模型平台的集成深度；可验证的下一信号是其他云厂商或向量数据库厂商是否发布可对照的同类基准。",
+  "businessValue": "对构建 RAG 应用的团队，该文提供了在 AWS 生态内按用例权衡性能与成本的参考路径，可减少选型试错；其价值取决于基准是否可复现，建议以自身负载复测后再做采购或架构决策。",
+  "category": "rag-vector-store-selection",
+  "company": "Amazon Bedrock Knowledge Bases",
+  "keywords": [
+    "Amazon Bedrock Knowledge Bases",
+    "向量存储",
+    "RAG",
+    "Amazon OpenSearch Service",
+    "Amazon Aurora PostgreSQL",
+    "pgvector",
+    "Amazon S3 Vectors",
+    "基准测试"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 99,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-17T15:53:13.000Z",
+  "publishedAt": "2026-09-17T17:09:48.449Z",
+  "createdAt": "2026-09-17T17:09:06.016Z",
+  "updatedAt": "2026-09-17T17:09:48.449Z"
+},
+{
+  "id": "4d3ca1e6-1330-49ec-b88f-4421db30ad46",
+  "slug": "selecting-what-matters-semantic-compression-guided-selective-pooling-for-long-context-embe-2026-09-30",
+  "title": "Selecting What Matters: Semantic Compression-Guided Selective Pooling for Long-Context Embeddings",
+  "factSummary": "Large language models (LLMs) have shown strong potential as training-free text encoders for long-context embeddings. Existing approaches primarily improve information flow under causal attention and typically construct embeddings by uniformly averaging all token representations. However, for long documents, such mean pooling can dilute salient semantic information with abundant redundant or weakly informative content. To this end, we propose SCSP, a training-free framework that leverages semantic compression for informative token selection in long-context embedding. Specifically, SCSP first partitions a document into sentence-aware chunks and appends a semantic compression prompt to each chunk. A prompt-isolated attention mask preserves information flow among document tokens while restricting each prompt to its corresponding local context. We then use the attention patterns elicited by these prompts to estimate token importance, select informative tokens, and aggregate their intermediate-layer representations into the final embedding. Extensive experiments on long-context embedding benchmarks demonstrate that SCSP can be integrated into both zero-shot and fine-tuned models in a plug-and-play manner, consistently improving their performance.",
+  "summary": "Large language models (LLMs) have shown strong potential as training-free text encoders for long-context embeddings. Existing approaches primarily improve information flow under causal attention and typically construct embeddings by uniformly averaging all token representations. However, for long documents, such mean pooling can dilute salient semantic information with abundant redundant or weakly informative content. To this end, we propose SCSP, a training-free framework that leverages semantic compression for informative token selection in long-context embedding. Specifically, SCSP first partitions a document into sentence-aware chunks and appends a semantic compression prompt to each chunk. A prompt-isolated attention mask preserves information flow among document tokens while restricting each prompt to its corresponding local context. We then use the attention patterns elicited by these prompts to estimate token importance, select informative tokens, and aggregate their intermediate-layer representations into the final embedding. Extensive experiments on long-context embedding benchmarks demonstrate that SCSP can be integrated into both zero-shot and fine-tuned models in a plug-and-play manner, consistently improving their performance.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "selecting",
+    "what",
+    "matters",
+    "semantic",
+    "compression",
+    "guided",
+    "selective",
+    "pooling"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 86,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-09-29T15:16:48.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-09-30T06:05:33.792Z",
+  "updatedAt": "2026-09-30T06:05:33.850Z"
+},
+{
   "id": "3ec26f59-4ff3-481c-9f06-9d64ceb053d1",
   "slug": "selection-is-retrieval-abstention-is-not-on-device-tool-routing-over-70-korean-english-act-2026-09-17",
   "title": "Selection Is Retrieval, Abstention Is Not: On-Device Tool Routing over 70 Korean-English Actions",
@@ -488,8 +1532,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-20T12:00:00.000Z",
   "publishedAt": "2022-12-20T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "9b35ce73-09c4-4092-a690-b3f475b46670",
@@ -1485,8 +2529,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-28T00:00:00.000Z",
   "publishedAt": "2026-04-28T00:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "ed50c16f-c36a-4b0a-bf50-e3f1bebfface",
@@ -1936,8 +2980,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-13T12:00:00.000Z",
   "publishedAt": "2025-10-13T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "8596c834-a713-405f-9204-d973abacc6f8",
@@ -2117,8 +3161,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-12-29T12:00:00.000Z",
   "publishedAt": "2023-12-29T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "7898c9ab-d97b-4afe-84fd-2f2fa4663129",
@@ -3158,8 +4202,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-20T12:00:00.000Z",
   "publishedAt": "2025-02-20T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "71b6c804-c07f-4c88-b85b-9884555b3a37",
@@ -3611,8 +4655,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-23T12:00:00.000Z",
   "publishedAt": "2025-09-23T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "0ae73fdb-c640-409b-91fc-6c1542a78e09",
@@ -4151,8 +5195,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-07-27T12:00:00.000Z",
   "publishedAt": "2023-07-27T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "92db6c94-7295-40a2-84c7-67dc7d8ccd80",
@@ -4239,8 +5283,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-17T12:00:00.000Z",
   "publishedAt": "2025-06-17T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "a6f53da2-b846-456d-9c2b-63e79683e74a",
@@ -4463,8 +5507,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-13T16:02:25.000Z",
   "publishedAt": "2026-05-13T16:02:25.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "55a9bac1-42cb-4212-bd2b-80694570aff3",
@@ -5326,8 +6370,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-09T12:00:00.000Z",
   "publishedAt": "2025-07-09T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "bb1f4b50-378f-4ba8-9218-d9357f6c49e0",
@@ -5734,8 +6778,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-04T12:00:00.000Z",
   "publishedAt": "2025-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "638fa098-9660-4e7c-a94f-cb27e1a9bd7d",
@@ -7008,8 +8052,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-08-06T12:00:00.000Z",
   "publishedAt": "2023-08-06T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "a276f665-95b3-47db-9245-4ccd5087723a",
@@ -7143,8 +8187,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-03-22T12:00:00.000Z",
   "publishedAt": "2023-03-22T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "c437a35b-d10a-400d-a0af-c8243fed8df3",
@@ -7186,8 +8230,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-04-26T12:00:00.000Z",
   "publishedAt": "2025-04-26T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "8d93ed35-d572-46ae-8bb7-fdd785829351",
@@ -8462,8 +9506,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-04-14T04:47:21.000Z",
   "publishedAt": "2026-04-14T04:47:21.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "ead0fde5-320e-4bb0-ae28-f3757d352ad1",
@@ -8504,8 +9548,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-05-21T15:47:41.000Z",
   "publishedAt": "2026-05-21T15:47:41.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "fc66397a-0526-4700-bcf5-ea88def21d8c",
@@ -8856,8 +9900,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-08-22T00:00:00.000Z",
   "publishedAt": "2022-08-22T00:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "ce6e144f-4b1f-4e16-bfe5-318763d16046",
@@ -12106,8 +13150,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-31T00:00:00.000Z",
   "publishedAt": "2026-01-31T00:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "a13da063-1412-4715-b248-3c220b58d20b",
@@ -13604,8 +14648,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-07-20T12:00:00.000Z",
   "publishedAt": "2025-07-20T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "6592f3a9-60ae-477b-98e2-c5efea3db626",
@@ -14104,8 +15148,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-07-08T12:00:00.000Z",
   "publishedAt": "2026-07-08T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "93afc3b7-d5ea-4d61-90d1-a1c2d9a79a27",
@@ -14514,8 +15558,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-13T12:00:00.000Z",
   "publishedAt": "2023-02-13T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "91608363-e3f3-4742-a966-24f06c329e7c",
@@ -15324,8 +16368,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-11-11T12:00:00.000Z",
   "publishedAt": "2025-11-11T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "930a3a7d-aa19-4c18-9cd0-d93da50dd297",
@@ -16553,8 +17597,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-02-02T17:05:19.000Z",
   "publishedAt": "2026-02-02T17:05:19.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "b6c1754b-33d1-43fb-8279-5d4317534711",
@@ -18631,8 +19675,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-07-05T12:00:00.000Z",
   "publishedAt": "2024-07-05T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "06cca3ff-ca2b-4949-8316-8a25605e23a1",
@@ -19664,6 +20708,51 @@
   "updatedAt": "2026-10-05T09:34:13.453Z"
 },
 {
+  "id": "0614ac0e-5e63-4f2f-a13f-5eab413db40f",
+  "slug": "the-design-space-of-tri-modal-masked-diffusion-models-2026-10-14",
+  "title": "The Design Space of Tri-Modal Masked Diffusion Models",
+  "factSummary": "Discrete diffusion models have emerged as strong alternatives to autoregressive language models, with recent work initializing and finetuning a base unimodal model for bi-modal generation. Diverging from previous approaches, we introduce the first tri-modal Masked Diffusion Models (MDM) pretrained from scratch on text, image-text, and audio-text data. We systematically analyze multimodal scaling laws, modality mixing ratios, noise schedules, batch-size effects and provide optimized inference sampling defaults. Our batch-size analysis yields a novel stochastic differential equation (SDE) based...",
+  "summary": "Discrete diffusion models have emerged as strong alternatives to autoregressive language models, with recent work initializing and finetuning a base unimodal model for bi-modal generation. Diverging from previous approaches, we introduce the first tri-modal Masked Diffusion Models (MDM) pretrained from scratch on text, image-text, and audio-text data. We systematically analyze multimodal scaling laws, modality mixing ratios, noise schedules, batch-size effects and provide optimized inference sampling defaults. Our batch-size analysis yields a novel stochastic differential equation (SDE) based...",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "design",
+    "space",
+    "tri",
+    "modal",
+    "masked",
+    "diffusion",
+    "models"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 83,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T00:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-14T17:22:03.818Z",
+  "updatedAt": "2026-10-14T17:22:03.883Z"
+},
+{
   "id": "eb61e924-9910-4dea-b09d-8a4890dd4754",
   "slug": "the-disciplinary-language-transfer-problem-how-psychological-vocabulary-produces-governanc-2026-09-23",
   "title": "The Disciplinary Language Transfer Problem: How Psychological Vocabulary Produces Governance Failures in AI Agent Deployment",
@@ -19972,6 +21061,50 @@
   "publishedAt": null,
   "createdAt": "2026-07-23T04:04:13.225Z",
   "updatedAt": "2026-07-23T04:04:13.252Z"
+},
+{
+  "id": "5df7b964-dbe9-42a5-96d1-2b84c44d14b8",
+  "slug": "the-eu-s-next-chapter-in-ai-is-agentic-2026-10-14",
+  "title": "The EU’s next chapter in AI is agentic",
+  "factSummary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+  "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "eu",
+    "next",
+    "chapter",
+    "ai",
+    "is",
+    "agentic"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 57,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 83,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T00:00:00.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-14T17:22:06.743Z",
+  "updatedAt": "2026-10-14T17:22:06.807Z"
 },
 {
   "id": "1fb2bbc2-03da-4377-820f-d9c6205f06cb",
@@ -20604,6 +21737,52 @@
   "publishedAt": null,
   "createdAt": "2026-10-14T05:31:45.474Z",
   "updatedAt": "2026-10-14T05:31:45.528Z"
+},
+{
+  "id": "27f6a833-b709-4b59-b0a3-10a32158bda6",
+  "slug": "the-last-remote-sensing-model-built-by-humans-casting-any-earth-observation-task-as-recurs-2026-10-14",
+  "title": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+  "factSummary": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.",
+  "summary": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "industry",
+  "company": "industry",
+  "keywords": [
+    "last",
+    "remote",
+    "sensing",
+    "model",
+    "built",
+    "by",
+    "humans",
+    "casting"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 21,
+  "impactScore": 55,
+  "valueScore": 56,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 78,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-13T17:57:51.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-14T17:22:03.984Z",
+  "updatedAt": "2026-10-14T17:22:04.049Z"
 },
 {
   "id": "66407d4d-d541-40bf-bd97-462ecc09962d",
@@ -23758,8 +24937,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-10-06T12:00:00.000Z",
   "publishedAt": "2025-10-06T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "a4c9549a-be7a-40a1-be9d-2f1e7fa500d0",
@@ -24529,8 +25708,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-03-19T23:34:46.000Z",
   "publishedAt": "2026-03-19T23:34:46.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "8ca23969-d927-410f-8f55-d76f745cc23a",
@@ -24618,8 +25797,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-02-09T12:00:00.000Z",
   "publishedAt": "2023-02-09T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "365ebe24-8cf4-4155-a046-aba74354ad11",
@@ -24799,8 +25978,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-09-27T12:00:00.000Z",
   "publishedAt": "2025-09-27T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "d645e4e4-ee02-422c-9934-abd7c6877a96",
@@ -29035,8 +30214,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-17T12:00:00.000Z",
   "publishedAt": "2023-05-17T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "f09849cb-8449-4bff-abab-8b5af318cddb",
@@ -30116,8 +31295,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-09T12:00:00.000Z",
   "publishedAt": "2024-01-09T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "d9a179e9-4c3b-4ab6-ba72-a984f8427d0f",
@@ -30432,8 +31611,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-06-30T12:00:00.000Z",
   "publishedAt": "2025-06-30T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "9ea7788e-2330-4824-a249-263ec181c69f",
@@ -33156,20 +34335,20 @@
     "VRM avatar",
     "tool calling"
   ],
-  "confidenceScore": 74,
-  "heatScore": 22,
+  "confidenceScore": 84,
+  "heatScore": 18,
   "impactScore": 55,
-  "valueScore": 58,
+  "valueScore": 52,
   "scoreFactors": {
     "authority": 92,
     "corroboration": 20,
-    "primaryEvidence": 50,
+    "primaryEvidence": 100,
     "uniqueAuthors": 0,
     "independentSources": 1,
     "platformBreadth": 1,
     "regionBreadth": 0,
     "velocity": 0,
-    "freshness": 91,
+    "freshness": 38,
     "crossRegion": false
   },
   "status": "published",
@@ -33178,7 +34357,7 @@
   "happenedAt": "2026-10-10T21:17:46.000Z",
   "publishedAt": "2026-10-11T06:36:00.718Z",
   "createdAt": "2026-10-11T06:35:11.543Z",
-  "updatedAt": "2026-10-11T06:36:00.718Z"
+  "updatedAt": "2026-10-14T17:22:05.416Z"
 },
 {
   "id": "26fb0292-d15b-4948-a578-4a659a5e6859",
@@ -37214,6 +38393,50 @@
   "updatedAt": "2026-10-14T05:31:47.132Z"
 },
 {
+  "id": "c14af730-3297-4f99-8a71-9175c53a80cc",
+  "slug": "v1-107-0-dev-1-2026-10-14",
+  "title": "v1.107.0-dev.1",
+  "factSummary": "LiteLLM 发布 v1.107.0-dev.1。发布说明称所有 LiteLLM Docker 镜像均使用 cosign 签名，每次发布使用 commit 0112e53 引入的同一密钥；可用固定 commit hash 或 release tag 两种方式验证，并给出预期输出。该版本变更包括 fix(mcp)：不再将调用方的 LiteLLM key 转发给 MCP 服务器（#45401），以及 refactor(types)：在 3 个文件中用 proven types 替换 Any（#45565）。",
+  "summary": "LiteLLM 发布 v1.107.0-dev.1，强调 Docker 镜像的 cosign 签名验证流程，并包含一项 MCP 相关安全修复：不再把调用方的 LiteLLM key 转发给 MCP 服务器。",
+  "technicalInsight": "从发布说明看，该版本在供应链安全（cosign 签名与固定 commit 验证）和 MCP 调用链的凭据隔离上做了处理；但证据未披露具体实现细节与影响范围，实际效果需以代码 diff 或复现验证为准。",
+  "industryInsight": "开源 LLM 网关项目开始把镜像签名验证与 MCP 凭据转发控制写入发布说明，反映开发者工具链对供应链安全和 Agent 工具调用权限边界的关注在上升；单一 dev 版本不足以判断行业趋势。",
+  "futureOutlook": "可观察的下一信号：后续正式版本是否延续同一签名密钥与验证方式，以及 MCP key 转发修复是否伴随测试用例或安全公告。",
+  "businessValue": "对使用 LiteLLM 作为统一模型网关的团队，签名验证流程可用于镜像来源核验，MCP 凭据不转发可降低密钥外泄面；具体收益取决于部署方式与 MCP 集成范围。",
+  "category": "open-source-release",
+  "company": "LiteLLM",
+  "keywords": [
+    "LiteLLM",
+    "cosign",
+    "Docker 镜像签名",
+    "MCP",
+    "供应链安全",
+    "密钥转发"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T17:02:35.000Z",
+  "publishedAt": "2026-10-14T17:22:59.131Z",
+  "createdAt": "2026-10-14T17:22:05.192Z",
+  "updatedAt": "2026-10-14T17:22:59.131Z"
+},
+{
   "id": "6aadda9d-e251-41ab-8fc6-62d8fa573b32",
   "slug": "v1-11-0-2026-08-08",
   "title": "v1.11.0",
@@ -37496,6 +38719,50 @@
   "publishedAt": null,
   "createdAt": "2026-09-25T17:21:22.139Z",
   "updatedAt": "2026-09-25T17:21:22.174Z"
+},
+{
+  "id": "af37060a-2389-45a1-b0e5-3f306737f3d6",
+  "slug": "v1-14-0-2026-10-14",
+  "title": "v1.14.0",
+  "factSummary": "Anthropic Python SDK 发布 v1.14.0，新增 execution_identity 到 Managed Agents，新增 spend limit 列表的 organization_type_not_supported 错误、telemetry destination 测试端点与 Admin API 客户端中的 telemetry destinations，并为 API 调用、流式传输和工具运行加入 OpenTelemetry 追踪；同时修复 telemetry destination 测试响应模型重命名、丢弃流关闭、未知事件类型透传以及 message_start 前事件顺序报错等问题，并更新文档。",
+  "summary": "Anthropic Python SDK v1.14.0 是一次以可观测性与 API 治理为主的版本更新：在 Managed Agents 中引入 execution_identity，在 Admin API 中扩展 telemetry destinations 与测试端点，并让客户端对 API 调用、流式传输和工具运行输出 OpenTelemetry 追踪。",
+  "technicalInsight": "从变更项看，SDK 正在把 Agent 执行身份与遥测目标纳入管理面，并让流式事件处理更宽容（未知事件透传、放宽事件顺序约束），这有利于生产环境下的可观测性与兼容性；但证据未披露 execution_identity 的具体语义与 OpenTelemetry 的导出格式，需以官方文档或后续版本说明确认。",
+  "industryInsight": "头部模型厂商的官方 SDK 持续补齐遥测、身份与错误码等企业级治理能力，反映 Agent 从实验走向生产部署时，可观测性与权限边界正成为 API 层的竞争点；但单一版本发布不足以判断行业格局变化。",
+  "futureOutlook": "可验证的下一信号是：后续版本是否将 execution_identity 与 telemetry destinations 扩展到更多 API 面，以及是否出现配套的 OpenTelemetry 语义约定或文档说明。",
+  "businessValue": "对企业开发者而言，内置 OpenTelemetry 追踪与遥测目标管理可降低自建监控成本，并让 Agent 调用更易审计；实际收益取决于这些能力是否覆盖其现有可观测性栈。",
+  "category": "agent-observability",
+  "company": "Anthropic Python SDK",
+  "keywords": [
+    "Anthropic Python SDK",
+    "OpenTelemetry",
+    "Managed Agents",
+    "execution_identity",
+    "telemetry destinations",
+    "Admin API"
+  ],
+  "confidenceScore": 100,
+  "heatScore": 47,
+  "impactScore": 55,
+  "valueScore": 73,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 80,
+    "primaryEvidence": 100,
+    "uniqueAuthors": 0,
+    "independentSources": 4,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T17:13:08.000Z",
+  "publishedAt": "2026-10-14T17:22:59.132Z",
+  "createdAt": "2026-10-14T17:22:05.116Z",
+  "updatedAt": "2026-10-14T17:22:59.132Z"
 },
 {
   "id": "4b494ea5-4a5c-4e39-8590-796acadff63c",
@@ -39654,6 +40921,46 @@
   "publishedAt": null,
   "createdAt": "2026-10-08T06:46:11.443Z",
   "updatedAt": "2026-10-08T06:46:11.498Z"
+},
+{
+  "id": "e998a5ae-9dcf-4967-99c5-283d40566b6c",
+  "slug": "v1-64-1-2026-10-14",
+  "title": "v1.64.1",
+  "factSummary": "Bug Fixes #43247 [Bug]: _electron.launch intermittently loses a packaged app's first window since 1.64.0 #43242 [Regression]: Chromium 155+ aborts a preflighted cross-origin redirect whenever any route is registered (net::ERR_ABORTED)",
+  "summary": "Bug Fixes #43247 [Bug]: _electron.launch intermittently loses a packaged app's first window since 1.64.0 #43242 [Regression]: Chromium 155+ aborts a preflighted cross-origin redirect whenever any route is registered (net::ERR_ABORTED)",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v1",
+    "64"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 94,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T11:51:33.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-14T17:22:05.992Z",
+  "updatedAt": "2026-10-14T17:22:06.059Z"
 },
 {
   "id": "d6025d9c-933c-499f-a564-d57d34b696cd",
@@ -45112,6 +46419,46 @@
   "updatedAt": "2026-10-14T05:32:50.855Z"
 },
 {
+  "id": "c4693b44-aa9b-4d05-a32f-2a50cfbe4d7d",
+  "slug": "v3-31-0-2026-10-14",
+  "title": "v3.31.0",
+  "factSummary": "3.31.0 (2026-10-14) Features add browser and computer toolsets (1/4) ( #4073 ) ( 47b9e4e )",
+  "summary": "3.31.0 (2026-10-14) Features add browser and computer toolsets (1/4) ( #4073 ) ( 47b9e4e )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v3",
+    "31"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T05:38:46.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-14T17:22:06.575Z",
+  "updatedAt": "2026-10-14T17:22:06.645Z"
+},
+{
   "id": "13768a33-ca82-47ba-a58a-35b8ef0b23fb",
   "slug": "v4-0-0-rc-1-2026-07-24",
   "title": "v4.0.0-rc.1",
@@ -47006,6 +48353,46 @@
   "updatedAt": "2026-10-13T19:24:59.565Z"
 },
 {
+  "id": "eaaada60-1235-452e-b850-4a4cc0748938",
+  "slug": "v4-59-0-2026-10-14",
+  "title": "v4.59.0",
+  "factSummary": "What's Changed feat(llm-connections): label TypeSafe adapter as \"TypeSafe (System One)\" in picker by @hassiebp in #18670 perf(worker): poll queue metrics once per interval across workers by @Steffen911 in #18672 ci(notifications): stop sending redundant title, branch, and event to Slack by @nimarb in #18652 chore(pricing): correct Claude Sonnet 5.5 cache-read price by @langfuse-bot in #18667 fix(web): Improve tool response handling in sessions by @bezbac in #18640 fix(web): combine account and organization settings into one page by @nmtrang29 in #18530 chore(observability): drop unused ClickHouse cost and export heartbeat row metrics by @niklassemmler in #18678 fix(trace-batching): reprocess late arrivals with sharded readiness by @LysanderKie in #18602 feat(topics): add filter and search bar for topic traces by @nimarb in #18662 fix(web): org overview plan badge matches the breadcrumb badge by @nmtrang29 in #18683 feat(trace): inspect transcript on trace via three dots by @nimarb in #18691 ci(sdk-api-spec): skip SDK score compat patch scripts when absent by @hassiebp in #18689 fix(billing): raise ClickHouse Billing request timeout to 25 seconds by @lightningspirit in #18696 feat(sessions): Enable redesigned session view by default by @bezbac in #18690 fix(web): color JSON syntax highlighting with the JSON value tokens by @nmtrang29 in #18635 fix(web): table tag cells render plain chips, not buttons by @nmtrang29 in #18700 feat(otel): bound concurrent media uploads by decoded size by @sumerman in #18630 fix(monitors): retry execution failures instead of disabling alerts by @marksalpeter in #18606 fix(web): skip matching shadow auth telemetry by @marksalpeter in #18702 feat(trace-batching): admit Topics traces only when Topics processing is active by @LysanderKie in #18705 fix(topics): shrink hover to size by @nimarb in #18699 ci(preview): build and push the AI gateway image by @wochinge in #18697 feat(audit-logs): add audit_logs table, staging outbox and event cont…",
+  "summary": "What's Changed feat(llm-connections): label TypeSafe adapter as \"TypeSafe (System One)\" in picker by @hassiebp in #18670 perf(worker): poll queue metrics once per interval across workers by @Steffen911 in #18672 ci(notifications): stop sending redundant title, branch, and event to Slack by @nimarb in #18652 chore(pricing): correct Claude Sonnet 5.5 cache-read price by @langfuse-bot in #18667 fix(web): Improve tool response handling in sessions by @bezbac in #18640 fix(web): combine account and organization settings into one page by @nmtrang29 in #18530 chore(observability): drop unused ClickHouse cost and export heartbeat row metrics by @niklassemmler in #18678 fix(trace-batching): reprocess late arrivals with sharded readiness by @LysanderKie in #18602 feat(topics): add filter and search bar for topic traces by @nimarb in #18662 fix(web): org overview plan badge matches the breadcrumb badge by @nmtrang29 in #18683 feat(trace): inspect transcript on trace via three dots by @nimarb in #18691 ci(sdk-api-spec): skip SDK score compat patch scripts when absent by @hassiebp in #18689 fix(billing): raise ClickHouse Billing request timeout to 25 seconds by @lightningspirit in #18696 feat(sessions): Enable redesigned session view by default by @bezbac in #18690 fix(web): color JSON syntax highlighting with the JSON value tokens by @nmtrang29 in #18635 fix(web): table tag cells render plain chips, not buttons by @nmtrang29 in #18700 feat(otel): bound concurrent media uploads by decoded size by @sumerman in #18630 fix(monitors): retry execution failures instead of disabling alerts by @marksalpeter in #18606 fix(web): skip matching shadow auth telemetry by @marksalpeter in #18702 feat(trace-batching): admit Topics traces only when Topics processing is active by @LysanderKie in #18705 fix(topics): shrink hover to size by @nimarb in #18699 ci(preview): build and push the AI gateway image by @wochinge in #18697 feat(audit-logs): add audit_logs table, staging outbox and event cont…",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v4",
+    "59"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 92,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T09:20:36.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-14T17:22:06.169Z",
+  "updatedAt": "2026-10-14T17:22:06.241Z"
+},
+{
   "id": "a5b488ba-7f4b-4b4f-872c-2cf6f805a25b",
   "slug": "v4-spike-final-2026-08-10",
   "title": "v4-spike-final",
@@ -47826,6 +49213,46 @@
   "publishedAt": null,
   "createdAt": "2026-10-10T06:29:40.757Z",
   "updatedAt": "2026-10-10T06:29:40.819Z"
+},
+{
+  "id": "d74669b9-a0b2-4b4d-ab90-ca85f4e59576",
+  "slug": "v7-33-0-2026-10-14",
+  "title": "v7.33.0",
+  "factSummary": "7.33.0 (2026-10-14) Features add browser and computer toolsets (1/4) ( #2936 ) ( 3811840 ) api: add beta session spending limits ( #2916 ) ( f57c965 ) api: add billing_not_active session error code ( #2911 ) ( ee3f743 ) api: add OCI external-storage provider support ( #2917 ) ( 80e210e ) api: add organization Decisions usage reporting ( #2919 ) ( 3f8753e ) api: add shida to named Live voices ( #2912 ) ( d6d80a1 ) api: add vault updates and metadata filters ( #2906 ) ( 1bbc425 ) api: align beta pagination limits and non-null parameters ( #2915 ) ( 4ae463a ) api: expose image tool error and moderation details ( #2935 ) ( 0bf85e0 ) api: support image URLs and detailed safety alert explanations ( #2918 ) ( 8297332 ) api: support updating project API key expiry ( #2922 ) ( 467a082 ) Chores api: clarify agent tool limits and environment pagination ( #2920 ) ( 05b8763 ) api: clarify decision creation documentation ( #2913 ) ( 1c380ea ) api: clarify Decisions question and answer descriptions ( #2910 ) ( b5c7300 ) api: document 128-character safety identifiers ( #2909 ) ( 75a6810 ) api: document decision choice constraints ( #2914 ) ( 3add470 ) api: document Files API rate-limit responses ( #2908 ) ( 250b6ac )",
+  "summary": "7.33.0 (2026-10-14) Features add browser and computer toolsets (1/4) ( #2936 ) ( 3811840 ) api: add beta session spending limits ( #2916 ) ( f57c965 ) api: add billing_not_active session error code ( #2911 ) ( ee3f743 ) api: add OCI external-storage provider support ( #2917 ) ( 80e210e ) api: add organization Decisions usage reporting ( #2919 ) ( 3f8753e ) api: add shida to named Live voices ( #2912 ) ( d6d80a1 ) api: add vault updates and metadata filters ( #2906 ) ( 1bbc425 ) api: align beta pagination limits and non-null parameters ( #2915 ) ( 4ae463a ) api: expose image tool error and moderation details ( #2935 ) ( 0bf85e0 ) api: support image URLs and detailed safety alert explanations ( #2918 ) ( 8297332 ) api: support updating project API key expiry ( #2922 ) ( 467a082 ) Chores api: clarify agent tool limits and environment pagination ( #2920 ) ( 05b8763 ) api: clarify decision creation documentation ( #2913 ) ( 1c380ea ) api: clarify Decisions question and answer descriptions ( #2910 ) ( b5c7300 ) api: document 128-character safety identifiers ( #2909 ) ( 75a6810 ) api: document decision choice constraints ( #2914 ) ( 3add470 ) api: document Files API rate-limit responses ( #2908 ) ( 250b6ac )",
+  "technicalInsight": "待编辑：这项变化对能力、成本或工程路线意味着什么？",
+  "industryInsight": "待编辑：这项变化会如何影响竞争结构与产业分工？",
+  "futureOutlook": "待编辑：接下来要观察哪些可验证信号？",
+  "businessValue": "待编辑：CEO、投资负责人或业务负责人应采取什么动作？",
+  "category": "open-source",
+  "company": "industry",
+  "keywords": [
+    "v7",
+    "33"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 22,
+  "impactScore": 55,
+  "valueScore": 58,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 89,
+    "crossRegion": false
+  },
+  "status": "review",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T05:39:13.000Z",
+  "publishedAt": null,
+  "createdAt": "2026-10-14T17:22:06.494Z",
+  "updatedAt": "2026-10-14T17:22:06.562Z"
 },
 {
   "id": "3b42405c-ae80-4d10-a351-fdf96fb03866",
@@ -49103,6 +50530,50 @@
   "updatedAt": "2026-10-08T06:46:10.899Z"
 },
 {
+  "id": "a10f8a9f-0ba9-4a50-bb9d-79545c90e9e0",
+  "slug": "vertex-sdk-v0-21-0-2026-10-14",
+  "title": "vertex-sdk-v0.21.0",
+  "factSummary": "Anthropic 发布 TypeScript SDK 的 vertex-sdk-v0.21.0 版本。该版本在 api 特性中为 Managed Agents 增加 execution_identity；在 agents 客户端中为 API 调用增加 OpenTelemetry spans；杂项变更包括在发布包中包含许可证文件，以及从发布类型中剥离 @internal 声明。",
+  "summary": "Anthropic 的 TypeScript SDK 发布 vertex-sdk-v0.21.0，主要变更为 Managed Agents 增加 execution_identity、为 API 调用增加 OpenTelemetry spans，并调整发布包内容（包含许可证文件、剥离 @internal 类型声明）。",
+  "technicalInsight": "从变更项看，该版本同时涉及 Agent 执行身份标识与 API 调用可观测性，属于 SDK 层面的能力补齐；但证据未说明 execution_identity 的具体语义、鉴权方式或 OpenTelemetry spans 的字段与导出目标，因此无法判断其实际覆盖范围。可验证的下一信号是官方文档或后续版本说明中是否给出 execution_identity 的接口定义与 spans 的语义约定。",
+  "industryInsight": "Agent 相关 SDK 开始把执行身份与调用链可观测性纳入标准发布内容，反映开发者工具链对 Agent 运行可追踪性的需求上升；但仅凭单个版本发布无法判断这是行业普遍趋势还是单一厂商的迭代节奏。",
+  "futureOutlook": "若后续版本继续围绕 Agent 身份与可观测性扩展，可能推动同类 SDK 在接口层面形成更一致的约定；反之若长期停留在单点变更，则影响有限。观察点是后续 release notes 是否出现配套的文档、示例或规范说明。",
+  "businessValue": "对使用该 SDK 的开发者而言，许可证文件与类型声明的发布调整可降低合规与类型使用上的摩擦，Agent 身份与调用追踪能力则可能减少生产环境中的调试与审计成本；具体收益取决于这些能力在文档与工具链中的落地程度。",
+  "category": "sdk-release",
+  "company": "Anthropic",
+  "keywords": [
+    "Anthropic",
+    "TypeScript SDK",
+    "Managed Agents",
+    "execution_identity",
+    "OpenTelemetry",
+    "开发者工具链"
+  ],
+  "confidenceScore": 74,
+  "heatScore": 23,
+  "impactScore": 55,
+  "valueScore": 59,
+  "scoreFactors": {
+    "authority": 92,
+    "corroboration": 20,
+    "primaryEvidence": 50,
+    "uniqueAuthors": 0,
+    "independentSources": 1,
+    "platformBreadth": 1,
+    "regionBreadth": 0,
+    "velocity": 0,
+    "freshness": 100,
+    "crossRegion": false
+  },
+  "status": "published",
+  "featured": 0,
+  "manualOverride": 0,
+  "happenedAt": "2026-10-14T17:13:14.000Z",
+  "publishedAt": "2026-10-14T17:22:59.132Z",
+  "createdAt": "2026-10-14T17:22:05.041Z",
+  "updatedAt": "2026-10-14T17:22:59.132Z"
+},
+{
   "id": "56ad8cab-5fb1-433a-b99e-162b07f19d58",
   "slug": "vexaiot-autonomous-iot-vulnerability-exploitation-using-ai-agents-2026-07-13",
   "title": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
@@ -50003,8 +51474,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-08-01T12:00:00.000Z",
   "publishedAt": "2024-08-01T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "2e607cf0-fc08-41ad-8487-eb6a6665d75f",
@@ -50321,8 +51792,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-17T12:00:00.000Z",
   "publishedAt": "2024-01-17T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "86baef21-87ae-428b-9a54-1f5454b70324",
@@ -50998,8 +52469,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-04T12:00:00.000Z",
   "publishedAt": "2024-02-04T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "b496f0b4-d822-48ac-a858-65a18c239ea7",
@@ -51041,8 +52512,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-01-18T12:00:00.000Z",
   "publishedAt": "2024-01-18T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "7731b5b5-463d-4bcd-9829-bd0b2f07777d",
@@ -51309,8 +52780,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-05-25T12:00:00.000Z",
   "publishedAt": "2023-05-25T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "7ccb0a6a-0a53-457a-8efa-66d6e34cfe07",
@@ -51628,8 +53099,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-03-26T12:00:00.000Z",
   "publishedAt": "2025-03-26T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "d9b52afb-f65a-44af-ae6e-f1ad871fd58a",
@@ -51851,8 +53322,8 @@
   "manualOverride": 1,
   "happenedAt": "2023-01-24T12:00:00.000Z",
   "publishedAt": "2023-01-24T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "04762c9a-d2e7-4624-81fc-0aacfe60e8a9",
@@ -56976,8 +58447,8 @@
   "manualOverride": 1,
   "happenedAt": "2022-12-06T12:00:00.000Z",
   "publishedAt": "2022-12-06T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "977d1687-4ac6-4afd-96dc-5bc5d6b99b66",
@@ -58204,8 +59675,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-06-03T08:00:00.000Z",
   "publishedAt": "2026-06-03T08:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "da98fd86-c3c8-4550-a56c-8f9ce8b9569c",
@@ -59238,8 +60709,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-26T00:00:00.000Z",
   "publishedAt": "2024-05-26T00:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "beef72e7-e870-45a6-ae0c-b30aa78af7e8",
@@ -59282,8 +60753,8 @@
   "manualOverride": 1,
   "happenedAt": "2026-01-06T00:00:00.000Z",
   "publishedAt": "2026-01-06T00:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "5db756ec-5aa3-41ba-b9a1-795782c6cb1d",
@@ -59778,8 +61249,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-13T00:00:00.000Z",
   "publishedAt": "2024-05-13T00:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "368f40fb-af2b-4dad-a535-491f8da6257e",
@@ -59821,8 +61292,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-05-23T12:00:00.000Z",
   "publishedAt": "2024-05-23T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "308bbe82-c2cc-4d1f-a28b-b8a4c2d38af9",
@@ -59864,8 +61335,8 @@
   "manualOverride": 1,
   "happenedAt": "2025-02-18T12:00:00.000Z",
   "publishedAt": "2025-02-18T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "88eedd89-c141-4034-a9a1-80ce6ab090fa",
@@ -59907,8 +61378,8 @@
   "manualOverride": 1,
   "happenedAt": "2024-02-21T12:00:00.000Z",
   "publishedAt": "2024-02-21T12:00:00.000Z",
-  "createdAt": "2026-10-14T05:27:13.966Z",
-  "updatedAt": "2026-10-14T05:27:13.966Z"
+  "createdAt": "2026-10-14T17:17:29.372Z",
+  "updatedAt": "2026-10-14T17:17:29.372Z"
 },
 {
   "id": "c2b050cc-8750-46de-b11e-c4fe8bf20cf2",
